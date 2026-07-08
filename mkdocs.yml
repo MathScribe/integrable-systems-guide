@@ -17,6 +17,11 @@ theme:
 nav:
   - Home: index.md
   - How to use this guide: getting-started.md
+  - Learning paths:
+      - Overview: learning-paths/index.md
+      - PDE to IST/RHP: learning-paths/pde-to-ist-rhp.md
+      - DNLS and NLS: learning-paths/dnls-nls.md
+      - Finite-gap methods: learning-paths/finite-gap.md
   - Topics:
       - Inverse scattering transform: topics/ist.md
       - Riemann-Hilbert problems: topics/rhp.md
@@ -27,6 +32,7 @@ nav:
       - Finite-gap and algebraic-geometric methods: topics/finite-gap.md
   - Resources:
       - Core resources v0.1: resources/core-v0-1.md
+      - Zotero seed map: resources/zotero-seed-map.md
       - People and research groups: resources/people.md
       - Courses: resources/courses.md
       - Workshops and seminars: resources/workshops.md
