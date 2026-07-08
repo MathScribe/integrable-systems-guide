@@ -2,6 +2,8 @@
 
 A compact research guide for integrable systems, inverse scattering transform, Riemann-Hilbert problems, nonlinear steepest descent, nonlinear waves, finite-gap methods, and related spectral/geometric techniques.
 
+**Public site:** https://mathscribe.github.io/integrable-systems-guide/
+
 This repository is not intended to be a generic awesome list. The goal is to maintain a small research guide with stable links, local group context, and concise annotations.
 
 ## Project principles
@@ -11,6 +13,16 @@ This repository is not intended to be a generic awesome list. The goal is to mai
 3. Record why a resource is included.
 4. Separate external resources from local group-related material.
 5. Expand only when there is enough reviewed material to justify a new page.
+
+## Contributing
+
+The easiest way to help is to open a GitHub Issue:
+
+- use `Resource suggestion` for a useful course page, lecture note, survey, workshop page, researcher homepage, software page, or reading list;
+- use `Broken link` for a dead, moved, login-only, or outdated URL;
+- open a pull request only if you want to edit files under `docs/` directly.
+
+Short annotations and verified links are more useful at this stage than large unreviewed lists.
 
 ## Current site structure
 
