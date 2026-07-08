@@ -1,26 +1,32 @@
 # Integrable Systems Research Guide
 
-A curated, annotated research guide for integrable systems, inverse scattering transform (IST), Riemann-Hilbert problems, nonlinear steepest descent, DNLS/NLS, nonlinear dispersive PDE, soliton resolution, and long-time asymptotic analysis.
+A compact, annotated research-training guide for integrable systems, inverse scattering transform, Riemann-Hilbert problems, nonlinear steepest descent, nonlinear waves, finite-gap methods, and related spectral/geometric techniques.
 
-This repository is not intended to be a generic awesome list. The goal is to maintain a reviewable research-training guide: every important resource should have a topic placement, learning use, prerequisites, quality assessment, and maintenance status.
+This repository is not intended to be a generic awesome list. The goal is to maintain a reviewable research guide: important resources should have a clear mathematical role, learning use, prerequisites, quality assessment, and maintenance status.
 
 ## Project principles
 
-1. Prefer researcher homepages, course pages, lecture notes, seminar pages, summer school pages, workshop pages, and open book drafts over disconnected PDF links.
-2. Record why a resource is useful, not merely where it lives.
-3. Track link health, archive status, version/date information, and known limitations.
-4. Separate structured metadata from narrative reading guides.
-5. Keep the initial core small and high quality before expanding.
+1. Keep the public navigation small until there is enough reviewed material to justify more pages.
+2. Prefer researcher homepages, course pages, lecture notes, seminar pages, summer school pages, workshop pages, and open book drafts over disconnected PDF links.
+3. Record why a resource is useful, not merely where it lives.
+4. Track link health, archive status, version/date information, and known limitations.
+5. Separate external curated resources from public group/member material.
 
-## Repository structure
+## Current site structure
 
 ```text
-docs/                 # Website/source guide pages in Markdown
-docs/topics/          # Topic-level reading guides
-docs/resources/       # Resource-type views: people, courses, workshops, notes, software
-data/                 # Structured YAML metadata and seed candidates
-maintenance/          # Link checks, review logs, dead links, and curation notes
-.github/workflows/    # Optional GitHub Pages deployment workflow
+docs/index.md          # Homepage
+docs/start-here.md     # Usage rules, resource levels, quality grades
+docs/routes.md         # Short research-training routes
+docs/topics.md         # Compact topic map
+docs/resources.md      # Main consolidated resource table
+docs/group-work.md     # Public group/member material
+docs/about.md          # Curation policy, inspiration, comments, license notes
+
+docs/*/                # Older scaffold pages kept as source material
+data/                  # Structured YAML metadata and seed candidates
+maintenance/           # Link checks, review logs, dead links, and curation notes
+.github/workflows/     # Optional GitHub Pages deployment workflow
 ```
 
 ## Local preview
@@ -36,7 +42,7 @@ Then open the local URL printed by MkDocs.
 
 ## Curation status
 
-This repository is currently at the scaffold stage. The first substantive milestone is `v0.1`: a small set of verified core resources with complete metadata and short annotations.
+This repository is in an early `v0.1` stage. The first substantive milestone is a small set of verified core resources with short annotations, plus a clean site structure that can later support group reading projects and richer metadata.
 
 ## License
 
