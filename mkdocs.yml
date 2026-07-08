@@ -16,7 +16,6 @@ theme:
 nav:
   - Home: index.md
   - Start here: start-here.md
-  - Research routes: routes.md
   - Core topics: topics.md
   - Resources: resources.md
   - Group work: group-work.md
