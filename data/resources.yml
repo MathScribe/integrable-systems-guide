@@ -1,5 +1,312 @@
 # Curated resource records.
-# Promote entries here only after manual verification.
+# Entries in this file have had at least one manual verification pass.
 
 resources:
-  # No curated resources yet. Use data/seed-candidates.yml for unverified entries.
+  - id: peter-miller-homepage
+    title: Peter D. Miller homepage
+    author_or_maintainer: Peter D. Miller
+    institution: University of Michigan
+    resource_type: researcher_homepage
+    url: https://websites.umich.edu/~millerpd/
+    backup_url:
+    status: curated
+    link_status: alive
+    last_checked: "2026-07-08"
+    topics:
+      - IST
+      - RHP
+      - nonlinear_steepest_descent
+      - nonlinear_dispersive_PDE
+      - finite_gap
+    equations:
+      - NLS
+      - KdV
+      - mKdV
+    methods:
+      - Riemann_Hilbert_problem
+      - asymptotic_analysis
+      - integrable_systems
+    prerequisites:
+      - complex_analysis
+      - asymptotic_analysis
+      - differential_equations
+    level: research_reference
+    recommended_use: Use as a stable entry point to Miller's research, teaching, textbook corrections, presentations, and course history.
+    strengths:
+      - Strong fit for integrable systems, nonlinear waves, special functions, random matrix theory, and asymptotic methods.
+      - Contains teaching and research navigation rather than only isolated PDFs.
+    limitations:
+      - Some current course materials may be on Canvas and not publicly accessible.
+    related_resources:
+      - peter-miller-teaching
+    quality:
+      grade: S
+      mathematical_reliability: 5
+      research_relevance: 5
+      pedagogical_value: 4
+      maintainability: 4
+      reviewer_note: Core researcher homepage for IST, RHP, nonlinear waves, and asymptotics.
+
+  - id: peter-miller-teaching
+    title: Peter D. Miller teaching page
+    author_or_maintainer: Peter D. Miller
+    institution: University of Michigan
+    resource_type: course_page
+    url: https://websites.umich.edu/~millerpd/Teaching.html
+    backup_url:
+    status: curated
+    link_status: alive
+    last_checked: "2026-07-08"
+    topics:
+      - RHP
+      - nonlinear_steepest_descent
+      - IST
+      - asymptotic_analysis
+    equations:
+      - NLS
+      - KdV
+      - mKdV
+    methods:
+      - Riemann_Hilbert_problem
+      - asymptotic_analysis
+      - nonlinear_steepest_descent
+    prerequisites:
+      - complex_analysis
+      - asymptotic_analysis
+      - applied_analysis
+    level: paper_preparation
+    recommended_use: Use to identify Miller's relevant course history and auxiliary materials, especially asymptotic analysis and Riemann-Hilbert methods in integrable systems.
+    strengths:
+      - Records Math 557 Asymptotic Analysis and past Math 651 / Math 756 topics on integrable systems and Riemann-Hilbert problems.
+      - Links to auxiliary lecture materials and a Riemann-Hilbert minicourse.
+    limitations:
+      - Some active course details may not be publicly visible.
+    related_resources:
+      - peter-miller-homepage
+    quality:
+      grade: S
+      mathematical_reliability: 5
+      research_relevance: 5
+      pedagogical_value: 4
+      maintainability: 4
+      reviewer_note: Key course-history node for asymptotic analysis and RHP-oriented integrable systems training.
+
+  - id: peter-perry-inverse-scattering-gwp
+    title: Inverse scattering and global well-posedness in one and two space dimensions
+    author_or_maintainer: Peter A. Perry
+    institution:
+    resource_type: lecture_notes
+    url: https://arxiv.org/abs/1902.01009
+    backup_url:
+    status: curated
+    link_status: alive
+    last_checked: "2026-07-08"
+    topics:
+      - IST
+      - nonlinear_dispersive_PDE
+      - nonlinear_steepest_descent
+      - NLS
+    equations:
+      - NLS
+      - Davey_Stewartson
+    methods:
+      - inverse_scattering
+      - direct_scattering
+      - Riemann_Hilbert_problem
+      - dbar_method
+    prerequisites:
+      - functional_analysis
+      - Sobolev_spaces
+      - spectral_theory
+      - complex_analysis
+    level: paper_preparation
+    recommended_use: Use as a self-contained bridge between inverse scattering and PDE well-posedness, especially for defocusing cubic NLS and Davey-Stewartson II.
+    strengths:
+      - Revised from Fields Institute expository lectures.
+      - Connects scattering maps, well-posedness, and asymptotic behavior.
+    limitations:
+      - Focuses on selected defocusing models rather than a broad IST survey.
+    related_resources:
+      - fields-institute-workshops
+    quality:
+      grade: S
+      mathematical_reliability: 5
+      research_relevance: 5
+      pedagogical_value: 5
+      maintainability: 5
+      reviewer_note: Core expository IST/PDE resource.
+
+  - id: monica-visan-homepage
+    title: Monica Visan homepage
+    author_or_maintainer: Monica Visan
+    institution: UCLA
+    resource_type: researcher_homepage
+    url: https://www.math.ucla.edu/~visan/
+    backup_url:
+    status: curated
+    link_status: alive
+    last_checked: "2026-07-08"
+    topics:
+      - nonlinear_dispersive_PDE
+      - NLS
+      - soliton_resolution
+    equations:
+      - NLS
+      - gKdV
+      - wave_maps
+      - Schroedinger_maps
+    methods:
+      - concentration_compactness
+      - scattering
+      - critical_regularities
+      - dispersive_estimates
+    prerequisites:
+      - real_analysis
+      - Fourier_analysis
+      - Sobolev_spaces
+      - harmonic_analysis
+    level: research_reference
+    recommended_use: Use as a researcher entry point for nonlinear dispersive PDE resources and links to expository notes.
+    strengths:
+      - Directly relevant to NLS and critical dispersive PDE.
+      - Contains expository notes and publication links.
+    limitations:
+      - Not primarily an IST or RHP resource.
+    related_resources:
+      - monica-visan-expository-notes
+    quality:
+      grade: A
+      mathematical_reliability: 5
+      research_relevance: 4
+      pedagogical_value: 4
+      maintainability: 4
+      reviewer_note: Strong PDE-side complement to IST/RHP resources.
+
+  - id: monica-visan-expository-notes
+    title: Monica Visan expository notes
+    author_or_maintainer: Monica Visan
+    institution: UCLA
+    resource_type: lecture_notes
+    url: https://www.math.ucla.edu/~visan/lecturenotes.html
+    backup_url:
+    status: curated
+    link_status: alive
+    last_checked: "2026-07-08"
+    topics:
+      - nonlinear_dispersive_PDE
+      - NLS
+    equations:
+      - NLS
+      - gKdV
+      - wave_maps
+      - Schroedinger_maps
+    methods:
+      - critical_regularities
+      - scattering
+      - dispersive_estimates
+      - concentration_compactness
+    prerequisites:
+      - Fourier_analysis
+      - Sobolev_spaces
+      - harmonic_analysis
+      - PDE
+    level: graduate_course
+    recommended_use: Use for PDE-side preparation, especially critical NLS and nonlinear dispersive equations.
+    strengths:
+      - Includes expository materials with coauthors and published lecture-note references.
+    limitations:
+      - Does not substitute for RHP/IST-specific training.
+    related_resources:
+      - monica-visan-homepage
+    quality:
+      grade: A
+      mathematical_reliability: 5
+      research_relevance: 4
+      pedagogical_value: 5
+      maintainability: 4
+      reviewer_note: Strong source for dispersive PDE background.
+
+  - id: olver-trogdon-nsd-numerical-rhp
+    title: Nonlinear steepest descent and the numerical solution of Riemann-Hilbert problems
+    author_or_maintainer: Sheehan Olver and Thomas Trogdon
+    institution:
+    resource_type: survey
+    url: https://arxiv.org/abs/1205.5604
+    backup_url:
+    status: curated
+    link_status: alive
+    last_checked: "2026-07-08"
+    topics:
+      - RHP
+      - nonlinear_steepest_descent
+      - software
+    equations:
+      - mKdV
+      - Painleve_II
+    methods:
+      - Riemann_Hilbert_problem
+      - nonlinear_steepest_descent
+      - numerical_RHP
+      - asymptotic_accuracy
+    prerequisites:
+      - complex_analysis
+      - numerical_analysis
+      - asymptotic_analysis
+    level: specialized
+    recommended_use: Use to connect Deift-Zhou deformation ideas with numerical solution of Riemann-Hilbert problems.
+    strengths:
+      - Explicitly links nonlinear steepest descent with numerical RHP methods.
+      - Good bridge between theory, computation, and asymptotic regimes.
+    limitations:
+      - Specialized; not a first introduction to IST.
+    related_resources: []
+    quality:
+      grade: A
+      mathematical_reliability: 5
+      research_relevance: 5
+      pedagogical_value: 4
+      maintainability: 5
+      reviewer_note: Valuable for numerical RHP and asymptotics workflows.
+
+  - id: deift-rhp-lectures
+    title: Riemann-Hilbert Problems
+    author_or_maintainer: Percy Deift
+    institution:
+    resource_type: lecture_notes
+    url: https://arxiv.org/abs/1903.08304
+    backup_url:
+    status: curated
+    link_status: alive
+    last_checked: "2026-07-08"
+    topics:
+      - RHP
+      - nonlinear_steepest_descent
+      - integrable_systems
+      - random_matrix_theory
+    equations:
+      - Painleve
+    methods:
+      - Riemann_Hilbert_problem
+      - nonlinear_steepest_descent
+      - asymptotic_analysis
+      - orthogonal_polynomials
+    prerequisites:
+      - complex_analysis
+      - asymptotic_analysis
+      - operator_theory
+    level: paper_preparation
+    recommended_use: Use as a compact entry point to nonlinear steepest descent for RHPs and its applications.
+    strengths:
+      - Authored by one of the central figures in modern RHP asymptotics.
+      - Connects RHPs to integrable systems, special functions, and random matrices.
+    limitations:
+      - Lecture style; should be paired with more detailed problem-specific notes.
+    related_resources:
+      - olver-trogdon-nsd-numerical-rhp
+    quality:
+      grade: S
+      mathematical_reliability: 5
+      research_relevance: 5
+      pedagogical_value: 4
+      maintainability: 5
+      reviewer_note: Core RHP/nonlinear steepest descent entry.
