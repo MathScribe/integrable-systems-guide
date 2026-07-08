@@ -1,5 +1,5 @@
 site_name: Integrable Systems Research Guide
-site_description: Annotated research guide for integrable systems, IST, Riemann-Hilbert problems, nonlinear steepest descent, DNLS/NLS, nonlinear dispersive PDE, and soliton asymptotics.
+site_description: Annotated research guide for integrable systems, IST, RHP methods, nonlinear steepest descent, nonlinear waves, and finite-gap methods.
 site_url: https://mathscribe.github.io/integrable-systems-guide/
 repo_url: https://github.com/MathScribe/integrable-systems-guide
 repo_name: MathScribe/integrable-systems-guide
@@ -8,7 +8,6 @@ theme:
   name: material
   features:
     - navigation.sections
-    - navigation.expand
     - navigation.top
     - search.suggest
     - search.highlight
@@ -16,37 +15,12 @@ theme:
 
 nav:
   - Home: index.md
-  - How to use this guide: getting-started.md
-  - Learning paths:
-      - Overview: learning-paths/index.md
-      - PDE to IST/RHP: learning-paths/pde-to-ist-rhp.md
-      - DNLS and NLS: learning-paths/dnls-nls.md
-      - Finite-gap methods: learning-paths/finite-gap.md
-  - Topics:
-      - Inverse scattering transform: topics/ist.md
-      - Riemann-Hilbert problems: topics/rhp.md
-      - Nonlinear steepest descent: topics/nonlinear-steepest-descent.md
-      - DNLS and NLS: topics/dnls-nls.md
-      - Nonlinear dispersive PDE: topics/dispersive-pde.md
-      - Soliton stability and resolution: topics/soliton-stability.md
-      - Finite-gap and algebraic-geometric methods: topics/finite-gap.md
-  - Resources:
-      - Direct resource links: resources/direct-links.md
-      - Core resources v0.1: resources/core-v0-1.md
-      - Zotero seed map: resources/zotero-seed-map.md
-      - People and research groups: resources/people.md
-      - Courses: resources/courses.md
-      - Workshops and seminars: resources/workshops.md
-      - Notes and books: resources/notes-books.md
-      - Software: resources/software.md
-  - Group knowledge base:
-      - Overview: group/index.md
-      - Member notes: group/member-notes.md
-      - Public work: group/public-work.md
-      - Reading projects: group/reading-projects.md
-  - Maintenance:
-      - Curation policy: maintenance/curation-policy.md
-      - Review log: maintenance/review-log.md
+  - Start here: start-here.md
+  - Research routes: routes.md
+  - Core topics: topics.md
+  - Resources: resources.md
+  - Group work: group-work.md
+  - About: about.md
 
 markdown_extensions:
   - admonition
