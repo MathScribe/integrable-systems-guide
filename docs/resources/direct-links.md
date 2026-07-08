@@ -1,6 +1,6 @@
 # Direct resource links
 
-This page is the quick-jump layer of the guide. It deliberately keeps links visible and clickable, while the structured metadata remains in `data/resources.yml` and `data/zotero-priority-resources.yml`.
+This page is the quick-jump layer of the guide. It is currently kept as a legacy source pool; the main site navigation now points to the consolidated [Resources](../resources.md) page.
 
 Use the status column carefully. `Verified` means the page or document was checked during curation. `Needs check` means the link came from Zotero or a prior reading list and should be manually reviewed before being promoted as a core resource.
 
@@ -68,8 +68,6 @@ Use the status column carefully. `Verified` means the page or document was check
 
 ## Group and personal notes
 
-| Resource | Direct links | Status | Use |
-|---|---|---|---|
-| Oliver's course notes | [Codeberg repository](https://codeberg.org/killlakill/courseNotes) | Public-note candidate | Course notes and seminar writeups; curate only public, stable, relevant pages. |
+- Course notes repository: [killlakill/courseNotes on Codeberg](https://codeberg.org/killlakill/courseNotes).
 
 Do not add private notes, unpublished internal files, or student work without explicit permission from the author.
