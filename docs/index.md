@@ -1,25 +1,12 @@
 # Integrable Systems Research Guide
 
-This site is a compact research-training guide for integrable systems, inverse scattering, Riemann-Hilbert problem methods, nonlinear steepest descent, nonlinear waves, and finite-gap methods.
+A compact research guide for integrable systems, inverse scattering, Riemann-Hilbert methods, nonlinear steepest descent, nonlinear waves, and finite-gap methods.
 
-The guide is not a general link collection. Its purpose is to help a reader decide what to read next, why a resource matters, what background it assumes, and where it fits in a research problem.
+这是一个面向研究训练和课题组资料整理的小型入口页，不是大型百科或完整自学路线图。
 
-## What this guide is for
+## Main pages / 主要入口
 
-Use this guide when you want to:
-
-- find an entry point into IST, RHP methods, nonlinear steepest descent, or finite-gap methods;
-- locate a small set of reliable lecture notes, books, course pages, and workshop pages;
-- distinguish core training material from candidate links that still need review;
-- connect external references with public group reading projects and notes.
-
-## Current scope
-
-The first version is intentionally small. It focuses on a compact topic map and a curated resource table rather than a long taxonomy of pages. Older scaffold pages are kept in the repository as a source pool, but the main site navigation now points only to the pages that are useful at the current stage.
-
-## Start reading
-
-- [Start here](start-here.md): how to use the guide and how resources are graded.
-- [Core topics](topics.md): a compact map of the mathematical areas covered here.
-- [Resources](resources.md): the main curated resource list.
-- [Group work](group-work.md): public notes, reading projects, and local outputs.
+- [Resources / 资源](resources.md): selected courses, lecture notes, homepages, and search links.
+- [Group work / 课题组相关](group-work.md): local research context, public notes, and group-facing links.
+- [Core topics / 核心主题](topics.md): current scope of the guide.
+- [About / 关于](about.md): curation policy, design references, and license notes.
