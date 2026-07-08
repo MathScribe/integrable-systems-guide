@@ -1,0 +1,18 @@
+# Public note repositories maintained by group members.
+# Add only material that is public and intentionally shareable.
+
+member_notes:
+  - id: oliver-course-notes
+    public_name: Oliver
+    page_or_repo: https://codeberg.org/killlakill/courseNotes
+    status: public_note_candidate
+    permission: owner_requested_initial_link
+    topics:
+      - integrable_systems
+      - nonlinear_waves
+      - algebro_geometric_solutions
+      - Riemann_surfaces
+      - reproducibility
+    representative_notes: []
+    last_checked:
+    notes: "Repository-level link added first; later replace or supplement with links to stable individual notes."
