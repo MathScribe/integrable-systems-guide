@@ -1,21 +1,19 @@
-# Group work
+# Group work / 课题组相关
 
-This page is for public material produced by the group or by individual members, provided the author wants it linked here.
+Public links related to the local research group and shared notes. Keep this page as an entry point, not as a publication list.
 
-The main guide should remain a curated map of external research-training resources. Group material is kept separate so that readers can distinguish established external references from local notes, seminar writeups, reading logs, code, and project pages.
+## Liming Ling / 凌黎明
 
-## Public notes
+- Homepage / 主页: [华南理工大学数学学院个人主页](https://www2.scut.edu.cn/math/2017/1228/c14582a318350/page.htm)
+- MathSciNet: [Liming Ling publications search](https://mathscinet.ams.org/mathscinet/publications-search?query=Liming%20Ling&page=1&size=20&sort=newest&facets)
+- arXiv: [author search](https://arxiv.org/search/?query=Liming+Ling&searchtype=author)
+- Google Scholar: [search](https://scholar.google.com/scholar?q=%22Liming%20Ling%22)
+- Semantic Scholar: [search](https://www.semanticscholar.org/search?q=Liming%20Ling&sort=relevance)
+
+## Public notes / 公开笔记
 
 - Course notes repository: [killlakill/courseNotes on Codeberg](https://codeberg.org/killlakill/courseNotes).
 
-## Reading projects
+## Reading projects / 读书项目
 
-Use this section for public reading projects with a clear topic, reading order, and status. A reading project should say what is being read, why it matters, who maintains the page, and whether the notes are complete or provisional.
-
-## Reproducible computations
-
-Use this section for public notebooks, scripts, or repositories that reproduce examples from papers, lectures, or seminar talks. Prefer links with enough context for another reader to run or inspect the computation.
-
-## Seminar outputs
-
-Use this section for public seminar writeups, slides, and short expository notes. Do not link private drafts, unpublished student work, internal meeting notes, or material whose author has not agreed to public listing.
+- To be added.
