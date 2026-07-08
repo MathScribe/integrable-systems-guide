@@ -1,0 +1,69 @@
+# Unverified seed candidates for the first curation pass.
+# These entries are not curated records yet.
+
+seed_candidates:
+  - id: peter-perry-ist
+    name: Peter Perry IST lecture materials
+    type: researcher_or_course_material
+    priority: S
+    verification_status: unverified
+
+  - id: peter-miller-math557
+    name: Peter D. Miller Math 557
+    type: course_page
+    priority: S
+    verification_status: unverified
+
+  - id: peter-miller-math651
+    name: Peter D. Miller Math 651
+    type: course_page
+    priority: S
+    verification_status: unverified
+
+  - id: tom-trogdon-rhp
+    name: Tom Trogdon RHP and numerical IST materials
+    type: researcher_or_course_material
+    priority: S
+    verification_status: unverified
+
+  - id: monica-visan
+    name: Monica Visan nonlinear dispersive PDE resources
+    type: researcher_homepage
+    priority: A
+    verification_status: unverified
+
+  - id: dmitry-pelinovsky
+    name: Dmitry Pelinovsky nonlinear waves and soliton stability materials
+    type: researcher_homepage
+    priority: A
+    verification_status: unverified
+
+  - id: xian-liao-kit
+    name: Xian Liao and KIT course pages
+    type: researcher_or_institutional_course_material
+    priority: A
+    verification_status: unverified
+
+  - id: terence-tao
+    name: Terence Tao notes relevant to nonlinear dispersive PDE
+    type: researcher_homepage
+    priority: A
+    verification_status: unverified
+
+  - id: ams-open-math-notes
+    name: AMS Open Math Notes
+    type: notes_index
+    priority: B
+    verification_status: unverified
+
+  - id: michael-taylor-notes
+    name: Michael Taylor analysis and PDE notes
+    type: lecture_notes_collection
+    priority: A
+    verification_status: unverified
+
+  - id: fields-institute-workshops
+    name: Fields Institute workshops on nonlinear dispersive PDE and inverse scattering
+    type: workshop_index
+    priority: A
+    verification_status: unverified
