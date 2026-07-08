@@ -18,7 +18,6 @@ Selected external entry points for integrable systems, inverse scattering, Riema
 ### Percy Deift — RHP and nonlinear steepest descent
 
 - [Riemann-Hilbert Problems](https://arxiv.org/abs/1903.08304)
-- [Deift-Zhou steepest descent method for oscillatory RHPs](https://arxiv.org/abs/math/9201261)
 
 ### PDE and analysis background
 
