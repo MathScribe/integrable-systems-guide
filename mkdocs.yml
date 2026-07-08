@@ -26,6 +26,7 @@ nav:
       - Soliton stability and resolution: topics/soliton-stability.md
       - Finite-gap and algebraic-geometric methods: topics/finite-gap.md
   - Resources:
+      - Core resources v0.1: resources/core-v0-1.md
       - People and research groups: resources/people.md
       - Courses: resources/courses.md
       - Workshops and seminars: resources/workshops.md
