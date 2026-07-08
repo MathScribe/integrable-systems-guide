@@ -1,33 +1,29 @@
-# About
+# About / 关于
 
-This project is a research-oriented guide for integrable systems and related methods. It is deliberately narrower than a general mathematics learning guide.
+This project is a small research-oriented guide for integrable systems and related methods.
 
-## Curation policy
+这是一个小型研究向资料入口，主要服务于可积系统、反散射、黎曼-希尔伯特方法、非线性波和相关课题组资料整理。
 
-The central unit is an annotated resource record, not a bare link. A mature entry should explain:
+## Curation policy / 策展原则
 
-- what the resource is;
-- what background it assumes;
-- which mathematical methods or equations it covers;
-- where it fits in a research route;
-- whether the link and content have been checked.
+Keep the guide short. Prefer stable course pages, lecture notes, researcher homepages, search links, and public group materials over long unreviewed lists.
 
-The first version should remain small. Additions should improve the guide's usefulness for research training rather than merely expand coverage.
+A useful entry should make clear why the link is included. If the reason is not yet clear, keep it in a candidate section or leave it out.
 
-## Design inspiration
+## Design references / 设计参考
 
-The site structure is inspired by public self-learning and course-guide projects such as [CS 自学指南](https://csdiy.wiki/), especially the idea of organizing resources by use case and learning route rather than by a flat list of links.
+The site structure is inspired by public learning-guide and knowledge-map projects, especially their clean navigation and use-case-oriented layout.
 
-This project differs in scope: it is research-oriented, group-maintained, and focused on integrable systems, inverse scattering, Riemann-Hilbert methods, nonlinear steepest descent, nonlinear waves, and finite-gap methods.
+- [CS 自学指南](https://csdiy.wiki/)
+- [清华大学数学课程学习指南 / MathLoveYou](https://mathloveyou.github.io/)
+- [目录 - 小时百科](https://wuli.wiki/online/index.html)
 
-## Comments and discussion
+This project differs in scope: it is narrower, research-oriented, and maintained around integrable systems and local group needs.
 
-Page-level comments can be added later with Giscus once GitHub Discussions is enabled for the repository and the Giscus repository/category identifiers are available. Until then, substantive corrections should go through issues or pull requests.
+## Comments / 评论
 
-## Review log
+Comments may be added later via Giscus after GitHub Discussions is enabled.
 
-Use the repository history and issues for now. A separate review log page can be restored later if the project develops a regular link-checking or literature-review cycle.
-
-## License
+## License / 许可证
 
 License terms are not finalized yet. Until a license is added, do not assume permission to reuse original annotations beyond normal GitHub viewing and contribution workflows. External resources remain governed by their original authors' terms.
