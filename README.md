@@ -16,16 +16,17 @@ This repository is not intended to be a generic awesome list. The goal is to mai
 
 ```text
 docs/index.md          # Homepage
-docs/resources.md      # Courses, lecture notes, researcher homepages, search links
+docs/resources.md      # Learning resources, researcher/resource pages, search links
 docs/group-work.md     # Local group-related links and public notes
 docs/topics.md         # Compact topic scope
 docs/about.md          # Curation policy, design references, comments, license notes
 
-docs/*/                # Older scaffold pages kept as source material
 data/                  # Structured YAML metadata and seed candidates
 maintenance/           # Link checks, review logs, dead links, and curation notes
 .github/workflows/     # Optional GitHub Pages deployment workflow
 ```
+
+Only files under `docs/` are published by MkDocs. Legacy scaffold pages were removed from `docs/` so that they do not appear in the website search index.
 
 ## Local preview
 
