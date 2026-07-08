@@ -18,6 +18,12 @@ This is the main resource page. Keep it small, annotated, and reviewable. Resour
 | Todd Kapitula homepage | [Homepage](https://sites.calvin.edu/tmk5/index.html) | Verified | Spectral and dynamical stability references for nonlinear waves. |
 | Mathew A. Johnson homepage | [Homepage](https://matjohn.ku.edu/) | Verified | Existence, stability, and dynamics of nonlinear waves. |
 
+## People and local research pages
+
+| Resource | Link | Status | Main use |
+|---|---|---|---|
+| 凌黎明 | [华南理工大学个人主页](https://www2.scut.edu.cn/math/2017/1228/c14582a318350/page.htm) | To check | Local research-group context and related work. |
+
 ## By mathematical role
 
 | Role | What belongs here |
