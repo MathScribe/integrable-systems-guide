@@ -1,0 +1,50 @@
+site_name: Integrable Systems Research Guide
+site_description: Annotated research guide for integrable systems, IST, Riemann-Hilbert problems, nonlinear steepest descent, DNLS/NLS, nonlinear dispersive PDE, and soliton asymptotics.
+site_url: https://mathscribe.github.io/integrable-systems-guide/
+repo_url: https://github.com/MathScribe/integrable-systems-guide
+repo_name: MathScribe/integrable-systems-guide
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - How to use this guide: getting-started.md
+  - Topics:
+      - Inverse scattering transform: topics/ist.md
+      - Riemann-Hilbert problems: topics/rhp.md
+      - Nonlinear steepest descent: topics/nonlinear-steepest-descent.md
+      - DNLS and NLS: topics/dnls-nls.md
+      - Nonlinear dispersive PDE: topics/dispersive-pde.md
+      - Soliton stability and resolution: topics/soliton-stability.md
+      - Finite-gap and algebraic-geometric methods: topics/finite-gap.md
+  - Resources:
+      - People and research groups: resources/people.md
+      - Courses: resources/courses.md
+      - Workshops and seminars: resources/workshops.md
+      - Notes and books: resources/notes-books.md
+      - Software: resources/software.md
+  - Maintenance:
+      - Curation policy: maintenance/curation-policy.md
+      - Review log: maintenance/review-log.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
