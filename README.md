@@ -17,7 +17,6 @@ This repository is not intended to be a generic awesome list. The goal is to mai
 ```text
 docs/index.md          # Homepage
 docs/start-here.md     # Usage rules, resource levels, quality grades
-docs/routes.md         # Short research-training routes
 docs/topics.md         # Compact topic map
 docs/resources.md      # Main consolidated resource table
 docs/group-work.md     # Public group/member material
