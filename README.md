@@ -1,26 +1,25 @@
 # Integrable Systems Research Guide
 
-A compact, annotated research-training guide for integrable systems, inverse scattering transform, Riemann-Hilbert problems, nonlinear steepest descent, nonlinear waves, finite-gap methods, and related spectral/geometric techniques.
+A compact research guide for integrable systems, inverse scattering transform, Riemann-Hilbert problems, nonlinear steepest descent, nonlinear waves, finite-gap methods, and related spectral/geometric techniques.
 
-This repository is not intended to be a generic awesome list. The goal is to maintain a reviewable research guide: important resources should have a clear mathematical role, learning use, prerequisites, quality assessment, and maintenance status.
+This repository is not intended to be a generic awesome list. The goal is to maintain a small research guide with stable links, local group context, and concise annotations.
 
 ## Project principles
 
-1. Keep the public navigation small until there is enough reviewed material to justify more pages.
-2. Prefer researcher homepages, course pages, lecture notes, seminar pages, summer school pages, workshop pages, and open book drafts over disconnected PDF links.
-3. Record why a resource is useful, not merely where it lives.
-4. Track link health, archive status, version/date information, and known limitations.
-5. Separate external curated resources from public group/member material.
+1. Keep the public navigation short.
+2. Prefer stable course pages, lecture notes, researcher homepages, search links, and public group materials over long unreviewed lists.
+3. Record why a resource is included.
+4. Separate external resources from local group-related material.
+5. Expand only when there is enough reviewed material to justify a new page.
 
 ## Current site structure
 
 ```text
 docs/index.md          # Homepage
-docs/start-here.md     # Usage rules, resource levels, quality grades
-docs/topics.md         # Compact topic map
-docs/resources.md      # Main consolidated resource table
-docs/group-work.md     # Public group/member material
-docs/about.md          # Curation policy, inspiration, comments, license notes
+docs/resources.md      # Courses, lecture notes, researcher homepages, search links
+docs/group-work.md     # Local group-related links and public notes
+docs/topics.md         # Compact topic scope
+docs/about.md          # Curation policy, design references, comments, license notes
 
 docs/*/                # Older scaffold pages kept as source material
 data/                  # Structured YAML metadata and seed candidates
@@ -41,7 +40,7 @@ Then open the local URL printed by MkDocs.
 
 ## Curation status
 
-This repository is in an early `v0.1` stage. The first substantive milestone is a small set of verified core resources with short annotations, plus a clean site structure that can later support group reading projects and richer metadata.
+This repository is in an early `v0.1` stage. The current goal is a clean, useful entry point rather than broad coverage.
 
 ## License
 
