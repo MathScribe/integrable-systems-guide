@@ -1,0 +1,81 @@
+# Schema for curated resource records.
+# This file documents the intended fields. The canonical records live in data/resources.yml.
+
+required_fields:
+  - id
+  - title
+  - resource_type
+  - status
+  - topics
+  - recommended_use
+  - quality
+
+resource_types:
+  - researcher_homepage
+  - research_group_page
+  - course_page
+  - lecture_notes
+  - slides
+  - book_draft
+  - survey
+  - textbook
+  - workshop_page
+  - seminar_page
+  - software
+  - bibliography
+  - reading_list
+
+levels:
+  - introductory
+  - graduate_course
+  - paper_preparation
+  - research_reference
+  - specialized
+
+statuses:
+  - unverified
+  - candidate
+  - curated
+  - needs_update
+  - archived_only
+  - rejected
+
+link_statuses:
+  - unchecked
+  - alive
+  - redirected
+  - moved
+  - partial
+  - dead
+  - archived_only
+  - restricted
+
+quality_grades:
+  - S
+  - A
+  - B
+  - C
+  - D
+  - reject
+
+fields:
+  id: Stable short identifier, for example perry-ist-lectures.
+  title: Official or descriptive title.
+  author_or_maintainer: Person, group, institution, or organizer.
+  institution: University, institute, or organization, if applicable.
+  resource_type: One of the resource_types above.
+  url: Canonical URL after verification.
+  backup_url: Archive or mirror URL, if available.
+  status: Curation status.
+  link_status: Current link status.
+  last_checked: ISO date of last manual check.
+  topics: Broad topic tags, for example IST, RHP, nonlinear_steepest_descent.
+  equations: Equation tags, for example NLS, DNLS, KdV, mKdV, AKNS.
+  methods: Method tags, for example Lax_pair, Marchenko, Beals_Coifman, dbar.
+  prerequisites: Mathematical prerequisites.
+  level: Reader level.
+  recommended_use: How the resource should be used in research training.
+  strengths: What is especially valuable.
+  limitations: Known limitations or risks.
+  related_resources: IDs of related resources.
+  quality: Structured quality assessment.
