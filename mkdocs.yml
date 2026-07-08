@@ -15,11 +15,10 @@ theme:
 
 nav:
   - Home: index.md
-  - Start here: start-here.md
-  - Core topics: topics.md
-  - Resources: resources.md
-  - Group work: group-work.md
-  - About: about.md
+  - Resources / 资源: resources.md
+  - Group work / 课题组相关: group-work.md
+  - Core topics / 核心主题: topics.md
+  - About / 关于: about.md
 
 markdown_extensions:
   - admonition
