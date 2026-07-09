@@ -11,19 +11,23 @@
 
 ### 2026-07-09
 
-当前页面已接入“最新每日简报”入口。自动抓取与追加流程接入前，本节作为首页展示模板；每日更新时，这里应显示当天最新条目的简短版本，并链接到固定的 [latest 页面](radar/latest.md) 与本周完整记录。
+今日 arXiv `nlin.SI` 新条目中，与 Ling Liming 课题组主线直接相关的内容不算多；因此本期同时纳入最近几天的强相关 arXiv 论文，以及一篇 2026 年已公开发表的代表作，作为“近期值得回看”的条目。
 
-#### 精确解与特殊背景
+#### 重点条目
 
-- 暂无新条目。
+- **重点关注**：[Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation](https://arxiv.org/abs/2607.06409)  
+  Fokas--Lenells 方程、椭圆背景局域波、Weierstrass 椭圆函数、Darboux--Bäcklund 变换和渐近分析，和课题组 DNLS / Fokas--Lenells / 椭圆背景方向高度贴近。
 
-#### 稳定性与动力学机制
+- **已发表代表作 / 必读**：[Orbital stability of breathers for coupled nonlinear Schrödinger equations](https://dmpeli.math.mcmaster.ca/PaperBank/BreathersCoupledNLS.pdf)  
+  Ling--Pelinovsky--Su，Advances in Mathematics 495 (2026), 110961。连接 coupled NLS、breather、vector soliton、spectral/orbital stability 与 squared eigenfunctions。
 
-- 暂无新条目。
+- **背景参考**：[Integrable full discretization of the multi-component short pulse equation](https://arxiv.org/abs/2607.04756)  
+  多分量 short pulse 方程的可积离散化，适合作为多分量可积模型和离散化方向的外围条目。
 
-#### IST / RHP 与渐近分析
+- **观察**：[On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic](https://arxiv.org/abs/2607.06980)  
+  偏 Lax pair / Painlevé / 代数可积结构，和非线性波主线不直接重合，但值得低优先级观察。
 
-- 暂无新条目。
+[查看完整最新简报](radar/latest.md)
 
 ## 其他入口
 
