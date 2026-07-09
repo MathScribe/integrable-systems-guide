@@ -22,6 +22,7 @@ import html
 import json
 import re
 import sys
+import time
 import unicodedata
 import urllib.parse
 import urllib.request
@@ -81,7 +82,7 @@ ARXIV_QUERIES = [
     'cat:nlin.SI AND all:"elliptic background"',
     'cat:nlin.SI AND all:"elliptic localized"',
     'cat:nlin.SI AND all:"soliton gas"',
-    'cat:nlin.SI AND all:"complex mKdV"',
+    'cat:nlin.SI AND all:"complex mKdv"',
     'cat:nlin.SI AND all:"modified Korteweg"',
     'cat:nlin.SI AND all:"complex short pulse"',
     'cat:nlin.SI AND all:"short pulse equation"',
@@ -409,10 +410,12 @@ def published_from_crossref(item: dict) -> str | None:
     return None
 
 
-def fetch_arxiv(max_results_per_query: int = 8) -> list[Paper]:
+def fetch_arxiv(max_results_per_query: int = 8, delay_seconds: float = 3.1) -> list[Paper]:
     ns = {"atom": "http://www.w3.org/2005/Atom"}
     papers: list[Paper] = []
-    for query in ARXIV_QUERIES:
+    for query_index, query in enumerate(ARXIV_QUERIES):
+        if query_index > 0 and delay_seconds > 0:
+            time.sleep(delay_seconds)
         params = urllib.parse.urlencode({
             "search_query": query,
             "start": 0,
@@ -484,7 +487,12 @@ def fetch_crossref(from_date: str, rows: int = 6) -> list[Paper]:
 def fetch_openalex(from_date: str, rows: int = 6) -> list[Paper]:
     papers: list[Paper] = []
     for query in OPENALEX_QUERIES:
-        params = urllib.parse.urlencode({"search": query, "from_publication_date": from_date, "per-page": rows, "sort": "publication_date:desc"})
+        params = urllib.parse.urlencode({
+            "search": query,
+            "filter": f"from_publication_date:{from_date}",
+            "per-page": rows,
+            "sort": "publication_date:desc",
+        })
         try:
             payload = json.loads(fetch_text(f"https://api.openalex.org/works?{params}"))
         except Exception as exc:
@@ -523,13 +531,18 @@ def fetch_openalex(from_date: str, rows: int = 6) -> list[Paper]:
     return papers
 
 
+def prepare_paper(paper: Paper) -> Paper:
+    paper.title_fingerprint = title_fingerprint(paper.title)
+    paper.doi = real_doi(paper.doi)
+    paper.arxiv_id = normalize_arxiv_id(paper.arxiv_id)
+    paper.key = canonical_key(paper)
+    return paper
+
+
 def merge_papers(papers: Iterable[Paper]) -> list[Paper]:
     merged: list[Paper] = []
     for paper in papers:
-        paper.title_fingerprint = title_fingerprint(paper.title)
-        paper.doi = real_doi(paper.doi)
-        paper.arxiv_id = normalize_arxiv_id(paper.arxiv_id)
-        paper.key = canonical_key(paper)
+        prepare_paper(paper)
         match: Paper | None = None
         for old in merged:
             same_arxiv = paper.arxiv_id and old.arxiv_id == paper.arxiv_id
@@ -589,6 +602,81 @@ def is_known_paper(paper: Paper, idx: RegistryIndex) -> bool:
         or (paper.doi is not None and paper.doi in idx.dois)
         or (paper.title_fingerprint in idx.title_fingerprints and len(paper.title_fingerprint) >= 24)
     )
+
+
+def split_registry_blocks(text: str) -> tuple[str, list[str]]:
+    starts = [m.start() for m in re.finditer(r'(?m)^- id:', text)]
+    if not starts:
+        return text, []
+    header = text[:starts[0]]
+    blocks = []
+    for index, start in enumerate(starts):
+        end = starts[index + 1] if index + 1 < len(starts) else len(text)
+        blocks.append(text[start:end])
+    return header, blocks
+
+
+def registry_block_info(block: str) -> dict[str, str | None]:
+    def one(pattern: str) -> str | None:
+        m = re.search(pattern, block, flags=re.M)
+        return m.group(1).strip() if m else None
+
+    title = one(r'^\s+title:\s+"([^"]+)"') or ""
+    arxiv = one(r'^\s+arxiv_id:\s+"?([^"\n]+)"?')
+    doi = one(r'^\s+doi:\s+"?([^"\n]+)"?')
+    fp = one(r'^\s+title_fingerprint:\s+"([^"]+)"') or title_fingerprint(title)
+    return {
+        "title": title,
+        "arxiv_id": None if arxiv in {None, "null"} else normalize_arxiv_id(arxiv),
+        "doi": None if doi in {None, "null"} else normalize_doi(doi),
+        "real_doi": None if doi in {None, "null"} else real_doi(doi),
+        "title_fingerprint": fp,
+    }
+
+
+def paper_matches_registry_block(paper: Paper, info: dict[str, str | None]) -> bool:
+    same_arxiv = paper.arxiv_id and info.get("arxiv_id") == paper.arxiv_id
+    same_doi = paper.doi and info.get("real_doi") == paper.doi
+    same_title = paper.title_fingerprint and info.get("title_fingerprint") == paper.title_fingerprint and len(paper.title_fingerprint) >= 24
+    return bool(same_arxiv or same_doi or same_title)
+
+
+def update_known_paper_metadata(papers: list[Paper], date: str) -> tuple[int, list[Paper]]:
+    if not PAPER_REGISTRY.exists():
+        return 0, []
+    text = PAPER_REGISTRY.read_text(encoding="utf-8")
+    header, blocks = split_registry_blocks(text)
+    if not blocks:
+        return 0, []
+    changed = 0
+    updated_papers: list[Paper] = []
+    new_blocks = []
+    for block in blocks:
+        info = registry_block_info(block)
+        replacement = block
+        for paper in papers:
+            prepare_paper(paper)
+            if not paper.doi or not paper_matches_registry_block(paper, info):
+                continue
+            if info.get("real_doi") == paper.doi:
+                continue
+            replacement = re.sub(r'(?m)^(\s+doi:\s+)(?:null|"[^"]*"|[^\n]+)$', r'\1' + q(paper.doi), replacement, count=1)
+            if 'last_metadata_update:' in replacement:
+                replacement = re.sub(r'(?m)^(\s+last_metadata_update:\s+)(?:"[^"]*"|[^\n]+)$', r'\1' + q(date), replacement, count=1)
+            else:
+                replacement = re.sub(r'(?m)^(\s+review_status:\s+"[^"]+")$', r'\1\n  last_metadata_update: ' + q(date), replacement, count=1)
+            if paper.source_type in {"journal", "mixed", "openalex"}:
+                replacement = re.sub(r'(?m)^(\s+type:\s+)"arxiv"$', r'\1"mixed"', replacement, count=1)
+            changed += 1
+            paper.status = "metadata-updated"
+            paper.level = "元数据更新"
+            paper.reason = f"已发现正式 DOI 或跨源元数据：{paper.doi}"
+            updated_papers.append(paper)
+            break
+        new_blocks.append(replacement)
+    if changed:
+        PAPER_REGISTRY.write_text(header + "".join(new_blocks), encoding="utf-8")
+    return changed, updated_papers
 
 
 def _section_items(block: str, section: str) -> list[str]:
@@ -823,13 +911,31 @@ def replace_date_block(weekly_text: str, date: str, block: str) -> str:
     return weekly_text.rstrip() + replacement
 
 
-def recent_date_blocks(weekly_text: str, limit: int = 3) -> list[str]:
+def extract_date_blocks(text: str) -> list[tuple[dt.date, str]]:
     pattern = re.compile(r"(?:^|\n---\n\n)(## (\d{4}-\d{2}-\d{2})\n.*?)(?=\n---\n\n## |\Z)", re.S)
     blocks: list[tuple[dt.date, str]] = []
-    for block, date_s in pattern.findall(weekly_text):
+    for block, date_s in pattern.findall(text):
         try:
             blocks.append((dt.date.fromisoformat(date_s), block.rstrip()))
         except ValueError:
+            continue
+    return blocks
+
+
+def recent_date_blocks(weekly_text: str, limit: int = 3) -> list[str]:
+    blocks = extract_date_blocks(weekly_text)
+    blocks.sort(key=lambda item: item[0], reverse=True)
+    return [block for _, block in blocks[:limit]]
+
+
+def recent_date_blocks_from_radar(limit: int = 3) -> list[str]:
+    blocks: list[tuple[dt.date, str]] = []
+    for path in RADAR_DIR.glob("*.md"):
+        if not re.fullmatch(r"\d{4}-W\d{2}\.md", path.name):
+            continue
+        try:
+            blocks.extend(extract_date_blocks(path.read_text(encoding="utf-8")))
+        except OSError:
             continue
     blocks.sort(key=lambda item: item[0], reverse=True)
     return [block for _, block in blocks[:limit]]
@@ -930,6 +1036,7 @@ def write_summary(summary: dict, recommended: list[Paper]) -> None:
         f"- recommended for public brief: {summary['recommended']}",
         f"- recorded as candidate only: {summary['candidate']}",
         f"- recorded as rejected/suppressed: {summary['rejected']}",
+        f"- metadata updates for known papers: {summary['metadata_updates']}",
         f"- skipped because already known in papers.yml: {summary['skipped_known']}",
         f"- skipped because already present in candidates.yml: {summary['skipped_seen']}",
         f"- public docs changed: {str(summary['public_docs_changed']).lower()}",
@@ -954,10 +1061,7 @@ def process_candidates(papers: list[Paper], date: str, week: str, limit: int, ma
     state_changed = False
     recommended: list[Paper] = []
     for p in papers:
-        p.title_fingerprint = title_fingerprint(p.title)
-        p.doi = real_doi(p.doi)
-        p.arxiv_id = normalize_arxiv_id(p.arxiv_id)
-        p.key = canonical_key(p)
+        prepare_paper(p)
         score_and_classify(p)
     papers.sort(key=lambda p: (p.score, p.published or ""), reverse=True)
     considered = 0
@@ -993,6 +1097,18 @@ def process_candidates(papers: list[Paper], date: str, week: str, limit: int, ma
     return recommended, records, counts, state_changed
 
 
+def apply_metadata_records(records: dict[str, CandidateRecord], papers: list[Paper], date: str, week: str) -> bool:
+    changed = False
+    for paper in papers:
+        prepare_paper(paper)
+        record = candidate_record_from_paper(paper, date, week, status="metadata-updated")
+        old = records.get(record.key)
+        if old is None or old.status != "metadata-updated" or old.doi != record.doi:
+            records[record.key] = record
+            changed = True
+    return changed
+
+
 def ensure_week_file(week_path: Path, week: str) -> None:
     if week_path.exists():
         return
@@ -1015,7 +1131,7 @@ def update_public_docs(date: str, week: str, recommended: list[Paper]) -> bool:
     updated_weekly_text = replace_date_block(week_path.read_text(encoding="utf-8"), date, daily_block)
     week_path.write_text(updated_weekly_text, encoding="utf-8")
     LATEST_PAGE.write_text(render_latest(week, daily_block), encoding="utf-8")
-    DOCS_INDEX.write_text(render_home(week, recent_date_blocks(updated_weekly_text, limit=3)), encoding="utf-8")
+    DOCS_INDEX.write_text(render_home(week, recent_date_blocks_from_radar(limit=3)), encoding="utf-8")
     registry_text = PAPER_REGISTRY.read_text(encoding="utf-8") if PAPER_REGISTRY.exists() else ""
     if registry_text.strip() == "[]":
         registry_text = ""
@@ -1045,6 +1161,7 @@ def main() -> None:
     week = week_id(date_obj)
     from_date = (date_obj - dt.timedelta(days=args.days)).isoformat()
     candidates = fetch_all_sources(from_date, include_openalex=not args.no_openalex)
+    metadata_updates, metadata_papers = update_known_paper_metadata(candidates, args.date)
     recommended, records, counts, state_changed = process_candidates(
         candidates,
         date=args.date,
@@ -1052,6 +1169,9 @@ def main() -> None:
         limit=args.limit,
         max_state_records=args.max_state_records,
     )
+    counts["metadata-updated"] += metadata_updates
+    if metadata_papers:
+        state_changed = apply_metadata_records(records, metadata_papers, args.date, week) or state_changed
     if args.dry_run or not args.write:
         print(json.dumps(make_summary(args.date, week, counts, recommended, state_changed, False), ensure_ascii=False, indent=2))
         if recommended:
