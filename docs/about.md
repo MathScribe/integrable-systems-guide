@@ -26,4 +26,12 @@ Comments may be added later via Giscus after GitHub Discussions is enabled.
 
 ## License / 许可证
 
-License terms are not finalized yet. Until a license is added, do not assume permission to reuse original annotations beyond normal GitHub viewing and contribution workflows. External resources remain governed by their original authors' terms.
+Original site content and annotations are licensed under CC BY-SA 4.0. Code, scripts, configuration, and workflows are licensed under the MIT License.
+
+External resources linked from this guide remain under their original authors' or publishers' terms.
+
+## Analytics / 访问统计
+
+This site uses GoatCounter for lightweight, privacy-friendly aggregate traffic statistics. It is used only to understand which pages are useful.
+
+本站使用 GoatCounter 做轻量聚合访问统计，仅用于了解哪些页面更有用。
