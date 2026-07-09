@@ -15,10 +15,7 @@ theme:
 
 nav:
   - Daily Brief / 每日简报: index.md
-  - Research Radar / 研究简报:
-      - Latest / 最新: radar/latest.md
-      - Archive / 归档: radar/index.md
-      - 2026-W28: radar/2026-W28.md
+  - Archive / 归档: radar/index.md
   - Resources / 资源: resources.md
   - Group work / 课题组相关: group-work.md
   - Core topics / 核心主题: topics.md
