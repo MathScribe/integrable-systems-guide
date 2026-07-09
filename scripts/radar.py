@@ -5,8 +5,8 @@ The script fetches candidate papers from arXiv and Crossref, applies a
 Ling-group-oriented keyword rubric, checks `data/papers.yml` to avoid repeated
 "new paper" entries, and writes:
 
-- `docs/index.md`: homepage summary with authors and sources;
-- `docs/radar/latest.md`: fixed latest daily brief;
+- `docs/index.md`: homepage with the full latest daily brief;
+- `docs/radar/latest.md`: fixed latest daily brief mirror;
 - `docs/radar/YYYY-WXX.md`: weekly archive file.
 
 The output is a discovery draft, not mathematical verification.
@@ -285,7 +285,6 @@ def render_daily(date: str, papers: list[Paper]) -> str:
     lines = [f"## {date}", ""]
     if not papers:
         return "\n".join(lines + ["今日未筛到强相关新条目。", ""])
-    lines += ["本期由脚本根据 arXiv、Crossref 与关键词/分类规则生成候选条目；维护者或 AI 助手可在提交前继续压缩、改写或删除弱相关条目。", ""]
     for direction in DIRECTION_ORDER:
         group = [p for p in papers if primary_direction(p) == direction]
         if not group:
@@ -312,7 +311,7 @@ def replace_date_block(weekly_text: str, date: str, block: str) -> str:
 def render_latest(week: str, daily_block: str) -> str:
     return f"""# 最新每日简报
 
-[本周完整记录]({week}.md) · [简报归档](index.md) · [返回首页](../index.md)
+[返回首页](../index.md) · [本周归档]({week}.md) · [全部归档](index.md)
 
 !!! note "AI 生成说明"
     本页为固定的最新简报入口。每日更新时，自动化流程应覆盖本页内容，并同时把同一批条目追加到本周归档文件。简报主要依据题名、摘要、分类、关键词和公开元数据筛选；条目分级表示相关性和阅读优先级，不代表对论文正确性的审查。
@@ -321,38 +320,17 @@ def render_latest(week: str, daily_block: str) -> str:
 """
 
 
-def render_home(date: str, papers: list[Paper]) -> str:
-    selected = sorted(papers, key=lambda p: p.score, reverse=True)[:4]
-    cards = "\n\n".join(render_card(p, include_direction=True) for p in selected) if selected else "今日未筛到强相关新条目。"
+def render_home(week: str, daily_block: str) -> str:
     return f"""# 可积系统研究简报
 
 本页显示最新的 AI 辅助研究简报，面向 Ling Liming 课题组相关方向，重点关注可积系统中的精确解与特殊背景、稳定性与动力学机制、IST/RHP 与渐近分析。
 
-[查看完整最新简报](radar/latest.md) · [查看简报归档](radar/index.md)
+[本周归档](radar/{week}.md) · [全部归档](radar/index.md)
 
 !!! note "AI 生成说明"
     简报主要依据题名、摘要、arXiv 分类、关键词和公开元数据筛选。条目分级表示相关性和阅读优先级，不代表对论文正确性的审查。除特别标注外，条目尚未经过人工逐篇验证；数学结论请以原论文为准。
 
-## 最新简报
-
-### {date}
-
-首页只列重点条目；完整条目见 [Latest / 最新](radar/latest.md)。
-
-## 重点条目
-
-{cards}
-
-[查看完整最新简报](radar/latest.md)
-
-## 其他入口
-
-- [最新每日简报](radar/latest.md): 固定链接，始终显示最近一次生成的简报。
-- [简报归档](radar/index.md): 按周保存每日记录，便于回看。
-- [Resources / 资源](resources.md): selected courses, lecture notes, homepages, and search links.
-- [Group work / 课题组相关](group-work.md): local research context, public notes, and group-facing links.
-- [Core topics / 核心主题](topics.md): current scope of the guide.
-- [About / 关于](about.md): curation policy, design references, and license notes.
+{daily_block.rstrip()}
 """
 
 
@@ -420,7 +398,7 @@ def main() -> None:
         )
     week_path.write_text(replace_date_block(week_path.read_text(encoding="utf-8"), args.date, daily_block), encoding="utf-8")
     LATEST_PAGE.write_text(render_latest(week, daily_block), encoding="utf-8")
-    DOCS_INDEX.write_text(render_home(args.date, selected), encoding="utf-8")
+    DOCS_INDEX.write_text(render_home(week, daily_block), encoding="utf-8")
 
     if selected:
         registry_text = PAPER_REGISTRY.read_text(encoding="utf-8") if PAPER_REGISTRY.exists() else ""
