@@ -11,21 +11,45 @@
 
 ### 2026-07-09
 
-今日简报已按“多分量 / DNLS / coupled systems 优先”的标准修订。上一版 IST / RHP 栏目中两篇 Lax pair / Painlevé 观察条目相关性偏弱，现已移出本期；本栏改为收录 DNLS soliton gas 与 coupled Gerdjikov--Ivanov inverse scattering 两篇更贴近课题组方向的论文。
+今日简报按“多分量 / DNLS / coupled systems 优先”的标准整理。首页只列重点条目；完整条目见 [Latest / 最新](radar/latest.md)。
 
-#### 重点条目
+## 重点条目
 
-- **重点关注**：[Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation](https://arxiv.org/abs/2607.06409)  
-  Fokas--Lenells 方程、椭圆背景局域波、Weierstrass 椭圆函数、Darboux--Bäcklund 变换和渐近分析，和课题组 DNLS / Fokas--Lenells / 椭圆背景方向高度贴近。
+#### [重点关注] Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation
 
-- **已发表代表作 / 必读**：[Orbital stability of breathers for coupled nonlinear Schrödinger equations](https://dmpeli.math.mcmaster.ca/PaperBank/BreathersCoupledNLS.pdf)  
-  Ling--Pelinovsky--Su，Advances in Mathematics 495 (2026), 110961。连接 coupled NLS、breather、vector soliton、spectral/orbital stability 与 squared eigenfunctions。
+作者：Wang Tang；Guo-Fu Yu  
+来源：[arXiv:2607.06409](https://arxiv.org/abs/2607.06409)  
+方向：精确解与特殊背景  
+标签：Fokas--Lenells equation, elliptic localized solutions, Darboux--Bäcklund transformation, Weierstrass elliptic functions
 
-- **重点关注 / 必读候选**：[Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation](https://arxiv.org/abs/2606.24435)  
-  DNLS soliton gas、meromorphic RHP、连续谱极限、\(\bar\partial\)-problem、长时间渐近和 theta-function 渐近，属于本期最强相关的 IST/RHP 条目。
+简评：这篇与 DNLS / Fokas--Lenells / 椭圆背景局域波方向高度贴近，适合作为“椭圆背景 + Darboux + 渐近分析”的近期重点条目。
 
-- **重点关注**：[Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations](https://arxiv.org/abs/2605.28856)  
-  面向 coupled Gerdjikov--Ivanov / DNLS system III 的 direct/inverse scattering，涉及 Jost solutions、scattering coefficients、bound states 与 Marchenko 型积分方程。
+#### [已发表代表作 / 必读] Orbital stability of breathers for coupled nonlinear Schrödinger equations
+
+作者：Liming Ling；Dmitry E. Pelinovsky；Huajie Su  
+来源：[Advances in Mathematics 495 (2026), 110961](https://dmpeli.math.mcmaster.ca/PaperBank/BreathersCoupledNLS.pdf)  
+方向：稳定性与动力学机制  
+标签：coupled NLS, vector solitons, breathers, spectral stability, orbital stability, squared eigenfunctions
+
+简评：连接 coupled NLS、breather、vector soliton、spectral/orbital stability 与 squared eigenfunctions，是本期最值得进入长期文献图谱的公开发表论文。
+
+#### [重点关注 / 必读候选] Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation
+
+作者：Deng Shan Wang；Xinyu Wang  
+来源：[arXiv:2606.24435](https://arxiv.org/abs/2606.24435)  
+方向：IST / RHP 与渐近分析  
+标签：DNLS, soliton gas, meromorphic RHP, continuum limit, ∂̄-problem, long-time asymptotics, theta functions
+
+简评：这篇直接命中 DNLS + soliton gas + RHP + ∂̄ + 长时间渐近主线，是本期最强相关的 IST/RHP 条目。
+
+#### [重点关注] Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations
+
+作者：Ramazan Ercan  
+来源：[arXiv:2605.28856](https://arxiv.org/abs/2605.28856)  
+方向：IST / RHP 与渐近分析  
+标签：coupled Gerdjikov--Ivanov equations, DNLS system III, inverse scattering, Jost solutions, scattering coefficients, Marchenko integral equations
+
+简评：面向 coupled Gerdjikov--Ivanov / DNLS system III 的 direct/inverse scattering，和多分量 / 耦合 DNLS 谱问题高度相关。
 
 [查看完整最新简报](radar/latest.md)
 
