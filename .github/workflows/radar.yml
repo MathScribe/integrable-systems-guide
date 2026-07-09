@@ -1,0 +1,86 @@
+name: Daily Research Radar
+
+on:
+  schedule:
+    # 07:30 Asia/Shanghai. GitHub Actions cron uses UTC.
+    - cron: "30 23 * * *"
+  workflow_dispatch:
+    inputs:
+      brief_date:
+        description: "Brief date in YYYY-MM-DD. Leave empty to use Asia/Shanghai today."
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-research-radar
+  cancel-in-progress: false
+
+jobs:
+  update-brief:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Determine brief date
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.brief_date }}" ]; then
+            echo "BRIEF_DATE=${{ github.event.inputs.brief_date }}" >> "$GITHUB_ENV"
+          else
+            echo "BRIEF_DATE=$(TZ=Asia/Shanghai date +%F)" >> "$GITHUB_ENV"
+          fi
+
+      - name: Generate daily research brief
+        run: python scripts/radar.py --date "$BRIEF_DATE" --write
+
+      - name: Update archive index
+        shell: bash
+        run: |
+          python - <<'PY'
+          import datetime as dt
+          import os
+          from pathlib import Path
+
+          date = dt.date.fromisoformat(os.environ["BRIEF_DATE"])
+          iso_year, iso_week, _ = date.isocalendar()
+          week_id = f"{iso_year}-W{iso_week:02d}"
+          path = Path("docs/radar/index.md")
+          text = path.read_text(encoding="utf-8")
+          link = f"- [{week_id}]({week_id}.md)"
+
+          if link not in text:
+              if f"## {iso_year}" not in text:
+                  text = text.rstrip() + f"\n\n## {iso_year}\n\n{link}\n"
+              else:
+                  text = text.rstrip() + f"\n{link}\n"
+              path.write_text(text, encoding="utf-8")
+          PY
+
+      - name: Validate MkDocs build
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          mkdocs build --strict
+
+      - name: Commit changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/index.md docs/radar data/papers.yml
+          if git diff --cached --quiet; then
+            echo "No research brief changes to commit."
+          else
+            git commit -m "Update research brief for $BRIEF_DATE"
+            git push
+          fi
