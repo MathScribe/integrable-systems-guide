@@ -11,7 +11,7 @@
 
 ### 2026-07-09
 
-今日 arXiv `nlin.SI` 新条目中，与 Ling Liming 课题组主线直接相关的内容不算多；因此本期同时纳入最近几天的强相关 arXiv 论文，以及一篇 2026 年已公开发表的代表作，作为“近期值得回看”的条目。
+今日简报已按“多分量 / DNLS / coupled systems 优先”的标准修订。上一版 IST / RHP 栏目中两篇 Lax pair / Painlevé 观察条目相关性偏弱，现已移出本期；本栏改为收录 DNLS soliton gas 与 coupled Gerdjikov--Ivanov inverse scattering 两篇更贴近课题组方向的论文。
 
 #### 重点条目
 
@@ -21,11 +21,11 @@
 - **已发表代表作 / 必读**：[Orbital stability of breathers for coupled nonlinear Schrödinger equations](https://dmpeli.math.mcmaster.ca/PaperBank/BreathersCoupledNLS.pdf)  
   Ling--Pelinovsky--Su，Advances in Mathematics 495 (2026), 110961。连接 coupled NLS、breather、vector soliton、spectral/orbital stability 与 squared eigenfunctions。
 
-- **背景参考**：[Integrable full discretization of the multi-component short pulse equation](https://arxiv.org/abs/2607.04756)  
-  多分量 short pulse 方程的可积离散化，适合作为多分量可积模型和离散化方向的外围条目。
+- **重点关注 / 必读候选**：[Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation](https://arxiv.org/abs/2606.24435)  
+  DNLS soliton gas、meromorphic RHP、连续谱极限、\(\bar\partial\)-problem、长时间渐近和 theta-function 渐近，属于本期最强相关的 IST/RHP 条目。
 
-- **观察**：[On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic](https://arxiv.org/abs/2607.06980)  
-  偏 Lax pair / Painlevé / 代数可积结构，和非线性波主线不直接重合，但值得低优先级观察。
+- **重点关注**：[Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations](https://arxiv.org/abs/2605.28856)  
+  面向 coupled Gerdjikov--Ivanov / DNLS system III 的 direct/inverse scattering，涉及 Jost solutions、scattering coefficients、bound states 与 Marchenko 型积分方程。
 
 [查看完整最新简报](radar/latest.md)
 
