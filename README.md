@@ -63,4 +63,6 @@ This repository is in an early `v0.1` stage. The current goal is a clean, useful
 
 ## License
 
-License terms are not finalized yet. Until a license is added, do not assume permission to reuse the original annotations beyond normal GitHub viewing and contribution workflows. External resources remain governed by their original authors' terms.
+Original site content and annotations are licensed under CC BY-SA 4.0. Code, scripts, configuration, and workflows are licensed under the MIT License.
+
+External resources linked from this guide remain under their original authors' or publishers' terms.
