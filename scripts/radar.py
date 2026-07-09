@@ -5,7 +5,7 @@ The script fetches candidate papers from arXiv and Crossref, applies a
 Ling-group-oriented keyword rubric, checks `data/papers.yml` to avoid repeated
 "new paper" entries, and writes:
 
-- `docs/index.md`: homepage with the full latest daily brief and site links;
+- `docs/index.md`: homepage with the most recent three daily briefs and site links;
 - `docs/radar/latest.md`: fixed latest daily brief mirror;
 - `docs/radar/YYYY-WXX.md`: weekly archive file.
 
@@ -302,6 +302,18 @@ def replace_date_block(weekly_text: str, date: str, block: str) -> str:
     return weekly_text.rstrip() + replacement
 
 
+def recent_date_blocks(weekly_text: str, limit: int = 3) -> list[str]:
+    pattern = re.compile(r"(?:^|\n---\n\n)(## (\d{4}-\d{2}-\d{2})\n.*?)(?=\n---\n\n## |\Z)", re.S)
+    blocks: list[tuple[dt.date, str]] = []
+    for block, date_s in pattern.findall(weekly_text):
+        try:
+            blocks.append((dt.date.fromisoformat(date_s), block.rstrip()))
+        except ValueError:
+            continue
+    blocks.sort(key=lambda item: item[0], reverse=True)
+    return [block for _, block in blocks[:limit]]
+
+
 def render_latest(week: str, daily_block: str) -> str:
     return f"""# 最新每日简报
 
@@ -314,17 +326,18 @@ def render_latest(week: str, daily_block: str) -> str:
 """
 
 
-def render_home(week: str, daily_block: str) -> str:
+def render_home(week: str, blocks: list[str]) -> str:
+    recent_briefs = "\n\n---\n\n".join(blocks).rstrip()
     return f"""# 可积系统研究简报
 
-本页显示最新的 AI 辅助研究简报，面向 Ling Liming 课题组相关方向，重点关注可积系统中的精确解与特殊背景、稳定性与动力学机制、IST/RHP 与渐近分析。
+本页显示最近三天的 AI 辅助研究简报，最新日期在最上方。简报面向 Ling Liming 课题组相关方向，重点关注可积系统中的精确解与特殊背景、稳定性与动力学机制、IST/RHP 与渐近分析。
 
 [本周归档](radar/{week}.md) · [全部归档](radar/index.md)
 
 !!! note "AI 生成说明"
     简报主要依据题名、摘要、arXiv 分类、关键词和公开元数据筛选。条目分级表示相关性和阅读优先级，不代表对论文正确性的审查。除特别标注外，条目尚未经过人工逐篇验证；数学结论请以原论文为准。
 
-{daily_block.rstrip()}
+{recent_briefs}
 
 ## 其他入口
 
@@ -399,9 +412,10 @@ def main() -> None:
             "本周文件用于连续记录每日发现。周末或每周整理时，可在本文顶部补充“本周重点关注”。\n",
             encoding="utf-8",
         )
-    week_path.write_text(replace_date_block(week_path.read_text(encoding="utf-8"), args.date, daily_block), encoding="utf-8")
+    updated_weekly_text = replace_date_block(week_path.read_text(encoding="utf-8"), args.date, daily_block)
+    week_path.write_text(updated_weekly_text, encoding="utf-8")
     LATEST_PAGE.write_text(render_latest(week, daily_block), encoding="utf-8")
-    DOCS_INDEX.write_text(render_home(week, daily_block), encoding="utf-8")
+    DOCS_INDEX.write_text(render_home(week, recent_date_blocks(updated_weekly_text, limit=3)), encoding="utf-8")
 
     if selected:
         registry_text = PAPER_REGISTRY.read_text(encoding="utf-8") if PAPER_REGISTRY.exists() else ""
