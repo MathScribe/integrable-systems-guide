@@ -5,28 +5,190 @@
 #   1. arXiv id, e.g. arxiv:2504.21315
 #   2. DOI, e.g. doi:10.1016/j.aim.2026.110961
 #   3. normalized title hash when no arXiv id or DOI is available
-#
-# Minimal entry shape:
-# - id: "arxiv:xxxx.xxxxx"
-#   title: "Paper title"
-#   authors:
-#     - "Author A"
-#     - "Author B"
-#   source:
-#     type: "arxiv"
-#     url: "https://arxiv.org/abs/xxxx.xxxxx"
-#     arxiv_id: "xxxx.xxxxx"
-#     doi: null
-#   first_seen: "YYYY-MM-DD"
-#   first_week: "YYYY-WXX"
-#   directions:
-#     - "exact-solutions"
-#   tags:
-#     - "Darboux transformation"
-#     - "rogue wave"
-#   relevance: "worth-attention"
-#   review_status: "ai-screened"
-#   appeared_in:
-#     - "docs/radar/YYYY-WXX.md"
 
-[]
+- id: "arxiv:2607.06409"
+  title: "Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation"
+  authors:
+    - "Wang Tang"
+    - "Guo-Fu Yu"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2607.06409"
+    arxiv_id: "2607.06409"
+    doi: "10.48550/arXiv.2607.06409"
+  first_seen: "2026-07-09"
+  first_week: "2026-W28"
+  directions:
+    - "exact-solutions"
+    - "ist-rhp-asymptotics"
+  tags:
+    - "Fokas--Lenells equation"
+    - "elliptic localized solutions"
+    - "Darboux--Backlund transformation"
+    - "Weierstrass elliptic functions"
+  relevance: "highlight"
+  review_status: "ai-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2607.04756"
+  title: "Integrable full discretization of the multi-component short pulse equation"
+  authors:
+    - "Ayako Hori"
+    - "Yuta Tanaka"
+    - "Ken-ichi Maruno"
+    - "Yasuhiro Ohta"
+    - "Bao-Feng Feng"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2607.04756"
+    arxiv_id: "2607.04756"
+    doi: null
+  first_seen: "2026-07-09"
+  first_week: "2026-W28"
+  directions:
+    - "exact-solutions"
+  tags:
+    - "multi-component short pulse equation"
+    - "integrable discretization"
+    - "soliton systems"
+  relevance: "background"
+  review_status: "ai-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2607.01348"
+  title: "Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation"
+  authors:
+    - "Otis C. Wright"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2607.01348"
+    arxiv_id: "2607.01348"
+    doi: null
+  first_seen: "2026-07-09"
+  first_week: "2026-W28"
+  directions:
+    - "exact-solutions"
+  tags:
+    - "finite-gap solutions"
+    - "mKdV"
+    - "amplitude bounds"
+  relevance: "background"
+  review_status: "ai-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "doi:10.1016/j.aim.2026.110961"
+  title: "Orbital stability of breathers for coupled nonlinear Schrödinger equations"
+  authors:
+    - "Liming Ling"
+    - "Dmitry E. Pelinovsky"
+    - "Huajie Su"
+  source:
+    type: "journal"
+    venue: "Advances in Mathematics"
+    volume: "495"
+    year: 2026
+    article_number: "110961"
+    url: "https://dmpeli.math.mcmaster.ca/PaperBank/BreathersCoupledNLS.pdf"
+    arxiv_id: null
+    doi: "10.1016/j.aim.2026.110961"
+  first_seen: "2026-07-09"
+  first_week: "2026-W28"
+  directions:
+    - "stability-dynamics"
+  tags:
+    - "coupled NLS"
+    - "vector solitons"
+    - "breathers"
+    - "spectral stability"
+    - "orbital stability"
+    - "squared eigenfunctions"
+  relevance: "must-read"
+  review_status: "ai-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2607.07345"
+  title: "Spin-current-controlled anisotropic deformation of magnetic lump solitons"
+  authors:
+    - "Xiao-Qi Cui"
+    - "Xin-Wei Jin"
+    - "Shiyi Wang"
+    - "Xiao-Yong Wen"
+    - "Zhan-Ying Yang"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2607.07345"
+    arxiv_id: "2607.07345"
+    doi: null
+  first_seen: "2026-07-09"
+  first_week: "2026-W28"
+  directions:
+    - "stability-dynamics"
+  tags:
+    - "lump solitons"
+    - "anisotropic deformation"
+    - "magnetic solitons"
+  relevance: "watch"
+  review_status: "ai-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2607.06980"
+  title: "On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic"
+  authors:
+    - "Nalini Joshi"
+    - "Tomas Lasic Latimer"
+    - "Pieter Roffelsen"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2607.06980"
+    arxiv_id: "2607.06980"
+    doi: null
+  first_seen: "2026-07-09"
+  first_week: "2026-W28"
+  directions:
+    - "ist-rhp-asymptotics"
+  tags:
+    - "Lax pairs"
+    - "Painleve equations"
+    - "finite characteristic"
+    - "integrals"
+  relevance: "watch"
+  review_status: "ai-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2607.01493"
+  title: "Learning Lax Pairs: Revisiting the Classical Paradigm"
+  authors:
+    - "Jimmie Adriazola"
+    - "Gino Biondini"
+    - "Wei Zhu"
+    - "Panayotis G. Kevrekidis"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2607.01493"
+    arxiv_id: "2607.01493"
+    doi: null
+  first_seen: "2026-07-09"
+  first_week: "2026-W28"
+  directions:
+    - "ist-rhp-asymptotics"
+  tags:
+    - "Lax pairs"
+    - "machine learning"
+    - "integrable systems"
+  relevance: "watch"
+  review_status: "ai-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
