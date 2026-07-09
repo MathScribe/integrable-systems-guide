@@ -70,3 +70,12 @@
 标签：coupled Gerdjikov--Ivanov equations, DNLS system III, inverse scattering, Jost solutions, scattering coefficients, Marchenko integral equations
 
 简评：这篇直接面向 coupled Gerdjikov--Ivanov equations 相关线性系统的 direct/inverse scattering。摘要中明确涉及两个 Schwartz-class potentials、Jost solutions、scattering coefficients、bound states 与 Marchenko 型积分方程；它与多分量 / 耦合 DNLS 谱问题和反散射构造高度相关，应优先进入 DNLS hierarchy 与 coupled derivative NLS 的文献候选表。
+
+## 其他入口
+
+- [本周归档](radar/2026-W28.md): 保存本周每日简报的完整记录。
+- [全部归档](radar/index.md): 按周回看历史简报。
+- [Resources / 资源](resources.md): selected courses, lecture notes, homepages, and search links.
+- [Group work / 课题组相关](group-work.md): local research context, public notes, and group-facing links.
+- [Core topics / 核心主题](topics.md): current scope of the guide.
+- [About / 关于](about.md): curation policy, design references, and license notes.
