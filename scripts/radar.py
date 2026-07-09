@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 """Generate a draft daily research brief for the site.
 
-This script fetches candidate papers from arXiv and Crossref, applies a
+The script fetches candidate papers from arXiv and Crossref, applies a
 Ling-group-oriented keyword rubric, checks `data/papers.yml` to avoid repeated
-"new paper" entries, and writes three public pages:
+"new paper" entries, and writes:
 
 - `docs/index.md`: homepage summary with authors and sources;
 - `docs/radar/latest.md`: fixed latest daily brief;
 - `docs/radar/YYYY-WXX.md`: weekly archive file.
 
-The output is a draft discovery aid. It does not verify mathematical results.
-Run it locally, inspect the diff, then commit after editing if needed.
+The output is a discovery draft, not mathematical verification.
 
 Usage:
     python scripts/radar.py --date 2026-07-09 --dry-run
@@ -147,8 +146,7 @@ def fetch_text(url: str, timeout: int = 30) -> str:
 def existing_ids() -> set[str]:
     if not PAPER_REGISTRY.exists():
         return set()
-    text = PAPER_REGISTRY.read_text(encoding="utf-8")
-    return set(re.findall(r'^- id:\s+"([^"]+)"', text, flags=re.M))
+    return set(re.findall(r'^- id:\s+"([^"]+)"', PAPER_REGISTRY.read_text(encoding="utf-8"), flags=re.M))
 
 
 def normalize_space(text: str) -> str:
@@ -177,17 +175,14 @@ def fetch_arxiv(max_results_per_query: int = 12) -> list[Paper]:
             continue
         for entry in root.findall("atom:entry", ns):
             arxiv_id = clean_arxiv_id(entry.findtext("atom:id", default="", namespaces=ns))
-            title = normalize_space(entry.findtext("atom:title", default="", namespaces=ns))
-            summary = normalize_space(entry.findtext("atom:summary", default="", namespaces=ns))
-            authors = [normalize_space(a.findtext("atom:name", default="", namespaces=ns)) for a in entry.findall("atom:author", ns)]
             paper = Paper(
                 id=f"arxiv:{arxiv_id}",
-                title=title,
-                authors=[a for a in authors if a],
+                title=normalize_space(entry.findtext("atom:title", default="", namespaces=ns)),
+                authors=[normalize_space(a.findtext("atom:name", default="", namespaces=ns)) for a in entry.findall("atom:author", ns)],
                 url=f"https://arxiv.org/abs/{arxiv_id}",
                 source_type="arxiv",
                 published=entry.findtext("atom:published", default="", namespaces=ns)[:10] or None,
-                summary=summary,
+                summary=normalize_space(entry.findtext("atom:summary", default="", namespaces=ns)),
                 doi=f"10.48550/arXiv.{arxiv_id}",
             )
             score_and_tag(paper)
@@ -219,14 +214,13 @@ def fetch_crossref(from_date: str, rows: int = 8) -> list[Paper]:
                 name = " ".join(x for x in [a.get("given"), a.get("family")] if x)
                 if name:
                     authors.append(name)
-            abstract = normalize_space(html.unescape(re.sub("<[^>]+>", " ", item.get("abstract") or "")))
             paper = Paper(
                 id=f"doi:{doi.lower()}",
                 title=normalize_space(html.unescape(titles[0])),
                 authors=authors,
                 url=item.get("URL") or f"https://doi.org/{doi}",
                 source_type="journal",
-                summary=abstract,
+                summary=normalize_space(html.unescape(re.sub("<[^>]+>", " ", item.get("abstract") or ""))),
                 doi=doi,
             )
             score_and_tag(paper)
@@ -236,17 +230,9 @@ def fetch_crossref(from_date: str, rows: int = 8) -> list[Paper]:
 
 def score_and_tag(paper: Paper) -> None:
     haystack = f"{paper.title} {paper.summary}".lower()
-    score = 0
-    tags = []
-    for term, weight in WEIGHTS.items():
-        if term in haystack:
-            score += weight
-            tags.append(term)
-    paper.score = score
-    paper.tags = sorted(set(tags), key=lambda x: (-WEIGHTS.get(x, 0), x))[:8]
-    paper.directions = [name for name, terms in DIRECTION_KEYWORDS.items() if any(t in haystack for t in terms)]
-    if not paper.directions:
-        paper.directions = ["精确解与特殊背景"]
+    paper.score = sum(weight for term, weight in WEIGHTS.items() if term in haystack)
+    paper.tags = sorted({term for term in WEIGHTS if term in haystack}, key=lambda x: (-WEIGHTS[x], x))[:8]
+    paper.directions = [name for name, terms in DIRECTION_KEYWORDS.items() if any(t in haystack for t in terms)] or ["精确解与特殊背景"]
 
 
 def primary_direction(paper: Paper) -> str:
@@ -276,10 +262,12 @@ def md_link(text: str, url: str) -> str:
     return f"[{text}]({url})"
 
 
-def field_lines(paper: Paper, include_direction: bool = False) -> list[str]:
-    authors = "；".join(paper.authors[:8]) if paper.authors else "未列出"
-    tags = ", ".join(paper.tags[:7]) if paper.tags else "待补充"
+def render_card(paper: Paper, include_direction: bool = False) -> str:
+    authors = "；".join([a for a in paper.authors if a][:8]) or "未列出"
+    tags = ", ".join(paper.tags[:7]) or "待补充"
     lines = [
+        f"#### [{relevance_label(paper.score)}] {paper.title}",
+        "",
         f"作者：{authors}  ",
         f"来源：{md_link(paper.id, paper.url)}  ",
     ]
@@ -290,13 +278,6 @@ def field_lines(paper: Paper, include_direction: bool = False) -> list[str]:
         "",
         "简评：与本栏目关键词匹配度较高；建议人工检查摘要、Introduction 和主定理后再决定是否保留为长期文献图谱条目。",
     ]
-    return lines
-
-
-def render_card(paper: Paper, include_direction: bool = False) -> str:
-    label = relevance_label(paper.score)
-    lines = [f"#### [{label}] {paper.title}", ""]
-    lines.extend(field_lines(paper, include_direction=include_direction))
     return "\n".join(lines)
 
 
@@ -304,10 +285,7 @@ def render_daily(date: str, papers: list[Paper]) -> str:
     lines = [f"## {date}", ""]
     if not papers:
         return "\n".join(lines + ["今日未筛到强相关新条目。", ""])
-    lines += [
-        "本期由脚本根据 arXiv、Crossref 与关键词/分类规则生成候选条目；维护者或 AI 助手可在提交前继续压缩、改写或删除弱相关条目。",
-        "",
-    ]
+    lines += ["本期由脚本根据 arXiv、Crossref 与关键词/分类规则生成候选条目；维护者或 AI 助手可在提交前继续压缩、改写或删除弱相关条目。", ""]
     for direction in DIRECTION_ORDER:
         group = [p for p in papers if primary_direction(p) == direction]
         if not group:
@@ -381,9 +359,9 @@ def render_home(date: str, papers: list[Paper]) -> str:
 def render_registry_entries(papers: list[Paper], date: str, week: str) -> str:
     chunks = []
     for p in papers:
-        authors = "\n".join(f'    - "{a.replace(chr(34), chr(39))}"' for a in p.authors)
+        authors = "\n".join(f'    - "{a.replace(chr(34), chr(39))}"' for a in p.authors if a)
         tags = "\n".join(f'    - "{t.replace(chr(34), chr(39))}"' for t in p.tags)
-        directions = "\n".join(f'    - "{primary_direction(p)}"')
+        direction = f'    - "{primary_direction(p)}"'
         chunks.append(f'''- id: "{p.id}"
   title: "{p.title.replace(chr(34), chr(39))}"
   authors:
@@ -396,7 +374,7 @@ def render_registry_entries(papers: list[Paper], date: str, week: str) -> str:
   first_seen: "{date}"
   first_week: "{week}"
   directions:
-{directions}
+{direction}
   tags:
 {tags or '    []'}
   relevance: "{relevance_label(p.score)}"
