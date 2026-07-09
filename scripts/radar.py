@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-"""Generate the AI-assisted research-radar scaffold.
+"""Generate a draft daily research brief for the site.
 
-This script is intentionally lightweight and dependency-free. It fetches candidate
-papers from arXiv and Crossref, applies a simple topic-weighting rubric, checks
-`data/papers.yml` for duplicate identifiers, and renders Markdown blocks for the
-homepage, the fixed latest page, and the current weekly archive file.
+This script fetches candidate papers from arXiv and Crossref, applies a
+Ling-group-oriented keyword rubric, checks `data/papers.yml` to avoid repeated
+"new paper" entries, and writes three public pages:
 
-The script does not claim to verify mathematical results. It produces a draft
-that can be edited by a maintainer or by an AI coding assistant before commit.
+- `docs/index.md`: homepage summary with authors and sources;
+- `docs/radar/latest.md`: fixed latest daily brief;
+- `docs/radar/YYYY-WXX.md`: weekly archive file.
 
-Usage examples:
+The output is a draft discovery aid. It does not verify mathematical results.
+Run it locally, inspect the diff, then commit after editing if needed.
 
+Usage:
     python scripts/radar.py --date 2026-07-09 --dry-run
     python scripts/radar.py --date 2026-07-09 --write
-
-The `--write` mode edits local files. Commit the resulting changes after review.
 """
 
 from __future__ import annotations
@@ -38,19 +38,24 @@ DOCS_INDEX = ROOT / "docs" / "index.md"
 RADAR_DIR = ROOT / "docs" / "radar"
 LATEST_PAGE = RADAR_DIR / "latest.md"
 
-# Keep the first version deliberately focused on Ling-group adjacent topics.
 ARXIV_QUERIES = [
     'cat:nlin.SI AND all:"derivative nonlinear Schrodinger"',
     'cat:nlin.SI AND all:"DNLS"',
+    'cat:nlin.SI AND all:"coupled derivative nonlinear Schrodinger"',
+    'cat:nlin.SI AND all:"two-component"',
+    'cat:nlin.SI AND all:"multi-component"',
+    'cat:nlin.SI AND all:"multicomponent"',
     'cat:nlin.SI AND all:"Gerdjikov Ivanov"',
+    'cat:nlin.SI AND all:"coupled Gerdjikov Ivanov"',
     'cat:nlin.SI AND all:"Fokas Lenells"',
     'cat:nlin.SI AND all:"Kaup Newell"',
+    'cat:nlin.SI AND all:"Chen Lee Liu"',
     'cat:nlin.SI AND all:"coupled nonlinear Schrodinger"',
-    'cat:nlin.SI AND all:"multi-component"',
     'cat:nlin.SI AND all:"Darboux"',
     'cat:nlin.SI AND all:"rogue wave"',
     'cat:nlin.SI AND all:"breather"',
     'cat:nlin.SI AND all:"elliptic localized"',
+    'cat:nlin.SI AND all:"inverse scattering"',
     'cat:nlin.SI AND all:"Riemann Hilbert"',
     'cat:nlin.SI AND all:"long-time asymptotics"',
     'cat:nlin.SI AND all:"soliton gas"',
@@ -60,66 +65,62 @@ ARXIV_QUERIES = [
 
 CROSSREF_QUERIES = [
     "derivative nonlinear Schrodinger soliton gas",
+    "coupled derivative nonlinear Schrodinger inverse scattering",
     "coupled Gerdjikov Ivanov inverse scattering",
     "coupled nonlinear Schrodinger orbital stability breather",
-    "Darboux transformation rogue wave coupled NLS",
+    "multi-component nonlinear Schrodinger Darboux rogue wave",
     "Fokas Lenells elliptic localized solutions",
     "Riemann Hilbert long-time asymptotics derivative NLS",
 ]
 
-# Multi-component/coupled terms are intentionally high weight.
 WEIGHTS = {
-    "derivative nonlinear schrodinger": 10,
-    "dnls": 9,
-    "gerdjikov": 9,
-    "fokas": 8,
-    "lenells": 8,
-    "kaup": 8,
-    "newell": 8,
+    "derivative nonlinear schrodinger": 12,
+    "dnls": 10,
+    "gerdjikov": 10,
+    "fokas": 9,
+    "lenells": 9,
+    "kaup": 9,
+    "newell": 9,
+    "chen lee liu": 8,
     "chen-lee-liu": 8,
-    "coupled": 7,
-    "multi-component": 7,
-    "multicomponent": 7,
-    "vector": 5,
-    "manakov": 6,
-    "inverse scattering": 8,
-    "riemann-hilbert": 8,
-    "riemann hilbert": 8,
-    "marchenko": 7,
-    "long-time": 7,
-    "long time": 7,
+    "coupled": 9,
+    "two-component": 9,
+    "multi-component": 9,
+    "multi component": 9,
+    "multicomponent": 9,
+    "vector": 6,
+    "manakov": 7,
+    "inverse scattering": 10,
+    "riemann-hilbert": 10,
+    "riemann hilbert": 10,
+    "marchenko": 9,
+    "jost": 8,
+    "long-time": 8,
+    "long time": 8,
     "asymptotic": 6,
-    "soliton gas": 8,
-    "dbar": 6,
-    "barpartial": 6,
-    "darboux": 7,
-    "backlund": 6,
-    "rogue wave": 6,
-    "breather": 7,
-    "elliptic": 6,
-    "finite-gap": 5,
+    "soliton gas": 10,
+    "dbar": 7,
+    "barpartial": 7,
+    "darboux": 8,
+    "backlund": 7,
+    "rogue wave": 7,
+    "breather": 8,
+    "elliptic": 7,
+    "finite-gap": 6,
     "theta": 5,
-    "stability": 7,
-    "spectral stability": 7,
-    "orbital stability": 8,
-    "squared eigenfunction": 8,
+    "stability": 8,
+    "spectral stability": 8,
+    "orbital stability": 9,
+    "squared eigenfunction": 9,
 }
 
 DIRECTION_KEYWORDS = {
-    "精确解与特殊背景": [
-        "darboux", "backlund", "rogue", "breather", "elliptic", "finite-gap",
-        "theta", "weierstrass", "localized solution", "soliton solution",
-    ],
-    "稳定性与动力学机制": [
-        "stability", "orbital", "spectral stability", "krein", "modulational",
-        "squared eigenfunction", "linearized",
-    ],
-    "IST / RHP 与渐近分析": [
-        "inverse scattering", "riemann-hilbert", "riemann hilbert", "marchenko",
-        "long-time", "long time", "asymptotic", "steepest descent", "soliton gas",
-        "dbar", "barpartial",
-    ],
+    "稳定性与动力学机制": ["stability", "orbital", "spectral stability", "krein", "modulational", "squared eigenfunction"],
+    "IST / RHP 与渐近分析": ["inverse scattering", "riemann-hilbert", "riemann hilbert", "marchenko", "jost", "long-time", "long time", "asymptotic", "steepest descent", "soliton gas", "dbar", "barpartial"],
+    "精确解与特殊背景": ["darboux", "backlund", "rogue", "breather", "elliptic", "finite-gap", "theta", "weierstrass", "localized solution", "soliton solution"],
 }
+
+DIRECTION_ORDER = ["精确解与特殊背景", "稳定性与动力学机制", "IST / RHP 与渐近分析"]
 
 
 @dataclass
@@ -169,19 +170,15 @@ def fetch_arxiv(max_results_per_query: int = 12) -> list[Paper]:
             "sortBy": "submittedDate",
             "sortOrder": "descending",
         })
-        url = f"https://export.arxiv.org/api/query?{params}"
         try:
-            xml_text = fetch_text(url)
-        except Exception as exc:  # pragma: no cover - network dependent
+            root = ET.fromstring(fetch_text(f"https://export.arxiv.org/api/query?{params}"))
+        except Exception as exc:
             print(f"warning: arXiv query failed: {query}: {exc}", file=sys.stderr)
             continue
-        root = ET.fromstring(xml_text)
         for entry in root.findall("atom:entry", ns):
-            raw_id = entry.findtext("atom:id", default="", namespaces=ns)
-            arxiv_id = clean_arxiv_id(raw_id)
+            arxiv_id = clean_arxiv_id(entry.findtext("atom:id", default="", namespaces=ns))
             title = normalize_space(entry.findtext("atom:title", default="", namespaces=ns))
             summary = normalize_space(entry.findtext("atom:summary", default="", namespaces=ns))
-            published = entry.findtext("atom:published", default="", namespaces=ns)[:10]
             authors = [normalize_space(a.findtext("atom:name", default="", namespaces=ns)) for a in entry.findall("atom:author", ns)]
             paper = Paper(
                 id=f"arxiv:{arxiv_id}",
@@ -189,7 +186,7 @@ def fetch_arxiv(max_results_per_query: int = 12) -> list[Paper]:
                 authors=[a for a in authors if a],
                 url=f"https://arxiv.org/abs/{arxiv_id}",
                 source_type="arxiv",
-                published=published or None,
+                published=entry.findtext("atom:published", default="", namespaces=ns)[:10] or None,
                 summary=summary,
                 doi=f"10.48550/arXiv.{arxiv_id}",
             )
@@ -207,10 +204,9 @@ def fetch_crossref(from_date: str, rows: int = 8) -> list[Paper]:
             "rows": rows,
             "select": "DOI,title,author,published-print,published-online,container-title,URL,abstract",
         })
-        url = f"https://api.crossref.org/works?{params}"
         try:
-            payload = json.loads(fetch_text(url))
-        except Exception as exc:  # pragma: no cover - network dependent
+            payload = json.loads(fetch_text(f"https://api.crossref.org/works?{params}"))
+        except Exception as exc:
             print(f"warning: Crossref query failed: {query}: {exc}", file=sys.stderr)
             continue
         for item in payload.get("message", {}).get("items", []):
@@ -218,23 +214,18 @@ def fetch_crossref(from_date: str, rows: int = 8) -> list[Paper]:
             titles = item.get("title") or []
             if not doi or not titles:
                 continue
-            title = normalize_space(html.unescape(titles[0]))
             authors = []
             for a in item.get("author") or []:
                 name = " ".join(x for x in [a.get("given"), a.get("family")] if x)
                 if name:
                     authors.append(name)
-            abstract = re.sub("<[^>]+>", " ", item.get("abstract") or "")
-            abstract = normalize_space(html.unescape(abstract))
-            date_parts = (item.get("published-print") or item.get("published-online") or {}).get("date-parts") or []
-            published = "-".join(f"{part:02d}" for part in date_parts[0]) if date_parts else None
+            abstract = normalize_space(html.unescape(re.sub("<[^>]+>", " ", item.get("abstract") or "")))
             paper = Paper(
                 id=f"doi:{doi.lower()}",
-                title=title,
+                title=normalize_space(html.unescape(titles[0])),
                 authors=authors,
                 url=item.get("URL") or f"https://doi.org/{doi}",
                 source_type="journal",
-                published=published,
                 summary=abstract,
                 doi=doi,
             )
@@ -253,25 +244,30 @@ def score_and_tag(paper: Paper) -> None:
             tags.append(term)
     paper.score = score
     paper.tags = sorted(set(tags), key=lambda x: (-WEIGHTS.get(x, 0), x))[:8]
-    directions = []
-    for direction, terms in DIRECTION_KEYWORDS.items():
-        if any(term in haystack for term in terms):
-            directions.append(direction)
-    paper.directions = directions or ["精确解与特殊背景"]
+    paper.directions = [name for name, terms in DIRECTION_KEYWORDS.items() if any(t in haystack for t in terms)]
+    if not paper.directions:
+        paper.directions = ["精确解与特殊背景"]
+
+
+def primary_direction(paper: Paper) -> str:
+    for direction in DIRECTION_ORDER:
+        if direction in paper.directions:
+            return direction
+    return paper.directions[0]
 
 
 def relevance_label(score: int) -> str:
-    if score >= 28:
+    if score >= 32:
         return "重点关注"
-    if score >= 18:
+    if score >= 22:
         return "值得关注"
-    if score >= 10:
+    if score >= 12:
         return "背景参考"
     return "观察"
 
 
 def select_papers(papers: Iterable[Paper], seen: set[str], limit: int) -> list[Paper]:
-    fresh = [p for p in papers if p.id not in seen and p.score >= 10]
+    fresh = [p for p in papers if p.id not in seen and p.score >= 12]
     fresh.sort(key=lambda p: (p.score, p.published or ""), reverse=True)
     return fresh[:limit]
 
@@ -280,32 +276,45 @@ def md_link(text: str, url: str) -> str:
     return f"[{text}]({url})"
 
 
+def field_lines(paper: Paper, include_direction: bool = False) -> list[str]:
+    authors = "；".join(paper.authors[:8]) if paper.authors else "未列出"
+    tags = ", ".join(paper.tags[:7]) if paper.tags else "待补充"
+    lines = [
+        f"作者：{authors}  ",
+        f"来源：{md_link(paper.id, paper.url)}  ",
+    ]
+    if include_direction:
+        lines.append(f"方向：{primary_direction(paper)}  ")
+    lines += [
+        f"标签：{tags}",
+        "",
+        "简评：与本栏目关键词匹配度较高；建议人工检查摘要、Introduction 和主定理后再决定是否保留为长期文献图谱条目。",
+    ]
+    return lines
+
+
+def render_card(paper: Paper, include_direction: bool = False) -> str:
+    label = relevance_label(paper.score)
+    lines = [f"#### [{label}] {paper.title}", ""]
+    lines.extend(field_lines(paper, include_direction=include_direction))
+    return "\n".join(lines)
+
+
 def render_daily(date: str, papers: list[Paper]) -> str:
     lines = [f"## {date}", ""]
     if not papers:
-        lines += ["今日未筛到强相关新条目。", ""]
-        return "\n".join(lines)
+        return "\n".join(lines + ["今日未筛到强相关新条目。", ""])
     lines += [
         "本期由脚本根据 arXiv、Crossref 与关键词/分类规则生成候选条目；维护者或 AI 助手可在提交前继续压缩、改写或删除弱相关条目。",
         "",
     ]
-    for direction in ["精确解与特殊背景", "稳定性与动力学机制", "IST / RHP 与渐近分析"]:
-        group = [p for p in papers if direction in p.directions]
+    for direction in DIRECTION_ORDER:
+        group = [p for p in papers if primary_direction(p) == direction]
         if not group:
             continue
         lines += [f"### {direction}", ""]
-        for p in group:
-            authors = "；".join(p.authors[:6]) if p.authors else "未列出"
-            tags = ", ".join(p.tags[:6]) if p.tags else "待补充"
-            lines += [
-                f"- **{p.title}**  ",
-                f"  作者：{authors}  ",
-                f"  来源：{md_link(p.id, p.url)}  ",
-                f"  标签：{tags}  ",
-                f"  相关性：**{relevance_label(p.score)}**  ",
-                f"  简评：与本栏目关键词匹配度较高；建议人工检查摘要和主定理后再决定是否保留为长期文献图谱条目。",
-                "",
-            ]
+        for paper in group:
+            lines += [render_card(paper), ""]
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -322,7 +331,7 @@ def replace_date_block(weekly_text: str, date: str, block: str) -> str:
     return weekly_text.rstrip() + replacement
 
 
-def render_latest(date: str, week: str, daily_block: str) -> str:
+def render_latest(week: str, daily_block: str) -> str:
     return f"""# 最新每日简报
 
 [本周完整记录]({week}.md) · [简报归档](index.md) · [返回首页](../index.md)
@@ -334,12 +343,47 @@ def render_latest(date: str, week: str, daily_block: str) -> str:
 """
 
 
+def render_home(date: str, papers: list[Paper]) -> str:
+    selected = sorted(papers, key=lambda p: p.score, reverse=True)[:4]
+    cards = "\n\n".join(render_card(p, include_direction=True) for p in selected) if selected else "今日未筛到强相关新条目。"
+    return f"""# 可积系统研究简报
+
+本页显示最新的 AI 辅助研究简报，面向 Ling Liming 课题组相关方向，重点关注可积系统中的精确解与特殊背景、稳定性与动力学机制、IST/RHP 与渐近分析。
+
+[查看完整最新简报](radar/latest.md) · [查看简报归档](radar/index.md)
+
+!!! note "AI 生成说明"
+    简报主要依据题名、摘要、arXiv 分类、关键词和公开元数据筛选。条目分级表示相关性和阅读优先级，不代表对论文正确性的审查。除特别标注外，条目尚未经过人工逐篇验证；数学结论请以原论文为准。
+
+## 最新简报
+
+### {date}
+
+首页只列重点条目；完整条目见 [Latest / 最新](radar/latest.md)。
+
+## 重点条目
+
+{cards}
+
+[查看完整最新简报](radar/latest.md)
+
+## 其他入口
+
+- [最新每日简报](radar/latest.md): 固定链接，始终显示最近一次生成的简报。
+- [简报归档](radar/index.md): 按周保存每日记录，便于回看。
+- [Resources / 资源](resources.md): selected courses, lecture notes, homepages, and search links.
+- [Group work / 课题组相关](group-work.md): local research context, public notes, and group-facing links.
+- [Core topics / 核心主题](topics.md): current scope of the guide.
+- [About / 关于](about.md): curation policy, design references, and license notes.
+"""
+
+
 def render_registry_entries(papers: list[Paper], date: str, week: str) -> str:
     chunks = []
     for p in papers:
         authors = "\n".join(f'    - "{a.replace(chr(34), chr(39))}"' for a in p.authors)
         tags = "\n".join(f'    - "{t.replace(chr(34), chr(39))}"' for t in p.tags)
-        directions = "\n".join(f'    - "{d}"' for d in p.directions)
+        directions = "\n".join(f'    - "{primary_direction(p)}"')
         chunks.append(f'''- id: "{p.id}"
   title: "{p.title.replace(chr(34), chr(39))}"
   authors:
@@ -396,9 +440,9 @@ def main() -> None:
             "本周文件用于连续记录每日发现。周末或每周整理时，可在本文顶部补充“本周重点关注”。\n",
             encoding="utf-8",
         )
-    weekly_text = week_path.read_text(encoding="utf-8")
-    week_path.write_text(replace_date_block(weekly_text, args.date, daily_block), encoding="utf-8")
-    LATEST_PAGE.write_text(render_latest(args.date, week, daily_block), encoding="utf-8")
+    week_path.write_text(replace_date_block(week_path.read_text(encoding="utf-8"), args.date, daily_block), encoding="utf-8")
+    LATEST_PAGE.write_text(render_latest(week, daily_block), encoding="utf-8")
+    DOCS_INDEX.write_text(render_home(args.date, selected), encoding="utf-8")
 
     if selected:
         registry_text = PAPER_REGISTRY.read_text(encoding="utf-8") if PAPER_REGISTRY.exists() else ""
@@ -407,7 +451,7 @@ def main() -> None:
         registry_text = registry_text.rstrip() + "\n\n" + render_registry_entries(selected, args.date, week)
         PAPER_REGISTRY.write_text(registry_text.lstrip(), encoding="utf-8")
 
-    print(f"wrote {len(selected)} papers to {week_path.relative_to(ROOT)} and {LATEST_PAGE.relative_to(ROOT)}")
+    print(f"wrote {len(selected)} papers to homepage, latest page, and {week_path.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
