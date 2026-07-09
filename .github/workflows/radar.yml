@@ -107,11 +107,7 @@ jobs:
           BODY_FILE=".radar/summary.md"
           if [ ! -f "$BODY_FILE" ]; then
             mkdir -p .radar
-            cat > "$BODY_FILE" <<EOF
-          Automated research-radar update for $BRIEF_DATE.
-
-          No machine-readable summary was produced. Review generated file changes manually before merging.
-          EOF
+            printf 'Automated research-radar update for %s.\n\nNo machine-readable summary was produced. Review generated file changes manually before merging.\n' "$BRIEF_DATE" > "$BODY_FILE"
           fi
 
           git checkout -B "$BRANCH"
