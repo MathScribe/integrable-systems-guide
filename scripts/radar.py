@@ -5,7 +5,7 @@ The script fetches candidate papers from arXiv and Crossref, applies a
 Ling-group-oriented keyword rubric, checks `data/papers.yml` to avoid repeated
 "new paper" entries, and writes:
 
-- `docs/index.md`: homepage with the full latest daily brief;
+- `docs/index.md`: homepage with the full latest daily brief and site links;
 - `docs/radar/latest.md`: fixed latest daily brief mirror;
 - `docs/radar/YYYY-WXX.md`: weekly archive file.
 
@@ -118,7 +118,6 @@ DIRECTION_KEYWORDS = {
     "IST / RHP 与渐近分析": ["inverse scattering", "riemann-hilbert", "riemann hilbert", "marchenko", "jost", "long-time", "long time", "asymptotic", "steepest descent", "soliton gas", "dbar", "barpartial"],
     "精确解与特殊背景": ["darboux", "backlund", "rogue", "breather", "elliptic", "finite-gap", "theta", "weierstrass", "localized solution", "soliton solution"],
 }
-
 DIRECTION_ORDER = ["精确解与特殊背景", "稳定性与动力学机制", "IST / RHP 与渐近分析"]
 
 
@@ -155,6 +154,13 @@ def normalize_space(text: str) -> str:
 
 def clean_arxiv_id(raw_id: str) -> str:
     return raw_id.rstrip("/").split("/")[-1]
+
+
+def score_and_tag(paper: Paper) -> None:
+    haystack = f"{paper.title} {paper.summary}".lower()
+    paper.score = sum(weight for term, weight in WEIGHTS.items() if term in haystack)
+    paper.tags = sorted({term for term in WEIGHTS if term in haystack}, key=lambda x: (-WEIGHTS[x], x))[:8]
+    paper.directions = [name for name, terms in DIRECTION_KEYWORDS.items() if any(t in haystack for t in terms)] or ["精确解与特殊背景"]
 
 
 def fetch_arxiv(max_results_per_query: int = 12) -> list[Paper]:
@@ -210,8 +216,8 @@ def fetch_crossref(from_date: str, rows: int = 8) -> list[Paper]:
             if not doi or not titles:
                 continue
             authors = []
-            for a in item.get("author") or []:
-                name = " ".join(x for x in [a.get("given"), a.get("family")] if x)
+            for author in item.get("author") or []:
+                name = " ".join(x for x in [author.get("given"), author.get("family")] if x)
                 if name:
                     authors.append(name)
             paper = Paper(
@@ -226,13 +232,6 @@ def fetch_crossref(from_date: str, rows: int = 8) -> list[Paper]:
             score_and_tag(paper)
             papers[paper.id] = paper
     return list(papers.values())
-
-
-def score_and_tag(paper: Paper) -> None:
-    haystack = f"{paper.title} {paper.summary}".lower()
-    paper.score = sum(weight for term, weight in WEIGHTS.items() if term in haystack)
-    paper.tags = sorted({term for term in WEIGHTS if term in haystack}, key=lambda x: (-WEIGHTS[x], x))[:8]
-    paper.directions = [name for name, terms in DIRECTION_KEYWORDS.items() if any(t in haystack for t in terms)] or ["精确解与特殊背景"]
 
 
 def primary_direction(paper: Paper) -> str:
@@ -262,23 +261,18 @@ def md_link(text: str, url: str) -> str:
     return f"[{text}]({url})"
 
 
-def render_card(paper: Paper, include_direction: bool = False) -> str:
+def render_card(paper: Paper) -> str:
     authors = "；".join([a for a in paper.authors if a][:8]) or "未列出"
     tags = ", ".join(paper.tags[:7]) or "待补充"
-    lines = [
+    return "\n".join([
         f"#### [{relevance_label(paper.score)}] {paper.title}",
         "",
         f"作者：{authors}  ",
         f"来源：{md_link(paper.id, paper.url)}  ",
-    ]
-    if include_direction:
-        lines.append(f"方向：{primary_direction(paper)}  ")
-    lines += [
         f"标签：{tags}",
         "",
         "简评：与本栏目关键词匹配度较高；建议人工检查摘要、Introduction 和主定理后再决定是否保留为长期文献图谱条目。",
-    ]
-    return "\n".join(lines)
+    ])
 
 
 def render_daily(date: str, papers: list[Paper]) -> str:
@@ -331,6 +325,15 @@ def render_home(week: str, daily_block: str) -> str:
     简报主要依据题名、摘要、arXiv 分类、关键词和公开元数据筛选。条目分级表示相关性和阅读优先级，不代表对论文正确性的审查。除特别标注外，条目尚未经过人工逐篇验证；数学结论请以原论文为准。
 
 {daily_block.rstrip()}
+
+## 其他入口
+
+- [本周归档](radar/{week}.md): 保存本周每日简报的完整记录。
+- [全部归档](radar/index.md): 按周回看历史简报。
+- [Resources / 资源](resources.md): selected courses, lecture notes, homepages, and search links.
+- [Group work / 课题组相关](group-work.md): local research context, public notes, and group-facing links.
+- [Core topics / 核心主题](topics.md): current scope of the guide.
+- [About / 关于](about.md): curation policy, design references, and license notes.
 """
 
 
