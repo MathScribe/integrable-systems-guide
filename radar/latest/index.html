@@ -1,0 +1,684 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Annotated research guide for integrable systems, IST, RHP methods, nonlinear steepest descent, nonlinear waves, and finite-gap methods.">
+      
+      
+      
+        <link rel="canonical" href="https://mathscribe.github.io/integrable-systems-guide/radar/latest/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>最新每日简报 - Integrable Systems Research Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Integrable Systems Research Guide" class="md-header__button md-logo" aria-label="Integrable Systems Research Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Integrable Systems Research Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              最新每日简报
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MathScribe/integrable-systems-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MathScribe/integrable-systems-guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Integrable Systems Research Guide" class="md-nav__button md-logo" aria-label="Integrable Systems Research Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Integrable Systems Research Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MathScribe/integrable-systems-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MathScribe/integrable-systems-guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Daily Brief / 每日简报
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive / 归档
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources / 资源
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../group-work/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group work / 课题组相关
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core topics / 核心主题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About / 关于
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2026-07-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-09
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026-07-09">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        精确解与特殊背景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="精确解与特殊背景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asymptotic-analysis-of-n-elliptic-localized-solutions-for-the-fokas-lenells-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [重点关注] Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrable-full-discretization-of-the-multi-component-short-pulse-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [背景参考] Integrable full discretization of the multi-component short pulse equation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharp-upper-bound-for-amplitudes-of-finite-gap-solutions-of-the-modified-korteweg-de-vries-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [背景参考] Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        稳定性与动力学机制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="稳定性与动力学机制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orbital-stability-of-breathers-for-coupled-nonlinear-schrodinger-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [已发表代表作 / 必读] Orbital stability of breathers for coupled nonlinear Schrödinger equations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spin-current-controlled-anisotropic-deformation-of-magnetic-lump-solitons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [观察] Spin-current-controlled anisotropic deformation of magnetic lump solitons
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ist-rhp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IST / RHP 与渐近分析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IST / RHP 与渐近分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asymptotics-of-soliton-gas-for-the-derivative-nonlinear-schrodinger-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [重点关注 / 必读候选] Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-scattering-for-the-linear-system-associated-with-the-coupled-gerdjikov-ivanov-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [重点关注] Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">最新每日简报<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><a href="../../">返回首页</a> · <a href="../2026-W28/">本周归档</a> · <a href="../">全部归档</a></p>
+<div class="admonition note">
+<p class="admonition-title">AI 生成说明</p>
+<p>本页为固定的最新简报入口。每日更新时，自动化流程应覆盖本页内容，并同时把同一批条目追加到本周归档文件。简报主要依据题名、摘要、分类、关键词和公开元数据筛选；条目分级表示相关性和阅读优先级，不代表对论文正确性的审查。</p>
+</div>
+<h2 id="2026-07-09">2026-07-09<a class="headerlink" href="#2026-07-09" title="Permanent link">&para;</a></h2>
+<h3 id="_2">精确解与特殊背景<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h4 id="asymptotic-analysis-of-n-elliptic-localized-solutions-for-the-fokas-lenells-equation">[重点关注] Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation<a class="headerlink" href="#asymptotic-analysis-of-n-elliptic-localized-solutions-for-the-fokas-lenells-equation" title="Permanent link">&para;</a></h4>
+<p>作者：Wang Tang；Guo-Fu Yu<br />
+来源：<a href="https://arxiv.org/abs/2607.06409">arXiv:2607.06409</a><br />
+标签：Fokas--Lenells equation, elliptic localized solutions, Darboux--Bäcklund transformation, Weierstrass elliptic functions</p>
+<p>简评：这篇与课题组的 DNLS / Fokas--Lenells / 椭圆背景局域波方向高度贴近。摘要中明确使用 Lax pair、Weierstrass 椭圆函数和 N-fold Darboux--Bäcklund transformation 构造 N-elliptic localized solutions，并分析沿传播方向与传播方向之间的渐近行为，适合作为“椭圆背景 + Darboux + 渐近分析”的近期重点条目。</p>
+<h4 id="integrable-full-discretization-of-the-multi-component-short-pulse-equation">[背景参考] Integrable full discretization of the multi-component short pulse equation<a class="headerlink" href="#integrable-full-discretization-of-the-multi-component-short-pulse-equation" title="Permanent link">&para;</a></h4>
+<p>作者：Ayako Hori；Yuta Tanaka；Ken-ichi Maruno；Yasuhiro Ohta；Bao-Feng Feng<br />
+来源：<a href="https://arxiv.org/abs/2607.04756">arXiv:2607.04756</a><br />
+标签：multi-component short pulse equation, integrable discretization, soliton systems</p>
+<p>简评：方程不是 NLS/DNLS，但“多分量 + 可积离散化 + short pulse”与课题组早期 complex short pulse、Darboux/局域波相关工作有外围联系。适合保留为多分量可积模型和离散化方向的背景条目。</p>
+<h4 id="sharp-upper-bound-for-amplitudes-of-finite-gap-solutions-of-the-modified-korteweg-de-vries-equation">[背景参考] Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation<a class="headerlink" href="#sharp-upper-bound-for-amplitudes-of-finite-gap-solutions-of-the-modified-korteweg-de-vries-equation" title="Permanent link">&para;</a></h4>
+<p>作者：Otis C. Wright<br />
+来源：<a href="https://arxiv.org/abs/2607.01348">arXiv:2607.01348</a><br />
+标签：finite-gap solutions, mKdV, amplitude bounds</p>
+<p>简评：这篇偏有限带解的定量性质，不直接进入 DNLS/CNLS 主线，但与“特殊背景、有限带/椭圆函数解、可积方程显式结构”相关。可作为后续整理 finite-gap / elliptic background 阅读图谱时的候选。</p>
+<h3 id="_3">稳定性与动力学机制<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h4 id="orbital-stability-of-breathers-for-coupled-nonlinear-schrodinger-equations">[已发表代表作 / 必读] Orbital stability of breathers for coupled nonlinear Schrödinger equations<a class="headerlink" href="#orbital-stability-of-breathers-for-coupled-nonlinear-schrodinger-equations" title="Permanent link">&para;</a></h4>
+<p>作者：Liming Ling；Dmitry E. Pelinovsky；Huajie Su<br />
+来源：<a href="https://dmpeli.math.mcmaster.ca/PaperBank/BreathersCoupledNLS.pdf">Advances in Mathematics 495 (2026), 110961</a><br />
+标签：coupled NLS, vector solitons, breathers, spectral stability, orbital stability, squared eigenfunctions</p>
+<p>简评：这是本期最值得放入长期文献图谱的公开发表论文。文章研究 CNLS 中非退化 vector soliton 的谱稳定性和 breather 的 orbital stability，稳定性证明使用 Lyapunov 方法，并借助可积结构给出的 squared eigenfunctions。它正好连接了 coupled NLS 显式波、breather orbit、Krein signature、非线性稳定性等课题组核心线索。</p>
+<h4 id="spin-current-controlled-anisotropic-deformation-of-magnetic-lump-solitons">[观察] Spin-current-controlled anisotropic deformation of magnetic lump solitons<a class="headerlink" href="#spin-current-controlled-anisotropic-deformation-of-magnetic-lump-solitons" title="Permanent link">&para;</a></h4>
+<p>作者：Xiao-Qi Cui；Xin-Wei Jin；Shiyi Wang；Xiao-Yong Wen；Zhan-Ying Yang<br />
+来源：<a href="https://arxiv.org/abs/2607.07345">arXiv:2607.07345</a><br />
+标签：lump solitons, anisotropic deformation, magnetic solitons</p>
+<p>简评：这篇属于物理驱动的 lump soliton 动力学，和 Ling 组的 NLS/DNLS/RHP 主线不直接重合，但“lump soliton + deformation”可作为非线性局域结构动力学的外围观察条目。</p>
+<h3 id="ist-rhp">IST / RHP 与渐近分析<a class="headerlink" href="#ist-rhp" title="Permanent link">&para;</a></h3>
+<h4 id="asymptotics-of-soliton-gas-for-the-derivative-nonlinear-schrodinger-equation">[重点关注 / 必读候选] Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation<a class="headerlink" href="#asymptotics-of-soliton-gas-for-the-derivative-nonlinear-schrodinger-equation" title="Permanent link">&para;</a></h4>
+<p>作者：Deng Shan Wang；Xinyu Wang<br />
+来源：<a href="https://arxiv.org/abs/2606.24435">arXiv:2606.24435</a><br />
+标签：DNLS, soliton gas, meromorphic RHP, continuum limit, ∂̄-problem, long-time asymptotics, theta functions</p>
+<p>简评：这篇是 IST / RHP 与渐近分析栏目的强相关条目。它从 DNLS 的 reflectionless potential 和纯 N-soliton 解出发，经 meromorphic RHP 取 N→∞ 连续极限，得到描述 DNLS soliton gas 的 ∂̄-problem，并进一步分析大 x 与长时间渐近。由于它同时涉及 DNLS、soliton gas、RHP、∂̄ 与 theta-function 渐近，是本期最贴近课题组分析方向的新增论文之一。</p>
+<h4 id="inverse-scattering-for-the-linear-system-associated-with-the-coupled-gerdjikov-ivanov-equations">[重点关注] Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations<a class="headerlink" href="#inverse-scattering-for-the-linear-system-associated-with-the-coupled-gerdjikov-ivanov-equations" title="Permanent link">&para;</a></h4>
+<p>作者：Ramazan Ercan<br />
+来源：<a href="https://arxiv.org/abs/2605.28856">arXiv:2605.28856</a><br />
+标签：coupled Gerdjikov--Ivanov equations, DNLS system III, inverse scattering, Jost solutions, scattering coefficients, Marchenko integral equations</p>
+<p>简评：这篇直接面向 coupled Gerdjikov--Ivanov equations 相关线性系统的 direct/inverse scattering。摘要中明确涉及两个 Schwartz-class potentials、Jost solutions、scattering coefficients、bound states 与 Marchenko 型积分方程；它与多分量 / 耦合 DNLS 谱问题和反散射构造高度相关，应优先进入 DNLS hierarchy 与 coupled derivative NLS 的文献候选表。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="../../javascripts/goatcounter.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
