@@ -1,15 +1,13 @@
 # 最新每日简报
 
-[本周完整记录](2026-W28.md) · [简报归档](index.md) · [返回首页](../index.md)
+[返回首页](../index.md) · [本周归档](2026-W28.md) · [全部归档](index.md)
 
 !!! note "AI 生成说明"
     本页为固定的最新简报入口。每日更新时，自动化流程应覆盖本页内容，并同时把同一批条目追加到本周归档文件。简报主要依据题名、摘要、分类、关键词和公开元数据筛选；条目分级表示相关性和阅读优先级，不代表对论文正确性的审查。
 
 ## 2026-07-09
 
-今日简报按“多分量 / DNLS / coupled systems 优先”的标准整理。上一版 IST / RHP 栏目中两篇 Lax pair / Painlevé 观察条目相关性偏弱，现已移出本期；本栏改为收录 DNLS soliton gas 与 coupled Gerdjikov--Ivanov inverse scattering 两篇更贴近课题组方向的论文。
-
-## 精确解与特殊背景
+### 精确解与特殊背景
 
 #### [重点关注] Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation
 
@@ -35,7 +33,7 @@
 
 简评：这篇偏有限带解的定量性质，不直接进入 DNLS/CNLS 主线，但与“特殊背景、有限带/椭圆函数解、可积方程显式结构”相关。可作为后续整理 finite-gap / elliptic background 阅读图谱时的候选。
 
-## 稳定性与动力学机制
+### 稳定性与动力学机制
 
 #### [已发表代表作 / 必读] Orbital stability of breathers for coupled nonlinear Schrödinger equations
 
@@ -53,7 +51,7 @@
 
 简评：这篇属于物理驱动的 lump soliton 动力学，和 Ling 组的 NLS/DNLS/RHP 主线不直接重合，但“lump soliton + deformation”可作为非线性局域结构动力学的外围观察条目。
 
-## IST / RHP 与渐近分析
+### IST / RHP 与渐近分析
 
 #### [重点关注 / 必读候选] Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation
 
