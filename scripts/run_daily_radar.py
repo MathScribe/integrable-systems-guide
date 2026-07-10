@@ -126,6 +126,8 @@ def display_tags(paper: radar.Paper, limit: int = 6) -> list[str]:
         if not clean:
             continue
         normalized = TAG_ALIASES.get(radar.search_text(clean), clean)
+        if normalized == "coupled NLS" and any(tag.casefold() == "multicomponent nls" for tag in tags):
+            continue
         _append_unique(tags, normalized)
         if len(tags) >= limit:
             break
