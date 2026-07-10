@@ -1,5 +1,5 @@
 site_name: Integrable Systems Research Guide
-site_description: Annotated research guide for integrable systems, IST, RHP methods, nonlinear steepest descent, nonlinear waves, and finite-gap methods.
+site_description: Curated research radar, literature maps, and learning routes for integrable systems and nonlinear waves.
 site_url: https://mathscribe.github.io/integrable-systems-guide/
 repo_url: https://github.com/MathScribe/integrable-systems-guide
 repo_name: MathScribe/integrable-systems-guide
@@ -8,18 +8,26 @@ theme:
   name: material
   features:
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
 
 nav:
-  - Daily Brief / 每日简报: index.md
-  - Archive / 归档: radar/index.md
-  - Resources / 资源: resources.md
-  - Group work / 课题组相关: group-work.md
-  - Core topics / 核心主题: topics.md
-  - About / 关于: about.md
+  - Home / 首页: index.md
+  - Research Radar / 研究雷达:
+      - Overview / 栏目说明: radar/index.md
+      - Latest Edition / 最新一期: radar/latest.md
+      - Editions Archive / 编辑批次归档: radar/2026-W28.md
+  - Research Topics / 研究主题: topics.md
+  - Paper Library / 文献库: papers.md
+  - Learning Routes / 学习路线: learning.md
+  - Group Context / 课题组相关: group-work.md
+  - Resources / 外部资源: resources.md
+  - About / 关于:
+      - About the Guide / 网站说明: about.md
+      - Editorial and Date Policy / 编辑与日期政策: editorial-policy.md
 
 markdown_extensions:
   - admonition

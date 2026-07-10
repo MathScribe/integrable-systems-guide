@@ -1,81 +1,49 @@
-# 可积系统研究简报
+# Integrable Systems Research Guide
 
-本页显示最近三天的 AI 辅助研究简报，最新日期在最上方。简报面向 Ling Liming 课题组相关方向，重点关注可积系统中的精确解与特殊背景、稳定性与动力学机制、IST/RHP 与渐近分析。
+面向可积系统与非线性波研究的持续编辑型导航，重点服务于 Ling Liming 课题组相邻方向：DNLS、耦合与多分量系统、Gerdjikov--Ivanov、Fokas--Lenells、coupled NLS、IST/RHP、长时间渐近、soliton gas、Darboux 变换、rogue waves、breathers、有限带解与稳定性。
 
-[本周归档](radar/2026-W28.md) · [全部归档](radar/index.md)
+本站不是“当天论文新闻站”。研究雷达记录的是**本站整理和推荐的批次**；每篇论文的公开日期、本站首次发现日期和推荐日期应分别理解。
 
-!!! note "AI 生成说明"
-    简报主要依据题名、摘要、arXiv 分类、关键词和公开元数据筛选。条目分级表示相关性和阅读优先级，不代表对论文正确性的审查。除特别标注外，条目尚未经过人工逐篇验证；数学结论请以原论文为准。
+[查看最新研究雷达](radar/latest.md) · [浏览研究主题](topics.md) · [进入文献库](papers.md) · [查看学习路线](learning.md)
 
-## 2026-07-09
+!!! note "编辑原则"
+    时间流负责发现，主题页负责积累，文献库负责检索，学习路线负责理解。公开条目经过相关性筛选，但除特别标注外，不代表已经完成全文阅读或数学验证。
 
-### 精确解与特殊背景
+## 最新研究雷达
 
-#### [重点关注] Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation
+### 2026-07-09 · 启动期精选
 
-作者：Wang Tang；Guo-Fu Yu  
-来源：[arXiv:2607.06409](https://arxiv.org/abs/2607.06409)  
-标签：Fokas--Lenells equation, elliptic localized solutions, Darboux--Bäcklund transformation, Weierstrass elliptic functions
+首批内容用于建立网站的近期文献基线，包含近期论文和若干较早但与重点方向高度相关的工作；它们并非都在 2026-07-09 当天发表。
 
-简评：这篇与课题组的 DNLS / Fokas--Lenells / 椭圆背景局域波方向高度贴近。摘要中明确使用 Lax pair、Weierstrass 椭圆函数和 N-fold Darboux--Bäcklund transformation 构造 N-elliptic localized solutions，并分析沿传播方向与传播方向之间的渐近行为，适合作为“椭圆背景 + Darboux + 渐近分析”的近期重点条目。
+**近期重点**
 
-#### [背景参考] Integrable full discretization of the multi-component short pulse equation
+- [Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation](radar/latest.md#asymptotic-analysis-of-n-elliptic-localized-solutions-for-the-fokas-lenells-equation)：Fokas--Lenells、椭圆背景、Darboux--Bäcklund、渐近分析。
+- [Integrable full discretization of the multi-component short pulse equation](radar/latest.md#integrable-full-discretization-of-the-multi-component-short-pulse-equation)：多分量系统、可积离散化、short-pulse 模型。
+- [Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation](radar/latest.md#sharp-upper-bound-for-amplitudes-of-finite-gap-solutions-of-the-modified-korteweg-de-vries-equation)：finite-gap、mKdV、振幅界。
 
-作者：Ayako Hori；Yuta Tanaka；Ken-ichi Maruno；Yasuhiro Ohta；Bao-Feng Feng  
-来源：[arXiv:2607.04756](https://arxiv.org/abs/2607.04756)  
-标签：multi-component short pulse equation, integrable discretization, soliton systems
+**值得补读**
 
-简评：方程不是 NLS/DNLS，但“多分量 + 可积离散化 + short pulse”与课题组早期 complex short pulse、Darboux/局域波相关工作有外围联系。适合保留为多分量可积模型和离散化方向的背景条目。
+- [Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation](radar/latest.md#asymptotics-of-soliton-gas-for-the-derivative-nonlinear-schrodinger-equation)：DNLS、soliton gas、RHP、$\bar\partial$、长时间渐近。
+- [Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations](radar/latest.md#inverse-scattering-for-the-linear-system-associated-with-the-coupled-gerdjikov-ivanov-equations)：coupled GI、Jost 解、散射数据、Marchenko 方程。
+- [Orbital stability of breathers for coupled nonlinear Schrödinger equations](radar/latest.md#orbital-stability-of-breathers-for-coupled-nonlinear-schrodinger-equations)：coupled NLS、breathers、squared eigenfunctions、轨道稳定性。
 
-#### [背景参考] Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation
+[查看完整启动期精选](radar/latest.md)
 
-作者：Otis C. Wright  
-来源：[arXiv:2607.01348](https://arxiv.org/abs/2607.01348)  
-标签：finite-gap solutions, mKdV, amplitude bounds
+## 核心研究主题
 
-简评：这篇偏有限带解的定量性质，不直接进入 DNLS/CNLS 主线，但与“特殊背景、有限带/椭圆函数解、可积方程显式结构”相关。可作为后续整理 finite-gap / elliptic background 阅读图谱时的候选。
+- **DNLS hierarchies**：Kaup--Newell、Chen--Lee--Liu、Gerdjikov--Ivanov 及其 gauge 关系。
+- **Coupled and multi-component systems**：coupled DNLS、Manakov、vector solitons、多分量精确解。
+- **IST / RHP / asymptotics**：Jost 解、散射数据、RHP、Deift--Zhou、$\bar\partial$ steepest descent。
+- **Exact solutions**：Darboux、Bäcklund、breathers、rogue waves、椭圆背景局域波。
+- **Finite-gap methods**：Riemann surfaces、Baker--Akhiezer functions、theta functions。
+- **Stability**：谱稳定性、Krein signature、squared eigenfunctions、Lyapunov 方法。
 
-### 稳定性与动力学机制
+[查看完整主题图谱](topics.md)
 
-#### [已发表代表作 / 必读] Orbital stability of breathers for coupled nonlinear Schrödinger equations
+## 如何使用本站
 
-作者：Liming Ling；Dmitry E. Pelinovsky；Huajie Su  
-来源：[Advances in Mathematics 495 (2026), 110961](https://dmpeli.math.mcmaster.ca/PaperBank/BreathersCoupledNLS.pdf)  
-标签：coupled NLS, vector solitons, breathers, spectral stability, orbital stability, squared eigenfunctions
-
-简评：这是本期最值得放入长期文献图谱的公开发表论文。文章研究 CNLS 中非退化 vector soliton 的谱稳定性和 breather 的 orbital stability，稳定性证明使用 Lyapunov 方法，并借助可积结构给出的 squared eigenfunctions。它正好连接了 coupled NLS 显式波、breather orbit、Krein signature、非线性稳定性等课题组核心线索。
-
-#### [观察] Spin-current-controlled anisotropic deformation of magnetic lump solitons
-
-作者：Xiao-Qi Cui；Xin-Wei Jin；Shiyi Wang；Xiao-Yong Wen；Zhan-Ying Yang  
-来源：[arXiv:2607.07345](https://arxiv.org/abs/2607.07345)  
-标签：lump solitons, anisotropic deformation, magnetic solitons
-
-简评：这篇属于物理驱动的 lump soliton 动力学，和 Ling 组的 NLS/DNLS/RHP 主线不直接重合，但“lump soliton + deformation”可作为非线性局域结构动力学的外围观察条目。
-
-### IST / RHP 与渐近分析
-
-#### [重点关注 / 必读候选] Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation
-
-作者：Deng Shan Wang；Xinyu Wang  
-来源：[arXiv:2606.24435](https://arxiv.org/abs/2606.24435)  
-标签：DNLS, soliton gas, meromorphic RHP, continuum limit, ∂̄-problem, long-time asymptotics, theta functions
-
-简评：这篇是 IST / RHP 与渐近分析栏目的强相关条目。它从 DNLS 的 reflectionless potential 和纯 N-soliton 解出发，经 meromorphic RHP 取 N→∞ 连续极限，得到描述 DNLS soliton gas 的 ∂̄-problem，并进一步分析大 x 与长时间渐近。由于它同时涉及 DNLS、soliton gas、RHP、∂̄ 与 theta-function 渐近，是本期最贴近课题组分析方向的新增论文之一。
-
-#### [重点关注] Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations
-
-作者：Ramazan Ercan  
-来源：[arXiv:2605.28856](https://arxiv.org/abs/2605.28856)  
-标签：coupled Gerdjikov--Ivanov equations, DNLS system III, inverse scattering, Jost solutions, scattering coefficients, Marchenko integral equations
-
-简评：这篇直接面向 coupled Gerdjikov--Ivanov equations 相关线性系统的 direct/inverse scattering。摘要中明确涉及两个 Schwartz-class potentials、Jost solutions、scattering coefficients、bound states 与 Marchenko 型积分方程；它与多分量 / 耦合 DNLS 谱问题和反散射构造高度相关，应优先进入 DNLS hierarchy 与 coupled derivative NLS 的文献候选表。
-
-## 其他入口
-
-- [本周归档](radar/2026-W28.md): 保存本周每日简报的完整记录。
-- [全部归档](radar/index.md): 按周回看历史简报。
-- [Resources / 资源](resources.md): selected courses, lecture notes, homepages, and search links.
-- [Group work / 课题组相关](group-work.md): local research context, public notes, and group-facing links.
-- [Core topics / 核心主题](topics.md): current scope of the guide.
-- [About / 关于](about.md): curation policy, design references, and license notes.
+- 想知道最近值得看什么：进入 [Research Radar](radar/index.md)。
+- 想系统梳理一个方向：进入 [Research Topics](topics.md)。
+- 想按方程、方法或现象查论文：进入 [Paper Library](papers.md)。
+- 想安排学习顺序：进入 [Learning Routes](learning.md)。
+- 想了解筛选、日期和 AI 使用规则：阅读 [Editorial and Date Policy](editorial-policy.md)。
