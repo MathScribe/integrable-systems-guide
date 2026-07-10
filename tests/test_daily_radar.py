@@ -13,17 +13,17 @@ assert SPEC.loader is not None
 SPEC.loader.exec_module(daily)
 
 
-class DailyRadarPublicationGateTests(unittest.TestCase):
-    def test_window_is_inclusive_and_rejects_future_history_and_unknown_dates(self):
-        brief = dt.date(2026, 7, 10)
-        self.assertTrue(daily.publication_eligible("2026-07-10", brief, 2))
-        self.assertTrue(daily.publication_eligible("2026-07-09T23:00:00Z", brief, 2))
-        self.assertFalse(daily.publication_eligible("2026-07-08", brief, 2))
-        self.assertFalse(daily.publication_eligible("2026-07-11", brief, 2))
-        self.assertFalse(daily.publication_eligible(None, brief, 2))
-        self.assertFalse(daily.publication_eligible("not-a-date", brief, 2))
+class ResearchRadarPublicationGateTests(unittest.TestCase):
+    def test_recent_window_is_inclusive_and_rejects_future_old_and_unknown_dates(self):
+        edition = dt.date(2026, 7, 10)
+        self.assertTrue(daily.publication_eligible("2026-07-10", edition, 30))
+        self.assertTrue(daily.publication_eligible("2026-06-11T23:00:00Z", edition, 30))
+        self.assertFalse(daily.publication_eligible("2026-06-10", edition, 30))
+        self.assertFalse(daily.publication_eligible("2026-07-11", edition, 30))
+        self.assertFalse(daily.publication_eligible(None, edition, 30))
+        self.assertFalse(daily.publication_eligible("not-a-date", edition, 30))
 
-    def test_stale_recommendation_is_kept_as_candidate_not_public_recommendation(self):
+    def test_older_recommendation_is_retained_as_backlog_candidate(self):
         original = daily.radar.score_and_classify
         try:
             def fake_score(paper):
@@ -32,7 +32,7 @@ class DailyRadarPublicationGateTests(unittest.TestCase):
                 paper.reason = "strong DNLS and RHP match"
 
             daily.radar.score_and_classify = fake_score
-            daily.install_publication_gate(dt.date(2026, 7, 10), 2)
+            daily.install_publication_gate(dt.date(2026, 7, 10), 30)
             paper = daily.radar.Paper(
                 id="arxiv:old",
                 title="DNLS Riemann-Hilbert analysis",
@@ -43,11 +43,12 @@ class DailyRadarPublicationGateTests(unittest.TestCase):
             )
             daily.radar.score_and_classify(paper)
             self.assertEqual(paper.status, "candidate")
-            self.assertIn("outside the 2-day window", paper.reason)
+            self.assertEqual(paper.level, "值得补读候选")
+            self.assertIn("backlog review", paper.reason)
         finally:
             daily.radar.score_and_classify = original
 
-    def test_current_recommendation_remains_publishable(self):
+    def test_recent_recommendation_remains_publishable(self):
         original = daily.radar.score_and_classify
         try:
             def fake_score(paper):
@@ -56,7 +57,7 @@ class DailyRadarPublicationGateTests(unittest.TestCase):
                 paper.reason = "strong coupled NLS match"
 
             daily.radar.score_and_classify = fake_score
-            daily.install_publication_gate(dt.date(2026, 7, 10), 2)
+            daily.install_publication_gate(dt.date(2026, 7, 10), 30)
             paper = daily.radar.Paper(
                 id="arxiv:new",
                 title="Coupled NLS Darboux transformation",
