@@ -1,19 +1,33 @@
-# About the Guide / 网站说明
+# About / 关于
 
-Integrable Systems Research Guide 是一个持续编辑型研究导航，重点关注 DNLS、耦合与多分量可积系统、IST/RHP、长时间渐近、soliton gas、Darboux transformations、rogue waves、breathers、finite-gap methods 和稳定性问题。
+This project is a small research-oriented guide for integrable systems and related methods.
 
-## 网站定位
+这是一个研究向资料入口，主要整理可积系统、反散射、黎曼--希尔伯特方法、非线性波和相关课题组公开资料。
 
-本站同时维护四类内容：Research Radar、Research Topics、Paper Library 和 Learning Routes。本站不是新闻媒体，也不承诺每天都有公开更新；自动化可以每日运行，但只有出现合格新条目时才生成公开编辑批次。
+## Curation policy / 策展原则
 
-## 与课题组方向的关系
+Keep the guide short. Prefer stable course pages, lecture notes, researcher homepages, search links, and public group materials over long unreviewed lists.
 
-筛选重点面向 Ling Liming 课题组相邻方向，但本站不是课题组官方网站，也不代表任何作者、研究组或机构的正式立场。
+每个条目应说明为什么值得收录；理由尚不清楚的内容保留在候选列表中，不直接公开推荐。
 
-## 内容责任与 AI 辅助
+## AI-assisted curation / AI 辅助整理
 
-公开条目通常基于题名、摘要、分类和公开元数据进行初筛。AI 用于检索、去重、元数据清洗、初步分类、文字整理和页面生成；最终公开取舍应经过人工 review。数学结论、定理、证明和计算必须以原论文为准。
+AI 用于检索、去重、元数据清洗、初步分类和文字整理。公开简报主要依据题名、摘要、分类、关键词和公开元数据筛选，不代表已经完成全文阅读或数学正确性核验；数学结论请以原论文为准。
 
-原创内容与注释采用 CC BY-SA 4.0；代码、脚本、配置和 workflow 采用 MIT License。本站使用 GoatCounter 做轻量、隐私友好的聚合访问统计。
+## Design references / 设计参考
 
-日期、编辑分类和验证状态的完整定义见 [Editorial and Date Policy](editorial-policy.md)。
+本站的简洁导航和研究指南形式参考了以下公开项目：
+
+- [CS 自学指南](https://csdiy.wiki/)
+- [清华大学数学课程学习指南 / MathLoveYou](https://mathloveyou.github.io/)
+- [目录 - 小时百科](https://wuli.wiki/online/index.html)
+
+本站范围更窄，主要围绕可积系统研究和本地课题组需求维护。本站不是课题组官方网站，也不代表任何作者、研究组或机构的正式立场。
+
+## License / 许可证
+
+原创内容与注释采用 CC BY-SA 4.0；代码、脚本、配置和 workflows 采用 MIT License。外部资源仍遵循原作者或发布者的许可条款。
+
+## Analytics / 访问统计
+
+本站使用 GoatCounter 做轻量、隐私友好的聚合访问统计，仅用于了解哪些页面更有用。
