@@ -70,13 +70,22 @@ jobs:
               raise SystemExit(0)
 
           text = index_path.read_text(encoding="utf-8")
-          link = f"- [{week_id}]({week_id}.md)"
-          if link not in text:
-              if f"## {iso_year}" not in text:
-                  text = text.rstrip() + f"\n\n## {iso_year}\n\n{link}\n"
-              else:
-                  text = text.rstrip() + f"\n{link}\n"
-              index_path.write_text(text, encoding="utf-8")
+          link = f"- [{date.isoformat()}]({week_id}.md#{date.isoformat()})"
+          if link in text:
+              raise SystemExit(0)
+
+          year_heading = f"## {iso_year}"
+          if year_heading not in text:
+              text = text.rstrip() + f"\n\n{year_heading}\n\n{link}\n"
+          else:
+              lines = text.rstrip().splitlines()
+              heading_index = lines.index(year_heading)
+              insert_at = heading_index + 1
+              while insert_at < len(lines) and not lines[insert_at].strip():
+                  insert_at += 1
+              lines[insert_at:insert_at] = ["", link]
+              text = "\n".join(lines) + "\n"
+          index_path.write_text(text, encoding="utf-8")
           PY
 
       - name: Validate MkDocs build
@@ -117,6 +126,7 @@ jobs:
           PR_NUMBER=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')
           if [ -z "$PR_NUMBER" ]; then
             gh pr create \
+              --draft \
               --base main \
               --head "$BRANCH" \
               --title "Draft research radar edition for $EDITION_DATE" \
