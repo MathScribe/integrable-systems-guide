@@ -9,25 +9,37 @@ This repository is not intended to be a generic awesome list or an automated rec
 ## Project principles
 
 1. Keep the public navigation short.
-2. Recommend a small number of papers that are useful for the current research directions.
+2. Recommend a useful reading set rather than merely listing papers uploaded that day.
 3. A daily recommendation date does not imply that every paper was published that day.
-4. Separate current bibliographic metadata from the site's recommendation history.
-5. Treat AI-generated research briefs as discovery aids, not as mathematical verification.
-6. Automate only mechanical validation; keep paper selection and annotation reviewable.
+4. Mix recent papers with missed papers, older high-relevance work, formal journal versions, group-adjacent work, and useful method/background papers when the reading logic benefits from it.
+5. Separate current bibliographic metadata from the site's recommendation history.
+6. Treat AI-assisted research briefs as discovery aids, not as mathematical verification.
+7. Automate only mechanical validation; keep paper selection and annotation reviewable.
 
 ## Research-brief workflow
 
-The brief is maintained editorially rather than by a scheduled paper-ranking action:
+The brief is maintained editorially rather than by a scheduled paper-ranking GitHub Action:
 
-1. search recent papers and useful backlog items;
-2. compare arXiv IDs and DOIs against `data/papers.yml`;
-3. refresh the current title, author list, version, and update date for papers being considered or displayed;
-4. select roughly 3--5 papers and write concise, abstract-based annotations;
-5. update the daily page, weekly archive, homepage, and `data/papers.yml` in one pull request;
-6. let GitHub Actions validate the registry and run `mkdocs build --strict`;
-7. merge only after editorial review.
+1. manually search current primary sources, including arXiv and version histories, journal/DOI records, author or research-group publication pages, references from current reading, and a small human-selected backlog;
+2. compare arXiv IDs, DOIs, and titles against `data/papers.yml`;
+3. refresh the current title, full author list, version, revision date, DOI, journal information, and source link for papers being considered or displayed;
+4. select roughly 3--7 papers, with the number determined by quality rather than a fixed quota;
+5. build a coherent reading set that may combine recent work, recently missed work, older high-relevance papers, formal journal versions, group-related work, and method/background papers; do not default to an arXiv-only list without an editorial reason;
+6. write concise, abstract-based annotations explaining what each paper does and why it is worth reading now;
+7. update the daily page, weekly archive, homepage, and `data/papers.yml` in one pull request;
+8. let GitHub Actions validate registry identity fields, check that titles/authors/links agree across the registry and published pages, and run `mkdocs build --strict`;
+9. review the complete pull-request diff before publication.
 
 An existing arXiv ID is not recommended again merely because a new version appears. Its metadata is refreshed in place. `featured_on` records the site's historical recommendation date, while `authors`, `title`, `updated`, and `version` describe the current known record. Pull-request descriptions should list new recommendations and metadata-only changes separately.
+
+When an arXiv abstract page and the latest versioned PDF disagree because of cache lag, use the latest versioned source/PDF for the current metadata and record the discrepancy in `metadata_note` or the pull-request description.
+
+## Publication phases
+
+The workflow is intentionally staged:
+
+- **Current phase:** the assistant performs search, selection, editing, metadata refresh, PR review, and CI repair; the repository owner reviews the finished PR and gives explicit merge approval.
+- **Later stable phase:** automatic merge/publication may be enabled only after the repository owner explicitly confirms that several editions have been consistently accurate and useful. CI success alone is never sufficient; the assistant must also complete the editorial review.
 
 ## Contributing
 
@@ -53,7 +65,7 @@ docs/topics.md                 # Compact topic scope
 docs/about.md                  # Curation policy, design references, AI use, license
 
 data/papers.yml                # Published-paper deduplication and metadata registry
-.github/workflows/quality.yml   # Registry validation and strict MkDocs build
+.github/workflows/quality.yml   # Registry/page consistency and strict MkDocs build
 ```
 
 Only files under `docs/` are published by MkDocs.
