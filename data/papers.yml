@@ -174,10 +174,10 @@
   authors:
     - "Ramazan Ercan"
   source:
-    type: "arxiv"
+    type: "mixed"
     url: "https://arxiv.org/abs/2605.28856"
     arxiv_id: "2605.28856"
-    doi: "10.48550/arXiv.2605.28856"
+    doi: "10.58997/ejde.2026.37"
   first_seen: "2026-07-09"
   first_week: "2026-W28"
   directions:
@@ -191,6 +191,33 @@
     - "Marchenko integral equations"
   relevance: "highlight"
   review_status: "ai-screened"
+  last_metadata_update: "2026-07-10"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2606.22808"
+  title: "Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent $(3+1)$ Nonlinear Schrödinger Systems"
+  title_fingerprint: "exact harmonic dimensional reduction conformal lifting multicomponent 3 1 nonlinear schrodinger systems"
+  authors:
+    - "O. V. Kaptsov"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2606.22808"
+    arxiv_id: "2606.22808"
+    doi: null
+  first_seen: "2026-07-10"
+  first_week: "2026-W28"
+  directions:
+    - "精确解与特殊背景"
+  tags:
+    - "coupled nonlinear schrodinger"
+    - "manakov"
+    - "rogue wave"
+    - "breather"
+    - "breathers"
+  relevance: "重点关注"
+  review_status: "script-screened"
   appeared_in:
     - "docs/radar/2026-W28.md"
     - "docs/radar/latest.md"
