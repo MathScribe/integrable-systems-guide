@@ -9,15 +9,17 @@
 
 ## 2026-07-10
 
-### 主线相关
+本期不是“当天 arXiv 列表”，而是一组今天值得读的材料：正式期刊版本、近期预印本、课题组相关旧文和方法补读混合编排。
+
+### 主线与近期进展
 
 - **Painlevé XXXIV asymptotics for the defocusing nonlinear Schrödinger equation with a finite-genus algebro-geometric background**  
-  Engui Fan, Gaozhan Li, Yiling Yang, Lun Zhang · [arXiv:2602.13589](https://arxiv.org/abs/2602.13589) · `finite-genus background` `RHP` `Painlevé XXXIV`
+  Engui Fan, Gaozhan Li, Yiling Yang, Lun Zhang · [doi:10.1007/s00208-026-03322-x](https://doi.org/10.1007/s00208-026-03322-x) · `finite-genus background` `RHP` `Painlevé XXXIV`
 
 - **Soliton gas resolution and statistics of random wave fields in semiclassical integrable turbulence**  
   T. Congy, G. A. El · [arXiv:2605.06306](https://arxiv.org/abs/2605.06306) · `focusing NLS` `soliton gas` `stochastic IST`
 
-### 相邻方向
+### 相邻系统与非线性波
 
 - **Novel periodic solutions and rogue waves of the defocusing scalar and coupled Ablowitz-Ladik systems on a nonzero background**  
   Francesco Coppini, Barbara Prinari · [arXiv:2606.05123](https://arxiv.org/abs/2606.05123) · `Ablowitz--Ladik` `discrete breathers` `rogue waves`
@@ -25,18 +27,20 @@
 - **Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent $(3+1)$ Nonlinear Schrödinger Systems**  
   O. V. Kaptsov · [arXiv:2606.22808](https://arxiv.org/abs/2606.22808) · `dimensional reduction` `multicomponent NLS` `Manakov system`
 
+### 课题组相关与方法补读
+
+- **General soliton solutions to a coupled Fokas-Lenells equation**  
+  Liming Ling, Bao-Feng Feng, Zuonong Zhu · [arXiv:1611.10057](https://arxiv.org/abs/1611.10057) · `coupled Fokas--Lenells` `Kaup--Newell hierarchy` `Darboux transformation`
+
+- **The Riemann-Hilbert approach for the integrable fractional Fokas--Lenells equation**  
+  Ling An, Liming Ling · [arXiv:2308.16640](https://arxiv.org/abs/2308.16640) · `fractional Fokas--Lenells` `RHP` `squared eigenfunctions`
+
 ---
 
 ## 近期推荐
 
 - **Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation**  
-  Feng-Bao Feng, Wang Tang, Guo-Fu Yu · [arXiv:2607.06409](https://arxiv.org/abs/2607.06409) · `Fokas--Lenells` `Darboux--Bäcklund` `elliptic background`
-
-- **Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation**  
-  Deng Shan Wang, Xinyu Wang · [arXiv:2606.24435](https://arxiv.org/abs/2606.24435) · `DNLS` `soliton gas` `RHP` `∂̄`
-
-- **Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations**  
-  Ramazan Ercan · [arXiv:2605.28856](https://arxiv.org/abs/2605.28856) · `coupled GI` `Jost solutions` `Marchenko equations`
+  Bao-Feng Feng, Wang Tang, Guo-Fu Yu · [arXiv:2607.06409](https://arxiv.org/abs/2607.06409) · `Fokas--Lenells` `Darboux--Bäcklund` `elliptic background`
 
 [查看完整简报](radar/latest.md)
 
