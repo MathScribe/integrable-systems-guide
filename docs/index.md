@@ -9,12 +9,12 @@
 
 ## 2026-07-10
 
-本期不是“当天 arXiv 列表”，而是一组今天值得读的材料：正式期刊版本、近期预印本、课题组相关旧文和方法补读混合编排。
+本期不是“当天 arXiv 列表”，而是一组今天值得读的材料：正式期刊版本、近期预印本、已发表课题组旧文和方法补读混合编排。
 
 ### 主线与近期进展
 
 - **Painlevé XXXIV asymptotics for the defocusing nonlinear Schrödinger equation with a finite-genus algebro-geometric background**  
-  Engui Fan, Gaozhan Li, Yiling Yang, Lun Zhang · [doi:10.1007/s00208-026-03322-x](https://doi.org/10.1007/s00208-026-03322-x) · `finite-genus background` `RHP` `Painlevé XXXIV`
+  Engui Fan, Gaozhan Li, Yiling Yang, Lun Zhang · [Mathematische Annalen, doi:10.1007/s00208-026-03322-x](https://doi.org/10.1007/s00208-026-03322-x) · `finite-genus background` `RHP` `Painlevé XXXIV`
 
 - **Soliton gas resolution and statistics of random wave fields in semiclassical integrable turbulence**  
   T. Congy, G. A. El · [arXiv:2605.06306](https://arxiv.org/abs/2605.06306) · `focusing NLS` `soliton gas` `stochastic IST`
@@ -29,11 +29,11 @@
 
 ### 课题组相关与方法补读
 
-- **General soliton solutions to a coupled Fokas-Lenells equation**  
-  Liming Ling, Bao-Feng Feng, Zuonong Zhu · [arXiv:1611.10057](https://arxiv.org/abs/1611.10057) · `coupled Fokas--Lenells` `Kaup--Newell hierarchy` `Darboux transformation`
+- **High Order Solutions and Generalized Darboux Transformations of Derivative Schrödinger Equation**  
+  Boling Guo, Liming Ling, Q. P. Liu · [Studies in Applied Mathematics 130 (2013), 317–344, doi:10.1111/j.1467-9590.2012.00568.x](https://doi.org/10.1111/j.1467-9590.2012.00568.x) · `DNLS` `generalized Darboux transformation` `higher-order solitons`
 
-- **The Riemann-Hilbert approach for the integrable fractional Fokas--Lenells equation**  
-  Ling An, Liming Ling · [arXiv:2308.16640](https://arxiv.org/abs/2308.16640) · `fractional Fokas--Lenells` `RHP` `squared eigenfunctions`
+- **Darboux transformation and classification of solution for mixed coupled nonlinear Schrödinger equations**  
+  Liming Ling, Li-Chen Zhao, Boling Guo · [Communications in Nonlinear Science and Numerical Simulation 32 (2016), 285–304, doi:10.1016/j.cnsns.2015.08.023](https://doi.org/10.1016/j.cnsns.2015.08.023) · `mixed coupled NLS` `dark solitons` `breathers` `rogue waves`
 
 ---
 
