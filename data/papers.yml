@@ -174,10 +174,10 @@
   authors:
     - "Ramazan Ercan"
   source:
-    type: "arxiv"
+    type: "mixed"
     url: "https://arxiv.org/abs/2605.28856"
     arxiv_id: "2605.28856"
-    doi: "10.48550/arXiv.2605.28856"
+    doi: "10.58997/ejde.2026.37"
   first_seen: "2026-07-09"
   first_week: "2026-W28"
   directions:
@@ -191,6 +191,266 @@
     - "Marchenko integral equations"
   relevance: "highlight"
   review_status: "ai-screened"
+  last_metadata_update: "2026-07-10"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2111.00284"
+  title: "Darboux transformation and solitonic solution to the coupled complex short pulse equation"
+  title_fingerprint: "darboux transformation solitonic solution coupled complex short pulse equation"
+  authors:
+    - "Bao-Feng Feng"
+    - "Liming Ling"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2111.00284"
+    arxiv_id: "2111.00284"
+    doi: null
+  first_seen: "2026-07-10"
+  first_week: "2026-W28"
+  directions:
+    - "精确解与特殊背景"
+    - "稳定性与动力学机制"
+    - "IST / RHP 与渐近分析"
+  tags:
+    - "inverse scattering"
+    - "darboux"
+    - "squared eigenfunction"
+    - "squared eigenfunctions"
+    - "modulational instability"
+    - "short pulse equation"
+    - "complex short pulse"
+    - "rogue wave"
+    - "breather"
+    - "bright soliton"
+  relevance: "重点关注"
+  review_status: "script-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2411.08787"
+  title: "Stability analysis of breathers for coupled nonlinear Schrodinger equations"
+  title_fingerprint: "stability analysis breathers coupled nonlinear schrodinger equations"
+  authors:
+    - "Liming Ling"
+    - "Dmitry E. Pelinovsky"
+    - "Huajie Su"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2411.08787"
+    arxiv_id: "2411.08787"
+    doi: null
+  first_seen: "2026-07-10"
+  first_week: "2026-W28"
+  directions:
+    - "精确解与特殊背景"
+    - "稳定性与动力学机制"
+  tags:
+    - "coupled nonlinear schrodinger"
+    - "squared eigenfunction"
+    - "squared eigenfunctions"
+    - "spectral stability"
+    - "breather"
+    - "breathers"
+    - "vector soliton"
+    - "vector solitons"
+    - "huajie su"
+    - "liming ling"
+  relevance: "重点关注"
+  review_status: "script-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2210.02265"
+  title: "Soliton interactions and Yang-Baxter maps for the complex coupled short-pulse equation"
+  title_fingerprint: "soliton interactions yang baxter maps complex coupled short pulse equation"
+  authors:
+    - "Vincent Caudrelier"
+    - "Aikaterini Gkogkou"
+    - "Barbara Prinari"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2210.02265"
+    arxiv_id: "2210.02265"
+    doi: null
+  first_seen: "2026-07-10"
+  first_week: "2026-W28"
+  directions:
+    - "精确解与特殊背景"
+    - "IST / RHP 与渐近分析"
+  tags:
+    - "manakov"
+    - "long-time asymptotics"
+    - "darboux"
+    - "dressing method"
+    - "short pulse equation"
+    - "breather"
+    - "breathers"
+    - "vector soliton"
+    - "vector solitons"
+  relevance: "重点关注"
+  review_status: "script-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2510.12129"
+  title: "Nonlinear stability of vector multi-solitons in coupled NLS and modified KdV equations"
+  title_fingerprint: "nonlinear stability vector multi solitons coupled nls modified kdv equations"
+  authors:
+    - "Liming Ling"
+    - "Huajie Su"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2510.12129"
+    arxiv_id: "2510.12129"
+    doi: null
+  first_seen: "2026-07-10"
+  first_week: "2026-W28"
+  directions:
+    - "精确解与特殊背景"
+    - "稳定性与动力学机制"
+  tags:
+    - "coupled nls"
+    - "coupled nonlinear schrodinger"
+    - "zero curvature"
+    - "modified korteweg"
+    - "mkdv"
+    - "breather"
+    - "breathers"
+    - "huajie su"
+    - "liming ling"
+  relevance: "重点关注"
+  review_status: "script-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2204.07395"
+  title: "The multi elliptic-localized solutions and their asymptotic behaviors for the mKdV equation"
+  title_fingerprint: "multi elliptic localized solutions their asymptotic behaviors mkdv equation"
+  authors:
+    - "Liming Ling"
+    - "Xuan Sun"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2204.07395"
+    arxiv_id: "2204.07395"
+    doi: null
+  first_seen: "2026-07-10"
+  first_week: "2026-W28"
+  directions:
+    - "精确解与特殊背景"
+    - "IST / RHP 与渐近分析"
+  tags:
+    - "darboux"
+    - "backlund"
+    - "theta function"
+    - "theta functions"
+    - "modified korteweg"
+    - "mkdv"
+    - "breather"
+    - "breathers"
+    - "localized solution"
+    - "localized solutions"
+  relevance: "重点关注"
+  review_status: "script-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:2011.14205"
+  title: "A $\\dbar$-steepest descent method for oscillatory Riemann-Hilbert problems"
+  title_fingerprint: "dbar steepest descent method oscillatory riemann hilbert problems"
+  authors:
+    - "Fudong Wang"
+    - "Wen-Xiu Ma"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/2011.14205"
+    arxiv_id: "2011.14205"
+    doi: null
+  first_seen: "2026-07-10"
+  first_week: "2026-W28"
+  directions:
+    - "IST / RHP 与渐近分析"
+  tags:
+    - "akns hierarchy"
+    - "inverse scattering transform"
+    - "inverse scattering"
+    - "riemann-hilbert"
+    - "rhp"
+    - "dbar"
+    - "steepest descent"
+    - "mkdv"
+  relevance: "重点关注"
+  review_status: "script-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "doi:10.1088/1674-1056/ae7277"
+  title: "Localized Wave Solutions and Rogue Wave Solutions for the Complex Modified KdV Equation under the Elliptic Function Background"
+  title_fingerprint: "localized wave solutions rogue wave solutions complex modified kdv equation under elliptic function background"
+  authors:
+    - "Xin-Yi Xu"
+    - "Huan-He Dong"
+  source:
+    type: "journal"
+    url: "https://doi.org/10.1088/1674-1056/ae7277"
+    arxiv_id: null
+    doi: "10.1088/1674-1056/ae7277"
+  first_seen: "2026-07-10"
+  first_week: "2026-W28"
+  directions:
+    - "精确解与特殊背景"
+    - "稳定性与动力学机制"
+  tags:
+    - "lax pair"
+    - "darboux"
+    - "theta function"
+    - "modified korteweg"
+    - "mkdv"
+    - "rogue wave"
+    - "rogue waves"
+    - "breather"
+    - "breathers"
+    - "elliptic background"
+  relevance: "重点关注"
+  review_status: "script-screened"
+  appeared_in:
+    - "docs/radar/2026-W28.md"
+    - "docs/radar/latest.md"
+
+- id: "arxiv:1711.10833"
+  title: "On nonlocal reductions of the multi-component nonlinear Schrodinger equation on symmetric spaces"
+  title_fingerprint: "nonlocal reductions multi component nonlinear schrodinger equation symmetric spaces"
+  authors:
+    - "Georgi G. Grahovski"
+    - "Junaid I. Mustafa"
+    - "Hadi Susanto"
+  source:
+    type: "arxiv"
+    url: "https://arxiv.org/abs/1711.10833"
+    arxiv_id: "1711.10833"
+    doi: null
+  first_seen: "2026-07-10"
+  first_week: "2026-W28"
+  directions:
+    - "精确解与特殊背景"
+    - "IST / RHP 与渐近分析"
+  tags:
+    - "multi-component nls"
+    - "manakov"
+    - "inverse scattering transform"
+    - "inverse scattering"
+    - "jost"
+    - "dressing method"
+  relevance: "重点关注"
+  review_status: "script-screened"
   appeared_in:
     - "docs/radar/2026-W28.md"
     - "docs/radar/latest.md"
