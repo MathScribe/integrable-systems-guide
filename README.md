@@ -41,6 +41,8 @@ The workflow is intentionally staged:
 - **Current phase:** the assistant performs daily search, selection, editing, metadata refresh, PR review, and CI repair. The repository owner reviews the finished PR and gives explicit merge approval.
 - **Later stable phase:** automatic merge/publication may be enabled only after the repository owner explicitly confirms that several editions have been consistently accurate and useful. CI success alone is never sufficient; the assistant must also complete the editorial review and find no unresolved metadata or relevance issue.
 
+Until that later phase is explicitly enabled, PRs must remain open after assistant approval. The assistant may approve the PR, but may not merge it or enable auto-merge without the repository owner's explicit instruction.
+
 ## Contributing
 
 The easiest way to help is to open a GitHub Issue:
