@@ -9,7 +9,7 @@
 - id: "arxiv:2607.06409"
   title: "Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation"
   authors:
-    - "Feng-Bao Feng"
+    - "Bao-Feng Feng"
     - "Wang Tang"
     - "Guo-Fu Yu"
   url: "https://arxiv.org/abs/2607.06409"
@@ -19,7 +19,7 @@
   updated: "2026-07-09"
   version: "v2"
   metadata_checked_at: "2026-07-10"
-  metadata_note: "arXiv v2 adds Feng-Bao Feng to the author list"
+  metadata_note: "arXiv v2 adds Bao-Feng Feng to the author list"
   featured_on:
     - "2026-07-09"
   tags:
@@ -175,7 +175,7 @@
     - "Gaozhan Li"
     - "Yiling Yang"
     - "Lun Zhang"
-  url: "https://arxiv.org/abs/2602.13589"
+  url: "https://doi.org/10.1007/s00208-026-03322-x"
   arxiv_id: "2602.13589"
   doi: "10.1007/s00208-026-03322-x"
   submitted: "2026-02-14"
@@ -190,3 +190,46 @@
     - "Riemann--Hilbert problem"
     - "Painlevé XXXIV"
     - "long-time asymptotics"
+
+- id: "arxiv:1611.10057"
+  title: "General soliton solutions to a coupled Fokas-Lenells equation"
+  authors:
+    - "Liming Ling"
+    - "Bao-Feng Feng"
+    - "Zuonong Zhu"
+  url: "https://arxiv.org/abs/1611.10057"
+  arxiv_id: "1611.10057"
+  doi: "10.48550/arXiv.1611.10057"
+  submitted: "2016-11-30"
+  updated: "2016-11-30"
+  version: "v1"
+  metadata_checked_at: "2026-07-10"
+  featured_on:
+    - "2026-07-10"
+  tags:
+    - "coupled Fokas--Lenells equation"
+    - "Kaup--Newell hierarchy"
+    - "Darboux transformation"
+    - "bright-dark solitons"
+    - "breather-like solutions"
+
+- id: "arxiv:2308.16640"
+  title: "The Riemann-Hilbert approach for the integrable fractional Fokas--Lenells equation"
+  authors:
+    - "Ling An"
+    - "Liming Ling"
+  url: "https://arxiv.org/abs/2308.16640"
+  arxiv_id: "2308.16640"
+  doi: "10.48550/arXiv.2308.16640"
+  submitted: "2023-08-31"
+  updated: "2023-08-31"
+  version: "v1"
+  metadata_checked_at: "2026-07-10"
+  featured_on:
+    - "2026-07-10"
+  tags:
+    - "fractional Fokas--Lenells equation"
+    - "Riemann--Hilbert problem"
+    - "squared eigenfunctions"
+    - "inverse scattering"
+    - "soliton asymptotics"
