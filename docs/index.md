@@ -23,7 +23,7 @@
 ### 值得补读
 
 - **Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation**  
-  Deng Shan Wang, Xinyu Wang · [arXiv:2606.24435](https://arxiv.org/abs/2606.24435) · `DNLS` `soliton gas` `RHP` `$\bar\partial$`
+  Deng Shan Wang, Xinyu Wang · [arXiv:2606.24435](https://arxiv.org/abs/2606.24435) · `DNLS` `soliton gas` `RHP` `∂̄`
 
 - **Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations**  
   Ramazan Ercan · [arXiv:2605.28856](https://arxiv.org/abs/2605.28856) · `coupled GI` `Jost solutions` `Marchenko equations`
