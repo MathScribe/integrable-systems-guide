@@ -1,37 +1,34 @@
-# About / 关于
+# About the Guide / 网站说明
 
-This project is a small research-oriented guide for integrable systems and related methods.
+Integrable Systems Research Guide 是一个持续编辑型研究导航，重点关注 DNLS、耦合与多分量可积系统、IST/RHP、长时间渐近、soliton gas、Darboux transformations、rogue waves、breathers、finite-gap methods 和稳定性问题。
 
-这是一个小型研究向资料入口，主要服务于可积系统、反散射、黎曼-希尔伯特方法、非线性波和相关课题组资料整理。
+## 网站定位
 
-## Curation policy / 策展原则
+本站同时维护四类内容：
 
-Keep the guide short. Prefer stable course pages, lecture notes, researcher homepages, search links, and public group materials over long unreviewed lists.
+- **Research Radar**：近期发现与编辑推荐；
+- **Research Topics**：按研究方向组织的长期知识图谱；
+- **Paper Library**：按方程、方法和现象索引的文献库；
+- **Learning Routes**：从基础到研究前沿的学习路线。
 
-A useful entry should make clear why the link is included. If the reason is not yet clear, keep it in a candidate section or leave it out.
+本站不是新闻媒体，也不承诺每天都有公开更新。自动化可以每日运行，但只有出现合格新条目时才生成公开编辑批次。
 
-## Design references / 设计参考
+## 与课题组方向的关系
 
-The site structure is inspired by public learning-guide and knowledge-map projects, especially their clean navigation and use-case-oriented layout.
+筛选重点面向 Ling Liming 课题组相邻方向，但本站不是课题组官方网站，也不代表任何作者、研究组或机构的正式立场。
 
-- [CS 自学指南](https://csdiy.wiki/)
-- [清华大学数学课程学习指南 / MathLoveYou](https://mathloveyou.github.io/)
-- [目录 - 小时百科](https://wuli.wiki/online/index.html)
+## 内容责任
 
-This project differs in scope: it is narrower, research-oriented, and maintained around integrable systems and local group needs.
+公开条目通常基于题名、摘要、分类和公开元数据进行初筛。数学结论、定理、证明和计算必须以原论文为准。验证程度通过 metadata-only、abstract-checked、skimmed、read 和 verified 等状态标注。
 
-## Comments / 评论
+## AI 辅助
 
-Comments may be added later via Giscus after GitHub Discussions is enabled.
+AI 用于检索、去重、元数据清洗、初步分类、文字整理和页面生成。最终公开取舍应经过人工 review。
 
-## License / 许可证
+## 设计与许可
 
-Original site content and annotations are licensed under CC BY-SA 4.0. Code, scripts, configuration, and workflows are licensed under the MIT License.
+站点借鉴公开学习指南和知识图谱项目的清晰导航方式，但范围更窄、更偏研究使用。原创内容与注释采用 CC BY-SA 4.0；代码、脚本、配置和 workflow 采用 MIT License。外部资源仍遵循其原作者或发布者的许可。
 
-External resources linked from this guide remain under their original authors' or publishers' terms.
+本站使用 GoatCounter 做轻量、隐私友好的聚合访问统计，仅用于了解哪些页面更有用。
 
-## Analytics / 访问统计
-
-This site uses GoatCounter for lightweight, privacy-friendly aggregate traffic statistics. It is used only to understand which pages are useful.
-
-本站使用 GoatCounter 做轻量聚合访问统计，仅用于了解哪些页面更有用。
+日期、编辑分类和验证状态的完整定义见 [Editorial and Date Policy](editorial-policy.md)。
