@@ -27,7 +27,7 @@ The brief is maintained editorially rather than by a scheduled paper-ranking act
 6. let GitHub Actions validate the registry and run `mkdocs build --strict`;
 7. merge only after editorial review.
 
-An existing arXiv ID is not recommended again merely because a new version appears. Its metadata is refreshed in place. `featured_on` records the site's historical recommendation date, while `authors`, `title`, `updated`, and `version` describe the current known record.
+An existing arXiv ID is not recommended again merely because a new version appears. Its metadata is refreshed in place. `featured_on` records the site's historical recommendation date, while `authors`, `title`, `updated`, and `version` describe the current known record. Each editorial update should report new recommendations and metadata-only changes separately in the pull-request description.
 
 ## Contributing
 
