@@ -1,7 +1,0 @@
-# Candidate lifecycle registry for the research radar.
-#
-# Status values:
-#   recommended: promoted into a public daily brief or long-term registry.
-#   candidate: seen by the broad recall layer but not strong enough for public posting yet.
-#   rejected: explicitly suppressed to prevent repeated weak recommendations.
-#   metadata-updated: known paper seen again with cross-source metadata.

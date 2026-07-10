@@ -1,11 +1,10 @@
-name: Validate site and radar
+name: Validate site
 
 on:
   pull_request:
     paths:
       - "docs/**"
-      - "scripts/**"
-      - "tests/**"
+      - "data/papers.yml"
       - "mkdocs.yml"
       - "requirements.txt"
       - ".github/workflows/quality.yml"
@@ -31,10 +30,66 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Validate radar code and tests
+      - name: Validate paper registry and page consistency
         run: |
-          python -m py_compile scripts/radar.py scripts/run_daily_radar.py
-          python -m unittest discover -s tests
+          python - <<'PY'
+          import datetime as dt
+          from pathlib import Path
+          import yaml
+
+          path = Path("data/papers.yml")
+          papers = yaml.safe_load(path.read_text(encoding="utf-8"))
+          if not isinstance(papers, list):
+              raise SystemExit("data/papers.yml must contain a YAML list")
+
+          seen = set()
+          featured_dates = []
+          for index, paper in enumerate(papers, start=1):
+              for field in ("id", "title", "authors", "url", "featured_on"):
+                  if not paper.get(field):
+                      raise SystemExit(f"paper #{index} is missing {field}")
+              if not isinstance(paper["authors"], list) or not all(paper["authors"]):
+                  raise SystemExit(f"{paper['id']}: authors must be a non-empty list")
+              if not isinstance(paper["featured_on"], list):
+                  raise SystemExit(f"{paper['id']}: featured_on must be a list")
+              if paper["id"] in seen:
+                  raise SystemExit(f"duplicate paper id: {paper['id']}")
+              seen.add(paper["id"])
+
+              if paper["id"].startswith("arxiv:"):
+                  expected = paper["id"].split(":", 1)[1]
+                  if paper.get("arxiv_id") != expected:
+                      raise SystemExit(f"{paper['id']}: arxiv_id does not match id")
+              if paper["id"].startswith("doi:") and paper.get("doi") != paper["id"].split(":", 1)[1]:
+                  raise SystemExit(f"{paper['id']}: doi does not match id")
+
+              authors = ", ".join(paper["authors"])
+              for date_text in paper["featured_on"]:
+                  date = dt.date.fromisoformat(str(date_text))
+                  featured_dates.append(date)
+                  iso_year, iso_week, _ = date.isocalendar()
+                  week_path = Path("docs/radar") / f"{iso_year}-W{iso_week:02d}.md"
+                  if not week_path.exists():
+                      raise SystemExit(f"{paper['id']}: missing archive file {week_path}")
+                  week_text = week_path.read_text(encoding="utf-8")
+                  for value, label in ((paper["title"], "title"), (authors, "authors"), (paper["url"], "url")):
+                      if value not in week_text:
+                          raise SystemExit(f"{paper['id']}: {label} differs from {week_path}")
+
+          latest_date = max(featured_dates).isoformat()
+          latest_text = Path("docs/radar/latest.md").read_text(encoding="utf-8")
+          home_text = Path("docs/index.md").read_text(encoding="utf-8")
+          for paper in papers:
+              if latest_date not in [str(value) for value in paper["featured_on"]]:
+                  continue
+              authors = ", ".join(paper["authors"])
+              for page_name, page_text in (("docs/radar/latest.md", latest_text), ("docs/index.md", home_text)):
+                  for value, label in ((paper["title"], "title"), (authors, "authors"), (paper["url"], "url")):
+                      if value not in page_text:
+                          raise SystemExit(f"{paper['id']}: {label} differs from {page_name}")
+
+          print(f"validated {len(papers)} paper records through edition {latest_date}")
+          PY
 
       - name: Build MkDocs site
         run: mkdocs build --strict
