@@ -36,7 +36,7 @@ jobs:
 
       - name: Validate radar script
         run: |
-          python -m py_compile scripts/radar.py
+          python -m py_compile scripts/radar.py scripts/run_daily_radar.py
           python -m unittest discover -s tests
 
       - name: Determine brief date
@@ -49,7 +49,7 @@ jobs:
           fi
 
       - name: Generate daily research radar update
-        run: python scripts/radar.py --date "$BRIEF_DATE" --write
+        run: python scripts/run_daily_radar.py --date "$BRIEF_DATE" --publication-window-days 2 --write
 
       - name: Update archive index if public weekly page exists
         shell: bash
