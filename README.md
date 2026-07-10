@@ -20,7 +20,7 @@ This repository is not intended to be a generic awesome list or an automated rec
 
 The brief is maintained editorially rather than by a scheduled paper-ranking GitHub Action:
 
-1. manually search current primary sources, including arXiv and version histories, journal/DOI records, author or research-group publication pages, references from current reading, and a small human-selected backlog;
+1. the assistant manually searches current primary sources each day, including arXiv and version histories, journal/DOI records, author or research-group publication pages, references from current reading, and a small human-selected backlog;
 2. compare arXiv IDs, DOIs, and titles against `data/papers.yml`;
 3. refresh the current title, full author list, version, revision date, DOI, journal information, and source link for papers being considered or displayed;
 4. select roughly 3--7 papers, with the number determined by quality rather than a fixed quota;
@@ -28,7 +28,7 @@ The brief is maintained editorially rather than by a scheduled paper-ranking Git
 6. write concise, abstract-based annotations explaining what each paper does and why it is worth reading now;
 7. update the daily page, weekly archive, homepage, and `data/papers.yml` in one pull request;
 8. let GitHub Actions validate registry identity fields, check that titles/authors/links agree across the registry and published pages, and run `mkdocs build --strict`;
-9. review the complete pull-request diff before publication.
+9. the assistant reviews the complete pull-request diff, removes weak or repetitive entries, and repairs failed checks before presenting the PR for publication.
 
 An existing arXiv ID is not recommended again merely because a new version appears. Its metadata is refreshed in place. `featured_on` records the site's historical recommendation date, while `authors`, `title`, `updated`, and `version` describe the current known record. Pull-request descriptions should list new recommendations and metadata-only changes separately.
 
@@ -38,8 +38,8 @@ When an arXiv abstract page and the latest versioned PDF disagree because of cac
 
 The workflow is intentionally staged:
 
-- **Current phase:** the assistant performs search, selection, editing, metadata refresh, PR review, and CI repair; the repository owner reviews the finished PR and gives explicit merge approval.
-- **Later stable phase:** automatic merge/publication may be enabled only after the repository owner explicitly confirms that several editions have been consistently accurate and useful. CI success alone is never sufficient; the assistant must also complete the editorial review.
+- **Current phase:** the assistant performs daily search, selection, editing, metadata refresh, PR review, and CI repair. The repository owner reviews the finished PR and gives explicit merge approval.
+- **Later stable phase:** automatic merge/publication may be enabled only after the repository owner explicitly confirms that several editions have been consistently accurate and useful. CI success alone is never sufficient; the assistant must also complete the editorial review and find no unresolved metadata or relevance issue.
 
 ## Contributing
 
