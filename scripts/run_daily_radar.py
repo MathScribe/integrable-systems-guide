@@ -18,8 +18,32 @@ from collections.abc import Callable
 import radar
 
 AI_NOTE = (
-    "日期为本站整理日期。简报主要依据题名、摘要、分类、关键词和公开元数据筛选；"
-    "推荐表示相关性和阅读优先级，不代表论文正确性已经核验。数学结论请以原论文为准。"
+    "日期为本站整理日期。简报由 AI 辅助检索和整理，主要依据题名、摘要、分类、关键词和公开元数据筛选；"
+    "推荐表示相关性和阅读优先级，不代表论文正确性已经核验。除特别标注外，条目尚未完成全文审读，"
+    "数学结论请以原论文为准。"
+)
+
+TAG_ALIASES = {
+    "coupled nonlinear schrodinger": "coupled NLS",
+    "coupled nls": "coupled NLS",
+    "multi-component nls": "multicomponent NLS",
+    "multicomponent nls": "multicomponent NLS",
+    "manakov": "Manakov system",
+    "rogue wave": "rogue waves",
+    "rogue waves": "rogue waves",
+    "breather": "breathers",
+    "breathers": "breathers",
+    "riemann hilbert": "Riemann--Hilbert problem",
+    "riemann-hilbert": "Riemann--Hilbert problem",
+    "rhp": "Riemann--Hilbert problem",
+    "dbar": "∂̄ method",
+    "barpartial": "∂̄ method",
+}
+
+INTERNAL_REASON_PREFIXES = (
+    "强相关组合命中：",
+    "有相关信号但未达到公开简报门槛：",
+    "达到推荐分数但超过当日公开推荐数量上限",
 )
 
 
@@ -79,10 +103,58 @@ def source_link(paper: radar.Paper) -> str:
     return radar.md_link(label, paper.url) if paper.url else label
 
 
-def tag_line(tags: list[str]) -> str:
+def _append_unique(items: list[str], value: str) -> None:
+    key = value.casefold()
+    if value and all(item.casefold() != key for item in items):
+        items.append(value)
+
+
+def display_tags(paper: radar.Paper, limit: int = 6) -> list[str]:
+    """Return concise, deduplicated public tags with title-derived method terms."""
+    text = radar.search_text(f"{paper.title} {paper.summary}")
+    tags: list[str] = []
+
+    if "dimensional reduction" in text:
+        _append_unique(tags, "dimensional reduction")
+    if "conformal lifting" in text:
+        _append_unique(tags, "conformal lifting")
+    if "multicomponent" in text or "multi-component" in text:
+        _append_unique(tags, "multicomponent NLS")
+
+    for raw_tag in paper.tags:
+        clean = raw_tag.replace("`", "").strip()
+        if not clean:
+            continue
+        normalized = TAG_ALIASES.get(radar.search_text(clean), clean)
+        _append_unique(tags, normalized)
+        if len(tags) >= limit:
+            break
+    return tags[:limit]
+
+
+def tag_line(paper: radar.Paper) -> str:
     """Render a short inline tag sequence."""
-    clean = [tag.replace("`", "").strip() for tag in tags if tag.strip()]
-    return " ".join(f"`{tag}`" for tag in clean[:6])
+    return " ".join(f"`{tag}`" for tag in display_tags(paper))
+
+
+def compact_annotation(paper: radar.Paper, max_chars: int = 280) -> str:
+    """Use the abstract rather than internal scoring text as the public annotation."""
+    summary = radar.normalize_space(paper.summary)
+    if summary:
+        sentences = re.split(r"(?<=[.!?])\s+", summary)
+        text = sentences[0]
+        if len(text) < 120 and len(sentences) > 1:
+            text = f"{text} {sentences[1]}"
+    else:
+        reason = radar.normalize_space(paper.reason).rstrip(".。")
+        if not reason or reason.startswith(INTERNAL_REASON_PREFIXES):
+            return ""
+        text = reason
+
+    if len(text) > max_chars:
+        shortened = text[: max_chars - 1].rsplit(" ", 1)[0]
+        text = (shortened or text[: max_chars - 1]).rstrip("，,;:：") + "…"
+    return text.rstrip(".。") + "。"
 
 
 def render_compact_card(paper: radar.Paper) -> str:
@@ -92,47 +164,88 @@ def render_compact_card(paper: radar.Paper) -> str:
     date_text = publication_label(paper.published)
     if date_text:
         metadata.append(date_text)
-    tags = tag_line(paper.tags)
-    reason = paper.reason.strip().rstrip(".。")
+    tags = tag_line(paper)
+    annotation = compact_annotation(paper)
     lines = [f"**{paper.title}**", "", " · ".join(metadata) + "  "]
     if tags:
         lines.append(tags)
-    if reason:
-        lines += ["", reason + "。"]
+    if annotation:
+        lines += ["", annotation]
     return "\n".join(lines)
 
 
-def compact_home_block(block: str, limit: int = 6) -> str:
-    """Reduce a full daily block to title-and-metadata bullets for the homepage."""
+def compact_home_block(block: str, limit: int = 7) -> str:
+    """Reduce one full date block to title-and-metadata bullets for the homepage."""
     output: list[str] = []
-    count = 0
     lines = block.splitlines()
-    for index, line in enumerate(lines):
-        if line.startswith("## ") or line.startswith("### "):
-            output += [line, ""]
+    date_heading = ""
+    section_heading = ""
+    written_date = False
+    written_section = ""
+    count = 0
+    index = 0
+
+    while index < len(lines) and count < limit:
+        line = lines[index]
+        if line.startswith("## "):
+            date_heading = line
+            section_heading = ""
+            index += 1
             continue
-        if not (line.startswith("**") and line.endswith("**")) or count >= limit:
+        if line.startswith("### "):
+            section_heading = line
+            index += 1
             continue
+        if not (line.startswith("**") and line.endswith("**")):
+            index += 1
+            continue
+
         metadata = ""
         tags = ""
-        for following in lines[index + 1 :]:
+        cursor = index + 1
+        while cursor < len(lines):
+            following = lines[cursor]
             if following.startswith(("## ", "### ", "**")):
                 break
             stripped = following.strip()
-            if not stripped:
-                continue
-            if not metadata:
-                metadata = stripped.removesuffix("  ")
-            elif stripped.startswith("`"):
-                tags = stripped
-                break
+            if stripped:
+                if not metadata:
+                    metadata = stripped.removesuffix("  ")
+                elif stripped.startswith("`"):
+                    tags = stripped
+                    break
+            cursor += 1
+
+        if not written_date and date_heading:
+            output += [date_heading, ""]
+            written_date = True
+        if section_heading and written_section != section_heading:
+            output += [section_heading, ""]
+            written_section = section_heading
         output.append(f"- {line}  ")
         detail = " · ".join(part for part in [metadata, tags] if part)
         if detail:
             output.append(f"  {detail}")
         output.append("")
         count += 1
+        index = cursor
+
     return "\n".join(output).rstrip()
+
+
+def compact_home_blocks(blocks: list[str], limit: int = 7) -> str:
+    """Keep several recent editions on the homepage without duplicating comments."""
+    rendered: list[str] = []
+    remaining = limit
+    for block in blocks:
+        if remaining < 1:
+            break
+        compact = compact_home_block(block, limit=remaining)
+        used = compact.count("\n- **") + int(compact.startswith("- **"))
+        if compact and used:
+            rendered.append(compact)
+            remaining -= used
+    return "\n\n---\n\n".join(rendered)
 
 
 def render_compact_latest(week: str, daily_block: str) -> str:
@@ -148,7 +261,7 @@ def render_compact_latest(week: str, daily_block: str) -> str:
 
 
 def render_compact_home(week: str, blocks: list[str]) -> str:
-    latest = compact_home_block(blocks[0]) if blocks else "尚无公开简报。"
+    recent = compact_home_blocks(blocks, limit=7) if blocks else "尚无公开简报。"
     return f"""# 可积系统研究简报
 
 面向可积系统、反散射、黎曼--希尔伯特方法、非线性波和相关课题组资料的研究向入口。
@@ -158,7 +271,7 @@ def render_compact_home(week: str, blocks: list[str]) -> str:
 !!! note "AI 生成说明"
     {AI_NOTE}
 
-{latest}
+{recent}
 
 [查看完整简报](radar/latest.md)
 
