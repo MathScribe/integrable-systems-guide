@@ -12,9 +12,10 @@ This repository is not intended to be a generic awesome list or an automated rec
 2. Recommend a useful reading set rather than merely listing papers uploaded that day.
 3. A daily recommendation date does not imply that every paper was published that day.
 4. Mix recent papers with missed papers, older high-relevance work, formal journal versions, group-adjacent work, and useful method/background papers when the reading logic benefits from it.
-5. Separate current bibliographic metadata from the site's recommendation history.
-6. Treat AI-assisted research briefs as discovery aids, not as mathematical verification.
-7. Automate only mechanical validation; keep paper selection and annotation reviewable.
+5. For older work, prefer the final journal/DOI record. Do not use an old arXiv-only entry as routine backlog material when a published version exists; an old unpublished preprint needs a specific editorial reason to appear.
+6. Separate current bibliographic metadata from the site's recommendation history.
+7. Treat AI-assisted research briefs as discovery aids, not as mathematical verification.
+8. Automate only mechanical validation; keep paper selection and annotation reviewable.
 
 ## Research-brief workflow
 
@@ -25,10 +26,11 @@ The brief is maintained editorially rather than by a scheduled paper-ranking Git
 3. refresh the current title, full author list, version, revision date, DOI, journal information, and source link for papers being considered or displayed;
 4. select roughly 3--7 papers, with the number determined by quality rather than a fixed quota;
 5. build a coherent reading set that may combine recent work, recently missed work, older high-relevance papers, formal journal versions, group-related work, and method/background papers; do not default to an arXiv-only list without an editorial reason;
-6. write concise, abstract-based annotations explaining what each paper does and why it is worth reading now;
-7. update the daily page, weekly archive, homepage, and `data/papers.yml` in one pull request;
-8. let GitHub Actions validate registry identity fields, check that titles/authors/links agree across the registry and published pages, and run `mkdocs build --strict`;
-9. the assistant reviews the complete pull-request diff, removes weak or repetitive entries, and repairs failed checks before presenting the PR for publication.
+6. for older selections, search for the formal publication and use the journal name and DOI as the public link; retain an arXiv link only when the work is genuinely still a preprint or when the preprint is the relevant version;
+7. write concise, abstract-based annotations explaining what each paper does and why it is worth reading now;
+8. update the daily page, weekly archive, homepage, and `data/papers.yml` in one pull request;
+9. let GitHub Actions validate registry identity fields, check that titles/authors/links agree across the registry and published pages, and run `mkdocs build --strict`;
+10. the assistant reviews the complete pull-request diff, removes weak or repetitive entries, and repairs failed checks before presenting the PR for publication.
 
 An existing arXiv ID is not recommended again merely because a new version appears. Its metadata is refreshed in place. `featured_on` records the site's historical recommendation date, while `authors`, `title`, `updated`, and `version` describe the current known record. Pull-request descriptions should list new recommendations and metadata-only changes separately.
 
