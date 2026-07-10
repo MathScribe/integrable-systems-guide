@@ -35,7 +35,7 @@ Otis C. Wright · [arXiv:2607.01348](https://arxiv.org/abs/2607.01348) · 2026-0
 **Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation**
 
 Deng Shan Wang, Xinyu Wang · [arXiv:2606.24435](https://arxiv.org/abs/2606.24435) · 2026-06  
-`DNLS` `soliton gas` `meromorphic RHP` `$\bar\partial$` `long-time asymptotics` `theta functions`
+`DNLS` `soliton gas` `meromorphic RHP` `∂̄` `long-time asymptotics` `theta functions`
 
 从纯 N-soliton 的 meromorphic RHP 出发研究 DNLS soliton gas 的连续极限和长时间渐近，是当前 DNLS/RHP 方向中优先级较高的补读条目。
 
