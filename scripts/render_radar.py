@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -73,7 +74,12 @@ def date_label(paper: dict[str, Any]) -> str:
 
 
 def compact(text: str) -> str:
-    return " ".join(str(text).split())
+    value = " ".join(str(text).split())
+    return re.sub(
+        r"(?<=[\u3400-\u9fff，。；：！？、）】》]) (?=[\u3400-\u9fff（【《])",
+        "",
+        value,
+    )
 
 
 def tag_line(paper: dict[str, Any], role: str, limit: int = 5) -> str:
