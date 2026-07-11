@@ -21,10 +21,12 @@ jobs:
     env:
       PIP_DISABLE_PIP_VERSION_CHECK: "1"
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-        with:
-          show-progress: false
+      - name: Check out pull-request merge
+        run: |
+          git init --quiet
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git fetch --quiet --depth=1 origin "${GITHUB_SHA}"
+          git checkout --quiet FETCH_HEAD
 
       - name: Install renderer dependency
         run: pip install --quiet PyYAML
