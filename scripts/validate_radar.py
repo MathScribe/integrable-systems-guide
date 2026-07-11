@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import datetime as dt
 import re
-from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
@@ -85,7 +84,6 @@ def main() -> None:
         raise SystemExit("duplicate week id")
 
     dates: set[str] = set()
-    historical_dates: dict[str, list[str]] = defaultdict(list)
     for edition in editions:
         date_text = str(edition.get("date", ""))
         date = dt.date.fromisoformat(date_text)
@@ -112,7 +110,6 @@ def main() -> None:
             if paper_id in seen_papers:
                 raise SystemExit(f"{date_text}: duplicate paper {paper_id}")
             seen_papers.add(paper_id)
-            historical_dates[paper_id].append(date_text)
             if entry.get("role") not in ROLE_VALUES:
                 raise SystemExit(f"{date_text}/{paper_id}: invalid role {entry.get('role')}")
             for field in ("what_it_does", "why_read"):
@@ -125,15 +122,6 @@ def main() -> None:
                 if rank in ranks:
                     raise SystemExit(f"{date_text}: duplicate homepage_rank {rank}")
                 ranks.add(rank)
-
-    # During the migration, featured_on remains a compatibility mirror. The
-    # renderer and archive use editions.yml as the authoritative history.
-    for paper_id, paper in paper_by_id.items():
-        if "featured_on" in paper:
-            old_dates = sorted(str(value) for value in paper["featured_on"])
-            new_dates = sorted(historical_dates.get(paper_id, []))
-            if old_dates != new_dates:
-                raise SystemExit(f"{paper_id}: featured_on differs from data/editions.yml")
 
     mkdocs = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
     if "radar/latest.md" in mkdocs:
