@@ -5,54 +5,42 @@
 !!! note "AI 生成说明"
     日期为本站推荐日期，不要求论文当天发表。条目由 AI 辅助检索和整理，并人工核对题名、作者、摘要和链接；推荐表示研究相关性，不代表论文正确性已经核验。数学结论请以原论文为准。
 
-## 2026-07-10
+## 2026-07-11
 
-本期按“今天值得读”组织，而不是按上传时间排序：包含正式期刊版本、近期预印本、较早但高度相关的已发表课题组工作和方法补读。
+本期没有为了追逐日期而补入弱相关新稿，而是围绕“RHP 渐近、有限带退化与 soliton gas”组织一条阅读路径：先读课题组相关的 coupled NLS 长时渐近，再补 DNLS 半线初边值问题，随后转向椭圆背景上的 finite-gap 退化，最后用 soliton-gas 综述统一术语和方法。
 
-### 主线与近期进展
+### 主线：耦合 NLS 的 RHP 长时渐近
 
-**Painlevé XXXIV asymptotics for the defocusing nonlinear Schrödinger equation with a finite-genus algebro-geometric background**
+**Long-time asymptotics of the coupled nonlinear Schödinger equation in a weighted Sobolev space**
 
-Engui Fan, Gaozhan Li, Yiling Yang, Lun Zhang · [Mathematische Annalen, doi:10.1007/s00208-026-03322-x](https://doi.org/10.1007/s00208-026-03322-x) · 2026  
-`defocusing NLS` `finite-genus background` `RHP` `Painlevé XXXIV` `long-time asymptotics`
+Yubin Huang, Liming Ling, Xiaoen Zhang · [arXiv:2504.21315v3](https://arxiv.org/abs/2504.21315v3) · 2025-04，修订于 2026-02  
+`coupled NLS` `3×3 RHP` `nonlinear steepest descent` `Darboux transformation` `soliton resolution`
 
-研究有限亏格代数几何背景上的 defocusing NLS 初值问题，通过非线性 steepest descent 得到四个时空区域的长时间渐近；两个过渡区的次阶项为 $\mathcal{O}(t^{-1/3})$，系数由 Painlevé XXXIV 超越函数刻画。这里链接正式期刊 DOI，而不是只把它当作 arXiv 新稿。
+从 focusing coupled NLS 的 $3\times3$ 谱问题建立 RHP，用 Darboux transformation 移除离散谱，再以 Deift--Zhou 非线性 steepest descent 得到加权 Sobolev 初值下的长时展开。主项是经孤子--孤子及孤子--辐射相互作用调制的多孤子，误差达到 $\mathcal{O}(t^{-3/4+1/(2p)})$；它直接连接课题组的 coupled NLS、RHP 与长时渐近方向。
 
-**Soliton gas resolution and statistics of random wave fields in semiclassical integrable turbulence**
+### DNLS 方法补读：半线初边值问题
 
-T. Congy, G. A. El · [arXiv:2605.06306](https://arxiv.org/abs/2605.06306) · 2026-05  
-`focusing NLS` `soliton gas` `integrable turbulence` `stochastic IST`
+**The derivative nonlinear Schrödinger equation on the half-line**
 
-提出 focusing NLS 半经典随机初值的 soliton-gas resolution 框架，把谱态密度与湍流波场强度的概率密度联系起来，并与数值模拟比较。适合作为 DNLS soliton gas 之外的统计与随机 IST 补充阅读。
+Jonatan Lenells · [arXiv:0808.1534](https://arxiv.org/abs/0808.1534) · 2008  
+`DNLS` `half-line` `Fokas method` `Riemann--Hilbert problem` `global relation`
 
-### 相邻系统与非线性波
+用统一变换/Fokas 方法处理 Kaup--Newell 型 DNLS 半线问题，把初值谱函数 $a,b$ 与边界谱函数 $A,B$ 共同编码进矩阵 RHP，并由 global relation 约束它们。对当前以整线 IST 为主的阅读图谱，这是理解 DNLS 初边值谱分析、边界数据兼容性和 RHP 表示的基础补读。
 
-**Novel periodic solutions and rogue waves of the defocusing scalar and coupled Ablowitz-Ladik systems on a nonzero background**
+### finite-gap 到 soliton gas
 
-Francesco Coppini, Barbara Prinari · [arXiv:2606.05123](https://arxiv.org/abs/2606.05123) · 2026-06  
-`Ablowitz--Ladik` `coupled lattice` `discrete breathers` `rogue waves` `Hirota method`
+**Partial degeneration of finite gap solutions to the Korteweg-de Vries equation: soliton gas and scattering on elliptic background**
 
-在非零背景下研究 defocusing 标量与耦合 Ablowitz--Ladik 系统，构造全时正则的周期 breather、离散 Akhmediev 型 breather 及其 rogue-wave 极限。与多分量离散可积系统和非线性波结构相关。
+Marco Bertola, Robert Jenkins, Alexander Tovbis · [Nonlinearity, doi:10.1088/1361-6544/accfdf](https://doi.org/10.1088/1361-6544/accfdf) · 2023  
+`finite-gap degeneration` `elliptic background` `theta functions` `soliton gas` `scattering`
 
-**Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent $(3+1)$ Nonlinear Schrödinger Systems**
+推导高亏格 theta 函数部分退化的 Fredholm 型公式，并把 KdV 多孤子解分解为平移后的椭圆背景与含 Jacobi theta 函数的行列式孤子部分。文中还给出椭圆背景上孤立扰动的群速度、两体散射核、随机相位退化极限以及 soliton gas 的非线性色散关系，是连接有限带几何、退化极限和气体动力学的关键范例。
 
-O. V. Kaptsov · [arXiv:2606.22808](https://arxiv.org/abs/2606.22808) · 2026-06  
-`dimensional reduction` `conformal lifting` `multicomponent NLS` `Manakov system` `breathers`
+### 综述与术语地图
 
-建立调和维数约化框架：在横向相位与束缚势满足精确抵消条件时，$(3+1)$ 维耦合 NLS 型系统可约化为 $(1+1)$ 维可积层级，并将 Manakov breathers、rogue waves 等解提升回高维模型。属于多分量精确解的相邻方向。
+**Soliton Gas: Theory, Numerics and Experiments**
 
-### 课题组相关与方法补读
+Pierre Suret, Stephane Randoux, Andrey Gelash, Dmitry Agafontsev, Benjamin Doyon, Gennady El · [arXiv:2304.06541](https://arxiv.org/abs/2304.06541) · 2023  
+`soliton gas` `inverse scattering` `thermodynamic finite-gap limit` `generalized hydrodynamics` `integrable turbulence`
 
-**High Order Solutions and Generalized Darboux Transformations of Derivative Schrödinger Equation**
-
-Boling Guo, Liming Ling, Q. P. Liu · [Studies in Applied Mathematics 130 (2013), 317–344, doi:10.1111/j.1467-9590.2012.00568.x](https://doi.org/10.1111/j.1467-9590.2012.00568.x) · 2013  
-`DNLS` `generalized Darboux transformation` `higher-order solitons` `rogue waves`
-
-构造 Kaup--Newell/DNLS 的两类广义 Darboux transformation，并给出高阶孤子、重复极点解和高阶 rogue-wave 公式。它是理解当前 DNLS 精确解、极限过程与多重谱点构造的一篇直接方法背景文献。
-
-**Darboux transformation and classification of solution for mixed coupled nonlinear Schrödinger equations**
-
-Liming Ling, Li-Chen Zhao, Boling Guo · [Communications in Nonlinear Science and Numerical Simulation 32 (2016), 285–304, doi:10.1016/j.cnsns.2015.08.023](https://doi.org/10.1016/j.cnsns.2015.08.023) · 2016  
-`mixed coupled NLS` `Darboux transformation` `dark solitons` `breathers` `rogue waves`
-
-通过统一 Darboux transformation 构造混合耦合 NLS 的非零背景解，并按动力学行为分类 breather、dark soliton 和 rogue wave，同时分析 dark-dark soliton 与 breather 的相互作用。作为已发表的课题组工作，它补充多分量非线性波与解型分类的阅读线索。
+系统梳理稀疏与稠密 soliton gas、IST、有限带势的热力学极限、广义 Gibbs 系综及实验实现，并讨论调制不稳定性、rogue waves、统计与热力学问题。适合作为本期最后一篇：它为前面 DNLS soliton gas、有限带退化和随机波场工作提供统一词汇、历史脉络与开放问题清单。
