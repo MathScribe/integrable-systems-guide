@@ -22,9 +22,9 @@ The site is a maintained reading radar rather than a same-day paper feed. The ho
 - `data/papers.yml` stores current bibliographic metadata and stable identities.
 - `data/editions.yml` stores recommendation dates, reading roles, homepage priority, and annotations.
 - `scripts/render_radar.py` generates the homepage, weekly archives, archive index, and the short latest-compatibility page.
-- `scripts/validate_radar.py` validates paper identities, edition references, roles, week numbers, homepage ranks, and the temporary `featured_on` compatibility mirror.
+- `scripts/validate_radar.py` validates paper identities, edition references, roles, week numbers, and homepage ranks.
 
-During the migration, `featured_on` remains in `data/papers.yml` as a compatibility mirror. `data/editions.yml` is the authoritative source for rendered recommendation history.
+`data/editions.yml` is the authoritative source for recommendation history. Updating an arXiv version changes `data/papers.yml`; it does not create a new edition entry.
 
 ## Editorial workflow
 
