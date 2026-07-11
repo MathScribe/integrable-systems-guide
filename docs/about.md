@@ -40,9 +40,7 @@ This project is a small research-oriented guide for integrable systems and relat
 
 `data/papers.yml` 是当前书目事实的注册表，用 arXiv ID、DOI 和规范化题名去重。作者、题名、版本、修订日期和期刊信息可以随来源记录更新。
 
-`data/editions.yml` 记录本站的推荐历史。每次推荐引用稳定的 `paper_id`，并保存阅读定位、首页优先级和当次注释。页面由这两个数据文件生成，CI 检查数据引用、去重、周编号和生成结果是否一致。
-
-迁移期间，`papers.yml` 中旧有的 `featured_on` 字段暂时保留为兼容镜像；页面与归档以 `editions.yml` 为准，后续可在历史数据稳定后删除镜像字段。
+`data/editions.yml` 是推荐历史的唯一来源。每次推荐引用稳定的 `paper_id`，并保存阅读定位、首页优先级和当次注释。页面由这两个数据文件生成，CI 检查数据引用、去重、周编号和生成结果是否一致。
 
 ## AI-assisted curation / AI 辅助整理
 
