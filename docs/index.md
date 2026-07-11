@@ -7,37 +7,32 @@
 !!! note "AI 生成说明"
     日期为本站推荐日期，不要求论文当天发表。条目由 AI 辅助检索和整理，并人工核对题名、作者、摘要和链接；推荐表示研究相关性，不代表论文正确性已经核验。数学结论请以原论文为准。
 
-## 2026-07-10
+## 2026-07-11
 
-本期不是“当天 arXiv 列表”，而是一组今天值得读的材料：正式期刊版本、近期预印本、已发表课题组旧文和方法补读混合编排。
+本期围绕 RHP 长时渐近、DNLS 半线问题、finite-gap 退化与 soliton gas 组织四篇互相衔接的阅读材料；没有为了追逐日期加入弱相关新稿。
 
-### 主线与近期进展
+### RHP 与 DNLS
 
-- **Painlevé XXXIV asymptotics for the defocusing nonlinear Schrödinger equation with a finite-genus algebro-geometric background**  
-  Engui Fan, Gaozhan Li, Yiling Yang, Lun Zhang · [Mathematische Annalen, doi:10.1007/s00208-026-03322-x](https://doi.org/10.1007/s00208-026-03322-x) · `finite-genus background` `RHP` `Painlevé XXXIV`
+- **Long-time asymptotics of the coupled nonlinear Schödinger equation in a weighted Sobolev space**  
+  Yubin Huang, Liming Ling, Xiaoen Zhang · [arXiv:2504.21315v3](https://arxiv.org/abs/2504.21315v3) · `coupled NLS` `3×3 RHP` `nonlinear steepest descent`
 
-- **Soliton gas resolution and statistics of random wave fields in semiclassical integrable turbulence**  
-  T. Congy, G. A. El · [arXiv:2605.06306](https://arxiv.org/abs/2605.06306) · `focusing NLS` `soliton gas` `stochastic IST`
+- **The derivative nonlinear Schrödinger equation on the half-line**  
+  Jonatan Lenells · [arXiv:0808.1534](https://arxiv.org/abs/0808.1534) · `DNLS` `Fokas method` `global relation`
 
-### 相邻系统与非线性波
+### finite-gap 与 soliton gas
 
-- **Novel periodic solutions and rogue waves of the defocusing scalar and coupled Ablowitz-Ladik systems on a nonzero background**  
-  Francesco Coppini, Barbara Prinari · [arXiv:2606.05123](https://arxiv.org/abs/2606.05123) · `Ablowitz--Ladik` `discrete breathers` `rogue waves`
+- **Partial degeneration of finite gap solutions to the Korteweg-de Vries equation: soliton gas and scattering on elliptic background**  
+  Marco Bertola, Robert Jenkins, Alexander Tovbis · [Nonlinearity, doi:10.1088/1361-6544/accfdf](https://doi.org/10.1088/1361-6544/accfdf) · `finite-gap degeneration` `elliptic background` `soliton gas`
 
-- **Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent $(3+1)$ Nonlinear Schrödinger Systems**  
-  O. V. Kaptsov · [arXiv:2606.22808](https://arxiv.org/abs/2606.22808) · `dimensional reduction` `multicomponent NLS` `Manakov system`
-
-### 课题组相关与方法补读
-
-- **High Order Solutions and Generalized Darboux Transformations of Derivative Schrödinger Equation**  
-  Boling Guo, Liming Ling, Q. P. Liu · [Studies in Applied Mathematics 130 (2013), 317–344, doi:10.1111/j.1467-9590.2012.00568.x](https://doi.org/10.1111/j.1467-9590.2012.00568.x) · `DNLS` `generalized Darboux transformation` `higher-order solitons`
-
-- **Darboux transformation and classification of solution for mixed coupled nonlinear Schrödinger equations**  
-  Liming Ling, Li-Chen Zhao, Boling Guo · [Communications in Nonlinear Science and Numerical Simulation 32 (2016), 285–304, doi:10.1016/j.cnsns.2015.08.023](https://doi.org/10.1016/j.cnsns.2015.08.023) · `mixed coupled NLS` `dark solitons` `breathers` `rogue waves`
+- **Soliton Gas: Theory, Numerics and Experiments**  
+  Pierre Suret, Stephane Randoux, Andrey Gelash, Dmitry Agafontsev, Benjamin Doyon, Gennady El · [arXiv:2304.06541](https://arxiv.org/abs/2304.06541) · `IST` `thermodynamic finite-gap limit` `generalized hydrodynamics`
 
 ---
 
 ## 近期推荐
+
+- **Painlevé XXXIV asymptotics for the defocusing nonlinear Schrödinger equation with a finite-genus algebro-geometric background**  
+  Engui Fan, Gaozhan Li, Yiling Yang, Lun Zhang · [Mathematische Annalen, doi:10.1007/s00208-026-03322-x](https://doi.org/10.1007/s00208-026-03322-x) · `finite-genus background` `RHP` `Painlevé XXXIV`
 
 - **Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation**  
   Bao-Feng Feng, Wang Tang, Guo-Fu Yu · [arXiv:2607.06409](https://arxiv.org/abs/2607.06409) · `Fokas--Lenells` `Darboux--Bäcklund` `elliptic background`
