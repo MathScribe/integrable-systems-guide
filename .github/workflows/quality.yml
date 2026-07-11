@@ -23,20 +23,20 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          show-progress: false
 
-      - name: Install dependencies
+      - name: Install renderer dependency
+        run: pip install --quiet PyYAML
+
+      - name: Check generated radar pages
+        run: python scripts/render_radar.py --check
+
+      - name: Install site dependencies
         run: pip install --quiet -r requirements.txt
 
       - name: Validate paper registry and edition history
         run: python scripts/validate_radar.py
-
-      - name: Check generated radar pages
-        run: python scripts/render_radar.py --check
 
       - name: Build MkDocs site
         run: mkdocs build --strict
