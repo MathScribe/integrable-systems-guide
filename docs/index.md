@@ -1,52 +1,81 @@
-# 可积系统研究简报
+# 可积系统研究雷达
 
-面向可积系统、反散射、黎曼--希尔伯特方法、非线性波和相关课题组资料的研究向入口。
+面向 DNLS、耦合与多分量 NLS、IST、Riemann--Hilbert 方法、长时渐近、有限带解和非线性波的持续阅读入口。
 
-[最新简报](radar/latest.md) · [简报归档](radar/index.md) · [资源](resources.md) · [核心主题](topics.md)
-
-!!! note "AI 生成说明"
-    日期为本站推荐日期，不要求论文当天发表。条目由 AI 辅助检索和整理，并人工核对题名、作者、摘要和链接；推荐表示研究相关性，不代表论文正确性已经核验。数学结论请以原论文为准。
-
-## 2026-07-10
-
-本期不是“当天 arXiv 列表”，而是一组今天值得读的材料：正式期刊版本、近期预印本、已发表课题组旧文和方法补读混合编排。
-
-### 主线与近期进展
-
-- **Painlevé XXXIV asymptotics for the defocusing nonlinear Schrödinger equation with a finite-genus algebro-geometric background**  
-  Engui Fan, Gaozhan Li, Yiling Yang, Lun Zhang · [Mathematische Annalen, doi:10.1007/s00208-026-03322-x](https://doi.org/10.1007/s00208-026-03322-x) · `finite-genus background` `RHP` `Painlevé XXXIV`
-
-- **Soliton gas resolution and statistics of random wave fields in semiclassical integrable turbulence**  
-  T. Congy, G. A. El · [arXiv:2605.06306](https://arxiv.org/abs/2605.06306) · `focusing NLS` `soliton gas` `stochastic IST`
-
-### 相邻系统与非线性波
-
-- **Novel periodic solutions and rogue waves of the defocusing scalar and coupled Ablowitz-Ladik systems on a nonzero background**  
-  Francesco Coppini, Barbara Prinari · [arXiv:2606.05123](https://arxiv.org/abs/2606.05123) · `Ablowitz--Ladik` `discrete breathers` `rogue waves`
-
-- **Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent $(3+1)$ Nonlinear Schrödinger Systems**  
-  O. V. Kaptsov · [arXiv:2606.22808](https://arxiv.org/abs/2606.22808) · `dimensional reduction` `multicomponent NLS` `Manakov system`
-
-### 课题组相关与方法补读
-
-- **High Order Solutions and Generalized Darboux Transformations of Derivative Schrödinger Equation**  
-  Boling Guo, Liming Ling, Q. P. Liu · [Studies in Applied Mathematics 130 (2013), 317–344, doi:10.1111/j.1467-9590.2012.00568.x](https://doi.org/10.1111/j.1467-9590.2012.00568.x) · `DNLS` `generalized Darboux transformation` `higher-order solitons`
-
-- **Darboux transformation and classification of solution for mixed coupled nonlinear Schrödinger equations**  
-  Liming Ling, Li-Chen Zhao, Boling Guo · [Communications in Nonlinear Science and Numerical Simulation 32 (2016), 285–304, doi:10.1016/j.cnsns.2015.08.023](https://doi.org/10.1016/j.cnsns.2015.08.023) · `mixed coupled NLS` `dark solitons` `breathers` `rogue waves`
-
----
+[研究雷达归档](radar/index.md) · [资源](resources.md) · [核心主题](topics.md) · [课题组相关](group-work.md)
 
 ## 近期推荐
 
-- **Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation**  
-  Bao-Feng Feng, Wang Tang, Guo-Fu Yu · [arXiv:2607.06409](https://arxiv.org/abs/2607.06409) · `Fokas--Lenells` `Darboux--Bäcklund` `elliptic background`
+这里汇总最近三期中优先级较高的论文，而不是重复展示当天简报。详细注释和完整推荐历史保存在周归档中。
 
-[查看完整简报](radar/latest.md)
+### Long-time asymptotics of the coupled nonlinear Schrödinger equation in a weighted Sobolev space
+
+Yubin Huang, Liming Ling, Xiaoen Zhang · [arXiv:2504.21315v3](https://arxiv.org/abs/2504.21315v3)  
+`课题组相关` `coupled NLS` `Riemann--Hilbert problem` `nonlinear steepest descent`
+
+从 focusing coupled NLS 的 3×3 谱问题建立 RHP，通过 Darboux transformation 移除离散谱，并用 Deift--Zhou 非线性 steepest descent 得到加权 Sobolev 初值下的长时展开和孤子分解。
+
+推荐于 2026-07-11 · [查看详细说明](radar/2026-W28.md#2026-07-11)
+
+### The derivative nonlinear Schrödinger equation on the half-line
+
+Jonatan Lenells · [arXiv:0808.1534v1](https://arxiv.org/abs/0808.1534)  
+`方法基础` `DNLS` `half-line` `Fokas method`
+
+用统一变换处理 Kaup--Newell 型 DNLS 半线问题，将初值谱函数和边界谱函数共同编码进矩阵 RHP，并由 global relation 约束边界数据。
+
+推荐于 2026-07-11 · [查看详细说明](radar/2026-W28.md#2026-07-11)
+
+### Partial degeneration of finite gap solutions to the Korteweg-de Vries equation: soliton gas and scattering on elliptic background
+
+Marco Bertola, Robert Jenkins, Alexander Tovbis · [arXiv:2210.01350v3](https://arxiv.org/abs/2210.01350) · [Nonlinearity, doi:10.1088/1361-6544/accfdf](https://doi.org/10.1088/1361-6544/accfdf)  
+`正式版本` `finite-gap degeneration` `elliptic background` `theta functions`
+
+推导高亏格 theta 函数的部分退化公式，并将 KdV 多孤子解表示为平移椭圆背景与行列式孤子部分，同时得到椭圆背景上的散射核和 soliton-gas 色散关系。
+
+推荐于 2026-07-11 · [查看详细说明](radar/2026-W28.md#2026-07-11)
+
+### Painlevé XXXIV asymptotics for the defocusing nonlinear Schrödinger equation with a finite-genus algebro-geometric background
+
+Engui Fan, Gaozhan Li, Yiling Yang, Lun Zhang · [arXiv:2602.13589v1](https://arxiv.org/abs/2602.13589) · [Mathematische Annalen, doi:10.1007/s00208-026-03322-x](https://doi.org/10.1007/s00208-026-03322-x)  
+`正式版本` `defocusing NLS` `finite-genus background` `Riemann--Hilbert problem`
+
+对有限亏格代数几何背景上的 defocusing NLS 应用非线性 steepest descent，区分四个时空区域，并以 Painlevé XXXIV 描述两个过渡区的次阶渐近。
+
+推荐于 2026-07-10 · [查看详细说明](radar/2026-W28.md#2026-07-10)
+
+### High Order Solutions and Generalized Darboux Transformations of Derivative Schrödinger Equation
+
+Boling Guo, Liming Ling, Q. P. Liu · [arXiv:1205.4369](https://arxiv.org/abs/1205.4369) · [Studies in Applied Mathematics, doi:10.1111/j.1467-9590.2012.00568.x](https://doi.org/10.1111/j.1467-9590.2012.00568.x)  
+`课题组相关` `DNLS` `generalized Darboux transformation` `higher-order solitons`
+
+构造 Kaup--Newell/DNLS 的两类广义 Darboux transformation，并给出高阶孤子、重复极点解和高阶 rogue-wave 公式。
+
+推荐于 2026-07-10 · [查看详细说明](radar/2026-W28.md#2026-07-10)
+
+### Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation
+
+Bao-Feng Feng, Wang Tang, Guo-Fu Yu · [arXiv:2607.06409v2](https://arxiv.org/abs/2607.06409)  
+`近期进展` `Fokas--Lenells equation` `elliptic localized solutions` `Darboux--Bäcklund transformation`
+
+使用 Lax pair、Weierstrass 椭圆函数和 N-fold Darboux--Bäcklund transformation 构造 Fokas--Lenells 方程的椭圆背景局域解，并研究其传播渐近结构。
+
+推荐于 2026-07-09 · [查看详细说明](radar/2026-W28.md#2026-07-09)
+
+### Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation
+
+Deng Shan Wang, Xinyu Wang · [arXiv:2606.24435](https://arxiv.org/abs/2606.24435)  
+`近期漏读` `DNLS` `soliton gas` `Riemann--Hilbert problem`
+
+从纯 N-soliton 的 meromorphic RHP 出发研究 DNLS soliton gas 的连续极限和长时渐近，使用 RHP、∂̄ 方法和 theta 函数描述不同渐近区域。
+
+推荐于 2026-07-09 · [查看详细说明](radar/2026-W28.md#2026-07-09)
 
 ## 其他入口
 
 - [Resources / 资源](resources.md)：课程、讲义、研究者主页和检索入口。
 - [Group work / 课题组相关](group-work.md)：本地研究背景、公开笔记和相关链接。
 - [Core topics / 核心主题](topics.md)：本站目前关注的方程、方法和非线性波主题。
-- [About / 关于](about.md)：策展原则、设计参考、AI 使用和许可证说明。
+- [About / 关于](about.md)：策展原则、元数据政策、AI 使用和许可证说明。
+
+推荐日期表示本站收录时间，不等同于论文发表日期。元数据核对和 AI 使用说明见 [About / 关于](about.md)。

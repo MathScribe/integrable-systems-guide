@@ -1,10 +1,5 @@
-# Published-paper registry used for deduplication and metadata refreshes.
-#
-# Identity fields (`id`, `arxiv_id`, `doi`) prevent duplicate recommendations.
-# Current bibliographic facts (`title`, `authors`, `submitted`, `updated`,
-# `version`) may change when an arXiv record is revised. Site history is kept
-# separately in `featured_on`; an existing id may be refreshed without being
-# recommended again.
+# Current bibliographic metadata used for identity, deduplication, and display.
+# Recommendation history and annotations live in data/editions.yml.
 
 - id: "arxiv:2607.06409"
   title: "Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation"
@@ -20,8 +15,6 @@
   version: "v2"
   metadata_checked_at: "2026-07-10"
   metadata_note: "arXiv v2 adds Bao-Feng Feng to the author list"
-  featured_on:
-    - "2026-07-09"
   tags:
     - "Fokas--Lenells equation"
     - "elliptic localized solutions"
@@ -39,8 +32,6 @@
   url: "https://arxiv.org/abs/2607.04756"
   arxiv_id: "2607.04756"
   doi: null
-  featured_on:
-    - "2026-07-09"
   tags:
     - "multi-component short pulse equation"
     - "integrable discretization"
@@ -53,8 +44,6 @@
   url: "https://arxiv.org/abs/2607.01348"
   arxiv_id: "2607.01348"
   doi: null
-  featured_on:
-    - "2026-07-09"
   tags:
     - "finite-gap solutions"
     - "mKdV"
@@ -66,11 +55,14 @@
     - "Liming Ling"
     - "Dmitry E. Pelinovsky"
     - "Huajie Su"
-  url: "https://dmpeli.math.mcmaster.ca/PaperBank/BreathersCoupledNLS.pdf"
+  url: "https://doi.org/10.1016/j.aim.2026.110961"
   arxiv_id: null
   doi: "10.1016/j.aim.2026.110961"
-  featured_on:
-    - "2026-07-09"
+  journal: "Advances in Mathematics"
+  volume: "495"
+  article_number: "110961"
+  year: 2026
+  metadata_checked_at: "2026-07-10"
   tags:
     - "coupled NLS"
     - "breathers"
@@ -85,8 +77,6 @@
   url: "https://arxiv.org/abs/2606.24435"
   arxiv_id: "2606.24435"
   doi: "10.48550/arXiv.2606.24435"
-  featured_on:
-    - "2026-07-09"
   tags:
     - "DNLS"
     - "soliton gas"
@@ -101,8 +91,6 @@
   arxiv_id: "2605.28856"
   doi: "10.58997/ejde.2026.37"
   metadata_checked_at: "2026-07-10"
-  featured_on:
-    - "2026-07-09"
   tags:
     - "coupled Gerdjikov--Ivanov equations"
     - "inverse scattering"
@@ -120,8 +108,6 @@
   updated: "2026-06-22"
   version: "v1"
   metadata_checked_at: "2026-07-10"
-  featured_on:
-    - "2026-07-10"
   tags:
     - "dimensional reduction"
     - "multicomponent NLS"
@@ -140,8 +126,6 @@
   updated: "2026-06-03"
   version: "v1"
   metadata_checked_at: "2026-07-10"
-  featured_on:
-    - "2026-07-10"
   tags:
     - "Ablowitz--Ladik system"
     - "discrete breathers"
@@ -160,8 +144,6 @@
   updated: "2026-05-07"
   version: "v1"
   metadata_checked_at: "2026-07-10"
-  featured_on:
-    - "2026-07-10"
   tags:
     - "focusing NLS"
     - "soliton gas"
@@ -184,8 +166,6 @@
   updated: "2026-02-14"
   version: "v1"
   metadata_checked_at: "2026-07-10"
-  featured_on:
-    - "2026-07-10"
   tags:
     - "defocusing NLS"
     - "finite-genus background"
@@ -207,8 +187,6 @@
   pages: "317-344"
   year: 2013
   metadata_checked_at: "2026-07-10"
-  featured_on:
-    - "2026-07-10"
   tags:
     - "DNLS"
     - "generalized Darboux transformation"
@@ -229,11 +207,92 @@
   pages: "285-304"
   year: 2016
   metadata_checked_at: "2026-07-10"
-  featured_on:
-    - "2026-07-10"
   tags:
     - "mixed coupled NLS"
     - "Darboux transformation"
     - "dark solitons"
     - "breathers"
     - "rogue waves"
+
+- id: "arxiv:2504.21315"
+  title: "Long-time asymptotics of the coupled nonlinear Schrödinger equation in a weighted Sobolev space"
+  authors:
+    - "Yubin Huang"
+    - "Liming Ling"
+    - "Xiaoen Zhang"
+  url: "https://arxiv.org/abs/2504.21315v3"
+  arxiv_id: "2504.21315"
+  doi: "10.48550/arXiv.2504.21315"
+  submitted: "2025-04-30"
+  updated: "2026-02-22"
+  version: "v3"
+  metadata_checked_at: "2026-07-11"
+  tags:
+    - "coupled NLS"
+    - "Riemann--Hilbert problem"
+    - "nonlinear steepest descent"
+    - "Darboux transformation"
+    - "long-time asymptotics"
+
+- id: "arxiv:0808.1534"
+  title: "The derivative nonlinear Schrödinger equation on the half-line"
+  authors:
+    - "Jonatan Lenells"
+  url: "https://arxiv.org/abs/0808.1534"
+  arxiv_id: "0808.1534"
+  doi: "10.48550/arXiv.0808.1534"
+  submitted: "2008-08-11"
+  updated: "2008-08-11"
+  version: "v1"
+  metadata_checked_at: "2026-07-11"
+  tags:
+    - "DNLS"
+    - "half-line"
+    - "Fokas method"
+    - "Riemann--Hilbert problem"
+    - "global relation"
+
+- id: "doi:10.1088/1361-6544/accfdf"
+  title: "Partial degeneration of finite gap solutions to the Korteweg-de Vries equation: soliton gas and scattering on elliptic background"
+  authors:
+    - "Marco Bertola"
+    - "Robert Jenkins"
+    - "Alexander Tovbis"
+  url: "https://doi.org/10.1088/1361-6544/accfdf"
+  arxiv_id: "2210.01350"
+  doi: "10.1088/1361-6544/accfdf"
+  journal: "Nonlinearity"
+  year: 2023
+  submitted: "2022-10-04"
+  updated: "2023-05-17"
+  version: "v3"
+  metadata_checked_at: "2026-07-11"
+  tags:
+    - "finite-gap degeneration"
+    - "elliptic background"
+    - "theta functions"
+    - "soliton gas"
+    - "scattering"
+
+- id: "arxiv:2304.06541"
+  title: "Soliton Gas: Theory, Numerics and Experiments"
+  authors:
+    - "Pierre Suret"
+    - "Stephane Randoux"
+    - "Andrey Gelash"
+    - "Dmitry Agafontsev"
+    - "Benjamin Doyon"
+    - "Gennady El"
+  url: "https://arxiv.org/abs/2304.06541"
+  arxiv_id: "2304.06541"
+  doi: "10.48550/arXiv.2304.06541"
+  submitted: "2023-04-13"
+  updated: "2023-04-13"
+  version: "v1"
+  metadata_checked_at: "2026-07-11"
+  tags:
+    - "soliton gas"
+    - "inverse scattering"
+    - "thermodynamic finite-gap limit"
+    - "generalized hydrodynamics"
+    - "integrable turbulence"

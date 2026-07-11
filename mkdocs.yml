@@ -15,11 +15,10 @@ theme:
 
 nav:
   - Home / 首页: index.md
-  - Research Brief / 研究简报: radar/latest.md
-  - Archive / 归档: radar/index.md
-  - Resources / 资源: resources.md
-  - Group work / 课题组相关: group-work.md
+  - Research Radar / 研究雷达: radar/index.md
   - Core topics / 核心主题: topics.md
+  - Group work / 课题组相关: group-work.md
+  - Resources / 资源: resources.md
   - About / 关于: about.md
 
 markdown_extensions:

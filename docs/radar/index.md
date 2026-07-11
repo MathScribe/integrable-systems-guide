@@ -1,10 +1,17 @@
-# 简报归档
+# 研究雷达归档
 
-这里保存研究简报的历史记录。日期是本站的推荐日期，不要求论文在当天发表；论文的实际提交、修订或期刊信息见各条目。
+归档按周组织；每日推荐日期保留在周页面中，用于追溯当时的编辑选择。
 
-[最新简报](latest.md) · [返回首页](../index.md)
+[返回首页](../index.md)
 
 ## 2026
 
-- [2026-07-10](2026-W28.md#2026-07-10)
-- [2026-07-09](2026-W28.md#2026-07-09)
+### 2026-W28 · 2026-07-06 至 2026-07-12
+
+3 期 · 16 篇
+
+`DNLS` `coupled NLS` `Riemann--Hilbert problem` `finite-gap` `soliton gas` `Fokas--Lenells`
+
+本周集中在 DNLS、coupled NLS、Riemann--Hilbert 渐近、有限带退化与 soliton gas，同时补入 Fokas--Lenells、Darboux transformation 和稳定性材料。
+
+[查看本周完整归档](2026-W28.md)

@@ -1,0 +1,158 @@
+# Recommendation history and editorial annotations.
+# Bibliographic facts live in data/papers.yml; this file records when and why a
+# paper was featured. Roles are intentionally stable across editions.
+
+weeks:
+  - id: "2026-W28"
+    date_range: "2026-07-06 至 2026-07-12"
+    summary: >-
+      本周集中在 DNLS、coupled NLS、Riemann--Hilbert 渐近、有限带退化与
+      soliton gas，同时补入 Fokas--Lenells、Darboux transformation 和稳定性材料。
+    tags:
+      - "DNLS"
+      - "coupled NLS"
+      - "Riemann--Hilbert problem"
+      - "finite-gap"
+      - "soliton gas"
+      - "Fokas--Lenells"
+
+editions:
+  - date: "2026-07-11"
+    week: "2026-W28"
+    summary: >-
+      本期关注 coupled NLS 与 DNLS 的 RHP 表述，以及 finite-gap 退化和
+      soliton gas 之间的联系。
+    entries:
+      - paper_id: "arxiv:2504.21315"
+        role: "group-adjacent"
+        homepage_rank: 1
+        what_it_does: >-
+          从 focusing coupled NLS 的 3×3 谱问题建立 RHP，通过 Darboux
+          transformation 移除离散谱，并用 Deift--Zhou 非线性 steepest descent
+          得到加权 Sobolev 初值下的长时展开和孤子分解。
+        why_read: >-
+          直接连接 Liming Ling 课题组的 coupled NLS、RHP、Darboux 变换和长时渐近方向。
+      - paper_id: "arxiv:0808.1534"
+        role: "method-background"
+        homepage_rank: 2
+        what_it_does: >-
+          用统一变换处理 Kaup--Newell 型 DNLS 半线问题，将初值谱函数和边界谱函数
+          共同编码进矩阵 RHP，并由 global relation 约束边界数据。
+        why_read: >-
+          它是从整线 DNLS IST 过渡到初边值谱分析、边界兼容性和半线 RHP 的基础文献。
+      - paper_id: "doi:10.1088/1361-6544/accfdf"
+        role: "journal-version"
+        homepage_rank: 3
+        what_it_does: >-
+          推导高亏格 theta 函数的部分退化公式，并将 KdV 多孤子解表示为平移椭圆背景
+          与行列式孤子部分，同时得到椭圆背景上的散射核和 soliton-gas 色散关系。
+        why_read: >-
+          它把有限带几何、退化极限、非零背景散射和 soliton gas 放在同一具体模型中。
+      - paper_id: "arxiv:2304.06541"
+        role: "review-map"
+        what_it_does: >-
+          综述稀疏与稠密 soliton gas、IST、有限带势的热力学极限、广义 Gibbs 系综、
+          广义流体力学、数值方法和实验实现。
+        why_read: >-
+          适合作为领域地图，用来核对 soliton gas 的术语、主要方法、实验背景和开放问题。
+
+  - date: "2026-07-10"
+    week: "2026-W28"
+    summary: >-
+      本期混合近期渐近结果、soliton-gas 统计工作、离散与多分量系统，以及两篇
+      课题组相关的 Darboux 方法旧文。
+    entries:
+      - paper_id: "arxiv:2602.13589"
+        role: "journal-version"
+        homepage_rank: 1
+        what_it_does: >-
+          对有限亏格代数几何背景上的 defocusing NLS 应用非线性 steepest descent，
+          区分四个时空区域，并以 Painlevé XXXIV 描述两个过渡区的次阶渐近。
+        why_read: >-
+          它展示了有限带背景、RHP 变形和 Painlevé 局部模型如何在长时渐近中衔接。
+      - paper_id: "arxiv:2605.06306"
+        role: "recent"
+        what_it_does: >-
+          为 focusing NLS 半经典随机波场提出 soliton-gas resolution，将谱态密度与
+          波场强度统计联系起来，并与数值模拟比较。
+        why_read: >-
+          可作为随机 IST、积分湍流和 soliton-gas 统计方向的近期入口。
+      - paper_id: "arxiv:2606.05123"
+        role: "adjacent"
+        what_it_does: >-
+          在非零背景下构造 defocusing 标量与耦合 Ablowitz--Ladik 系统的周期 breather、
+          离散 Akhmediev 型 breather 及其 rogue-wave 极限。
+        why_read: >-
+          为多分量离散可积系统中的 breather 与 rogue wave 提供一组可比较的显式解。
+      - paper_id: "arxiv:2606.22808"
+        role: "adjacent"
+        what_it_does: >-
+          给出调和维数约化条件，将一类 (3+1) 维多分量 NLS 系统精确约化到
+          (1+1) 维可积层级，并把 Manakov 型解提升回高维模型。
+        why_read: >-
+          它提供了从低维可积解到高维多分量波场的精确构造机制。
+      - paper_id: "doi:10.1111/j.1467-9590.2012.00568.x"
+        role: "group-adjacent"
+        homepage_rank: 2
+        what_it_does: >-
+          构造 Kaup--Newell/DNLS 的两类广义 Darboux transformation，并给出高阶孤子、
+          重复极点解和高阶 rogue-wave 公式。
+        why_read: >-
+          是理解 DNLS 多重谱点、极限过程和高阶精确解构造的直接方法背景。
+      - paper_id: "doi:10.1016/j.cnsns.2015.08.023"
+        role: "group-adjacent"
+        what_it_does: >-
+          通过统一 Darboux transformation 构造混合耦合 NLS 的非零背景解，分类
+          breather、dark soliton 和 rogue wave，并分析不同解型之间的相互作用。
+        why_read: >-
+          连接课题组的多分量 NLS、非零背景精确解和解型分类工作。
+
+  - date: "2026-07-09"
+    week: "2026-W28"
+    summary: >-
+      本期以 Fokas--Lenells、DNLS soliton gas、coupled GI 逆散射和 coupled NLS
+      breather 稳定性为主，并补充有限带估计与多分量离散化。
+    entries:
+      - paper_id: "arxiv:2607.06409"
+        role: "recent"
+        homepage_rank: 1
+        what_it_does: >-
+          使用 Lax pair、Weierstrass 椭圆函数和 N-fold Darboux--Bäcklund transformation
+          构造 Fokas--Lenells 方程的椭圆背景局域解，并研究其传播渐近结构。
+        why_read: >-
+          与当前 DNLS/Fokas--Lenells、椭圆背景和 Darboux 构造方向高度重合。
+      - paper_id: "arxiv:2607.04756"
+        role: "adjacent"
+        what_it_does: >-
+          构造多分量 short-pulse equation 的全离散可积系统，并保持相应的双线性与
+          孤子结构。
+        why_read: >-
+          可作为 complex short pulse、vector soliton 和离散可积模型的外围方法材料。
+      - paper_id: "arxiv:2607.01348"
+        role: "recent"
+        what_it_does: >-
+          给出 modified KdV 有限带解振幅的锐上界，把代数几何解的谱数据与定量振幅估计联系起来。
+        why_read: >-
+          补充有限带研究中从显式构造走向定量控制的一条线索。
+      - paper_id: "arxiv:2606.24435"
+        role: "missed-recent"
+        homepage_rank: 2
+        what_it_does: >-
+          从纯 N-soliton 的 meromorphic RHP 出发研究 DNLS soliton gas 的连续极限和长时渐近，
+          使用 RHP、∂̄ 方法和 theta 函数描述不同渐近区域。
+        why_read: >-
+          直接位于 DNLS、soliton gas、RHP 和长时渐近的交叉点，是当前优先级很高的补读。
+      - paper_id: "arxiv:2605.28856"
+        role: "missed-recent"
+        what_it_does: >-
+          建立 coupled Gerdjikov--Ivanov 线性系统的 direct/inverse scattering，讨论 Jost
+          solutions、散射系数、束缚态以及 Marchenko 型积分方程。
+        why_read: >-
+          为 coupled GI 和 DNLS system III 的完整 IST 框架提供直接的谱分析材料。
+      - paper_id: "doi:10.1016/j.aim.2026.110961"
+        role: "group-adjacent"
+        what_it_does: >-
+          通过 squared eigenfunctions、Krein signature 和 Lyapunov 方法研究 coupled NLS
+          breathers 的谱结构与非线性轨道稳定性。
+        why_read: >-
+          是课题组相关的 coupled NLS、breather 和稳定性方向中的核心正式论文。
