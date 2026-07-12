@@ -8,6 +8,33 @@
 
 这里汇总最近三期中优先级较高的论文，而不是重复展示当天简报。详细注释和完整推荐历史保存在周归档中。
 
+### Multicomponent Fokas-Lenells equations on Hermitian symmetric spaces
+
+Vladimir S. Gerdjikov, Rossen I. Ivanov · [arXiv:2104.00154v1](https://arxiv.org/abs/2104.00154) · [Nonlinearity, doi:10.1088/1361-6544/abcc4b](https://doi.org/10.1088/1361-6544/abcc4b)  
+`正式版本` `Fokas--Lenells equation` `multicomponent systems` `Hermitian symmetric spaces`
+
+从不可约 Hermitian symmetric spaces 出发构造多分量 Fokas--Lenells 方程，给出相应 Lax 表示、双 Hamilton 结构，并系统讨论局部、非局部约化及经典系列实例。
+
+推荐于 2026-07-12 · [查看详细说明](radar/2026-W28.md#2026-07-12)
+
+### The Fokas-Lenells equation on the line: Global well-posedness with solitons
+
+Qiaoyuan Cheng, Engui Fan · [arXiv:2210.08417v1](https://arxiv.org/abs/2210.08417)  
+`方法基础` `Fokas--Lenells equation` `global well-posedness` `inverse scattering`
+
+对含有限个孤子的 Fokas--Lenells 初值问题证明全局解存在性；核心工具是可添加或移除指定离散谱数据的改造 Darboux transformation，再将问题约化到无孤子 IST 情形。
+
+推荐于 2026-07-12 · [查看详细说明](radar/2026-W28.md#2026-07-12)
+
+### The Derivative Nonlinear Schrödinger Equation: Global Well-Posedness and Soliton Resolution
+
+Robert Jenkins, Jiaqi Liu, Peter Perry, Catherine Sulem · [arXiv:1905.02866v1](https://arxiv.org/abs/1905.02866)  
+`综述地图` `DNLS` `global well-posedness` `soliton resolution`
+
+综述 DNLS 在加权 Sobolev 空间中的全局适定性与长时行为，说明 Zhou 方法如何处理 spectral singularities，并总结一般亮孤子数据下的 soliton resolution 与渐近稳定性。
+
+推荐于 2026-07-12 · [查看详细说明](radar/2026-W28.md#2026-07-12)
+
 ### Long-time asymptotics of the coupled nonlinear Schrödinger equation in a weighted Sobolev space
 
 Yubin Huang, Liming Ling, Xiaoen Zhang · [arXiv:2504.21315v3](https://arxiv.org/abs/2504.21315v3)  
@@ -52,24 +79,6 @@ Boling Guo, Liming Ling, Q. P. Liu · [arXiv:1205.4369](https://arxiv.org/abs/12
 构造 Kaup--Newell/DNLS 的两类广义 Darboux transformation，并给出高阶孤子、重复极点解和高阶 rogue-wave 公式。
 
 推荐于 2026-07-10 · [查看详细说明](radar/2026-W28.md#2026-07-10)
-
-### Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation
-
-Bao-Feng Feng, Wang Tang, Guo-Fu Yu · [arXiv:2607.06409v2](https://arxiv.org/abs/2607.06409)  
-`近期进展` `Fokas--Lenells equation` `elliptic localized solutions` `Darboux--Bäcklund transformation`
-
-使用 Lax pair、Weierstrass 椭圆函数和 N-fold Darboux--Bäcklund transformation 构造 Fokas--Lenells 方程的椭圆背景局域解，并研究其传播渐近结构。
-
-推荐于 2026-07-09 · [查看详细说明](radar/2026-W28.md#2026-07-09)
-
-### Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation
-
-Deng Shan Wang, Xinyu Wang · [arXiv:2606.24435](https://arxiv.org/abs/2606.24435)  
-`近期漏读` `DNLS` `soliton gas` `Riemann--Hilbert problem`
-
-从纯 N-soliton 的 meromorphic RHP 出发研究 DNLS soliton gas 的连续极限和长时渐近，使用 RHP、∂̄ 方法和 theta 函数描述不同渐近区域。
-
-推荐于 2026-07-09 · [查看详细说明](radar/2026-W28.md#2026-07-09)
 
 ## 其他入口
 
