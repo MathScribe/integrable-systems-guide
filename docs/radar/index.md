@@ -8,7 +8,7 @@
 
 ### 2026-W28 · 2026-07-06 至 2026-07-12
 
-3 期 · 16 篇
+4 期 · 20 篇
 
 `DNLS` `coupled NLS` `Riemann--Hilbert problem` `finite-gap` `soliton gas` `Fokas--Lenells`
 
