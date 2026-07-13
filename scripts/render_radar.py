@@ -161,6 +161,8 @@ def render_home(editions: list[dict[str, Any]], papers: dict[str, dict[str, Any]
         "",
         "面向 DNLS、耦合与多分量 NLS、IST、Riemann--Hilbert 方法、长时渐近、有限带解和非线性波的持续阅读入口。",
         "",
+        "最新论文：[arXiv · Exactly Solvable and Integrable Systems](https://arxiv.org/list/nlin.SI/recent) · [arXiv · Pattern Formation and Solitons](https://arxiv.org/list/nlin.PS/recent)",
+        "",
         "[研究雷达归档](radar/index.md) · [资源](resources.md) · [核心主题](topics.md) · [课题组相关](group-work.md)",
         "",
         "## 近期推荐",
@@ -188,7 +190,7 @@ def render_home(editions: list[dict[str, Any]], papers: dict[str, dict[str, Any]
         [
             "## 其他入口",
             "",
-            "- [Resources / 资源](resources.md)：课程、讲义、研究者主页和检索入口。",
+            "- [Resources / 资源](resources.md)：最新论文、文献检索、课程讲义和研究资料入口。",
             "- [Group work / 课题组相关](group-work.md)：本地研究背景、公开笔记和相关链接。",
             "- [Core topics / 核心主题](topics.md)：本站目前关注的方程、方法和非线性波主题。",
             "- [About / 关于](about.md)：策展原则、元数据政策、AI 使用和许可证说明。",
