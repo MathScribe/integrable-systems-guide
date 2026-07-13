@@ -1,0 +1,36 @@
+name: Apply July 13 radar data
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.head_ref == 'agent/radar-2026-07-13' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pyyaml mkdocs-material
+      - run: python scripts/apply_radar_2026_07_13.py
+      - run: python scripts/render_radar.py
+      - run: python scripts/validate_radar.py
+      - run: python scripts/render_radar.py --check
+      - run: mkdocs build --strict
+      - name: Commit generated edition
+        run: |
+          git rm .github/workflows/apply-radar-2026-07-13.yml .github/workflows/apply-radar-pr.yml scripts/apply_radar_2026_07_13.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/papers.yml data/editions.yml docs/index.md docs/radar/index.md docs/radar/latest.md docs/radar/2026-W29.md
+          git commit -m "Curate the July 13 non-Abelian DNLS reading chain"
+          git push origin HEAD:${{ github.head_ref }}
