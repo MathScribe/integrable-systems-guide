@@ -8,11 +8,11 @@
 
 ### 2026-W29 · 2026-07-13 至 2026-07-19
 
-1 期 · 4 篇
+2 期 · 7 篇
 
-`DNLS` `noncommutative systems` `Darboux--Bäcklund transformation` `integrable discretization` `elliptic background`
+`DNLS` `Gerdjikov--Ivanov equation` `Darboux transformation` `Riemann--Hilbert problem` `integrable discretization`
 
-本周从 non-Abelian 与 noncommutative DNLS 出发，连接 Darboux--Bäcklund 变换、可积离散化、椭圆背景精确解与课题组相关的 rogue-wave 方法。
+本周从 non-Abelian 与 noncommutative DNLS 延伸到 fully discrete Gerdjikov--Ivanov 模型、高阶流的 Riemann--Hilbert dressing，以及 Darboux/quasideterminant 精确解。
 
 [查看本周完整归档](2026-W29.md)
 

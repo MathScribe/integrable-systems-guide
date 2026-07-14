@@ -10,6 +10,33 @@
 
 这里汇总最近三期中优先级较高的论文，而不是重复展示当天简报。详细注释和完整推荐历史保存在周归档中。
 
+### Discrete Gerdjikov-Ivanov models and their higher-order counterparts from the Cauchy matrix scheme
+
+Xiao-gang Mu, Song-lin Zhao · [arXiv:2607.09333v1](https://arxiv.org/abs/2607.09333)  
+`近期进展` `Gerdjikov--Ivanov equation` `fully discrete systems` `Cauchy matrix method`
+
+从带两组离散色散关系的 Sylvester 方程出发，构造四族共轭对称的 fully discrete Gerdjikov--Ivanov 模型及四族高阶 GI 格点模型；用对角与 Jordan 块谱矩阵给出 N-soliton 和 multiple-pole 解，并通过两步连续极限恢复连续 GI/hGI 方程。
+
+推荐于 2026-07-14 · [查看详细说明](radar/2026-W29.md#2026-07-14)
+
+### High-order soliton matrix for the third-order flow equation of the Gerdjikov-Ivanov hierarchy through the Riemann-Hilbert method
+
+JinYan Zhu, Yong Chen · [arXiv:2105.08412v1](https://arxiv.org/abs/2105.08412)  
+`方法基础` `Gerdjikov--Ivanov hierarchy` `third-order flow` `Riemann--Hilbert problem`
+
+对 GI 层级的三阶流建立 Riemann--Hilbert dressing，构造简单零点与 elementary high-order zeros 的 soliton matrices，分析单、双孤子的传播与弹性交互，并由极限过程得到高阶孤子矩阵。
+
+推荐于 2026-07-14 · [查看详细说明](radar/2026-W29.md#2026-07-14)
+
+### Exact solutions of the Gerdjikov-Ivanov equation using Darboux transformations
+
+Halis Yilmaz · [arXiv:1501.07634v1](https://arxiv.org/abs/1501.07634) · [Journal of Nonlinear Mathematical Physics, doi:10.1080/14029251.2015.996438](https://doi.org/10.1080/14029251.2015.996438)  
+`正式版本` `Gerdjikov--Ivanov equation` `Darboux transformation` `quasideterminants`
+
+为标量 GI 方程构造标准 Darboux transformation，并用 quasideterminant 写出迭代解，以抛物型解、孤子和 breather 作为显式例子。
+
+推荐于 2026-07-14 · [查看详细说明](radar/2026-W29.md#2026-07-14)
+
 ### Noncommutative NLS systems: Darboux--Bäcklund transformations and integrable discretisations
 
 Sotiris Konstantinou-Rizos · [arXiv:2606.10037v1](https://arxiv.org/abs/2606.10037)  
@@ -54,33 +81,6 @@ Qiaoyuan Cheng, Engui Fan · [arXiv:2210.08417v1](https://arxiv.org/abs/2210.084
 对含有限个孤子的 Fokas--Lenells 初值问题证明全局解存在性；核心工具是可添加或移除指定离散谱数据的改造 Darboux transformation，再将问题约化到无孤子 IST 情形。
 
 推荐于 2026-07-12 · [查看详细说明](radar/2026-W28.md#2026-07-12)
-
-### The Derivative Nonlinear Schrödinger Equation: Global Well-Posedness and Soliton Resolution
-
-Robert Jenkins, Jiaqi Liu, Peter Perry, Catherine Sulem · [arXiv:1905.02866v1](https://arxiv.org/abs/1905.02866)  
-`综述地图` `DNLS` `global well-posedness` `soliton resolution`
-
-综述 DNLS 在加权 Sobolev 空间中的全局适定性与长时行为，说明 Zhou 方法如何处理 spectral singularities，并总结一般亮孤子数据下的 soliton resolution 与渐近稳定性。
-
-推荐于 2026-07-12 · [查看详细说明](radar/2026-W28.md#2026-07-12)
-
-### Long-time asymptotics of the coupled nonlinear Schrödinger equation in a weighted Sobolev space
-
-Yubin Huang, Liming Ling, Xiaoen Zhang · [arXiv:2504.21315v3](https://arxiv.org/abs/2504.21315v3)  
-`课题组相关` `coupled NLS` `Riemann--Hilbert problem` `nonlinear steepest descent`
-
-从 focusing coupled NLS 的 3×3 谱问题建立 RHP，通过 Darboux transformation 移除离散谱，并用 Deift--Zhou 非线性 steepest descent 得到加权 Sobolev 初值下的长时展开和孤子分解。
-
-推荐于 2026-07-11 · [查看详细说明](radar/2026-W28.md#2026-07-11)
-
-### The derivative nonlinear Schrödinger equation on the half-line
-
-Jonatan Lenells · [arXiv:0808.1534v1](https://arxiv.org/abs/0808.1534)  
-`方法基础` `DNLS` `half-line` `Fokas method`
-
-用统一变换处理 Kaup--Newell 型 DNLS 半线问题，将初值谱函数和边界谱函数共同编码进矩阵 RHP，并由 global relation 约束边界数据。
-
-推荐于 2026-07-11 · [查看详细说明](radar/2026-W28.md#2026-07-11)
 
 ## 其他入口
 
