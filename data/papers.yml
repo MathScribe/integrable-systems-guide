@@ -475,7 +475,7 @@
   updated: "2026-07-10"
   version: "v1"
   metadata_checked_at: "2026-07-14"
-  metadata_note: "The arXiv title spells Gerdjikov-Ivanov correctly on the abstract page; the nlin.SI recent-list rendering briefly showed 'Gerdjikov-vanov'."
+  metadata_note: "The current arXiv abstract and recent-list pages render the source title as 'Gerdjikov-vanov'; the abstract consistently identifies the Gerdjikov-Ivanov equation, so the registry normalizes the equation name and records the source-title typo."
   tags:
     - "Gerdjikov--Ivanov equation"
     - "fully discrete systems"
