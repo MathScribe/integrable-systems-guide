@@ -13,7 +13,7 @@
 ### Discrete Gerdjikov-Ivanov models and their higher-order counterparts from the Cauchy matrix scheme
 
 Xiao-gang Mu, Song-lin Zhao · [arXiv:2607.09333v1](https://arxiv.org/abs/2607.09333)  
-`近期论文` `Gerdjikov--Ivanov equation` `fully discrete systems` `Cauchy matrix method`
+`近期进展` `Gerdjikov--Ivanov equation` `fully discrete systems` `Cauchy matrix method`
 
 从带两组离散色散关系的 Sylvester 方程出发，构造四族共轭对称的 fully discrete Gerdjikov--Ivanov 模型及四族高阶 GI 格点模型；用对角与 Jordan 块谱矩阵给出 N-soliton 和 multiple-pole 解，并通过两步连续极限恢复连续 GI/hGI 方程。
 
@@ -79,15 +79,6 @@ Qiaoyuan Cheng, Engui Fan · [arXiv:2210.08417v1](https://arxiv.org/abs/2210.084
 `方法基础` `Fokas--Lenells equation` `global well-posedness` `inverse scattering`
 
 对含有限个孤子的 Fokas--Lenells 初值问题证明全局解存在性；核心工具是可添加或移除指定离散谱数据的改造 Darboux transformation，再将问题约化到无孤子 IST 情形。
-
-推荐于 2026-07-12 · [查看详细说明](radar/2026-W28.md#2026-07-12)
-
-### The Derivative Nonlinear Schrödinger Equation: Global Well-Posedness and Soliton Resolution
-
-Robert Jenkins, Jiaqi Liu, Peter Perry, Catherine Sulem · [arXiv:1905.02866v1](https://arxiv.org/abs/1905.02866)  
-`综述地图` `DNLS` `global well-posedness` `soliton resolution`
-
-综述 DNLS 在加权 Sobolev 空间中的全局适定性与长时行为，说明 Zhou 方法如何处理 spectral singularities，并总结一般亮孤子数据下的 soliton resolution 与渐近稳定性。
 
 推荐于 2026-07-12 · [查看详细说明](radar/2026-W28.md#2026-07-12)
 
