@@ -10,6 +10,33 @@
 
 这里汇总最近三期中优先级较高的论文，而不是重复展示当天简报。详细注释和完整推荐历史保存在周归档中。
 
+### Exact vector Akhmediev breathers dominated by a linearly stable frequency
+
+Wen-Rong Sun, Chong Liu, Lei Wang, Fabio Baronio · [arXiv:2607.10954v1](https://arxiv.org/abs/2607.10954)  
+`近期进展` `Manakov system` `vector Akhmediev breathers` `modulation instability`
+
+在 Manakov 系统中构造一种由不稳定模激发、但在峰值处由线性稳定谐波占主导的精确 vector Akhmediev breather；数值演化表明无需预先播种稳定分量，它会自发出现，并将主导机制定量归因于 four-wave mixing。
+
+推荐于 2026-07-15 · [查看详细说明](radar/2026-W29.md#2026-07-15)
+
+### Controllable excitation of vector Akhmediev breather patterns
+
+Yan-Hong Qin, Ning Cao, Li-Chen Zhao · [arXiv:2606.21301v1](https://arxiv.org/abs/2606.21301)  
+`近期漏读` `Manakov system` `vector Akhmediev breathers` `modulation instability`
+
+针对 focusing Manakov 系统中多个 MI 分支并存的问题，用目标分支的线性化本征向量设计初始 Fourier 扰动，使指定 vector Akhmediev breather 以接近百分之百的保真度被选择性激发。
+
+推荐于 2026-07-15 · [查看详细说明](radar/2026-W29.md#2026-07-15)
+
+### Modulation instability and non-degenerate Akhmediev breathers of Manakov equations
+
+Chong Liu, Shao-Chun Chen, Xiankun Yao, Nail Akhmediev · [arXiv:2203.03998v1](https://arxiv.org/abs/2203.03998) · [Chinese Physics Letters, doi:10.1088/0256-307X/39/9/094201](https://doi.org/10.1088/0256-307X/39/9/094201)  
+`正式版本` `Manakov system` `non-degenerate Akhmediev breathers` `modulation instability`
+
+发现 focusing Manakov 方程中的非退化 Akhmediev breather，给出其频率--波数存在图，并说明单频调制不稳定性可同时激发三个 AB，其中两个属于非退化分支。
+
+推荐于 2026-07-15 · [查看详细说明](radar/2026-W29.md#2026-07-15)
+
 ### Discrete Gerdjikov-Ivanov models and their higher-order counterparts from the Cauchy matrix scheme
 
 Xiao-gang Mu, Song-lin Zhao · [arXiv:2607.09333v1](https://arxiv.org/abs/2607.09333)  
@@ -54,33 +81,6 @@ Edoardo Peroni, Jing Ping Wang · [arXiv:2507.21660v1](https://arxiv.org/abs/250
 为七类具有 Lax 表示的 non-Abelian DNLS 构造与 reduction group 相容的线性和二次 Darboux 矩阵，得到 Volterra、Ablowitz--Ladik、Merola--Ragnisco--Tu 与 relativistic Toda 型微分差分系统，并用 quasideterminant 分析二次矩阵的分解。
 
 推荐于 2026-07-13 · [查看详细说明](radar/2026-W29.md#2026-07-13)
-
-### Integrable discretizations of derivative nonlinear Schroedinger equations
-
-Takayuki Tsuchida · [arXiv:nlin/0105053v3](https://arxiv.org/abs/nlin/0105053) · [Journal of Physics A: Mathematical and General, doi:10.1088/0305-4470/35/36/310](https://doi.org/10.1088/0305-4470/35/36/310)  
-`正式版本` `DNLS` `Kaup--Newell equation` `Chen--Lee--Liu equation`
-
-通过 Lax pair 为 Kaup--Newell、Chen--Lee--Liu 和 Gerdjikov--Ivanov 三类 DNLS 构造保持复共轭约化与双 Hamilton 结构的可积离散化，并由变量变换和约化导出 matrix NLS、coupled NLS、Hirota、Sasa--Satsuma 等多类格点系统。
-
-推荐于 2026-07-13 · [查看详细说明](radar/2026-W29.md#2026-07-13)
-
-### Multicomponent Fokas-Lenells equations on Hermitian symmetric spaces
-
-Vladimir S. Gerdjikov, Rossen I. Ivanov · [arXiv:2104.00154v1](https://arxiv.org/abs/2104.00154) · [Nonlinearity, doi:10.1088/1361-6544/abcc4b](https://doi.org/10.1088/1361-6544/abcc4b)  
-`正式版本` `Fokas--Lenells equation` `multicomponent systems` `Hermitian symmetric spaces`
-
-从不可约 Hermitian symmetric spaces 出发构造多分量 Fokas--Lenells 方程，给出相应 Lax 表示、双 Hamilton 结构，并系统讨论局部、非局部约化及经典系列实例。
-
-推荐于 2026-07-12 · [查看详细说明](radar/2026-W28.md#2026-07-12)
-
-### The Fokas-Lenells equation on the line: Global well-posedness with solitons
-
-Qiaoyuan Cheng, Engui Fan · [arXiv:2210.08417v1](https://arxiv.org/abs/2210.08417)  
-`方法基础` `Fokas--Lenells equation` `global well-posedness` `inverse scattering`
-
-对含有限个孤子的 Fokas--Lenells 初值问题证明全局解存在性；核心工具是可添加或移除指定离散谱数据的改造 Darboux transformation，再将问题约化到无孤子 IST 情形。
-
-推荐于 2026-07-12 · [查看详细说明](radar/2026-W28.md#2026-07-12)
 
 ## 其他入口
 
