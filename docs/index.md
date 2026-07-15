@@ -22,7 +22,7 @@ Wen-Rong Sun, Chong Liu, Lei Wang, Fabio Baronio · [arXiv:2607.10954v1](https:/
 ### Controllable excitation of vector Akhmediev breather patterns
 
 Yan-Hong Qin, Ning Cao, Li-Chen Zhao · [arXiv:2606.21301v1](https://arxiv.org/abs/2606.21301)  
-`近期漏读` `Manakov system` `vector Akhmediev breathers` `eigenvector-controlled excitation`
+`近期漏读` `Manakov system` `vector Akhmediev breathers` `modulation instability`
 
 针对 focusing Manakov 系统中多个 MI 分支并存的问题，用目标分支的线性化本征向量设计初始 Fourier 扰动，使指定 vector Akhmediev breather 以接近百分之百的保真度被选择性激发。
 
