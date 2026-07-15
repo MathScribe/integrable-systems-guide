@@ -6,11 +6,14 @@ weeks:
   - id: "2026-W29"
     date_range: "2026-07-13 至 2026-07-19"
     summary: >-
-      本周从 non-Abelian 与 noncommutative DNLS 延伸到 fully discrete Gerdjikov--Ivanov
-      模型、高阶流的 Riemann--Hilbert dressing，以及 Darboux/quasideterminant 精确解。
+      本周从 non-Abelian 与 noncommutative DNLS、fully discrete Gerdjikov--Ivanov
+      延伸到 Manakov 系统的 vector Akhmediev breathers、调制不稳定性与 dressing 方法。
     tags:
       - "DNLS"
       - "Gerdjikov--Ivanov equation"
+      - "Manakov system"
+      - "vector breathers"
+      - "modulation instability"
       - "Darboux transformation"
       - "Riemann--Hilbert problem"
       - "integrable discretization"
@@ -29,6 +32,49 @@ weeks:
       - "Fokas--Lenells"
 
 editions:
+  - date: "2026-07-15"
+    week: "2026-W29"
+    summary: >-
+      本期按“稳定频率占主导的新 vector AB—基于线性化本征向量的可控激发—
+      非退化 AB 的 MI 存在图—dressing 方法下的 vector breather 分类与相互作用”组织。
+    entries:
+      - paper_id: "arxiv:2607.10954"
+        role: "recent"
+        homepage_rank: 1
+        what_it_does: >-
+          在 Manakov 系统中构造一种由不稳定模激发、但在峰值处由线性稳定谐波占主导的
+          精确 vector Akhmediev breather；数值演化表明无需预先播种稳定分量，它会自发出现，
+          并将主导机制定量归因于 four-wave mixing。
+        why_read: >-
+          它直接修正“breather 主频必定位于 MI 增益带内”的标量直觉，把多分量系统的稳定间隙、
+          非线性频率转换和可实验观测的峰值谱结构联系起来。
+      - paper_id: "arxiv:2606.21301"
+        role: "missed-recent"
+        homepage_rank: 2
+        what_it_does: >-
+          针对 focusing Manakov 系统中多个 MI 分支并存的问题，用目标分支的线性化本征向量
+          设计初始 Fourier 扰动，使指定 vector Akhmediev breather 以接近百分之百的保真度被选择性激发。
+        why_read: >-
+          它给出今天新论文的控制论互补面：一篇解释稳定谐波如何被非线性放大，另一篇说明如何从
+          线性阶段就选择目标分支，便于区分分支选择与后续 four-wave mixing 的作用。
+      - paper_id: "doi:10.1088/0256-307X/39/9/094201"
+        role: "journal-version"
+        homepage_rank: 3
+        what_it_does: >-
+          发现 focusing Manakov 方程中的非退化 Akhmediev breather，给出其频率--波数存在图，
+          并说明单频调制不稳定性可同时激发三个 AB，其中两个属于非退化分支。
+        why_read: >-
+          这是理解新结果所需的正式期刊基线：稳定间隙、多个 MI 分支与非退化 AB 的结构在这里
+          首次被清楚分离，可用于核对新论文的参数窗口和谱分量解释。
+      - paper_id: "arxiv:2211.07014"
+        role: "method-background"
+        what_it_does: >-
+          用 dressing method 构造 Manakov 系统的多 vector-breather 解，分析三类基本 breather、
+          碰撞位移、共振融合与衰变，并把不同类型对应到不稳定与稳定色散分支。
+        why_read: >-
+          它把今天的单个峰值谱现象放回完整的 vector-breather 分类和相互作用图景中，并解释为何
+          稳定分支类型通常不从小扰动的 superregular MI 过程中直接出现。
+
   - date: "2026-07-14"
     week: "2026-W29"
     summary: >-
