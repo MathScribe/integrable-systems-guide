@@ -8,11 +8,11 @@
 
 ### 2026-W29 · 2026-07-13 至 2026-07-19
 
-3 期 · 11 篇
+4 期 · 15 篇
 
-`DNLS` `Gerdjikov--Ivanov equation` `Manakov system` `vector breathers` `modulation instability` `Darboux transformation` `Riemann--Hilbert problem` `integrable discretization`
+`DNLS` `Gerdjikov--Ivanov equation` `Manakov system` `nonlocal NLS` `shifted reductions` `vector breathers` `modulation instability` `Darboux transformation` `Riemann--Hilbert problem` `integrable discretization`
 
-本周从 non-Abelian 与 noncommutative DNLS、fully discrete Gerdjikov--Ivanov 延伸到 Manakov 系统的 vector Akhmediev breathers、调制不稳定性与 dressing 方法。
+本周从 non-Abelian 与 noncommutative DNLS、fully discrete Gerdjikov--Ivanov 和 Manakov vector breathers，延伸到 shifted nonlocal NLS/mKdV、非局部 DNLS 约化与完整可积性。
 
 [查看本周完整归档](2026-W29.md)
 
