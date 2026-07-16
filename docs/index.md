@@ -15,25 +15,25 @@
 Aslı Pekcan · [arXiv:2607.10870v1](https://arxiv.org/abs/2607.10870)  
 `近期进展` `shifted nonlocal NLS` `shifted nonlocal mKdV` `folded waves`
 
-把 shifted nonlocal NLS 与 mKdV 的既有一、二孤子解作为参数曲线的场变量，通过非单调空间映射构造 regular、oscillating 和 singular loop-type folded profiles，并以折叠映射导数变号作为充分条件。
+把既有 shifted nonlocal NLS 与 mKdV 的一、二孤子解作为参数曲线的场变量，通过非单调空间映射构造 loop-type folded profiles；以折叠映射导数变号作为充分条件，并分析变形参数和孤子参数如何产生规则、振荡与奇异折叠。
 
 推荐于 2026-07-16 · [查看详细说明](radar/2026-W29.md#2026-07-16)
 
 ### Soliton solutions of the shifted nonlocal NLS and MKdV equations
 
 Metin Gürses, Aslı Pekcan · [arXiv:2106.14252v2](https://arxiv.org/abs/2106.14252) · [Physics Letters A, doi:10.1016/j.physleta.2021.127793](https://doi.org/10.1016/j.physleta.2021.127793)  
-`正式版本` `shifted nonlocal NLS` `shifted nonlocal mKdV` `solitons`
+`正式版本` `shifted nonlocal NLS` `shifted nonlocal mKdV` `one- and two-solitons`
 
-给出 shifted nonlocal NLS 与 mKdV 的一、二孤子解并讨论奇异结构，是今天几何 folding 构造所使用的直接正式期刊基线。
+为 shifted nonlocal NLS 与 mKdV 方程给出一、二孤子解，并系统讨论这些解的奇异结构和参数依赖；今天的新论文正是把这些显式解重新解释为可折叠的参数波形。
 
 推荐于 2026-07-16 · [查看详细说明](radar/2026-W29.md#2026-07-16)
 
 ### Shifted nonlocal Kundu type equations: Soliton solutions
 
 Aslı Pekcan · [arXiv:2110.01047v2](https://arxiv.org/abs/2110.01047)  
-`DNLS 相关` `Chen--Lee--Liu` `Gerdjikov--Ivanov` `Kaup--Newell`
+`相邻方向` `Kundu-type systems` `Chen--Lee--Liu equation` `Gerdjikov--Ivanov equation`
 
-从 coupled Kundu-type system 的 shifted nonlocal reductions 出发，用 Hirota 双线性法构造 CLL、GI 与 KN 三类 DNLS 型方程的一、二孤子解。
+从可积 coupled Kundu-type system 的局部与 shifted nonlocal reductions 出发，对 Chen--Lee--Liu、Gerdjikov--Ivanov 和 Kaup--Newell 三类 DNLS 型方程用 Hirota 双线性法构造一、二孤子解。
 
 推荐于 2026-07-16 · [查看详细说明](radar/2026-W29.md#2026-07-16)
 
