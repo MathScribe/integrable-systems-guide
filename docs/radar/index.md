@@ -10,7 +10,7 @@
 
 4 期 · 15 篇
 
-`DNLS` `Gerdjikov--Ivanov equation` `Manakov system` `nonlocal NLS` `shifted reductions` `vector breathers` `modulation instability` `Darboux transformation` `Riemann--Hilbert problem` `integrable discretization`
+`DNLS` `Gerdjikov--Ivanov equation` `Manakov system` `vector breathers` `modulation instability` `nonlocal NLS` `shifted reductions` `Darboux transformation` `Riemann--Hilbert problem` `integrable discretization`
 
 本周从 non-Abelian 与 noncommutative DNLS、fully discrete Gerdjikov--Ivanov 和 Manakov vector breathers，延伸到 shifted nonlocal NLS/mKdV、非局部 DNLS 约化与完整可积性。
 
