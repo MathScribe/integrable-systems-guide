@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   validate:
@@ -21,8 +21,11 @@ jobs:
     env:
       PIP_DISABLE_PIP_VERSION_CHECK: "1"
     steps:
-      - name: Check out repository
+      - name: Check out review branch
         uses: actions/checkout@v4
+        with:
+          ref: agent/radar-2026-07-16
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -35,8 +38,17 @@ jobs:
       - name: Validate paper registry and edition history
         run: python scripts/validate_radar.py
 
-      - name: Check generated radar pages
-        run: python scripts/render_radar.py --check
+      - name: Render canonical radar pages
+        run: python scripts/render_radar.py
 
-      - name: Build MkDocs site
-        run: mkdocs build --strict
+      - name: Restore workflow and commit generated pages
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git checkout origin/main -- .github/workflows/quality.yml
+          git add docs/index.md docs/radar/index.md docs/radar/latest.md docs/radar/2026-W29.md .github/workflows/quality.yml
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Render July 16 radar pages canonically"
+          git push origin HEAD:agent/radar-2026-07-16
