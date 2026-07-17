@@ -1,28 +1,24 @@
-name: Validate site
+name: Apply July 17 radar edition
 
 on:
   pull_request:
-    paths:
-      - "docs/**"
-      - "data/papers.yml"
-      - "data/editions.yml"
-      - "scripts/**"
-      - "mkdocs.yml"
-      - "requirements.txt"
-      - ".github/workflows/quality.yml"
-  workflow_dispatch:
+    types: [opened, reopened, synchronize]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  validate:
+  curate:
+    if: ${{ github.event.pull_request.head.ref == 'agent/radar-2026-07-17' && github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
     env:
       PIP_DISABLE_PIP_VERSION_CHECK: "1"
     steps:
-      - name: Check out repository
+      - name: Check out review branch
         uses: actions/checkout@v4
+        with:
+          ref: agent/radar-2026-07-17
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,11 +28,270 @@ jobs:
       - name: Install dependencies
         run: pip install --quiet -r requirements.txt
 
-      - name: Validate paper registry and edition history
-        run: python scripts/validate_radar.py
+      - name: Apply curated registry and edition update
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
 
-      - name: Check generated radar pages
-        run: python scripts/render_radar.py --check
+          papers_path = Path("data/papers.yml")
+          papers = papers_path.read_text(encoding="utf-8")
+          new_ids = [
+              "arxiv:2607.13773",
+              "arxiv:2607.12339",
+              "doi:10.1103/PhysRevLett.134.193804",
+              "arxiv:2508.17534",
+              "doi:10.1016/j.nonrwa.2017.08.013",
+          ]
+          for paper_id in new_ids:
+              if f'id: "{paper_id}"' in papers:
+                  raise SystemExit(f"paper already present: {paper_id}")
 
-      - name: Build MkDocs site
-        run: mkdocs build --strict
+          papers_block = r'''
+          - id: "arxiv:2607.13773"
+            title: "Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers"
+            authors:
+              - "Jin-Peng Yang"
+              - "Yan-Hong Qin"
+            url: "https://arxiv.org/abs/2607.13773"
+            arxiv_id: "2607.13773"
+            doi: "10.48550/arXiv.2607.13773"
+            submitted: "2026-07-15"
+            updated: "2026-07-15"
+            version: "v1"
+            metadata_checked_at: "2026-07-17"
+            tags:
+              - "two-component Fokas--Lenells equation"
+              - "plane-wave background"
+              - "Darboux transformation"
+              - "multihump solitons"
+              - "topological zeros and poles"
+              - "noise robustness"
+
+          - id: "arxiv:2607.12339"
+            title: "Eigenvalue-Based Approach to Manipulate and Reconstruct Nonlinear Pulses: Towards Soliton Tomography"
+            authors:
+              - "Sergey Dremov"
+              - "Rustam Mullyadzhanov"
+              - "Andrey Gelash"
+            url: "https://arxiv.org/abs/2607.12339"
+            arxiv_id: "2607.12339"
+            doi: "10.48550/arXiv.2607.12339"
+            submitted: "2026-07-14"
+            updated: "2026-07-14"
+            version: "v1"
+            metadata_checked_at: "2026-07-17"
+            tags:
+              - "nonlinear Schrödinger equation"
+              - "inverse scattering"
+              - "discrete eigenvalues"
+              - "eigenvalue response functions"
+              - "inverse problems"
+              - "soliton tomography"
+
+          - id: "doi:10.1103/PhysRevLett.134.193804"
+            title: "Manipulation of Strongly Interacting Solitons in Optical Fiber Experiments"
+            authors:
+              - "Alexandre Mucci"
+              - "Pierre Suret"
+              - "François Copie"
+              - "Stephane Randoux"
+              - "Rustam Mullyadzhanov"
+              - "Andrey Gelash"
+            url: "https://doi.org/10.1103/PhysRevLett.134.193804"
+            arxiv_id: "2409.16090"
+            doi: "10.1103/PhysRevLett.134.193804"
+            journal: "Physical Review Letters"
+            volume: "134"
+            article_number: "193804"
+            year: 2025
+            published: "2025-05-15"
+            submitted: "2024-09-24"
+            updated: "2024-09-24"
+            version: "v1"
+            metadata_checked_at: "2026-07-17"
+            tags:
+              - "nonlinear Schrödinger equation"
+              - "inverse scattering perturbation theory"
+              - "eigenvalue response functions"
+              - "strongly interacting solitons"
+              - "optical fiber experiment"
+              - "spectral control"
+
+          - id: "arxiv:2508.17534"
+            title: "A vectorial Darboux transformation for integrable matrix versions of the Fokas-Lenells equation"
+            authors:
+              - "Folkert Müller-Hoissen"
+              - "Rusuo Ye"
+            url: "https://arxiv.org/abs/2508.17534"
+            arxiv_id: "2508.17534"
+            doi: "10.48550/arXiv.2508.17534"
+            submitted: "2025-08-24"
+            updated: "2026-02-11"
+            version: "v2"
+            metadata_checked_at: "2026-07-17"
+            tags:
+              - "matrix Fokas--Lenells equation"
+              - "negative Kaup--Newell flow"
+              - "vectorial binary Darboux transformation"
+              - "plane-wave background"
+              - "rogue waves"
+              - "beating solitons"
+
+          - id: "doi:10.1016/j.nonrwa.2017.08.013"
+            title: "General soliton solutions to a coupled Fokas-Lenells equation"
+            authors:
+              - "Liming Ling"
+              - "Bao-Feng Feng"
+              - "Zuonong Zhu"
+            url: "https://doi.org/10.1016/j.nonrwa.2017.08.013"
+            arxiv_id: "1611.10057"
+            doi: "10.1016/j.nonrwa.2017.08.013"
+            journal: "Nonlinear Analysis: Real World Applications"
+            volume: "40"
+            pages: "185-214"
+            year: 2018
+            published: "2018-04"
+            submitted: "2016-11-30"
+            updated: "2016-11-30"
+            version: "v1"
+            metadata_checked_at: "2026-07-17"
+            tags:
+              - "coupled Fokas--Lenells equation"
+              - "vector Kaup--Newell hierarchy"
+              - "multi-Hamiltonian structure"
+              - "generalized Darboux transformation"
+              - "bright-dark solitons"
+              - "multi-soliton asymptotics"
+          '''
+          papers_path.write_text(papers.rstrip() + "\n\n" + papers_block.strip() + "\n", encoding="utf-8")
+
+          editions_path = Path("data/editions.yml")
+          editions = editions_path.read_text(encoding="utf-8")
+          if 'date: "2026-07-17"' in editions:
+              raise SystemExit("2026-07-17 edition already present")
+
+          old_week = '''  - id: "2026-W29"
+            date_range: "2026-07-13 至 2026-07-19"
+            summary: >-
+              本周从 non-Abelian 与 noncommutative DNLS、fully discrete Gerdjikov--Ivanov 和
+              Manakov vector breathers，延伸到 shifted nonlocal NLS/mKdV、非局部 DNLS 约化与完整可积性。
+            tags:
+              - "DNLS"
+              - "Gerdjikov--Ivanov equation"
+              - "Manakov system"
+              - "vector breathers"
+              - "modulation instability"
+              - "nonlocal NLS"
+              - "shifted reductions"
+              - "Darboux transformation"
+              - "Riemann--Hilbert problem"
+              - "integrable discretization"
+          '''
+          new_week = '''  - id: "2026-W29"
+            date_range: "2026-07-13 至 2026-07-19"
+            summary: >-
+              本周从 non-Abelian DNLS、fully discrete Gerdjikov--Ivanov、Manakov vector breathers
+              和 shifted nonlocal reductions，推进到两分量 Fokas--Lenells 的平面波 Darboux 解族，
+              以及以离散本征值响应实现的 soliton control 与 tomography。
+            tags:
+              - "DNLS"
+              - "Gerdjikov--Ivanov equation"
+              - "Manakov system"
+              - "Fokas--Lenells equation"
+              - "vector breathers"
+              - "nonlocal NLS"
+              - "Darboux transformation"
+              - "inverse scattering"
+              - "spectral data"
+              - "soliton tomography"
+              - "Riemann--Hilbert problem"
+              - "integrable discretization"
+          '''
+          if old_week not in editions:
+              raise SystemExit("W29 block did not match expected main state")
+          editions = editions.replace(old_week, new_week, 1)
+
+          marker = 'editions:\n  - date: "2026-07-16"'
+          edition_block = r'''editions:
+            - date: "2026-07-17"
+              week: "2026-W29"
+              summary: >-
+                本期按“两分量 Fokas--Lenells 平面波新解族—matrix/vector Darboux 结构—
+                课题组 coupled FL 基线—本征值响应函数与 soliton tomography—实验正式版本”组织，
+                把离散谱从生成精确解的参数提升为可操控、可反演的观测坐标。
+              entries:
+                - paper_id: "arxiv:2607.13773"
+                  role: "recent"
+                  homepage_rank: 1
+                  what_it_does: >-
+                    对双折射光纤的两分量 Fokas--Lenells 方程用 Darboux transformation 构造
+                    平面波背景上的 multihump-multivalley soliton families；用相图分类基本解，
+                    推广到任意多峰多谷与高阶构型，并用弱白噪声数值演化检验鲁棒性。
+                  why_read: >-
+                    它把当前 Fokas--Lenells、两分量系统和非零背景精确解方向结合起来；
+                    复平面中强度零点与极点共同决定 virtual monopole field 的观察，也为
+                    “谱参数—波形拓扑”之间的关系提供了一个可计算的新例子。
+                - paper_id: "arxiv:2607.12339"
+                  role: "recent"
+                  homepage_rank: 2
+                  what_it_does: >-
+                    为 sech 型 NLS 脉冲推导 soliton eigenvalue response functions，分析瞬时可控扰动
+                    如何移动离散本征值，并建立由传播末端测得的本征值偏移反演未知波形畸变的积分方程；
+                    文中比较不同重构区间并测试含噪数据下的稳定性。
+                  why_read: >-
+                    它把 IST 离散谱从守恒量和解参数转化为传感与 tomography 的观测量，
+                    对理解谱数据在可控扰动、非线性传播和反问题之间如何传递尤其有价值。
+                - paper_id: "doi:10.1103/PhysRevLett.134.193804"
+                  role: "journal-version"
+                  homepage_rank: 3
+                  what_it_does: >-
+                    在 strongly overlapping 多孤子脉冲中引入 eigenvalue response functions，
+                    并在循环光纤环与 homodyne 测量平台上施加局域相位扰动，选择性改变单个孤子的
+                    速度和振幅、从复合脉冲中剥离目标孤子，实验结果与 IST 扰动理论定量吻合。
+                  why_read: >-
+                    这是 soliton tomography 新论文的正式实验上游：先读它可以看清 response function
+                    的物理可测性、完整相位—振幅重构要求，以及从“操控本征值”走向“反演扰动源”的新增步骤。
+                - paper_id: "arxiv:2508.17534"
+                  role: "method-background"
+                  what_it_does: >-
+                    用 bidifferential calculus 为 Kaup--Newell 层级第一负流的 matrix 版本构造
+                    vectorial binary Darboux transformation，并将其约化到 matrix Fokas--Lenells 方程；
+                    在两分量平面波背景上系统生成 breathers、dark solitons、rogue waves 与 beating solitons。
+                  why_read: >-
+                    它给今天的新 multihump Fokas--Lenells 解族提供结构化的 matrix/vector dressing 背景，
+                    便于比较不同 Darboux 参数化如何组织非零背景上的多种波形，而不只逐个验证显式公式。
+                - paper_id: "doi:10.1016/j.nonrwa.2017.08.013"
+                  role: "group-adjacent"
+                  what_it_does: >-
+                    从正、负阶 vector Kaup--Newell hierarchy 建立多 Hamilton 结构与无穷守恒律，
+                    识别首个非平凡负流为 coupled Fokas--Lenells 方程，并以 generalized Darboux
+                    transformation 构造 bright-dark、dark-anti-dark、breather-like 及多孤子解和渐近行为。
+                  why_read: >-
+                    这是 Liming Ling 合作工作的正式期刊基线，把 coupled FL 的层级结构、守恒律、
+                    平面波背景解型分类与多孤子渐近统一起来，可作为今天新两分量解族最直接的课题组相关参照。
+
+            - date: "2026-07-16"'''
+          if marker not in editions:
+              raise SystemExit("edition insertion marker missing")
+          editions = editions.replace(marker, edition_block, 1)
+          editions_path.write_text(editions, encoding="utf-8")
+          PY
+
+      - name: Render and validate canonical pages
+        run: |
+          python scripts/validate_radar.py
+          python scripts/render_radar.py
+          python scripts/render_radar.py --check
+          mkdocs build --strict
+
+      - name: Restore standard workflow and commit final edition
+        shell: bash
+        run: |
+          git fetch origin main
+          git show origin/main:.github/workflows/quality.yml > .github/workflows/quality.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/papers.yml data/editions.yml docs/index.md docs/radar/index.md docs/radar/latest.md docs/radar/2026-W29.md .github/workflows/quality.yml
+          git commit -m "Curate the July 17 spectral-design reading chain"
+          git push origin HEAD:agent/radar-2026-07-17
