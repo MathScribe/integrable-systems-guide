@@ -10,6 +10,33 @@
 
 这里汇总最近三期中优先级较高的论文，而不是重复展示当天简报。详细注释和完整推荐历史保存在周归档中。
 
+### Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers
+
+Jin-Peng Yang, Yan-Hong Qin · [arXiv:2607.13773v1](https://arxiv.org/abs/2607.13773)  
+`近期进展` `two-component Fokas--Lenells equation` `plane-wave background` `Darboux transformation`
+
+对双折射光纤的两分量 Fokas--Lenells 方程用 Darboux transformation 构造平面波背景上的 multihump-multivalley soliton families；用相图分类基本解，推广到任意多峰多谷与高阶构型，并用弱白噪声数值演化检验鲁棒性。
+
+推荐于 2026-07-17 · [查看详细说明](radar/2026-W29.md#2026-07-17)
+
+### Eigenvalue-Based Approach to Manipulate and Reconstruct Nonlinear Pulses: Towards Soliton Tomography
+
+Sergey Dremov, Rustam Mullyadzhanov, Andrey Gelash · [arXiv:2607.12339v1](https://arxiv.org/abs/2607.12339)  
+`近期进展` `nonlinear Schrödinger equation` `inverse scattering` `discrete eigenvalues`
+
+为 sech 型 NLS 脉冲推导 soliton eigenvalue response functions，分析瞬时可控扰动如何移动离散本征值，并建立由传播末端测得的本征值偏移反演未知波形畸变的积分方程；文中比较不同重构区间并测试含噪数据下的稳定性。
+
+推荐于 2026-07-17 · [查看详细说明](radar/2026-W29.md#2026-07-17)
+
+### Manipulation of Strongly Interacting Solitons in Optical Fiber Experiments
+
+Alexandre Mucci, Pierre Suret, François Copie, Stephane Randoux, Rustam Mullyadzhanov, Andrey Gelash · [arXiv:2409.16090v1](https://arxiv.org/abs/2409.16090) · [Physical Review Letters, doi:10.1103/PhysRevLett.134.193804](https://doi.org/10.1103/PhysRevLett.134.193804)  
+`正式版本` `nonlinear Schrödinger equation` `inverse scattering perturbation theory` `eigenvalue response functions`
+
+在 strongly overlapping 多孤子脉冲中引入 eigenvalue response functions，并在循环光纤环与 homodyne 测量平台上施加局域相位扰动，选择性改变单个孤子的速度和振幅、从复合脉冲中剥离目标孤子，实验结果与 IST 扰动理论定量吻合。
+
+推荐于 2026-07-17 · [查看详细说明](radar/2026-W29.md#2026-07-17)
+
 ### Loop-type geometric folding of exact solutions of shifted nonlocal NLS and MKdV equations
 
 Aslı Pekcan · [arXiv:2607.10870v1](https://arxiv.org/abs/2607.10870)  
@@ -54,33 +81,6 @@ Yan-Hong Qin, Ning Cao, Li-Chen Zhao · [arXiv:2606.21301v1](https://arxiv.org/a
 针对 focusing Manakov 系统中多个 MI 分支并存的问题，用目标分支的线性化本征向量设计初始 Fourier 扰动，使指定 vector Akhmediev breather 以接近百分之百的保真度被选择性激发。
 
 推荐于 2026-07-15 · [查看详细说明](radar/2026-W29.md#2026-07-15)
-
-### Modulation instability and non-degenerate Akhmediev breathers of Manakov equations
-
-Chong Liu, Shao-Chun Chen, Xiankun Yao, Nail Akhmediev · [arXiv:2203.03998v1](https://arxiv.org/abs/2203.03998) · [Chinese Physics Letters, doi:10.1088/0256-307X/39/9/094201](https://doi.org/10.1088/0256-307X/39/9/094201)  
-`正式版本` `Manakov system` `non-degenerate Akhmediev breathers` `modulation instability`
-
-发现 focusing Manakov 方程中的非退化 Akhmediev breather，给出其频率--波数存在图，并说明单频调制不稳定性可同时激发三个 AB，其中两个属于非退化分支。
-
-推荐于 2026-07-15 · [查看详细说明](radar/2026-W29.md#2026-07-15)
-
-### Discrete Gerdjikov-Ivanov models and their higher-order counterparts from the Cauchy matrix scheme
-
-Xiao-gang Mu, Song-lin Zhao · [arXiv:2607.09333v1](https://arxiv.org/abs/2607.09333)  
-`近期进展` `Gerdjikov--Ivanov equation` `fully discrete systems` `Cauchy matrix method`
-
-从带两组离散色散关系的 Sylvester 方程出发，构造四族共轭对称的 fully discrete Gerdjikov--Ivanov 模型及四族高阶 GI 格点模型；用对角与 Jordan 块谱矩阵给出 N-soliton 和 multiple-pole 解，并通过两步连续极限恢复连续 GI/hGI 方程。
-
-推荐于 2026-07-14 · [查看详细说明](radar/2026-W29.md#2026-07-14)
-
-### High-order soliton matrix for the third-order flow equation of the Gerdjikov-Ivanov hierarchy through the Riemann-Hilbert method
-
-JinYan Zhu, Yong Chen · [arXiv:2105.08412v1](https://arxiv.org/abs/2105.08412)  
-`方法基础` `Gerdjikov--Ivanov hierarchy` `third-order flow` `Riemann--Hilbert problem`
-
-对 GI 层级的三阶流建立 Riemann--Hilbert dressing，构造简单零点与 elementary high-order zeros 的 soliton matrices，分析单、双孤子的传播与弹性交互，并由极限过程得到高阶孤子矩阵。
-
-推荐于 2026-07-14 · [查看详细说明](radar/2026-W29.md#2026-07-14)
 
 ## 其他入口
 

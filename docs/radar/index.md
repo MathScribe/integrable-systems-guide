@@ -8,11 +8,11 @@
 
 ### 2026-W29 · 2026-07-13 至 2026-07-19
 
-4 期 · 15 篇
+5 期 · 20 篇
 
-`DNLS` `Gerdjikov--Ivanov equation` `Manakov system` `vector breathers` `modulation instability` `nonlocal NLS` `shifted reductions` `Darboux transformation` `Riemann--Hilbert problem` `integrable discretization`
+`DNLS` `Gerdjikov--Ivanov equation` `Manakov system` `Fokas--Lenells equation` `vector breathers` `nonlocal NLS` `Darboux transformation` `inverse scattering` `spectral data` `soliton tomography` `Riemann--Hilbert problem` `integrable discretization`
 
-本周从 non-Abelian 与 noncommutative DNLS、fully discrete Gerdjikov--Ivanov 和 Manakov vector breathers，延伸到 shifted nonlocal NLS/mKdV、非局部 DNLS 约化与完整可积性。
+本周从 non-Abelian DNLS、fully discrete Gerdjikov--Ivanov、Manakov vector breathers 和 shifted nonlocal reductions，推进到两分量 Fokas--Lenells 的平面波 Darboux 解族，以及以离散本征值响应实现的 soliton control 与 tomography。
 
 [查看本周完整归档](2026-W29.md)
 
