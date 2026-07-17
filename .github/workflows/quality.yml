@@ -31,8 +31,11 @@ jobs:
       - name: Apply curated registry and edition update
         shell: bash
         run: |
+          set -euo pipefail
           python - <<'PY'
           from pathlib import Path
+          import re
+          from textwrap import dedent
 
           papers_path = Path("data/papers.yml")
           papers = papers_path.read_text(encoding="utf-8")
@@ -47,7 +50,7 @@ jobs:
               if f'id: "{paper_id}"' in papers:
                   raise SystemExit(f"paper already present: {paper_id}")
 
-          papers_block = r'''
+          papers_block = dedent(r'''
           - id: "arxiv:2607.13773"
             title: "Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers"
             authors:
@@ -163,57 +166,41 @@ jobs:
               - "generalized Darboux transformation"
               - "bright-dark solitons"
               - "multi-soliton asymptotics"
-          '''
-          papers_path.write_text(papers.rstrip() + "\n\n" + papers_block.strip() + "\n", encoding="utf-8")
+          ''').strip()
+          papers_path.write_text(papers.rstrip() + "\n\n" + papers_block + "\n", encoding="utf-8")
 
           editions_path = Path("data/editions.yml")
           editions = editions_path.read_text(encoding="utf-8")
           if 'date: "2026-07-17"' in editions:
               raise SystemExit("2026-07-17 edition already present")
 
-          old_week = '''  - id: "2026-W29"
-            date_range: "2026-07-13 至 2026-07-19"
-            summary: >-
-              本周从 non-Abelian 与 noncommutative DNLS、fully discrete Gerdjikov--Ivanov 和
-              Manakov vector breathers，延伸到 shifted nonlocal NLS/mKdV、非局部 DNLS 约化与完整可积性。
-            tags:
-              - "DNLS"
-              - "Gerdjikov--Ivanov equation"
-              - "Manakov system"
-              - "vector breathers"
-              - "modulation instability"
-              - "nonlocal NLS"
-              - "shifted reductions"
-              - "Darboux transformation"
-              - "Riemann--Hilbert problem"
-              - "integrable discretization"
-          '''
-          new_week = '''  - id: "2026-W29"
-            date_range: "2026-07-13 至 2026-07-19"
-            summary: >-
-              本周从 non-Abelian DNLS、fully discrete Gerdjikov--Ivanov、Manakov vector breathers
-              和 shifted nonlocal reductions，推进到两分量 Fokas--Lenells 的平面波 Darboux 解族，
-              以及以离散本征值响应实现的 soliton control 与 tomography。
-            tags:
-              - "DNLS"
-              - "Gerdjikov--Ivanov equation"
-              - "Manakov system"
-              - "Fokas--Lenells equation"
-              - "vector breathers"
-              - "nonlocal NLS"
-              - "Darboux transformation"
-              - "inverse scattering"
-              - "spectral data"
-              - "soliton tomography"
-              - "Riemann--Hilbert problem"
-              - "integrable discretization"
-          '''
-          if old_week not in editions:
-              raise SystemExit("W29 block did not match expected main state")
-          editions = editions.replace(old_week, new_week, 1)
+          new_week = dedent('''
+            - id: "2026-W29"
+              date_range: "2026-07-13 至 2026-07-19"
+              summary: >-
+                本周从 non-Abelian DNLS、fully discrete Gerdjikov--Ivanov、Manakov vector breathers
+                和 shifted nonlocal reductions，推进到两分量 Fokas--Lenells 的平面波 Darboux 解族，
+                以及以离散本征值响应实现的 soliton control 与 tomography。
+              tags:
+                - "DNLS"
+                - "Gerdjikov--Ivanov equation"
+                - "Manakov system"
+                - "Fokas--Lenells equation"
+                - "vector breathers"
+                - "nonlocal NLS"
+                - "Darboux transformation"
+                - "inverse scattering"
+                - "spectral data"
+                - "soliton tomography"
+                - "Riemann--Hilbert problem"
+                - "integrable discretization"
+          ''').strip()
+          week_pattern = re.compile(r'  - id: "2026-W29"\n.*?(?=\n  - id: "2026-W28")', re.S)
+          editions, count = week_pattern.subn(new_week, editions, count=1)
+          if count != 1:
+              raise SystemExit(f"expected one W29 block, replaced {count}")
 
-          marker = 'editions:\n  - date: "2026-07-16"'
-          edition_block = r'''editions:
+          new_edition = dedent(r'''
             - date: "2026-07-17"
               week: "2026-W29"
               summary: >-
@@ -270,11 +257,11 @@ jobs:
                   why_read: >-
                     这是 Liming Ling 合作工作的正式期刊基线，把 coupled FL 的层级结构、守恒律、
                     平面波背景解型分类与多孤子渐近统一起来，可作为今天新两分量解族最直接的课题组相关参照。
-
-            - date: "2026-07-16"'''
+          ''').strip()
+          marker = "editions:\n"
           if marker not in editions:
-              raise SystemExit("edition insertion marker missing")
-          editions = editions.replace(marker, edition_block, 1)
+              raise SystemExit("editions marker missing")
+          editions = editions.replace(marker, marker + new_edition + "\n\n", 1)
           editions_path.write_text(editions, encoding="utf-8")
           PY
 
