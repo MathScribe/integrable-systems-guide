@@ -35,7 +35,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import re
-          from textwrap import dedent
+          from textwrap import dedent, indent
 
           papers_path = Path("data/papers.yml")
           papers = papers_path.read_text(encoding="utf-8")
@@ -174,90 +174,90 @@ jobs:
           if 'date: "2026-07-17"' in editions:
               raise SystemExit("2026-07-17 edition already present")
 
-          new_week = dedent('''
-            - id: "2026-W29"
-              date_range: "2026-07-13 至 2026-07-19"
-              summary: >-
-                本周从 non-Abelian DNLS、fully discrete Gerdjikov--Ivanov、Manakov vector breathers
-                和 shifted nonlocal reductions，推进到两分量 Fokas--Lenells 的平面波 Darboux 解族，
-                以及以离散本征值响应实现的 soliton control 与 tomography。
-              tags:
-                - "DNLS"
-                - "Gerdjikov--Ivanov equation"
-                - "Manakov system"
-                - "Fokas--Lenells equation"
-                - "vector breathers"
-                - "nonlocal NLS"
-                - "Darboux transformation"
-                - "inverse scattering"
-                - "spectral data"
-                - "soliton tomography"
-                - "Riemann--Hilbert problem"
-                - "integrable discretization"
-          ''').strip()
+          new_week = indent(dedent('''
+          - id: "2026-W29"
+            date_range: "2026-07-13 至 2026-07-19"
+            summary: >-
+              本周从 non-Abelian DNLS、fully discrete Gerdjikov--Ivanov、Manakov vector breathers
+              和 shifted nonlocal reductions，推进到两分量 Fokas--Lenells 的平面波 Darboux 解族，
+              以及以离散本征值响应实现的 soliton control 与 tomography。
+            tags:
+              - "DNLS"
+              - "Gerdjikov--Ivanov equation"
+              - "Manakov system"
+              - "Fokas--Lenells equation"
+              - "vector breathers"
+              - "nonlocal NLS"
+              - "Darboux transformation"
+              - "inverse scattering"
+              - "spectral data"
+              - "soliton tomography"
+              - "Riemann--Hilbert problem"
+              - "integrable discretization"
+          ''').strip(), "  ")
           week_pattern = re.compile(r'  - id: "2026-W29"\n.*?(?=\n  - id: "2026-W28")', re.S)
           editions, count = week_pattern.subn(new_week, editions, count=1)
           if count != 1:
               raise SystemExit(f"expected one W29 block, replaced {count}")
 
-          new_edition = dedent(r'''
-            - date: "2026-07-17"
-              week: "2026-W29"
-              summary: >-
-                本期按“两分量 Fokas--Lenells 平面波新解族—matrix/vector Darboux 结构—
-                课题组 coupled FL 基线—本征值响应函数与 soliton tomography—实验正式版本”组织，
-                把离散谱从生成精确解的参数提升为可操控、可反演的观测坐标。
-              entries:
-                - paper_id: "arxiv:2607.13773"
-                  role: "recent"
-                  homepage_rank: 1
-                  what_it_does: >-
-                    对双折射光纤的两分量 Fokas--Lenells 方程用 Darboux transformation 构造
-                    平面波背景上的 multihump-multivalley soliton families；用相图分类基本解，
-                    推广到任意多峰多谷与高阶构型，并用弱白噪声数值演化检验鲁棒性。
-                  why_read: >-
-                    它把当前 Fokas--Lenells、两分量系统和非零背景精确解方向结合起来；
-                    复平面中强度零点与极点共同决定 virtual monopole field 的观察，也为
-                    “谱参数—波形拓扑”之间的关系提供了一个可计算的新例子。
-                - paper_id: "arxiv:2607.12339"
-                  role: "recent"
-                  homepage_rank: 2
-                  what_it_does: >-
-                    为 sech 型 NLS 脉冲推导 soliton eigenvalue response functions，分析瞬时可控扰动
-                    如何移动离散本征值，并建立由传播末端测得的本征值偏移反演未知波形畸变的积分方程；
-                    文中比较不同重构区间并测试含噪数据下的稳定性。
-                  why_read: >-
-                    它把 IST 离散谱从守恒量和解参数转化为传感与 tomography 的观测量，
-                    对理解谱数据在可控扰动、非线性传播和反问题之间如何传递尤其有价值。
-                - paper_id: "doi:10.1103/PhysRevLett.134.193804"
-                  role: "journal-version"
-                  homepage_rank: 3
-                  what_it_does: >-
-                    在 strongly overlapping 多孤子脉冲中引入 eigenvalue response functions，
-                    并在循环光纤环与 homodyne 测量平台上施加局域相位扰动，选择性改变单个孤子的
-                    速度和振幅、从复合脉冲中剥离目标孤子，实验结果与 IST 扰动理论定量吻合。
-                  why_read: >-
-                    这是 soliton tomography 新论文的正式实验上游：先读它可以看清 response function
-                    的物理可测性、完整相位—振幅重构要求，以及从“操控本征值”走向“反演扰动源”的新增步骤。
-                - paper_id: "arxiv:2508.17534"
-                  role: "method-background"
-                  what_it_does: >-
-                    用 bidifferential calculus 为 Kaup--Newell 层级第一负流的 matrix 版本构造
-                    vectorial binary Darboux transformation，并将其约化到 matrix Fokas--Lenells 方程；
-                    在两分量平面波背景上系统生成 breathers、dark solitons、rogue waves 与 beating solitons。
-                  why_read: >-
-                    它给今天的新 multihump Fokas--Lenells 解族提供结构化的 matrix/vector dressing 背景，
-                    便于比较不同 Darboux 参数化如何组织非零背景上的多种波形，而不只逐个验证显式公式。
-                - paper_id: "doi:10.1016/j.nonrwa.2017.08.013"
-                  role: "group-adjacent"
-                  what_it_does: >-
-                    从正、负阶 vector Kaup--Newell hierarchy 建立多 Hamilton 结构与无穷守恒律，
-                    识别首个非平凡负流为 coupled Fokas--Lenells 方程，并以 generalized Darboux
-                    transformation 构造 bright-dark、dark-anti-dark、breather-like 及多孤子解和渐近行为。
-                  why_read: >-
-                    这是 Liming Ling 合作工作的正式期刊基线，把 coupled FL 的层级结构、守恒律、
-                    平面波背景解型分类与多孤子渐近统一起来，可作为今天新两分量解族最直接的课题组相关参照。
-          ''').strip()
+          new_edition = indent(dedent(r'''
+          - date: "2026-07-17"
+            week: "2026-W29"
+            summary: >-
+              本期按“两分量 Fokas--Lenells 平面波新解族—matrix/vector Darboux 结构—
+              课题组 coupled FL 基线—本征值响应函数与 soliton tomography—实验正式版本”组织，
+              把离散谱从生成精确解的参数提升为可操控、可反演的观测坐标。
+            entries:
+              - paper_id: "arxiv:2607.13773"
+                role: "recent"
+                homepage_rank: 1
+                what_it_does: >-
+                  对双折射光纤的两分量 Fokas--Lenells 方程用 Darboux transformation 构造
+                  平面波背景上的 multihump-multivalley soliton families；用相图分类基本解，
+                  推广到任意多峰多谷与高阶构型，并用弱白噪声数值演化检验鲁棒性。
+                why_read: >-
+                  它把当前 Fokas--Lenells、两分量系统和非零背景精确解方向结合起来；
+                  复平面中强度零点与极点共同决定 virtual monopole field 的观察，也为
+                  “谱参数—波形拓扑”之间的关系提供了一个可计算的新例子。
+              - paper_id: "arxiv:2607.12339"
+                role: "recent"
+                homepage_rank: 2
+                what_it_does: >-
+                  为 sech 型 NLS 脉冲推导 soliton eigenvalue response functions，分析瞬时可控扰动
+                  如何移动离散本征值，并建立由传播末端测得的本征值偏移反演未知波形畸变的积分方程；
+                  文中比较不同重构区间并测试含噪数据下的稳定性。
+                why_read: >-
+                  它把 IST 离散谱从守恒量和解参数转化为传感与 tomography 的观测量，
+                  对理解谱数据在可控扰动、非线性传播和反问题之间如何传递尤其有价值。
+              - paper_id: "doi:10.1103/PhysRevLett.134.193804"
+                role: "journal-version"
+                homepage_rank: 3
+                what_it_does: >-
+                  在 strongly overlapping 多孤子脉冲中引入 eigenvalue response functions，
+                  并在循环光纤环与 homodyne 测量平台上施加局域相位扰动，选择性改变单个孤子的
+                  速度和振幅、从复合脉冲中剥离目标孤子，实验结果与 IST 扰动理论定量吻合。
+                why_read: >-
+                  这是 soliton tomography 新论文的正式实验上游：先读它可以看清 response function
+                  的物理可测性、完整相位—振幅重构要求，以及从“操控本征值”走向“反演扰动源”的新增步骤。
+              - paper_id: "arxiv:2508.17534"
+                role: "method-background"
+                what_it_does: >-
+                  用 bidifferential calculus 为 Kaup--Newell 层级第一负流的 matrix 版本构造
+                  vectorial binary Darboux transformation，并将其约化到 matrix Fokas--Lenells 方程；
+                  在两分量平面波背景上系统生成 breathers、dark solitons、rogue waves 与 beating solitons。
+                why_read: >-
+                  它给今天的新 multihump Fokas--Lenells 解族提供结构化的 matrix/vector dressing 背景，
+                  便于比较不同 Darboux 参数化如何组织非零背景上的多种波形，而不只逐个验证显式公式。
+              - paper_id: "doi:10.1016/j.nonrwa.2017.08.013"
+                role: "group-adjacent"
+                what_it_does: >-
+                  从正、负阶 vector Kaup--Newell hierarchy 建立多 Hamilton 结构与无穷守恒律，
+                  识别首个非平凡负流为 coupled Fokas--Lenells 方程，并以 generalized Darboux
+                  transformation 构造 bright-dark、dark-anti-dark、breather-like 及多孤子解和渐近行为。
+                why_read: >-
+                  这是 Liming Ling 合作工作的正式期刊基线，把 coupled FL 的层级结构、守恒律、
+                  平面波背景解型分类与多孤子渐近统一起来，可作为今天新两分量解族最直接的课题组相关参照。
+          ''').strip(), "  ")
           marker = "editions:\n"
           if marker not in editions:
               raise SystemExit("editions marker missing")
