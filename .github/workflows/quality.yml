@@ -1,24 +1,28 @@
-name: Diagnose July 18 radar edition
+name: Validate site
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize]
+    paths:
+      - "docs/**"
+      - "data/papers.yml"
+      - "data/editions.yml"
+      - "scripts/**"
+      - "mkdocs.yml"
+      - "requirements.txt"
+      - ".github/workflows/quality.yml"
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  curate:
-    if: ${{ github.event.pull_request.head.ref == 'agent/radar-2026-07-18' && github.actor != 'github-actions[bot]' }}
+  validate:
     runs-on: ubuntu-latest
     env:
       PIP_DISABLE_PIP_VERSION_CHECK: "1"
     steps:
-      - name: Check out review branch
+      - name: Check out repository
         uses: actions/checkout@v4
-        with:
-          ref: agent/radar-2026-07-18
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,74 +32,11 @@ jobs:
       - name: Install dependencies
         run: pip install --quiet -r requirements.txt
 
-      - name: Apply curated data
-        run: python .github/radar-july18-apply.py
+      - name: Validate paper registry and edition history
+        run: python scripts/validate_radar.py
 
-      - name: Capture validation and rendering diagnostics
-        shell: bash
-        run: |
-          set +e
-          : > .radar-debug-2026-07-18.txt
-          python scripts/validate_radar.py >> .radar-debug-2026-07-18.txt 2>&1
-          echo "validate_exit=$?" >> .radar-debug-2026-07-18.txt
-          python scripts/render_radar.py >> .radar-debug-2026-07-18.txt 2>&1
-          echo "render_exit=$?" >> .radar-debug-2026-07-18.txt
-          python scripts/render_radar.py --check >> .radar-debug-2026-07-18.txt 2>&1
-          echo "render_check_exit=$?" >> .radar-debug-2026-07-18.txt
-          mkdocs build --strict >> .radar-debug-2026-07-18.txt 2>&1
-          echo "mkdocs_exit=$?" >> .radar-debug-2026-07-18.txt
-          cat .radar-debug-2026-07-18.txt
+      - name: Check generated radar pages
+        run: python scripts/render_radar.py --check
 
-      - name: Restore standard workflow and commit diagnostics
-        shell: bash
-        run: |
-          cat > .github/workflows/quality.yml <<'YAML'
-          name: Validate site
-
-          on:
-            pull_request:
-              paths:
-                - "docs/**"
-                - "data/papers.yml"
-                - "data/editions.yml"
-                - "scripts/**"
-                - "mkdocs.yml"
-                - "requirements.txt"
-                - ".github/workflows/quality.yml"
-            workflow_dispatch:
-
-          permissions:
-            contents: read
-
-          jobs:
-            validate:
-              runs-on: ubuntu-latest
-              env:
-                PIP_DISABLE_PIP_VERSION_CHECK: "1"
-              steps:
-                - name: Check out repository
-                  uses: actions/checkout@v4
-
-                - name: Set up Python
-                  uses: actions/setup-python@v5
-                  with:
-                    python-version: "3.11"
-
-                - name: Install dependencies
-                  run: pip install --quiet -r requirements.txt
-
-                - name: Validate paper registry and edition history
-                  run: python scripts/validate_radar.py
-
-                - name: Check generated radar pages
-                  run: python scripts/render_radar.py --check
-
-                - name: Build MkDocs site
-                  run: mkdocs build --strict
-          YAML
-          rm -f .github/radar-july18-apply.py
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/papers.yml data/editions.yml docs/index.md docs/radar/index.md docs/radar/latest.md docs/radar/2026-W29.md .github/workflows/quality.yml .github/radar-july18-apply.py .radar-debug-2026-07-18.txt
-          git commit -m "Diagnose the July 18 radar edition"
-          git push origin HEAD:agent/radar-2026-07-18
+      - name: Build MkDocs site
+        run: mkdocs build --strict
