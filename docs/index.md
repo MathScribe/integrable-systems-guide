@@ -10,6 +10,33 @@
 
 这里汇总最近三期中优先级较高的论文，而不是重复展示当天简报。详细注释和完整推荐历史保存在周归档中。
 
+### Inverse Scattering Transformation for the Fokas–Lenells Equation with Nonzero Boundary Conditions
+
+Yi Zhao, Engui Fan · [arXiv:1912.12400v1](https://arxiv.org/abs/1912.12400) · [Journal of Nonlinear Mathematical Physics, doi:10.2991/jnmp.k.200922.003](https://doi.org/10.2991/jnmp.k.200922.003)  
+`正式版本` `Fokas--Lenells equation` `nonzero boundary conditions` `inverse scattering`
+
+在非零边界条件下分析 Fokas--Lenells Lax pair 的 Jost solutions 与散射矩阵，给出解析性、对称性以及 k→0 和 k→∞ 的渐近结构；据此建立广义 Riemann--Hilbert 问题、重构公式，并在 reflectionless 情形求得 N-soliton 解。
+
+推荐于 2026-07-18 · [查看详细说明](radar/2026-W29.md#2026-07-18)
+
+### Long-time asymptotics for the Fokas–Lenells equation with decaying initial value problem: Without solitons
+
+Jian Xu, Engui Fan · [arXiv:1308.0755v1](https://arxiv.org/abs/1308.0755) · [Journal of Differential Equations, doi:10.1016/j.jde.2015.02.046](https://doi.org/10.1016/j.jde.2015.02.046)  
+`核心旧文` `Fokas--Lenells equation` `solitonless sector` `Riemann--Hilbert problem`
+
+对衰减初值的全线 Fokas--Lenells Cauchy 问题，在无离散谱情形应用 Deift--Zhou nonlinear steepest descent，得到纯辐射解的主阶长时渐近，其衰减尺度为 t^{-1/2}。
+
+推荐于 2026-07-18 · [查看详细说明](radar/2026-W29.md#2026-07-18)
+
+### Long-time asymptotics for the focusing Fokas-Lenells equation in the solitonic region of space-time
+
+Qiaoyuan Cheng, Engui Fan · [arXiv:2010.08714v3](https://arxiv.org/abs/2010.08714) · [Journal of Differential Equations, doi:10.1016/j.jde.2021.11.045](https://doi.org/10.1016/j.jde.2021.11.045)  
+`正式版本` `focusing Fokas--Lenells equation` `soliton resolution` `Riemann--Hilbert problem`
+
+对支持 bright solitons 的一般 Sobolev 初值，在固定时空锥中用 dbar nonlinear steepest descent 分离离散谱与连续谱：主项为 N(I)-soliton，辐射为 O(t^{-1/2})，总余项控制到 O(t^{-3/4})，并处理 k=0 谱奇点和四个驻相点。
+
+推荐于 2026-07-18 · [查看详细说明](radar/2026-W29.md#2026-07-18)
+
 ### Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers
 
 Jin-Peng Yang, Yan-Hong Qin · [arXiv:2607.13773v1](https://arxiv.org/abs/2607.13773)  
@@ -54,33 +81,6 @@ Metin Gürses, Aslı Pekcan · [arXiv:2106.14252v2](https://arxiv.org/abs/2106.1
 为 shifted nonlocal NLS 与 mKdV 方程给出一、二孤子解，并系统讨论这些解的奇异结构和参数依赖；今天的新论文正是把这些显式解重新解释为可折叠的参数波形。
 
 推荐于 2026-07-16 · [查看详细说明](radar/2026-W29.md#2026-07-16)
-
-### Shifted nonlocal Kundu type equations: Soliton solutions
-
-Aslı Pekcan · [arXiv:2110.01047v2](https://arxiv.org/abs/2110.01047)  
-`相邻方向` `Kundu-type systems` `Chen--Lee--Liu equation` `Gerdjikov--Ivanov equation`
-
-从可积 coupled Kundu-type system 的局部与 shifted nonlocal reductions 出发，对 Chen--Lee--Liu、Gerdjikov--Ivanov 和 Kaup--Newell 三类 DNLS 型方程用 Hirota 双线性法构造一、二孤子解。
-
-推荐于 2026-07-16 · [查看详细说明](radar/2026-W29.md#2026-07-16)
-
-### Exact vector Akhmediev breathers dominated by a linearly stable frequency
-
-Wen-Rong Sun, Chong Liu, Lei Wang, Fabio Baronio · [arXiv:2607.10954v1](https://arxiv.org/abs/2607.10954)  
-`近期进展` `Manakov system` `vector Akhmediev breathers` `modulation instability`
-
-在 Manakov 系统中构造一种由不稳定模激发、但在峰值处由线性稳定谐波占主导的精确 vector Akhmediev breather；数值演化表明无需预先播种稳定分量，它会自发出现，并将主导机制定量归因于 four-wave mixing。
-
-推荐于 2026-07-15 · [查看详细说明](radar/2026-W29.md#2026-07-15)
-
-### Controllable excitation of vector Akhmediev breather patterns
-
-Yan-Hong Qin, Ning Cao, Li-Chen Zhao · [arXiv:2606.21301v1](https://arxiv.org/abs/2606.21301)  
-`近期漏读` `Manakov system` `vector Akhmediev breathers` `modulation instability`
-
-针对 focusing Manakov 系统中多个 MI 分支并存的问题，用目标分支的线性化本征向量设计初始 Fourier 扰动，使指定 vector Akhmediev breather 以接近百分之百的保真度被选择性激发。
-
-推荐于 2026-07-15 · [查看详细说明](radar/2026-W29.md#2026-07-15)
 
 ## 其他入口
 
