@@ -535,3 +535,103 @@ editions:
           breathers 的谱结构与非线性轨道稳定性。
         why_read: >-
           是课题组相关的 coupled NLS、breather 和稳定性方向中的核心正式论文。
+
+
+frontier_staging:
+  window_days: 30
+  generated_through: "2026-07-19"
+  migration_target: 44
+  entries:
+    - paper_id: "doi:10.1007/JHEP07(2026)120"
+      signal_date: "2026-07-13"
+      signal_type: "journal-publication"
+      week: "2026-W29"
+      arxiv_categories:
+        - "hep-th"
+        - "gr-qc"
+      structure_tags:
+        - "Chern--Simons theory"
+        - "inverse scattering"
+      summary: >-
+        从三维引力的 Chern--Simons 表述和手征边界条件出发，论文导出 potential mKdV hierarchy 及由 Schrödinger 本征函数自洽驱动的 forced KdV。作者同时求解无反射孤子扇区，并分析含辐射扇区的色散衰减。
+      main_result: >-
+        论文为非紧空间切片上的三维引力构造一致边界条件，使边界动力学受 potential modified KdV hierarchy 控制；加入谱强迫后得到 eigenfunction-forced KdV。无反射扇区通过 Gelfand--Levitan--Marchenko 方程重构，纯辐射扇区则给出长时间色散渐近。
+      integrable_structure: >-
+        引力采用 Chern--Simons 规范表述，约化后的边界场与 Gelfand--Dikii/KdV 层级相连。强迫项不是外加任意源，而由关联 Schrödinger 算子的本征函数自洽生成，因此修改后的守恒 Hamiltonians、散射数据和 GLM 重构仍共同控制动力学。
+      innovation: >-
+        新意在于把三维引力边界动力学与一类自洽谱强迫的可积流直接连接，并同时处理孤子与辐射两个扇区。它不仅指出形式上的 KdV 类比，还给出从引力边界条件到逆散射求解和渐近行为的完整机制。
+
+    - paper_id: "doi:10.1007/JHEP07(2026)123"
+      signal_date: "2026-07-13"
+      signal_type: "journal-publication"
+      week: "2026-W29"
+      arxiv_categories:
+        - "hep-th"
+        - "math-ph"
+      structure_tags:
+        - "Chern--Simons theory"
+        - "Yang--Baxter equation"
+      summary: >-
+        论文从四维 Chern--Simons theory 推导 Breitenlohner--Maison sigma model 的可积形变，并把两类形变分别联系到齐次和非齐次 classical Yang--Baxter equations。该框架覆盖四维广义相对论的平稳轴对称可积子扇区及其高秩推广。
+      main_result: >-
+        作者改变 4d Cole--Weck 模型的边界条件和作用量，得到二维 Breitenlohner--Maison 模型的两类形变。结果不仅适用于描述四维平稳轴对称引力的基本模型，还推广到更高秩情形，并明确给出对应的形变作用量和场方程。
+      integrable_structure: >-
+        核心方法是 4d Chern--Simons theory 对二维可积场论的构造机制。边界条件的不同形变分别产生由 homogeneous 与 inhomogeneous classical Yang--Baxter equations 控制的 sigma-model deformation，使引力约化、规范理论和 Yang--Baxter 可积性处于同一框架中。
+      innovation: >-
+        论文提供了一种从高维规范理论系统产生引力可积形变的方法，而不是对已知 sigma model 直接猜测变形项。齐次和非齐次 Yang--Baxter 结构在同一来源下出现，为进一步构造广义相对论可积子扇区的新模型提供了可复用路径。
+
+    - paper_id: "arxiv:2607.12339"
+      signal_date: "2026-07-14"
+      signal_type: "new-preprint"
+      week: "2026-W29"
+      arxiv_categories:
+        - "nlin.PS"
+      structure_tags:
+        - "inverse scattering"
+        - "inverse problem"
+      summary: >-
+        论文把 NLS 孤子的离散本征值从精确解参数转化为可测量和可操控的观测坐标。作者推导本征值响应函数，并由传播末端测得的本征值偏移反演传播途中未知的脉冲畸变，在含噪数据下测试重构稳定性。
+      main_result: >-
+        作者研究瞬时可控扰动如何移动 sech 型非线性脉冲的孤子本征值，并给出相应的解析响应函数。进一步建立积分方程，以输出端观测到的本征值偏移为数据，恢复未知扰动的空间形状，并比较不同重构区间和噪声水平下的效果。
+      integrable_structure: >-
+        方法建立在非线性 Schrödinger 方程的逆散射离散谱上。理想可积传播中本征值保持不变，局域扰动则留下可计算的谱偏移；因此散射数据同时承担守恒坐标、扰动传感器和反问题观测量三种角色。
+      innovation: >-
+        论文不再只用离散谱描述已知孤子，而是构造谱数据对未知扰动的响应关系，并把这一关系用于主动操控和反演。由此形成了具体的 soliton tomography 框架，把逆散射方法推进到可测量的非线性传感问题。
+
+    - paper_id: "arxiv:2607.13773"
+      signal_date: "2026-07-15"
+      signal_type: "new-preprint"
+      week: "2026-W29"
+      arxiv_categories:
+        - "nlin.PS"
+        - "nlin.SI"
+      structure_tags:
+        - "Darboux transformation"
+        - "topological vector potential"
+      summary: >-
+        论文研究两分量 Fokas--Lenells 方程平面波背景上的 multihump--multivalley soliton families。作者从基本形态分类推广到任意多峰、多谷及混合静态结构，并发现复平面中的强度零点和极点共同决定新的虚拟单极场特征。
+      main_result: >-
+        作者系统分类基本 dark/antidark 结构的强度形态，并在等速度和背景振幅约束下构造高阶相干叠加。所得解包括任意 K-hump antidark、任意 M-valley dark 及其混合组合；数值演化还检验了弱白噪声下的动力学稳健性。
+      integrable_structure: >-
+        精确构造基于 coupled Fokas--Lenells 系统的 N-fold Darboux transformation。参数约束使多个孤子能够在同一平面波背景上保持相干静态组合；随后通过 topological vector potential 分析解析延拓后的强度零点、极点和虚拟单极场。
+      innovation: >-
+        工作把以往有限的双峰或双谷例子扩展为任意 multihump/multivalley 族，并形成系统分类。更重要的是，零点与极点等量贡献虚拟单极场的结论提供了新的拓扑机制，使这项工作超过常规的 Darboux 显式解展示。
+
+    - paper_id: "doi:10.1007/s10955-026-03663-6"
+      signal_date: "2026-07-16"
+      signal_type: "journal-publication"
+      week: "2026-W29"
+      arxiv_categories:
+        - "math-ph"
+        - "math.PR"
+      structure_tags:
+        - "matrix model"
+        - "tau function"
+      summary: >-
+        论文构造由两个 HCIZ 因子修饰的 Hermitian Gaussian matrix model，使其有限维本征值分布精确等于任意多起点、多终点 non-intersecting Brownian bridges 的 Karlin--McGregor 分布，并导出一系列有限维精确恒等式。
+      main_result: >-
+        作者证明 two-HCIZ ensemble 的本征值律与一般边界重数下的非相交 Brownian bridges 完全一致，并给出 orbital Hermitian Brownian bridge 的路径空间实现。配分函数可约化为单个紧致 HCIZ 积分，同时得到矩、resolvent、Ward 和 Schwinger--Dyson relations。
+      integrable_structure: >-
+        模型把 Karlin--McGregor determinant、mixed multiple orthogonal polynomials 和 Riemann--Hilbert 描述统一到一个酉不变矩阵系综中。紧致 HCIZ 因子在 Miwa 变量下构成 2D Toda tau function，Schwinger--Dyson 方程进一步产生结构化约束。
+      innovation: >-
+        论文补上了一般多起点、多终点 Brownian bridge 问题中缺失的矩阵模型来源，并在有限 n 层面同时连接谱分布、角变量、RHP 和 Toda 结构。这为后续大 n 渐近和可积概率分析提供了新的统一起点。

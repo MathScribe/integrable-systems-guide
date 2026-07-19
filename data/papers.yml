@@ -994,3 +994,77 @@
     - "breathers"
     - "rogue waves"
 
+
+
+- id: "doi:10.1007/JHEP07(2026)120"
+  title: "Integrability in three-dimensional gravity: eigenfunction-forced KdV flows"
+  authors:
+    - "Hamed Adami"
+    - "Anouchah Latifi"
+  url: "https://doi.org/10.1007/JHEP07(2026)120"
+  arxiv_id: "2510.10519"
+  doi: "10.1007/JHEP07(2026)120"
+  journal: "Journal of High Energy Physics"
+  volume: "2026"
+  article_number: "120"
+  year: 2026
+  published: "2026-07-13"
+  submitted: "2025-10-12"
+  updated: "2026-04-13"
+  version: "v3"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "three-dimensional gravity"
+    - "Chern--Simons theory"
+    - "eigenfunction-forced KdV"
+    - "inverse scattering"
+    - "Gelfand--Levitan--Marchenko equation"
+
+
+- id: "doi:10.1007/JHEP07(2026)123"
+  title: "Integrable deformations of the Breitenlohner--Maison model from 4d Chern--Simons theory"
+  authors:
+    - "Meer Ashwinkumar"
+    - "Matthias Blau"
+  url: "https://doi.org/10.1007/JHEP07(2026)123"
+  arxiv_id: "2604.26452"
+  doi: "10.1007/JHEP07(2026)123"
+  journal: "Journal of High Energy Physics"
+  volume: "2026"
+  article_number: "123"
+  year: 2026
+  published: "2026-07-13"
+  submitted: "2026-04-29"
+  updated: "2026-06-04"
+  version: "v2"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "Breitenlohner--Maison model"
+    - "4d Chern--Simons theory"
+    - "Yang--Baxter deformation"
+    - "integrable sigma model"
+    - "general relativity"
+
+
+- id: "doi:10.1007/s10955-026-03663-6"
+  title: "A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges"
+  authors:
+    - "Maksim Kosmakov"
+  url: "https://doi.org/10.1007/s10955-026-03663-6"
+  arxiv_id: "2510.22120"
+  doi: "10.1007/s10955-026-03663-6"
+  journal: "Journal of Statistical Physics"
+  volume: "193"
+  article_number: "93"
+  year: 2026
+  published: "2026-07-16"
+  submitted: "2025-10-25"
+  updated: "2026-04-07"
+  version: "v2"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "HCIZ integral"
+    - "non-intersecting Brownian bridges"
+    - "matrix model"
+    - "Riemann--Hilbert problem"
+    - "2D Toda tau function"
