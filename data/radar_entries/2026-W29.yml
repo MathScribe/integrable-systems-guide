@@ -1,0 +1,75 @@
+- paper_id: arxiv:2510.22120
+  week: 2026-W29
+  signal_date: '2026-07-16'
+  signal_type: journal-publication
+  review_status: automated
+  arxiv_categories: [math-ph, math.PR]
+  structure_tags: [matrix model, Riemann--Hilbert problem]
+  summary: >-
+    论文构造双 HCIZ 修饰的 Hermitian Gaussian matrix model，使其有限维本征值分布精确对应具有任意起终点重数的 non-intersecting Brownian bridges。工作补出了多起点、多终点 Brownian bridge 问题此前缺失的显式矩阵模型来源，并在有限 \(n\) 层面统一路径分布、谱模型和可积层级结构。
+  main_result: >-
+    论文构造双 HCIZ 修饰的 Hermitian Gaussian matrix model，使其有限维本征值分布精确对应具有任意起终点重数的 non-intersecting Brownian bridges。
+  integrable_structure: >-
+    模型连接 Karlin--McGregor law、mixed multiple orthogonal polynomials、Riemann--Hilbert problem、2D Toda tau-function 和 Schwinger--Dyson/Virasoro identities。
+  innovation: >-
+    工作补出了多起点、多终点 Brownian bridge 问题此前缺失的显式矩阵模型来源，并在有限 \(n\) 层面统一路径分布、谱模型和可积层级结构。
+- paper_id: arxiv:2607.13773
+  week: 2026-W29
+  signal_date: '2026-07-15'
+  signal_type: new-preprint
+  review_status: automated
+  arxiv_categories: [nlin.PS, nlin.SI]
+  structure_tags: [Darboux transformation, topological vector potential]
+  summary: >-
+    论文研究 two-component Fokas--Lenells 方程在平面波背景上的 multihump--multivalley soliton families，系统分类基本解并构造任意 \(K\)-hump、\(M\)-valley 及混合结构。
+  main_result: >-
+    论文研究 two-component Fokas--Lenells 方程在平面波背景上的 multihump--multivalley soliton families，系统分类基本解并构造任意 \(K\)-hump、\(M\)-valley 及混合结构。
+  integrable_structure: >-
+    方法使用 \(N\)-fold Darboux transformation、等速度与背景振幅约束，并以 topological vector potential 分析复平面中的强度零点和极点。
+  innovation: >-
+    构造从有限低阶例子扩展到任意 multihump/multivalley 组合；同时发现 virtual monopole field 由强度零点和极点等量贡献，形成新的拓扑结论。
+- paper_id: arxiv:2607.12339
+  week: 2026-W29
+  signal_date: '2026-07-14'
+  signal_type: new-preprint
+  review_status: automated
+  arxiv_categories: [nlin.PS]
+  structure_tags: [inverse scattering, inverse problem]
+  summary: >-
+    论文推导 soliton eigenvalue response functions，并建立由输出本征值偏移反演未知脉冲扰动的积分方程，包含含噪重构测试。可积谱数据直接参与控制和反问题，形成 soliton tomography 的具体方法框架。
+  main_result: >-
+    论文推导 soliton eigenvalue response functions，并建立由输出本征值偏移反演未知脉冲扰动的积分方程，包含含噪重构测试。
+  integrable_structure: >-
+    方法将 IST 离散本征值从精确解参数和守恒数据转化为可测量、可操控的观测坐标。
+  innovation: >-
+    可积谱数据直接参与控制和反问题，形成 soliton tomography 的具体方法框架。
+- paper_id: arxiv:2604.26452
+  week: 2026-W29
+  signal_date: '2026-07-13'
+  signal_type: journal-publication
+  review_status: automated
+  arxiv_categories: [hep-th, math-ph]
+  structure_tags: [Chern--Simons theory, Yang--Baxter equation]
+  summary: >-
+    论文从四维 Chern--Simons theory 推导 Breitenlohner--Maison sigma model 及其高秩推广的可积形变。工作为描述四维广义相对论平稳轴对称扇区的 sigma model 建立统一的可积形变来源，把引力模型、Chern--Simons 构造和 Yang--Baxter deformation 直接连接起来。
+  main_result: >-
+    论文从四维 Chern--Simons theory 推导 Breitenlohner--Maison sigma model 及其高秩推广的可积形变。
+  integrable_structure: >-
+    通过改变 4d Chern--Simons 边界条件和作用量，分别得到与 homogeneous 和 inhomogeneous classical Yang--Baxter equations 对应的形变。
+  innovation: >-
+    工作为描述四维广义相对论平稳轴对称扇区的 sigma model 建立统一的可积形变来源，把引力模型、Chern--Simons 构造和 Yang--Baxter deformation 直接连接起来。
+- paper_id: arxiv:2510.10519
+  week: 2026-W29
+  signal_date: '2026-07-13'
+  signal_type: journal-publication
+  review_status: automated
+  arxiv_categories: [hep-th, nlin.SI]
+  structure_tags: [Chern--Simons theory, inverse scattering]
+  summary: >-
+    论文从三维引力的 Chern--Simons 表述和手征边界条件导出 potential mKdV hierarchy 及 eigenfunction-forced KdV dynamics。工作将自洽本征函数驱动的强迫 KdV 与 AdS\(_3\) 边界动力学统一起来，同时给出孤子和辐射两类扇区的可积分析。
+  main_result: >-
+    论文从三维引力的 Chern--Simons 表述和手征边界条件导出 potential mKdV hierarchy 及 eigenfunction-forced KdV dynamics。
+  integrable_structure: >-
+    反射为零扇区由 inverse scattering 和 Gelfand--Levitan--Marchenko 方法求解，有辐射扇区表现出普适色散衰减。
+  innovation: >-
+    工作将自洽本征函数驱动的强迫 KdV 与 AdS\(_3\) 边界动力学统一起来，同时给出孤子和辐射两类扇区的可积分析。
