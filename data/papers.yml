@@ -1,1070 +1,1440 @@
 # Current bibliographic metadata used for identity, deduplication, and display.
 # Recommendation history and annotations live in data/editions.yml.
 
-- id: "arxiv:2607.06409"
-  title: "Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation"
+- id: arxiv:2607.06409
+  title: Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation
   authors:
-    - "Bao-Feng Feng"
-    - "Wang Tang"
-    - "Guo-Fu Yu"
-  url: "https://arxiv.org/abs/2607.06409"
-  arxiv_id: "2607.06409"
-  doi: "10.48550/arXiv.2607.06409"
-  submitted: "2026-07-07"
-  updated: "2026-07-09"
-  version: "v2"
-  metadata_checked_at: "2026-07-10"
-  metadata_note: "arXiv v2 adds Bao-Feng Feng to the author list"
+  - Bao-Feng Feng
+  - Wang Tang
+  - Guo-Fu Yu
+  url: https://arxiv.org/abs/2607.06409
+  arxiv_id: '2607.06409'
+  doi: 10.48550/arXiv.2607.06409
+  submitted: '2026-07-07'
+  updated: '2026-07-09'
+  version: v2
+  metadata_checked_at: '2026-07-10'
+  metadata_note: arXiv v2 adds Bao-Feng Feng to the author list
   tags:
-    - "Fokas--Lenells equation"
-    - "elliptic localized solutions"
-    - "Darboux--Bäcklund transformation"
-    - "asymptotics"
-
-- id: "arxiv:2607.04756"
-  title: "Integrable full discretization of the multi-component short pulse equation"
+  - Fokas--Lenells equation
+  - elliptic localized solutions
+  - Darboux--Bäcklund transformation
+  - asymptotics
+- id: arxiv:2607.04756
+  title: Integrable full discretization of the multi-component short pulse equation
   authors:
-    - "Ayako Hori"
-    - "Yuta Tanaka"
-    - "Ken-ichi Maruno"
-    - "Yasuhiro Ohta"
-    - "Bao-Feng Feng"
-  url: "https://arxiv.org/abs/2607.04756"
-  arxiv_id: "2607.04756"
+  - Ayako Hori
+  - Yuta Tanaka
+  - Ken-ichi Maruno
+  - Yasuhiro Ohta
+  - Bao-Feng Feng
+  url: https://arxiv.org/abs/2607.04756
+  arxiv_id: '2607.04756'
   doi: null
   tags:
-    - "multi-component short pulse equation"
-    - "integrable discretization"
-    - "soliton systems"
-
-- id: "arxiv:2607.01348"
-  title: "Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation"
+  - multi-component short pulse equation
+  - integrable discretization
+  - soliton systems
+- id: arxiv:2607.01348
+  title: Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation
   authors:
-    - "Otis C. Wright"
-  url: "https://arxiv.org/abs/2607.01348"
-  arxiv_id: "2607.01348"
+  - Otis C. Wright
+  url: https://arxiv.org/abs/2607.01348
+  arxiv_id: '2607.01348'
   doi: null
   tags:
-    - "finite-gap solutions"
-    - "mKdV"
-    - "amplitude bounds"
-
-- id: "doi:10.1016/j.aim.2026.110961"
-  title: "Orbital stability of breathers for coupled nonlinear Schrödinger equations"
+  - finite-gap solutions
+  - mKdV
+  - amplitude bounds
+- id: doi:10.1016/j.aim.2026.110961
+  title: Orbital stability of breathers for coupled nonlinear Schrödinger equations
   authors:
-    - "Liming Ling"
-    - "Dmitry E. Pelinovsky"
-    - "Huajie Su"
-  url: "https://doi.org/10.1016/j.aim.2026.110961"
+  - Liming Ling
+  - Dmitry E. Pelinovsky
+  - Huajie Su
+  url: https://doi.org/10.1016/j.aim.2026.110961
   arxiv_id: null
-  doi: "10.1016/j.aim.2026.110961"
-  journal: "Advances in Mathematics"
-  volume: "495"
-  article_number: "110961"
+  doi: 10.1016/j.aim.2026.110961
+  journal: Advances in Mathematics
+  volume: '495'
+  article_number: '110961'
   year: 2026
-  metadata_checked_at: "2026-07-10"
+  metadata_checked_at: '2026-07-10'
   tags:
-    - "coupled NLS"
-    - "breathers"
-    - "squared eigenfunctions"
-    - "orbital stability"
-
-- id: "arxiv:2606.24435"
-  title: "Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation"
+  - coupled NLS
+  - breathers
+  - squared eigenfunctions
+  - orbital stability
+- id: arxiv:2606.24435
+  title: Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation
   authors:
-    - "Deng Shan Wang"
-    - "Xinyu Wang"
-  url: "https://arxiv.org/abs/2606.24435"
-  arxiv_id: "2606.24435"
-  doi: "10.48550/arXiv.2606.24435"
+  - Deng Shan Wang
+  - Xinyu Wang
+  url: https://arxiv.org/abs/2606.24435
+  arxiv_id: '2606.24435'
+  doi: 10.48550/arXiv.2606.24435
   tags:
-    - "DNLS"
-    - "soliton gas"
-    - "Riemann--Hilbert problem"
-    - "long-time asymptotics"
-
-- id: "arxiv:2605.28856"
-  title: "Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations"
+  - DNLS
+  - soliton gas
+  - Riemann--Hilbert problem
+  - long-time asymptotics
+- id: arxiv:2605.28856
+  title: Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations
   authors:
-    - "Ramazan Ercan"
-  url: "https://arxiv.org/abs/2605.28856"
-  arxiv_id: "2605.28856"
-  doi: "10.58997/ejde.2026.37"
-  metadata_checked_at: "2026-07-10"
+  - Ramazan Ercan
+  url: https://arxiv.org/abs/2605.28856
+  arxiv_id: '2605.28856'
+  doi: 10.58997/ejde.2026.37
+  metadata_checked_at: '2026-07-10'
   tags:
-    - "coupled Gerdjikov--Ivanov equations"
-    - "inverse scattering"
-    - "Jost solutions"
-    - "Marchenko equations"
-
-- id: "arxiv:2606.22808"
-  title: "Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent $(3+1)$ Nonlinear Schrödinger Systems"
+  - coupled Gerdjikov--Ivanov equations
+  - inverse scattering
+  - Jost solutions
+  - Marchenko equations
+- id: arxiv:2606.22808
+  title: Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent $(3+1)$ Nonlinear Schrödinger
+    Systems
   authors:
-    - "O. V. Kaptsov"
-  url: "https://arxiv.org/abs/2606.22808"
-  arxiv_id: "2606.22808"
-  doi: "10.48550/arXiv.2606.22808"
-  submitted: "2026-06-22"
-  updated: "2026-06-22"
-  version: "v1"
-  metadata_checked_at: "2026-07-10"
+  - O. V. Kaptsov
+  url: https://arxiv.org/abs/2606.22808
+  arxiv_id: '2606.22808'
+  doi: 10.48550/arXiv.2606.22808
+  submitted: '2026-06-22'
+  updated: '2026-06-22'
+  version: v1
+  metadata_checked_at: '2026-07-10'
   tags:
-    - "dimensional reduction"
-    - "multicomponent NLS"
-    - "Manakov system"
-    - "breathers"
-
-- id: "arxiv:2606.05123"
-  title: "Novel periodic solutions and rogue waves of the defocusing scalar and coupled Ablowitz-Ladik systems on a nonzero background"
+  - dimensional reduction
+  - multicomponent NLS
+  - Manakov system
+  - breathers
+- id: arxiv:2606.05123
+  title: Novel periodic solutions and rogue waves of the defocusing scalar and coupled Ablowitz-Ladik systems on
+    a nonzero background
   authors:
-    - "Francesco Coppini"
-    - "Barbara Prinari"
-  url: "https://arxiv.org/abs/2606.05123"
-  arxiv_id: "2606.05123"
-  doi: "10.48550/arXiv.2606.05123"
-  submitted: "2026-06-03"
-  updated: "2026-06-03"
-  version: "v1"
-  metadata_checked_at: "2026-07-10"
+  - Francesco Coppini
+  - Barbara Prinari
+  url: https://arxiv.org/abs/2606.05123
+  arxiv_id: '2606.05123'
+  doi: 10.48550/arXiv.2606.05123
+  submitted: '2026-06-03'
+  updated: '2026-06-03'
+  version: v1
+  metadata_checked_at: '2026-07-10'
   tags:
-    - "Ablowitz--Ladik system"
-    - "discrete breathers"
-    - "rogue waves"
-    - "Hirota method"
-
-- id: "arxiv:2605.06306"
-  title: "Soliton gas resolution and statistics of random wave fields in semiclassical integrable turbulence"
+  - Ablowitz--Ladik system
+  - discrete breathers
+  - rogue waves
+  - Hirota method
+- id: arxiv:2605.06306
+  title: Soliton gas resolution and statistics of random wave fields in semiclassical integrable turbulence
   authors:
-    - "T. Congy"
-    - "G. A. El"
-  url: "https://arxiv.org/abs/2605.06306"
-  arxiv_id: "2605.06306"
-  doi: "10.48550/arXiv.2605.06306"
-  submitted: "2026-05-07"
-  updated: "2026-05-07"
-  version: "v1"
-  metadata_checked_at: "2026-07-10"
+  - T. Congy
+  - G. A. El
+  url: https://arxiv.org/abs/2605.06306
+  arxiv_id: '2605.06306'
+  doi: 10.48550/arXiv.2605.06306
+  submitted: '2026-05-07'
+  updated: '2026-05-07'
+  version: v1
+  metadata_checked_at: '2026-07-10'
   tags:
-    - "focusing NLS"
-    - "soliton gas"
-    - "integrable turbulence"
-    - "stochastic inverse scattering"
-
-- id: "arxiv:2602.13589"
-  title: "Painlevé XXXIV asymptotics for the defocusing nonlinear Schrödinger equation with a finite-genus algebro-geometric background"
+  - focusing NLS
+  - soliton gas
+  - integrable turbulence
+  - stochastic inverse scattering
+- id: arxiv:2602.13589
+  title: Painlevé XXXIV asymptotics for the defocusing nonlinear Schrödinger equation with a finite-genus algebro-geometric
+    background
   authors:
-    - "Engui Fan"
-    - "Gaozhan Li"
-    - "Yiling Yang"
-    - "Lun Zhang"
-  url: "https://doi.org/10.1007/s00208-026-03322-x"
-  arxiv_id: "2602.13589"
-  doi: "10.1007/s00208-026-03322-x"
-  journal: "Mathematische Annalen"
+  - Engui Fan
+  - Gaozhan Li
+  - Yiling Yang
+  - Lun Zhang
+  url: https://doi.org/10.1007/s00208-026-03322-x
+  arxiv_id: '2602.13589'
+  doi: 10.1007/s00208-026-03322-x
+  journal: Mathematische Annalen
   year: 2026
-  submitted: "2026-02-14"
-  updated: "2026-02-14"
-  version: "v1"
-  metadata_checked_at: "2026-07-10"
+  submitted: '2026-02-14'
+  updated: '2026-02-14'
+  version: v1
+  metadata_checked_at: '2026-07-10'
   tags:
-    - "defocusing NLS"
-    - "finite-genus background"
-    - "Riemann--Hilbert problem"
-    - "Painlevé XXXIV"
-    - "long-time asymptotics"
-
-- id: "doi:10.1111/j.1467-9590.2012.00568.x"
-  title: "High Order Solutions and Generalized Darboux Transformations of Derivative Schrödinger Equation"
+  - defocusing NLS
+  - finite-genus background
+  - Riemann--Hilbert problem
+  - Painlevé XXXIV
+  - long-time asymptotics
+- id: doi:10.1111/j.1467-9590.2012.00568.x
+  title: High Order Solutions and Generalized Darboux Transformations of Derivative Schrödinger Equation
   authors:
-    - "Boling Guo"
-    - "Liming Ling"
-    - "Q. P. Liu"
-  url: "https://doi.org/10.1111/j.1467-9590.2012.00568.x"
-  arxiv_id: "1205.4369"
-  doi: "10.1111/j.1467-9590.2012.00568.x"
-  journal: "Studies in Applied Mathematics"
-  volume: "130"
-  pages: "317-344"
+  - Boling Guo
+  - Liming Ling
+  - Q. P. Liu
+  url: https://doi.org/10.1111/j.1467-9590.2012.00568.x
+  arxiv_id: '1205.4369'
+  doi: 10.1111/j.1467-9590.2012.00568.x
+  journal: Studies in Applied Mathematics
+  volume: '130'
+  pages: 317-344
   year: 2013
-  metadata_checked_at: "2026-07-10"
+  metadata_checked_at: '2026-07-10'
   tags:
-    - "DNLS"
-    - "generalized Darboux transformation"
-    - "higher-order solitons"
-    - "rogue waves"
-
-- id: "doi:10.1016/j.cnsns.2015.08.023"
-  title: "Darboux transformation and classification of solution for mixed coupled nonlinear Schrödinger equations"
+  - DNLS
+  - generalized Darboux transformation
+  - higher-order solitons
+  - rogue waves
+- id: doi:10.1016/j.cnsns.2015.08.023
+  title: Darboux transformation and classification of solution for mixed coupled nonlinear Schrödinger equations
   authors:
-    - "Liming Ling"
-    - "Li-Chen Zhao"
-    - "Boling Guo"
-  url: "https://doi.org/10.1016/j.cnsns.2015.08.023"
-  arxiv_id: "1407.5194"
-  doi: "10.1016/j.cnsns.2015.08.023"
-  journal: "Communications in Nonlinear Science and Numerical Simulation"
-  volume: "32"
-  pages: "285-304"
+  - Liming Ling
+  - Li-Chen Zhao
+  - Boling Guo
+  url: https://doi.org/10.1016/j.cnsns.2015.08.023
+  arxiv_id: '1407.5194'
+  doi: 10.1016/j.cnsns.2015.08.023
+  journal: Communications in Nonlinear Science and Numerical Simulation
+  volume: '32'
+  pages: 285-304
   year: 2016
-  metadata_checked_at: "2026-07-10"
+  metadata_checked_at: '2026-07-10'
   tags:
-    - "mixed coupled NLS"
-    - "Darboux transformation"
-    - "dark solitons"
-    - "breathers"
-    - "rogue waves"
-
-- id: "arxiv:2504.21315"
-  title: "Long-time asymptotics of the coupled nonlinear Schrödinger equation in a weighted Sobolev space"
+  - mixed coupled NLS
+  - Darboux transformation
+  - dark solitons
+  - breathers
+  - rogue waves
+- id: arxiv:2504.21315
+  title: Long-time asymptotics of the coupled nonlinear Schrödinger equation in a weighted Sobolev space
   authors:
-    - "Yubin Huang"
-    - "Liming Ling"
-    - "Xiaoen Zhang"
-  url: "https://arxiv.org/abs/2504.21315v3"
-  arxiv_id: "2504.21315"
-  doi: "10.48550/arXiv.2504.21315"
-  submitted: "2025-04-30"
-  updated: "2026-02-22"
-  version: "v3"
-  metadata_checked_at: "2026-07-11"
+  - Yubin Huang
+  - Liming Ling
+  - Xiaoen Zhang
+  url: https://arxiv.org/abs/2504.21315v3
+  arxiv_id: '2504.21315'
+  doi: 10.48550/arXiv.2504.21315
+  submitted: '2025-04-30'
+  updated: '2026-02-22'
+  version: v3
+  metadata_checked_at: '2026-07-11'
   tags:
-    - "coupled NLS"
-    - "Riemann--Hilbert problem"
-    - "nonlinear steepest descent"
-    - "Darboux transformation"
-    - "long-time asymptotics"
-
-- id: "arxiv:0808.1534"
-  title: "The derivative nonlinear Schrödinger equation on the half-line"
+  - coupled NLS
+  - Riemann--Hilbert problem
+  - nonlinear steepest descent
+  - Darboux transformation
+  - long-time asymptotics
+- id: arxiv:0808.1534
+  title: The derivative nonlinear Schrödinger equation on the half-line
   authors:
-    - "Jonatan Lenells"
-  url: "https://arxiv.org/abs/0808.1534"
-  arxiv_id: "0808.1534"
-  doi: "10.48550/arXiv.0808.1534"
-  submitted: "2008-08-11"
-  updated: "2008-08-11"
-  version: "v1"
-  metadata_checked_at: "2026-07-11"
+  - Jonatan Lenells
+  url: https://arxiv.org/abs/0808.1534
+  arxiv_id: '0808.1534'
+  doi: 10.48550/arXiv.0808.1534
+  submitted: '2008-08-11'
+  updated: '2008-08-11'
+  version: v1
+  metadata_checked_at: '2026-07-11'
   tags:
-    - "DNLS"
-    - "half-line"
-    - "Fokas method"
-    - "Riemann--Hilbert problem"
-    - "global relation"
-
-- id: "doi:10.1088/1361-6544/accfdf"
-  title: "Partial degeneration of finite gap solutions to the Korteweg-de Vries equation: soliton gas and scattering on elliptic background"
+  - DNLS
+  - half-line
+  - Fokas method
+  - Riemann--Hilbert problem
+  - global relation
+- id: doi:10.1088/1361-6544/accfdf
+  title: 'Partial degeneration of finite gap solutions to the Korteweg-de Vries equation: soliton gas and scattering
+    on elliptic background'
   authors:
-    - "Marco Bertola"
-    - "Robert Jenkins"
-    - "Alexander Tovbis"
-  url: "https://doi.org/10.1088/1361-6544/accfdf"
-  arxiv_id: "2210.01350"
-  doi: "10.1088/1361-6544/accfdf"
-  journal: "Nonlinearity"
+  - Marco Bertola
+  - Robert Jenkins
+  - Alexander Tovbis
+  url: https://doi.org/10.1088/1361-6544/accfdf
+  arxiv_id: '2210.01350'
+  doi: 10.1088/1361-6544/accfdf
+  journal: Nonlinearity
   year: 2023
-  submitted: "2022-10-04"
-  updated: "2023-05-17"
-  version: "v3"
-  metadata_checked_at: "2026-07-11"
+  submitted: '2022-10-04'
+  updated: '2023-05-17'
+  version: v3
+  metadata_checked_at: '2026-07-11'
   tags:
-    - "finite-gap degeneration"
-    - "elliptic background"
-    - "theta functions"
-    - "soliton gas"
-    - "scattering"
-
-- id: "arxiv:2304.06541"
-  title: "Soliton Gas: Theory, Numerics and Experiments"
+  - finite-gap degeneration
+  - elliptic background
+  - theta functions
+  - soliton gas
+  - scattering
+- id: arxiv:2304.06541
+  title: 'Soliton Gas: Theory, Numerics and Experiments'
   authors:
-    - "Pierre Suret"
-    - "Stephane Randoux"
-    - "Andrey Gelash"
-    - "Dmitry Agafontsev"
-    - "Benjamin Doyon"
-    - "Gennady El"
-  url: "https://arxiv.org/abs/2304.06541"
-  arxiv_id: "2304.06541"
-  doi: "10.48550/arXiv.2304.06541"
-  submitted: "2023-04-13"
-  updated: "2023-04-13"
-  version: "v1"
-  metadata_checked_at: "2026-07-11"
+  - Pierre Suret
+  - Stephane Randoux
+  - Andrey Gelash
+  - Dmitry Agafontsev
+  - Benjamin Doyon
+  - Gennady El
+  url: https://arxiv.org/abs/2304.06541
+  arxiv_id: '2304.06541'
+  doi: 10.48550/arXiv.2304.06541
+  submitted: '2023-04-13'
+  updated: '2023-04-13'
+  version: v1
+  metadata_checked_at: '2026-07-11'
   tags:
-    - "soliton gas"
-    - "inverse scattering"
-    - "thermodynamic finite-gap limit"
-    - "generalized hydrodynamics"
-    - "integrable turbulence"
-
-- id: "doi:10.1088/1361-6544/abcc4b"
-  title: "Multicomponent Fokas-Lenells equations on Hermitian symmetric spaces"
+  - soliton gas
+  - inverse scattering
+  - thermodynamic finite-gap limit
+  - generalized hydrodynamics
+  - integrable turbulence
+- id: doi:10.1088/1361-6544/abcc4b
+  title: Multicomponent Fokas-Lenells equations on Hermitian symmetric spaces
   authors:
-    - "Vladimir S. Gerdjikov"
-    - "Rossen I. Ivanov"
-  url: "https://doi.org/10.1088/1361-6544/abcc4b"
-  arxiv_id: "2104.00154"
-  doi: "10.1088/1361-6544/abcc4b"
-  journal: "Nonlinearity"
-  volume: "34"
-  pages: "939-963"
+  - Vladimir S. Gerdjikov
+  - Rossen I. Ivanov
+  url: https://doi.org/10.1088/1361-6544/abcc4b
+  arxiv_id: '2104.00154'
+  doi: 10.1088/1361-6544/abcc4b
+  journal: Nonlinearity
+  volume: '34'
+  pages: 939-963
   year: 2021
-  submitted: "2021-03-31"
-  updated: "2021-03-31"
-  version: "v1"
-  metadata_checked_at: "2026-07-12"
+  submitted: '2021-03-31'
+  updated: '2021-03-31'
+  version: v1
+  metadata_checked_at: '2026-07-12'
   tags:
-    - "Fokas--Lenells equation"
-    - "multicomponent systems"
-    - "Hermitian symmetric spaces"
-    - "bi-Hamiltonian structure"
-    - "reductions"
-
-- id: "arxiv:2210.08417"
-  title: "The Fokas-Lenells equation on the line: Global well-posedness with solitons"
+  - Fokas--Lenells equation
+  - multicomponent systems
+  - Hermitian symmetric spaces
+  - bi-Hamiltonian structure
+  - reductions
+- id: arxiv:2210.08417
+  title: 'The Fokas-Lenells equation on the line: Global well-posedness with solitons'
   authors:
-    - "Qiaoyuan Cheng"
-    - "Engui Fan"
-  url: "https://arxiv.org/abs/2210.08417"
-  arxiv_id: "2210.08417"
-  doi: "10.48550/arXiv.2210.08417"
-  submitted: "2022-10-16"
-  updated: "2022-10-16"
-  version: "v1"
-  metadata_checked_at: "2026-07-12"
+  - Qiaoyuan Cheng
+  - Engui Fan
+  url: https://arxiv.org/abs/2210.08417
+  arxiv_id: '2210.08417'
+  doi: 10.48550/arXiv.2210.08417
+  submitted: '2022-10-16'
+  updated: '2022-10-16'
+  version: v1
+  metadata_checked_at: '2026-07-12'
   tags:
-    - "Fokas--Lenells equation"
-    - "global well-posedness"
-    - "inverse scattering"
-    - "Darboux transformation"
-    - "solitons"
-
-- id: "arxiv:1905.02866"
-  title: "The Derivative Nonlinear Schrödinger Equation: Global Well-Posedness and Soliton Resolution"
+  - Fokas--Lenells equation
+  - global well-posedness
+  - inverse scattering
+  - Darboux transformation
+  - solitons
+- id: arxiv:1905.02866
+  title: 'The Derivative Nonlinear Schrödinger Equation: Global Well-Posedness and Soliton Resolution'
   authors:
-    - "Robert Jenkins"
-    - "Jiaqi Liu"
-    - "Peter Perry"
-    - "Catherine Sulem"
-  url: "https://arxiv.org/abs/1905.02866"
-  arxiv_id: "1905.02866"
-  doi: "10.48550/arXiv.1905.02866"
-  submitted: "2019-05-08"
-  updated: "2019-05-08"
-  version: "v1"
-  metadata_checked_at: "2026-07-12"
+  - Robert Jenkins
+  - Jiaqi Liu
+  - Peter Perry
+  - Catherine Sulem
+  url: https://arxiv.org/abs/1905.02866
+  arxiv_id: '1905.02866'
+  doi: 10.48550/arXiv.1905.02866
+  submitted: '2019-05-08'
+  updated: '2019-05-08'
+  version: v1
+  metadata_checked_at: '2026-07-12'
   tags:
-    - "DNLS"
-    - "global well-posedness"
-    - "soliton resolution"
-    - "spectral singularities"
-    - "asymptotic stability"
-
-- id: "doi:10.1088/1751-8113/43/43/434023"
-  title: "Darboux transformation for two component derivative nonlinear Schrödinger equation"
+  - DNLS
+  - global well-posedness
+  - soliton resolution
+  - spectral singularities
+  - asymptotic stability
+- id: doi:10.1088/1751-8113/43/43/434023
+  title: Darboux transformation for two component derivative nonlinear Schrödinger equation
   authors:
-    - "Liming Ling"
-    - "Q. P. Liu"
-  url: "https://doi.org/10.1088/1751-8113/43/43/434023"
-  arxiv_id: "0911.4802"
-  doi: "10.1088/1751-8113/43/43/434023"
-  journal: "Journal of Physics A: Mathematical and Theoretical"
-  volume: "43"
-  article_number: "434023"
+  - Liming Ling
+  - Q. P. Liu
+  url: https://doi.org/10.1088/1751-8113/43/43/434023
+  arxiv_id: '0911.4802'
+  doi: 10.1088/1751-8113/43/43/434023
+  journal: 'Journal of Physics A: Mathematical and Theoretical'
+  volume: '43'
+  article_number: '434023'
   year: 2010
-  submitted: "2009-11-25"
-  updated: "2009-12-09"
-  version: "v2"
-  metadata_checked_at: "2026-07-12"
+  submitted: '2009-11-25'
+  updated: '2009-12-09'
+  version: v2
+  metadata_checked_at: '2026-07-12'
   tags:
-    - "two-component DNLS"
-    - "Darboux transformation"
-    - "N-soliton solutions"
-    - "group-adjacent"
-
-- id: "arxiv:2606.10037"
-  title: "Noncommutative NLS systems: Darboux--Bäcklund transformations and integrable discretisations"
+  - two-component DNLS
+  - Darboux transformation
+  - N-soliton solutions
+  - group-adjacent
+- id: arxiv:2606.10037
+  title: 'Noncommutative NLS systems: Darboux--Bäcklund transformations and integrable discretisations'
   authors:
-    - "Sotiris Konstantinou-Rizos"
-  url: "https://arxiv.org/abs/2606.10037"
-  arxiv_id: "2606.10037"
-  doi: "10.48550/arXiv.2606.10037"
-  submitted: "2026-06-08"
-  updated: "2026-06-08"
-  version: "v1"
-  metadata_checked_at: "2026-07-13"
+  - Sotiris Konstantinou-Rizos
+  url: https://arxiv.org/abs/2606.10037
+  arxiv_id: '2606.10037'
+  doi: 10.48550/arXiv.2606.10037
+  submitted: '2026-06-08'
+  updated: '2026-06-08'
+  version: v1
+  metadata_checked_at: '2026-07-13'
   tags:
-    - "noncommutative NLS"
-    - "Kaup--Newell system"
-    - "Darboux--Bäcklund transformation"
-    - "integrable discretization"
-    - "reduction groups"
-
-- id: "arxiv:2507.21660"
-  title: "Darboux transformations and related non-Abelian integrable differential-difference systems of the derivative nonlinear Schrödinger type"
+  - noncommutative NLS
+  - Kaup--Newell system
+  - Darboux--Bäcklund transformation
+  - integrable discretization
+  - reduction groups
+- id: arxiv:2507.21660
+  title: Darboux transformations and related non-Abelian integrable differential-difference systems of the derivative
+    nonlinear Schrödinger type
   authors:
-    - "Edoardo Peroni"
-    - "Jing Ping Wang"
-  url: "https://arxiv.org/abs/2507.21660"
-  arxiv_id: "2507.21660"
-  doi: "10.48550/arXiv.2507.21660"
-  submitted: "2025-07-29"
-  updated: "2025-07-29"
-  version: "v1"
-  metadata_checked_at: "2026-07-13"
+  - Edoardo Peroni
+  - Jing Ping Wang
+  url: https://arxiv.org/abs/2507.21660
+  arxiv_id: '2507.21660'
+  doi: 10.48550/arXiv.2507.21660
+  submitted: '2025-07-29'
+  updated: '2025-07-29'
+  version: v1
+  metadata_checked_at: '2026-07-13'
   tags:
-    - "non-Abelian DNLS"
-    - "Darboux transformation"
-    - "differential-difference systems"
-    - "reduction groups"
-    - "quasideterminants"
-
-- id: "doi:10.1111/sapm.12287"
-  title: "Multi-breathers and high order rogue waves for the nonlinear Schrödinger equation on the elliptic function background"
+  - non-Abelian DNLS
+  - Darboux transformation
+  - differential-difference systems
+  - reduction groups
+  - quasideterminants
+- id: doi:10.1111/sapm.12287
+  title: Multi-breathers and high order rogue waves for the nonlinear Schrödinger equation on the elliptic function
+    background
   authors:
-    - "Bao-Feng Feng"
-    - "Liming Ling"
-    - "Daisuke A. Takahashi"
-  url: "https://doi.org/10.1111/sapm.12287"
-  arxiv_id: "1812.04212"
-  doi: "10.1111/sapm.12287"
-  journal: "Studies in Applied Mathematics"
+  - Bao-Feng Feng
+  - Liming Ling
+  - Daisuke A. Takahashi
+  url: https://doi.org/10.1111/sapm.12287
+  arxiv_id: '1812.04212'
+  doi: 10.1111/sapm.12287
+  journal: Studies in Applied Mathematics
   year: 2019
-  submitted: "2018-12-11"
-  updated: "2018-12-11"
-  version: "v1"
-  metadata_checked_at: "2026-07-13"
+  submitted: '2018-12-11'
+  updated: '2018-12-11'
+  version: v1
+  metadata_checked_at: '2026-07-13'
   tags:
-    - "focusing NLS"
-    - "elliptic background"
-    - "multi-breathers"
-    - "rogue waves"
-    - "squared eigenfunctions"
-
-- id: "doi:10.1088/0305-4470/35/36/310"
-  title: "Integrable discretizations of derivative nonlinear Schroedinger equations"
+  - focusing NLS
+  - elliptic background
+  - multi-breathers
+  - rogue waves
+  - squared eigenfunctions
+- id: doi:10.1088/0305-4470/35/36/310
+  title: Integrable discretizations of derivative nonlinear Schroedinger equations
   authors:
-    - "Takayuki Tsuchida"
-  url: "https://doi.org/10.1088/0305-4470/35/36/310"
-  arxiv_id: "nlin/0105053"
-  doi: "10.1088/0305-4470/35/36/310"
-  journal: "Journal of Physics A: Mathematical and General"
-  volume: "35"
-  pages: "7827"
+  - Takayuki Tsuchida
+  url: https://doi.org/10.1088/0305-4470/35/36/310
+  arxiv_id: nlin/0105053
+  doi: 10.1088/0305-4470/35/36/310
+  journal: 'Journal of Physics A: Mathematical and General'
+  volume: '35'
+  pages: '7827'
   year: 2002
-  submitted: "2001-05-24"
-  updated: "2002-08-28"
-  version: "v3"
-  metadata_checked_at: "2026-07-13"
+  submitted: '2001-05-24'
+  updated: '2002-08-28'
+  version: v3
+  metadata_checked_at: '2026-07-13'
   tags:
-    - "DNLS"
-    - "Kaup--Newell equation"
-    - "Chen--Lee--Liu equation"
-    - "Gerdjikov--Ivanov equation"
-    - "integrable discretization"
-
-- id: "arxiv:2607.09333"
-  title: "Discrete Gerdjikov-Ivanov models and their higher-order counterparts from the Cauchy matrix scheme"
+  - DNLS
+  - Kaup--Newell equation
+  - Chen--Lee--Liu equation
+  - Gerdjikov--Ivanov equation
+  - integrable discretization
+- id: arxiv:2607.09333
+  title: Discrete Gerdjikov-Ivanov models and their higher-order counterparts from the Cauchy matrix scheme
   authors:
-    - "Xiao-gang Mu"
-    - "Song-lin Zhao"
-  url: "https://arxiv.org/abs/2607.09333"
-  arxiv_id: "2607.09333"
-  doi: "10.48550/arXiv.2607.09333"
-  submitted: "2026-07-10"
-  updated: "2026-07-10"
-  version: "v1"
-  metadata_checked_at: "2026-07-14"
-  metadata_note: "The current arXiv abstract and recent-list pages render the source title as 'Gerdjikov-vanov'; the abstract consistently identifies the Gerdjikov-Ivanov equation, so the registry normalizes the equation name and records the source-title typo."
+  - Xiao-gang Mu
+  - Song-lin Zhao
+  url: https://arxiv.org/abs/2607.09333
+  arxiv_id: '2607.09333'
+  doi: 10.48550/arXiv.2607.09333
+  submitted: '2026-07-10'
+  updated: '2026-07-10'
+  version: v1
+  metadata_checked_at: '2026-07-14'
+  metadata_note: The current arXiv abstract and recent-list pages render the source title as 'Gerdjikov-vanov';
+    the abstract consistently identifies the Gerdjikov-Ivanov equation, so the registry normalizes the equation
+    name and records the source-title typo.
   tags:
-    - "Gerdjikov--Ivanov equation"
-    - "fully discrete systems"
-    - "Cauchy matrix method"
-    - "higher-order flows"
-    - "multiple-pole solutions"
-
-- id: "arxiv:2105.08412"
-  title: "High-order soliton matrix for the third-order flow equation of the Gerdjikov-Ivanov hierarchy through the Riemann-Hilbert method"
+  - Gerdjikov--Ivanov equation
+  - fully discrete systems
+  - Cauchy matrix method
+  - higher-order flows
+  - multiple-pole solutions
+- id: arxiv:2105.08412
+  title: High-order soliton matrix for the third-order flow equation of the Gerdjikov-Ivanov hierarchy through the
+    Riemann-Hilbert method
   authors:
-    - "JinYan Zhu"
-    - "Yong Chen"
-  url: "https://arxiv.org/abs/2105.08412"
-  arxiv_id: "2105.08412"
-  doi: "10.48550/arXiv.2105.08412"
-  submitted: "2021-05-18"
-  updated: "2021-05-18"
-  version: "v1"
-  metadata_checked_at: "2026-07-14"
+  - JinYan Zhu
+  - Yong Chen
+  url: https://arxiv.org/abs/2105.08412
+  arxiv_id: '2105.08412'
+  doi: 10.48550/arXiv.2105.08412
+  submitted: '2021-05-18'
+  updated: '2021-05-18'
+  version: v1
+  metadata_checked_at: '2026-07-14'
   tags:
-    - "Gerdjikov--Ivanov hierarchy"
-    - "third-order flow"
-    - "Riemann--Hilbert problem"
-    - "high-order solitons"
-    - "dressing method"
-
-- id: "doi:10.1080/14029251.2015.996438"
-  title: "Exact solutions of the Gerdjikov-Ivanov equation using Darboux transformations"
+  - Gerdjikov--Ivanov hierarchy
+  - third-order flow
+  - Riemann--Hilbert problem
+  - high-order solitons
+  - dressing method
+- id: doi:10.1080/14029251.2015.996438
+  title: Exact solutions of the Gerdjikov-Ivanov equation using Darboux transformations
   authors:
-    - "Halis Yilmaz"
-  url: "https://doi.org/10.1080/14029251.2015.996438"
-  arxiv_id: "1501.07634"
-  doi: "10.1080/14029251.2015.996438"
-  journal: "Journal of Nonlinear Mathematical Physics"
-  volume: "22"
-  issue: "1"
-  pages: "32-46"
+  - Halis Yilmaz
+  url: https://doi.org/10.1080/14029251.2015.996438
+  arxiv_id: '1501.07634'
+  doi: 10.1080/14029251.2015.996438
+  journal: Journal of Nonlinear Mathematical Physics
+  volume: '22'
+  issue: '1'
+  pages: 32-46
   year: 2015
-  submitted: "2015-01-29"
-  updated: "2015-01-29"
-  version: "v1"
-  metadata_checked_at: "2026-07-14"
+  submitted: '2015-01-29'
+  updated: '2015-01-29'
+  version: v1
+  metadata_checked_at: '2026-07-14'
   tags:
-    - "Gerdjikov--Ivanov equation"
-    - "Darboux transformation"
-    - "quasideterminants"
-    - "breathers"
-    - "exact solutions"
-
-- id: "arxiv:2607.10954"
-  title: "Exact vector Akhmediev breathers dominated by a linearly stable frequency"
+  - Gerdjikov--Ivanov equation
+  - Darboux transformation
+  - quasideterminants
+  - breathers
+  - exact solutions
+- id: arxiv:2607.10954
+  title: Exact vector Akhmediev breathers dominated by a linearly stable frequency
   authors:
-    - "Wen-Rong Sun"
-    - "Chong Liu"
-    - "Lei Wang"
-    - "Fabio Baronio"
-  url: "https://arxiv.org/abs/2607.10954"
-  arxiv_id: "2607.10954"
-  doi: "10.48550/arXiv.2607.10954"
-  submitted: "2026-07-12"
-  updated: "2026-07-12"
-  version: "v1"
-  metadata_checked_at: "2026-07-15"
+  - Wen-Rong Sun
+  - Chong Liu
+  - Lei Wang
+  - Fabio Baronio
+  url: https://arxiv.org/abs/2607.10954
+  arxiv_id: '2607.10954'
+  doi: 10.48550/arXiv.2607.10954
+  submitted: '2026-07-12'
+  updated: '2026-07-12'
+  version: v1
+  metadata_checked_at: '2026-07-15'
   tags:
-    - "Manakov system"
-    - "vector Akhmediev breathers"
-    - "modulation instability"
-    - "four-wave mixing"
-    - "stable spectral component"
-
-- id: "arxiv:2606.21301"
-  title: "Controllable excitation of vector Akhmediev breather patterns"
+  - Manakov system
+  - vector Akhmediev breathers
+  - modulation instability
+  - four-wave mixing
+  - stable spectral component
+- id: arxiv:2606.21301
+  title: Controllable excitation of vector Akhmediev breather patterns
   authors:
-    - "Yan-Hong Qin"
-    - "Ning Cao"
-    - "Li-Chen Zhao"
-  url: "https://arxiv.org/abs/2606.21301"
-  arxiv_id: "2606.21301"
-  doi: "10.48550/arXiv.2606.21301"
-  submitted: "2026-06-19"
-  updated: "2026-06-19"
-  version: "v1"
-  metadata_checked_at: "2026-07-15"
+  - Yan-Hong Qin
+  - Ning Cao
+  - Li-Chen Zhao
+  url: https://arxiv.org/abs/2606.21301
+  arxiv_id: '2606.21301'
+  doi: 10.48550/arXiv.2606.21301
+  submitted: '2026-06-19'
+  updated: '2026-06-19'
+  version: v1
+  metadata_checked_at: '2026-07-15'
   tags:
-    - "Manakov system"
-    - "vector Akhmediev breathers"
-    - "modulation instability"
-    - "eigenvector-controlled excitation"
-    - "multi-component NLS"
-
-- id: "doi:10.1088/0256-307X/39/9/094201"
-  title: "Modulation instability and non-degenerate Akhmediev breathers of Manakov equations"
+  - Manakov system
+  - vector Akhmediev breathers
+  - modulation instability
+  - eigenvector-controlled excitation
+  - multi-component NLS
+- id: doi:10.1088/0256-307X/39/9/094201
+  title: Modulation instability and non-degenerate Akhmediev breathers of Manakov equations
   authors:
-    - "Chong Liu"
-    - "Shao-Chun Chen"
-    - "Xiankun Yao"
-    - "Nail Akhmediev"
-  url: "https://doi.org/10.1088/0256-307X/39/9/094201"
-  arxiv_id: "2203.03998"
-  doi: "10.1088/0256-307X/39/9/094201"
-  journal: "Chinese Physics Letters"
-  volume: "39"
-  issue: "9"
-  article_number: "094201"
+  - Chong Liu
+  - Shao-Chun Chen
+  - Xiankun Yao
+  - Nail Akhmediev
+  url: https://doi.org/10.1088/0256-307X/39/9/094201
+  arxiv_id: '2203.03998'
+  doi: 10.1088/0256-307X/39/9/094201
+  journal: Chinese Physics Letters
+  volume: '39'
+  issue: '9'
+  article_number: 094201
   year: 2022
-  submitted: "2022-03-08"
-  updated: "2022-03-08"
-  version: "v1"
-  metadata_checked_at: "2026-07-15"
+  submitted: '2022-03-08'
+  updated: '2022-03-08'
+  version: v1
+  metadata_checked_at: '2026-07-15'
   tags:
-    - "Manakov system"
-    - "non-degenerate Akhmediev breathers"
-    - "modulation instability"
-    - "frequency-wavenumber diagram"
-    - "vector NLS"
-
-- id: "arxiv:2211.07014"
-  title: "Vector breathers in the Manakov system"
+  - Manakov system
+  - non-degenerate Akhmediev breathers
+  - modulation instability
+  - frequency-wavenumber diagram
+  - vector NLS
+- id: arxiv:2211.07014
+  title: Vector breathers in the Manakov system
   authors:
-    - "Andrey Gelash"
-    - "Anton Raskovalov"
-  url: "https://arxiv.org/abs/2211.07014"
-  arxiv_id: "2211.07014"
-  doi: "10.48550/arXiv.2211.07014"
-  submitted: "2022-11-13"
-  updated: "2022-11-13"
-  version: "v1"
-  metadata_checked_at: "2026-07-15"
+  - Andrey Gelash
+  - Anton Raskovalov
+  url: https://arxiv.org/abs/2211.07014
+  arxiv_id: '2211.07014'
+  doi: 10.48550/arXiv.2211.07014
+  submitted: '2022-11-13'
+  updated: '2022-11-13'
+  version: v1
+  metadata_checked_at: '2026-07-15'
   tags:
-    - "Manakov system"
-    - "vector breathers"
-    - "dressing method"
-    - "breather interactions"
-    - "modulation instability"
-
-- id: "arxiv:2607.10870"
-  title: "Loop-type geometric folding of exact solutions of shifted nonlocal NLS and MKdV equations"
+  - Manakov system
+  - vector breathers
+  - dressing method
+  - breather interactions
+  - modulation instability
+- id: arxiv:2607.10870
+  title: Loop-type geometric folding of exact solutions of shifted nonlocal NLS and MKdV equations
   authors:
-    - "Aslı Pekcan"
-  url: "https://arxiv.org/abs/2607.10870"
-  arxiv_id: "2607.10870"
-  doi: "10.48550/arXiv.2607.10870"
-  submitted: "2026-07-12"
-  updated: "2026-07-12"
-  version: "v1"
-  metadata_checked_at: "2026-07-16"
+  - Aslı Pekcan
+  url: https://arxiv.org/abs/2607.10870
+  arxiv_id: '2607.10870'
+  doi: 10.48550/arXiv.2607.10870
+  submitted: '2026-07-12'
+  updated: '2026-07-12'
+  version: v1
+  metadata_checked_at: '2026-07-16'
   tags:
-    - "shifted nonlocal NLS"
-    - "shifted nonlocal mKdV"
-    - "folded waves"
-    - "exact solutions"
-    - "geometric reparametrization"
-
-- id: "doi:10.1016/j.physleta.2021.127793"
-  title: "Soliton solutions of the shifted nonlocal NLS and MKdV equations"
+  - shifted nonlocal NLS
+  - shifted nonlocal mKdV
+  - folded waves
+  - exact solutions
+  - geometric reparametrization
+- id: doi:10.1016/j.physleta.2021.127793
+  title: Soliton solutions of the shifted nonlocal NLS and MKdV equations
   authors:
-    - "Metin Gürses"
-    - "Aslı Pekcan"
-  url: "https://doi.org/10.1016/j.physleta.2021.127793"
-  arxiv_id: "2106.14252"
-  doi: "10.1016/j.physleta.2021.127793"
-  journal: "Physics Letters A"
-  article_number: "127793"
+  - Metin Gürses
+  - Aslı Pekcan
+  url: https://doi.org/10.1016/j.physleta.2021.127793
+  arxiv_id: '2106.14252'
+  doi: 10.1016/j.physleta.2021.127793
+  journal: Physics Letters A
+  article_number: '127793'
   year: 2021
-  submitted: "2021-06-27"
-  updated: "2021-06-29"
-  version: "v2"
-  metadata_checked_at: "2026-07-16"
+  submitted: '2021-06-27'
+  updated: '2021-06-29'
+  version: v2
+  metadata_checked_at: '2026-07-16'
   tags:
-    - "shifted nonlocal NLS"
-    - "shifted nonlocal mKdV"
-    - "one- and two-solitons"
-    - "singularities"
-    - "Hirota method"
-
-- id: "arxiv:2110.01047"
-  title: "Shifted nonlocal Kundu type equations: Soliton solutions"
+  - shifted nonlocal NLS
+  - shifted nonlocal mKdV
+  - one- and two-solitons
+  - singularities
+  - Hirota method
+- id: arxiv:2110.01047
+  title: 'Shifted nonlocal Kundu type equations: Soliton solutions'
   authors:
-    - "Aslı Pekcan"
-  url: "https://arxiv.org/abs/2110.01047"
-  arxiv_id: "2110.01047"
-  doi: "10.48550/arXiv.2110.01047"
-  submitted: "2021-10-03"
-  updated: "2021-12-24"
-  version: "v2"
-  metadata_checked_at: "2026-07-16"
+  - Aslı Pekcan
+  url: https://arxiv.org/abs/2110.01047
+  arxiv_id: '2110.01047'
+  doi: 10.48550/arXiv.2110.01047
+  submitted: '2021-10-03'
+  updated: '2021-12-24'
+  version: v2
+  metadata_checked_at: '2026-07-16'
   tags:
-    - "Kundu-type systems"
-    - "Chen--Lee--Liu equation"
-    - "Gerdjikov--Ivanov equation"
-    - "Kaup--Newell equation"
-    - "shifted nonlocal reductions"
-    - "Hirota method"
-
-- id: "arxiv:1510.00480"
-  title: "Complete integrability of Nonlocal Nonlinear Schrödinger equation"
+  - Kundu-type systems
+  - Chen--Lee--Liu equation
+  - Gerdjikov--Ivanov equation
+  - Kaup--Newell equation
+  - shifted nonlocal reductions
+  - Hirota method
+- id: arxiv:1510.00480
+  title: Complete integrability of Nonlocal Nonlinear Schrödinger equation
   authors:
-    - "V. S. Gerdjikov"
-    - "A. Saxena"
-  url: "https://arxiv.org/abs/1510.00480"
-  arxiv_id: "1510.00480"
-  doi: "10.48550/arXiv.1510.00480"
-  submitted: "2015-10-02"
-  updated: "2016-06-14"
-  version: "v2"
-  metadata_checked_at: "2026-07-16"
+  - V. S. Gerdjikov
+  - A. Saxena
+  url: https://arxiv.org/abs/1510.00480
+  arxiv_id: '1510.00480'
+  doi: 10.48550/arXiv.1510.00480
+  submitted: '2015-10-02'
+  updated: '2016-06-14'
+  version: v2
+  metadata_checked_at: '2026-07-16'
   tags:
-    - "nonlocal NLS hierarchy"
-    - "squared solutions"
-    - "inverse scattering"
-    - "action-angle variables"
-    - "Hamiltonian structures"
-
-- id: "arxiv:2607.13773"
-  title: "Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers"
+  - nonlocal NLS hierarchy
+  - squared solutions
+  - inverse scattering
+  - action-angle variables
+  - Hamiltonian structures
+- id: arxiv:2607.13773
+  title: Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers
   authors:
-    - "Jin-Peng Yang"
-    - "Yan-Hong Qin"
-  url: "https://arxiv.org/abs/2607.13773"
-  arxiv_id: "2607.13773"
-  doi: "10.48550/arXiv.2607.13773"
-  submitted: "2026-07-15"
-  updated: "2026-07-15"
-  version: "v1"
-  metadata_checked_at: "2026-07-17"
+  - Jin-Peng Yang
+  - Yan-Hong Qin
+  url: https://arxiv.org/abs/2607.13773
+  arxiv_id: '2607.13773'
+  doi: 10.48550/arXiv.2607.13773
+  submitted: '2026-07-15'
+  updated: '2026-07-15'
+  version: v1
+  metadata_checked_at: '2026-07-17'
   tags:
-    - "two-component Fokas--Lenells equation"
-    - "plane-wave background"
-    - "Darboux transformation"
-    - "multihump solitons"
-    - "topological zeros and poles"
-    - "noise robustness"
-
-- id: "arxiv:2607.12339"
-  title: "Eigenvalue-Based Approach to Manipulate and Reconstruct Nonlinear Pulses: Towards Soliton Tomography"
+  - two-component Fokas--Lenells equation
+  - plane-wave background
+  - Darboux transformation
+  - multihump solitons
+  - topological zeros and poles
+  - noise robustness
+- id: arxiv:2607.12339
+  title: 'Eigenvalue-Based Approach to Manipulate and Reconstruct Nonlinear Pulses: Towards Soliton Tomography'
   authors:
-    - "Sergey Dremov"
-    - "Rustam Mullyadzhanov"
-    - "Andrey Gelash"
-  url: "https://arxiv.org/abs/2607.12339"
-  arxiv_id: "2607.12339"
-  doi: "10.48550/arXiv.2607.12339"
-  submitted: "2026-07-14"
-  updated: "2026-07-14"
-  version: "v1"
-  metadata_checked_at: "2026-07-17"
+  - Sergey Dremov
+  - Rustam Mullyadzhanov
+  - Andrey Gelash
+  url: https://arxiv.org/abs/2607.12339
+  arxiv_id: '2607.12339'
+  doi: 10.48550/arXiv.2607.12339
+  submitted: '2026-07-14'
+  updated: '2026-07-14'
+  version: v1
+  metadata_checked_at: '2026-07-17'
   tags:
-    - "nonlinear Schrödinger equation"
-    - "inverse scattering"
-    - "discrete eigenvalues"
-    - "eigenvalue response functions"
-    - "inverse problems"
-    - "soliton tomography"
-
-- id: "doi:10.1103/PhysRevLett.134.193804"
-  title: "Manipulation of Strongly Interacting Solitons in Optical Fiber Experiments"
+  - nonlinear Schrödinger equation
+  - inverse scattering
+  - discrete eigenvalues
+  - eigenvalue response functions
+  - inverse problems
+  - soliton tomography
+- id: doi:10.1103/PhysRevLett.134.193804
+  title: Manipulation of Strongly Interacting Solitons in Optical Fiber Experiments
   authors:
-    - "Alexandre Mucci"
-    - "Pierre Suret"
-    - "François Copie"
-    - "Stephane Randoux"
-    - "Rustam Mullyadzhanov"
-    - "Andrey Gelash"
-  url: "https://doi.org/10.1103/PhysRevLett.134.193804"
-  arxiv_id: "2409.16090"
-  doi: "10.1103/PhysRevLett.134.193804"
-  journal: "Physical Review Letters"
-  volume: "134"
-  article_number: "193804"
+  - Alexandre Mucci
+  - Pierre Suret
+  - François Copie
+  - Stephane Randoux
+  - Rustam Mullyadzhanov
+  - Andrey Gelash
+  url: https://doi.org/10.1103/PhysRevLett.134.193804
+  arxiv_id: '2409.16090'
+  doi: 10.1103/PhysRevLett.134.193804
+  journal: Physical Review Letters
+  volume: '134'
+  article_number: '193804'
   year: 2025
-  published: "2025-05-15"
-  submitted: "2024-09-24"
-  updated: "2024-09-24"
-  version: "v1"
-  metadata_checked_at: "2026-07-17"
+  published: '2025-05-15'
+  submitted: '2024-09-24'
+  updated: '2024-09-24'
+  version: v1
+  metadata_checked_at: '2026-07-17'
   tags:
-    - "nonlinear Schrödinger equation"
-    - "inverse scattering perturbation theory"
-    - "eigenvalue response functions"
-    - "strongly interacting solitons"
-    - "optical fiber experiment"
-    - "spectral control"
-
-- id: "arxiv:2508.17534"
-  title: "A vectorial Darboux transformation for integrable matrix versions of the Fokas-Lenells equation"
+  - nonlinear Schrödinger equation
+  - inverse scattering perturbation theory
+  - eigenvalue response functions
+  - strongly interacting solitons
+  - optical fiber experiment
+  - spectral control
+- id: arxiv:2508.17534
+  title: A vectorial Darboux transformation for integrable matrix versions of the Fokas-Lenells equation
   authors:
-    - "Folkert Müller-Hoissen"
-    - "Rusuo Ye"
-  url: "https://arxiv.org/abs/2508.17534"
-  arxiv_id: "2508.17534"
-  doi: "10.48550/arXiv.2508.17534"
-  submitted: "2025-08-24"
-  updated: "2026-02-11"
-  version: "v2"
-  metadata_checked_at: "2026-07-17"
+  - Folkert Müller-Hoissen
+  - Rusuo Ye
+  url: https://arxiv.org/abs/2508.17534
+  arxiv_id: '2508.17534'
+  doi: 10.48550/arXiv.2508.17534
+  submitted: '2025-08-24'
+  updated: '2026-02-11'
+  version: v2
+  metadata_checked_at: '2026-07-17'
   tags:
-    - "matrix Fokas--Lenells equation"
-    - "negative Kaup--Newell flow"
-    - "vectorial binary Darboux transformation"
-    - "plane-wave background"
-    - "rogue waves"
-    - "beating solitons"
-
-- id: "doi:10.1016/j.nonrwa.2017.08.013"
-  title: "General soliton solutions to a coupled Fokas-Lenells equation"
+  - matrix Fokas--Lenells equation
+  - negative Kaup--Newell flow
+  - vectorial binary Darboux transformation
+  - plane-wave background
+  - rogue waves
+  - beating solitons
+- id: doi:10.1016/j.nonrwa.2017.08.013
+  title: General soliton solutions to a coupled Fokas-Lenells equation
   authors:
-    - "Liming Ling"
-    - "Bao-Feng Feng"
-    - "Zuonong Zhu"
-  url: "https://doi.org/10.1016/j.nonrwa.2017.08.013"
-  arxiv_id: "1611.10057"
-  doi: "10.1016/j.nonrwa.2017.08.013"
-  journal: "Nonlinear Analysis: Real World Applications"
-  volume: "40"
-  pages: "185-214"
+  - Liming Ling
+  - Bao-Feng Feng
+  - Zuonong Zhu
+  url: https://doi.org/10.1016/j.nonrwa.2017.08.013
+  arxiv_id: '1611.10057'
+  doi: 10.1016/j.nonrwa.2017.08.013
+  journal: 'Nonlinear Analysis: Real World Applications'
+  volume: '40'
+  pages: 185-214
   year: 2018
-  published: "2018-04"
-  submitted: "2016-11-30"
-  updated: "2016-11-30"
-  version: "v1"
-  metadata_checked_at: "2026-07-17"
+  published: 2018-04
+  submitted: '2016-11-30'
+  updated: '2016-11-30'
+  version: v1
+  metadata_checked_at: '2026-07-17'
   tags:
-    - "coupled Fokas--Lenells equation"
-    - "vector Kaup--Newell hierarchy"
-    - "multi-Hamiltonian structure"
-    - "generalized Darboux transformation"
-    - "bright-dark solitons"
-    - "multi-soliton asymptotics"
-
-- id: "doi:10.2991/jnmp.k.200922.003"
-  title: "Inverse Scattering Transformation for the Fokas–Lenells Equation with Nonzero Boundary Conditions"
+  - coupled Fokas--Lenells equation
+  - vector Kaup--Newell hierarchy
+  - multi-Hamiltonian structure
+  - generalized Darboux transformation
+  - bright-dark solitons
+  - multi-soliton asymptotics
+- id: doi:10.2991/jnmp.k.200922.003
+  title: Inverse Scattering Transformation for the Fokas–Lenells Equation with Nonzero Boundary Conditions
   authors:
-    - "Yi Zhao"
-    - "Engui Fan"
-  url: "https://doi.org/10.2991/jnmp.k.200922.003"
-  arxiv_id: "1912.12400"
-  doi: "10.2991/jnmp.k.200922.003"
-  journal: "Journal of Nonlinear Mathematical Physics"
-  volume: "28"
-  issue: "1"
-  pages: "38-52"
+  - Yi Zhao
+  - Engui Fan
+  url: https://doi.org/10.2991/jnmp.k.200922.003
+  arxiv_id: '1912.12400'
+  doi: 10.2991/jnmp.k.200922.003
+  journal: Journal of Nonlinear Mathematical Physics
+  volume: '28'
+  issue: '1'
+  pages: 38-52
   year: 2021
-  published: "2020-12-10"
-  submitted: "2019-12-28"
-  updated: "2019-12-28"
-  version: "v1"
-  metadata_checked_at: "2026-07-18"
+  published: '2020-12-10'
+  submitted: '2019-12-28'
+  updated: '2019-12-28'
+  version: v1
+  metadata_checked_at: '2026-07-18'
   tags:
-    - "Fokas--Lenells equation"
-    - "nonzero boundary conditions"
-    - "inverse scattering"
-    - "Riemann--Hilbert problem"
-    - "Jost solutions"
-    - "N-soliton solutions"
-
-- id: "doi:10.1016/j.jde.2015.02.046"
-  title: "Long-time asymptotics for the Fokas–Lenells equation with decaying initial value problem: Without solitons"
+  - Fokas--Lenells equation
+  - nonzero boundary conditions
+  - inverse scattering
+  - Riemann--Hilbert problem
+  - Jost solutions
+  - N-soliton solutions
+- id: doi:10.1016/j.jde.2015.02.046
+  title: 'Long-time asymptotics for the Fokas–Lenells equation with decaying initial value problem: Without solitons'
   authors:
-    - "Jian Xu"
-    - "Engui Fan"
-  url: "https://doi.org/10.1016/j.jde.2015.02.046"
-  arxiv_id: "1308.0755"
-  doi: "10.1016/j.jde.2015.02.046"
-  journal: "Journal of Differential Equations"
-  volume: "259"
-  issue: "3"
-  pages: "1098-1148"
+  - Jian Xu
+  - Engui Fan
+  url: https://doi.org/10.1016/j.jde.2015.02.046
+  arxiv_id: '1308.0755'
+  doi: 10.1016/j.jde.2015.02.046
+  journal: Journal of Differential Equations
+  volume: '259'
+  issue: '3'
+  pages: 1098-1148
   year: 2015
-  published: "2015-08-05"
-  submitted: "2013-08-03"
-  updated: "2013-08-03"
-  version: "v1"
-  metadata_checked_at: "2026-07-18"
-  metadata_note: "The arXiv preprint is titled 'Leading-order temporal asymptotics of the Fokas-Lenells Equation without solitons'; the registry uses the version-of-record journal title."
+  published: '2015-08-05'
+  submitted: '2013-08-03'
+  updated: '2013-08-03'
+  version: v1
+  metadata_checked_at: '2026-07-18'
+  metadata_note: The arXiv preprint is titled 'Leading-order temporal asymptotics of the Fokas-Lenells Equation
+    without solitons'; the registry uses the version-of-record journal title.
   tags:
-    - "Fokas--Lenells equation"
-    - "solitonless sector"
-    - "Riemann--Hilbert problem"
-    - "Deift--Zhou method"
-    - "long-time asymptotics"
-    - "continuous spectrum"
-
-- id: "doi:10.1016/j.jde.2021.11.045"
-  title: "Long-time asymptotics for the focusing Fokas-Lenells equation in the solitonic region of space-time"
+  - Fokas--Lenells equation
+  - solitonless sector
+  - Riemann--Hilbert problem
+  - Deift--Zhou method
+  - long-time asymptotics
+  - continuous spectrum
+- id: doi:10.1016/j.jde.2021.11.045
+  title: Long-time asymptotics for the focusing Fokas-Lenells equation in the solitonic region of space-time
   authors:
-    - "Qiaoyuan Cheng"
-    - "Engui Fan"
-  url: "https://doi.org/10.1016/j.jde.2021.11.045"
-  arxiv_id: "2010.08714"
-  doi: "10.1016/j.jde.2021.11.045"
-  journal: "Journal of Differential Equations"
-  volume: "309"
-  pages: "883-948"
+  - Qiaoyuan Cheng
+  - Engui Fan
+  url: https://doi.org/10.1016/j.jde.2021.11.045
+  arxiv_id: '2010.08714'
+  doi: 10.1016/j.jde.2021.11.045
+  journal: Journal of Differential Equations
+  volume: '309'
+  pages: 883-948
   year: 2022
-  published: "2022-02-05"
-  submitted: "2020-10-17"
-  updated: "2022-03-02"
-  version: "v3"
-  metadata_checked_at: "2026-07-18"
+  published: '2022-02-05'
+  submitted: '2020-10-17'
+  updated: '2022-03-02'
+  version: v3
+  metadata_checked_at: '2026-07-18'
   tags:
-    - "focusing Fokas--Lenells equation"
-    - "soliton resolution"
-    - "Riemann--Hilbert problem"
-    - "dbar steepest descent"
-    - "long-time asymptotics"
-    - "discrete spectrum"
-
-- id: "arxiv:1710.06563"
-  title: "Long-time asymptotics for initial-boundary value problems of integrable Fokas-Lenells equation on the half-line"
+  - focusing Fokas--Lenells equation
+  - soliton resolution
+  - Riemann--Hilbert problem
+  - dbar steepest descent
+  - long-time asymptotics
+  - discrete spectrum
+- id: arxiv:1710.06563
+  title: Long-time asymptotics for initial-boundary value problems of integrable Fokas-Lenells equation on the half-line
   authors:
-    - "Shuyan Chen"
-    - "Zhenya Yan"
-  url: "https://arxiv.org/abs/1710.06563"
-  arxiv_id: "1710.06563"
-  doi: "10.48550/arXiv.1710.06563"
-  submitted: "2017-10-18"
-  updated: "2017-12-13"
-  version: "v2"
-  metadata_checked_at: "2026-07-18"
+  - Shuyan Chen
+  - Zhenya Yan
+  url: https://arxiv.org/abs/1710.06563
+  arxiv_id: '1710.06563'
+  doi: 10.48550/arXiv.1710.06563
+  submitted: '2017-10-18'
+  updated: '2017-12-13'
+  version: v2
+  metadata_checked_at: '2026-07-18'
   tags:
-    - "Fokas--Lenells equation"
-    - "half-line"
-    - "initial-boundary value problem"
-    - "Riemann--Hilbert problem"
-    - "nonlinear steepest descent"
-    - "long-time asymptotics"
-
-- id: "doi:10.1016/j.physd.2025.134706"
-  title: "On the multi-component Fokas–Lenells system: KP reductions and various soliton solutions"
+  - Fokas--Lenells equation
+  - half-line
+  - initial-boundary value problem
+  - Riemann--Hilbert problem
+  - nonlinear steepest descent
+  - long-time asymptotics
+- id: doi:10.1016/j.physd.2025.134706
+  title: 'On the multi-component Fokas–Lenells system: KP reductions and various soliton solutions'
   authors:
-    - "Han-Han Sheng"
-    - "Bao-Feng Feng"
-    - "Guo-Fu Yu"
-  url: "https://doi.org/10.1016/j.physd.2025.134706"
+  - Han-Han Sheng
+  - Bao-Feng Feng
+  - Guo-Fu Yu
+  url: https://doi.org/10.1016/j.physd.2025.134706
   arxiv_id: null
-  doi: "10.1016/j.physd.2025.134706"
-  journal: "Physica D: Nonlinear Phenomena"
-  article_number: "134706"
+  doi: 10.1016/j.physd.2025.134706
+  journal: 'Physica D: Nonlinear Phenomena'
+  article_number: '134706'
   year: 2025
-  metadata_checked_at: "2026-07-19"
+  metadata_checked_at: '2026-07-19'
   tags:
-    - "multi-component Fokas--Lenells system"
-    - "KP--Toda reduction"
-    - "Gram determinants"
-    - "dark solitons"
-    - "resonant breathers"
-
-- id: "doi:10.1016/j.physd.2024.134111"
-  title: "Rogue waves and their patterns for the coupled Fokas-Lenells equations"
+  - multi-component Fokas--Lenells system
+  - KP--Toda reduction
+  - Gram determinants
+  - dark solitons
+  - resonant breathers
+- id: doi:10.1016/j.physd.2024.134111
+  title: Rogue waves and their patterns for the coupled Fokas-Lenells equations
   authors:
-    - "Liming Ling"
-    - "Huajie Su"
-  url: "https://doi.org/10.1016/j.physd.2024.134111"
-  arxiv_id: "2307.02008"
-  doi: "10.1016/j.physd.2024.134111"
-  journal: "Physica D: Nonlinear Phenomena"
-  volume: "461"
-  article_number: "134111"
+  - Liming Ling
+  - Huajie Su
+  url: https://doi.org/10.1016/j.physd.2024.134111
+  arxiv_id: '2307.02008'
+  doi: 10.1016/j.physd.2024.134111
+  journal: 'Physica D: Nonlinear Phenomena'
+  volume: '461'
+  article_number: '134111'
   year: 2024
-  published: "2024-05"
-  submitted: "2023-07-05"
-  version: "v1"
-  metadata_checked_at: "2026-07-19"
+  published: 2024-05
+  submitted: '2023-07-05'
+  version: v1
+  metadata_checked_at: '2026-07-19'
   tags:
-    - "coupled Fokas--Lenells equation"
-    - "rogue-wave patterns"
-    - "Darboux transformation"
-    - "Okamoto polynomials"
-    - "asymptotic decomposition"
-
-- id: "doi:10.1098/rspa.2018.0806"
-  title: "General rogue wave solutions of the coupled Fokas–Lenells equations and non-recursive Darboux transformation"
+  - coupled Fokas--Lenells equation
+  - rogue-wave patterns
+  - Darboux transformation
+  - Okamoto polynomials
+  - asymptotic decomposition
+- id: doi:10.1098/rspa.2018.0806
+  title: General rogue wave solutions of the coupled Fokas–Lenells equations and non-recursive Darboux transformation
   authors:
-    - "Yanlin Ye"
-    - "Yi Zhou"
-    - "Shihua Chen"
-    - "Fabio Baronio"
-    - "Philippe Grelu"
-  url: "https://doi.org/10.1098/rspa.2018.0806"
+  - Yanlin Ye
+  - Yi Zhou
+  - Shihua Chen
+  - Fabio Baronio
+  - Philippe Grelu
+  url: https://doi.org/10.1098/rspa.2018.0806
   arxiv_id: null
-  doi: "10.1098/rspa.2018.0806"
-  journal: "Proceedings of the Royal Society A"
-  volume: "475"
-  issue: "2224"
-  article_number: "20180806"
+  doi: 10.1098/rspa.2018.0806
+  journal: Proceedings of the Royal Society A
+  volume: '475'
+  issue: '2224'
+  article_number: '20180806'
   year: 2019
-  published: "2019-04-17"
-  metadata_checked_at: "2026-07-19"
+  published: '2019-04-17'
+  metadata_checked_at: '2026-07-19'
   tags:
-    - "coupled Fokas--Lenells equation"
-    - "non-recursive Darboux transformation"
-    - "higher-order rogue waves"
-    - "double and triple roots"
-    - "Peregrine solitons"
-
-- id: "doi:10.1016/j.nonrwa.2016.06.006"
-  title: "Solitons, breathers and rogue waves for the coupled Fokas–Lenells system via Darboux transformation"
+  - coupled Fokas--Lenells equation
+  - non-recursive Darboux transformation
+  - higher-order rogue waves
+  - double and triple roots
+  - Peregrine solitons
+- id: doi:10.1016/j.nonrwa.2016.06.006
+  title: Solitons, breathers and rogue waves for the coupled Fokas–Lenells system via Darboux transformation
   authors:
-    - "Yong Zhang"
-    - "Jia-Wen Yang"
-    - "Kwok Wing Chow"
-    - "Chi-Fai Wu"
-  url: "https://doi.org/10.1016/j.nonrwa.2016.06.006"
+  - Yong Zhang
+  - Jia-Wen Yang
+  - Kwok Wing Chow
+  - Chi-Fai Wu
+  url: https://doi.org/10.1016/j.nonrwa.2016.06.006
   arxiv_id: null
-  doi: "10.1016/j.nonrwa.2016.06.006"
-  journal: "Nonlinear Analysis: Real World Applications"
-  volume: "33"
-  pages: "237-252"
+  doi: 10.1016/j.nonrwa.2016.06.006
+  journal: 'Nonlinear Analysis: Real World Applications'
+  volume: '33'
+  pages: 237-252
   year: 2017
-  published: "2017-02"
-  metadata_checked_at: "2026-07-19"
+  published: 2017-02
+  metadata_checked_at: '2026-07-19'
   tags:
-    - "coupled Fokas--Lenells system"
-    - "n-fold Darboux transformation"
-    - "higher-order solitons"
-    - "breathers"
-    - "rogue waves"
-
-
-
-- id: "doi:10.1007/JHEP07(2026)120"
-  title: "Integrability in three-dimensional gravity: eigenfunction-forced KdV flows"
+  - coupled Fokas--Lenells system
+  - n-fold Darboux transformation
+  - higher-order solitons
+  - breathers
+  - rogue waves
+- id: doi:10.1007/JHEP07(2026)120
+  title: 'Integrability in three-dimensional gravity: eigenfunction-forced KdV flows'
   authors:
-    - "Hamed Adami"
-    - "Anouchah Latifi"
-  url: "https://doi.org/10.1007/JHEP07(2026)120"
-  arxiv_id: "2510.10519"
-  doi: "10.1007/JHEP07(2026)120"
-  journal: "Journal of High Energy Physics"
-  volume: "2026"
-  article_number: "120"
+  - Hamed Adami
+  - Anouchah Latifi
+  url: https://doi.org/10.1007/JHEP07(2026)120
+  arxiv_id: '2510.10519'
+  doi: 10.1007/JHEP07(2026)120
+  journal: Journal of High Energy Physics
+  volume: '2026'
+  article_number: '120'
   year: 2026
-  published: "2026-07-13"
-  submitted: "2025-10-12"
-  updated: "2026-04-13"
-  version: "v3"
-  metadata_checked_at: "2026-07-20"
+  published: '2026-07-13'
+  submitted: '2025-10-12'
+  updated: '2026-04-13'
+  version: v3
+  metadata_checked_at: '2026-07-20'
   tags:
-    - "three-dimensional gravity"
-    - "Chern--Simons theory"
-    - "eigenfunction-forced KdV"
-    - "inverse scattering"
-    - "Gelfand--Levitan--Marchenko equation"
-
-
-- id: "doi:10.1007/JHEP07(2026)123"
-  title: "Integrable deformations of the Breitenlohner--Maison model from 4d Chern--Simons theory"
+  - three-dimensional gravity
+  - Chern--Simons theory
+  - eigenfunction-forced KdV
+  - inverse scattering
+  - Gelfand--Levitan--Marchenko equation
+- id: doi:10.1007/JHEP07(2026)123
+  title: Integrable deformations of the Breitenlohner--Maison model from 4d Chern--Simons theory
   authors:
-    - "Meer Ashwinkumar"
-    - "Matthias Blau"
-  url: "https://doi.org/10.1007/JHEP07(2026)123"
-  arxiv_id: "2604.26452"
-  doi: "10.1007/JHEP07(2026)123"
-  journal: "Journal of High Energy Physics"
-  volume: "2026"
-  article_number: "123"
+  - Meer Ashwinkumar
+  - Matthias Blau
+  url: https://doi.org/10.1007/JHEP07(2026)123
+  arxiv_id: '2604.26452'
+  doi: 10.1007/JHEP07(2026)123
+  journal: Journal of High Energy Physics
+  volume: '2026'
+  article_number: '123'
   year: 2026
-  published: "2026-07-13"
-  submitted: "2026-04-29"
-  updated: "2026-06-04"
-  version: "v2"
-  metadata_checked_at: "2026-07-20"
+  published: '2026-07-13'
+  submitted: '2026-04-29'
+  updated: '2026-06-04'
+  version: v2
+  metadata_checked_at: '2026-07-20'
   tags:
-    - "Breitenlohner--Maison model"
-    - "4d Chern--Simons theory"
-    - "Yang--Baxter deformation"
-    - "integrable sigma model"
-    - "general relativity"
-
-
-- id: "doi:10.1007/s10955-026-03663-6"
-  title: "A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges"
+  - Breitenlohner--Maison model
+  - 4d Chern--Simons theory
+  - Yang--Baxter deformation
+  - integrable sigma model
+  - general relativity
+- id: doi:10.1007/s10955-026-03663-6
+  title: A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges
   authors:
-    - "Maksim Kosmakov"
-  url: "https://doi.org/10.1007/s10955-026-03663-6"
-  arxiv_id: "2510.22120"
-  doi: "10.1007/s10955-026-03663-6"
-  journal: "Journal of Statistical Physics"
-  volume: "193"
-  article_number: "93"
+  - Maksim Kosmakov
+  url: https://doi.org/10.1007/s10955-026-03663-6
+  arxiv_id: '2510.22120'
+  doi: 10.1007/s10955-026-03663-6
+  journal: Journal of Statistical Physics
+  volume: '193'
+  article_number: '93'
   year: 2026
-  published: "2026-07-16"
-  submitted: "2025-10-25"
-  updated: "2026-04-07"
-  version: "v2"
-  metadata_checked_at: "2026-07-20"
+  published: '2026-07-16'
+  submitted: '2025-10-25'
+  updated: '2026-04-07'
+  version: v2
+  metadata_checked_at: '2026-07-20'
   tags:
-    - "HCIZ integral"
-    - "non-intersecting Brownian bridges"
-    - "matrix model"
-    - "Riemann--Hilbert problem"
-    - "2D Toda tau function"
+  - HCIZ integral
+  - non-intersecting Brownian bridges
+  - matrix model
+  - Riemann--Hilbert problem
+  - 2D Toda tau function
+- id: arxiv:2606.22438
+  title: Long-time asymptotics of a full arbitrary-genus dark soliton gas for the defocusing nonlinear Schrödinger
+    equation
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2606.22438
+  arxiv_id: '2606.22438'
+  doi: 10.48550/arXiv.2606.22438
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Riemann--Hilbert problem
+  - spectral curve
+- id: arxiv:2606.24925
+  title: Invariants for a family of discrete equations with the Laurent property
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2606.24925
+  arxiv_id: '2606.24925'
+  doi: 10.48550/arXiv.2606.24925
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - integrable discretization
+  - Laurent property
+- id: arxiv:2606.23167
+  title: Bihamiltonian structure of the (n,1)-type rational reductions of the 2D-Toda hierarchy
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2606.23167
+  arxiv_id: '2606.23167'
+  doi: 10.48550/arXiv.2606.23167
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Hamiltonian structure
+  - Poisson structure
+- id: arxiv:2606.24662
+  title: A symmetry reduction of the Painlevé IV hierarchy to the Flaschka--Newell Painlevé II hierarchy
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2606.24662
+  arxiv_id: '2606.24662'
+  doi: 10.48550/arXiv.2606.24662
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Lax pair
+  - Hamiltonian structure
+- id: arxiv:2606.24273
+  title: Arithmetic Supports of Lax Difference Hierarchies
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2606.24273
+  arxiv_id: '2606.24273'
+  doi: 10.48550/arXiv.2606.24273
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Lax pair
+  - finite-gap
+- id: doi:10.1103/hvzz-8zmt
+  title: Noninvertible Kramers-Wannier duality symmetries for the discrete-time quantum Ising chain
+  authors:
+  - Akash Sinha
+  - Pramod Padmanabhan
+  - Vladimir Korepin
+  url: https://doi.org/10.1103/hvzz-8zmt
+  arxiv_id: '2511.03947'
+  doi: 10.1103/hvzz-8zmt
+  submitted: '2025-11-06'
+  updated: '2026-06-25'
+  published: '2026-06-23'
+  journal: Physical Review B
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - inverse scattering
+  - integrable discretization
+- id: arxiv:2606.25846
+  title: Tri-Hamiltonian structure of an asymmetric generalized Ablowitz-Ladik hierarchy and a Frobenius manifold
+  authors:
+  - Hanxue Zhang
+  - Qiulan Zhao
+  - Xinyue Li
+  url: https://arxiv.org/abs/2606.25846
+  arxiv_id: '2606.25846'
+  doi: 10.48550/arXiv.2606.25846
+  submitted: '2026-06-24'
+  updated: '2026-06-24'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Hamiltonian structure
+  - Poisson structure
+- id: arxiv:2606.25802
+  title: Global Results on the Classification of Two-Component Integrable Evolutionary Systems
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2606.25802
+  arxiv_id: '2606.25802'
+  doi: 10.48550/arXiv.2606.25802
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Global Results on
+- id: doi:10.1103/g7hk-tlq1
+  title: 'Taxonomy of integrable and ground-state solvable models: Jastrow wave functions on graphs and parent Hamiltonians'
+  authors:
+  - Nilanjan Sasmal
+  - Adolfo del Campo
+  url: https://doi.org/10.1103/g7hk-tlq1
+  arxiv_id: '2602.22315'
+  doi: 10.1103/g7hk-tlq1
+  submitted: '2026-02-25'
+  updated: '2026-06-24'
+  published: '2026-06-24'
+  journal: Physical Review B
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Hamiltonian structure
+- id: arxiv:2606.27125
+  title: 'The Ising Model Coupled to 2D Gravity: Critical Partition Function'
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2606.27125
+  arxiv_id: '2606.27125'
+  doi: 10.48550/arXiv.2606.27125
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Riemann--Hilbert problem
+  - tau function
+- id: arxiv:2606.26526
+  title: Integrable pentagram-type maps on polyhedra via partial difference operators
+  authors:
+  - Bao Wang
+  url: https://arxiv.org/abs/2606.26526
+  arxiv_id: '2606.26526'
+  doi: 10.48550/arXiv.2606.26526
+  submitted: '2026-06-25'
+  updated: '2026-06-25'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Lax pair
+  - Poisson structure
+- id: arxiv:2606.26510
+  title: Symmetries of the Generalized Yang--Baxter Equations
+  authors:
+  - Pramod Padmanabhan
+  - Somnath Maity
+  - Akash Sinha
+  - Vladimir Korepin
+  url: https://arxiv.org/abs/2606.26510
+  arxiv_id: '2606.26510'
+  doi: 10.48550/arXiv.2606.26510
+  submitted: '2026-06-25'
+  updated: '2026-06-25'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Yang--Baxter equation
+  - Hamiltonian structure
+- id: arxiv:2606.28579
+  title: Transition asymptotics for the real solutions of the sinh-Gordon Painlevé III equation
+  authors:
+  - Kenta Miyahara
+  - Maxim L. Yattselev
+  url: https://arxiv.org/abs/2606.28579
+  arxiv_id: '2606.28579'
+  doi: 10.48550/arXiv.2606.28579
+  submitted: '2026-06-26'
+  updated: '2026-06-26'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Painlevé
+- id: arxiv:2606.28250
+  title: Perturbation theory for kinks of the defocusing modified Korteweg--de Vries equation
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2606.28250
+  arxiv_id: '2606.28250'
+  doi: 10.48550/arXiv.2606.28250
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Perturbation theory for
+- id: arxiv:2606.29103
+  title: Reduced Trilinear Reformulation of the Nakamura Conjecture
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2606.29103
+  arxiv_id: '2606.29103'
+  doi: 10.48550/arXiv.2606.29103
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Reduced Trilinear Reformulation
+- id: arxiv:2606.29263
+  title: Conserved quantities of discretizations by polarization
+  authors:
+  - Noah Gießing
+  - Yuri B. Suris
+  url: https://arxiv.org/abs/2606.29263
+  arxiv_id: '2606.29263'
+  doi: 10.48550/arXiv.2606.29263
+  submitted: '2026-06-28'
+  updated: '2026-06-28'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - integrable discretization
+- id: arxiv:2606.29156
+  title: Tritronquée Painlevé II asymptotics for the focusing nonlinear Schrödinger equation with nonzero boundary
+    conditions
+  authors:
+  - Haibing Zhang
+  - Xianguo Geng
+  - Kedong Wang
+  url: https://arxiv.org/abs/2606.29156
+  arxiv_id: '2606.29156'
+  doi: 10.48550/arXiv.2606.29156
+  submitted: '2026-06-28'
+  updated: '2026-07-05'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Riemann--Hilbert problem
+  - Painlevé
+- id: arxiv:2606.30717
+  title: 'The auxiliary-deformed Breitenlohner--Maison model: duality frames and higher-dimensional origin'
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2606.30717
+  arxiv_id: '2606.30717'
+  doi: 10.48550/arXiv.2606.30717
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - The auxiliary-deformed Breitenlohner--Maison
+- id: arxiv:2607.01493
+  title: 'Learning Lax Pairs: Revisiting the Classical Paradigm'
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2607.01493
+  arxiv_id: '2607.01493'
+  doi: 10.48550/arXiv.2607.01493
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Lax pair
+- id: arxiv:2607.01545
+  title: Learning Effective Soliton Dynamics from Scattering Data
+  authors:
+  - Seth Minor
+  - Vanja Dukic
+  - David M. Bortz
+  url: https://arxiv.org/abs/2607.01545
+  arxiv_id: '2607.01545'
+  doi: 10.48550/arXiv.2607.01545
+  submitted: '2026-07-01'
+  updated: '2026-07-01'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - inverse scattering
+- id: arxiv:2607.02093
+  title: Open-boundary integrable quantum circuits with different geometries
+  authors:
+  - Miguel García Fernández
+  - Chiara Paletta
+  - Ana L. Retore
+  url: https://arxiv.org/abs/2607.02093
+  arxiv_id: '2607.02093'
+  doi: 10.48550/arXiv.2607.02093
+  submitted: '2026-07-02'
+  updated: '2026-07-02'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Yang--Baxter equation
+  - transfer matrix
+- id: arxiv:2607.03555
+  title: Maximal Densities of Finite-Gap Solutions of the Sine-Gordon Equation
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2607.03555
+  arxiv_id: '2607.03555'
+  doi: 10.48550/arXiv.2607.03555
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Lax pair
+  - Yang--Baxter equation
+- id: doi:10.1103/n2hm-lk94
+  title: Integrable black hole dynamics in the asymptotic structure of AdS$_{3}$
+  authors:
+  - Marcela Cárdenas
+  - Francisco Correa
+  - Miguel Pino
+  url: https://doi.org/10.1103/n2hm-lk94
+  arxiv_id: '2504.20292'
+  doi: 10.1103/n2hm-lk94
+  submitted: '2025-04-28'
+  updated: '2025-04-28'
+  published: '2026-07-06'
+  journal: Physical Review D
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Integrable black hole
+- id: arxiv:2607.05681
+  title: Lund--Regge Geometry and Integrability of a Generalized Konno--Oono System
+  authors:
+  - Jose Luis Diaz Palencia
+  - Enrique G. Reyes
+  url: https://arxiv.org/abs/2607.05681
+  arxiv_id: '2607.05681'
+  doi: 10.48550/arXiv.2607.05681
+  submitted: '2026-07-06'
+  updated: '2026-07-06'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - conservation laws
+- id: arxiv:2607.06119
+  title: Wave Kinetics and Thermalization in Kadomtsev--Petviashvili-I System
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2607.06119
+  arxiv_id: '2607.06119'
+  doi: 10.48550/arXiv.2607.06119
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Wave Kinetics and
+- id: arxiv:2504.05200
+  title: Affine hypersurfaces and superintegrable systems
+  authors:
+  - Vicente Cortés
+  - Andreas Vollmer
+  url: https://arxiv.org/abs/2504.05200
+  arxiv_id: '2504.05200'
+  doi: 10.48550/arXiv.2504.05200
+  submitted: '2025-04-07'
+  updated: '2026-06-09'
+  published: '2026-07-07'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Affine hypersurfaces and
+- id: arxiv:2607.06942
+  title: Invariant Measures for Soliton Systems Generated by Mealy Automata
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2607.06942
+  arxiv_id: '2607.06942'
+  doi: 10.48550/arXiv.2607.06942
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Invariant Measures for
+- id: arxiv:2607.06980
+  title: On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2607.06980
+  arxiv_id: '2607.06980'
+  doi: 10.48550/arXiv.2607.06980
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Lax pair
+  - Painlevé
+- id: arxiv:2607.07345
+  title: Spin-current-controlled anisotropic deformation of magnetic lump solitons
+  authors:
+  - Xiao-Qi Cui
+  - Xin-Wei Jin
+  - Shiyi Wang
+  - Xiao-Yong Wen
+  - Zhan-Ying Yang
+  url: https://arxiv.org/abs/2607.07345
+  arxiv_id: '2607.07345'
+  doi: 10.48550/arXiv.2607.07345
+  submitted: '2026-07-08'
+  updated: '2026-07-08'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Darboux transformation
+- id: arxiv:2607.07617
+  title: Loop Equations Characterize Random Matrix Statistics
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2607.07617
+  arxiv_id: '2607.07617'
+  doi: 10.48550/arXiv.2607.07617
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - loop equations
+- id: doi:10.1103/y66t-t8zw
+  title: Integrability from a single conservation law in quantum spin chains
+  authors:
+  - Akihiro Hokkyo
+  url: https://doi.org/10.1103/y66t-t8zw
+  arxiv_id: '2508.20713'
+  doi: 10.1103/y66t-t8zw
+  submitted: '2025-08-28'
+  updated: '2026-02-02'
+  published: '2026-07-08'
+  journal: Physical Review B
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Yang--Baxter equation
+  - conservation laws
+- id: arxiv:2607.08901
+  title: Integrability of Cauchy problems for discrete conformal maps and circle patterns
+  authors:
+  - Maxim Arnold
+  - Anton Izosimov
+  url: https://arxiv.org/abs/2607.08901
+  arxiv_id: '2607.08901'
+  doi: 10.48550/arXiv.2607.08901
+  submitted: '2026-07-09'
+  updated: '2026-07-09'
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - integrable discretization
+- id: arxiv:2607.09180
+  title: Dispersionless modified DKP hierarchy as the Yang--Baxter equation
+  authors:
+  - Author metadata unavailable
+  url: https://arxiv.org/abs/2607.09180
+  arxiv_id: '2607.09180'
+  doi: 10.48550/arXiv.2607.09180
+  metadata_checked_at: '2026-07-20'
+  tags:
+  - Yang--Baxter equation
+  - tau function

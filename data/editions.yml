@@ -1,637 +1,1016 @@
 # Recommendation history and editorial annotations.
-# Bibliographic facts live in data/papers.yml; this file records when and why a
-# paper was featured. Roles are intentionally stable across editions.
+# The enabled frontier block drives the public 30-day radar.
 
 weeks:
-  - id: "2026-W29"
-    date_range: "2026-07-13 至 2026-07-19"
-    summary: >-
-      本周从 non-Abelian DNLS、fully discrete Gerdjikov--Ivanov、Manakov vector breathers、
-      shifted nonlocal reductions 与谱数据操控，推进到 Fokas--Lenells 的散射渐近、
-      多分量 KP--Toda 约化、coupled rogue-wave 通式及 Okamoto 图案分解。
-    tags:
-      - "DNLS"
-      - "Gerdjikov--Ivanov equation"
-      - "Manakov system"
-      - "Fokas--Lenells equation"
-      - "nonzero boundary conditions"
-      - "inverse scattering"
-      - "Riemann--Hilbert problem"
-      - "nonlinear steepest descent"
-      - "soliton resolution"
-      - "half-line"
-      - "Darboux transformation"
-      - "spectral data"
-      - "KP--Toda reduction"
-      - "rogue-wave patterns"
-      - "Okamoto polynomials"
-  - id: "2026-W28"
-    date_range: "2026-07-06 至 2026-07-12"
-    summary: >-
-      本周集中在 DNLS、coupled NLS、Riemann--Hilbert 渐近、有限带退化与
-      soliton gas，同时补入 Fokas--Lenells、Darboux transformation 和稳定性材料。
-    tags:
-      - "DNLS"
-      - "coupled NLS"
-      - "Riemann--Hilbert problem"
-      - "finite-gap"
-      - "soliton gas"
-      - "Fokas--Lenells"
-
+- id: 2026-W25
+  date_range: 2026-06-20 至 2026-06-21
+  summary: 任意亏格暗孤子气体渐近与 Laurent 离散方程不变量。
+  screening:
+    sources_checked:
+    - arXiv nlin.SI / nlin.PS 与跨分类结构词、结果词检索
+    - 期刊 online-first、DOI 与出版商页面核验
+    selected: 2
+    coverage_note: 公开页面只展示最终收录论文。期刊 online-first 覆盖仍可能不完整。
+- id: 2026-W26
+  date_range: 2026-06-22 至 2026-06-28
+  summary: 双 Hamilton/Frobenius 几何、Painlevé 约化、Lax 层级分类、量子电路与数据驱动可积性。
+  screening:
+    sources_checked:
+    - arXiv nlin.SI / nlin.PS 与跨分类结构词、结果词检索
+    - 期刊 online-first、DOI 与出版商页面核验
+    selected: 16
+    coverage_note: 公开页面只展示最终收录论文。期刊 online-first 覆盖仍可能不完整。
+- id: 2026-W27
+  date_range: 2026-06-29 至 2026-07-05
+  summary: 有限带估计、Riemann--Hilbert 过渡渐近、拓扑与引力约化中的可积结构。
+  screening:
+    sources_checked:
+    - arXiv nlin.SI / nlin.PS 与跨分类结构词、结果词检索
+    - 期刊 online-first、DOI 与出版商页面核验
+    selected: 6
+    coverage_note: 公开页面只展示最终收录论文。期刊 online-first 覆盖仍可能不完整。
+- id: 2026-W28
+  date_range: 2026-07-06 至 2026-07-12
+  summary: 可积引力、离散化、Painlevé、随机矩阵、量子自旋链、离散几何与多分量波。
+  screening:
+    sources_checked:
+    - arXiv nlin.SI / nlin.PS 与跨分类结构词、结果词检索
+    - 期刊 online-first、DOI 与出版商页面核验
+    selected: 15
+    coverage_note: 公开页面只展示最终收录论文。期刊 online-first 覆盖仍可能不完整。
+- id: 2026-W29
+  date_range: 2026-07-13 至 2026-07-19
+  summary: Chern--Simons 可积引力、孤子层析、任意多峰多谷解族与 HCIZ 矩阵模型。
+  screening:
+    sources_checked:
+    - arXiv nlin.SI / nlin.PS 与跨分类结构词、结果词检索
+    - 期刊 online-first、DOI 与出版商页面核验
+    selected: 5
+    coverage_note: 公开页面只展示最终收录论文。期刊 online-first 覆盖仍可能不完整。
 editions:
-  - date: "2026-07-19"
-    week: "2026-W29"
-    summary: >-
-      本期按“多分量 KP--Toda 约化—coupled FL 高阶 rogue-wave 通式—Okamoto 多项式控制的
-      图案渐近—n-fold Darboux 解族基线”组织，集中比较行列式结构、谱分支重数与极端波形分解。
-    entries:
-      - paper_id: "doi:10.1016/j.physd.2025.134706"
-        role: "journal-version"
-        homepage_rank: 1
-        what_it_does: >-
-          从 KP--Toda hierarchy 的双线性方程与 Gram determinant 解出发约化多分量
-          Fokas--Lenells 系统，并由 discrete KP 的 Miwa transformation 重建双线性结构；
-          给出 dark solitons、Akhmediev/Kuznetsov--Ma 型 breathers 及三、四重 resonant breathers。
-        why_read: >-
-          它把 coupled FL 的显式波形放回可扩展到任意分量的层级约化框架，特别适合对照
-          Darboux 方法中的谱参数构造与 KP reduction 中的 determinant/共振条件。
-      - paper_id: "doi:10.1016/j.physd.2024.134111"
-        role: "group-adjacent"
-        homepage_rank: 2
-        what_it_does: >-
-          对 coupled Fokas--Lenells 方程构造高阶 rogue-wave determinant formula，并分析
-          三重分支点生成的解在大内部参数极限下如何分裂成若干一阶外部 rogue waves 与较低阶内部核心；
-          外部位置和内部阶数由 Okamoto polynomial hierarchies 控制。
-        why_read: >-
-          这是 Liming Ling 课题组相关的正式版本，把“高阶显式解”推进为可预测的图案渐近；
-          对理解大参数分解、特殊多项式零点与 rogue-wave 几何之间的联系最直接。
-      - paper_id: "doi:10.1098/rspa.2018.0806"
-        role: "backlog-core"
-        homepage_rank: 3
-        what_it_does: >-
-          构造非递归 Darboux transformation，分别处理谱特征方程的 double-root 与 triple-root 情形，
-          得到 coupled Fokas--Lenells 的一般 n 阶有理 rogue waves，并展示共存 rogue waves、
-          anomalous Peregrine solitons 以及包含完整背景场参数的基本和二阶动力学。
-        why_read: >-
-          它是三重分支点 rogue-wave 族的通式基线，可用于辨认 2024 年图案分解中哪些结构来自
-          分支重数、哪些来自大参数极限，并补足一般 n 阶构造而非只看若干低阶图形。
-      - paper_id: "doi:10.1016/j.nonrwa.2016.06.006"
-        role: "method-background"
-        what_it_does: >-
-          对 vector/coupled Fokas--Lenells 系统建立 n-fold Darboux transformation，构造高阶
-          solitons、breathers 与 rogue waves，并讨论这些孤立波解随参数变化的动力学特征。
-        why_read: >-
-          这是本期最早的统一 Darboux 解族基线；先读它能看清后续非递归公式、分支点退化和
-          Okamoto 图案分析是在怎样的 n-fold dressing 框架上逐步增加结构。
-
-  - date: "2026-07-18"
-    week: "2026-W29"
-    summary: >-
-      本期按“非零背景 direct/inverse scattering—全线无孤子辐射—含离散谱 soliton resolution—
-      半线初边值渐近”组织，形成 Fokas--Lenells 从谱问题建立到 nonlinear steepest descent 的阅读链。
-    entries:
-      - paper_id: "doi:10.2991/jnmp.k.200922.003"
-        role: "journal-version"
-        homepage_rank: 1
-        what_it_does: >-
-          在非零边界条件下分析 Fokas--Lenells Lax pair 的 Jost solutions 与散射矩阵，
-          给出解析性、对称性以及 k→0 和 k→∞ 的渐近结构；据此建立广义 Riemann--Hilbert
-          问题、重构公式，并在 reflectionless 情形求得 N-soliton 解。
-        why_read: >-
-          这是非零背景 FL 谱分析的正式期刊基线，可把平面波或椭圆背景上的 Darboux 精确解
-          放回完整的 direct/inverse scattering 框架，并明确离散谱、连续谱与重构之间的关系。
-      - paper_id: "doi:10.1016/j.jde.2015.02.046"
-        role: "backlog-core"
-        homepage_rank: 2
-        what_it_does: >-
-          对衰减初值的全线 Fokas--Lenells Cauchy 问题，在无离散谱情形应用 Deift--Zhou
-          nonlinear steepest descent，得到纯辐射解的主阶长时渐近，其衰减尺度为 t^{-1/2}。
-        why_read: >-
-          它把连续谱贡献单独剥离出来，是理解后续含孤子渐近中辐射项、相位修正和局部模型的
-          最干净起点，也便于与 DNLS、coupled NLS 的纯辐射 RHP 分析逐项比较。
-      - paper_id: "doi:10.1016/j.jde.2021.11.045"
-        role: "journal-version"
-        homepage_rank: 3
-        what_it_does: >-
-          对支持 bright solitons 的一般 Sobolev 初值，在固定时空锥中用 dbar nonlinear
-          steepest descent 分离离散谱与连续谱：主项为 N(I)-soliton，辐射为 O(t^{-1/2})，
-          总余项控制到 O(t^{-3/4})，并处理 k=0 谱奇点和四个驻相点。
-        why_read: >-
-          这篇正式论文把 2015 年纯辐射基线推进到真正的 soliton resolution，展示 FL 特有的
-          谱奇点和驻相几何如何改变标准 NLS/DNLS steepest-descent 模板。
-      - paper_id: "arxiv:1710.06563"
-        role: "method-background"
-        what_it_does: >-
-          对半线上的 Schwartz 类 Fokas--Lenells 初边值问题建立相应 Riemann--Hilbert 表述，
-          并用 Deift--Zhou nonlinear steepest descent 推导 t→∞ 的长时渐近。
-        why_read: >-
-          它把同一套渐近方法从整线散射推广到受边界约束的谱问题，适合作为研究 FL/DNLS
-          半线问题、边界谱数据和初边值相容性的直接方法背景。
-
-  - date: "2026-07-17"
-    week: "2026-W29"
-    summary: >-
-      本期按“两分量 Fokas--Lenells 平面波新解族—matrix/vector Darboux 结构—
-      课题组 coupled FL 基线—本征值响应函数与 soliton tomography—实验正式版本”组织，
-      把离散谱从生成精确解的参数提升为可操控、可反演的观测坐标。
-    entries:
-      - paper_id: "arxiv:2607.13773"
-        role: "recent"
-        homepage_rank: 1
-        what_it_does: >-
-          对双折射光纤的两分量 Fokas--Lenells 方程用 Darboux transformation 构造
-          平面波背景上的 multihump-multivalley soliton families；用相图分类基本解，
-          推广到任意多峰多谷与高阶构型，并用弱白噪声数值演化检验鲁棒性。
-        why_read: >-
-          它把当前 Fokas--Lenells、两分量系统和非零背景精确解方向结合起来；
-          复平面中强度零点与极点共同决定 virtual monopole field 的观察，也为
-          “谱参数—波形拓扑”之间的关系提供了一个可计算的新例子。
-      - paper_id: "arxiv:2607.12339"
-        role: "recent"
-        homepage_rank: 2
-        what_it_does: >-
-          为 sech 型 NLS 脉冲推导 soliton eigenvalue response functions，分析瞬时可控扰动
-          如何移动离散本征值，并建立由传播末端测得的本征值偏移反演未知波形畸变的积分方程；
-          文中比较不同重构区间并测试含噪数据下的稳定性。
-        why_read: >-
-          它把 IST 离散谱从守恒量和解参数转化为传感与 tomography 的观测量，
-          对理解谱数据在可控扰动、非线性传播和反问题之间如何传递尤其有价值。
-      - paper_id: "doi:10.1103/PhysRevLett.134.193804"
-        role: "journal-version"
-        homepage_rank: 3
-        what_it_does: >-
-          在 strongly overlapping 多孤子脉冲中引入 eigenvalue response functions，
-          并在循环光纤环与 homodyne 测量平台上施加局域相位扰动，选择性改变单个孤子的
-          速度和振幅、从复合脉冲中剥离目标孤子，实验结果与 IST 扰动理论定量吻合。
-        why_read: >-
-          这是 soliton tomography 新论文的正式实验上游：先读它可以看清 response function
-          的物理可测性、完整相位—振幅重构要求，以及从“操控本征值”走向“反演扰动源”的新增步骤。
-      - paper_id: "arxiv:2508.17534"
-        role: "method-background"
-        what_it_does: >-
-          用 bidifferential calculus 为 Kaup--Newell 层级第一负流的 matrix 版本构造
-          vectorial binary Darboux transformation，并将其约化到 matrix Fokas--Lenells 方程；
-          在两分量平面波背景上系统生成 breathers、dark solitons、rogue waves 与 beating solitons。
-        why_read: >-
-          它给今天的新 multihump Fokas--Lenells 解族提供结构化的 matrix/vector dressing 背景，
-          便于比较不同 Darboux 参数化如何组织非零背景上的多种波形，而不只逐个验证显式公式。
-      - paper_id: "doi:10.1016/j.nonrwa.2017.08.013"
-        role: "group-adjacent"
-        what_it_does: >-
-          从正、负阶 vector Kaup--Newell hierarchy 建立多 Hamilton 结构与无穷守恒律，
-          识别首个非平凡负流为 coupled Fokas--Lenells 方程，并以 generalized Darboux
-          transformation 构造 bright-dark、dark-anti-dark、breather-like 及多孤子解和渐近行为。
-        why_read: >-
-          这是 Liming Ling 合作工作的正式期刊基线，把 coupled FL 的层级结构、守恒律、
-          平面波背景解型分类与多孤子渐近统一起来，可作为今天新两分量解族最直接的课题组相关参照。
-
-  - date: "2026-07-16"
-    week: "2026-W29"
-    summary: >-
-      本期按“shifted nonlocal NLS/mKdV 的几何折叠—显式孤子基线—shifted nonlocal
-      DNLS 约化—非局部 NLS 的谱与 Hamilton 结构”组织。
-    entries:
-      - paper_id: "arxiv:2607.10870"
-        role: "recent"
-        homepage_rank: 1
-        what_it_does: >-
-          把既有 shifted nonlocal NLS 与 mKdV 的一、二孤子解作为参数曲线的场变量，
-          通过非单调空间映射构造 loop-type folded profiles；以折叠映射导数变号作为充分条件，
-          并分析变形参数和孤子参数如何产生规则、振荡与奇异折叠。
-        why_read: >-
-          新意不在重新求解方程，而在清楚分离“解的振幅动力学”和“空间参数化几何”；
-          这为阅读 loop/foldon 图形提供判别框架，也直接指向其依赖的 shifted-reduction 文献。
-      - paper_id: "doi:10.1016/j.physleta.2021.127793"
-        role: "journal-version"
-        homepage_rank: 2
-        what_it_does: >-
-          为 shifted nonlocal NLS 与 mKdV 方程给出一、二孤子解，并系统讨论这些解的
-          奇异结构和参数依赖；今天的新论文正是把这些显式解重新解释为可折叠的参数波形。
-        why_read: >-
-          这是新结果最直接的正式期刊上游，可用于区分来自方程与约化的结构，和后续
-          folding map 对空间坐标的再参数化效应。
-      - paper_id: "arxiv:2110.01047"
-        role: "adjacent"
-        homepage_rank: 3
-        what_it_does: >-
-          从可积 coupled Kundu-type system 的局部与 shifted nonlocal reductions 出发，
-          对 Chen--Lee--Liu、Gerdjikov--Ivanov 和 Kaup--Newell 三类 DNLS 型方程用
-          Hirota 双线性法构造一、二孤子解。
-        why_read: >-
-          它把 shifted nonlocal 主题直接拉回 DNLS 三分支，便于比较空间/时间平移约化
-          怎样改变熟悉的 CLL、GI 与 KN 孤子公式和正则性条件。
-      - paper_id: "arxiv:1510.00480"
-        role: "method-background"
-        what_it_does: >-
-          利用 Lax 算子 squared solutions 的完备关系证明一类非局部 NLS 层级的完整可积性，
-          描述两类孤子谱、由散射数据参数化的作用角变量，并构造 Hamilton 层级。
-        why_read: >-
-          它提供显式解论文缺少的谱论底座：非局部约化不仅产生新孤子公式，也会重组
-          离散谱对称性、正则解类型和 Hamilton 结构。
-
-  - date: "2026-07-15"
-    week: "2026-W29"
-    summary: >-
-      本期按“稳定频率占主导的新 vector AB—基于线性化本征向量的可控激发—
-      非退化 AB 的 MI 存在图—dressing 方法下的 vector breather 分类与相互作用”组织。
-    entries:
-      - paper_id: "arxiv:2607.10954"
-        role: "recent"
-        homepage_rank: 1
-        what_it_does: >-
-          在 Manakov 系统中构造一种由不稳定模激发、但在峰值处由线性稳定谐波占主导的
-          精确 vector Akhmediev breather；数值演化表明无需预先播种稳定分量，它会自发出现，
-          并将主导机制定量归因于 four-wave mixing。
-        why_read: >-
-          它直接修正“breather 主频必定位于 MI 增益带内”的标量直觉，把多分量系统的稳定间隙、
-          非线性频率转换和可实验观测的峰值谱结构联系起来。
-      - paper_id: "arxiv:2606.21301"
-        role: "missed-recent"
-        homepage_rank: 2
-        what_it_does: >-
-          针对 focusing Manakov 系统中多个 MI 分支并存的问题，用目标分支的线性化本征向量
-          设计初始 Fourier 扰动，使指定 vector Akhmediev breather 以接近百分之百的保真度被选择性激发。
-        why_read: >-
-          它给出今天新论文的控制论互补面：一篇解释稳定谐波如何被非线性放大，另一篇说明如何从
-          线性阶段就选择目标分支，便于区分分支选择与后续 four-wave mixing 的作用。
-      - paper_id: "doi:10.1088/0256-307X/39/9/094201"
-        role: "journal-version"
-        homepage_rank: 3
-        what_it_does: >-
-          发现 focusing Manakov 方程中的非退化 Akhmediev breather，给出其频率--波数存在图，
-          并说明单频调制不稳定性可同时激发三个 AB，其中两个属于非退化分支。
-        why_read: >-
-          这是理解新结果所需的正式期刊基线：稳定间隙、多个 MI 分支与非退化 AB 的结构在这里
-          首次被清楚分离，可用于核对新论文的参数窗口和谱分量解释。
-      - paper_id: "arxiv:2211.07014"
-        role: "method-background"
-        what_it_does: >-
-          用 dressing method 构造 Manakov 系统的多 vector-breather 解，分析三类基本 breather、
-          碰撞位移、共振融合与衰变，并把不同类型对应到不稳定与稳定色散分支。
-        why_read: >-
-          它把今天的单个峰值谱现象放回完整的 vector-breather 分类和相互作用图景中，并解释为何
-          稳定分支类型通常不从小扰动的 superregular MI 过程中直接出现。
-
-  - date: "2026-07-14"
-    week: "2026-W29"
-    summary: >-
-      本期按“fully discrete GI/hGI—高阶 GI 流的 RHP dressing—经典 GI 的
-      Darboux/quasideterminant 精确解”组织，比较三种构造离散系统与高阶谱数据的方法。
-    entries:
-      - paper_id: "arxiv:2607.09333"
-        role: "recent"
-        homepage_rank: 1
-        what_it_does: >-
-          从带两组离散色散关系的 Sylvester 方程出发，构造四族共轭对称的 fully discrete
-          Gerdjikov--Ivanov 模型及四族高阶 GI 格点模型；用对角与 Jordan 块谱矩阵给出
-          N-soliton 和 multiple-pole 解，并通过两步连续极限恢复连续 GI/hGI 方程。
-        why_read: >-
-          它直接补上 GI 方程 fully discrete analogue 的空缺，并把 Cauchy matrix、连续极限、
-          局部/非局部约化和多重极点放进同一计算框架，是昨天经典 DNLS 离散化链的自然续篇。
-      - paper_id: "arxiv:2105.08412"
-        role: "method-background"
-        homepage_rank: 2
-        what_it_does: >-
-          对 GI 层级的三阶流建立 Riemann--Hilbert dressing，构造简单零点与 elementary
-          high-order zeros 的 soliton matrices，分析单、双孤子的传播与弹性交互，并由极限过程
-          得到高阶孤子矩阵。
-        why_read: >-
-          它提供与 Cauchy matrix/Jordan-block 构造互补的谱方法视角，可直接比较高阶色散如何
-          改变速度、方向和振幅，以及高阶零点如何进入 RHP dressing。
-      - paper_id: "doi:10.1080/14029251.2015.996438"
-        role: "journal-version"
-        homepage_rank: 3
-        what_it_does: >-
-          为标量 GI 方程构造标准 Darboux transformation，并用 quasideterminant 写出迭代解，
-          以抛物型解、孤子和 breather 作为显式例子。
-        why_read: >-
-          这篇正式期刊论文给出最紧凑的 GI Darboux/quasideterminant 基线，便于把今天的新格点
-          multiple-pole 公式与连续方程的经典 dressing 计算逐项对照。
-
-  - date: "2026-07-13"
-    week: "2026-W29"
-    summary: >-
-      本期按“近期非交换推广—非 Abelian Darboux 分类—经典 DNLS 离散化—椭圆背景
-      breather 与 rogue wave”组织，突出连续系统、Darboux 变换和格点模型之间的结构联系。
-    entries:
-      - paper_id: "arxiv:2606.10037"
-        role: "missed-recent"
-        homepage_rank: 1
-        what_it_does: >-
-          研究 AKNS、Kaup--Newell DNLS 与 Mikhailov--Shabat--Yamilov 变形的非交换推广，
-          推导连续极限、Darboux--Bäcklund 变换和 vertex--bond 型可积离散系统；其中变形
-          DNLS 的 Lax 表示必须引入非局部变量，并给出六点格点方程的显式波解。
-        why_read: >-
-          它把 DNLS、reduction group、非交换代数与离散化放在同一框架中，是理解近期
-          matrix/non-Abelian DNLS 工作如何从标量 Kaup--Newell 结构扩展出去的直接入口。
-      - paper_id: "arxiv:2507.21660"
-        role: "missed-recent"
-        homepage_rank: 2
-        what_it_does: >-
-          为七类具有 Lax 表示的 non-Abelian DNLS 构造与 reduction group 相容的线性和
-          二次 Darboux 矩阵，得到 Volterra、Ablowitz--Ladik、Merola--Ragnisco--Tu 与
-          relativistic Toda 型微分差分系统，并用 quasideterminant 分析二次矩阵的分解。
-        why_read: >-
-          这篇文章提供了上一条近期工作的直接技术上游：它把 Darboux transformation
-          当作可积格点动力学本身，而不只是生成显式解的 dressing 工具。
-      - paper_id: "doi:10.1088/0305-4470/35/36/310"
-        role: "journal-version"
-        homepage_rank: 3
-        what_it_does: >-
-          通过 Lax pair 为 Kaup--Newell、Chen--Lee--Liu 和 Gerdjikov--Ivanov 三类 DNLS
-          构造保持复共轭约化与双 Hamilton 结构的可积离散化，并由变量变换和约化导出
-          matrix NLS、coupled NLS、Hirota、Sasa--Satsuma 等多类格点系统。
-        why_read: >-
-          它是今天两篇 non-Abelian/noncommutative 工作反复依赖的经典基线，可用于核对
-          各类 DNLS 离散系统的 Lax 结构、约化关系和连续极限。
-      - paper_id: "doi:10.1111/sapm.12287"
-        role: "group-adjacent"
-        what_it_does: >-
-          在 dn、cn 与带相位调制的椭圆背景上用 Darboux transformation 构造 focusing NLS
-          多 breather，并以 theta 行列式表示；同时用 squared eigenfunctions 求线性化谱，
-          再在分支点极限下得到高阶 rogue waves。
-        why_read: >-
-          这篇 Liming Ling 合作论文把有限带背景、调制不稳定性、Darboux 极限与 rogue wave
-          统一起来，为当前 Fokas--Lenells 椭圆背景局域解提供非常具体的比较对象。
-
-  - date: "2026-07-12"
-    week: "2026-W28"
-    summary: >-
-      本期按“方程结构—带孤子 IST—DNLS soliton resolution—多分量精确解”组织，
-      补齐 Fokas--Lenells 与 derivative-NLS 方向的基础阅读链。
-    entries:
-      - paper_id: "doi:10.1088/1361-6544/abcc4b"
-        role: "journal-version"
-        homepage_rank: 1
-        what_it_does: >-
-          从不可约 Hermitian symmetric spaces 出发构造多分量 Fokas--Lenells 方程，
-          给出相应 Lax 表示、双 Hamilton 结构，并系统讨论局部、非局部约化及经典系列实例。
-        why_read: >-
-          它为近期椭圆背景 Fokas--Lenells 精确解提供结构层面的上游框架，也把多分量 FL
-          与 DNLS 型二次谱问题、对称空间分类和 reduction group 联系起来。
-      - paper_id: "arxiv:2210.08417"
-        role: "method-background"
-        homepage_rank: 2
-        what_it_does: >-
-          对含有限个孤子的 Fokas--Lenells 初值问题证明全局解存在性；核心工具是可添加或移除
-          指定离散谱数据的改造 Darboux transformation，再将问题约化到无孤子 IST 情形。
-        why_read: >-
-          这篇文章具体展示了 Darboux 变换如何作为谱数据管理工具服务于严格适定性证明，
-          可与 coupled NLS 长时渐近中移除离散谱的做法直接对照。
-      - paper_id: "arxiv:1905.02866"
-        role: "review-map"
-        homepage_rank: 3
-        what_it_does: >-
-          综述 DNLS 在加权 Sobolev 空间中的全局适定性与长时行为，说明 Zhou 方法如何处理
-          spectral singularities，并总结一般亮孤子数据下的 soliton resolution 与渐近稳定性。
-        why_read: >-
-          它提供一张从 direct/inverse scattering、谱奇点控制到 nonlinear steepest descent
-          和 soliton resolution 的紧凑路线图，适合统摄近期 DNLS soliton-gas 与渐近工作。
-      - paper_id: "doi:10.1088/1751-8113/43/43/434023"
-        role: "group-adjacent"
-        what_it_does: >-
-          为两分量 derivative NLS 构造可迭代的 Darboux transformation，并由此得到紧凑的
-          N-soliton 表示，展示多分量导数型系统中离散谱迭代的基本代数结构。
-        why_read: >-
-          这是 Liming Ling 早期多分量 DNLS 工作中的直接方法文献，可与后续 generalized
-          Darboux、coupled GI 逆散射和 coupled NLS 精确解研究并读。
-
-  - date: "2026-07-11"
-    week: "2026-W28"
-    summary: >-
-      本期关注 coupled NLS 与 DNLS 的 RHP 表述，以及 finite-gap 退化和
-      soliton gas 之间的联系。
-    entries:
-      - paper_id: "arxiv:2504.21315"
-        role: "group-adjacent"
-        homepage_rank: 1
-        what_it_does: >-
-          从 focusing coupled NLS 的 3×3 谱问题建立 RHP，通过 Darboux
-          transformation 移除离散谱，并用 Deift--Zhou 非线性 steepest descent
-          得到加权 Sobolev 初值下的长时展开和孤子分解。
-        why_read: >-
-          直接连接 Liming Ling 课题组的 coupled NLS、RHP、Darboux 变换和长时渐近方向。
-      - paper_id: "arxiv:0808.1534"
-        role: "method-background"
-        homepage_rank: 2
-        what_it_does: >-
-          用统一变换处理 Kaup--Newell 型 DNLS 半线问题，将初值谱函数和边界谱函数
-          共同编码进矩阵 RHP，并由 global relation 约束边界数据。
-        why_read: >-
-          它是从整线 DNLS IST 过渡到初边值谱分析、边界兼容性和半线 RHP 的基础文献。
-      - paper_id: "doi:10.1088/1361-6544/accfdf"
-        role: "journal-version"
-        homepage_rank: 3
-        what_it_does: >-
-          推导高亏格 theta 函数的部分退化公式，并将 KdV 多孤子解表示为平移椭圆背景
-          与行列式孤子部分，同时得到椭圆背景上的散射核和 soliton-gas 色散关系。
-        why_read: >-
-          它把有限带几何、退化极限、非零背景散射和 soliton gas 放在同一具体模型中。
-      - paper_id: "arxiv:2304.06541"
-        role: "review-map"
-        what_it_does: >-
-          综述稀疏与稠密 soliton gas、IST、有限带势的热力学极限、广义 Gibbs 系综、
-          广义流体力学、数值方法和实验实现。
-        why_read: >-
-          适合作为领域地图，用来核对 soliton gas 的术语、主要方法、实验背景和开放问题。
-
-  - date: "2026-07-10"
-    week: "2026-W28"
-    summary: >-
-      本期混合近期渐近结果、soliton-gas 统计工作、离散与多分量系统，以及两篇
-      课题组相关的 Darboux 方法旧文。
-    entries:
-      - paper_id: "arxiv:2602.13589"
-        role: "journal-version"
-        homepage_rank: 1
-        what_it_does: >-
-          对有限亏格代数几何背景上的 defocusing NLS 应用非线性 steepest descent，
-          区分四个时空区域，并以 Painlevé XXXIV 描述两个过渡区的次阶渐近。
-        why_read: >-
-          它展示了有限带背景、RHP 变形和 Painlevé 局部模型如何在长时渐近中衔接。
-      - paper_id: "arxiv:2605.06306"
-        role: "recent"
-        what_it_does: >-
-          为 focusing NLS 半经典随机波场提出 soliton-gas resolution，将谱态密度与
-          波场强度统计联系起来，并与数值模拟比较。
-        why_read: >-
-          可作为随机 IST、积分湍流和 soliton-gas 统计方向的近期入口。
-      - paper_id: "arxiv:2606.05123"
-        role: "adjacent"
-        what_it_does: >-
-          在非零背景下构造 defocusing 标量与耦合 Ablowitz--Ladik 系统的周期 breather、
-          离散 Akhmediev 型 breather 及其 rogue-wave 极限。
-        why_read: >-
-          为多分量离散可积系统中的 breather 与 rogue wave 提供一组可比较的显式解。
-      - paper_id: "arxiv:2606.22808"
-        role: "adjacent"
-        what_it_does: >-
-          给出调和维数约化条件，将一类 (3+1) 维多分量 NLS 系统精确约化到
-          (1+1) 维可积层级，并把 Manakov 型解提升回高维模型。
-        why_read: >-
-          它提供了从低维可积解到高维多分量波场的精确构造机制。
-      - paper_id: "doi:10.1111/j.1467-9590.2012.00568.x"
-        role: "group-adjacent"
-        homepage_rank: 2
-        what_it_does: >-
-          构造 Kaup--Newell/DNLS 的两类广义 Darboux transformation，并给出高阶孤子、
-          重复极点解和高阶 rogue-wave 公式。
-        why_read: >-
-          是理解 DNLS 多重谱点、极限过程和高阶精确解构造的直接方法背景。
-      - paper_id: "doi:10.1016/j.cnsns.2015.08.023"
-        role: "group-adjacent"
-        what_it_does: >-
-          通过统一 Darboux transformation 构造混合耦合 NLS 的非零背景解，分类
-          breather、dark soliton 和 rogue wave，并分析不同解型之间的相互作用。
-        why_read: >-
-          连接课题组的多分量 NLS、非零背景精确解和解型分类工作。
-
-  - date: "2026-07-09"
-    week: "2026-W28"
-    summary: >-
-      本期以 Fokas--Lenells、DNLS soliton gas、coupled GI 逆散射和 coupled NLS
-      breather 稳定性为主，并补充有限带估计与多分量离散化。
-    entries:
-      - paper_id: "arxiv:2607.06409"
-        role: "recent"
-        homepage_rank: 1
-        what_it_does: >-
-          使用 Lax pair、Weierstrass 椭圆函数和 N-fold Darboux--Bäcklund transformation
-          构造 Fokas--Lenells 方程的椭圆背景局域解，并研究其传播渐近结构。
-        why_read: >-
-          与当前 DNLS/Fokas--Lenells、椭圆背景和 Darboux 构造方向高度重合。
-      - paper_id: "arxiv:2607.04756"
-        role: "adjacent"
-        what_it_does: >-
-          构造多分量 short-pulse equation 的全离散可积系统，并保持相应的双线性与
-          孤子结构。
-        why_read: >-
-          可作为 complex short pulse、vector soliton 和离散可积模型的外围方法材料。
-      - paper_id: "arxiv:2607.01348"
-        role: "recent"
-        what_it_does: >-
-          给出 modified KdV 有限带解振幅的锐上界，把代数几何解的谱数据与定量振幅估计联系起来。
-        why_read: >-
-          补充有限带研究中从显式构造走向定量控制的一条线索。
-      - paper_id: "arxiv:2606.24435"
-        role: "missed-recent"
-        homepage_rank: 2
-        what_it_does: >-
-          从纯 N-soliton 的 meromorphic RHP 出发研究 DNLS soliton gas 的连续极限和长时渐近，
-          使用 RHP、∂̄ 方法和 theta 函数描述不同渐近区域。
-        why_read: >-
-          直接位于 DNLS、soliton gas、RHP 和长时渐近的交叉点，是当前优先级很高的补读。
-      - paper_id: "arxiv:2605.28856"
-        role: "missed-recent"
-        what_it_does: >-
-          建立 coupled Gerdjikov--Ivanov 线性系统的 direct/inverse scattering，讨论 Jost
-          solutions、散射系数、束缚态以及 Marchenko 型积分方程。
-        why_read: >-
-          为 coupled GI 和 DNLS system III 的完整 IST 框架提供直接的谱分析材料。
-      - paper_id: "doi:10.1016/j.aim.2026.110961"
-        role: "group-adjacent"
-        what_it_does: >-
-          通过 squared eigenfunctions、Krein signature 和 Lyapunov 方法研究 coupled NLS
-          breathers 的谱结构与非线性轨道稳定性。
-        why_read: >-
-          是课题组相关的 coupled NLS、breather 和稳定性方向中的核心正式论文。
-
-
-frontier_staging:
-  window_days: 30
-  generated_through: "2026-07-19"
-  migration_target: 44
+- date: '2026-07-19'
+  week: 2026-W29
+  summary: 本期按“多分量 KP--Toda 约化—coupled FL 高阶 rogue-wave 通式—Okamoto 多项式控制的 图案渐近—n-fold Darboux 解族基线”组织，集中比较行列式结构、谱分支重数与极端波形分解。
   entries:
-    - paper_id: "doi:10.1007/JHEP07(2026)120"
-      signal_date: "2026-07-13"
-      signal_type: "journal-publication"
-      week: "2026-W29"
-      arxiv_categories:
-        - "hep-th"
-        - "gr-qc"
-      structure_tags:
-        - "Chern--Simons theory"
-        - "inverse scattering"
-      summary: >-
-        从三维引力的 Chern--Simons 表述和手征边界条件出发，论文导出 potential mKdV hierarchy 及由 Schrödinger 本征函数自洽驱动的 forced KdV。作者同时求解无反射孤子扇区，并分析含辐射扇区的色散衰减。
-      main_result: >-
-        论文为非紧空间切片上的三维引力构造一致边界条件，使边界动力学受 potential modified KdV hierarchy 控制；加入谱强迫后得到 eigenfunction-forced KdV。无反射扇区通过 Gelfand--Levitan--Marchenko 方程重构，纯辐射扇区则给出长时间色散渐近。
-      integrable_structure: >-
-        引力采用 Chern--Simons 规范表述，约化后的边界场与 Gelfand--Dikii/KdV 层级相连。强迫项不是外加任意源，而由关联 Schrödinger 算子的本征函数自洽生成，因此修改后的守恒 Hamiltonians、散射数据和 GLM 重构仍共同控制动力学。
-      innovation: >-
-        创新在于把三维引力边界动力学与一类自洽谱强迫的可积流直接连接，并同时处理孤子与辐射两个扇区。它不仅指出形式上的 KdV 类比，还给出从引力边界条件到逆散射求解和渐近行为的完整机制。
-
-    - paper_id: "doi:10.1007/JHEP07(2026)123"
-      signal_date: "2026-07-13"
-      signal_type: "journal-publication"
-      week: "2026-W29"
-      arxiv_categories:
-        - "hep-th"
-        - "math-ph"
-      structure_tags:
-        - "Chern--Simons theory"
-        - "Yang--Baxter equation"
-      summary: >-
-        论文从四维 Chern--Simons theory 推导 Breitenlohner--Maison sigma model 的可积形变，并把两类形变分别联系到齐次和非齐次 classical Yang--Baxter equations。该框架覆盖四维广义相对论的平稳轴对称可积子扇区及其高秩推广。
-      main_result: >-
-        作者改变 4d Cole--Weck 模型的边界条件和作用量，得到二维 Breitenlohner--Maison 模型的两类形变。结果不仅适用于描述四维平稳轴对称引力的基本模型，还推广到更高秩情形，并明确给出对应的形变作用量和场方程。
-      integrable_structure: >-
-        核心方法是 4d Chern--Simons theory 对二维可积场论的构造机制。边界条件的不同形变分别产生由 homogeneous 与 inhomogeneous classical Yang--Baxter equations 控制的 sigma-model deformation，使引力约化、规范理论和 Yang--Baxter 可积性处于同一框架中。
-      innovation: >-
-        论文提供了一种从高维规范理论系统产生引力可积形变的方法，而不是对已知 sigma model 直接猜测变形项。齐次和非齐次 Yang--Baxter 结构在同一来源下出现，为进一步构造广义相对论可积子扇区的新模型提供了可复用路径。
-
-    - paper_id: "arxiv:2607.12339"
-      signal_date: "2026-07-14"
-      signal_type: "new-preprint"
-      week: "2026-W29"
-      arxiv_categories:
-        - "nlin.PS"
-      structure_tags:
-        - "inverse scattering"
-        - "inverse problem"
-      summary: >-
-        论文把 NLS 孤子的离散本征值从精确解参数转化为可测量和可操控的观测坐标。作者推导本征值响应函数，并由传播末端测得的本征值偏移反演传播途中未知的脉冲畸变，在含噪数据下测试重构稳定性。
-      main_result: >-
-        作者研究瞬时可控扰动如何移动 sech 型非线性脉冲的孤子本征值，并给出相应的解析响应函数。进一步建立积分方程，以输出端观测到的本征值偏移为数据，恢复未知扰动的空间形状，并比较不同重构区间和噪声水平下的效果。
-      integrable_structure: >-
-        方法建立在非线性 Schrödinger 方程的逆散射离散谱上。理想可积传播中本征值保持不变，局域扰动则留下可计算的谱偏移；因此散射数据同时承担守恒坐标、扰动传感器和反问题观测量三种角色。
-      innovation: >-
-        论文不再只用离散谱描述已知孤子，而是构造谱数据对未知扰动的响应关系，并把这一关系用于主动操控和反演。由此形成了具体的 soliton tomography 框架，把逆散射方法推进到可测量的非线性传感问题。
-
-    - paper_id: "arxiv:2607.13773"
-      signal_date: "2026-07-15"
-      signal_type: "new-preprint"
-      week: "2026-W29"
-      arxiv_categories:
-        - "nlin.PS"
-        - "nlin.SI"
-      structure_tags:
-        - "Darboux transformation"
-        - "topological vector potential"
-      summary: >-
-        论文研究两分量 Fokas--Lenells 方程平面波背景上的 multihump--multivalley soliton families。作者从基本形态分类推广到任意多峰、多谷及混合静态结构，并发现复平面中的强度零点和极点共同决定新的虚拟单极场特征。
-      main_result: >-
-        作者系统分类基本 dark/antidark 结构的强度形态，并在等速度和背景振幅约束下构造高阶相干叠加。所得解包括任意 K-hump antidark、任意 M-valley dark 及其混合组合；数值演化还检验了弱白噪声下的动力学稳健性。
-      integrable_structure: >-
-        精确构造基于 coupled Fokas--Lenells 系统的 N-fold Darboux transformation。参数约束使多个孤子能够在同一平面波背景上保持相干静态组合；随后通过 topological vector potential 分析解析延拓后的强度零点、极点和虚拟单极场。
-      innovation: >-
-        工作把以往有限的双峰或双谷例子扩展为任意 multihump/multivalley 族，并形成系统分类。更重要的是，零点与极点等量贡献虚拟单极场的结论提供了新的拓扑机制，使这项工作超过常规的 Darboux 显式解展示。
-
-    - paper_id: "doi:10.1007/s10955-026-03663-6"
-      signal_date: "2026-07-16"
-      signal_type: "journal-publication"
-      week: "2026-W29"
-      arxiv_categories:
-        - "math-ph"
-        - "math.PR"
-      structure_tags:
-        - "matrix model"
-        - "tau function"
-      summary: >-
-        论文构造由两个 HCIZ 因子修饰的 Hermitian Gaussian matrix model，使其有限维本征值分布精确等于任意多起点、多终点 non-intersecting Brownian bridges 的 Karlin--McGregor 分布，并导出一系列有限维精确恒等式。
-      main_result: >-
-        作者证明 two-HCIZ ensemble 的本征值律与一般边界重数下的非相交 Brownian bridges 完全一致，并给出 orbital Hermitian Brownian bridge 的路径空间实现。配分函数可约化为单个紧致 HCIZ 积分，同时得到矩、resolvent、Ward 和 Schwinger--Dyson relations。
-      integrable_structure: >-
-        模型把 Karlin--McGregor determinant、mixed multiple orthogonal polynomials 和 Riemann--Hilbert 描述统一到一个酉不变矩阵系综中。紧致 HCIZ 因子在 Miwa 变量下构成 2D Toda tau function，Schwinger--Dyson 方程进一步产生结构化约束。
-      innovation: >-
-        论文补上了一般多起点、多终点 Brownian bridge 问题中缺失的矩阵模型来源，并在有限 n 层面同时连接谱分布、角变量、RHP 和 Toda 结构。这为后续大 n 渐近和可积概率分析提供了新的统一起点。
+  - paper_id: doi:10.1016/j.physd.2025.134706
+    role: journal-version
+    homepage_rank: 1
+    what_it_does: 从 KP--Toda hierarchy 的双线性方程与 Gram determinant 解出发约化多分量 Fokas--Lenells 系统，并由 discrete KP 的 Miwa
+      transformation 重建双线性结构； 给出 dark solitons、Akhmediev/Kuznetsov--Ma 型 breathers 及三、四重 resonant breathers。
+    why_read: 它把 coupled FL 的显式波形放回可扩展到任意分量的层级约化框架，特别适合对照 Darboux 方法中的谱参数构造与 KP reduction 中的 determinant/共振条件。
+  - paper_id: doi:10.1016/j.physd.2024.134111
+    role: group-adjacent
+    homepage_rank: 2
+    what_it_does: 对 coupled Fokas--Lenells 方程构造高阶 rogue-wave determinant formula，并分析 三重分支点生成的解在大内部参数极限下如何分裂成若干一阶外部
+      rogue waves 与较低阶内部核心； 外部位置和内部阶数由 Okamoto polynomial hierarchies 控制。
+    why_read: 这是 Liming Ling 课题组相关的正式版本，把“高阶显式解”推进为可预测的图案渐近； 对理解大参数分解、特殊多项式零点与 rogue-wave 几何之间的联系最直接。
+  - paper_id: doi:10.1098/rspa.2018.0806
+    role: backlog-core
+    homepage_rank: 3
+    what_it_does: 构造非递归 Darboux transformation，分别处理谱特征方程的 double-root 与 triple-root 情形， 得到 coupled Fokas--Lenells
+      的一般 n 阶有理 rogue waves，并展示共存 rogue waves、 anomalous Peregrine solitons 以及包含完整背景场参数的基本和二阶动力学。
+    why_read: 它是三重分支点 rogue-wave 族的通式基线，可用于辨认 2024 年图案分解中哪些结构来自 分支重数、哪些来自大参数极限，并补足一般 n 阶构造而非只看若干低阶图形。
+  - paper_id: doi:10.1016/j.nonrwa.2016.06.006
+    role: method-background
+    what_it_does: 对 vector/coupled Fokas--Lenells 系统建立 n-fold Darboux transformation，构造高阶 solitons、breathers 与 rogue
+      waves，并讨论这些孤立波解随参数变化的动力学特征。
+    why_read: 这是本期最早的统一 Darboux 解族基线；先读它能看清后续非递归公式、分支点退化和 Okamoto 图案分析是在怎样的 n-fold dressing 框架上逐步增加结构。
+- date: '2026-07-18'
+  week: 2026-W29
+  summary: 本期按“非零背景 direct/inverse scattering—全线无孤子辐射—含离散谱 soliton resolution— 半线初边值渐近”组织，形成 Fokas--Lenells 从谱问题建立到
+    nonlinear steepest descent 的阅读链。
+  entries:
+  - paper_id: doi:10.2991/jnmp.k.200922.003
+    role: journal-version
+    homepage_rank: 1
+    what_it_does: 在非零边界条件下分析 Fokas--Lenells Lax pair 的 Jost solutions 与散射矩阵， 给出解析性、对称性以及 k→0 和 k→∞ 的渐近结构；据此建立广义
+      Riemann--Hilbert 问题、重构公式，并在 reflectionless 情形求得 N-soliton 解。
+    why_read: 这是非零背景 FL 谱分析的正式期刊基线，可把平面波或椭圆背景上的 Darboux 精确解 放回完整的 direct/inverse scattering 框架，并明确离散谱、连续谱与重构之间的关系。
+  - paper_id: doi:10.1016/j.jde.2015.02.046
+    role: backlog-core
+    homepage_rank: 2
+    what_it_does: 对衰减初值的全线 Fokas--Lenells Cauchy 问题，在无离散谱情形应用 Deift--Zhou nonlinear steepest descent，得到纯辐射解的主阶长时渐近，其衰减尺度为
+      t^{-1/2}。
+    why_read: 它把连续谱贡献单独剥离出来，是理解后续含孤子渐近中辐射项、相位修正和局部模型的 最干净起点，也便于与 DNLS、coupled NLS 的纯辐射 RHP 分析逐项比较。
+  - paper_id: doi:10.1016/j.jde.2021.11.045
+    role: journal-version
+    homepage_rank: 3
+    what_it_does: 对支持 bright solitons 的一般 Sobolev 初值，在固定时空锥中用 dbar nonlinear steepest descent 分离离散谱与连续谱：主项为 N(I)-soliton，辐射为
+      O(t^{-1/2})， 总余项控制到 O(t^{-3/4})，并处理 k=0 谱奇点和四个驻相点。
+    why_read: 这篇正式论文把 2015 年纯辐射基线推进到真正的 soliton resolution，展示 FL 特有的 谱奇点和驻相几何如何改变标准 NLS/DNLS steepest-descent 模板。
+  - paper_id: arxiv:1710.06563
+    role: method-background
+    what_it_does: 对半线上的 Schwartz 类 Fokas--Lenells 初边值问题建立相应 Riemann--Hilbert 表述， 并用 Deift--Zhou nonlinear steepest
+      descent 推导 t→∞ 的长时渐近。
+    why_read: 它把同一套渐近方法从整线散射推广到受边界约束的谱问题，适合作为研究 FL/DNLS 半线问题、边界谱数据和初边值相容性的直接方法背景。
+- date: '2026-07-17'
+  week: 2026-W29
+  summary: 本期按“两分量 Fokas--Lenells 平面波新解族—matrix/vector Darboux 结构— 课题组 coupled FL 基线—本征值响应函数与 soliton tomography—实验正式版本”组织，
+    把离散谱从生成精确解的参数提升为可操控、可反演的观测坐标。
+  entries:
+  - paper_id: arxiv:2607.13773
+    role: recent
+    homepage_rank: 1
+    what_it_does: 对双折射光纤的两分量 Fokas--Lenells 方程用 Darboux transformation 构造 平面波背景上的 multihump-multivalley soliton
+      families；用相图分类基本解， 推广到任意多峰多谷与高阶构型，并用弱白噪声数值演化检验鲁棒性。
+    why_read: 它把当前 Fokas--Lenells、两分量系统和非零背景精确解方向结合起来； 复平面中强度零点与极点共同决定 virtual monopole field 的观察，也为 “谱参数—波形拓扑”之间的关系提供了一个可计算的新例子。
+  - paper_id: arxiv:2607.12339
+    role: recent
+    homepage_rank: 2
+    what_it_does: 为 sech 型 NLS 脉冲推导 soliton eigenvalue response functions，分析瞬时可控扰动 如何移动离散本征值，并建立由传播末端测得的本征值偏移反演未知波形畸变的积分方程；
+      文中比较不同重构区间并测试含噪数据下的稳定性。
+    why_read: 它把 IST 离散谱从守恒量和解参数转化为传感与 tomography 的观测量， 对理解谱数据在可控扰动、非线性传播和反问题之间如何传递尤其有价值。
+  - paper_id: doi:10.1103/PhysRevLett.134.193804
+    role: journal-version
+    homepage_rank: 3
+    what_it_does: 在 strongly overlapping 多孤子脉冲中引入 eigenvalue response functions， 并在循环光纤环与 homodyne 测量平台上施加局域相位扰动，选择性改变单个孤子的
+      速度和振幅、从复合脉冲中剥离目标孤子，实验结果与 IST 扰动理论定量吻合。
+    why_read: 这是 soliton tomography 新论文的正式实验上游：先读它可以看清 response function 的物理可测性、完整相位—振幅重构要求，以及从“操控本征值”走向“反演扰动源”的新增步骤。
+  - paper_id: arxiv:2508.17534
+    role: method-background
+    what_it_does: 用 bidifferential calculus 为 Kaup--Newell 层级第一负流的 matrix 版本构造 vectorial binary Darboux transformation，并将其约化到
+      matrix Fokas--Lenells 方程； 在两分量平面波背景上系统生成 breathers、dark solitons、rogue waves 与 beating solitons。
+    why_read: 它给今天的新 multihump Fokas--Lenells 解族提供结构化的 matrix/vector dressing 背景， 便于比较不同 Darboux 参数化如何组织非零背景上的多种波形，而不只逐个验证显式公式。
+  - paper_id: doi:10.1016/j.nonrwa.2017.08.013
+    role: group-adjacent
+    what_it_does: 从正、负阶 vector Kaup--Newell hierarchy 建立多 Hamilton 结构与无穷守恒律， 识别首个非平凡负流为 coupled Fokas--Lenells 方程，并以
+      generalized Darboux transformation 构造 bright-dark、dark-anti-dark、breather-like 及多孤子解和渐近行为。
+    why_read: 这是 Liming Ling 合作工作的正式期刊基线，把 coupled FL 的层级结构、守恒律、 平面波背景解型分类与多孤子渐近统一起来，可作为今天新两分量解族最直接的课题组相关参照。
+- date: '2026-07-16'
+  week: 2026-W29
+  summary: 本期按“shifted nonlocal NLS/mKdV 的几何折叠—显式孤子基线—shifted nonlocal DNLS 约化—非局部 NLS 的谱与 Hamilton 结构”组织。
+  entries:
+  - paper_id: arxiv:2607.10870
+    role: recent
+    homepage_rank: 1
+    what_it_does: 把既有 shifted nonlocal NLS 与 mKdV 的一、二孤子解作为参数曲线的场变量， 通过非单调空间映射构造 loop-type folded profiles；以折叠映射导数变号作为充分条件，
+      并分析变形参数和孤子参数如何产生规则、振荡与奇异折叠。
+    why_read: 新意不在重新求解方程，而在清楚分离“解的振幅动力学”和“空间参数化几何”； 这为阅读 loop/foldon 图形提供判别框架，也直接指向其依赖的 shifted-reduction 文献。
+  - paper_id: doi:10.1016/j.physleta.2021.127793
+    role: journal-version
+    homepage_rank: 2
+    what_it_does: 为 shifted nonlocal NLS 与 mKdV 方程给出一、二孤子解，并系统讨论这些解的 奇异结构和参数依赖；今天的新论文正是把这些显式解重新解释为可折叠的参数波形。
+    why_read: 这是新结果最直接的正式期刊上游，可用于区分来自方程与约化的结构，和后续 folding map 对空间坐标的再参数化效应。
+  - paper_id: arxiv:2110.01047
+    role: adjacent
+    homepage_rank: 3
+    what_it_does: 从可积 coupled Kundu-type system 的局部与 shifted nonlocal reductions 出发， 对 Chen--Lee--Liu、Gerdjikov--Ivanov
+      和 Kaup--Newell 三类 DNLS 型方程用 Hirota 双线性法构造一、二孤子解。
+    why_read: 它把 shifted nonlocal 主题直接拉回 DNLS 三分支，便于比较空间/时间平移约化 怎样改变熟悉的 CLL、GI 与 KN 孤子公式和正则性条件。
+  - paper_id: arxiv:1510.00480
+    role: method-background
+    what_it_does: 利用 Lax 算子 squared solutions 的完备关系证明一类非局部 NLS 层级的完整可积性， 描述两类孤子谱、由散射数据参数化的作用角变量，并构造 Hamilton 层级。
+    why_read: 它提供显式解论文缺少的谱论底座：非局部约化不仅产生新孤子公式，也会重组 离散谱对称性、正则解类型和 Hamilton 结构。
+- date: '2026-07-15'
+  week: 2026-W29
+  summary: 本期按“稳定频率占主导的新 vector AB—基于线性化本征向量的可控激发— 非退化 AB 的 MI 存在图—dressing 方法下的 vector breather 分类与相互作用”组织。
+  entries:
+  - paper_id: arxiv:2607.10954
+    role: recent
+    homepage_rank: 1
+    what_it_does: 在 Manakov 系统中构造一种由不稳定模激发、但在峰值处由线性稳定谐波占主导的 精确 vector Akhmediev breather；数值演化表明无需预先播种稳定分量，它会自发出现，
+      并将主导机制定量归因于 four-wave mixing。
+    why_read: 它直接修正“breather 主频必定位于 MI 增益带内”的标量直觉，把多分量系统的稳定间隙、 非线性频率转换和可实验观测的峰值谱结构联系起来。
+  - paper_id: arxiv:2606.21301
+    role: missed-recent
+    homepage_rank: 2
+    what_it_does: 针对 focusing Manakov 系统中多个 MI 分支并存的问题，用目标分支的线性化本征向量 设计初始 Fourier 扰动，使指定 vector Akhmediev breather
+      以接近百分之百的保真度被选择性激发。
+    why_read: 它给出今天新论文的控制论互补面：一篇解释稳定谐波如何被非线性放大，另一篇说明如何从 线性阶段就选择目标分支，便于区分分支选择与后续 four-wave mixing 的作用。
+  - paper_id: doi:10.1088/0256-307X/39/9/094201
+    role: journal-version
+    homepage_rank: 3
+    what_it_does: 发现 focusing Manakov 方程中的非退化 Akhmediev breather，给出其频率--波数存在图， 并说明单频调制不稳定性可同时激发三个 AB，其中两个属于非退化分支。
+    why_read: 这是理解新结果所需的正式期刊基线：稳定间隙、多个 MI 分支与非退化 AB 的结构在这里 首次被清楚分离，可用于核对新论文的参数窗口和谱分量解释。
+  - paper_id: arxiv:2211.07014
+    role: method-background
+    what_it_does: 用 dressing method 构造 Manakov 系统的多 vector-breather 解，分析三类基本 breather、 碰撞位移、共振融合与衰变，并把不同类型对应到不稳定与稳定色散分支。
+    why_read: 它把今天的单个峰值谱现象放回完整的 vector-breather 分类和相互作用图景中，并解释为何 稳定分支类型通常不从小扰动的 superregular MI 过程中直接出现。
+- date: '2026-07-14'
+  week: 2026-W29
+  summary: 本期按“fully discrete GI/hGI—高阶 GI 流的 RHP dressing—经典 GI 的 Darboux/quasideterminant 精确解”组织，比较三种构造离散系统与高阶谱数据的方法。
+  entries:
+  - paper_id: arxiv:2607.09333
+    role: recent
+    homepage_rank: 1
+    what_it_does: 从带两组离散色散关系的 Sylvester 方程出发，构造四族共轭对称的 fully discrete Gerdjikov--Ivanov 模型及四族高阶 GI 格点模型；用对角与 Jordan
+      块谱矩阵给出 N-soliton 和 multiple-pole 解，并通过两步连续极限恢复连续 GI/hGI 方程。
+    why_read: 它直接补上 GI 方程 fully discrete analogue 的空缺，并把 Cauchy matrix、连续极限、 局部/非局部约化和多重极点放进同一计算框架，是昨天经典 DNLS 离散化链的自然续篇。
+  - paper_id: arxiv:2105.08412
+    role: method-background
+    homepage_rank: 2
+    what_it_does: 对 GI 层级的三阶流建立 Riemann--Hilbert dressing，构造简单零点与 elementary high-order zeros 的 soliton matrices，分析单、双孤子的传播与弹性交互，并由极限过程
+      得到高阶孤子矩阵。
+    why_read: 它提供与 Cauchy matrix/Jordan-block 构造互补的谱方法视角，可直接比较高阶色散如何 改变速度、方向和振幅，以及高阶零点如何进入 RHP dressing。
+  - paper_id: doi:10.1080/14029251.2015.996438
+    role: journal-version
+    homepage_rank: 3
+    what_it_does: 为标量 GI 方程构造标准 Darboux transformation，并用 quasideterminant 写出迭代解， 以抛物型解、孤子和 breather 作为显式例子。
+    why_read: 这篇正式期刊论文给出最紧凑的 GI Darboux/quasideterminant 基线，便于把今天的新格点 multiple-pole 公式与连续方程的经典 dressing 计算逐项对照。
+- date: '2026-07-13'
+  week: 2026-W29
+  summary: 本期按“近期非交换推广—非 Abelian Darboux 分类—经典 DNLS 离散化—椭圆背景 breather 与 rogue wave”组织，突出连续系统、Darboux 变换和格点模型之间的结构联系。
+  entries:
+  - paper_id: arxiv:2606.10037
+    role: missed-recent
+    homepage_rank: 1
+    what_it_does: 研究 AKNS、Kaup--Newell DNLS 与 Mikhailov--Shabat--Yamilov 变形的非交换推广， 推导连续极限、Darboux--Bäcklund 变换和
+      vertex--bond 型可积离散系统；其中变形 DNLS 的 Lax 表示必须引入非局部变量，并给出六点格点方程的显式波解。
+    why_read: 它把 DNLS、reduction group、非交换代数与离散化放在同一框架中，是理解近期 matrix/non-Abelian DNLS 工作如何从标量 Kaup--Newell 结构扩展出去的直接入口。
+  - paper_id: arxiv:2507.21660
+    role: missed-recent
+    homepage_rank: 2
+    what_it_does: 为七类具有 Lax 表示的 non-Abelian DNLS 构造与 reduction group 相容的线性和 二次 Darboux 矩阵，得到 Volterra、Ablowitz--Ladik、Merola--Ragnisco--Tu
+      与 relativistic Toda 型微分差分系统，并用 quasideterminant 分析二次矩阵的分解。
+    why_read: 这篇文章提供了上一条近期工作的直接技术上游：它把 Darboux transformation 当作可积格点动力学本身，而不只是生成显式解的 dressing 工具。
+  - paper_id: doi:10.1088/0305-4470/35/36/310
+    role: journal-version
+    homepage_rank: 3
+    what_it_does: 通过 Lax pair 为 Kaup--Newell、Chen--Lee--Liu 和 Gerdjikov--Ivanov 三类 DNLS 构造保持复共轭约化与双 Hamilton 结构的可积离散化，并由变量变换和约化导出
+      matrix NLS、coupled NLS、Hirota、Sasa--Satsuma 等多类格点系统。
+    why_read: 它是今天两篇 non-Abelian/noncommutative 工作反复依赖的经典基线，可用于核对 各类 DNLS 离散系统的 Lax 结构、约化关系和连续极限。
+  - paper_id: doi:10.1111/sapm.12287
+    role: group-adjacent
+    what_it_does: 在 dn、cn 与带相位调制的椭圆背景上用 Darboux transformation 构造 focusing NLS 多 breather，并以 theta 行列式表示；同时用 squared
+      eigenfunctions 求线性化谱， 再在分支点极限下得到高阶 rogue waves。
+    why_read: 这篇 Liming Ling 合作论文把有限带背景、调制不稳定性、Darboux 极限与 rogue wave 统一起来，为当前 Fokas--Lenells 椭圆背景局域解提供非常具体的比较对象。
+- date: '2026-07-12'
+  week: 2026-W28
+  summary: 本期按“方程结构—带孤子 IST—DNLS soliton resolution—多分量精确解”组织， 补齐 Fokas--Lenells 与 derivative-NLS 方向的基础阅读链。
+  entries:
+  - paper_id: doi:10.1088/1361-6544/abcc4b
+    role: journal-version
+    homepage_rank: 1
+    what_it_does: 从不可约 Hermitian symmetric spaces 出发构造多分量 Fokas--Lenells 方程， 给出相应 Lax 表示、双 Hamilton 结构，并系统讨论局部、非局部约化及经典系列实例。
+    why_read: 它为近期椭圆背景 Fokas--Lenells 精确解提供结构层面的上游框架，也把多分量 FL 与 DNLS 型二次谱问题、对称空间分类和 reduction group 联系起来。
+  - paper_id: arxiv:2210.08417
+    role: method-background
+    homepage_rank: 2
+    what_it_does: 对含有限个孤子的 Fokas--Lenells 初值问题证明全局解存在性；核心工具是可添加或移除 指定离散谱数据的改造 Darboux transformation，再将问题约化到无孤子
+      IST 情形。
+    why_read: 这篇文章具体展示了 Darboux 变换如何作为谱数据管理工具服务于严格适定性证明， 可与 coupled NLS 长时渐近中移除离散谱的做法直接对照。
+  - paper_id: arxiv:1905.02866
+    role: review-map
+    homepage_rank: 3
+    what_it_does: 综述 DNLS 在加权 Sobolev 空间中的全局适定性与长时行为，说明 Zhou 方法如何处理 spectral singularities，并总结一般亮孤子数据下的 soliton
+      resolution 与渐近稳定性。
+    why_read: 它提供一张从 direct/inverse scattering、谱奇点控制到 nonlinear steepest descent 和 soliton resolution 的紧凑路线图，适合统摄近期
+      DNLS soliton-gas 与渐近工作。
+  - paper_id: doi:10.1088/1751-8113/43/43/434023
+    role: group-adjacent
+    what_it_does: 为两分量 derivative NLS 构造可迭代的 Darboux transformation，并由此得到紧凑的 N-soliton 表示，展示多分量导数型系统中离散谱迭代的基本代数结构。
+    why_read: 这是 Liming Ling 早期多分量 DNLS 工作中的直接方法文献，可与后续 generalized Darboux、coupled GI 逆散射和 coupled NLS 精确解研究并读。
+- date: '2026-07-11'
+  week: 2026-W28
+  summary: 本期关注 coupled NLS 与 DNLS 的 RHP 表述，以及 finite-gap 退化和 soliton gas 之间的联系。
+  entries:
+  - paper_id: arxiv:2504.21315
+    role: group-adjacent
+    homepage_rank: 1
+    what_it_does: 从 focusing coupled NLS 的 3×3 谱问题建立 RHP，通过 Darboux transformation 移除离散谱，并用 Deift--Zhou 非线性 steepest
+      descent 得到加权 Sobolev 初值下的长时展开和孤子分解。
+    why_read: 直接连接 Liming Ling 课题组的 coupled NLS、RHP、Darboux 变换和长时渐近方向。
+  - paper_id: arxiv:0808.1534
+    role: method-background
+    homepage_rank: 2
+    what_it_does: 用统一变换处理 Kaup--Newell 型 DNLS 半线问题，将初值谱函数和边界谱函数 共同编码进矩阵 RHP，并由 global relation 约束边界数据。
+    why_read: 它是从整线 DNLS IST 过渡到初边值谱分析、边界兼容性和半线 RHP 的基础文献。
+  - paper_id: doi:10.1088/1361-6544/accfdf
+    role: journal-version
+    homepage_rank: 3
+    what_it_does: 推导高亏格 theta 函数的部分退化公式，并将 KdV 多孤子解表示为平移椭圆背景 与行列式孤子部分，同时得到椭圆背景上的散射核和 soliton-gas 色散关系。
+    why_read: 它把有限带几何、退化极限、非零背景散射和 soliton gas 放在同一具体模型中。
+  - paper_id: arxiv:2304.06541
+    role: review-map
+    what_it_does: 综述稀疏与稠密 soliton gas、IST、有限带势的热力学极限、广义 Gibbs 系综、 广义流体力学、数值方法和实验实现。
+    why_read: 适合作为领域地图，用来核对 soliton gas 的术语、主要方法、实验背景和开放问题。
+- date: '2026-07-10'
+  week: 2026-W28
+  summary: 本期混合近期渐近结果、soliton-gas 统计工作、离散与多分量系统，以及两篇 课题组相关的 Darboux 方法旧文。
+  entries:
+  - paper_id: arxiv:2602.13589
+    role: journal-version
+    homepage_rank: 1
+    what_it_does: 对有限亏格代数几何背景上的 defocusing NLS 应用非线性 steepest descent， 区分四个时空区域，并以 Painlevé XXXIV 描述两个过渡区的次阶渐近。
+    why_read: 它展示了有限带背景、RHP 变形和 Painlevé 局部模型如何在长时渐近中衔接。
+  - paper_id: arxiv:2605.06306
+    role: recent
+    what_it_does: 为 focusing NLS 半经典随机波场提出 soliton-gas resolution，将谱态密度与 波场强度统计联系起来，并与数值模拟比较。
+    why_read: 可作为随机 IST、积分湍流和 soliton-gas 统计方向的近期入口。
+  - paper_id: arxiv:2606.05123
+    role: adjacent
+    what_it_does: 在非零背景下构造 defocusing 标量与耦合 Ablowitz--Ladik 系统的周期 breather、 离散 Akhmediev 型 breather 及其 rogue-wave
+      极限。
+    why_read: 为多分量离散可积系统中的 breather 与 rogue wave 提供一组可比较的显式解。
+  - paper_id: arxiv:2606.22808
+    role: adjacent
+    what_it_does: 给出调和维数约化条件，将一类 (3+1) 维多分量 NLS 系统精确约化到 (1+1) 维可积层级，并把 Manakov 型解提升回高维模型。
+    why_read: 它提供了从低维可积解到高维多分量波场的精确构造机制。
+  - paper_id: doi:10.1111/j.1467-9590.2012.00568.x
+    role: group-adjacent
+    homepage_rank: 2
+    what_it_does: 构造 Kaup--Newell/DNLS 的两类广义 Darboux transformation，并给出高阶孤子、 重复极点解和高阶 rogue-wave 公式。
+    why_read: 是理解 DNLS 多重谱点、极限过程和高阶精确解构造的直接方法背景。
+  - paper_id: doi:10.1016/j.cnsns.2015.08.023
+    role: group-adjacent
+    what_it_does: 通过统一 Darboux transformation 构造混合耦合 NLS 的非零背景解，分类 breather、dark soliton 和 rogue wave，并分析不同解型之间的相互作用。
+    why_read: 连接课题组的多分量 NLS、非零背景精确解和解型分类工作。
+- date: '2026-07-09'
+  week: 2026-W28
+  summary: 本期以 Fokas--Lenells、DNLS soliton gas、coupled GI 逆散射和 coupled NLS breather 稳定性为主，并补充有限带估计与多分量离散化。
+  entries:
+  - paper_id: arxiv:2607.06409
+    role: recent
+    homepage_rank: 1
+    what_it_does: 使用 Lax pair、Weierstrass 椭圆函数和 N-fold Darboux--Bäcklund transformation 构造 Fokas--Lenells 方程的椭圆背景局域解，并研究其传播渐近结构。
+    why_read: 与当前 DNLS/Fokas--Lenells、椭圆背景和 Darboux 构造方向高度重合。
+  - paper_id: arxiv:2607.04756
+    role: adjacent
+    what_it_does: 构造多分量 short-pulse equation 的全离散可积系统，并保持相应的双线性与 孤子结构。
+    why_read: 可作为 complex short pulse、vector soliton 和离散可积模型的外围方法材料。
+  - paper_id: arxiv:2607.01348
+    role: recent
+    what_it_does: 给出 modified KdV 有限带解振幅的锐上界，把代数几何解的谱数据与定量振幅估计联系起来。
+    why_read: 补充有限带研究中从显式构造走向定量控制的一条线索。
+  - paper_id: arxiv:2606.24435
+    role: missed-recent
+    homepage_rank: 2
+    what_it_does: 从纯 N-soliton 的 meromorphic RHP 出发研究 DNLS soliton gas 的连续极限和长时渐近， 使用 RHP、∂̄ 方法和 theta 函数描述不同渐近区域。
+    why_read: 直接位于 DNLS、soliton gas、RHP 和长时渐近的交叉点，是当前优先级很高的补读。
+  - paper_id: arxiv:2605.28856
+    role: missed-recent
+    what_it_does: 建立 coupled Gerdjikov--Ivanov 线性系统的 direct/inverse scattering，讨论 Jost solutions、散射系数、束缚态以及 Marchenko
+      型积分方程。
+    why_read: 为 coupled GI 和 DNLS system III 的完整 IST 框架提供直接的谱分析材料。
+  - paper_id: doi:10.1016/j.aim.2026.110961
+    role: group-adjacent
+    what_it_does: 通过 squared eigenfunctions、Krein signature 和 Lyapunov 方法研究 coupled NLS breathers 的谱结构与非线性轨道稳定性。
+    why_read: 是课题组相关的 coupled NLS、breather 和稳定性方向中的核心正式论文。
+frontier:
+  window_days: 30
+  generated_through: '2026-07-19'
+  entries:
+  - paper_id: doi:10.1007/s10955-026-03663-6
+    signal_date: '2026-07-16'
+    signal_type: journal-publication
+    week: 2026-W29
+    arxiv_categories:
+    - math-ph
+    - hep-th
+    structure_tags:
+    - Riemann--Hilbert problem
+    - Yang--Baxter equation
+    summary: 构造双 HCIZ 修饰的 Hermitian Gaussian matrix model，使其有限维本征值分布精确对应具有任意起终点重数的 non-intersecting Brownian bridges。
+    main_result: 构造双 HCIZ 修饰的 Hermitian Gaussian matrix model，使其有限维本征值分布精确对应具有任意起终点重数的 non-intersecting Brownian
+      bridges。
+    integrable_structure: 模型连接 Karlin--McGregor law、mixed multiple orthogonal polynomials、Riemann--Hilbert problem、2D
+      Toda tau-function 和 Schwinger--Dyson/Virasoro identities。
+    innovation: '补出了多起点、多终点 Brownian bridge 问题此前缺失的显式矩阵模型来源，并在有限 \(n\) 层面统一路径分布、谱模型和可积层级结构。 ## 6. 本轮值得关注的方向信号这 20
+      篇共同显示出几条值得可积系统读者关注的方向： - **可积结构进入引力。** AKNS、KdV/mKdV hierarchy、Chern--Simons theory 和 Yang--Baxter deformation
+      正在形成更具体的引力模型与热力学联系。 - **从显式解走向可控机制。** Darboux 和精确解工作只有在产生统一形变规律、任意阶分类、稳定频率主导或拓扑结论时才真正值得关注。 - **可积性判定变得更短。**
+      单个守恒律推出完整量子可积层级，说明可积性识别可能出现更有效的严格判据。 - **谱数据成为观测变量。** soliton tomography 把离散本征值用于控制、传感和反演，而不只用于表示精确解。 - **可积概率继续结构化。**
+      loop equations、RHP、Toda tau-functions 和矩阵模型正在提供新的 universality 与有限维精确结构。 - **离散和几何方向仍活跃。** 可积离散化、离散共形几何、仿射超曲面和有限特征
+      Painlevé 展示了结构方法的新落点。 ## 7. 下一步 1. 补筛 2026-06-20 至 2026-07-05； 2. 与本报告的 20 篇合并为完整 30 天样本； 3. 根据实际数量确认首页 30
+      天窗口； 4. 再开始数据字段、renderer、紧凑页面和自动化的实施； 5. 继续只创建 reviewable PR，不自动合并，不启用 auto-merge。'
+  - paper_id: arxiv:2607.13773
+    signal_date: '2026-07-15'
+    signal_type: new-preprint
+    week: 2026-W29
+    arxiv_categories:
+    - nlin.PS
+    - nlin.SI
+    structure_tags:
+    - Darboux transformation
+    summary: 研究 two-component Fokas--Lenells 方程在平面波背景上的 multihump--multivalley soliton families，系统分类基本解并构造任意 \(K\)-hump、\(M\)-valley
+      及混合结构。
+    main_result: 研究 two-component Fokas--Lenells 方程在平面波背景上的 multihump--multivalley soliton families，系统分类基本解并构造任意
+      \(K\)-hump、\(M\)-valley 及混合结构。
+    integrable_structure: 使用 \(N\)-fold Darboux transformation、等速度与背景振幅约束，并以 topological vector potential 分析复平面中的强度零点和极点。
+    innovation: 构造从有限低阶例子扩展到任意 multihump/multivalley 组合；同时发现 virtual monopole field 由强度零点和极点等量贡献，形成新的拓扑结论。
+  - paper_id: arxiv:2607.12339
+    signal_date: '2026-07-14'
+    signal_type: new-preprint
+    week: 2026-W29
+    arxiv_categories:
+    - nlin.PS
+    structure_tags:
+    - Eigenvalue-Based Approach to
+    summary: 推导 soliton eigenvalue response functions，并建立由输出本征值偏移反演未知脉冲扰动的积分方程，包含含噪重构测试。可积谱数据直接参与控制和反问题，形成 soliton
+      tomography 的具体方法框架。
+    main_result: 推导 soliton eigenvalue response functions，并建立由输出本征值偏移反演未知脉冲扰动的积分方程，包含含噪重构测试。
+    integrable_structure: 将 IST 离散本征值从精确解参数和守恒数据转化为可测量、可操控的观测坐标。
+    innovation: 可积谱数据直接参与控制和反问题，形成 soliton tomography 的具体方法框架。
+  - paper_id: doi:10.1007/JHEP07(2026)123
+    signal_date: '2026-07-13'
+    signal_type: journal-publication
+    week: 2026-W29
+    arxiv_categories: []
+    structure_tags:
+    - Yang--Baxter equation
+    - Chern--Simons theory
+    summary: 从四维 Chern--Simons theory 推导 Breitenlohner--Maison sigma model 及其高秩推广的可积形变。为描述四维广义相对论平稳轴对称扇区的 sigma
+      model 建立统一的可积形变来源，把引力模型、Chern--Simons 构造和 Yang--Baxter deformation 直接连接起来。
+    main_result: 从四维 Chern--Simons theory 推导 Breitenlohner--Maison sigma model 及其高秩推广的可积形变。
+    integrable_structure: 通过改变 4d Chern--Simons 边界条件和作用量，分别得到与 homogeneous 和 inhomogeneous classical Yang--Baxter
+      equations 对应的形变。
+    innovation: 为描述四维广义相对论平稳轴对称扇区的 sigma model 建立统一的可积形变来源，把引力模型、Chern--Simons 构造和 Yang--Baxter deformation 直接连接起来。
+  - paper_id: doi:10.1007/JHEP07(2026)120
+    signal_date: '2026-07-13'
+    signal_type: journal-publication
+    week: 2026-W29
+    arxiv_categories: []
+    structure_tags:
+    - inverse scattering
+    summary: 从三维引力的 Chern--Simons 表述和手征边界条件导出 potential mKdV hierarchy 及 eigenfunction-forced KdV dynamics。将自洽本征函数驱动的强迫
+      KdV 与 AdS\(_3\) 边界动力学统一起来，同时给出孤子和辐射两类扇区的可积分析。
+    main_result: 从三维引力的 Chern--Simons 表述和手征边界条件导出 potential mKdV hierarchy 及 eigenfunction-forced KdV dynamics。
+    integrable_structure: 反射为零扇区由 inverse scattering 和 Gelfand--Levitan--Marchenko 方法求解，有辐射扇区表现出普适色散衰减。
+    innovation: 将自洽本征函数驱动的强迫 KdV 与 AdS\(_3\) 边界动力学统一起来，同时给出孤子和辐射两类扇区的可积分析。
+  - paper_id: arxiv:2607.10954
+    signal_date: '2026-07-12'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories:
+    - nlin.PS
+    - nlin.SI
+    structure_tags:
+    - Exact vector Akhmediev
+    summary: 构造由不稳定模触发、但峰值处由线性稳定谐波主导的 exact vector Akhmediev breather。揭示标量 MI 直觉在多分量系统中的失效，并把稳定频率的自发主导机制定量归因于 four-wave
+      mixing。
+    main_result: 构造由不稳定模触发、但峰值处由线性稳定谐波主导的 exact vector Akhmediev breather。
+    integrable_structure: Manakov 系统的精确 breather 和多分支 modulation-instability 谱结构。
+    innovation: 揭示标量 MI 直觉在多分量系统中的失效，并把稳定频率的自发主导机制定量归因于 four-wave mixing。
+  - paper_id: arxiv:2607.09333
+    signal_date: '2026-07-10'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories:
+    - nlin.SI
+    structure_tags:
+    - integrable discretization
+    summary: 构造四族 fully discrete GI models 和四族 higher-order GI lattice models，得到 \(N\)-soliton 与 multiple-pole 解，并通过连续极限恢复连续
+      GI/hGI 方程。
+    main_result: 构造四族 fully discrete GI models 和四族 higher-order GI lattice models，得到 \(N\)-soliton 与 multiple-pole
+      解，并通过连续极限恢复连续 GI/hGI 方程。
+    integrable_structure: Sylvester/Cauchy matrix scheme、离散色散关系、局部/非局部约化和 Jordan-block 谱矩阵。
+    innovation: 离散模型、约化、multiple-pole 解和连续极限形成完整的新离散可积体系。
+  - paper_id: arxiv:2607.09180
+    signal_date: '2026-07-10'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories: []
+    structure_tags:
+    - Yang--Baxter equation
+    - tau function
+    summary: 建立 dispersionless modified DKP hierarchy 与 Yang--Baxter equation 的等价关系。给出经典可积层级与量子可积核心代数结构之间的直接等价桥梁。
+    main_result: 建立 dispersionless modified DKP hierarchy 与 Yang--Baxter equation 的等价关系。
+    integrable_structure: tau/Hirota--Miwa 结构和 Baxter eight-vertex \(R\)-matrix。
+    innovation: 给出经典可积层级与量子可积核心代数结构之间的直接等价桥梁。
+  - paper_id: arxiv:2607.08901
+    signal_date: '2026-07-09'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories:
+    - math.DS
+    - nlin.SI
+    structure_tags:
+    - integrable discretization
+    summary: 证明 quasi-periodic 离散共形映射 Cauchy problem 的 Liouville 可积性，并将结论转移到 Schramm circle patterns。在离散共形几何中得到严格的可积性定理及具体几何结果，而不只是建立形式类比。
+    main_result: 证明 quasi-periodic 离散共形映射 Cauchy problem 的 Liouville 可积性，并将结论转移到 Schramm circle patterns。
+    integrable_structure: 辛结构、symplectic leaves 和 Liouville integrability。
+    innovation: 在离散共形几何中得到严格的可积性定理及具体几何结果，而不只是建立形式类比。
+  - paper_id: doi:10.1103/y66t-t8zw
+    signal_date: '2026-07-08'
+    signal_type: journal-publication
+    week: 2026-W28
+    arxiv_categories:
+    - cond-mat.stat-mech
+    - math-ph
+    structure_tags:
+    - Yang--Baxter equation
+    - conservation laws
+    summary: 证明平移不变、有限程量子自旋链中一个特定低阶守恒律已经蕴含无穷多个局部守恒量。将常用的经验判据提升为严格充分条件，为系统识别新的量子可积模型提供更短、更可验证的入口。
+    main_result: 证明平移不变、有限程量子自旋链中一个特定低阶守恒律已经蕴含无穷多个局部守恒量。
+    integrable_structure: Reshetikhin condition 与 Yang--Baxter 构造所产生的守恒律层级。
+    innovation: 将常用的经验判据提升为严格充分条件，为系统识别新的量子可积模型提供更短、更可验证的入口。
+  - paper_id: arxiv:2607.07617
+    signal_date: '2026-07-08'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories: []
+    structure_tags:
+    - loop equations
+    summary: 利用 loop equations 给出 Sine\(_\beta\) 与 Airy\(_\beta\) 过程的唯一性刻画。用结构化方程直接刻画普适极限对象，为证明 universality 提供只需验证近似
+      loop equations 的新路线。
+    main_result: 利用 loop equations 给出 Sine\(_\beta\) 与 Airy\(_\beta\) 过程的唯一性刻画。
+    integrable_structure: 随机矩阵点过程的 loop-equation hierarchy 和递归恒等式。
+    innovation: 用结构化方程直接刻画普适极限对象，为证明 universality 提供只需验证近似 loop equations 的新路线。
+  - paper_id: arxiv:2607.07345
+    signal_date: '2026-07-08'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories:
+    - nlin.PS
+    - nlin.SI
+    structure_tags:
+    - Darboux transformation
+    summary: 构造二维非线性自旋系统中的基本和高阶 magnetic lump，并研究有效自旋流如何控制其各向异性形变和准一维极限。自旋流对空间形状的控制不是单个解的偶然现象，而是贯穿基本和高阶 lump family
+      的统一几何调制规律，并产生连续的维数交叉机制。
+    main_result: 构造二维非线性自旋系统中的基本和高阶 magnetic lump，并研究有效自旋流如何控制其各向异性形变和准一维极限。
+    integrable_structure: 在可积自旋系统的旋转背景上使用 Darboux transformation 生成 lump hierarchy，自旋流参数直接进入局域坐标。
+    innovation: 自旋流对空间形状的控制不是单个解的偶然现象，而是贯穿基本和高阶 lump family 的统一几何调制规律，并产生连续的维数交叉机制。
+  - paper_id: arxiv:2607.06980
+    signal_date: '2026-07-08'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories: []
+    structure_tags:
+    - Lax pair
+    - Painlevé
+    summary: 在有限特征中给出统一方法，为经典 Painlevé 方程产生由素数索引的可数积分族。Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域结构推进到有限特征问题。
+    main_result: 在有限特征中给出统一方法，为经典 Painlevé 方程产生由素数索引的可数积分族。
+    integrable_structure: rank-two difference--differential Lax pairs 与 Painlevé 方程的谱结构。
+    innovation: Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域结构推进到有限特征问题。
+  - paper_id: arxiv:2607.06942
+    signal_date: '2026-07-08'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories: []
+    structure_tags:
+    - Invariant Measures for
+    summary: 给出 Mealy automata 孤子系统中 Bernoulli/Markov 测度保持不变的判据，并分析孤子速度和 phase shift。将离散孤子系统从精确动力学推进到不变测度、广义 Gibbs
+      ensemble 和 generalized hydrodynamics 的概率基础。
+    main_result: 给出 Mealy automata 孤子系统中 Bernoulli/Markov 测度保持不变的判据，并分析孤子速度和 phase shift。
+    integrable_structure: Mealy automata 生成的离散孤子系统、box--ball-system 型动力学和孤子散射数据。
+    innovation: 将离散孤子系统从精确动力学推进到不变测度、广义 Gibbs ensemble 和 generalized hydrodynamics 的概率基础。
+  - paper_id: arxiv:2607.06409
+    signal_date: '2026-07-07'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Lax pair
+    - Darboux transformation
+    summary: 对 \(N\)-elliptic localized solutions 给出系统的渐近分解和对称性分析。重点不是新增解图，而是把高阶椭圆局域解转化为可解释的远场组成和渐近结构。
+    main_result: 对 \(N\)-elliptic localized solutions 给出系统的渐近分解和对称性分析。
+    integrable_structure: Fokas--Lenells Lax pair、椭圆背景、\(N\)-fold Darboux--Bäcklund transformation 和 sigma/Cauchy
+      determinant 结构。
+    innovation: 重点不是新增解图，而是把高阶椭圆局域解转化为可解释的远场组成和渐近结构。
+  - paper_id: arxiv:2607.06119
+    signal_date: '2026-07-07'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories: []
+    structure_tags:
+    - Wave Kinetics and
+    summary: 研究 KP-I 随机波场的 wave-kinetic 演化、Rayleigh--Jeans thermalization、非局域谱传输和 condensation-like spectral peak。
+    main_result: 研究 KP-I 随机波场的 wave-kinetic 演化、Rayleigh--Jeans thermalization、非局域谱传输和 condensation-like spectral
+      peak。
+    integrable_structure: 从 IST-integrable KP-I 系统及其无穷多不变量出发，分析宏观统计动力学。
+    innovation: 直接讨论微观可积性如何限制并改变波动热化与谱传输，为可积湍流提供新的宏观方向。
+  - paper_id: arxiv:2504.05200
+    signal_date: '2026-07-07'
+    signal_type: journal-publication
+    week: 2026-W28
+    arxiv_categories:
+    - math.DG
+    structure_tags:
+    - Affine hypersurfaces and
+    summary: 论文研究 abundant second-order conformally superintegrable systems 的几何编码，建立它们与一类非退化相对仿射超曲面正规化之间的对应。将高维超可积系统的分类问题转化为仿射微分几何问题，并给出两类几何对象之间的必要充分条件和共形等价对应。
+    main_result: 论文研究 abundant second-order conformally superintegrable systems 的几何编码，建立它们与一类非退化相对仿射超曲面正规化之间的对应。
+    integrable_structure: 以 structure tensor、conformal equivalence 和 affine hypersurface geometry 表述超可积系统的分类条件。
+    innovation: 将高维超可积系统的分类问题转化为仿射微分几何问题，并给出两类几何对象之间的必要充分条件和共形等价对应。
+  - paper_id: doi:10.1103/n2hm-lk94
+    signal_date: '2026-07-06'
+    signal_type: journal-publication
+    week: 2026-W28
+    arxiv_categories:
+    - hep-th
+    - gr-qc
+    structure_tags:
+    - Integrable black hole
+    summary: 论文研究 AdS\(_3\) 的可积渐近对称性、相应规范荷代数及黑洞热力学，并构造与 KdV 方程相关的 cnoidal black hole。可积谱数据不再只是形式类比，而直接进入黑洞热力学量的描述，把
+      AKNS 谱几何与非轴对称黑洞温度联系起来。
+    main_result: 论文研究 AdS\(_3\) 的可积渐近对称性、相应规范荷代数及黑洞热力学，并构造与 KdV 方程相关的 cnoidal black hole。
+    integrable_structure: 边界动力学由 AKNS hierarchy 及其无穷 Abelian 守恒荷控制。平稳 Schrödinger 谱问题的谱多项式和超椭圆曲线直接编码黑洞温度。
+    innovation: 可积谱数据不再只是形式类比，而直接进入黑洞热力学量的描述，把 AKNS 谱几何与非轴对称黑洞温度联系起来。
+  - paper_id: arxiv:2607.05681
+    signal_date: '2026-07-06'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - conservation laws
+    summary: 建立 generalized Konno--Oono system 的可积性，并解释其与 \(S^3\) 中曲面几何的联系。同一套结构同时产生可积性证明、守恒律和曲面几何解释。
+    main_result: 建立 generalized Konno--Oono system 的可积性，并解释其与 \(S^3\) 中曲面几何的联系。
+    integrable_structure: 含参数线性问题、Riccati pseudo-potential、horizontal cohomology 和无穷非平凡局部守恒律。
+    innovation: 同一套结构同时产生可积性证明、守恒律和曲面几何解释。
+  - paper_id: arxiv:2607.04756
+    signal_date: '2026-07-06'
+    signal_type: new-preprint
+    week: 2026-W28
+    arxiv_categories: []
+    structure_tags:
+    - integrable discretization
+    summary: 构造多分量 short-pulse 方程的半离散和全离散 analogue，并给出精确 \(N\)-soliton 解及自适应移动网格解释。连续模型的双线性/Pfaffian 结构、精确解和移动网格意义在全离散层面同时保留，不是普通差分近似。
+    main_result: 构造多分量 short-pulse 方程的半离散和全离散 analogue，并给出精确 \(N\)-soliton 解及自适应移动网格解释。
+    integrable_structure: 双线性形式、Pfaffian 表示和保持可积性的离散化。
+    innovation: 连续模型的双线性/Pfaffian 结构、精确解和移动网格意义在全离散层面同时保留，不是普通差分近似。
+  - paper_id: arxiv:2607.03555
+    signal_date: '2026-07-03'
+    signal_type: new-preprint
+    week: 2026-W27
+    arxiv_categories:
+    - nlin.SI
+    structure_tags:
+    - Lax pair
+    - Yang--Baxter equation
+    summary: 论文为 sine-Gordon finite-gap solutions 的密度建立 sharp upper bound，并为一类有界 sinh-Gordon finite-gap solutions
+      给出类似结果。
+    main_result: 论文为 sine-Gordon finite-gap solutions 的密度建立 sharp upper bound，并为一类有界 sinh-Gordon finite-gap solutions
+      给出类似结果。
+    integrable_structure: 上界直接从 finite-dimensional hierarchy 得到，无需显式积分有限带解；最大密度由 invariant polynomial 的根决定。
+    innovation: '结果把有限带解的极值密度问题化为有限维层级中的不变量判定，并给出 sharp、可计算的全局约束。 ## 6. 本区间显示出的方向信号这 24 篇共同显示出几个值得继续关注的方向： 1. **从
+      Lax pair 的存在转向 Lax 表示的质量与可识别性。** 数据驱动发现、fake/degenerate Lax pairs 和支集算术分类都要求更精细的结构判据。 2. **散射与 RHP 从求解工具转向学习、扰动和统计极限。**
+      scattering data system identification、kink perturbation、Painlevé transition layer 和 arbitrary-genus soliton
+      gas 展示了这一变化。 3. **Hamiltonian/Frobenius 几何继续组织离散层级。** Ablowitz--Ladik、2D-Toda reductions 和 polarization discretization
+      都在寻找 full-dispersive 与 dispersionless 结构的统一描述。 4. **Yang--Baxter 方法向电路几何和多站点方程扩展。** 重点从单个 \(R\)-matrix 转向可分类的
+      circuit architecture、boundary structure 和 generalized equation symmetries。 5. **可积结构不断进入引力与随机几何。** Painlevé
+      hierarchy reduction、Nakamura trilinear framework、Breitenlohner--Maison deformation 和 two-matrix critical limit
+      都产生了可复用的新方法桥梁。 ## 7. 实施前确认本报告的 24 篇目前是建议名单。确认后，30 天样本将固定为 44 篇，并进入单独的页面实现 PR。页面实现仍遵循： - 首页最近 30 天、按周分组； -
+      默认只显示概览，完整三段说明折叠； - 不使用贡献等级标签； - 不逐篇显示“自动整理”； - 不使用旧论文补数量； - 实现 PR 只供审核，不自动合并或启用 auto-merge。'
+  - paper_id: arxiv:2607.02093
+    signal_date: '2026-07-02'
+    signal_type: new-preprint
+    week: 2026-W27
+    arxiv_categories:
+    - math-ph
+    - nlin.SI
+    structure_tags:
+    - Yang--Baxter equation
+    - transfer matrix
+    summary: 论文完整分类具有 open boundary conditions 和任意 circuit geometries 的 Yang--Baxter integrable quantum circuits，并给出由
+      staggered inhomogeneities 与系统大小决定 gate arrangement 的一般映射。
+    main_result: 论文完整分类具有 open boundary conditions 和任意 circuit geometries 的 Yang--Baxter integrable quantum circuits，并给出由
+      staggered inhomogeneities 与系统大小决定 gate arrangement 的一般映射。
+    integrable_structure: 构造以 transfer matrix、regular \(R\)-matrices、reflection matrices 和边界 Yang--Baxter 结构为基础，并给出检测任意几何电路
+      Yang--Baxter integrability 的算法。
+    innovation: 工作把开放边界可积电路从少数砖墙几何扩展到任意布局，证明最小 circuit depth 为 4，并允许多站点边界 gates；分类、检测算法和非 difference-form \(R\)-matrix
+      应用形成完整的新框架。
+  - paper_id: arxiv:2607.01545
+    signal_date: '2026-07-01'
+    signal_type: new-preprint
+    week: 2026-W27
+    arxiv_categories:
+    - physics.comp-ph
+    - nlin.SI
+    structure_tags:
+    - inverse scattering
+    summary: 论文从观测到的 scattering data 直接学习有效孤子动力学，而不预设散射方程。方法在 synthetic 和 shallow-water experimental data 上恢复与经典
+      IST 理论一致的低维模型。
+    main_result: 论文从观测到的 scattering data 直接学习有效孤子动力学，而不预设散射方程。方法在 synthetic 和 shallow-water experimental data 上恢复与经典
+      IST 理论一致的低维模型。
+    integrable_structure: 作者把 inverse scattering 的变量选择与 weak-form system identification 结合，在散射域中建模，避免用任意曲线拟合参数化孤立波。
+    innovation: 论文把 IST 从解析推导工具转化为数据驱动坐标系统，使所得模型在 perturbed 和 near-integrable regimes 中仍可解释、可推广，是“由散射数据学习动力学”的清楚新方法。
+  - paper_id: arxiv:2607.01493
+    signal_date: '2026-07-01'
+    signal_type: new-preprint
+    week: 2026-W27
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Lax pair
+    summary: 论文通过 Euler top、free Schrödinger、inviscid Burgers、shallow water 和 KdV 五个案例，重新检查“存在 Lax pair 即证明可积”的经典直觉。作者说明
+      compatibility relation 往往不能唯一决定 Lax representation，异常 Lax pairs 是普遍现象而非偶然病态。
+    main_result: 论文通过 Euler top、free Schrödinger、inviscid Burgers、shallow water 和 KdV 五个案例，重新检查“存在 Lax pair 即证明可积”的经典直觉。作者说明
+      compatibility relation 往往不能唯一决定 Lax representation，异常 Lax pairs 是普遍现象而非偶然病态。
+    integrable_structure: 分析结合显式计算与 Sparse Identification of Lax Operators（SILO），既恢复标准 Lax pairs，也发现需要独立解释的替代表述。
+    innovation: 一个通常被标准判据称为 fake 的谱退化 KdV Lax pair，仍能通过 operator algebra 生成完整守恒层级；这表明 true/fake 二分不足，并为数据驱动发现 Lax
+      结构提出更精细的验证标准。
+  - paper_id: arxiv:2607.01348
+    signal_date: '2026-07-01'
+    signal_type: new-preprint
+    week: 2026-W27
+    arxiv_categories:
+    - nlin.SI
+    structure_tags:
+    - finite-gap
+    summary: 论文为 focusing mKdV finite-gap solutions 的振幅建立 sharp upper bound，并给出 defocusing mKdV 一类有界有限带解的对应公式。上界可由适当初值显式达到。
+    main_result: 论文为 focusing mKdV finite-gap solutions 的振幅建立 sharp upper bound，并给出 defocusing mKdV 一类有界有限带解的对应公式。上界可由适当初值显式达到。
+    integrable_structure: 证明不需要显式积分 theta-function 解，而是直接使用 commuting finite-dimensional flows 和 local polynomial
+      invariants；最大振幅由 invariant polynomial 根的上半平面平方根虚部之和决定。
+    innovation: 工作把复杂 finite-gap 解的全局振幅控制化成有限维不变量的精确代数公式，并同时证明 sharpness。
+  - paper_id: arxiv:2606.30717
+    signal_date: '2026-06-29'
+    signal_type: new-preprint
+    week: 2026-W27
+    arxiv_categories:
+    - hep-th
+    - nlin.SI
+    structure_tags:
+    - The auxiliary-deformed Breitenlohner--Maison
+    summary: 论文研究四维广义相对论可积子扇区 Breitenlohner--Maison model 的 auxiliary-field deformation，构造与已有 \(\nu\)-frame 互补的
+      \(\mu\)-frame，并把两种描述显式提升回四维。
+    main_result: 论文研究四维广义相对论可积子扇区 Breitenlohner--Maison model 的 auxiliary-field deformation，构造与已有 \(\nu\)-frame
+      互补的 \(\mu\)-frame，并把两种描述显式提升回四维。
+    integrable_structure: 二维 BM model 由带两个 commuting Killing isometries 的四维 Einstein theory 约化得到；新构造借鉴 duality-invariant
+      Einstein Lagrangians，得到两个 frame 下的高阶导数四维模型。
+    innovation: 工作不仅继续构造二维可积形变，还回答这些辅助场 frame 在高维中的来源与等价描述问题，并暴露出四维模型缺乏 manifest diffeomorphism invariance 的新结构难题。
+      **版本说明。** v2 于 2026-07-01 只标注为 typo correction，不按重大修订重复收录。
+  - paper_id: arxiv:2606.29263
+    signal_date: '2026-06-28'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    - math.NA
+    structure_tags:
+    - integrable discretization
+    summary: 论文把 polynomial vector fields 的 polarization discretization 守恒量构造推广到任意阶 ODE。对一阶和二阶 Hamiltonian ODE 已知的积分结构在一般阶得到统一代数推导，并且所有阶数至少为
+      3 的积分都是新的。
+    main_result: 论文把 polynomial vector fields 的 polarization discretization 守恒量构造推广到任意阶 ODE。对一阶和二阶 Hamiltonian ODE
+      已知的积分结构在一般阶得到统一代数推导，并且所有阶数至少为 3 的积分都是新的。
+    integrable_structure: 这类 integrators 以 Kahan discretization 为最低阶原型，核心是 polarization 后仍保留非平凡积分及相关几何结构。
+    innovation: 论文给出不依赖逐阶猜测的任意阶守恒量生成方法，扩展了结构保持离散化可被严格控制的范围。
+  - paper_id: arxiv:2606.29156
+    signal_date: '2026-06-28'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    structure_tags:
+    - Riemann--Hilbert problem
+    - Painlevé
+    summary: 论文解析 focusing NLS 非零背景下 plane-wave region 与 modulated elliptic-wave region 之间此前缺失的 transition layer。主项仍是平面波，首个非平凡修正为
+      \(t^{-1/3}\)，其系数由 inhomogeneous Painlevé II 的 distinguished tritronquée solution 表示。
+    main_result: 论文解析 focusing NLS 非零背景下 plane-wave region 与 modulated elliptic-wave region 之间此前缺失的 transition layer。主项仍是平面波，首个非平凡修正为
+      \(t^{-1/3}\)，其系数由 inhomogeneous Painlevé II 的 distinguished tritronquée solution 表示。
+    integrable_structure: 证明基于相关 Riemann--Hilbert problem 的 double-scaling nonlinear steepest descent，在临界曲线附近建立统一局部模型。
+    innovation: 结果补齐了已有长时间渐近在分区边界处不一致的问题，并把 NLS 过渡层与 infinite-order rogue-wave asymptotics 中出现的同一 tritronquée Painlevé
+      II 结构联系起来。 **版本说明。** v1 于 2026-06-28 提交，v2 于 2026-07-05 更新；当前没有证据表明 v2 达到重大修订门槛，因此按首次公开日期收录一次。
+  - paper_id: arxiv:2606.29103
+    signal_date: '2026-06-27'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    - gr-qc
+    structure_tags:
+    - Reduced Trilinear Reformulation
+    summary: 论文把 Nakamura conjecture 中同时出现的 Hirota bilinear derivatives 和普通一阶导数，统一改写到 \(Z_3\)-symmetric trilinear
+      Hirota operators 的 reduced sector 中。
+    main_result: 论文把 Nakamura conjecture 中同时出现的 Hirota bilinear derivatives 和普通一阶导数，统一改写到 \(Z_3\)-symmetric trilinear
+      Hirota operators 的 reduced sector 中。
+    integrable_structure: 新框架继承 Hirota-type direct method，传统谱因子 \(k_i-k_j\) 被 \(Z_3\)-weighted combinations \(k_i+\omega
+      k_j\) 与 \(k_i+\omega^2k_j\) 取代。
+    innovation: 它为 Tomimatsu--Sato stationary axisymmetric gravity 与 Toda-molecule hierarchy 的联系提供了更大的 trilinear
+      结构背景，而不是勉强把普通导数塞进双线性形式。
+  - paper_id: arxiv:2606.28579
+    signal_date: '2026-06-26'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Painlevé
+    summary: 论文研究 real sinh-Gordon Painlevé III solutions 在 \(x,p\to\infty\) 时，从有限 monodromy parameter 的奇异解到 \(p=\infty\)
+      光滑解的过渡。
+    main_result: 论文研究 real sinh-Gordon Painlevé III solutions 在 \(x,p\to\infty\) 时，从有限 monodromy parameter 的奇异解到
+      \(p=\infty\) 光滑解的过渡。
+    integrable_structure: 通过 monodromy parameter 与空间变量的 double scaling，作者辨认出指数、椭圆和三角三种渐近区域及其临界转换。
+    innovation: 工作给出一个覆盖整个参数过渡的统一渐近相图，解释 smooth exponential behavior 如何在临界尺度上转化为 elliptic asymptotics，并进一步退化为固定
+      \(p\) 的 trigonometric regime。
+  - paper_id: arxiv:2606.28250
+    signal_date: '2026-06-26'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    - nlin.PS
+    structure_tags:
+    - Perturbation theory for
+    summary: 论文建立 defocusing mKdV kink 的可积扰动理论，推导连续谱与离散谱扰动的演化，并得到 kink 参数的显式一阶方程。第一阶修正显示一般扰动会在 kink 前方产生 radiative
+      shelf。
+    main_result: 论文建立 defocusing mKdV kink 的可积扰动理论，推导连续谱与离散谱扰动的演化，并得到 kink 参数的显式一阶方程。第一阶修正显示一般扰动会在 kink 前方产生 radiative
+      shelf。
+    integrable_structure: 方法基于 Zakharov--Shabat scattering problem 的 squared-eigenfunction expansion；论文证明 kink background
+      所需的完备关系及 adjoint structure。
+    innovation: 这补齐了非零拓扑背景下的谱扰动工具，使散射数据能同时处理 kink 参数漂移和辐射结构，并通过物理扰动与直接数值模拟验证。
+  - paper_id: arxiv:2606.27125
+    signal_date: '2026-06-25'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - math-ph
+    - nlin.SI
+    structure_tags:
+    - Riemann--Hilbert problem
+    - tau function
+    summary: 论文证明 quartic two-matrix model 的 log partition function 微分，在特定 double-scaling limit 下收敛到 \((3,4)\) string
+      equation 的 tau-function 微分，从而严格确认 critical Ising model on random surfaces 到 \((3,4)\) topological mini……
+    main_result: 论文证明 quartic two-matrix model 的 log partition function 微分，在特定 double-scaling limit 下收敛到 \((3,4)\)
+      string equation 的 tau-function 微分，从而严格确认 critical Ising model on random surfaces 到 \((3,4)\) topological minimal
+      model 的经典预言。
+    integrable_structure: 证明使用 biorthogonal polynomials 对应的 Riemann--Hilbert problem 及 nonlinear steepest descent，并处理局部
+      parametrix matching 中出现的新结构。
+    innovation: 工作把一个长期存在的二维量子引力临界极限猜想落实为严格的 tau-function 收敛定理，同时扩展了多矩阵 RHP 渐近分析的技术。
+  - paper_id: arxiv:2606.26526
+    signal_date: '2026-06-25'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Lax pair
+    - Poisson structure
+    summary: 论文把 pentagram map 从多边形推广到 twisted polyhedra，并证明这些新几何映射完全可积。作者建立射影等价类与双周期 partial difference operators
+      谱数据之间的规范等价双射。
+    main_result: 论文把 pentagram map 从多边形推广到 twisted polyhedra，并证明这些新几何映射完全可积。作者建立射影等价类与双周期 partial difference operators
+      谱数据之间的规范等价双射。
+    integrable_structure: 几何动力学被识别为 pseudo partial difference operators 的 Poisson--Lie group 上的 refactorization
+      maps，由此自然产生显式 Lax representation 和 \(r\)-matrix Poisson bracket。
+    innovation: 结果不是形式上的高维类比，而是给出“多面体几何—谱数据—Poisson--Lie 重分解”的完整结构桥梁，并包含 discrete conjugate nets 的 Laplace transformation
+      作为规范特例。
+  - paper_id: arxiv:2606.26510
+    signal_date: '2026-06-25'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Yang--Baxter equation
+    - Hamiltonian structure
+    summary: 论文分类 generalized Yang--Baxter equations 的连续和离散对称性，以确定解的等价类。结果显示，对称群依赖方程作用的站点数，并在若干情形中严格大于标准 Yang--Baxter
+      equation 的对称群。
+    main_result: 论文分类 generalized Yang--Baxter equations 的连续和离散对称性，以确定解的等价类。结果显示，对称群依赖方程作用的站点数，并在若干情形中严格大于标准 Yang--Baxter
+      equation 的对称群。
+    integrable_structure: 这些 multi-site Yang--Baxter equations 带谱参数时预期产生多体局部相互作用的可积 Hamiltonians，对称性因此直接约束不等价 \(R\)-matrix
+      型解。
+    innovation: 论文给出了 generalized Yang--Baxter 解空间的系统化约束工具，显著缩小可能的非等价模型范围，为后续分类多站点可积量子模型提供方法基础。
+  - paper_id: doi:10.1103/g7hk-tlq1
+    signal_date: '2026-06-24'
+    signal_type: journal-publication
+    week: 2026-W26
+    arxiv_categories:
+    - quant-ph
+    - cond-mat.quant-gas
+    structure_tags:
+    - Hamiltonian structure
+    summary: 论文引入一族由图的邻接矩阵控制相互作用的连续变量多体系统，其基态具有沿图边乘积的 generalized Jastrow form。作者构造相应 parent Hamiltonians，并用图论组织已知模型和大量新的
+      ground-state-solvable examples。
+    main_result: 论文引入一族由图的邻接矩阵控制相互作用的连续变量多体系统，其基态具有沿图边乘积的 generalized Jastrow form。作者构造相应 parent Hamiltonians，并用图论组织已知模型和大量新的
+      ground-state-solvable examples。
+    integrable_structure: 图的边控制二体作用，长度为二的路径控制三体作用；完整图退化到具有置换对称的量子流体，而一般图给出置换对称破缺的连续变量 graph models。
+    innovation: 论文提出一种可扩展的“图结构—Jastrow 基态—parent Hamiltonian”分类方法，清楚区分 integrable 与仅 ground-state solvable 的区域，为寻找精确可解量子多体模型提供新组织原则。
+  - paper_id: arxiv:2606.25846
+    signal_date: '2026-06-24'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Hamiltonian structure
+    - Poisson structure
+    summary: 论文在 full-dispersive level 构造 asymmetric \((3,1)\)-type generalized Ablowitz--Ladik hierarchy 的局部 tri-Hamiltonian
+      structure，并计算相应 bihamiltonian structures 的全部 central invariants。
+    main_result: 论文在 full-dispersive level 构造 asymmetric \((3,1)\)-type generalized Ablowitz--Ladik hierarchy 的局部
+      tri-Hamiltonian structure，并计算相应 bihamiltonian structures 的全部 central invariants。
+    integrable_structure: 作者用 supervariable technique 严格证明三个 Poisson 结构的相容性，并从 dispersionless limit 构造 Frobenius
+      manifold。
+    innovation: 工作把 full-dispersive 三 Hamiltonian 结构、central invariants 和 dispersionless Frobenius geometry 一次性连接起来，比只讨论层级的首个
+      Poisson bracket 更完整。
+  - paper_id: arxiv:2606.25802
+    signal_date: '2026-06-24'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    structure_tags:
+    - Global Results on
+    summary: 论文给出 \((1+1)\) 维奇数阶 two-component polynomial evolutionary systems 的必要且充分可积条件，证明可积层级恰有 24 个可能的谱类别，并完成最低阶为
+      3 和 5 的齐次层级分类。
+    main_result: 论文给出 \((1+1)\) 维奇数阶 two-component polynomial evolutionary systems 的必要且充分可积条件，证明可积层级恰有 24 个可能的谱类别，并完成最低阶为
+      3 和 5 的齐次层级分类。
+    integrable_structure: 分类以无穷交换对称流及其 spectral invariants 为核心，并区分可经微分代换线性化的 C-integrable systems 与关联 rank-two affine
+      Lie algebra Drinfeld--Sokolov systems 的 S-integrable systems。
+    innovation: 这是一个全局的完备分类结果，而不是继续列举新方程；它把谱类别、微分代换和标准 Drinfeld--Sokolov 体系统一成可核验的分类定理。
+  - paper_id: doi:10.1103/hvzz-8zmt
+    signal_date: '2026-06-23'
+    signal_type: journal-publication
+    week: 2026-W26
+    arxiv_categories:
+    - quant-ph
+    - cond-mat.str-el
+    structure_tags:
+    - inverse scattering
+    - integrable discretization
+    summary: 论文证明 critical transverse-field Ising model 的一阶 Trotterization 保持可积，并研究离散时间演化中的 noninvertible Kramers--Wannier
+      duality。
+    main_result: 论文证明 critical transverse-field Ising model 的一阶 Trotterization 保持可积，并研究离散时间演化中的 noninvertible Kramers--Wannier
+      duality。空间和时间同时离散化导致对偶算子加倍，它们对应离散时空平移，并联系不同阶的 Trotterization 与 Floquet phases。
+    integrable_structure: 离散守恒量来自 quantum inverse scattering method 构造的 inhomogeneous transfer matrix；非齐次参数直接控制离散时间步长。
+    innovation: 论文把可积 Trotterization、非可逆对偶和 Floquet 相图放进同一个结构框架，说明离散化不仅保留守恒量，还重组了对偶对称性及相之间的映射。
+  - paper_id: arxiv:2606.24662
+    signal_date: '2026-06-23'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - math-ph
+    - nlin.SI
+    structure_tags:
+    - Lax pair
+    - Hamiltonian structure
+    summary: 论文证明 even Painlevé IV hierarchy 的一个对称不变子流形，其诱导等单值动力学恰好是 Flaschka--Newell Painlevé II hierarchy。结果为
+      Flaschka--Newell hierarchy 提供了新的几何起源：它不仅是 mKdV hierarchy 的 similarity reduction，也可被理解为更高 Painlevé IV 等单值系统的对……
+    main_result: 论文证明 even Painlevé IV hierarchy 的一个对称不变子流形，其诱导等单值动力学恰好是 Flaschka--Newell Painlevé II hierarchy。
+    integrable_structure: 作者在 rank-two meromorphic connections 的 isomonodromic deformation 框架中，显式匹配两侧的 Lax matrices、Darboux
+      coordinates 和 Hamiltonian structures。
+    innovation: 结果为 Flaschka--Newell hierarchy 提供了新的几何起源：它不仅是 mKdV hierarchy 的 similarity reduction，也可被理解为更高 Painlevé
+      IV 等单值系统的对称约化。
+  - paper_id: arxiv:2606.24273
+    signal_date: '2026-06-23'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Lax pair
+    - finite-gap
+    summary: 论文分类所有具有独立系数、并允许无穷多个 support-preserving local flows 的 monic finite-band scalar difference operators。必要且充分条件是算子支集的指数构成等差数列。
+    main_result: 论文分类所有具有独立系数、并允许无穷多个 support-preserving local flows 的 monic finite-band scalar difference operators。必要且充分条件是算子支集的指数构成等差数列。
+    integrable_structure: 每个算术支集产生一个局部 Lax hierarchy，并由三个整数 \((N,p,m)\) 分类；Toda、Volterra、Narita--Itoh--Bogoyavlensky
+      等经典格点系统都被统一纳入。
+    innovation: 论文把有限带 difference Lax hierarchy 的存在问题化成精确的算术判据，既完成分类，又系统地产生无穷多个新层级。
+  - paper_id: arxiv:2606.23167
+    signal_date: '2026-06-22'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Hamiltonian structure
+    - Poisson structure
+    summary: 论文为 2D-Toda hierarchy 的 \((n,1)\)-type rational reduction 直接构造局部 bihamiltonian structure，并建立一个 \((n+1)\)
+      维半单 generalized Frobenius manifold。
+    main_result: 论文为 2D-Toda hierarchy 的 \((n,1)\)-type rational reduction 直接构造局部 bihamiltonian structure，并建立一个
+      \((n+1)\) 维半单 generalized Frobenius manifold。
+    integrable_structure: 该 Frobenius manifold 具有非平坦单位元，其 Principal Hierarchy 包含 rational reduction 的 dispersionless
+      flows，从而把离散层级的 Poisson 结构与 Frobenius 几何连接起来。
+    innovation: 结果不是只写出若干 Hamiltonian，而是给出一般 \(n\) 下的局部双 Hamiltonian 结构及其完整 dispersionless 几何解释。
+  - paper_id: arxiv:2606.22808
+    signal_date: '2026-06-22'
+    signal_type: new-preprint
+    week: 2026-W26
+    arxiv_categories:
+    - nlin.SI
+    structure_tags:
+    - Exact Harmonic Dimensional
+    summary: 论文建立多分量 \((3+1)\) 维 NLS 型系统的 harmonic dimensional reduction。核心 lifting lemma 说明：当横向相位为调和函数且束缚势精确抵消相位梯度平方时，高维系统严格约化到闭合的
+      \((1+1)\) 维可积层级，低维任意解都能提升为高维精确解。
+    main_result: 论文建立多分量 \((3+1)\) 维 NLS 型系统的 harmonic dimensional reduction。核心 lifting lemma 说明：当横向相位为调和函数且束缚势精确抵消相位梯度平方时，高维系统严格约化到闭合的
+      \((1+1)\) 维可积层级，低维任意解都能提升为高维精确解。
+    integrable_structure: 方法把 scalar Gross--Pitaevskii、Manakov、spinor BEC 和 Maxwell--Bloch 等不同模型统一到同一个相位与势匹配条件下，并保留其低维可积解结构。
+    innovation: 这不是逐个模型使用相似变换，而是一条可复用的精确提升原理；它同时产生 vortex lattice、横向 spin current、spin-exchange rogue wave 和高维 self-induced-transparency
+      结构。
+  - paper_id: arxiv:2606.24925
+    signal_date: '2026-06-21'
+    signal_type: new-preprint
+    week: 2026-W25
+    arxiv_categories:
+    - nlin.SI
+    structure_tags:
+    - integrable discretization
+    - Laurent property
+    summary: 论文研究一族具有 Laurent property 的奇数阶齐次离散方程，并为每个方程构造有限组函数独立的不变量。作者进一步说明，这些不变量可以给出比通常 Laurent property 更一般的整数序列判据。
+    main_result: 论文研究一族具有 Laurent property 的奇数阶齐次离散方程，并为每个方程构造有限组函数独立的不变量。作者进一步说明，这些不变量可以给出比通常 Laurent property
+      更一般的整数序列判据。
+    integrable_structure: 该离散族以 Somos-5 为首个代表，核心结构是不变量与 Laurent 现象之间的关系，而不是单个递推序列的数值实验。
+    innovation: 工作把“具有 Laurent property”推进到可操作的不变量结构，并由此扩大整数性判定范围，为理解这类高阶离散方程的可积特征提供了新的代数工具。
+  - paper_id: arxiv:2606.22438
+    signal_date: '2026-06-21'
+    signal_type: new-preprint
+    week: 2026-W25
+    arxiv_categories:
+    - nlin.SI
+    structure_tags:
+    - Riemann--Hilbert problem
+    - spectral curve
+    summary: 论文构造 defocusing NLS 有限密度背景下的 full arbitrary-genus dark soliton gas，并给出其完整长时间渐近。自相似平面被划分为 \(2N+1\) 个非空扇区，主项由
+      genus-\(N\) Riemann theta 有限带解描述，同时得到纯扇区和混合扇区的误差估计。
+    main_result: 论文构造 defocusing NLS 有限密度背景下的 full arbitrary-genus dark soliton gas，并给出其完整长时间渐近。自相似平面被划分为 \(2N+1\)
+      个非空扇区，主项由 genus-\(N\) Riemann theta 有限带解描述，同时得到纯扇区和混合扇区的误差估计。
+    integrable_structure: 分析从每条单位圆弧上含两族交替留数的广义 meromorphic Riemann--Hilbert problem 出发，经过热力学极限后使用固定 genus 谱曲线上的
+      Deift--Zhou nonlinear steepest descent。
+    innovation: 相比只在每条谱弧上保留单一振荡项的 half gas，这里每条弧都保留两种振荡指数，并在所有自相似扇区中维持全部谱弧。论文因此给出真正任意 genus 的 full dark-soliton-gas
+      渐近结构，而不是低 genus 示例。
