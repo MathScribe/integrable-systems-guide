@@ -1,0 +1,90 @@
+- paper_id: arxiv:2607.03555
+  week: 2026-W27
+  signal_date: '2026-07-03'
+  signal_type: new-preprint
+  review_status: automated
+  arxiv_categories: [nlin.SI]
+  structure_tags: [finite-gap, conservation laws]
+  summary: >-
+    论文为 sine-Gordon finite-gap solutions 的密度建立 sharp upper bound，并为一类有界 sinh-Gordon finite-gap solutions 给出类似结果。结果把有限带解的极值密度问题化为有限维层级中的不变量判定，并给出 sharp、可计算的全局约束。
+  main_result: >-
+    论文为 sine-Gordon finite-gap solutions 的密度建立 sharp upper bound，并为一类有界 sinh-Gordon finite-gap solutions 给出类似结果。
+  integrable_structure: >-
+    上界直接从 finite-dimensional hierarchy 得到，无需显式积分有限带解；最大密度由 invariant polynomial 的根决定。
+  innovation: >-
+    结果把有限带解的极值密度问题化为有限维层级中的不变量判定，并给出 sharp、可计算的全局约束。
+- paper_id: arxiv:2607.02093
+  week: 2026-W27
+  signal_date: '2026-07-02'
+  signal_type: new-preprint
+  review_status: automated
+  arxiv_categories: [math-ph, nlin.SI]
+  structure_tags: [Yang--Baxter equation, quantum circuits]
+  summary: >-
+    论文完整分类具有 open boundary conditions 和任意 circuit geometries 的 Yang--Baxter integrable quantum circuits，并给出由 staggered inhomogeneities 与系统大小决定 gate arrangement 的一般映射。
+  main_result: >-
+    论文完整分类具有 open boundary conditions 和任意 circuit geometries 的 Yang--Baxter integrable quantum circuits，并给出由 staggered inhomogeneities 与系统大小决定 gate arrangement 的一般映射。
+  integrable_structure: >-
+    构造以 transfer matrix、regular \(R\)-matrices、reflection matrices 和边界 Yang--Baxter 结构为基础，并给出检测任意几何电路 Yang--Baxter integrability 的算法。
+  innovation: >-
+    工作把开放边界可积电路从少数砖墙几何扩展到任意布局，证明最小 circuit depth 为 4，并允许多站点边界 gates；分类、检测算法和非 difference-form \(R\)-matrix 应用形成完整的新框架。
+- paper_id: arxiv:2607.01545
+  week: 2026-W27
+  signal_date: '2026-07-01'
+  signal_type: new-preprint
+  review_status: automated
+  arxiv_categories: [physics.comp-ph, nlin.SI]
+  structure_tags: [inverse scattering, data-driven integrability]
+  summary: >-
+    论文从观测到的 scattering data 直接学习有效孤子动力学，而不预设散射方程。论文把 IST 从解析推导工具转化为数据驱动坐标系统，使所得模型在 perturbed 和 near-integrable regimes 中仍可解释、可推广，是“由散射数据学习动力学”的清楚新方法。
+  main_result: >-
+    论文从观测到的 scattering data 直接学习有效孤子动力学，而不预设散射方程。方法在 synthetic 和 shallow-water experimental data 上恢复与经典 IST 理论一致的低维模型。
+  integrable_structure: >-
+    作者把 inverse scattering 的变量选择与 weak-form system identification 结合，在散射域中建模，避免用任意曲线拟合参数化孤立波。
+  innovation: >-
+    论文把 IST 从解析推导工具转化为数据驱动坐标系统，使所得模型在 perturbed 和 near-integrable regimes 中仍可解释、可推广，是“由散射数据学习动力学”的清楚新方法。
+- paper_id: arxiv:2607.01493
+  week: 2026-W27
+  signal_date: '2026-07-01'
+  signal_type: new-preprint
+  review_status: automated
+  arxiv_categories: [nlin.SI, math-ph]
+  structure_tags: [Lax pair, data-driven integrability]
+  summary: >-
+    论文通过 Euler top、free Schrödinger、inviscid Burgers、shallow water 和 KdV 五个案例，重新检查“存在 Lax pair 即证明可积”的经典直觉。
+  main_result: >-
+    论文通过 Euler top、free Schrödinger、inviscid Burgers、shallow water 和 KdV 五个案例，重新检查“存在 Lax pair 即证明可积”的经典直觉。作者说明 compatibility relation 往往不能唯一决定 Lax representation，异常 Lax pairs 是普遍现象而非偶然病态。
+  integrable_structure: >-
+    分析结合显式计算与 Sparse Identification of Lax Operators（SILO），既恢复标准 Lax pairs，也发现需要独立解释的替代表述。
+  innovation: >-
+    一个通常被标准判据称为 fake 的谱退化 KdV Lax pair，仍能通过 operator algebra 生成完整守恒层级；这表明 true/fake 二分不足，并为数据驱动发现 Lax 结构提出更精细的验证标准。
+- paper_id: arxiv:2607.01348
+  week: 2026-W27
+  signal_date: '2026-07-01'
+  signal_type: new-preprint
+  review_status: automated
+  arxiv_categories: [nlin.SI]
+  structure_tags: [finite-gap, conservation laws]
+  summary: >-
+    论文为 focusing mKdV finite-gap solutions 的振幅建立 sharp upper bound，并给出 defocusing mKdV 一类有界有限带解的对应公式。工作把复杂 finite-gap 解的全局振幅控制化成有限维不变量的精确代数公式，并同时证明 sharpness。
+  main_result: >-
+    论文为 focusing mKdV finite-gap solutions 的振幅建立 sharp upper bound，并给出 defocusing mKdV 一类有界有限带解的对应公式。上界可由适当初值显式达到。
+  integrable_structure: >-
+    证明不需要显式积分 theta-function 解，而是直接使用 commuting finite-dimensional flows 和 local polynomial invariants；最大振幅由 invariant polynomial 根的上半平面平方根虚部之和决定。
+  innovation: >-
+    工作把复杂 finite-gap 解的全局振幅控制化成有限维不变量的精确代数公式，并同时证明 sharpness。
+- paper_id: arxiv:2606.30717
+  week: 2026-W27
+  signal_date: '2026-06-29'
+  signal_type: new-preprint
+  review_status: automated
+  arxiv_categories: [hep-th, nlin.SI]
+  structure_tags: [integrable gravity, duality]
+  summary: >-
+    论文研究四维广义相对论可积子扇区 Breitenlohner--Maison model 的 auxiliary-field deformation，构造与已有 ν-frame 互补的 μ-frame，并把两种描述显式提升回四维。工作不仅继续构造二维可积形变，还回答这些辅助场 frame 在高维中的来源与等价描述问题，并暴露出四维模型缺乏 manifest diffeomorphism invariance 的新结构难题。
+  main_result: >-
+    论文研究四维广义相对论可积子扇区 Breitenlohner--Maison model 的 auxiliary-field deformation，构造与已有 ν-frame 互补的 μ-frame，并把两种描述显式提升回四维。
+  integrable_structure: >-
+    二维 BM model 由带两个 commuting Killing isometries 的四维 Einstein theory 约化得到；新构造借鉴 duality-invariant Einstein Lagrangians，得到两个 frame 下的高阶导数四维模型。
+  innovation: >-
+    工作不仅继续构造二维可积形变，还回答这些辅助场 frame 在高维中的来源与等价描述问题，并暴露出四维模型缺乏 manifest diffeomorphism invariance 的新结构难题。
