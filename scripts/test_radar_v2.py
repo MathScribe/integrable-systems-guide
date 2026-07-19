@@ -124,40 +124,43 @@ def test_component_contract() -> None:
         raise AssertionError("three displayed structure tags should be rejected")
 
 
-def test_confirmed_sample() -> None:
+def test_enabled_frontier() -> None:
     data = yaml.safe_load((ROOT / "data" / "editions.yml").read_text(encoding="utf-8"))
     frontier = data.get("frontier")
-    assert frontier is not None, "the confirmed frontier dataset must be enabled"
+    assert frontier is not None, "the frontier dataset must be enabled"
     assert frontier.get("window_days") == 30
-    assert frontier.get("generated_through") == "2026-07-19"
     assert "frontier_staging" not in data
 
     registry = render_radar.paper_map()
     entries = render_radar.validate_frontier(frontier, registry)
     visible = render_radar.visible_frontier_entries(frontier, registry)
-    assert len(entries) == 44
-    assert len(visible) == 44
-    assert len({entry["paper_id"] for entry in entries}) == 44
+    assert entries
+    assert visible
+    assert len({entry["paper_id"] for entry in entries}) == len(entries)
 
-    expected_counts = {
-        "2026-W25": 2,
-        "2026-W26": 16,
-        "2026-W27": 6,
-        "2026-W28": 15,
-        "2026-W29": 5,
-    }
-    assert Counter(render_radar.frontier_week_id(entry) for entry in entries) == expected_counts
-    assert {week["id"] for week in data["weeks"]} == set(expected_counts)
-    assert Counter(entry["signal_type"] for entry in entries) == {
-        "new-preprint": 36,
-        "journal-publication": 8,
-    }
+    # Freeze the confirmed migration baseline without blocking future daily updates.
+    if frontier.get("generated_through") == "2026-07-19":
+        expected_counts = {
+            "2026-W25": 2,
+            "2026-W26": 16,
+            "2026-W27": 6,
+            "2026-W28": 15,
+            "2026-W29": 5,
+        }
+        assert len(entries) == 44
+        assert len(visible) == 44
+        assert Counter(render_radar.frontier_week_id(entry) for entry in entries) == expected_counts
+        assert {week["id"] for week in data["weeks"]} == set(expected_counts)
+        assert Counter(entry["signal_type"] for entry in entries) == {
+            "new-preprint": 36,
+            "journal-publication": 8,
+        }
 
 
 def main() -> None:
     test_component_contract()
-    test_confirmed_sample()
-    print("compact radar schema and confirmed 44-paper sample tests passed")
+    test_enabled_frontier()
+    print("compact radar schema and enabled frontier tests passed")
 
 
 if __name__ == "__main__":
