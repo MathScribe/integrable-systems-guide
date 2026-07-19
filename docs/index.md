@@ -321,7 +321,7 @@
   <p class="radar-paper-tags"><code>Lax pair</code> <code>Painlevé</code></p>
   <h3>On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic</h3>
   <p class="radar-paper-meta">Author metadata unavailable · <a href="https://arxiv.org/abs/2607.06980">arXiv</a> · <a href="https://arxiv.org/pdf/2607.06980">PDF</a></p>
-  <p class="radar-paper-overview">在有限特征中给出统一方法，为经典 Painlevé 方程产生由素数索引的可数积分族。Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域结构推进到有限特征问题。</p>
+  <p class="radar-paper-overview">在有限特征中给出统一方法，为经典 Painlevé 方程产生由素数索引的可数积分族。Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域可积结构到有限特征问题。</p>
   <details class="radar-paper-details">
     <summary>展开研究内容与创新</summary>
     <div class="radar-paper-detail-grid">
@@ -335,7 +335,7 @@
       </section>
       <section>
         <h4>创新</h4>
-        <p>Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域结构推进到有限特征问题。</p>
+        <p>Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域可积结构到有限特征问题。</p>
       </section>
     </div>
   </details>
@@ -539,7 +539,7 @@
       </section>
       <section>
         <h4>创新</h4>
-        <p>结果把有限带解的极值密度问题化为有限维层级中的不变量判定，并给出 sharp、可计算的全局约束。 ## 6. 本区间显示出的方向信号这 24 篇共同显示出几个值得继续关注的方向： 1. **从 Lax pair 的存在转向 Lax 表示的质量与可识别性。** 数据驱动发现、fake/degenerate Lax pairs 和支集算术分类都要求更精细的结构判据。 2. **散射与 RHP 从求解工具转向学习、扰动和统计极限。** scattering data system identification、kink perturbation、Painlevé transition layer 和 arbitrary-genus soliton gas 展示了这一变化。 3. **Hamiltonian/Frobenius 几何继续组织离散层级。** Ablowitz--Ladik、2D-Toda reductions 和 polarization discretization 都在寻找 full-dispersive 与 dispersionless 结构的统一描述。 4. **Yang--Baxter 方法向电路几何和多站点方程扩展。** 重点从单个 \(R\)-matrix 转向可分类的 circuit architecture、boundary structure 和 generalized equation symmetries。 5. **可积结构不断进入引力与随机几何。** Painlevé hierarchy reduction、Nakamura trilinear framework、Breitenlohner--Maison deformation 和 two-matrix critical limit 都产生了可复用的新方法桥梁。 ## 7. 实施前确认本报告的 24 篇目前是建议名单。确认后，30 天样本将固定为 44 篇，并进入单独的页面实现 PR。页面实现仍遵循： - 首页最近 30 天、按周分组； - 默认只显示概览，完整三段说明折叠； - 不使用贡献等级标签； - 不逐篇显示“自动整理”； - 不使用旧论文补数量； - 实现 PR 只供审核，不自动合并或启用 auto-merge。</p>
+        <p>结果把有限带解的极值密度问题化为有限维层级中的不变量判定，并给出 sharp、可计算的全局约束。 ## 6. 本区间显示出的方向信号这 24 篇共同显示出几个值得继续关注的方向： 1. **从 Lax pair 的存在转向 Lax 表示的质量与可识别性。** 数据驱动发现、fake/degenerate Lax pairs 和支集算术分类都要求更精细的结构判据。 2. **散射与 RHP 从求解工具转向学习、扰动和统计极限。** scattering data system identification、kink perturbation、Painlevé transition layer 和 arbitrary-genus soliton gas 展示了这一变化。 3. **Hamiltonian/Frobenius 几何继续组织离散层级。** Ablowitz--Ladik、2D-Toda reductions 和 polarization discretization 都在寻找 full-dispersive 与 dispersionless 结构的统一描述。 4. **Yang--Baxter 方法向电路几何和多站点方程扩展。** 重点从单个 \(R\)-matrix 转向可分类的 circuit architecture、boundary structure 和 generalized equation symmetries。 5. **可积结构不断进入引力与随机几何。** Painlevé hierarchy reduction、Nakamura trilinear framework、Breitenlohner--Maison deformation 和 two-matrix critical limit 都产生了可复用的新方法桥梁。 ## 7. 实施前确认本报告的 24 篇目前是建议名单。确认后，30 天样本将固定为 44 篇，并进入单独的页面实现 PR。页面实现仍遵循： - 首页最近 30 天、按周分组； - 默认只显示概览，完整三段说明折叠； - 不使用贡献等级标签； - 不逐篇显示“流程整理”； - 不使用旧论文补数量； - 实现 PR 只供审核，不自动合并或启用 auto-merge。</p>
       </section>
     </div>
   </details>

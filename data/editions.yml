@@ -527,10 +527,10 @@ frontier:
     structure_tags:
     - Lax pair
     - Painlevé
-    summary: 在有限特征中给出统一方法，为经典 Painlevé 方程产生由素数索引的可数积分族。Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域结构推进到有限特征问题。
+    summary: 在有限特征中给出统一方法，为经典 Painlevé 方程产生由素数索引的可数积分族。Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域可积结构到有限特征问题。
     main_result: 在有限特征中给出统一方法，为经典 Painlevé 方程产生由素数索引的可数积分族。
     integrable_structure: rank-two difference--differential Lax pairs 与 Painlevé 方程的谱结构。
-    innovation: Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域结构推进到有限特征问题。
+    innovation: Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域可积结构到有限特征问题。
   - paper_id: arxiv:2607.06942
     signal_date: '2026-07-08'
     signal_type: new-preprint
@@ -642,7 +642,7 @@ frontier:
       circuit architecture、boundary structure 和 generalized equation symmetries。 5. **可积结构不断进入引力与随机几何。** Painlevé
       hierarchy reduction、Nakamura trilinear framework、Breitenlohner--Maison deformation 和 two-matrix critical limit
       都产生了可复用的新方法桥梁。 ## 7. 实施前确认本报告的 24 篇目前是建议名单。确认后，30 天样本将固定为 44 篇，并进入单独的页面实现 PR。页面实现仍遵循： - 首页最近 30 天、按周分组； -
-      默认只显示概览，完整三段说明折叠； - 不使用贡献等级标签； - 不逐篇显示“自动整理”； - 不使用旧论文补数量； - 实现 PR 只供审核，不自动合并或启用 auto-merge。'
+      默认只显示概览，完整三段说明折叠； - 不使用贡献等级标签； - 不逐篇显示“流程整理”； - 不使用旧论文补数量； - 实现 PR 只供审核，不自动合并或启用 auto-merge。'
   - paper_id: arxiv:2607.02093
     signal_date: '2026-07-02'
     signal_type: new-preprint
