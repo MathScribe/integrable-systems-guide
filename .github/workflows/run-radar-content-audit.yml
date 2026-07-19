@@ -1,0 +1,83 @@
+name: Run radar content audit
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/run-radar-content-audit.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out implementation branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/compact-radar-ui
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Execute audit and validate controlled output
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from textwrap import dedent
+
+          import yaml
+
+          workflow = Path('.github/workflows/audit-radar-content.yml').read_text(encoding='utf-8')
+          script = workflow.split("python - <<'PY'\n", 1)[1].split("\n          PY\n", 1)[0]
+          namespace = {'__name__': '__main__'}
+          exec(compile(dedent(script), 'radar-content-audit', 'exec'), namespace)
+
+          data = yaml.safe_load(Path('data/editions.yml').read_text(encoding='utf-8'))
+          controlled = namespace['controlled']
+          forbidden = ('## ', '本轮值得关注的方向信号', '下一步', 'reviewable PR', '自动合并')
+          for entry in data['frontier']['entries']:
+              for field in ('summary', 'main_result', 'integrable_structure', 'innovation'):
+                  text = str(entry[field])
+                  for marker in forbidden:
+                      if marker in text:
+                          raise SystemExit(f"{entry['paper_id']}.{field} contains residue: {marker}")
+              for tag in entry.get('structure_tags', []):
+                  if tag not in controlled:
+                      raise SystemExit(f"{entry['paper_id']} has uncontrolled tag: {tag}")
+          PY
+
+      - name: Generate and validate site
+        run: |
+          python scripts/test_radar_v2.py
+          python scripts/validate_frontier_data.py
+          python scripts/render_radar.py
+          python scripts/render_radar.py --check
+          node --check docs/javascripts/radar.js
+          mkdocs build --strict
+          python - <<'PY'
+          from pathlib import Path
+          for path in [Path('docs/index.md'), *sorted(Path('docs/radar').glob('2026-W*.md'))]:
+              text = path.read_text(encoding='utf-8')
+              if '## 6. 本轮值得关注' in text or '## 7. 下一步' in text:
+                  raise SystemExit(f'report residue remains in {path}')
+          PY
+          rm -rf site
+
+      - name: Remove one-shot workflows and commit
+        run: |
+          rm -f .github/workflows/audit-radar-content.yml
+          rm -f .github/workflows/run-radar-content-audit.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs .github/workflows
+          git commit -m "Audit radar annotations and controlled tags"
+          git push origin HEAD:feat/compact-radar-ui
