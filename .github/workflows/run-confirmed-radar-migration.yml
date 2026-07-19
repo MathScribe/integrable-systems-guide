@@ -40,6 +40,10 @@ jobs:
           try:
               workflow = Path('.github/workflows/migrate-confirmed-radar.yml').read_text(encoding='utf-8')
               script = workflow.split("python - <<'PY'\n", 1)[1].split("\n          PY\n", 1)[0]
+              script = script.replace(
+                  "r'^##\\s+\\d+\\.\\s+(W\\d+):[^\\n]*$'",
+                  "r'^##\\s+\\d+\\.\\s+(W\\d+)[:：][^\\n]*$'",
+              )
               exec(compile(dedent(script), 'confirmed-radar-migration', 'exec'), {'__name__': '__main__'})
           except Exception:
               Path('migration-error.txt').write_text(traceback.format_exc(), encoding='utf-8')
