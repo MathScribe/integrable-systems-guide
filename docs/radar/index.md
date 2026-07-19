@@ -8,11 +8,11 @@
 
 ### 2026-W29 · 2026-07-13 至 2026-07-19
 
-6 期 · 24 篇
+7 期 · 28 篇
 
-`DNLS` `Gerdjikov--Ivanov equation` `Manakov system` `Fokas--Lenells equation` `nonzero boundary conditions` `inverse scattering` `Riemann--Hilbert problem` `nonlinear steepest descent` `soliton resolution` `half-line` `Darboux transformation` `spectral data`
+`DNLS` `Gerdjikov--Ivanov equation` `Manakov system` `Fokas--Lenells equation` `nonzero boundary conditions` `inverse scattering` `Riemann--Hilbert problem` `nonlinear steepest descent` `soliton resolution` `half-line` `Darboux transformation` `spectral data` `KP--Toda reduction` `rogue-wave patterns` `Okamoto polynomials`
 
-本周从 non-Abelian DNLS、fully discrete Gerdjikov--Ivanov、Manakov vector breathers、 shifted nonlocal reductions 与谱数据操控，推进到 Fokas--Lenells 的非零背景 IST、全线纯辐射渐近、含孤子 soliton resolution 和半线初边值渐近。
+本周从 non-Abelian DNLS、fully discrete Gerdjikov--Ivanov、Manakov vector breathers、 shifted nonlocal reductions 与谱数据操控，推进到 Fokas--Lenells 的散射渐近、多分量 KP--Toda 约化、coupled rogue-wave 通式及 Okamoto 图案分解。
 
 [查看本周完整归档](2026-W29.md)
 
