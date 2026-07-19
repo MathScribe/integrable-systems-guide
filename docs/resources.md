@@ -27,6 +27,7 @@
 
 ## Research and publication pages / 研究与出版资料页
 
+- [Leonid Petrov](https://lpetrov.cc/)：integrable probability、KPZ universality、Yang--Baxter equation、Bethe ansatz 和 random tilings；含专题论文索引、课程资料与交互模拟。
 - [Peter Perry](https://www.ms.uky.edu/~perry/)：inverse scattering、NLS/DNLS、DS II。
 - [Peter D. Miller](https://websites.umich.edu/~millerpd/)：RHP、渐近分析、可积系统和 rogue waves。
 - [Dmitry Pelinovsky](https://pelinovsky.mcmaster.ca/)：DNLS、非线性波、谱稳定性和适定性。

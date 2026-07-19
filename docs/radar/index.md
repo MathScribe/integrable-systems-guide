@@ -1,6 +1,6 @@
 # 研究雷达归档
 
-归档按周组织；每日推荐日期保留在周页面中，用于追溯当时的编辑选择。
+归档按论文实际事件日期分周组织。周页面只展示最终收录论文和聚合筛选信息。
 
 [返回首页](../index.md)
 
@@ -8,20 +8,40 @@
 
 ### 2026-W29 · 2026-07-13 至 2026-07-19
 
-7 期 · 28 篇
+5 篇
 
-`DNLS` `Gerdjikov--Ivanov equation` `Manakov system` `Fokas--Lenells equation` `nonzero boundary conditions` `inverse scattering` `Riemann--Hilbert problem` `nonlinear steepest descent` `soliton resolution` `half-line` `Darboux transformation` `spectral data` `KP--Toda reduction` `rogue-wave patterns` `Okamoto polynomials`
+Chern--Simons 可积引力、孤子层析、任意多峰多谷解族与 HCIZ 矩阵模型。
 
-本周从 non-Abelian DNLS、fully discrete Gerdjikov--Ivanov、Manakov vector breathers、 shifted nonlocal reductions 与谱数据操控，推进到 Fokas--Lenells 的散射渐近、多分量 KP--Toda 约化、coupled rogue-wave 通式及 Okamoto 图案分解。
-
-[查看本周完整归档](2026-W29.md)
+[查看本周论文](2026-W29.md)
 
 ### 2026-W28 · 2026-07-06 至 2026-07-12
 
-4 期 · 20 篇
+15 篇
 
-`DNLS` `coupled NLS` `Riemann--Hilbert problem` `finite-gap` `soliton gas` `Fokas--Lenells`
+可积引力、离散化、Painlevé、随机矩阵、量子自旋链、离散几何与多分量波。
 
-本周集中在 DNLS、coupled NLS、Riemann--Hilbert 渐近、有限带退化与 soliton gas，同时补入 Fokas--Lenells、Darboux transformation 和稳定性材料。
+[查看本周论文](2026-W28.md)
 
-[查看本周完整归档](2026-W28.md)
+### 2026-W27 · 2026-06-29 至 2026-07-05
+
+6 篇
+
+有限带估计、Riemann--Hilbert 过渡渐近、拓扑与引力约化中的可积结构。
+
+[查看本周论文](2026-W27.md)
+
+### 2026-W26 · 2026-06-22 至 2026-06-28
+
+16 篇
+
+双 Hamilton/Frobenius 几何、Painlevé 约化、Lax 层级分类、量子电路与数据驱动可积性。
+
+[查看本周论文](2026-W26.md)
+
+### 2026-W25 · 2026-06-20 至 2026-06-21
+
+2 篇
+
+任意亏格暗孤子气体渐近与 Laurent 离散方程不变量。
+
+[查看本周论文](2026-W25.md)
