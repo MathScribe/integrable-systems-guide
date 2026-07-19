@@ -25,7 +25,60 @@ FORBIDDEN_PUBLIC_TERMS = (
     "自动整理",
     "谱控制",
 )
+FORBIDDEN_CONTENT_MARKERS = (
+    "## ",
+    "本轮值得关注的方向信号",
+    "下一步",
+    "reviewable PR",
+    "自动合并",
+)
 PUBLIC_TEXT_FIELDS = ("summary", "main_result", "integrable_structure", "innovation")
+CONTROLLED_STRUCTURE_TAGS = {
+    "AKNS hierarchy",
+    "2D Toda hierarchy",
+    "Ablowitz--Ladik hierarchy",
+    "Drinfeld--Sokolov hierarchy",
+    "mKdV hierarchy",
+    "Painlevé hierarchy",
+    "Riemann--Hilbert problem",
+    "nonlinear steepest descent",
+    "inverse scattering",
+    "Darboux transformation",
+    "Bäcklund transformation",
+    "Yang--Baxter equation",
+    "Lax pair",
+    "Hamiltonian structure",
+    "Poisson structure",
+    "Frobenius manifold",
+    "finite-gap",
+    "spectral curve",
+    "Painlevé",
+    "isomonodromy",
+    "tau function",
+    "integrable discretization",
+    "recursion operator",
+    "soliton gas",
+    "soliton resolution",
+    "generalized hydrodynamics",
+    "loop equations",
+    "integrable probability",
+    "quantum integrability",
+    "transfer matrix",
+    "Bethe ansatz",
+    "Chern--Simons theory",
+    "inverse problem",
+    "conservation laws",
+    "symplectic geometry",
+    "integrable geometry",
+    "topological vector potential",
+    "wave kinetics",
+    "multiple orthogonal polynomials",
+    "Laurent property",
+    "Pfaffian",
+    "bilinear method",
+    "squared eigenfunctions",
+    "Poisson--Lie geometry",
+}
 
 
 def main() -> None:
@@ -45,6 +98,15 @@ def main() -> None:
                     raise ValueError(
                         f"{entry['paper_id']}.{field} contains deprecated public wording: {term}"
                     )
+            for marker in FORBIDDEN_CONTENT_MARKERS:
+                if marker in text:
+                    raise ValueError(
+                        f"{entry['paper_id']}.{field} contains report or workflow residue: {marker}"
+                    )
+
+        for tag in entry.get("structure_tags", []):
+            if tag not in CONTROLLED_STRUCTURE_TAGS:
+                raise ValueError(f"{entry['paper_id']} has uncontrolled structure tag: {tag}")
 
     dates = [entry["signal_date"] for entry in entries]
     print(
