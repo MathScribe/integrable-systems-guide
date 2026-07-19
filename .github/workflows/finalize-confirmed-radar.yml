@@ -1,0 +1,65 @@
+name: Finalize confirmed radar migration
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/finalize-confirmed-radar.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out implementation branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/compact-radar-ui
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Accept official arXiv category forms
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('scripts/render_radar.py')
+          text = path.read_text(encoding='utf-8')
+          old = 'ARXIV_CATEGORY_RE = re.compile(r"^[a-z-]+(?:\\.[A-Z]{2})?$")'
+          new = 'ARXIV_CATEGORY_RE = re.compile(r"^[a-z-]+(?:\\.(?:[A-Z]{2}|[a-z-]+))?$")'
+          if old not in text:
+              raise SystemExit('arXiv category regex target not found')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
+
+      - name: Generate and validate final site
+        run: |
+          python scripts/test_radar_v2.py
+          python scripts/render_radar.py
+          python scripts/render_radar.py --check
+          node --check docs/javascripts/radar.js
+          mkdocs build --strict
+
+      - name: Remove temporary migration files and commit
+        run: |
+          rm -f .github/workflows/finalize-confirmed-radar.yml
+          rm -f .github/workflows/run-confirmed-radar-migration.yml
+          rm -f .github/workflows/migrate-confirmed-radar.yml
+          rm -f .github/workflows/stage-w28-radar-data.yml
+          rm -f migration-error.txt validation-output.txt
+          rm -rf site
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts data docs .github/workflows migration-error.txt validation-output.txt
+          git diff --cached --quiet && exit 0
+          git commit -m "Complete confirmed 30-day radar migration"
+          git push origin HEAD:feat/compact-radar-ui
