@@ -1,0 +1,47 @@
+name: Apply July 19 radar edition
+
+on:
+  push:
+    branches:
+      - agent/radar-2026-07-19
+    paths:
+      - scripts/apply_radar_2026_07_19.py
+      - .github/workflows/apply-radar-2026-07-19.yml
+
+permissions:
+  contents: write
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out review branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/radar-2026-07-19
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install pyyaml mkdocs-material
+      - name: Apply curated data
+        run: python scripts/apply_radar_2026_07_19.py
+      - name: Render radar pages
+        run: python scripts/render_radar.py
+      - name: Validate generated pages and site
+        run: |
+          python scripts/render_radar.py --check
+          mkdocs build --strict
+      - name: Remove temporary recovery files
+        run: |
+          rm scripts/apply_radar_2026_07_19.py
+          rm .github/workflows/apply-radar-2026-07-19.yml
+      - name: Commit curated edition
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/papers.yml data/editions.yml docs/index.md docs/radar/index.md docs/radar/latest.md docs/radar/2026-W29.md scripts/apply_radar_2026_07_19.py .github/workflows/apply-radar-2026-07-19.yml
+          git commit -m "Curate the July 19 coupled FL rogue-wave chain"
+          git push origin HEAD:agent/radar-2026-07-19
