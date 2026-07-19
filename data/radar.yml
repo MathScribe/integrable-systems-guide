@@ -1,0 +1,51 @@
+as_of: '2026-07-19'
+window_days: 30
+weeks:
+- id: 2026-W25
+  date_range: 2026-06-20 至 2026-06-21
+  summary: 任意 genus dark soliton gas 的完整渐近，以及 Laurent 离散方程的不变量结构。
+  screening:
+    sources_checked:
+    - arXiv categories and cross-category queries
+    - primary-source verification
+    selected: 2
+    coverage_note: 该周只覆盖 30 天窗口中的 6 月 20--21 日；期刊 online-first 覆盖可能不完整。
+- id: 2026-W26
+  date_range: 2026-06-22 至 2026-06-28
+  summary: Painlevé 与 RHP 渐近、Hamiltonian/Frobenius 几何、分类定理、Yang--Baxter、可积引力和结构保持离散化。
+  screening:
+    sources_checked:
+    - arXiv categories and cross-category queries
+    - journal publication checks
+    - primary-source verification
+    selected: 16
+    coverage_note: 公开页只保留最终选择；期刊 online-first 覆盖可能不完整。
+- id: 2026-W27
+  date_range: 2026-06-29 至 2026-07-05
+  summary: 有限带全局约束、Lax 表示的可识别性、散射数据学习、开放边界量子电路和可积引力形变。
+  screening:
+    sources_checked:
+    - arXiv categories and cross-category queries
+    - primary-source verification
+    selected: 6
+    coverage_note: 公开页只保留最终选择；期刊 online-first 覆盖可能不完整。
+- id: 2026-W28
+  date_range: 2026-07-06 至 2026-07-12
+  summary: 可积结构进入引力、离散几何和量子链，同时出现 soliton gas、随机矩阵、有限特征 Painlevé 与可控精确解机制。
+  screening:
+    sources_checked:
+    - arXiv categories and cross-category queries
+    - journal publication checks
+    - primary-source verification
+    selected: 15
+    coverage_note: 名单经过扩展发现和近遗漏复核；期刊 online-first 覆盖可能仍不完整。
+- id: 2026-W29
+  date_range: 2026-07-13 至 2026-07-19
+  summary: Chern--Simons 可积引力形变、soliton tomography、任意多峰多谷解族，以及 HCIZ--RHP--Toda 矩阵模型。
+  screening:
+    sources_checked:
+    - arXiv categories and cross-category queries
+    - journal publication checks
+    - primary-source verification
+    selected: 5
+    coverage_note: 名单经过扩展发现和近遗漏复核；期刊 online-first 覆盖可能仍不完整。
