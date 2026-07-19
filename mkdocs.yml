@@ -37,6 +37,9 @@ markdown_extensions:
 plugins:
   - search
 
+extra_css:
+  - stylesheets/radar.css
+
 extra_javascript:
   - javascripts/mathjax.js
   - javascripts/goatcounter.js
