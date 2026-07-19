@@ -1,74 +1,71 @@
-# W28--W29 回溯筛选报告
+# W28--W29 修订筛选报告
 
 **筛选区间：** 2026-07-06 至 2026-07-19  
 **对应归档：** `2026-W28`、`2026-W29`  
-**报告状态：** 第一轮编辑审核稿；尚未据此修改公开网站  
-**筛选标准：** 可积结构 + 明确创新  
+**报告状态：** 修订名单已确认；尚未据此修改公开网站  
+**筛选重点：** 可积结构 + 创新强度 + 新方向或新方法  
 **内容状态：** 自动整理
 
-## 1. 报告目的
+## 1. 本轮结论
 
-这次回溯用于检验一个轻量、精选、可解释的近期论文雷达。每篇建议论文必须能够说明：
+W28--W29 的修订名单确认保留 **20 篇**：
 
-1. 研究问题与主要结果；
-2. 可积结构与方法；
-3. 创新。
+- W28：15 篇；
+- W29：5 篇；
+- 新预印本事件：14 篇；
+- 正式期刊发表事件：6 篇。
 
-本报告只形成第一轮建议名单和筛选审计，不修改公开首页、周归档、数据文件、renderer 或日常自动化。
+面向可积系统读者，本轮不再过度犹豫论文是否属于经典可积 PDE。只要可积结构参与核心结果，并且论文展示了值得关注的新结构、新方法、新方向或强创新，就可以收录。
 
-## 2. 关键限制：候选池可能不完整
+主题相关性是宽松门槛，创新强度是主要判断。
 
-第一轮建立了 31 篇可复核候选，但这不是对两周内全部相关 arXiv 分类和期刊记录的穷尽搜索。
+## 2. 为什么名单由 13 篇增加到 20 篇
 
-主要发现路径包括：
+第一轮候选发现偏重 arXiv 的 `nlin.SI`、`nlin.PS` 和少量结构关键词，容易漏掉：
 
-- `nlin.SI` 与 `nlin.PS` 的近期记录；
-- 可积概率、随机矩阵、KPZ 和数学物理方向的信息流；
-- Lax pair、Painlevé、Yang--Baxter、wave kinetics、soliton tomography 等结构关键词检索；
-- 对进入摘要筛选和建议名单的论文，回到官方 arXiv 页面核对元数据和摘要。
+- 正式期刊 online-first 事件；
+- 标题主要强调引力、几何、量子多体或随机矩阵的论文；
+- 使用已有 Darboux、IST 或精确解结构，但产生系统创新的论文。
 
-本轮的主要限制是：
+扩展发现后新增 7 篇：
 
-- 跨分类发现仍不够系统；
-- 检索偏重结构词，可能漏掉标题只强调分类、渐近、稳定性、拓扑、反演或实验结果的论文；
-- 正式期刊 online-first 和 DOI 事件覆盖不足；
-- 部分论文仅凭摘要过早排除，可能低估已有可积结构所产生的系统创新。
+1. `arXiv:2607.07345`；
+2. *Integrable black hole dynamics in the asymptotic structure of AdS\(_3\)*；
+3. *Affine hypersurfaces and superintegrable systems*；
+4. *Integrability from a single conservation law in quantum spin chains*；
+5. *Integrability in three-dimensional gravity: eigenfunction-forced KdV flows*；
+6. *Integrable deformations of the Breitenlohner--Maison model from 4d Chern--Simons theory*；
+7. *A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges*。
 
-因此目前的 13 篇只能称为**第一轮建议名单**，不能称为 W28--W29 最终名单。
+数量增加主要来自发现覆盖改善，而不是为了填满页面降低门槛。
 
-## 3. 内部筛选方式
+## 3. 内部判断方式
 
-公开页面不使用“核心前沿 / 相邻前沿”“结构推进 / 结构驱动创新”等类别。
+公开页面不使用“核心/相邻前沿”“结构推进/结构驱动创新”等类别。
 
-内部审核每篇论文时回答两个问题：
+内部审核只回答：
 
 1. 论文是否提出、揭示或实质扩展了可积结构或方法？
 2. 即使结构已有，它是否不可替代地产生了清楚、可核验的创新？
 
-第二项可以包括系统的新分类、任意阶或任意形态的解族、新渐近、新稳定性或拓扑机制、新物理现象，以及新的反演、控制、实验或统计结果。
+创新可以表现为新定理、新分类、任意阶解族、新渐近、新拓扑或物理机制、新反演、控制、实验、统计或跨领域方法。
 
-这两个问题是审核工具，不是公开标签，也不要求把每篇论文硬分到唯一类别。
+## 4. W28：2026-07-06 至 2026-07-12
 
-## 4. 第一轮筛选状态
+### 4.1 Integrable black hole dynamics in the asymptotic structure of AdS\(_3\)
 
-| 阶段 | W28 | W29 | 合计 |
-|---|---:|---:|---:|
-| 去重后的第一轮候选 | 29 | 2 | **31** |
-| 通过标题初筛 | 22 | 2 | **24** |
-| 通过摘要筛选 | 13 | 2 | **15** |
-| 第一轮建议收录 | 11 | 2 | **13** |
+[Physical Review D](https://journals.aps.org/prd/abstract/10.1103/n2hm-lk94) · 正式发表 2026-07-06  
+原预印本：[arXiv:2504.20292](https://arxiv.org/abs/2504.20292)
 
-这些数字只描述第一轮有限候选池。完成扩展发现后，候选数和建议名单都可能变化。
+**研究问题与主要结果。** 论文研究 AdS\(_3\) 的可积渐近对称性、相应规范荷代数及黑洞热力学，并构造与 KdV 方程相关的 cnoidal black hole。
 
-`arXiv:2607.13773v1` 在最终复核后由“暂不收录”改为第一轮建议收录。原因不是补数量，而是论文给出任意 multihump/multivalley 结构的系统构造，并得到明确的新拓扑结论。
+**可积结构与方法。** 边界动力学由 AKNS hierarchy 及其无穷 Abelian 守恒荷控制。平稳 Schrödinger 谱问题的谱多项式和超椭圆曲线直接编码黑洞温度。
 
-## 5. 第一轮建议名单
+**创新。** 可积谱数据不再只是形式类比，而直接进入黑洞热力学量的描述，把 AKNS 谱几何与非轴对称黑洞温度联系起来。
 
-## 5.1 W28
+### 4.2 Integrable full discretization of the multi-component short pulse equation
 
-### Integrable full discretization of the multi-component short pulse equation
-
-[arXiv:2607.04756](https://arxiv.org/abs/2607.04756)
+[arXiv:2607.04756](https://arxiv.org/abs/2607.04756) · 新预印本 2026-07-06
 
 **研究问题与主要结果。** 构造多分量 short-pulse 方程的半离散和全离散 analogue，并给出精确 \(N\)-soliton 解及自适应移动网格解释。
 
@@ -76,29 +73,29 @@
 
 **创新。** 连续模型的双线性/Pfaffian 结构、精确解和移动网格意义在全离散层面同时保留，不是普通差分近似。
 
-### Lund--Regge Geometry and Integrability of a Generalized Konno--Oono System
+### 4.3 Lund--Regge Geometry and Integrability of a Generalized Konno--Oono System
 
-[arXiv:2607.05681](https://arxiv.org/abs/2607.05681)
+[arXiv:2607.05681](https://arxiv.org/abs/2607.05681) · 新预印本 2026-07-06
 
 **研究问题与主要结果。** 建立 generalized Konno--Oono system 的可积性，并解释其与 \(S^3\) 中曲面几何的联系。
 
-**可积结构与方法。** 含参数线性问题、Riccati pseudo-potential、horizontal cohomology 和无穷守恒律。
+**可积结构与方法。** 含参数线性问题、Riccati pseudo-potential、horizontal cohomology 和无穷非平凡局部守恒律。
 
-**创新。** 同一套结构同时产生可积性证明、守恒量和几何解释。
+**创新。** 同一套结构同时产生可积性证明、守恒律和曲面几何解释。
 
-### Wave Kinetics and Thermalization in Kadomtsev--Petviashvili-I System
+### 4.4 Wave Kinetics and Thermalization in Kadomtsev--Petviashvili-I System
 
-[arXiv:2607.06119](https://arxiv.org/abs/2607.06119)
+[arXiv:2607.06119](https://arxiv.org/abs/2607.06119) · 新预印本 2026-07-07
 
 **研究问题与主要结果。** 研究 KP-I 随机波场的 wave-kinetic 演化、Rayleigh--Jeans thermalization、非局域谱传输和 condensation-like spectral peak。
 
 **可积结构与方法。** 从 IST-integrable KP-I 系统及其无穷多不变量出发，分析宏观统计动力学。
 
-**创新。** 直接讨论微观可积性如何限制和改变波动热化与谱传输。
+**创新。** 直接讨论微观可积性如何限制并改变波动热化与谱传输，为可积湍流提供新的宏观方向。
 
-### Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation
+### 4.5 Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation
 
-[arXiv:2607.06409](https://arxiv.org/abs/2607.06409)
+[arXiv:2607.06409](https://arxiv.org/abs/2607.06409) · 新预印本 2026-07-07
 
 **研究问题与主要结果。** 对 \(N\)-elliptic localized solutions 给出系统的渐近分解和对称性分析。
 
@@ -106,81 +103,134 @@
 
 **创新。** 重点不是新增解图，而是把高阶椭圆局域解转化为可解释的远场组成和渐近结构。
 
-### Invariant Measures for Soliton Systems Generated by Mealy Automata
+### 4.6 Affine hypersurfaces and superintegrable systems
 
-[arXiv:2607.06942](https://arxiv.org/abs/2607.06942)
+[arXiv:2504.05200](https://arxiv.org/abs/2504.05200) · *Journal of the London Mathematical Society* 首次在线发表 2026-07-07
 
-**研究问题与主要结果。** 给出 Bernoulli/Markov 测度保持不变的判据，并分析孤子速度和 phase shift。
+**研究问题与主要结果。** 论文研究 abundant second-order conformally superintegrable systems 的几何编码，建立它们与一类非退化相对仿射超曲面正规化之间的对应。
 
-**可积结构与方法。** Mealy automata 生成的孤子系统、box--ball-system 型动力学和孤子散射数据。
+**可积结构与方法。** 以 structure tensor、conformal equivalence 和 affine hypersurface geometry 表述超可积系统的分类条件。
 
-**创新。** 将离散孤子系统从精确动力学推进到不变测度和宏观统计问题。
+**创新。** 将高维超可积系统的分类问题转化为仿射微分几何问题，并给出两类几何对象之间的必要充分条件和共形等价对应。
 
-### On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic
+### 4.7 Invariant Measures for Soliton Systems Generated by Mealy Automata
 
-[arXiv:2607.06980](https://arxiv.org/abs/2607.06980)
+[arXiv:2607.06942](https://arxiv.org/abs/2607.06942) · 新预印本 2026-07-08
 
-**研究问题与主要结果。** 在有限特征中给出统一方法，产生由素数索引的可数积分族。
+**研究问题与主要结果。** 给出 Mealy automata 孤子系统中 Bernoulli/Markov 测度保持不变的判据，并分析孤子速度和 phase shift。
 
-**可积结构与方法。** rank-two difference--differential Lax pairs 与 Painlevé 方程的等单值/谱结构。
+**可积结构与方法。** Mealy automata 生成的离散孤子系统、box--ball-system 型动力学和孤子散射数据。
 
-**创新。** Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制。
+**创新。** 将离散孤子系统从精确动力学推进到不变测度、广义 Gibbs ensemble 和 generalized hydrodynamics 的概率基础。
 
-### Loop Equations Characterize Random Matrix Statistics
+### 4.8 On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic
 
-[arXiv:2607.07617](https://arxiv.org/abs/2607.07617)
+[arXiv:2607.06980](https://arxiv.org/abs/2607.06980) · 新预印本 2026-07-08
+
+**研究问题与主要结果。** 在有限特征中给出统一方法，为经典 Painlevé 方程产生由素数索引的可数积分族。
+
+**可积结构与方法。** rank-two difference--differential Lax pairs 与 Painlevé 方程的谱结构。
+
+**创新。** Lax 表示在特征 \(p\) 下转化为新的守恒量生成机制，把经典复数域结构推进到有限特征问题。
+
+### 4.9 Spin-current-controlled anisotropic deformation of magnetic lump solitons
+
+[arXiv:2607.07345](https://arxiv.org/abs/2607.07345) · 新预印本 2026-07-08
+
+**研究问题与主要结果。** 构造二维非线性自旋系统中的基本和高阶 magnetic lump，并研究有效自旋流如何控制其各向异性形变和准一维极限。
+
+**可积结构与方法。** 在可积自旋系统的旋转背景上使用 Darboux transformation 生成 lump hierarchy，自旋流参数直接进入局域坐标。
+
+**创新。** 自旋流对空间形状的控制不是单个解的偶然现象，而是贯穿基本和高阶 lump family 的统一几何调制规律，并产生连续的维数交叉机制。
+
+### 4.10 Loop Equations Characterize Random Matrix Statistics
+
+[arXiv:2607.07617](https://arxiv.org/abs/2607.07617) · 新预印本 2026-07-08
 
 **研究问题与主要结果。** 利用 loop equations 给出 Sine\(_\beta\) 与 Airy\(_\beta\) 过程的唯一性刻画。
 
 **可积结构与方法。** 随机矩阵点过程的 loop-equation hierarchy 和递归恒等式。
 
-**创新。** 用结构化方程直接刻画普适极限对象，而不是仅给出一般概率估计。
+**创新。** 用结构化方程直接刻画普适极限对象，为证明 universality 提供只需验证近似 loop equations 的新路线。
 
-### Integrability of Cauchy problems for discrete conformal maps and circle patterns
+### 4.11 Integrability from a single conservation law in quantum spin chains
 
-[arXiv:2607.08901](https://arxiv.org/abs/2607.08901)
+[Physical Review B](https://journals.aps.org/prb/abstract/10.1103/y66t-t8zw) · 正式发表 2026-07-08  
+原预印本：[arXiv:2508.20713](https://arxiv.org/abs/2508.20713)
 
-**研究问题与主要结果。** 证明 quasi-periodic Cauchy problem 的 Liouville 可积性，并将结论转移到 Schramm circle patterns。
+**研究问题与主要结果。** 证明平移不变、有限程量子自旋链中一个特定低阶守恒律已经蕴含无穷多个局部守恒量。
+
+**可积结构与方法。** Reshetikhin condition 与 Yang--Baxter 构造所产生的守恒律层级。
+
+**创新。** 将常用的经验判据提升为严格充分条件，为系统识别新的量子可积模型提供更短、更可验证的入口。
+
+### 4.12 Integrability of Cauchy problems for discrete conformal maps and circle patterns
+
+[arXiv:2607.08901](https://arxiv.org/abs/2607.08901) · 新预印本 2026-07-09
+
+**研究问题与主要结果。** 证明 quasi-periodic 离散共形映射 Cauchy problem 的 Liouville 可积性，并将结论转移到 Schramm circle patterns。
 
 **可积结构与方法。** 辛结构、symplectic leaves 和 Liouville integrability。
 
-**创新。** 在离散共形几何中得到严格的可积性定理及具体几何结果。
+**创新。** 在离散共形几何中得到严格的可积性定理及具体几何结果，而不只是建立形式类比。
 
-### Dispersionless modified DKP hierarchy as the Yang--Baxter equation
+### 4.13 Dispersionless modified DKP hierarchy as the Yang--Baxter equation
 
-[arXiv:2607.09180](https://arxiv.org/abs/2607.09180)
+[arXiv:2607.09180](https://arxiv.org/abs/2607.09180) · 新预印本 2026-07-10
 
 **研究问题与主要结果。** 建立 dispersionless modified DKP hierarchy 与 Yang--Baxter equation 的等价关系。
 
 **可积结构与方法。** tau/Hirota--Miwa 结构和 Baxter eight-vertex \(R\)-matrix。
 
-**创新。** 给出经典可积层级与量子可积核心代数结构之间的直接桥梁。
+**创新。** 给出经典可积层级与量子可积核心代数结构之间的直接等价桥梁。
 
-### Discrete Gerdjikov--Ivanov models and their higher-order counterparts from the Cauchy matrix scheme
+### 4.14 Discrete Gerdjikov--Ivanov models and their higher-order counterparts from the Cauchy matrix scheme
 
-[arXiv:2607.09333](https://arxiv.org/abs/2607.09333)
+[arXiv:2607.09333](https://arxiv.org/abs/2607.09333) · 新预印本 2026-07-10
 
 **研究问题与主要结果。** 构造四族 fully discrete GI models 和四族 higher-order GI lattice models，得到 \(N\)-soliton 与 multiple-pole 解，并通过连续极限恢复连续 GI/hGI 方程。
 
 **可积结构与方法。** Sylvester/Cauchy matrix scheme、离散色散关系、局部/非局部约化和 Jordan-block 谱矩阵。
 
-**创新。** 离散模型、约化、multiple-pole 解和连续极限形成完整的新离散可积结构。
+**创新。** 离散模型、约化、multiple-pole 解和连续极限形成完整的新离散可积体系。
 
-### Exact vector Akhmediev breathers dominated by a linearly stable frequency
+### 4.15 Exact vector Akhmediev breathers dominated by a linearly stable frequency
 
-[arXiv:2607.10954](https://arxiv.org/abs/2607.10954)
+[arXiv:2607.10954](https://arxiv.org/abs/2607.10954) · 新预印本 2026-07-12
 
 **研究问题与主要结果。** 构造由不稳定模触发、但峰值处由线性稳定谐波主导的 exact vector Akhmediev breather。
 
 **可积结构与方法。** Manakov 系统的精确 breather 和多分支 modulation-instability 谱结构。
 
-**创新。** 揭示标量 MI 直觉在多分量系统中的失效，并把机制定量归因于 four-wave mixing。
+**创新。** 揭示标量 MI 直觉在多分量系统中的失效，并把稳定频率的自发主导机制定量归因于 four-wave mixing。
 
-## 5.2 W29
+## 5. W29：2026-07-13 至 2026-07-19
 
-### Eigenvalue-Based Approach to Manipulate and Reconstruct Nonlinear Pulses: Towards Soliton Tomography
+### 5.1 Integrability in three-dimensional gravity: eigenfunction-forced KdV flows
 
-[arXiv:2607.12339](https://arxiv.org/abs/2607.12339)
+[Journal of High Energy Physics](https://link.springer.com/article/10.1007/JHEP07%282026%29120) · 正式发表 2026-07-13  
+原预印本：[arXiv:2510.10519](https://arxiv.org/abs/2510.10519)
+
+**研究问题与主要结果。** 从三维引力的 Chern--Simons 表述和手征边界条件导出 potential mKdV hierarchy 及 eigenfunction-forced KdV dynamics。
+
+**可积结构与方法。** 反射为零扇区由 inverse scattering 和 Gelfand--Levitan--Marchenko 方法求解，有辐射扇区表现出普适色散衰减。
+
+**创新。** 将自洽本征函数驱动的强迫 KdV 与 AdS\(_3\) 边界动力学统一起来，同时给出孤子和辐射两类扇区的可积分析。
+
+### 5.2 Integrable deformations of the Breitenlohner--Maison model from 4d Chern--Simons theory
+
+[Journal of High Energy Physics](https://link.springer.com/article/10.1007/JHEP07%282026%29123) · 正式发表 2026-07-13  
+原预印本：[arXiv:2604.26452](https://arxiv.org/abs/2604.26452)
+
+**研究问题与主要结果。** 从四维 Chern--Simons theory 推导 Breitenlohner--Maison sigma model 及其高秩推广的可积形变。
+
+**可积结构与方法。** 通过改变 4d Chern--Simons 边界条件和作用量，分别得到与 homogeneous 和 inhomogeneous classical Yang--Baxter equations 对应的形变。
+
+**创新。** 为描述四维广义相对论平稳轴对称扇区的 sigma model 建立统一的可积形变来源，把引力模型、Chern--Simons 构造和 Yang--Baxter deformation 直接连接起来。
+
+### 5.3 Eigenvalue-Based Approach to Manipulate and Reconstruct Nonlinear Pulses: Towards Soliton Tomography
+
+[arXiv:2607.12339](https://arxiv.org/abs/2607.12339) · 新预印本 2026-07-14
 
 **研究问题与主要结果。** 推导 soliton eigenvalue response functions，并建立由输出本征值偏移反演未知脉冲扰动的积分方程，包含含噪重构测试。
 
@@ -188,57 +238,42 @@
 
 **创新。** 可积谱数据直接参与控制和反问题，形成 soliton tomography 的具体方法框架。
 
-### Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers
+### 5.4 Multihump--Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers
 
-[arXiv:2607.13773v1](https://arxiv.org/abs/2607.13773v1) · `nlin.PS` / `nlin.SI`
+[arXiv:2607.13773v1](https://arxiv.org/abs/2607.13773v1) · 新预印本 2026-07-15
 
-**研究问题与主要结果。** 论文研究 two-component Fokas--Lenells 方程在平面波背景上的 multihump--multivalley soliton families。作者系统分类基本解的强度形态，构造高阶结构，并在适当约束下得到任意 \(K\)-hump antidark、任意 \(M\)-valley dark 及其混合静态结构；弱白噪声模拟用于检验其动力学稳健性。
+**研究问题与主要结果。** 研究 two-component Fokas--Lenells 方程在平面波背景上的 multihump--multivalley soliton families，系统分类基本解并构造任意 \(K\)-hump、\(M\)-valley 及混合结构。
 
-**可积结构与方法。** 构造基于 coupled Fokas--Lenells 系统的 \(N\)-fold Darboux transformation。关键不是单独画出若干波形，而是同时施加等速度条件和背景振幅条件，使多个 dark/antidark solitons 能在同一平面波背景上形成受约束的相干叠加。论文还使用 topological vector potential 分析复平面中的强度零点和极点。
+**可积结构与方法。** 使用 \(N\)-fold Darboux transformation、等速度与背景振幅约束，并以 topological vector potential 分析复平面中的强度零点和极点。
 
-**创新。** 论文把构造从有限的双峰或双谷例子扩展到任意 multihump/multivalley 组合，并给出相应的系统分类。更重要的是，作者发现 virtual monopole field 由强度零点和极点等量贡献；这使论文不只是标准 Darboux 解族展示，而包含一个明确的新拓扑结论。
+**创新。** 构造从有限低阶例子扩展到任意 multihump/multivalley 组合；同时发现 virtual monopole field 由强度零点和极点等量贡献，形成新的拓扑结论。
 
-## 6. 近遗漏复核
+### 5.5 A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges
 
-第一轮剩余候选不在当前建议名单中，但其中以下类型需要在扩展发现阶段重新看摘要或正文：
+[Journal of Statistical Physics](https://link.springer.com/article/10.1007/s10955-026-03663-6) · 正式发表 2026-07-16  
+原预印本：[arXiv:2510.22120](https://arxiv.org/abs/2510.22120)
 
-- 任意阶或系统解族；
-- Darboux/Bäcklund 构造；
-- 精确解与新的动力学、稳定性或实验机制；
-- 几何或拓扑分类；
-- 与概率、随机矩阵、KPZ 或统计物理相连，但摘要没有直接写出可积桥梁的论文。
+**研究问题与主要结果。** 构造双 HCIZ 修饰的 Hermitian Gaussian matrix model，使其有限维本征值分布精确对应具有任意起终点重数的 non-intersecting Brownian bridges。
 
-复核的目的不是提高收录数量，而是避免把“方法看起来熟悉”错误等同于“没有系统创新”。
+**可积结构与方法。** 模型连接 Karlin--McGregor law、mixed multiple orthogonal polynomials、Riemann--Hilbert problem、2D Toda tau-function 和 Schwinger--Dyson/Virasoro identities。
 
-报告不公开逐篇作负面评价，只记录中性原因类型：
+**创新。** 补出了多起点、多终点 Brownian bridge 问题此前缺失的显式矩阵模型来源，并在有限 \(n\) 层面统一路径分布、谱模型和可积层级结构。
 
-- 可积性不是主结构，或结构桥梁仍不足；
-- 主要是标准变换、有限显式解或波形展示，未形成可核验的系统创新；
-- 与已选论文高度重合；
-- 当前证据不足，需要更多正文核验。
+## 6. 本轮值得关注的方向信号
 
-详细候选记录保留在内部审核材料和 Git 历史中。
+这 20 篇共同显示出几条值得可积系统读者关注的方向：
 
-## 7. 扩展发现计划
+- **可积结构进入引力。** AKNS、KdV/mKdV hierarchy、Chern--Simons theory 和 Yang--Baxter deformation 正在形成更具体的引力模型与热力学联系。
+- **从显式解走向可控机制。** Darboux 和精确解工作只有在产生统一形变规律、任意阶分类、稳定频率主导或拓扑结论时才真正值得关注。
+- **可积性判定变得更短。** 单个守恒律推出完整量子可积层级，说明可积性识别可能出现更有效的严格判据。
+- **谱数据成为观测变量。** soliton tomography 把离散本征值用于控制、传感和反演，而不只用于表示精确解。
+- **可积概率继续结构化。** loop equations、RHP、Toda tau-functions 和矩阵模型正在提供新的 universality 与有限维精确结构。
+- **离散和几何方向仍活跃。** 可积离散化、离散共形几何、仿射超曲面和有限特征 Painlevé 展示了结构方法的新落点。
 
-在确认 W28--W29 名单前，重新覆盖 2026-07-06 至 2026-07-19：
+## 7. 下一步
 
-1. 完整检查 `nlin.SI` 和 `nlin.PS`；
-2. 补查数学物理、概率、几何、组合、量子、统计物理和光学相关分类；
-3. 除结构词外，增加 classification、asymptotics、inverse problem、stability、topology、transport、experiment、reconstruction 等结果词；
-4. 补查 Crossref、DOI 和重点期刊 online-first；
-5. 用成熟专题资源作人工查漏，但不自动导入其数据库；
-6. 记录新增候选来自哪条发现路径，以判断此前的漏检机制。
-
-只有完成这一步，才能判断 13 篇之外是否还有遗漏。
-
-## 8. 下一步
-
-1. 完成 W28--W29 扩展发现；
-2. 完成近遗漏候选复核；
-3. 形成修订后的 W28--W29 建议名单；
-4. 再补筛 2026-06-20 至 2026-07-05；
-5. 形成完整 30 天样本；
-6. 按实际事件日期重写首页和周归档；
-7. 使用紧凑条目和折叠的“研究问题与主要结果 / 可积结构与方法 / 创新”；
-8. 继续只创建 reviewable PR，不自动合并，不启用 auto-merge。
+1. 补筛 2026-06-20 至 2026-07-05；
+2. 与本报告的 20 篇合并为完整 30 天样本；
+3. 根据实际数量确认首页 30 天窗口；
+4. 再开始数据字段、renderer、紧凑页面和自动化的实施；
+5. 继续只创建 reviewable PR，不自动合并，不启用 auto-merge。
