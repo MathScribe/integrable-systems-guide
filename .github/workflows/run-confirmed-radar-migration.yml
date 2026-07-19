@@ -29,17 +29,34 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Execute the one-shot migration script
+        id: migration
+        continue-on-error: true
         run: |
           python - <<'PY'
           from pathlib import Path
           from textwrap import dedent
+          import traceback
 
-          workflow = Path('.github/workflows/migrate-confirmed-radar.yml').read_text(encoding='utf-8')
-          script = workflow.split("python - <<'PY'\n", 1)[1].split("\n          PY\n", 1)[0]
-          exec(compile(dedent(script), 'confirmed-radar-migration', 'exec'), {'__name__': '__main__'})
+          try:
+              workflow = Path('.github/workflows/migrate-confirmed-radar.yml').read_text(encoding='utf-8')
+              script = workflow.split("python - <<'PY'\n", 1)[1].split("\n          PY\n", 1)[0]
+              exec(compile(dedent(script), 'confirmed-radar-migration', 'exec'), {'__name__': '__main__'})
+          except Exception:
+              Path('migration-error.txt').write_text(traceback.format_exc(), encoding='utf-8')
+              raise
           PY
 
+      - name: Save migration traceback
+        if: steps.migration.outcome == 'failure'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add migration-error.txt
+          git commit -m "Record radar migration failure"
+          git push origin HEAD:feat/compact-radar-ui
+
       - name: Generate and validate site
+        if: steps.migration.outcome == 'success'
         run: |
           python scripts/test_radar_v2.py
           python scripts/render_radar.py
@@ -48,14 +65,16 @@ jobs:
           mkdocs build --strict
 
       - name: Remove one-shot files and commit
+        if: steps.migration.outcome == 'success'
         run: |
           rm -f .github/workflows/run-confirmed-radar-migration.yml
           rm -f .github/workflows/migrate-confirmed-radar.yml
           rm -f .github/workflows/stage-w28-radar-data.yml
+          rm -f migration-error.txt
           rm -rf site
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data docs .github/workflows
+          git add data docs .github/workflows migration-error.txt
           git diff --cached --quiet && exit 0
           git commit -m "Migrate confirmed 30-day radar dataset"
           git push origin HEAD:feat/compact-radar-ui
