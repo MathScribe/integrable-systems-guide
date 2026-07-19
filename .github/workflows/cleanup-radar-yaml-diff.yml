@@ -1,0 +1,180 @@
+name: Clean radar YAML diff
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/cleanup-radar-yaml-diff.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out implementation branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/compact-radar-ui
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Preserve legacy YAML formatting and append frontier data
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+
+          import json
+          import subprocess
+          from pathlib import Path
+
+          import yaml
+
+          ROOT = Path('.')
+
+          def git_show(path: str) -> str:
+              return subprocess.check_output(
+                  ['git', 'show', f'origin/main:{path}'], text=True, encoding='utf-8'
+              )
+
+          def quote(value: str) -> str:
+              return json.dumps(value, ensure_ascii=False)
+
+          def dump_paper(record: dict) -> str:
+              lines = [f'- id: {quote(str(record["id"]))}']
+              for key, value in record.items():
+                  if key == 'id':
+                      continue
+                  if isinstance(value, list):
+                      lines.append(f'  {key}:')
+                      for item in value:
+                          if isinstance(item, str):
+                              lines.append(f'    - {quote(item)}')
+                          elif item is None:
+                              lines.append('    - null')
+                          else:
+                              lines.append(f'    - {item}')
+                  elif value is None:
+                      lines.append(f'  {key}: null')
+                  elif isinstance(value, bool):
+                      lines.append(f'  {key}: {str(value).lower()}')
+                  elif isinstance(value, (int, float)):
+                      lines.append(f'  {key}: {value}')
+                  else:
+                      lines.append(f'  {key}: {quote(str(value))}')
+              return '\n'.join(lines)
+
+          # papers.yml: keep every main-branch byte, append only genuinely new records.
+          papers_path = ROOT / 'data/papers.yml'
+          main_papers_text = git_show('data/papers.yml')
+          branch_papers_text = papers_path.read_text(encoding='utf-8')
+          main_papers = yaml.safe_load(main_papers_text)
+          branch_papers = yaml.safe_load(branch_papers_text)
+          main_ids = {item['id'] for item in main_papers}
+          branch_by_id = {item['id']: item for item in branch_papers}
+          missing_from_branch = main_ids - set(branch_by_id)
+          if missing_from_branch:
+              raise RuntimeError(f'branch unexpectedly removed papers: {sorted(missing_from_branch)}')
+          new_records = [item for item in branch_papers if item['id'] not in main_ids]
+          cleaned_papers = main_papers_text.rstrip() + '\n'
+          if new_records:
+              cleaned_papers += '\n' + '\n\n'.join(dump_paper(item) for item in new_records) + '\n'
+          parsed_cleaned = yaml.safe_load(cleaned_papers)
+          parsed_by_id = {item['id']: item for item in parsed_cleaned}
+          for item in new_records:
+              assert parsed_by_id[item['id']] == item, item['id']
+          assert cleaned_papers.startswith(main_papers_text.rstrip() + '\n')
+          papers_path.write_text(cleaned_papers, encoding='utf-8')
+
+          # editions.yml: preserve all legacy weeks/editions verbatim and append the new model.
+          editions_path = ROOT / 'data/editions.yml'
+          main_editions_text = git_show('data/editions.yml')
+          branch_editions = yaml.safe_load(editions_path.read_text(encoding='utf-8'))
+          frontier = branch_editions.get('frontier')
+          frontier_weeks = branch_editions.get('weeks')
+          if not frontier or not frontier_weeks:
+              raise RuntimeError('enabled frontier data or frontier weeks are missing')
+          appended = yaml.safe_dump(
+              {'frontier_weeks': frontier_weeks, 'frontier': frontier},
+              allow_unicode=True,
+              sort_keys=False,
+              width=120,
+              default_flow_style=False,
+          )
+          cleaned_editions = main_editions_text.rstrip() + '\n\n' + appended
+          parsed_editions = yaml.safe_load(cleaned_editions)
+          assert parsed_editions['frontier'] == frontier
+          assert parsed_editions['frontier_weeks'] == frontier_weeks
+          assert cleaned_editions.startswith(main_editions_text.rstrip() + '\n')
+          editions_path.write_text(cleaned_editions, encoding='utf-8')
+
+          # Frontier rendering reads the appended week metadata, while legacy data stays untouched.
+          renderer_path = ROOT / 'scripts/render_radar.py'
+          renderer = renderer_path.read_text(encoding='utf-8')
+          old_home = 'week_map = {week["id"]: week for week in data.get("weeks", [])}'
+          new_home = 'week_map = {week["id"]: week for week in data.get("frontier_weeks", data.get("weeks", []))}'
+          if old_home not in renderer:
+              raise RuntimeError('frontier home week-map expression not found')
+          renderer = renderer.replace(old_home, new_home, 1)
+          old_expected = '        weeks = data.get("weeks", [])\n'
+          new_expected = '        weeks = data.get("frontier_weeks", data.get("weeks", []))\n'
+          if old_expected not in renderer:
+              raise RuntimeError('frontier expected-output weeks expression not found')
+          renderer = renderer.replace(old_expected, new_expected, 1)
+          renderer_path.write_text(renderer, encoding='utf-8')
+
+          test_path = ROOT / 'scripts/test_radar_v2.py'
+          test_text = test_path.read_text(encoding='utf-8')
+          old_test = 'assert {week["id"] for week in data["weeks"]} == set(expected_counts)'
+          new_test = 'assert {week["id"] for week in data["frontier_weeks"]} == set(expected_counts)'
+          if old_test not in test_text:
+              raise RuntimeError('confirmed-sample week assertion not found')
+          test_path.write_text(test_text.replace(old_test, new_test, 1), encoding='utf-8')
+
+          print(f'preserved {len(main_papers)} existing paper records; appended {len(new_records)} new records')
+          print(f'preserved legacy editions verbatim; appended {len(frontier["entries"])} frontier records')
+          PY
+
+      - name: Generate and validate
+        run: |
+          python scripts/test_radar_v2.py
+          python scripts/validate_frontier_data.py
+          python scripts/render_radar.py
+          python scripts/render_radar.py --check
+          node --check docs/javascripts/radar.js
+          mkdocs build --strict
+          rm -rf site
+
+      - name: Verify minimal data diff
+        run: |
+          python - <<'PY'
+          import subprocess
+
+          stats = subprocess.check_output(
+              ['git', 'diff', '--numstat', 'origin/main', '--', 'data/papers.yml', 'data/editions.yml'],
+              text=True,
+          ).strip().splitlines()
+          print('\n'.join(stats))
+          for line in stats:
+              added, deleted, path = line.split('\t')
+              if path in {'data/papers.yml', 'data/editions.yml'} and int(deleted) > 5:
+                  raise SystemExit(f'{path} still has excessive deletion noise: {deleted}')
+          PY
+
+      - name: Remove workflow and commit
+        run: |
+          rm -f .github/workflows/cleanup-radar-yaml-diff.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs scripts .github/workflows
+          git commit -m "Minimize radar data migration diff"
+          git push origin HEAD:feat/compact-radar-ui
