@@ -15,6 +15,8 @@ This project is a small research-oriented guide for integrable systems and relat
 
 每日运行是维护频率，不要求每天发布。公开排序使用论文的实际研究事件日期：首次公开、重大修订或首次正式在线期刊发表；本站收录日期只属于编辑历史。
 
+旧的逐日 edition 记录继续保留为编辑历史，但新的公开首页和周归档只由 `frontier` 数据生成。
+
 ## Curation policy / 策展原则
 
 本站面向已有可积 PDE、谱方法或相关数学物理背景的读者。主题相关性是宽松入口，创新强度是主要判断。
