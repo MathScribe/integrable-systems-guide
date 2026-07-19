@@ -1,0 +1,590 @@
+- id: arxiv:2606.22438
+  title: Long-time asymptotics of a full arbitrary-genus dark soliton gas for the defocusing nonlinear Schrödinger equation
+  authors:
+  - Dedi Yan
+  - Xianguo Geng
+  - Mingming Chen
+  url: https://arxiv.org/abs/2606.22438
+  arxiv_id: '2606.22438'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-21'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.24925
+  title: Invariants for a family of discrete equations with the Laurent property
+  authors:
+  - Andrei K. Svinin
+  url: https://arxiv.org/abs/2606.24925
+  arxiv_id: '2606.24925'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-21'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.23167
+  title: Bihamiltonian structure of the \((n,1)\)-type rational reductions of the 2D-Toda hierarchy
+  authors:
+  - Haonan Qu
+  - Qiulan Zhao
+  url: https://arxiv.org/abs/2606.23167
+  arxiv_id: '2606.23167'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-22'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.22808
+  title: Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent \((3+1)\) Nonlinear Schrödinger Systems
+  authors:
+  - O. V. Kaptsov
+  url: https://arxiv.org/abs/2606.22808
+  arxiv_id: '2606.22808'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-22'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.24662
+  title: A symmetry reduction of the Painlevé IV hierarchy to the Flaschka--Newell Painlevé II hierarchy
+  authors:
+  - Mohamad Alameddine
+  - Olivier Marchal
+  url: https://arxiv.org/abs/2606.24662
+  arxiv_id: '2606.24662'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-23'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.24273
+  title: Arithmetic Supports of Lax Difference Hierarchies
+  authors:
+  - Sylvain Carpentier
+  url: https://arxiv.org/abs/2606.24273
+  arxiv_id: '2606.24273'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-23'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2511.03947
+  title: Noninvertible Kramers--Wannier duality symmetries for the discrete-time quantum Ising chain
+  authors:
+  - Akash Sinha
+  - Pramod Padmanabhan
+  - Vladimir Korepin
+  url: https://arxiv.org/abs/2511.03947
+  arxiv_id: '2511.03947'
+  doi: 10.1103/hvzz-8zmt
+  journal: Physical Review B
+  journal_url: https://journals.aps.org/prb/abstract/10.1103/hvzz-8zmt
+  submitted: '2025-11-06'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.25846
+  title: Tri-Hamiltonian structure of an asymmetric generalized Ablowitz--Ladik hierarchy and a Frobenius manifold
+  authors:
+  - Hanxue Zhang
+  - Qiulan Zhao
+  - Xinyue Li
+  url: https://arxiv.org/abs/2606.25846
+  arxiv_id: '2606.25846'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-24'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.25802
+  title: Global Results on the Classification of Two-Component Integrable Evolutionary Systems
+  authors:
+  - Alexander V. Mikhailov
+  - Vladimir Novikov
+  - Jing Ping Wang
+  url: https://arxiv.org/abs/2606.25802
+  arxiv_id: '2606.25802'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-24'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2602.22315
+  title: 'Taxonomy of integrable and ground-state solvable models: Jastrow wave functions on graphs and parent Hamiltonians'
+  authors:
+  - Nilanjan Sasmal
+  - Adolfo del Campo
+  url: https://arxiv.org/abs/2602.22315
+  arxiv_id: '2602.22315'
+  doi: 10.1103/g7hk-tlq1
+  journal: Physical Review B
+  journal_url: https://journals.aps.org/prb/abstract/10.1103/g7hk-tlq1
+  submitted: '2026-02-25'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.27125
+  title: 'The Ising Model Coupled to 2D Gravity: Critical Partition Function'
+  authors:
+  - Maurice Duits
+  - Nathan Hayford
+  - Seung-Yeop Lee
+  url: https://arxiv.org/abs/2606.27125
+  arxiv_id: '2606.27125'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-25'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.26526
+  title: Integrable pentagram-type maps on polyhedra via partial difference operators
+  authors:
+  - Bao Wang
+  url: https://arxiv.org/abs/2606.26526
+  arxiv_id: '2606.26526'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-25'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.26510
+  title: Symmetries of the Generalized Yang--Baxter Equations
+  authors:
+  - Pramod Padmanabhan
+  - Somnath Maity
+  - Akash Sinha
+  - Vladimir Korepin
+  url: https://arxiv.org/abs/2606.26510
+  arxiv_id: '2606.26510'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-25'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.28579
+  title: Transition asymptotics for the real solutions of the sinh-Gordon Painlevé III equation
+  authors:
+  - Kenta Miyahara
+  - Maxim L. Yattselev
+  url: https://arxiv.org/abs/2606.28579
+  arxiv_id: '2606.28579'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-26'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.28250
+  title: Perturbation theory for kinks of the defocusing modified Korteweg--de Vries equation
+  authors:
+  - Nicholas J. Ossi
+  - Barbara Prinari
+  - Theodoros P. Horikis
+  - Dimitrios J. Frantzeskakis
+  url: https://arxiv.org/abs/2606.28250
+  arxiv_id: '2606.28250'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-26'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.29103
+  title: Reduced Trilinear Reformulation of the Nakamura Conjecture
+  authors:
+  - Takeshi Fukuyama
+  url: https://arxiv.org/abs/2606.29103
+  arxiv_id: '2606.29103'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-27'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.29263
+  title: Conserved quantities of discretizations by polarization
+  authors:
+  - Noah Gießing
+  - Yuri B. Suris
+  url: https://arxiv.org/abs/2606.29263
+  arxiv_id: '2606.29263'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-28'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.29156
+  title: Tritronquée Painlevé II asymptotics for the focusing nonlinear Schrödinger equation with nonzero boundary conditions
+  authors:
+  - Haibing Zhang
+  - Xianguo Geng
+  - Kedong Wang
+  url: https://arxiv.org/abs/2606.29156
+  arxiv_id: '2606.29156'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-28'
+  version: v2
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2606.30717
+  title: 'The auxiliary-deformed Breitenlohner--Maison model: duality frames and higher-dimensional origin'
+  authors:
+  - Daniele Bielli
+  - Mattia Cesàro
+  url: https://arxiv.org/abs/2606.30717
+  arxiv_id: '2606.30717'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-06-29'
+  version: v2
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.01348
+  title: Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg--de Vries Equation
+  authors:
+  - Otis C. Wright
+  url: https://arxiv.org/abs/2607.01348
+  arxiv_id: '2607.01348'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-01'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.01493
+  title: 'Learning Lax Pairs: Revisiting the Classical Paradigm'
+  authors:
+  - Jimmie Adriazola
+  - Gino Biondini
+  - Wei Zhu
+  - Panayotis G. Kevrekidis
+  url: https://arxiv.org/abs/2607.01493
+  arxiv_id: '2607.01493'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-01'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.01545
+  title: Learning Effective Soliton Dynamics from Scattering Data
+  authors:
+  - Seth Minor
+  - Vanja Dukic
+  - David M. Bortz
+  url: https://arxiv.org/abs/2607.01545
+  arxiv_id: '2607.01545'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-01'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.02093
+  title: Open-boundary integrable quantum circuits with different geometries
+  authors:
+  - Miguel García Fernández
+  - Chiara Paletta
+  - Ana L. Retore
+  url: https://arxiv.org/abs/2607.02093
+  arxiv_id: '2607.02093'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-02'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.03555
+  title: Maximal Densities of Finite-Gap Solutions of the Sine-Gordon Equation
+  authors:
+  - Otis C. Wright III
+  url: https://arxiv.org/abs/2607.03555
+  arxiv_id: '2607.03555'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-03'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2504.20292
+  title: Integrable black hole dynamics in the asymptotic structure of AdS\(_3\)
+  authors:
+  - Marcela Cárdenas
+  - Francisco Correa
+  - Miguel Pino
+  url: https://arxiv.org/abs/2504.20292
+  arxiv_id: '2504.20292'
+  doi: 10.1103/n2hm-lk94
+  journal: Physical Review D
+  journal_url: https://journals.aps.org/prd/abstract/10.1103/n2hm-lk94
+  submitted: '2025-04-29'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.04756
+  title: Integrable full discretization of the multi-component short pulse equation
+  authors:
+  - Ayako Hori
+  - Yuta Tanaka
+  - Ken-ichi Maruno
+  - Yasuhiro Ohta
+  - Bao-Feng Feng
+  url: https://arxiv.org/abs/2607.04756
+  arxiv_id: '2607.04756'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-06'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.05681
+  title: Lund--Regge Geometry and Integrability of a Generalized Konno--Oono System
+  authors:
+  - Jose Luis Diaz Palencia
+  - Enrique G. Reyes
+  url: https://arxiv.org/abs/2607.05681
+  arxiv_id: '2607.05681'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-06'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.06119
+  title: Wave Kinetics and Thermalization in Kadomtsev--Petviashvili-I System
+  authors:
+  - Kiran Venkata Kolluru
+  - Giorgio Krstulovic
+  - Alan C. Newell
+  - Sergey Nazarenko
+  url: https://arxiv.org/abs/2607.06119
+  arxiv_id: '2607.06119'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-07'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.06409
+  title: Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation
+  authors:
+  - Feng-Bao Feng
+  - Wang Tang
+  - Guo-Fu Yu
+  url: https://arxiv.org/abs/2607.06409
+  arxiv_id: '2607.06409'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-07'
+  version: v2
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2504.05200
+  title: Affine hypersurfaces and superintegrable systems
+  authors:
+  - Vicente Cortés
+  - Andreas Vollmer
+  url: https://arxiv.org/abs/2504.05200
+  arxiv_id: '2504.05200'
+  doi: null
+  journal: Journal of the London Mathematical Society
+  journal_url: https://londmathsoc.onlinelibrary.wiley.com/journal/14697750
+  submitted: '2025-04-07'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.06942
+  title: Invariant Measures for Soliton Systems Generated by Mealy Automata
+  authors:
+  - Takahiro Kanazawa
+  - Yutaro Nakabayashi
+  url: https://arxiv.org/abs/2607.06942
+  arxiv_id: '2607.06942'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-08'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.06980
+  title: On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic
+  authors:
+  - Nalini Joshi
+  - Tomas Lasic Latimer
+  - Pieter Roffelsen
+  url: https://arxiv.org/abs/2607.06980
+  arxiv_id: '2607.06980'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-08'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.07345
+  title: Spin-current-controlled anisotropic deformation of magnetic lump solitons
+  authors:
+  - Xiao-Qi Cui
+  - Xin-Wei Jin
+  - Shiyi Wang
+  - Xiao-Yong Wen
+  - Zhan-Ying Yang
+  url: https://arxiv.org/abs/2607.07345
+  arxiv_id: '2607.07345'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-08'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.07617
+  title: Loop Equations Characterize Random Matrix Statistics
+  authors:
+  - Paul Bourgade
+  - Jiaoyang Huang
+  url: https://arxiv.org/abs/2607.07617
+  arxiv_id: '2607.07617'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-08'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2508.20713
+  title: Integrability from a single conservation law in quantum spin chains
+  authors:
+  - Akihiro Hokkyo
+  url: https://arxiv.org/abs/2508.20713
+  arxiv_id: '2508.20713'
+  doi: 10.1103/y66t-t8zw
+  journal: Physical Review B
+  journal_url: https://journals.aps.org/prb/abstract/10.1103/y66t-t8zw
+  submitted: '2025-08-28'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.08901
+  title: Integrability of Cauchy problems for discrete conformal maps and circle patterns
+  authors:
+  - Maxim Arnold
+  - Anton Izosimov
+  url: https://arxiv.org/abs/2607.08901
+  arxiv_id: '2607.08901'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-09'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.09180
+  title: Dispersionless modified DKP hierarchy as the Yang--Baxter equation
+  authors:
+  - A. Zabrodin
+  url: https://arxiv.org/abs/2607.09180
+  arxiv_id: '2607.09180'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-10'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.09333
+  title: Discrete Gerdjikov--Ivanov models and their higher-order counterparts from the Cauchy matrix scheme
+  authors:
+  - Xiao-gang Mu
+  - Song-lin Zhao
+  url: https://arxiv.org/abs/2607.09333
+  arxiv_id: '2607.09333'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-10'
+  version: v2
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.10954
+  title: Exact vector Akhmediev breathers dominated by a linearly stable frequency
+  authors:
+  - Wen-Rong Sun
+  - Chong Liu
+  - Lei Wang
+  - Fabio Baronio
+  url: https://arxiv.org/abs/2607.10954
+  arxiv_id: '2607.10954'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-12'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2510.10519
+  title: 'Integrability in three-dimensional gravity: eigenfunction-forced KdV flows'
+  authors:
+  - Hamed Adami
+  - Anouchah Latifi
+  url: https://arxiv.org/abs/2510.10519
+  arxiv_id: '2510.10519'
+  doi: 10.1007/JHEP07(2026)120
+  journal: Journal of High Energy Physics
+  journal_url: https://link.springer.com/article/10.1007/JHEP07%282026%29120
+  submitted: '2025-10-12'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2604.26452
+  title: Integrable deformations of the Breitenlohner--Maison model from 4d Chern--Simons theory
+  authors:
+  - Meer Ashwinkumar
+  - Matthias Blau
+  url: https://arxiv.org/abs/2604.26452
+  arxiv_id: '2604.26452'
+  doi: 10.1007/JHEP07(2026)123
+  journal: Journal of High Energy Physics
+  journal_url: https://link.springer.com/article/10.1007/JHEP07%282026%29123
+  submitted: '2026-04-29'
+  version: v2
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.12339
+  title: 'Eigenvalue-Based Approach to Manipulate and Reconstruct Nonlinear Pulses: Towards Soliton Tomography'
+  authors:
+  - Sergey Dremov
+  - Rustam Mullyadzhanov
+  - Andrey Gelash
+  url: https://arxiv.org/abs/2607.12339
+  arxiv_id: '2607.12339'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-14'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2607.13773
+  title: Multihump--Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers
+  authors:
+  - Jin-Peng Yang
+  - Yan-Hong Qin
+  url: https://arxiv.org/abs/2607.13773
+  arxiv_id: '2607.13773'
+  doi: null
+  journal: null
+  journal_url: null
+  submitted: '2026-07-15'
+  version: v1
+  metadata_checked_at: '2026-07-19'
+- id: arxiv:2510.22120
+  title: A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges
+  authors:
+  - Maksim Kosmakov
+  url: https://arxiv.org/abs/2510.22120
+  arxiv_id: '2510.22120'
+  doi: 10.1007/s10955-026-03663-6
+  journal: Journal of Statistical Physics
+  journal_url: https://link.springer.com/article/10.1007/s10955-026-03663-6
+  submitted: '2025-10-25'
+  version: v1
+  metadata_checked_at: '2026-07-19'
