@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""Small regression tests for the compact 30-day radar schema."""
+"""Regression tests for the compact 30-day radar schema and confirmed sample."""
 
 from __future__ import annotations
 
 import importlib.util
+from collections import Counter
 from pathlib import Path
+
+import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SPEC = importlib.util.spec_from_file_location("render_radar", ROOT / "scripts" / "render_radar.py")
@@ -29,7 +32,7 @@ def sample_entry(paper_id: str = "arxiv:2607.13773") -> dict[str, object]:
     }
 
 
-def main() -> None:
+def test_component_contract() -> None:
     papers = {
         "arxiv:2607.13773": {
             "id": "arxiv:2607.13773",
@@ -120,7 +123,41 @@ def main() -> None:
     else:
         raise AssertionError("three displayed structure tags should be rejected")
 
-    print("compact radar schema tests passed")
+
+def test_confirmed_sample() -> None:
+    data = yaml.safe_load((ROOT / "data" / "editions.yml").read_text(encoding="utf-8"))
+    frontier = data.get("frontier")
+    assert frontier is not None, "the confirmed frontier dataset must be enabled"
+    assert frontier.get("window_days") == 30
+    assert frontier.get("generated_through") == "2026-07-19"
+    assert "frontier_staging" not in data
+
+    registry = render_radar.paper_map()
+    entries = render_radar.validate_frontier(frontier, registry)
+    visible = render_radar.visible_frontier_entries(frontier, registry)
+    assert len(entries) == 44
+    assert len(visible) == 44
+    assert len({entry["paper_id"] for entry in entries}) == 44
+
+    expected_counts = {
+        "2026-W25": 2,
+        "2026-W26": 16,
+        "2026-W27": 6,
+        "2026-W28": 15,
+        "2026-W29": 5,
+    }
+    assert Counter(render_radar.frontier_week_id(entry) for entry in entries) == expected_counts
+    assert {week["id"] for week in data["weeks"]} == set(expected_counts)
+    assert Counter(entry["signal_type"] for entry in entries) == {
+        "new-preprint": 36,
+        "journal-publication": 8,
+    }
+
+
+def main() -> None:
+    test_component_contract()
+    test_confirmed_sample()
+    print("compact radar schema and confirmed 44-paper sample tests passed")
 
 
 if __name__ == "__main__":
