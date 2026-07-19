@@ -1,0 +1,86 @@
+name: Normalize confirmed radar wording
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/normalize-radar-wording.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out implementation branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/compact-radar-ui
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Normalize public annotation wording
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+
+          path = Path('data/editions.yml')
+          data = yaml.safe_load(path.read_text(encoding='utf-8'))
+          replacements = {
+              '新意': '创新',
+              '创新后果': '创新',
+              '核心前沿': '近期研究',
+              '相邻前沿': '相关研究',
+              '结构推进': '可积结构',
+              '结构驱动创新': '可积方法产生的创新',
+              '自动整理': '流程整理',
+              '谱控制': '谱数据操控',
+          }
+          fields = ('summary', 'main_result', 'integrable_structure', 'innovation')
+          changed = 0
+          for entry in data['frontier']['entries']:
+              for field in fields:
+                  value = str(entry[field])
+                  updated = value
+                  for old, new in replacements.items():
+                      updated = updated.replace(old, new)
+                  if updated != value:
+                      entry[field] = updated
+                      changed += 1
+          path.write_text(
+              '# Recommendation history and editorial annotations.\n'
+              '# The enabled frontier block drives the public 30-day radar.\n\n'
+              + yaml.safe_dump(data, allow_unicode=True, sort_keys=False, width=110),
+              encoding='utf-8',
+          )
+          print(f'normalized {changed} public annotation fields')
+          PY
+
+      - name: Generate and validate site
+        run: |
+          python scripts/test_radar_v2.py
+          python scripts/validate_frontier_data.py
+          python scripts/render_radar.py
+          python scripts/render_radar.py --check
+          node --check docs/javascripts/radar.js
+          mkdocs build --strict
+
+      - name: Remove workflow and commit
+        run: |
+          rm -f .github/workflows/normalize-radar-wording.yml
+          rm -rf site
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs .github/workflows
+          git commit -m "Normalize confirmed radar wording"
+          git push origin HEAD:feat/compact-radar-ui
