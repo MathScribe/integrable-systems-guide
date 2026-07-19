@@ -12,8 +12,9 @@
   ]);
 
   function isRadarPage() {
-    const path = window.location.pathname;
-    return path.endsWith("/") || /\/radar\/(?:2026-W\d+|latest)\/?$/.test(path);
+    const heading = document.querySelector("article.md-content__inner > h1");
+    const title = heading ? heading.textContent.trim() : "";
+    return title === "可积系统研究雷达" || title.startsWith("研究雷达归档");
   }
 
   function directParagraphs(nodes) {
@@ -27,12 +28,18 @@
 
   function cleanTags(paragraph) {
     if (!paragraph) return null;
-    const codes = [...paragraph.querySelectorAll("code")];
-    codes.forEach((code) => {
+    [...paragraph.querySelectorAll("code")].forEach((code) => {
       if (ROLE_LABELS.has(code.textContent.trim())) code.remove();
     });
     if (!paragraph.textContent.trim()) paragraph.remove();
     return paragraph;
+  }
+
+  function strippedClone(paragraph) {
+    const clone = paragraph.cloneNode(true);
+    const strong = clone.querySelector(":scope > strong:first-child");
+    if (strong) strong.remove();
+    return clone.innerHTML.trim();
   }
 
   function makeDetailSection(title, paragraph) {
@@ -42,10 +49,7 @@
     section.appendChild(heading);
 
     const body = document.createElement("p");
-    const clone = paragraph.cloneNode(true);
-    const strong = clone.querySelector(":scope > strong:first-child");
-    if (strong) strong.remove();
-    body.innerHTML = clone.innerHTML.trim();
+    body.innerHTML = strippedClone(paragraph);
     section.appendChild(body);
     return section;
   }
@@ -63,11 +67,12 @@
     if (!nodes.length) return;
 
     const paragraphs = directParagraphs(nodes);
-    const detailParagraphs = paragraphs.filter((p) => {
-      const label = paragraphLabel(p);
+    if (!paragraphs.length) return;
+
+    const detailParagraphs = paragraphs.filter((paragraph) => {
+      const label = paragraphLabel(paragraph);
       return ["做了什么", "为什么值得读", "研究问题与主要结果", "可积结构与方法", "创新"].includes(label);
     });
-    if (!detailParagraphs.length) return;
 
     const card = document.createElement("article");
     card.className = "radar-paper-card";
@@ -75,48 +80,49 @@
     card.appendChild(heading);
     heading.dataset.radarEnhanced = "true";
 
-    const nonDetailParagraphs = paragraphs.filter((p) => !detailParagraphs.includes(p));
+    const nonDetailParagraphs = paragraphs.filter((paragraph) => !detailParagraphs.includes(paragraph));
     const meta = nonDetailParagraphs.shift();
     if (meta) {
       meta.classList.add("radar-paper-meta");
       card.appendChild(meta);
     }
 
-    const tagParagraph = cleanTags(nonDetailParagraphs.find((p) => p.querySelector("code")));
+    const tagParagraph = cleanTags(nonDetailParagraphs.find((paragraph) => paragraph.querySelector("code")));
     if (tagParagraph && tagParagraph.isConnected) {
       tagParagraph.classList.add("radar-paper-tags");
       card.appendChild(tagParagraph);
     }
 
-    const overviewSource = detailParagraphs[0];
-    const overview = document.createElement("p");
-    overview.className = "radar-paper-overview";
-    const overviewClone = overviewSource.cloneNode(true);
-    const overviewStrong = overviewClone.querySelector(":scope > strong:first-child");
-    if (overviewStrong) overviewStrong.remove();
-    overview.innerHTML = overviewClone.innerHTML.trim();
-    card.appendChild(overview);
+    const overviewSource = detailParagraphs[0] || nonDetailParagraphs.find((paragraph) => paragraph !== tagParagraph);
+    if (overviewSource) {
+      const overview = document.createElement("p");
+      overview.className = "radar-paper-overview";
+      overview.innerHTML = strippedClone(overviewSource);
+      card.appendChild(overview);
+    }
 
-    const details = document.createElement("details");
-    details.className = "radar-paper-details";
-    const summary = document.createElement("summary");
-    summary.textContent = "展开研究内容与创新";
-    details.appendChild(summary);
+    if (detailParagraphs.length) {
+      const details = document.createElement("details");
+      details.className = "radar-paper-details";
+      const summary = document.createElement("summary");
+      summary.textContent = "展开研究内容与创新";
+      details.appendChild(summary);
 
-    const grid = document.createElement("div");
-    grid.className = "radar-paper-detail-grid";
+      const grid = document.createElement("div");
+      grid.className = "radar-paper-detail-grid";
 
-    const mapped = new Map(detailParagraphs.map((p) => [paragraphLabel(p), p]));
-    const main = mapped.get("研究问题与主要结果") || mapped.get("做了什么");
-    const structure = mapped.get("可积结构与方法");
-    const innovation = mapped.get("创新") || mapped.get("为什么值得读");
+      const mapped = new Map(detailParagraphs.map((paragraph) => [paragraphLabel(paragraph), paragraph]));
+      const main = mapped.get("研究问题与主要结果") || mapped.get("做了什么");
+      const structure = mapped.get("可积结构与方法");
+      const innovation = mapped.get("创新") || mapped.get("为什么值得读");
 
-    if (main) grid.appendChild(makeDetailSection("研究问题与主要结果", main));
-    if (structure) grid.appendChild(makeDetailSection("可积结构与方法", structure));
-    if (innovation) grid.appendChild(makeDetailSection("创新", innovation));
+      if (main) grid.appendChild(makeDetailSection("研究问题与主要结果", main));
+      if (structure) grid.appendChild(makeDetailSection("可积结构与方法", structure));
+      if (innovation) grid.appendChild(makeDetailSection("创新", innovation));
 
-    details.appendChild(grid);
-    card.appendChild(details);
+      details.appendChild(grid);
+      card.appendChild(details);
+    }
 
     nodes.forEach((node) => {
       if (node.isConnected && node !== meta && node !== tagParagraph) node.remove();
