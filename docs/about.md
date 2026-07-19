@@ -10,7 +10,7 @@ This project is a small research-oriented guide for integrable systems and relat
 - 论文条目默认显示概览，完整的“研究问题与主要结果 / 可积结构与方法 / 创新”按需展开；
 - 归档首页提供周级入口，周页面复用首页的同一条目组件；
 - `data/papers.yml` 保留历史书目信息，`data/radar_papers.yml` 保存当前近期雷达需要的书目覆盖；
-- `data/editions.yml` 保存研究事件日期、筛选说明和当次注释；
+- `data/radar.yml` 保存 30 天窗口和周级筛选说明，`data/radar_entries/` 保存逐篇研究事件和注释；
 - 页面由数据文件统一生成，不手工分别维护首页和归档。
 
 每日运行是维护频率，不要求每日发布。日期表示论文首次公开、重大修订或正式期刊在线发表的实际事件日期，不是本站推荐日期。
