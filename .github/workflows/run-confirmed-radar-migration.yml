@@ -60,25 +60,40 @@ jobs:
           git push origin HEAD:feat/compact-radar-ui
 
       - name: Generate and validate site
+        id: validation
         if: steps.migration.outcome == 'success'
+        continue-on-error: true
+        shell: bash
         run: |
-          python scripts/test_radar_v2.py
-          python scripts/render_radar.py
-          python scripts/render_radar.py --check
-          node --check docs/javascripts/radar.js
-          mkdocs build --strict
+          set -o pipefail
+          {
+            python scripts/test_radar_v2.py
+            python scripts/render_radar.py
+            python scripts/render_radar.py --check
+            node --check docs/javascripts/radar.js
+            mkdocs build --strict
+          } > validation-output.txt 2>&1
+
+      - name: Save validation output
+        if: steps.migration.outcome == 'success' && steps.validation.outcome == 'failure'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs validation-output.txt
+          git commit -m "Record radar validation failure"
+          git push origin HEAD:feat/compact-radar-ui
 
       - name: Remove one-shot files and commit
-        if: steps.migration.outcome == 'success'
+        if: steps.migration.outcome == 'success' && steps.validation.outcome == 'success'
         run: |
           rm -f .github/workflows/run-confirmed-radar-migration.yml
           rm -f .github/workflows/migrate-confirmed-radar.yml
           rm -f .github/workflows/stage-w28-radar-data.yml
-          rm -f migration-error.txt
+          rm -f migration-error.txt validation-output.txt
           rm -rf site
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data docs .github/workflows migration-error.txt
+          git add data docs .github/workflows migration-error.txt validation-output.txt
           git diff --cached --quiet && exit 0
           git commit -m "Migrate confirmed 30-day radar dataset"
           git push origin HEAD:feat/compact-radar-ui
