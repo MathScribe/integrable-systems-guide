@@ -10,6 +10,33 @@
 
 这里汇总最近三期中优先级较高的论文，而不是重复展示当天简报。详细注释和完整推荐历史保存在周归档中。
 
+### On the multi-component Fokas–Lenells system: KP reductions and various soliton solutions
+
+Han-Han Sheng, Bao-Feng Feng, Guo-Fu Yu · [Physica D: Nonlinear Phenomena, doi:10.1016/j.physd.2025.134706](https://doi.org/10.1016/j.physd.2025.134706)  
+`正式版本` `multi-component Fokas--Lenells system` `KP--Toda reduction` `Gram determinants`
+
+从 KP--Toda hierarchy 的双线性方程与 Gram determinant 解出发约化多分量 Fokas--Lenells 系统，并由 discrete KP 的 Miwa transformation 重建双线性结构；给出 dark solitons、Akhmediev/Kuznetsov--Ma 型 breathers 及三、四重 resonant breathers。
+
+推荐于 2026-07-19 · [查看详细说明](radar/2026-W29.md#2026-07-19)
+
+### Rogue waves and their patterns for the coupled Fokas-Lenells equations
+
+Liming Ling, Huajie Su · [arXiv:2307.02008v1](https://arxiv.org/abs/2307.02008) · [Physica D: Nonlinear Phenomena, doi:10.1016/j.physd.2024.134111](https://doi.org/10.1016/j.physd.2024.134111)  
+`课题组相关` `coupled Fokas--Lenells equation` `rogue-wave patterns` `Darboux transformation`
+
+对 coupled Fokas--Lenells 方程构造高阶 rogue-wave determinant formula，并分析三重分支点生成的解在大内部参数极限下如何分裂成若干一阶外部 rogue waves 与较低阶内部核心；外部位置和内部阶数由 Okamoto polynomial hierarchies 控制。
+
+推荐于 2026-07-19 · [查看详细说明](radar/2026-W29.md#2026-07-19)
+
+### General rogue wave solutions of the coupled Fokas–Lenells equations and non-recursive Darboux transformation
+
+Yanlin Ye, Yi Zhou, Shihua Chen, Fabio Baronio, Philippe Grelu · [Proceedings of the Royal Society A, doi:10.1098/rspa.2018.0806](https://doi.org/10.1098/rspa.2018.0806)  
+`核心旧文` `coupled Fokas--Lenells equation` `non-recursive Darboux transformation` `higher-order rogue waves`
+
+构造非递归 Darboux transformation，分别处理谱特征方程的 double-root 与 triple-root 情形，得到 coupled Fokas--Lenells 的一般 n 阶有理 rogue waves，并展示共存 rogue waves、 anomalous Peregrine solitons 以及包含完整背景场参数的基本和二阶动力学。
+
+推荐于 2026-07-19 · [查看详细说明](radar/2026-W29.md#2026-07-19)
+
 ### Inverse Scattering Transformation for the Fokas–Lenells Equation with Nonzero Boundary Conditions
 
 Yi Zhao, Engui Fan · [arXiv:1912.12400v1](https://arxiv.org/abs/1912.12400) · [Journal of Nonlinear Mathematical Physics, doi:10.2991/jnmp.k.200922.003](https://doi.org/10.2991/jnmp.k.200922.003)  
@@ -54,33 +81,6 @@ Sergey Dremov, Rustam Mullyadzhanov, Andrey Gelash · [arXiv:2607.12339v1](https
 为 sech 型 NLS 脉冲推导 soliton eigenvalue response functions，分析瞬时可控扰动如何移动离散本征值，并建立由传播末端测得的本征值偏移反演未知波形畸变的积分方程；文中比较不同重构区间并测试含噪数据下的稳定性。
 
 推荐于 2026-07-17 · [查看详细说明](radar/2026-W29.md#2026-07-17)
-
-### Manipulation of Strongly Interacting Solitons in Optical Fiber Experiments
-
-Alexandre Mucci, Pierre Suret, François Copie, Stephane Randoux, Rustam Mullyadzhanov, Andrey Gelash · [arXiv:2409.16090v1](https://arxiv.org/abs/2409.16090) · [Physical Review Letters, doi:10.1103/PhysRevLett.134.193804](https://doi.org/10.1103/PhysRevLett.134.193804)  
-`正式版本` `nonlinear Schrödinger equation` `inverse scattering perturbation theory` `eigenvalue response functions`
-
-在 strongly overlapping 多孤子脉冲中引入 eigenvalue response functions，并在循环光纤环与 homodyne 测量平台上施加局域相位扰动，选择性改变单个孤子的速度和振幅、从复合脉冲中剥离目标孤子，实验结果与 IST 扰动理论定量吻合。
-
-推荐于 2026-07-17 · [查看详细说明](radar/2026-W29.md#2026-07-17)
-
-### Loop-type geometric folding of exact solutions of shifted nonlocal NLS and MKdV equations
-
-Aslı Pekcan · [arXiv:2607.10870v1](https://arxiv.org/abs/2607.10870)  
-`近期进展` `shifted nonlocal NLS` `shifted nonlocal mKdV` `folded waves`
-
-把既有 shifted nonlocal NLS 与 mKdV 的一、二孤子解作为参数曲线的场变量，通过非单调空间映射构造 loop-type folded profiles；以折叠映射导数变号作为充分条件，并分析变形参数和孤子参数如何产生规则、振荡与奇异折叠。
-
-推荐于 2026-07-16 · [查看详细说明](radar/2026-W29.md#2026-07-16)
-
-### Soliton solutions of the shifted nonlocal NLS and MKdV equations
-
-Metin Gürses, Aslı Pekcan · [arXiv:2106.14252v2](https://arxiv.org/abs/2106.14252) · [Physics Letters A, doi:10.1016/j.physleta.2021.127793](https://doi.org/10.1016/j.physleta.2021.127793)  
-`正式版本` `shifted nonlocal NLS` `shifted nonlocal mKdV` `one- and two-solitons`
-
-为 shifted nonlocal NLS 与 mKdV 方程给出一、二孤子解，并系统讨论这些解的奇异结构和参数依赖；今天的新论文正是把这些显式解重新解释为可折叠的参数波形。
-
-推荐于 2026-07-16 · [查看详细说明](radar/2026-W29.md#2026-07-16)
 
 ## 其他入口
 

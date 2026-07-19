@@ -902,3 +902,95 @@
     - "Riemann--Hilbert problem"
     - "nonlinear steepest descent"
     - "long-time asymptotics"
+
+- id: "doi:10.1016/j.physd.2025.134706"
+  title: "On the multi-component Fokas–Lenells system: KP reductions and various soliton solutions"
+  authors:
+    - "Han-Han Sheng"
+    - "Bao-Feng Feng"
+    - "Guo-Fu Yu"
+  url: "https://doi.org/10.1016/j.physd.2025.134706"
+  arxiv_id: null
+  doi: "10.1016/j.physd.2025.134706"
+  journal: "Physica D: Nonlinear Phenomena"
+  article_number: "134706"
+  year: 2025
+  metadata_checked_at: "2026-07-19"
+  tags:
+    - "multi-component Fokas--Lenells system"
+    - "KP--Toda reduction"
+    - "Gram determinants"
+    - "dark solitons"
+    - "resonant breathers"
+
+- id: "doi:10.1016/j.physd.2024.134111"
+  title: "Rogue waves and their patterns for the coupled Fokas-Lenells equations"
+  authors:
+    - "Liming Ling"
+    - "Huajie Su"
+  url: "https://doi.org/10.1016/j.physd.2024.134111"
+  arxiv_id: "2307.02008"
+  doi: "10.1016/j.physd.2024.134111"
+  journal: "Physica D: Nonlinear Phenomena"
+  volume: "461"
+  article_number: "134111"
+  year: 2024
+  published: "2024-05"
+  submitted: "2023-07-05"
+  version: "v1"
+  metadata_checked_at: "2026-07-19"
+  tags:
+    - "coupled Fokas--Lenells equation"
+    - "rogue-wave patterns"
+    - "Darboux transformation"
+    - "Okamoto polynomials"
+    - "asymptotic decomposition"
+
+- id: "doi:10.1098/rspa.2018.0806"
+  title: "General rogue wave solutions of the coupled Fokas–Lenells equations and non-recursive Darboux transformation"
+  authors:
+    - "Yanlin Ye"
+    - "Yi Zhou"
+    - "Shihua Chen"
+    - "Fabio Baronio"
+    - "Philippe Grelu"
+  url: "https://doi.org/10.1098/rspa.2018.0806"
+  arxiv_id: null
+  doi: "10.1098/rspa.2018.0806"
+  journal: "Proceedings of the Royal Society A"
+  volume: "475"
+  issue: "2224"
+  article_number: "20180806"
+  year: 2019
+  published: "2019-04-17"
+  metadata_checked_at: "2026-07-19"
+  tags:
+    - "coupled Fokas--Lenells equation"
+    - "non-recursive Darboux transformation"
+    - "higher-order rogue waves"
+    - "double and triple roots"
+    - "Peregrine solitons"
+
+- id: "doi:10.1016/j.nonrwa.2016.06.006"
+  title: "Solitons, breathers and rogue waves for the coupled Fokas–Lenells system via Darboux transformation"
+  authors:
+    - "Yong Zhang"
+    - "Jia-Wen Yang"
+    - "Kwok Wing Chow"
+    - "Chi-Fai Wu"
+  url: "https://doi.org/10.1016/j.nonrwa.2016.06.006"
+  arxiv_id: null
+  doi: "10.1016/j.nonrwa.2016.06.006"
+  journal: "Nonlinear Analysis: Real World Applications"
+  volume: "33"
+  pages: "237-252"
+  year: 2017
+  published: "2017-02"
+  metadata_checked_at: "2026-07-19"
+  tags:
+    - "coupled Fokas--Lenells system"
+    - "n-fold Darboux transformation"
+    - "higher-order solitons"
+    - "breathers"
+    - "rogue waves"
+
