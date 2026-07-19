@@ -184,7 +184,7 @@
 
 ### Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers
 
-[arXiv:2607.13773v1](https://arxiv.org/abs/2607.13773v1) · **结构驱动创新**
+[arXiv:2607.13773v1](https://arxiv.org/abs/2607.13773v1) · `nlin.PS` / `nlin.SI` · **结构驱动创新**
 
 **研究问题与主要结果。** 论文研究 two-component Fokas--Lenells 方程在平面波背景上的 multihump--multivalley soliton families。作者系统分类基本解的强度形态，构造高阶结构，并在适当约束下得到任意 \(K\)-hump antidark、任意 \(M\)-valley dark 及其混合静态结构；弱白噪声模拟用于检验其动力学稳健性。
 
