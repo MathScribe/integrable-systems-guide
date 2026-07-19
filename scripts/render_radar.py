@@ -16,7 +16,8 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 BASE_PAPERS_PATH = ROOT / "data" / "papers.yml"
 RADAR_PAPERS_PATH = ROOT / "data" / "radar_papers.yml"
-EDITIONS_PATH = ROOT / "data" / "editions.yml"
+RADAR_PATH = ROOT / "data" / "radar.yml"
+RADAR_ENTRIES_DIR = ROOT / "data" / "radar_entries"
 TAGS_PATH = ROOT / "data" / "radar_tags.yml"
 HOME_PATH = ROOT / "docs" / "index.md"
 ARCHIVE_INDEX_PATH = ROOT / "docs" / "radar" / "index.md"
@@ -33,6 +34,15 @@ def load_yaml(path: Path) -> Any:
     if not path.exists():
         return None
     return yaml.safe_load(path.read_text(encoding="utf-8"))
+
+
+def load_radar_data() -> dict[str, Any]:
+    data = load_yaml(RADAR_PATH)
+    entries: list[dict[str, Any]] = []
+    for path in sorted(RADAR_ENTRIES_DIR.glob("*.yml")):
+        entries.extend(load_yaml(path) or [])
+    data["entries"] = entries
+    return data
 
 
 def paper_map() -> dict[str, dict[str, Any]]:
@@ -340,7 +350,7 @@ def render_latest(data: dict[str, Any]) -> str:
 
 
 def expected_outputs() -> dict[Path, str]:
-    data = load_yaml(EDITIONS_PATH)
+    data = load_radar_data()
     papers = paper_map()
     validate_data(data, papers)
     grouped = entries_by_week(data["entries"])
