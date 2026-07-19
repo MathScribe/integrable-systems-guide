@@ -1,0 +1,28 @@
+- paper_id: arxiv:2606.24925
+  week: 2026-W25
+  signal_date: '2026-06-21'
+  signal_type: new-preprint
+  review_status: automated
+  arxiv_categories:
+  - nlin.SI
+  structure_tags:
+  - conservation laws
+  - integrable discretization
+  summary: 论文研究一族具有 Laurent property 的奇数阶齐次离散方程，并为每个方程构造有限组函数独立的不变量。工作把“具有 Laurent property”推进到可操作的不变量结构，并由此扩大整数性判定范围，为理解这类高阶离散方程的可积特征提供新的代数工具。
+  main_result: 论文研究一族具有 Laurent property 的奇数阶齐次离散方程，并为每个方程构造有限组函数独立的不变量。作者进一步说明，这些不变量可以给出比通常 Laurent property 更一般的整数序列判据。
+  integrable_structure: 该离散族以 Somos-5 为首个代表，核心结构是不变量与 Laurent 现象之间的关系，而不是单个递推序列的数值实验。
+  innovation: 工作把“具有 Laurent property”推进到可操作的不变量结构，并由此扩大整数性判定范围，为理解这类高阶离散方程的可积特征提供新的代数工具。
+- paper_id: arxiv:2606.22438
+  week: 2026-W25
+  signal_date: '2026-06-21'
+  signal_type: new-preprint
+  review_status: automated
+  arxiv_categories:
+  - nlin.SI
+  structure_tags:
+  - soliton gas
+  - Riemann--Hilbert problem
+  summary: 论文构造 defocusing NLS 有限密度背景下的 full arbitrary-genus dark soliton gas，并给出完整长时间渐近。相比只在每条谱弧上保留单一振荡项的 half gas，这里每条弧都保留两种振荡指数，并在所有自相似扇区中维持全部谱弧。
+  main_result: 论文构造 defocusing NLS 有限密度背景下的 full arbitrary-genus dark soliton gas，并给出完整长时间渐近。自相似平面被划分为 \(2N+1\) 个非空扇区，主项由 genus-\(N\) Riemann theta 有限带解描述，同时得到纯扇区和混合扇区的误差估计。
+  integrable_structure: 分析从每条单位圆弧上含两族交替留数的广义 meromorphic Riemann--Hilbert problem 出发，经过热力学极限后使用固定 genus 谱曲线上的 Deift--Zhou nonlinear steepest descent。
+  innovation: 相比只在每条谱弧上保留单一振荡项的 half gas，这里每条弧都保留两种振荡指数，并在所有自相似扇区中维持全部谱弧。论文因此给出真正任意 genus 的 full dark-soliton-gas 渐近结构，而不是低 genus 示例。
