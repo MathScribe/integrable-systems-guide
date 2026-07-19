@@ -175,7 +175,7 @@
 
 **研究问题与主要结果。** 论文研究 real sinh-Gordon Painlevé III solutions 在 \(x,p\to\infty\) 时，从有限 monodromy parameter 的奇异解到 \(p=\infty\) 光滑解的过渡。
 
-**可积结构与方法。** 通过 [1mmonodromy parameter[0m 与空间变量的 double scaling，作者辨认出指数、椭圆和三角三种渐近区域及其临界转换。
+**可积结构与方法。** 通过 monodromy parameter 与空间变量的 double scaling，作者辨认出指数、椭圆和三角三种渐近区域及其临界转换。
 
 **创新。** 工作给出一个覆盖整个参数过渡的统一渐近相图，解释 smooth exponential behavior 如何在临界尺度上转化为 elliptic asymptotics，并进一步退化为固定 \(p\) 的 trigonometric regime。
 
