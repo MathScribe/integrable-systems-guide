@@ -34,3 +34,4 @@
 - [Todd Kapitula](https://sites.calvin.edu/tmk5/index.html)：谱稳定性与动力学稳定性。
 - [Mathew A. Johnson](https://matjohn.ku.edu/)：非线性波与稳定性。
 - [Peter Olver](https://www-users.cse.umn.edu/~olver/)：对称方法、PDE 和数学软件。
+- [Leonid Petrov](https://lpetrov.cc/)：integrable probability、KPZ universality、Yang--Baxter equation、Bethe ansatz 和 random tilings；含专题论文索引、课程资料与交互模拟。
