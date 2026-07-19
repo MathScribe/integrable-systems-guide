@@ -418,7 +418,7 @@ def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]
     for entry in entries:
         grouped[frontier_week_id(entry)].append(entry)
 
-    week_map = {week["id"]: week for week in data.get("weeks", [])}
+    week_map = {week["id"]: week for week in data.get("frontier_weeks", data.get("weeks", []))}
     window_days = int(frontier.get("window_days", 30))
     lines = [
         "# 可积系统研究雷达",
@@ -536,7 +536,7 @@ def expected_outputs() -> dict[Path, str]:
 
     if data.get("frontier"):
         entries = visible_frontier_entries(data["frontier"], papers)
-        weeks = data.get("weeks", [])
+        weeks = data.get("frontier_weeks", data.get("weeks", []))
         outputs = {
             HOME_PATH: render_frontier_home(data, papers),
             ARCHIVE_INDEX_PATH: render_frontier_archive_index(weeks, entries),

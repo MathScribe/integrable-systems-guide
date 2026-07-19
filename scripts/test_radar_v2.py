@@ -150,7 +150,7 @@ def test_enabled_frontier() -> None:
         assert len(entries) == 44
         assert len(visible) == 44
         assert Counter(render_radar.frontier_week_id(entry) for entry in entries) == expected_counts
-        assert {week["id"] for week in data["weeks"]} == set(expected_counts)
+        assert {week["id"] for week in data["frontier_weeks"]} == set(expected_counts)
         assert Counter(entry["signal_type"] for entry in entries) == {
             "new-preprint": 36,
             "journal-publication": 8,
