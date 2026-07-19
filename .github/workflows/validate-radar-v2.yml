@@ -8,6 +8,7 @@ on:
       - "docs/stylesheets/radar.css"
       - "scripts/render_radar.py"
       - "scripts/test_radar_v2.py"
+      - "scripts/validate_frontier_data.py"
       - ".github/workflows/validate-radar-v2.yml"
   push:
     branches:
@@ -18,6 +19,7 @@ on:
       - "docs/stylesheets/radar.css"
       - "scripts/render_radar.py"
       - "scripts/test_radar_v2.py"
+      - "scripts/validate_frontier_data.py"
 
 jobs:
   validate-radar-v2:
@@ -36,6 +38,9 @@ jobs:
 
       - name: Test compact radar schema
         run: python scripts/test_radar_v2.py
+
+      - name: Validate staged compact radar records
+        run: python scripts/validate_frontier_data.py
 
       - name: Check JavaScript syntax
         run: node --check docs/javascripts/radar.js
