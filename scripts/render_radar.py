@@ -44,7 +44,7 @@ SIGNAL_LABELS = {
     "journal-publication": "正式发表",
 }
 
-ARXIV_CATEGORY_RE = re.compile(r"^[a-z-]+(?:\.[A-Z]{2})?$")
+ARXIV_CATEGORY_RE = re.compile(r"^[a-z-]+(?:\.(?:[A-Z]{2}|[a-z-]+))?$")
 
 
 def load_yaml(path: Path) -> Any:
