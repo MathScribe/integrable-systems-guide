@@ -15,7 +15,7 @@ This project is a small research-oriented guide for integrable systems and relat
 
 每日运行是维护频率，不要求每天发布。公开排序使用论文的实际研究事件日期：首次公开、重大修订或首次正式在线期刊发表；本站收录日期只属于编辑历史。
 
-旧的逐日 edition 记录继续保留为编辑历史，但新的公开首页和周归档只由 `frontier` 数据生成。结构标签只能从受控词表中选择，不能用标题片段或临时造词代替标准术语。
+旧的逐日 edition 记录继续保留为编辑历史，但新的公开首页和周归档只由 `frontier` 数据生成。结构标签只能从受控词表中选择，不能用标题片段或临时造词代替标准术语；公开注释也不得混入筛选报告或维护计划文字。
 
 ## Curation policy / 策展原则
 
