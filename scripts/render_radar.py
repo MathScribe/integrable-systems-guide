@@ -22,6 +22,7 @@ TAGS_PATH = ROOT / "data" / "radar_tags.yml"
 HOME_PATH = ROOT / "docs" / "index.md"
 ARCHIVE_INDEX_PATH = ROOT / "docs" / "radar" / "index.md"
 LATEST_PATH = ROOT / "docs" / "radar" / "latest.md"
+FRAGMENTS_DIR = ROOT / "includes" / "radar"
 
 SIGNAL_LABELS = {
     "new-preprint": "新预印本",
@@ -237,6 +238,21 @@ def render_screening(week: dict[str, Any]) -> str:
     )
 
 
+def render_week_fragment(
+    entries: list[dict[str, Any]],
+    papers: dict[str, dict[str, Any]],
+) -> str:
+    lines: list[str] = []
+    by_date: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for entry in entries:
+        by_date[entry["signal_date"]].append(entry)
+    for signal_date in sorted(by_date, reverse=True):
+        lines.extend([f"## {signal_date}", ""])
+        for entry in by_date[signal_date]:
+            lines.extend([render_entry(papers[entry["paper_id"]], entry), ""])
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def render_week(
     week: dict[str, Any],
     entries: list[dict[str, Any]],
@@ -252,13 +268,7 @@ def render_week(
         "论文说明由自动流程整理，并经元数据核验；除特别标注外，不代表编辑已经完整阅读或逐句审校。",
         "",
     ]
-    by_date: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for entry in entries:
-        by_date[entry["signal_date"]].append(entry)
-    for signal_date in sorted(by_date, reverse=True):
-        lines.extend([f"## {signal_date}", ""])
-        for entry in by_date[signal_date]:
-            lines.extend([render_entry(papers[entry["paper_id"]], entry), ""])
+    lines.extend([f'--8<-- "includes/radar/{week["id"]}.md"', ""])
     lines.extend([render_screening(week), ""])
     return "\n".join(lines).rstrip() + "\n"
 
@@ -301,8 +311,7 @@ def render_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]) -> str:
                 "",
             ]
         )
-        for entry in grouped[week_id]:
-            lines.extend([render_entry(papers[entry["paper_id"]], entry), ""])
+        lines.extend([f'--8<-- "includes/radar/{week_id}.md"', ""])
         lines.extend([f"[查看 {week_id} 周归档](radar/{week_id}.md)", ""])
     return "\n".join(lines).rstrip() + "\n"
 
@@ -360,9 +369,11 @@ def expected_outputs() -> dict[Path, str]:
         LATEST_PATH: render_latest(data),
     }
     for week in data["weeks"]:
+        week_entries = grouped.get(week["id"], [])
         outputs[ROOT / "docs" / "radar" / f"{week['id']}.md"] = render_week(
-            week, grouped.get(week["id"], []), papers
+            week, week_entries, papers
         )
+        outputs[FRAGMENTS_DIR / f"{week['id']}.md"] = render_week_fragment(week_entries, papers)
     return outputs
 
 
