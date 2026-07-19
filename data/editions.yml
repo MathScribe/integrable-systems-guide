@@ -594,18 +594,13 @@ frontier:
     - math-ph
     - hep-th
     structure_tags:
+    - 2D Toda hierarchy
     - Riemann--Hilbert problem
-    - Yang--Baxter equation
     summary: 构造双 HCIZ 修饰的 Hermitian Gaussian matrix model，使其有限维本征值分布精确对应具有任意起终点重数的 non-intersecting Brownian bridges。
     main_result: 构造双 HCIZ 修饰的 Hermitian Gaussian matrix model，使其有限维本征值分布精确对应具有任意起终点重数的 non-intersecting Brownian bridges。
     integrable_structure: 模型连接 Karlin--McGregor law、mixed multiple orthogonal polynomials、Riemann--Hilbert problem、2D Toda
       tau-function 和 Schwinger--Dyson/Virasoro identities。
-    innovation: '补出了多起点、多终点 Brownian bridge 问题此前缺失的显式矩阵模型来源，并在有限 \(n\) 层面统一路径分布、谱模型和可积层级结构。 ## 6. 本轮值得关注的方向信号这 20 篇共同显示出几条值得可积系统读者关注的方向：
-      - **可积结构进入引力。** AKNS、KdV/mKdV hierarchy、Chern--Simons theory 和 Yang--Baxter deformation 正在形成更具体的引力模型与热力学联系。 - **从显式解走向可控机制。**
-      Darboux 和精确解工作只有在产生统一形变规律、任意阶分类、稳定频率主导或拓扑结论时才真正值得关注。 - **可积性判定变得更短。** 单个守恒律推出完整量子可积层级，说明可积性识别可能出现更有效的严格判据。 - **谱数据成为观测变量。**
-      soliton tomography 把离散本征值用于控制、传感和反演，而不只用于表示精确解。 - **可积概率继续结构化。** loop equations、RHP、Toda tau-functions 和矩阵模型正在提供新的 universality
-      与有限维精确结构。 - **离散和几何方向仍活跃。** 可积离散化、离散共形几何、仿射超曲面和有限特征 Painlevé 展示了结构方法的新落点。 ## 7. 下一步 1. 补筛 2026-06-20 至 2026-07-05； 2.
-      与本报告的 20 篇合并为完整 30 天样本； 3. 根据实际数量确认首页 30 天窗口； 4. 再开始数据字段、renderer、紧凑页面和自动化的实施； 5. 继续只创建 reviewable PR，不自动合并，不启用 auto-merge。'
+    innovation: 补出了多起点、多终点 Brownian bridge 问题此前缺失的显式矩阵模型来源，并在有限 \(n\) 层面统一路径分布、谱模型和可积层级结构。
   - paper_id: arxiv:2607.13773
     signal_date: '2026-07-15'
     signal_type: new-preprint
@@ -615,6 +610,7 @@ frontier:
     - nlin.SI
     structure_tags:
     - Darboux transformation
+    - topological vector potential
     summary: 研究 two-component Fokas--Lenells 方程在平面波背景上的 multihump--multivalley soliton families，系统分类基本解并构造任意 \(K\)-hump、\(M\)-valley
       及混合结构。
     main_result: 研究 two-component Fokas--Lenells 方程在平面波背景上的 multihump--multivalley soliton families，系统分类基本解并构造任意 \(K\)-hump、\(M\)-valley
@@ -628,7 +624,8 @@ frontier:
     arxiv_categories:
     - nlin.PS
     structure_tags:
-    - Eigenvalue-Based Approach to
+    - inverse scattering
+    - inverse problem
     summary: 推导 soliton eigenvalue response functions，并建立由输出本征值偏移反演未知脉冲扰动的积分方程，包含含噪重构测试。可积谱数据直接参与控制和反问题，形成 soliton tomography
       的具体方法框架。
     main_result: 推导 soliton eigenvalue response functions，并建立由输出本征值偏移反演未知脉冲扰动的积分方程，包含含噪重构测试。
@@ -654,6 +651,7 @@ frontier:
     week: 2026-W29
     arxiv_categories: []
     structure_tags:
+    - mKdV hierarchy
     - inverse scattering
     summary: 从三维引力的 Chern--Simons 表述和手征边界条件导出 potential mKdV hierarchy 及 eigenfunction-forced KdV dynamics。将自洽本征函数驱动的强迫 KdV
       与 AdS\(_3\) 边界动力学统一起来，同时给出孤子和辐射两类扇区的可积分析。
@@ -667,8 +665,7 @@ frontier:
     arxiv_categories:
     - nlin.PS
     - nlin.SI
-    structure_tags:
-    - Exact vector Akhmediev
+    structure_tags: []
     summary: 构造由不稳定模触发、但峰值处由线性稳定谐波主导的 exact vector Akhmediev breather。揭示标量 MI 直觉在多分量系统中的失效，并把稳定频率的自发主导机制定量归因于 four-wave mixing。
     main_result: 构造由不稳定模触发、但峰值处由线性稳定谐波主导的 exact vector Akhmediev breather。
     integrable_structure: Manakov 系统的精确 breather 和多分支 modulation-instability 谱结构。
@@ -708,6 +705,7 @@ frontier:
     - nlin.SI
     structure_tags:
     - integrable discretization
+    - symplectic geometry
     summary: 证明 quasi-periodic 离散共形映射 Cauchy problem 的 Liouville 可积性，并将结论转移到 Schramm circle patterns。在离散共形几何中得到严格的可积性定理及具体几何结果，而不只是建立形式类比。
     main_result: 证明 quasi-periodic 离散共形映射 Cauchy problem 的 Liouville 可积性，并将结论转移到 Schramm circle patterns。
     integrable_structure: 辛结构、symplectic leaves 和 Liouville integrability。
@@ -721,7 +719,7 @@ frontier:
     - math-ph
     structure_tags:
     - Yang--Baxter equation
-    - conservation laws
+    - quantum integrability
     summary: 证明平移不变、有限程量子自旋链中一个特定低阶守恒律已经蕴含无穷多个局部守恒量。将常用的经验判据提升为严格充分条件，为系统识别新的量子可积模型提供更短、更可验证的入口。
     main_result: 证明平移不变、有限程量子自旋链中一个特定低阶守恒律已经蕴含无穷多个局部守恒量。
     integrable_structure: Reshetikhin condition 与 Yang--Baxter 构造所产生的守恒律层级。
@@ -733,6 +731,7 @@ frontier:
     arxiv_categories: []
     structure_tags:
     - loop equations
+    - integrable probability
     summary: 利用 loop equations 给出 Sine\(_\beta\) 与 Airy\(_\beta\) 过程的唯一性刻画。用结构化方程直接刻画普适极限对象，为证明 universality 提供只需验证近似 loop
       equations 的新路线。
     main_result: 利用 loop equations 给出 Sine\(_\beta\) 与 Airy\(_\beta\) 过程的唯一性刻画。
@@ -769,7 +768,7 @@ frontier:
     week: 2026-W28
     arxiv_categories: []
     structure_tags:
-    - Invariant Measures for
+    - generalized hydrodynamics
     summary: 给出 Mealy automata 孤子系统中 Bernoulli/Markov 测度保持不变的判据，并分析孤子速度和 phase shift。将离散孤子系统从精确动力学推进到不变测度、广义 Gibbs ensemble
       和 generalized hydrodynamics 的概率基础。
     main_result: 给出 Mealy automata 孤子系统中 Bernoulli/Markov 测度保持不变的判据，并分析孤子速度和 phase shift。
@@ -783,8 +782,8 @@ frontier:
     - nlin.SI
     - math-ph
     structure_tags:
-    - Lax pair
     - Darboux transformation
+    - Bäcklund transformation
     summary: 对 \(N\)-elliptic localized solutions 给出系统的渐近分解和对称性分析。重点不是新增解图，而是把高阶椭圆局域解转化为可解释的远场组成和渐近结构。
     main_result: 对 \(N\)-elliptic localized solutions 给出系统的渐近分解和对称性分析。
     integrable_structure: Fokas--Lenells Lax pair、椭圆背景、\(N\)-fold Darboux--Bäcklund transformation 和 sigma/Cauchy determinant
@@ -796,7 +795,8 @@ frontier:
     week: 2026-W28
     arxiv_categories: []
     structure_tags:
-    - Wave Kinetics and
+    - inverse scattering
+    - wave kinetics
     summary: 研究 KP-I 随机波场的 wave-kinetic 演化、Rayleigh--Jeans thermalization、非局域谱传输和 condensation-like spectral peak。
     main_result: 研究 KP-I 随机波场的 wave-kinetic 演化、Rayleigh--Jeans thermalization、非局域谱传输和 condensation-like spectral peak。
     integrable_structure: 从 IST-integrable KP-I 系统及其无穷多不变量出发，分析宏观统计动力学。
@@ -808,7 +808,7 @@ frontier:
     arxiv_categories:
     - math.DG
     structure_tags:
-    - Affine hypersurfaces and
+    - integrable geometry
     summary: 论文研究 abundant second-order conformally superintegrable systems 的几何编码，建立它们与一类非退化相对仿射超曲面正规化之间的对应。将高维超可积系统的分类问题转化为仿射微分几何问题，并给出两类几何对象之间的必要充分条件和共形等价对应。
     main_result: 论文研究 abundant second-order conformally superintegrable systems 的几何编码，建立它们与一类非退化相对仿射超曲面正规化之间的对应。
     integrable_structure: 以 structure tensor、conformal equivalence 和 affine hypersurface geometry 表述超可积系统的分类条件。
@@ -821,7 +821,7 @@ frontier:
     - hep-th
     - gr-qc
     structure_tags:
-    - Integrable black hole
+    - AKNS hierarchy
     summary: 论文研究 AdS\(_3\) 的可积渐近对称性、相应规范荷代数及黑洞热力学，并构造与 KdV 方程相关的 cnoidal black hole。可积谱数据不再只是形式类比，而直接进入黑洞热力学量的描述，把 AKNS 谱几何与非轴对称黑洞温度联系起来。
     main_result: 论文研究 AdS\(_3\) 的可积渐近对称性、相应规范荷代数及黑洞热力学，并构造与 KdV 方程相关的 cnoidal black hole。
     integrable_structure: 边界动力学由 AKNS hierarchy 及其无穷 Abelian 守恒荷控制。平稳 Schrödinger 谱问题的谱多项式和超椭圆曲线直接编码黑洞温度。
@@ -846,6 +846,7 @@ frontier:
     arxiv_categories: []
     structure_tags:
     - integrable discretization
+    - Pfaffian
     summary: 构造多分量 short-pulse 方程的半离散和全离散 analogue，并给出精确 \(N\)-soliton 解及自适应移动网格解释。连续模型的双线性/Pfaffian 结构、精确解和移动网格意义在全离散层面同时保留，不是普通差分近似。
     main_result: 构造多分量 short-pulse 方程的半离散和全离散 analogue，并给出精确 \(N\)-soliton 解及自适应移动网格解释。
     integrable_structure: 双线性形式、Pfaffian 表示和保持可积性的离散化。
@@ -857,19 +858,12 @@ frontier:
     arxiv_categories:
     - nlin.SI
     structure_tags:
-    - Lax pair
     - Yang--Baxter equation
+    - Lax pair
     summary: 论文为 sine-Gordon finite-gap solutions 的密度建立 sharp upper bound，并为一类有界 sinh-Gordon finite-gap solutions 给出类似结果。
     main_result: 论文为 sine-Gordon finite-gap solutions 的密度建立 sharp upper bound，并为一类有界 sinh-Gordon finite-gap solutions 给出类似结果。
     integrable_structure: 上界直接从 finite-dimensional hierarchy 得到，无需显式积分有限带解；最大密度由 invariant polynomial 的根决定。
-    innovation: '结果把有限带解的极值密度问题化为有限维层级中的不变量判定，并给出 sharp、可计算的全局约束。 ## 6. 本区间显示出的方向信号这 24 篇共同显示出几个值得继续关注的方向： 1. **从 Lax pair
-      的存在转向 Lax 表示的质量与可识别性。** 数据驱动发现、fake/degenerate Lax pairs 和支集算术分类都要求更精细的结构判据。 2. **散射与 RHP 从求解工具转向学习、扰动和统计极限。** scattering
-      data system identification、kink perturbation、Painlevé transition layer 和 arbitrary-genus soliton gas 展示了这一变化。 3. **Hamiltonian/Frobenius
-      几何继续组织离散层级。** Ablowitz--Ladik、2D-Toda reductions 和 polarization discretization 都在寻找 full-dispersive 与 dispersionless
-      结构的统一描述。 4. **Yang--Baxter 方法向电路几何和多站点方程扩展。** 重点从单个 \(R\)-matrix 转向可分类的 circuit architecture、boundary structure 和 generalized
-      equation symmetries。 5. **可积结构不断进入引力与随机几何。** Painlevé hierarchy reduction、Nakamura trilinear framework、Breitenlohner--Maison
-      deformation 和 two-matrix critical limit 都产生了可复用的新方法桥梁。 ## 7. 实施前确认本报告的 24 篇目前是建议名单。确认后，30 天样本将固定为 44 篇，并进入单独的页面实现 PR。页面实现仍遵循：
-      - 首页最近 30 天、按周分组； - 默认只显示概览，完整三段说明折叠； - 不使用贡献等级标签； - 不逐篇显示“流程整理”； - 不使用旧论文补数量； - 实现 PR 只供审核，不自动合并或启用 auto-merge。'
+    innovation: 结果把有限带解的极值密度问题化为有限维层级中的不变量判定，并给出 sharp、可计算的全局约束。
   - paper_id: arxiv:2607.02093
     signal_date: '2026-07-02'
     signal_type: new-preprint
@@ -879,7 +873,7 @@ frontier:
     - nlin.SI
     structure_tags:
     - Yang--Baxter equation
-    - transfer matrix
+    - quantum integrability
     summary: 论文完整分类具有 open boundary conditions 和任意 circuit geometries 的 Yang--Baxter integrable quantum circuits，并给出由 staggered
       inhomogeneities 与系统大小决定 gate arrangement 的一般映射。
     main_result: 论文完整分类具有 open boundary conditions 和任意 circuit geometries 的 Yang--Baxter integrable quantum circuits，并给出由
@@ -935,8 +929,7 @@ frontier:
     arxiv_categories:
     - hep-th
     - nlin.SI
-    structure_tags:
-    - The auxiliary-deformed Breitenlohner--Maison
+    structure_tags: []
     summary: 论文研究四维广义相对论可积子扇区 Breitenlohner--Maison model 的 auxiliary-field deformation，构造与已有 \(\nu\)-frame 互补的 \(\mu\)-frame，并把两种描述显式提升回四维。
     main_result: 论文研究四维广义相对论可积子扇区 Breitenlohner--Maison model 的 auxiliary-field deformation，构造与已有 \(\nu\)-frame 互补的 \(\mu\)-frame，并把两种描述显式提升回四维。
     integrable_structure: 二维 BM model 由带两个 commuting Killing isometries 的四维 Einstein theory 约化得到；新构造借鉴 duality-invariant Einstein
@@ -951,6 +944,7 @@ frontier:
     - nlin.SI
     - math.NA
     structure_tags:
+    - Hamiltonian structure
     - integrable discretization
     summary: 论文把 polynomial vector fields 的 polarization discretization 守恒量构造推广到任意阶 ODE。对一阶和二阶 Hamiltonian ODE 已知的积分结构在一般阶得到统一代数推导，并且所有阶数至少为
       3 的积分都是新的。
@@ -966,7 +960,7 @@ frontier:
     - nlin.SI
     structure_tags:
     - Riemann--Hilbert problem
-    - Painlevé
+    - nonlinear steepest descent
     summary: 论文解析 focusing NLS 非零背景下 plane-wave region 与 modulated elliptic-wave region 之间此前缺失的 transition layer。主项仍是平面波，首个非平凡修正为
       \(t^{-1/3}\)，其系数由 inhomogeneous Painlevé II 的 distinguished tritronquée solution 表示。
     main_result: 论文解析 focusing NLS 非零背景下 plane-wave region 与 modulated elliptic-wave region 之间此前缺失的 transition layer。主项仍是平面波，首个非平凡修正为
@@ -982,7 +976,7 @@ frontier:
     - nlin.SI
     - gr-qc
     structure_tags:
-    - Reduced Trilinear Reformulation
+    - bilinear method
     summary: 论文把 Nakamura conjecture 中同时出现的 Hirota bilinear derivatives 和普通一阶导数，统一改写到 \(Z_3\)-symmetric trilinear Hirota operators
       的 reduced sector 中。
     main_result: 论文把 Nakamura conjecture 中同时出现的 Hirota bilinear derivatives 和普通一阶导数，统一改写到 \(Z_3\)-symmetric trilinear Hirota
@@ -1013,8 +1007,7 @@ frontier:
     arxiv_categories:
     - nlin.SI
     - nlin.PS
-    structure_tags:
-    - Perturbation theory for
+    structure_tags: []
     summary: 论文建立 defocusing mKdV kink 的可积扰动理论，推导连续谱与离散谱扰动的演化，并得到 kink 参数的显式一阶方程。第一阶修正显示一般扰动会在 kink 前方产生 radiative shelf。
     main_result: 论文建立 defocusing mKdV kink 的可积扰动理论，推导连续谱与离散谱扰动的演化，并得到 kink 参数的显式一阶方程。第一阶修正显示一般扰动会在 kink 前方产生 radiative shelf。
     integrable_structure: 方法基于 Zakharov--Shabat scattering problem 的 squared-eigenfunction expansion；论文证明 kink background
@@ -1029,7 +1022,7 @@ frontier:
     - nlin.SI
     structure_tags:
     - Riemann--Hilbert problem
-    - tau function
+    - nonlinear steepest descent
     summary: 论文证明 quartic two-matrix model 的 log partition function 微分，在特定 double-scaling limit 下收敛到 \((3,4)\) string equation
       的 tau-function 微分，从而严格确认 critical Ising model on random surfaces 到 \((3,4)\) topological mini……
     main_result: 论文证明 quartic two-matrix model 的 log partition function 微分，在特定 double-scaling limit 下收敛到 \((3,4)\) string
@@ -1093,8 +1086,8 @@ frontier:
     - nlin.SI
     - math-ph
     structure_tags:
+    - Ablowitz--Ladik hierarchy
     - Hamiltonian structure
-    - Poisson structure
     summary: 论文在 full-dispersive level 构造 asymmetric \((3,1)\)-type generalized Ablowitz--Ladik hierarchy 的局部 tri-Hamiltonian
       structure，并计算相应 bihamiltonian structures 的全部 central invariants。
     main_result: 论文在 full-dispersive level 构造 asymmetric \((3,1)\)-type generalized Ablowitz--Ladik hierarchy 的局部 tri-Hamiltonian
@@ -1109,7 +1102,7 @@ frontier:
     arxiv_categories:
     - nlin.SI
     structure_tags:
-    - Global Results on
+    - Drinfeld--Sokolov hierarchy
     summary: 论文给出 \((1+1)\) 维奇数阶 two-component polynomial evolutionary systems 的必要且充分可积条件，证明可积层级恰有 24 个可能的谱类别，并完成最低阶为 3 和
       5 的齐次层级分类。
     main_result: 论文给出 \((1+1)\) 维奇数阶 two-component polynomial evolutionary systems 的必要且充分可积条件，证明可积层级恰有 24 个可能的谱类别，并完成最低阶为
@@ -1141,8 +1134,8 @@ frontier:
     - math-ph
     - nlin.SI
     structure_tags:
-    - Lax pair
-    - Hamiltonian structure
+    - mKdV hierarchy
+    - Painlevé hierarchy
     summary: 论文证明 even Painlevé IV hierarchy 的一个对称不变子流形，其诱导等单值动力学恰好是 Flaschka--Newell Painlevé II hierarchy。结果为 Flaschka--Newell
       hierarchy 提供了新的几何起源：它不仅是 mKdV hierarchy 的 similarity reduction，也可被理解为更高 Painlevé IV 等单值系统的对……
     main_result: 论文证明 even Painlevé IV hierarchy 的一个对称不变子流形，其诱导等单值动力学恰好是 Flaschka--Newell Painlevé II hierarchy。
@@ -1171,8 +1164,8 @@ frontier:
     - nlin.SI
     - math-ph
     structure_tags:
+    - 2D Toda hierarchy
     - Hamiltonian structure
-    - Poisson structure
     summary: 论文为 2D-Toda hierarchy 的 \((n,1)\)-type rational reduction 直接构造局部 bihamiltonian structure，并建立一个 \((n+1)\) 维半单
       generalized Frobenius manifold。
     main_result: 论文为 2D-Toda hierarchy 的 \((n,1)\)-type rational reduction 直接构造局部 bihamiltonian structure，并建立一个 \((n+1)\)
@@ -1186,8 +1179,7 @@ frontier:
     week: 2026-W26
     arxiv_categories:
     - nlin.SI
-    structure_tags:
-    - Exact Harmonic Dimensional
+    structure_tags: []
     summary: 论文建立多分量 \((3+1)\) 维 NLS 型系统的 harmonic dimensional reduction。核心 lifting lemma 说明：当横向相位为调和函数且束缚势精确抵消相位梯度平方时，高维系统严格约化到闭合的
       \((1+1)\) 维可积层级，低维任意解都能提升为高维精确解。
     main_result: 论文建立多分量 \((3+1)\) 维 NLS 型系统的 harmonic dimensional reduction。核心 lifting lemma 说明：当横向相位为调和函数且束缚势精确抵消相位梯度平方时，高维系统严格约化到闭合的
@@ -1216,7 +1208,7 @@ frontier:
     - nlin.SI
     structure_tags:
     - Riemann--Hilbert problem
-    - spectral curve
+    - nonlinear steepest descent
     summary: 论文构造 defocusing NLS 有限密度背景下的 full arbitrary-genus dark soliton gas，并给出其完整长时间渐近。自相似平面被划分为 \(2N+1\) 个非空扇区，主项由 genus-\(N\)
       Riemann theta 有限带解描述，同时得到纯扇区和混合扇区的误差估计。
     main_result: 论文构造 defocusing NLS 有限密度背景下的 full arbitrary-genus dark soliton gas，并给出其完整长时间渐近。自相似平面被划分为 \(2N+1\) 个非空扇区，主项由
