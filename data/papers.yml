@@ -77,6 +77,9 @@
   url: "https://arxiv.org/abs/2606.24435"
   arxiv_id: "2606.24435"
   doi: "10.48550/arXiv.2606.24435"
+  submitted: "2026-06-23"
+  updated: "2026-06-23"
+  metadata_checked_at: "2026-07-20"
   tags:
     - "DNLS"
     - "soliton gas"
@@ -1068,7 +1071,9 @@
 - id: "arxiv:2606.22438"
   title: "Long-time asymptotics of a full arbitrary-genus dark soliton gas for the defocusing nonlinear Schrödinger equation"
   authors:
-    - "Author metadata unavailable"
+    - "Dedi Yan"
+    - "Xianguo Geng"
+    - "Mingming Chen"
   url: "https://arxiv.org/abs/2606.22438"
   arxiv_id: "2606.22438"
   doi: "10.48550/arXiv.2606.22438"
@@ -1080,7 +1085,7 @@
 - id: "arxiv:2606.24925"
   title: "Invariants for a family of discrete equations with the Laurent property"
   authors:
-    - "Author metadata unavailable"
+    - "Andrei K. Svinin"
   url: "https://arxiv.org/abs/2606.24925"
   arxiv_id: "2606.24925"
   doi: "10.48550/arXiv.2606.24925"
@@ -1092,7 +1097,8 @@
 - id: "arxiv:2606.23167"
   title: "Bihamiltonian structure of the (n,1)-type rational reductions of the 2D-Toda hierarchy"
   authors:
-    - "Author metadata unavailable"
+    - "Haonan Qu"
+    - "Qiulan Zhao"
   url: "https://arxiv.org/abs/2606.23167"
   arxiv_id: "2606.23167"
   doi: "10.48550/arXiv.2606.23167"
@@ -1104,7 +1110,8 @@
 - id: "arxiv:2606.24662"
   title: "A symmetry reduction of the Painlevé IV hierarchy to the Flaschka--Newell Painlevé II hierarchy"
   authors:
-    - "Author metadata unavailable"
+    - "Mohamad Alameddine"
+    - "Olivier Marchal"
   url: "https://arxiv.org/abs/2606.24662"
   arxiv_id: "2606.24662"
   doi: "10.48550/arXiv.2606.24662"
@@ -1116,7 +1123,7 @@
 - id: "arxiv:2606.24273"
   title: "Arithmetic Supports of Lax Difference Hierarchies"
   authors:
-    - "Author metadata unavailable"
+    - "Sylvain Carpentier"
   url: "https://arxiv.org/abs/2606.24273"
   arxiv_id: "2606.24273"
   doi: "10.48550/arXiv.2606.24273"
@@ -1162,7 +1169,9 @@
 - id: "arxiv:2606.25802"
   title: "Global Results on the Classification of Two-Component Integrable Evolutionary Systems"
   authors:
-    - "Author metadata unavailable"
+    - "Alexander V. Mikhailov"
+    - "Vladimir Novikov"
+    - "Jing Ping Wang"
   url: "https://arxiv.org/abs/2606.25802"
   arxiv_id: "2606.25802"
   doi: "10.48550/arXiv.2606.25802"
@@ -1189,7 +1198,9 @@
 - id: "arxiv:2606.27125"
   title: "The Ising Model Coupled to 2D Gravity: Critical Partition Function"
   authors:
-    - "Author metadata unavailable"
+    - "Maurice Duits"
+    - "Nathan Hayford"
+    - "Seung-Yeop Lee"
   url: "https://arxiv.org/abs/2606.27125"
   arxiv_id: "2606.27125"
   doi: "10.48550/arXiv.2606.27125"
@@ -1246,7 +1257,10 @@
 - id: "arxiv:2606.28250"
   title: "Perturbation theory for kinks of the defocusing modified Korteweg--de Vries equation"
   authors:
-    - "Author metadata unavailable"
+    - "Nicholas J. Ossi"
+    - "Barbara Prinari"
+    - "Theodoros P. Horikis"
+    - "Dimitrios J. Frantzeskakis"
   url: "https://arxiv.org/abs/2606.28250"
   arxiv_id: "2606.28250"
   doi: "10.48550/arXiv.2606.28250"
@@ -1257,7 +1271,7 @@
 - id: "arxiv:2606.29103"
   title: "Reduced Trilinear Reformulation of the Nakamura Conjecture"
   authors:
-    - "Author metadata unavailable"
+    - "Takeshi Fukuyama"
   url: "https://arxiv.org/abs/2606.29103"
   arxiv_id: "2606.29103"
   doi: "10.48550/arXiv.2606.29103"
@@ -1298,7 +1312,8 @@
 - id: "arxiv:2606.30717"
   title: "The auxiliary-deformed Breitenlohner--Maison model: duality frames and higher-dimensional origin"
   authors:
-    - "Author metadata unavailable"
+    - "Daniele Bielli"
+    - "Mattia Cesàro"
   url: "https://arxiv.org/abs/2606.30717"
   arxiv_id: "2606.30717"
   doi: "10.48550/arXiv.2606.30717"
@@ -1309,7 +1324,10 @@
 - id: "arxiv:2607.01493"
   title: "Learning Lax Pairs: Revisiting the Classical Paradigm"
   authors:
-    - "Author metadata unavailable"
+    - "Jimmie Adriazola"
+    - "Gino Biondini"
+    - "Wei Zhu"
+    - "Panayotis G. Kevrekidis"
   url: "https://arxiv.org/abs/2607.01493"
   arxiv_id: "2607.01493"
   doi: "10.48550/arXiv.2607.01493"
@@ -1351,7 +1369,7 @@
 - id: "arxiv:2607.03555"
   title: "Maximal Densities of Finite-Gap Solutions of the Sine-Gordon Equation"
   authors:
-    - "Author metadata unavailable"
+    - "Otis C. Wright III"
   url: "https://arxiv.org/abs/2607.03555"
   arxiv_id: "2607.03555"
   doi: "10.48550/arXiv.2607.03555"
@@ -1394,7 +1412,10 @@
 - id: "arxiv:2607.06119"
   title: "Wave Kinetics and Thermalization in Kadomtsev--Petviashvili-I System"
   authors:
-    - "Author metadata unavailable"
+    - "Kiran Venkata Kolluru"
+    - "Giorgio Krstulovic"
+    - "Alan C. Newell"
+    - "Sergey Nazarenko"
   url: "https://arxiv.org/abs/2607.06119"
   arxiv_id: "2607.06119"
   doi: "10.48550/arXiv.2607.06119"
@@ -1407,9 +1428,13 @@
   authors:
     - "Vicente Cortés"
     - "Andreas Vollmer"
-  url: "https://arxiv.org/abs/2504.05200"
+  url: "https://doi.org/10.1112/jlms.70618"
   arxiv_id: "2504.05200"
-  doi: "10.48550/arXiv.2504.05200"
+  doi: "10.1112/jlms.70618"
+  journal: "Journal of the London Mathematical Society"
+  issue: "1"
+  article_number: "e70618"
+  year: 2026
   submitted: "2025-04-07"
   updated: "2026-06-09"
   published: "2026-07-07"
@@ -1420,7 +1445,8 @@
 - id: "arxiv:2607.06942"
   title: "Invariant Measures for Soliton Systems Generated by Mealy Automata"
   authors:
-    - "Author metadata unavailable"
+    - "Takahiro Kanazawa"
+    - "Yutaro Nakabayashi"
   url: "https://arxiv.org/abs/2607.06942"
   arxiv_id: "2607.06942"
   doi: "10.48550/arXiv.2607.06942"
@@ -1431,7 +1457,9 @@
 - id: "arxiv:2607.06980"
   title: "On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic"
   authors:
-    - "Author metadata unavailable"
+    - "Nalini Joshi"
+    - "Tomas Lasic Latimer"
+    - "Pieter Roffelsen"
   url: "https://arxiv.org/abs/2607.06980"
   arxiv_id: "2607.06980"
   doi: "10.48550/arXiv.2607.06980"
@@ -1460,7 +1488,8 @@
 - id: "arxiv:2607.07617"
   title: "Loop Equations Characterize Random Matrix Statistics"
   authors:
-    - "Author metadata unavailable"
+    - "Paul Bourgade"
+    - "Jiaoyang Huang"
   url: "https://arxiv.org/abs/2607.07617"
   arxiv_id: "2607.07617"
   doi: "10.48550/arXiv.2607.07617"
@@ -1501,7 +1530,7 @@
 - id: "arxiv:2607.09180"
   title: "Dispersionless modified DKP hierarchy as the Yang--Baxter equation"
   authors:
-    - "Author metadata unavailable"
+    - "A. Zabrodin"
   url: "https://arxiv.org/abs/2607.09180"
   arxiv_id: "2607.09180"
   doi: "10.48550/arXiv.2607.09180"
@@ -1509,3 +1538,429 @@
   tags:
     - "Yang--Baxter equation"
     - "tau function"
+
+- id: "arxiv:2607.15132"
+  title: "Periodic orbits and quantum many-body scars in integrable spin chains"
+  authors:
+    - "Elena Petrova"
+    - "Maksym Serbyn"
+    - "Marko Ljubotina"
+  url: "https://arxiv.org/abs/2607.15132"
+  arxiv_id: "2607.15132"
+  doi: "10.48550/arXiv.2607.15132"
+  submitted: "2026-07-16"
+  updated: "2026-07-16"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "Bethe ansatz"
+    - "quantum integrability"
+
+- id: "arxiv:2607.15013"
+  title: "Quasi-Pfaffian Solutions to Integrable Systems via Sylvester-Moutard Transformations"
+  authors:
+    - "Claire R. Gilson"
+    - "Chen Shu"
+  url: "https://arxiv.org/abs/2607.15013"
+  arxiv_id: "2607.15013"
+  doi: "10.48550/arXiv.2607.15013"
+  submitted: "2026-07-16"
+  updated: "2026-07-16"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "Pfaffian"
+    - "Bäcklund transformation"
+
+- id: "arxiv:2607.12142"
+  title: "Computational homological methods for integrable field theories"
+  authors:
+    - "Marco Benini"
+    - "Ryan A. Cullinan"
+    - "Alexander Schenkel"
+    - "Benoit Vicedo"
+  url: "https://arxiv.org/abs/2607.12142"
+  arxiv_id: "2607.12142"
+  doi: "10.48550/arXiv.2607.12142"
+  submitted: "2026-07-13"
+  updated: "2026-07-13"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "Chern--Simons theory"
+    - "Lax pair"
+
+- id: "arxiv:2607.08536"
+  title: "Soft edge limit of the Laguerre beta-ensemble at the lower edge"
+  authors:
+    - "Yun Li"
+    - "Benedek Valkó"
+    - "Jiaming Xu"
+  url: "https://arxiv.org/abs/2607.08536"
+  arxiv_id: "2607.08536"
+  doi: "10.48550/arXiv.2607.08536"
+  submitted: "2026-07-09"
+  updated: "2026-07-09"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "integrable probability"
+
+- id: "arxiv:2607.04075"
+  title: "Wei-Norman approach for non-Hermitian driven spin-S systems and its application to defect freezing"
+  authors:
+    - "Mingwei Meng"
+    - "Chen Sun"
+  url: "https://arxiv.org/abs/2607.04075"
+  arxiv_id: "2607.04075"
+  doi: "10.48550/arXiv.2607.04075"
+  submitted: "2026-07-05"
+  updated: "2026-07-05"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "quantum integrability"
+
+- id: "arxiv:2607.02359"
+  title: "Correlation and entanglement dynamics of free fermions in disguise"
+  authors:
+    - "Dávid Szász-Schagrin"
+    - "Pablo Bayona-Pena"
+    - "Lorenzo Piroli"
+    - "Eric Vernier"
+  url: "https://arxiv.org/abs/2607.02359"
+  arxiv_id: "2607.02359"
+  doi: "10.48550/arXiv.2607.02359"
+  submitted: "2026-07-02"
+  updated: "2026-07-15"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "quantum integrability"
+    - "conservation laws"
+
+- id: "arxiv:2607.00594"
+  title: "Yangian Doubles and off-Shell Bethe Vectors"
+  authors:
+    - "A. Liashyk"
+    - "S. Pakuliak"
+    - "E. Ragoucy"
+  url: "https://arxiv.org/abs/2607.00594"
+  arxiv_id: "2607.00594"
+  doi: "10.48550/arXiv.2607.00594"
+  submitted: "2026-07-01"
+  updated: "2026-07-01"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "Bethe ansatz"
+    - "quantum integrability"
+
+- id: "arxiv:2607.00231"
+  title: "The 2j-k and j-2k Bi-orthogonal Polynomials on the Unit Circle: Further Properties and Riemann-Hilbert Characterizations"
+  authors:
+    - "Roozbeh Gharakhloo"
+    - "Nicholas S. Witte"
+  url: "https://arxiv.org/abs/2607.00231"
+  arxiv_id: "2607.00231"
+  doi: "10.48550/arXiv.2607.00231"
+  submitted: "2026-06-30"
+  updated: "2026-06-30"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "Riemann--Hilbert problem"
+    - "multiple orthogonal polynomials"
+
+- id: "arxiv:2606.27337"
+  title: "Exact subsystem dynamics in the deterministic Floquet-PXP model"
+  authors:
+    - "Katja Klobas"
+  url: "https://arxiv.org/abs/2606.27337"
+  arxiv_id: "2606.27337"
+  doi: "10.48550/arXiv.2606.27337"
+  submitted: "2026-06-25"
+  updated: "2026-06-25"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "transfer matrix"
+
+- id: "arxiv:2606.27261"
+  title: "Non-colliding space-time inhomogeneous Markov chains"
+  authors:
+    - "Theodoros Assiotis"
+    - "Miles Foster Nyamundanda"
+  url: "https://arxiv.org/abs/2606.27261"
+  arxiv_id: "2606.27261"
+  doi: "10.48550/arXiv.2606.27261"
+  submitted: "2026-06-25"
+  updated: "2026-06-25"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "integrable probability"
+    - "nonlinear steepest descent"
+
+- id: "arxiv:2606.27186"
+  title: "An integrable approach to macroscopic fluctuation theory for the multispecies SSEP"
+  authors:
+    - "Luigi Cantini"
+  url: "https://arxiv.org/abs/2606.27186"
+  arxiv_id: "2606.27186"
+  doi: "10.48550/arXiv.2606.27186"
+  submitted: "2026-06-25"
+  updated: "2026-06-25"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "AKNS hierarchy"
+    - "inverse scattering"
+
+- id: "arxiv:2606.25739"
+  title: "A novel 2+1-dimensional extended Dym equation: moving boundary problems solvable via Painlevé II symmetry reduction"
+  authors:
+    - "Colin Rogers"
+    - "Pablo Amster"
+  url: "https://arxiv.org/abs/2606.25739"
+  arxiv_id: "2606.25739"
+  doi: "10.48550/arXiv.2606.25739"
+  submitted: "2026-06-24"
+  updated: "2026-06-24"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "Painlevé"
+
+- id: "arxiv:2606.23803"
+  title: "Infinite-Level Hierarchy of Solvable Quantum Circuits"
+  authors:
+    - "Michael A. Rampp"
+    - "Suhail A. Rather"
+    - "Pieter W. Claeys"
+  url: "https://arxiv.org/abs/2606.23803"
+  arxiv_id: "2606.23803"
+  doi: "10.48550/arXiv.2606.23803"
+  submitted: "2026-06-22"
+  updated: "2026-06-22"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "quantum integrability"
+
+- id: "arxiv:2606.22004"
+  title: "The asymmetric five vertex model on a rectangle"
+  authors:
+    - "Jan de Gier"
+    - "Richard Kenyon"
+    - "Michael Wheeler"
+    - "Yuyang Zhou"
+  url: "https://arxiv.org/abs/2606.22004"
+  arxiv_id: "2606.22004"
+  doi: "10.48550/arXiv.2606.22004"
+  submitted: "2026-06-20"
+  updated: "2026-06-20"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "integrable probability"
+    - "transfer matrix"
+
+- id: "arxiv:2607.13673"
+  title: "Deriving the AdS₃ × S³ × T⁴ Quantum Spectral Curve I: Y-system and discontinuity relations"
+  authors:
+    - "Andrea Cavaglià"
+    - "Nicolò Primi"
+    - "Davide Polvara"
+    - "Alessandro Sfondrini"
+    - "Roberto Tateo"
+  url: "https://arxiv.org/abs/2607.13673"
+  arxiv_id: "2607.13673"
+  doi: "10.48550/arXiv.2607.13673"
+  submitted: "2026-07-15"
+  updated: "2026-07-15"
+  metadata_checked_at: "2026-07-20"
+  tags:
+    - "quantum integrability"
+    - "Bethe ansatz"
+
+- id: "arxiv:2606.18701"
+  title: "An integrable semi-discretization of the two-component Hunter-Saxton equation"
+  authors: ["Ayako Hori", "Yuta Tanaka", "Ken-ichi Maruno", "Yasuhiro Ohta"]
+  url: "https://arxiv.org/abs/2606.18701"
+  arxiv_id: "2606.18701"
+  doi: "10.48550/arXiv.2606.18701"
+  submitted: "2026-06-17"
+  updated: "2026-06-17"
+  metadata_checked_at: "2026-07-20"
+  tags: ["integrable discretization", "bilinear method"]
+
+- id: "arxiv:2606.17238"
+  title: "Vector peakon equations and isospectral flows in Clifford algebras"
+  authors: ["Andrew N. W. Hone", "Vladimir S. Novikov", "Jacek Szmigielski"]
+  url: "https://arxiv.org/abs/2606.17238"
+  arxiv_id: "2606.17238"
+  doi: "10.48550/arXiv.2606.17238"
+  submitted: "2026-06-15"
+  updated: "2026-06-15"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Lax pair", "Hamiltonian structure"]
+
+- id: "arxiv:2606.16789"
+  title: "Pole Dynamics, Linearization, and Perturbations of the Satsuma--Mimura Equation"
+  authors: ["Lingjuan Yan", "Xingbiao Hu", "Yajie Liu", "Yingnan Zhang"]
+  url: "https://arxiv.org/abs/2606.16789"
+  arxiv_id: "2606.16789"
+  doi: "10.48550/arXiv.2606.16789"
+  submitted: "2026-06-15"
+  updated: "2026-06-15"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Lax pair", "integrable discretization"]
+
+- id: "doi:10.1007/s10955-026-03637-8"
+  title: "Matrix-Product State Skeletons in Onsager-Integrable Quantum Chains"
+  authors: ["Imogen Camp", "Nick G. Jones"]
+  url: "https://doi.org/10.1007/s10955-026-03637-8"
+  arxiv_id: "2511.07212"
+  doi: "10.1007/s10955-026-03637-8"
+  journal: "Journal of Statistical Physics"
+  published: "2026-06-15"
+  metadata_checked_at: "2026-07-20"
+  tags: ["quantum integrability", "transfer matrix"]
+
+- id: "doi:10.1007/jhep06(2026)173"
+  title: "On the Integrable Structure of the SU(2) Wess--Zumino--Novikov--Witten Model"
+  authors: ["Sylvain Lacroix", "Adrien Molines"]
+  url: "https://doi.org/10.1007/JHEP06(2026)173"
+  arxiv_id: "2601.20960"
+  doi: "10.1007/JHEP06(2026)173"
+  journal: "Journal of High Energy Physics"
+  published: "2026-06-16"
+  metadata_checked_at: "2026-07-20"
+  tags: ["quantum integrability", "Bethe ansatz"]
+
+- id: "doi:10.21468/scipostphys.20.6.164"
+  title: "Strong Zero Modes in Integrable Spin-S Chains"
+  authors: ["Fabian H. L. Essler", "Paul Fendley", "Eric Vernier"]
+  url: "https://doi.org/10.21468/SciPostPhys.20.6.164"
+  arxiv_id: "2512.07742"
+  doi: "10.21468/SciPostPhys.20.6.164"
+  journal: "SciPost Physics"
+  published: "2026-06-15"
+  metadata_checked_at: "2026-07-20"
+  tags: ["quantum integrability", "Bethe ansatz"]
+
+- id: "doi:10.1088/1751-8121/ae767e"
+  title: "Special Solutions to Five Autonomous Integrable Partial Difference Equations via the Third and Sixth Painlevé Equations and the Garnier System in Two Variables"
+  authors: ["Nobutaka Nakazono"]
+  url: "https://doi.org/10.1088/1751-8121/ae767e"
+  doi: "10.1088/1751-8121/ae767e"
+  journal: "Journal of Physics A: Mathematical and Theoretical"
+  published: "2026-06-16"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Painlevé", "integrable discretization"]
+
+- id: "doi:10.46298/ocnmp.18125"
+  title: "Liouville Integrable Lotka--Volterra Systems"
+  authors: ["Peter H. van der Kamp", "David I. McLaren", "G. R. W. Quispel"]
+  url: "https://doi.org/10.46298/ocnmp.18125"
+  arxiv_id: "2604.01743"
+  doi: "10.46298/ocnmp.18125"
+  journal: "Open Communications in Nonlinear Mathematical Physics"
+  published: "2026-06-18"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Hamiltonian structure", "Poisson structure"]
+
+- id: "doi:10.1209/0295-5075/ae7152"
+  title: "Quantum Simulation of Non-Unitary Operators Generated by R-Matrices in the Yang--Baxter Equation"
+  authors: ["Chao Zheng", "Jiamin Zhou", "Jiatong Cheng", "Guanru Feng"]
+  url: "https://doi.org/10.1209/0295-5075/ae7152"
+  doi: "10.1209/0295-5075/ae7152"
+  journal: "Europhysics Letters"
+  published: "2026-06-17"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Yang--Baxter equation", "quantum integrability"]
+
+- id: "doi:10.46298/ocnmp.18295"
+  title: "Moving Boundary Problems for a Cuspon Equation and Reciprocal Associates: Exact Solution via Painlevé Symmetry Reduction"
+  authors: ["Colin Rogers", "Sandra Carillo"]
+  url: "https://doi.org/10.46298/ocnmp.18295"
+  arxiv_id: "2605.22565"
+  doi: "10.46298/ocnmp.18295"
+  journal: "Open Communications in Nonlinear Mathematical Physics"
+  published: "2026-06-16"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Painlevé", "Bäcklund transformation"]
+
+- id: "doi:10.1103/sz13-9shg"
+  title: "Experimental Observation of Ballistic Correlations in Integrable Turbulence"
+  authors: ["Elias Charnay", "Adrien Escoubet", "François Copie", "Stéphane Randoux", "Thibault Bonnemain", "Alvise Bastianello", "Pierre Suret"]
+  url: "https://doi.org/10.1103/sz13-9shg"
+  arxiv_id: "2601.21085"
+  doi: "10.1103/sz13-9shg"
+  journal: "Physical Review Letters"
+  published: "2026-07-14"
+  metadata_checked_at: "2026-07-20"
+  tags: ["generalized hydrodynamics", "inverse scattering"]
+
+- id: "doi:10.1137/25m1764062"
+  title: "The Inverse Scattering Transform and Analyticity of Symmetric Solutions for the Integrable Nonlinear Schrödinger Equations"
+  authors: ["Takuya Sato"]
+  url: "https://doi.org/10.1137/25M1764062"
+  doi: "10.1137/25M1764062"
+  journal: "SIAM Journal on Mathematical Analysis"
+  published: "2026-07-15"
+  metadata_checked_at: "2026-07-20"
+  tags: ["inverse scattering", "NLS"]
+
+- id: "doi:10.1007/s11005-026-02119-y"
+  title: "Riemann--Hilbert Approach for the Nonlocal Modified Korteweg--de Vries Equation with a Step-Like Oscillating Background"
+  authors: ["Yan Rybalko"]
+  url: "https://doi.org/10.1007/s11005-026-02119-y"
+  arxiv_id: "2601.15841"
+  doi: "10.1007/s11005-026-02119-y"
+  journal: "Letters in Mathematical Physics"
+  published: "2026-07-15"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Riemann--Hilbert problem", "mKdV"]
+
+- id: "doi:10.1103/99hb-q8bd"
+  title: "Yang--Baxter Sigma Model from Twistor Space"
+  authors: ["Meer Ashwinkumar", "Jitendra Pal"]
+  url: "https://doi.org/10.1103/99hb-q8bd"
+  arxiv_id: "2602.11288"
+  doi: "10.1103/99hb-q8bd"
+  journal: "Physical Review D"
+  published: "2026-07-15"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Yang--Baxter equation", "Chern--Simons theory"]
+
+- id: "doi:10.1088/1361-6544/ae7fe7"
+  title: "Integrable Systems from Poisson Reductions of Generalized Hamiltonian Torus Actions"
+  authors: ["László Fehér", "Maxime Fairon"]
+  url: "https://doi.org/10.1088/1361-6544/ae7fe7"
+  arxiv_id: "2507.12051"
+  doi: "10.1088/1361-6544/ae7fe7"
+  journal: "Nonlinearity"
+  published: "2026-07-17"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Poisson structure", "Hamiltonian structure"]
+
+- id: "doi:10.1007/s10231-026-01703-2"
+  title: "Reflections and Drinfeld Twists for Set-Theoretic Yang--Baxter Maps"
+  authors: ["Davide Ferri"]
+  url: "https://doi.org/10.1007/s10231-026-01703-2"
+  arxiv_id: "2504.21678"
+  doi: "10.1007/s10231-026-01703-2"
+  journal: "Annali di Matematica Pura ed Applicata"
+  published: "2026-07-13"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Yang--Baxter equation"]
+
+- id: "doi:10.1103/vbsx-xyjm"
+  title: "Soliton Turbulence of a Strongly Driven One-Dimensional Bose Gas"
+  authors: ["Manon Ballu", "Romain Dubessy", "Aurélien Perrin", "Hélène Perrin", "Anna Minguzzi"]
+  url: "https://doi.org/10.1103/vbsx-xyjm"
+  arxiv_id: "2603.24832"
+  doi: "10.1103/vbsx-xyjm"
+  journal: "Physical Review A"
+  published: "2026-07-13"
+  metadata_checked_at: "2026-07-20"
+  tags: ["soliton gas", "inverse scattering"]
+
+- id: "arxiv:2607.15670"
+  title: "Singularity Interactions for Lattice Equations: Introducing the Taishi"
+  authors: ["Ralph Willox", "Basil Grammaticos", "Alfred Ramani", "Thamizharasi Tamizhmani"]
+  url: "https://arxiv.org/abs/2607.15670"
+  arxiv_id: "2607.15670"
+  doi: "10.48550/arXiv.2607.15670"
+  submitted: "2026-07-17"
+  updated: "2026-07-17"
+  metadata_checked_at: "2026-07-20"
+  tags: ["integrable discretization", "singularity confinement"]

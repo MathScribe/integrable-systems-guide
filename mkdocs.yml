@@ -15,11 +15,15 @@ theme:
 
 nav:
   - Home / 首页: index.md
-  - Research Radar / 研究雷达: radar/index.md
   - Core topics / 核心主题: topics.md
   - Group work / 课题组相关: group-work.md
   - Resources / 资源: resources.md
   - About / 关于: about.md
+
+# Public methodology is linked from the homepage and About page, but is not a
+# primary navigation destination.
+not_in_nav: |
+  editorial-policy.md
 
 markdown_extensions:
   - admonition

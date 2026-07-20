@@ -1,139 +1,148 @@
 (() => {
-  const ROLE_LABELS = new Set([
-    "近期进展",
-    "近期漏读",
-    "正式版本",
-    "课题组相关",
-    "方法基础",
-    "综述地图",
-    "核心旧文",
-    "相邻方向",
-    "自动整理",
-  ]);
+  function enableWeekFilter(root) {
+    const navigation = root.querySelector(":scope > .radar-week-navigation");
+    if (!navigation || navigation.dataset.radarReady === "true") return;
 
-  function isRadarPage() {
-    const heading = document.querySelector("article.md-content__inner > h1");
-    const title = heading ? heading.textContent.trim() : "";
-    return title === "可积系统研究雷达" || title.startsWith("研究雷达归档");
-  }
+    const weekOptions = [...navigation.querySelectorAll("[data-radar-week-option]")].map((option) => ({
+      id: option.dataset.radarWeekOption,
+      label: option.dataset.label,
+      count: Number(option.dataset.count),
+    }));
+    const cards = [...root.querySelectorAll(":scope > article.radar-paper-card[data-radar-week]")];
+    const monthMarkers = [...root.querySelectorAll(":scope > .radar-month-label[data-radar-month-group]")];
+    const screeningNotes = [...root.querySelectorAll(":scope > .radar-week-overview[data-radar-screening-week]")];
+    const current = navigation.querySelector(".radar-week-current");
+    const older = navigation.querySelector('[data-radar-action="older"]');
+    const newer = navigation.querySelector('[data-radar-action="newer"]');
+    const showAll = navigation.querySelector('[data-radar-action="all"]');
+    const searchInput = navigation.querySelector("#radar-paper-search");
+    const searchCount = navigation.querySelector(".radar-search-count");
+    if (!weekOptions.length || !current || !older || !newer || !showAll || !searchInput || !searchCount) return;
 
-  function directParagraphs(nodes) {
-    return nodes.filter((node) => node.tagName === "P");
-  }
+    let currentIndex = 0;
+    let showingAll = false;
+    const toc = document.querySelector(".md-sidebar--secondary .md-nav--secondary");
 
-  function paragraphLabel(paragraph) {
-    const strong = paragraph.querySelector(":scope > strong:first-child");
-    return strong ? strong.textContent.trim().replace(/[。．:]$/, "") : "";
-  }
+    function rebuildToc(selected) {
+      if (!toc) return;
+      const title = toc.querySelector(":scope > .md-nav__title");
+      const list = toc.querySelector(":scope > .md-nav__list");
+      if (!list) return;
+      if (title) title.textContent = selected === "all" ? "论文目录" : "本期论文";
+      list.replaceChildren();
 
-  function cleanTags(paragraph) {
-    if (!paragraph) return null;
-    [...paragraph.querySelectorAll("code")].forEach((code) => {
-      if (ROLE_LABELS.has(code.textContent.trim())) code.remove();
+      function makeLink(item) {
+        const li = document.createElement("li");
+        li.className = "md-nav__item";
+        const link = document.createElement("a");
+        link.className = "md-nav__link";
+        link.href = item.href;
+        const span = document.createElement("span");
+        span.className = "md-ellipsis";
+        span.textContent = item.label;
+        link.appendChild(span);
+        li.appendChild(link);
+        return li;
+      }
+
+      if (selected === "all") {
+        monthMarkers.filter((marker) => !marker.hidden).forEach((marker) => {
+          const monthItem = makeLink({ href: `#${marker.id}`, label: marker.textContent.trim() });
+          const nested = document.createElement("nav");
+          nested.className = "md-nav";
+          const nestedList = document.createElement("ul");
+          nestedList.className = "md-nav__list";
+          cards
+            .filter((card) => !card.hidden && card.dataset.radarMonth === marker.dataset.radarMonthGroup)
+            .forEach((card) => {
+              nestedList.appendChild(makeLink({
+                href: `#${card.id}`,
+                label: card.querySelector("h3")?.textContent.trim() || card.id,
+              }));
+            });
+          nested.appendChild(nestedList);
+          monthItem.appendChild(nested);
+          list.appendChild(monthItem);
+        });
+      } else {
+        cards
+          .filter((card) => !card.hidden && card.dataset.radarWeek === selected)
+          .forEach((card) => {
+            list.appendChild(makeLink({
+              href: `#${card.id}`,
+              label: card.querySelector("h3")?.textContent.trim() || card.id,
+            }));
+          });
+      }
+    }
+
+    function applySearch() {
+      const selected = weekOptions[currentIndex];
+      const query = searchInput.value.trim().toLocaleLowerCase();
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const inScope = showingAll || card.dataset.radarWeek === selected.id;
+        const matches = !query || card.textContent.toLocaleLowerCase().includes(query);
+        card.hidden = !(inScope && matches);
+        if (!card.hidden) visibleCount += 1;
+      });
+
+      monthMarkers.forEach((marker) => {
+        marker.hidden = !showingAll || !cards.some((card) => (
+          !card.hidden && card.dataset.radarMonth === marker.dataset.radarMonthGroup
+        ));
+      });
+      screeningNotes.forEach((note) => {
+        note.hidden = showingAll || note.dataset.radarScreeningWeek !== selected.id;
+      });
+
+      searchCount.textContent = query ? `找到 ${visibleCount} 篇` : "";
+      rebuildToc(showingAll ? "all" : selected.id);
+    }
+
+    function showWeek(index) {
+      currentIndex = Math.max(0, Math.min(index, weekOptions.length - 1));
+      showingAll = false;
+      const selected = weekOptions[currentIndex];
+      root.classList.remove("radar-all-mode");
+      current.textContent = `${selected.label} · ${selected.count} 篇`;
+      older.disabled = currentIndex >= weekOptions.length - 1;
+      newer.disabled = currentIndex <= 0;
+      older.hidden = false;
+      newer.hidden = false;
+      showAll.textContent = "查看全部";
+      applySearch();
+    }
+
+    function showAllPapers() {
+      showingAll = true;
+      root.classList.add("radar-all-mode");
+      current.textContent = `全部论文 · ${navigation.dataset.totalCount} 篇`;
+      older.hidden = true;
+      newer.hidden = true;
+      showAll.textContent = "返回最新一周";
+      applySearch();
+    }
+
+    older.addEventListener("click", () => showWeek(currentIndex + 1));
+    newer.addEventListener("click", () => showWeek(currentIndex - 1));
+    showAll.addEventListener("click", () => {
+      if (showingAll) showWeek(0);
+      else showAllPapers();
     });
-    if (!paragraph.textContent.trim()) paragraph.remove();
-    return paragraph;
-  }
+    searchInput.addEventListener("input", applySearch);
 
-  function strippedClone(paragraph) {
-    const clone = paragraph.cloneNode(true);
-    const strong = clone.querySelector(":scope > strong:first-child");
-    if (strong) strong.remove();
-    return clone.innerHTML.trim();
-  }
-
-  function makeDetailSection(title, paragraph) {
-    const section = document.createElement("section");
-    const heading = document.createElement("h4");
-    heading.textContent = title;
-    section.appendChild(heading);
-
-    const body = document.createElement("p");
-    body.innerHTML = strippedClone(paragraph);
-    section.appendChild(body);
-    return section;
-  }
-
-  function enhanceEntry(heading) {
-    if (heading.dataset.radarEnhanced === "true") return;
-
-    const nodes = [];
-    let cursor = heading.nextElementSibling;
-    while (cursor && !["H2", "H3", "HR"].includes(cursor.tagName)) {
-      const next = cursor.nextElementSibling;
-      nodes.push(cursor);
-      cursor = next;
-    }
-    if (!nodes.length) return;
-
-    const paragraphs = directParagraphs(nodes);
-    if (!paragraphs.length) return;
-
-    const detailParagraphs = paragraphs.filter((paragraph) => {
-      const label = paragraphLabel(paragraph);
-      return ["做了什么", "为什么值得读", "研究问题与主要结果", "可积结构与方法", "创新"].includes(label);
-    });
-
-    const card = document.createElement("article");
-    card.className = "radar-paper-card";
-    heading.parentNode.insertBefore(card, heading);
-    card.appendChild(heading);
-    heading.dataset.radarEnhanced = "true";
-
-    const nonDetailParagraphs = paragraphs.filter((paragraph) => !detailParagraphs.includes(paragraph));
-    const meta = nonDetailParagraphs.shift();
-    if (meta) {
-      meta.classList.add("radar-paper-meta");
-      card.appendChild(meta);
-    }
-
-    const tagParagraph = cleanTags(nonDetailParagraphs.find((paragraph) => paragraph.querySelector("code")));
-    if (tagParagraph && tagParagraph.isConnected) {
-      tagParagraph.classList.add("radar-paper-tags");
-      card.appendChild(tagParagraph);
-    }
-
-    const overviewSource = detailParagraphs[0] || nonDetailParagraphs.find((paragraph) => paragraph !== tagParagraph);
-    if (overviewSource) {
-      const overview = document.createElement("p");
-      overview.className = "radar-paper-overview";
-      overview.innerHTML = strippedClone(overviewSource);
-      card.appendChild(overview);
-    }
-
-    if (detailParagraphs.length) {
-      const details = document.createElement("details");
-      details.className = "radar-paper-details";
-      const summary = document.createElement("summary");
-      summary.textContent = "展开研究内容与创新";
-      details.appendChild(summary);
-
-      const grid = document.createElement("div");
-      grid.className = "radar-paper-detail-grid";
-
-      const mapped = new Map(detailParagraphs.map((paragraph) => [paragraphLabel(paragraph), paragraph]));
-      const main = mapped.get("研究问题与主要结果") || mapped.get("做了什么");
-      const structure = mapped.get("可积结构与方法");
-      const innovation = mapped.get("创新") || mapped.get("为什么值得读");
-
-      if (main) grid.appendChild(makeDetailSection("研究问题与主要结果", main));
-      if (structure) grid.appendChild(makeDetailSection("可积结构与方法", structure));
-      if (innovation) grid.appendChild(makeDetailSection("创新", innovation));
-
-      details.appendChild(grid);
-      card.appendChild(details);
-    }
-
-    nodes.forEach((node) => {
-      if (node.isConnected && node !== meta && node !== tagParagraph) node.remove();
-    });
+    const defaultWeek = navigation.dataset.defaultWeek;
+    const defaultIndex = weekOptions.findIndex((option) => option.id === defaultWeek);
+    showWeek(defaultIndex >= 0 ? defaultIndex : 0);
+    navigation.dataset.radarReady = "true";
   }
 
   function enhanceRadar() {
-    if (!isRadarPage()) return;
     const root = document.querySelector("article.md-content__inner");
     if (!root) return;
-    [...root.querySelectorAll(":scope > h3")].forEach(enhanceEntry);
+    enableWeekFilter(root);
   }
 
   document.addEventListener("DOMContentLoaded", enhanceRadar);

@@ -1,6 +1,8 @@
 # Contributing
 
-This repository is intended to become a curated research-training knowledge base, not a generic link list.
+This repository maintains a selective research radar together with a small set of curated resources. It is not a generic link list or an arXiv mirror.
+
+Research-radar updates follow `maintenance/daily-radar-workflow.md`. Paper discovery suggestions are welcome, but public selection and annotations remain maintainer-reviewed.
 
 ## If you do not know Git
 
@@ -26,7 +28,7 @@ Edit files under `docs/` and open a pull request. Good first contributions inclu
 
 ## If you are a maintainer
 
-Promote a resource into `data/resources.yml` only after checking:
+Add or revise a resource directly in `docs/resources.md` only after checking:
 
 - the canonical URL;
 - author or institution;
@@ -35,8 +37,8 @@ Promote a resource into `data/resources.yml` only after checking:
 - mathematical topic coverage;
 - prerequisites and level;
 - strengths and limitations;
-- quality grade;
-- link status and last checked date.
+- whether the description is concise and useful to the site's readers;
+- whether the canonical link is still available.
 
 ## ChatGPT prompt for contributors
 

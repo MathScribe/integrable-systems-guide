@@ -36,6 +36,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Validate source data and generated pages
+        run: |
+          python scripts/validate_radar.py
+          python scripts/validate_frontier_data.py
+          python scripts/test_radar.py
+          python scripts/render_radar.py --check
+          node --check docs/javascripts/radar.js
+
       - name: Build site
         run: mkdocs build --strict --site-dir site
 
