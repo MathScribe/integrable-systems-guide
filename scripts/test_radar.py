@@ -136,6 +136,8 @@ def test_component_contract() -> None:
     assert home.index("radar-week-overview") < home.index("radar-paper-card")
     assert 'data-default-week="2026-W29"' in home
     assert 'data-radar-week="2026-W29"' in home
+    assert '.radar-search-heading}' in home
+    assert 'data-radar-anchor="paper-' in home
     assert 'data-radar-month-group="2026-07"' in home
     assert "候选来源：" in home
     assert "## 数据来源与筛选" in home
@@ -145,6 +147,12 @@ def test_component_contract() -> None:
     assert home.index("## 数据来源与筛选") > home.index("## 站内导航")
     assert "Exactly Solvable and Integrable Systems" not in home
     assert "推荐于" not in home
+
+    javascript = (ROOT / "docs" / "javascripts" / "radar.js").read_text(encoding="utf-8")
+    assert 'window.addEventListener("hashchange", activeHashHandler)' in javascript
+    assert 'document.addEventListener("click", activePaperLinkHandler)' in javascript
+    assert "card.dataset.radarWeek" in javascript
+    assert 'card.scrollIntoView({ block: "start" })' in javascript
 
     invalid = {**entry, "structure_tags": ["one", "two", "three"]}
     try:
@@ -175,15 +183,15 @@ def test_enabled_frontier() -> None:
             "2026-W26": 22,
             "2026-W27": 10,
             "2026-W28": 17,
-            "2026-W29": 16,
+            "2026-W29": 17,
             "2026-W30": 1,
         }
-        assert len(entries) == 79
-        assert len(cumulative) == 79
+        assert len(entries) == 80
+        assert len(cumulative) == 80
         assert Counter(render_radar.frontier_week_id(entry) for entry in entries) == expected_counts
         assert {week["id"] for week in data["frontier_weeks"]} == set(expected_counts)
         assert Counter(entry["signal_type"] for entry in entries) == {
-            "new-preprint": 57,
+            "new-preprint": 58,
             "journal-publication": 22,
         }
 

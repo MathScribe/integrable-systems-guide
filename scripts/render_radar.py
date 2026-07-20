@@ -202,13 +202,15 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
             f'{html.escape(str(paper["updated"]))}</time>（UTC）'
         )
     return (
-        f'<article id="{anchor}" class="radar-paper-card radar-paper-card--native" data-radar-native="true" '
+        f'### {html.escape(str(paper["title"]))} {{#{anchor} .radar-search-heading}}\n\n'
+        f'<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" '
+        f'data-radar-anchor="{anchor}" '
         f'data-radar-week="{html.escape(week_id, quote=True)}" '
         f'data-radar-month="{html.escape(month_id, quote=True)}">\n'
         f'  <p class="radar-paper-date"><time datetime="{html.escape(entry["signal_date"], quote=True)}">'
         f'{html.escape(entry["signal_date"])}</time> · {html.escape(signal_label)}{source_date_note}</p>\n'
         f"{tag_paragraph}"
-        f'  <h3>{render_rich_text(paper["title"])}</h3>\n'
+        f'  <p class="radar-paper-title" aria-hidden="true">{render_rich_text(paper["title"])}</p>\n'
         f'  <p class="radar-paper-meta">{html.escape(authors)} · {source_links_html(paper)}</p>\n'
         f'  <p class="radar-paper-overview">{render_rich_text(entry["summary"])}</p>\n'
         '  <details class="radar-paper-details">\n'

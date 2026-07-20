@@ -1,4 +1,7 @@
 (() => {
+  let activeHashHandler = null;
+  let activePaperLinkHandler = null;
+
   function enableWeekFilter(root) {
     const navigation = root.querySelector(":scope > .radar-week-navigation");
     if (!navigation || navigation.dataset.radarReady === "true") return;
@@ -22,6 +25,10 @@
     let currentIndex = 0;
     let showingAll = false;
     const toc = document.querySelector(".md-sidebar--secondary .md-nav--secondary");
+
+    function cardAnchor(card) {
+      return card.dataset.radarAnchor || card.id;
+    }
 
     function rebuildToc(selected) {
       if (!toc) return;
@@ -56,8 +63,8 @@
             .filter((card) => !card.hidden && card.dataset.radarMonth === marker.dataset.radarMonthGroup)
             .forEach((card) => {
               nestedList.appendChild(makeLink({
-                href: `#${card.id}`,
-                label: card.querySelector("h3")?.textContent.trim() || card.id,
+                href: `#${cardAnchor(card)}`,
+                label: card.querySelector(".radar-paper-title")?.textContent.trim() || cardAnchor(card),
               }));
             });
           nested.appendChild(nestedList);
@@ -69,8 +76,8 @@
           .filter((card) => !card.hidden && card.dataset.radarWeek === selected)
           .forEach((card) => {
             list.appendChild(makeLink({
-              href: `#${card.id}`,
-              label: card.querySelector("h3")?.textContent.trim() || card.id,
+              href: `#${cardAnchor(card)}`,
+              label: card.querySelector(".radar-paper-title")?.textContent.trim() || cardAnchor(card),
             }));
           });
       }
@@ -125,6 +132,33 @@
       applySearch();
     }
 
+    function revealHashTarget(hash = window.location.hash) {
+      if (!hash.startsWith("#paper-")) return false;
+
+      let targetId;
+      try {
+        targetId = decodeURIComponent(hash.slice(1));
+      } catch (_error) {
+        return false;
+      }
+
+      const target = document.getElementById(targetId);
+      const card = target?.matches("article.radar-paper-card")
+        ? target
+        : target?.matches(".radar-search-heading")
+          ? target.nextElementSibling
+          : target?.closest("article.radar-paper-card");
+      if (!card?.dataset.radarWeek) return false;
+
+      const targetIndex = weekOptions.findIndex((option) => option.id === card.dataset.radarWeek);
+      if (targetIndex < 0) return false;
+
+      searchInput.value = "";
+      showWeek(targetIndex);
+      window.requestAnimationFrame(() => card.scrollIntoView({ block: "start" }));
+      return true;
+    }
+
     older.addEventListener("click", () => showWeek(currentIndex + 1));
     newer.addEventListener("click", () => showWeek(currentIndex - 1));
     showAll.addEventListener("click", () => {
@@ -133,9 +167,22 @@
     });
     searchInput.addEventListener("input", applySearch);
 
+    if (activeHashHandler) window.removeEventListener("hashchange", activeHashHandler);
+    activeHashHandler = revealHashTarget;
+    window.addEventListener("hashchange", activeHashHandler);
+
+    if (activePaperLinkHandler) document.removeEventListener("click", activePaperLinkHandler);
+    activePaperLinkHandler = (event) => {
+      const link = event.target instanceof Element ? event.target.closest('a[href*="#paper-"]') : null;
+      if (!link) return;
+      const destination = new URL(link.href, window.location.href);
+      if (destination.pathname === window.location.pathname) revealHashTarget(destination.hash);
+    };
+    document.addEventListener("click", activePaperLinkHandler);
+
     const defaultWeek = navigation.dataset.defaultWeek;
     const defaultIndex = weekOptions.findIndex((option) => option.id === defaultWeek);
-    showWeek(defaultIndex >= 0 ? defaultIndex : 0);
+    if (!revealHashTarget()) showWeek(defaultIndex >= 0 ? defaultIndex : 0);
     navigation.dataset.radarReady = "true";
   }
 

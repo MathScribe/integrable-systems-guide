@@ -33,11 +33,11 @@ frontier_weeks:
     sources_checked:
     - arXiv nlin.SI / nlin.PS 与跨分类结构词、结果词检索
     - 期刊 online-first、DOI 与出版商页面核验
-    selected: 16
+    selected: 17
     coverage_note: 公开页面只展示最终收录论文。期刊 online-first 覆盖仍可能不完整。
 - id: 2026-W29
   date_range: 2026-07-13 至 2026-07-19
-  summary: Quantum Spectral Curve、Chern--Simons 可积引力、孤子层析、任意多峰多谷解族与 HCIZ 矩阵模型。
+  summary: Quantum Spectral Curve、Chern--Simons 可积引力、无限粒子 Goldfish 系统、孤子层析与 HCIZ 矩阵模型。
   screening:
     sources_checked:
     - arXiv nlin.SI / nlin.PS 与跨分类结构词、结果词检索
@@ -1077,3 +1077,13 @@ frontier:
     main_result: 作者逐一分析选定格点方程中的三类奇点，重点追踪 taishi 与另外两类奇点相遇后的传播与重组。不同方程中看似复杂的相互作用最终都可由同一类符号规则编码，并对应于 Box & Ball cellular automaton 的动力学。
     integrable_structure: singularity confinement 描述有限奇点能否恢复自由度；taishi 则是沿格点条带无限延展的乘积约束。二者的相互作用把格点方程的奇点几何连接到超离散 Box & Ball dynamics。
     innovation: 工作证明 taishi 及其丰富相互作用并非离散 KdV 的孤例，而在多种可积格点方程中重复出现；更重要的是，它把这些相互作用统一转写为 Box & Ball 型符号动力学。
+  - paper_id: arxiv:2607.15237
+    signal_date: '2026-07-17'
+    signal_type: new-preprint
+    week: 2026-W29
+    arxiv_categories: [math-ph]
+    structure_tags: [Hamiltonian structure]
+    summary: 论文研究有限粒子 Goldfish 方程的精确可解机制能否推广到无限多个粒子，并把多项式零点方法替换为整函数零点分析。在一组增长与正则性条件下，作者证明由整函数生成的可数零点确实满足无限 Goldfish 方程，同时指出一般初值的存在性与刻画仍是开放问题。
+    main_result: 有限 Goldfish 系统可通过“多项式系数到零点”的变换化为自由运动。论文用有限多项式截断逼近整函数，控制零点、时间导数和无限求和的极限，并借助一致收敛与复分析工具证明：当零点沿共同解析区域连续演化且避开重根时，极限零点满足相应的无限耦合常微分方程。作者还给出保证这种正则演化的充分增长条件，并分析失控零点产生的奇异例子。
+    integrable_structure: Goldfish 方程的可解性来自线性运动的多项式系数与非线性零点动力学之间的对应。推广到无限粒子后，多项式被整函数及其无穷乘积取代；Hadamard 分解、有限零点截断、Cauchy 导数估计、Rouché 定理和隐函数定理共同保证有限维可解结构能够在受控条件下传递到极限。
+    innovation: 工作把原本只对任意有限粒子数成立的零点线性化机制推进到一类可数无限粒子解，并明确识别“多项式次数”在整函数情形中失效所造成的新障碍。结论不是对有限公式形式取极限，而是给出无限系统成立的解析条件、收敛论证和反例边界；与此同时，论文没有声称已经解决任意初值或完整动力学的存在性问题。

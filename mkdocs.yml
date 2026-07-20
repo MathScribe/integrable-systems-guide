@@ -27,6 +27,7 @@ not_in_nav: |
 
 markdown_extensions:
   - admonition
+  - attr_list
   - toc:
       permalink: true
   - tables
