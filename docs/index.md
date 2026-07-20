@@ -6,7 +6,7 @@
 
 候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。
 
-<div class="radar-week-navigation" data-default-week="2026-W30" data-total-count="79">
+<div class="radar-week-navigation" data-default-week="2026-W30" data-total-count="80">
   <button type="button" data-radar-action="older">← 较早一周</button>
   <span class="radar-week-current" aria-live="polite"></span>
   <button type="button" data-radar-action="newer">较新一周 →</button>
@@ -17,7 +17,7 @@
     <span class="radar-search-count" aria-live="polite"></span>
   </div>
   <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="1"></span>
-  <span hidden data-radar-week-option="2026-W29" data-label="2026 年第 29 周 · 7 月 13–19 日" data-count="16"></span>
+  <span hidden data-radar-week-option="2026-W29" data-label="2026 年第 29 周 · 7 月 13–19 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W28" data-label="2026 年第 28 周 · 7 月 6–12 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W27" data-label="2026 年第 27 周 · 6 月 29 日–7 月 5 日" data-count="10"></span>
   <span hidden data-radar-week-option="2026-W26" data-label="2026 年第 26 周 · 6 月 22–28 日" data-count="22"></span>
@@ -26,7 +26,7 @@
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>可积格点方程中的 taishi 奇点及其 Box--Ball 符号动力学。</p>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W29" hidden><strong>本周概览：</strong>Quantum Spectral Curve、Chern--Simons 可积引力、孤子层析、任意多峰多谷解族与 HCIZ 矩阵模型。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W29" hidden><strong>本周概览：</strong>Quantum Spectral Curve、Chern--Simons 可积引力、无限粒子 Goldfish 系统、孤子层析与 HCIZ 矩阵模型。</p>
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W28" hidden><strong>本周概览：</strong>可积引力、离散化、Painlevé、随机矩阵、量子自旋链、离散几何与多分量波。</p>
 
@@ -38,10 +38,12 @@
 
 <p id="month-2026-07" class="radar-month-label" data-radar-month-group="2026-07">2026 年 7 月</p>
 
-<article id="paper-arxiv-2607-15670" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W30" data-radar-month="2026-07">
+### Singularity Interactions for Lattice Equations: Introducing the Taishi {#paper-arxiv-2607-15670 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-15670" data-radar-week="2026-W30" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-20">2026-07-20</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-17">2026-07-17</time>（UTC）</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>integrable discretization</code></p>
-  <h3>Singularity Interactions for Lattice Equations: Introducing the Taishi</h3>
+  <p class="radar-paper-title" aria-hidden="true">Singularity Interactions for Lattice Equations: Introducing the Taishi</p>
   <p class="radar-paper-meta">Ralph Willox, Basil Grammaticos, Alfred Ramani, Thamizharasi Tamizhmani · <a href="https://arxiv.org/abs/2607.15670">arXiv</a> · <a href="https://arxiv.org/pdf/2607.15670">PDF</a></p>
   <p class="radar-paper-overview">论文比较多种可积格点方程的奇点结构，发现它们都具有一类有限范围和两类无限延展的奇点。其中条带状 taishi 会与其他奇点发生复杂作用，但这些作用可以压缩为简单的符号动力学。</p>
   <details class="radar-paper-details">
@@ -63,10 +65,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1088-1361-6544-ae7fe7" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Integrable Systems from Poisson Reductions of Generalized Hamiltonian Torus Actions {#paper-doi-10-1088-1361-6544-ae7fe7 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1088-1361-6544-ae7fe7" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-17">2026-07-17</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>math-ph</code> <code>Poisson structure</code> <code>Hamiltonian structure</code></p>
-  <h3>Integrable Systems from Poisson Reductions of Generalized Hamiltonian Torus Actions</h3>
+  <p class="radar-paper-title" aria-hidden="true">Integrable Systems from Poisson Reductions of Generalized Hamiltonian Torus Actions</p>
   <p class="radar-paper-meta">László Fehér, Maxime Fairon · <a href="https://arxiv.org/abs/2507.12051">arXiv</a> · <a href="https://arxiv.org/pdf/2507.12051">PDF</a> · <a href="https://doi.org/10.1088/1361-6544/ae7fe7">Nonlinearity</a></p>
   <p class="radar-paper-overview">论文给出带广义 Hamiltonian torus action 的可积系统在 Poisson 商空间上保持可积性的充分条件，并将其用于一批由群双空间约化得到的未决模型。</p>
   <details class="radar-paper-details">
@@ -88,10 +92,39 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1007-s10955-026-03663-6" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### &quot;Goldfish&#x27;&#x27; equations for infinitely many particles {#paper-arxiv-2607-15237 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-15237" data-radar-week="2026-W29" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-17">2026-07-17</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-16">2026-07-16</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>Hamiltonian structure</code></p>
+  <p class="radar-paper-title" aria-hidden="true">&quot;Goldfish&#x27;&#x27; equations for infinitely many particles</p>
+  <p class="radar-paper-meta">Francois Leyvraz · <a href="https://arxiv.org/abs/2607.15237">arXiv</a> · <a href="https://arxiv.org/pdf/2607.15237">PDF</a></p>
+  <p class="radar-paper-overview">论文研究有限粒子 Goldfish 方程的精确可解机制能否推广到无限多个粒子，并把多项式零点方法替换为整函数零点分析。在一组增长与正则性条件下，作者证明由整函数生成的可数零点确实满足无限 Goldfish 方程，同时指出一般初值的存在性与刻画仍是开放问题。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>有限 Goldfish 系统可通过“多项式系数到零点”的变换化为自由运动。论文用有限多项式截断逼近整函数，控制零点、时间导数和无限求和的极限，并借助一致收敛与复分析工具证明：当零点沿共同解析区域连续演化且避开重根时，极限零点满足相应的无限耦合常微分方程。作者还给出保证这种正则演化的充分增长条件，并分析失控零点产生的奇异例子。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Goldfish 方程的可解性来自线性运动的多项式系数与非线性零点动力学之间的对应。推广到无限粒子后，多项式被整函数及其无穷乘积取代；Hadamard 分解、有限零点截断、Cauchy 导数估计、Rouché 定理和隐函数定理共同保证有限维可解结构能够在受控条件下传递到极限。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作把原本只对任意有限粒子数成立的零点线性化机制推进到一类可数无限粒子解，并明确识别“多项式次数”在整函数情形中失效所造成的新障碍。结论不是对有限公式形式取极限，而是给出无限系统成立的解析条件、收敛论证和反例边界；与此同时，论文没有声称已经解决任意初值或完整动力学的存在性问题。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges {#paper-doi-10-1007-s10955-026-03663-6 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1007-s10955-026-03663-6" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-16">2026-07-16</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>math-ph</code> <code>hep-th</code> <code>2D Toda hierarchy</code> <code>Riemann--Hilbert problem</code></p>
-  <h3>A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges</h3>
+  <p class="radar-paper-title" aria-hidden="true">A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges</p>
   <p class="radar-paper-meta">Maksim Kosmakov · <a href="https://arxiv.org/abs/2510.22120">arXiv</a> · <a href="https://arxiv.org/pdf/2510.22120">PDF</a> · <a href="https://doi.org/10.1007/s10955-026-03663-6">Journal of Statistical Physics 193, 93 (2026)</a></p>
   <p class="radar-paper-overview">论文构造带两个 HCIZ 因子的 Hermitian Gaussian matrix model，使有限维本征值分布精确对应任意起点和终点重数的 non-intersecting Brownian bridges。它把路径模型、矩阵模型和 2D Toda/Riemann--Hilbert 结构放进同一有限维框架。</p>
   <details class="radar-paper-details">
@@ -113,10 +146,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-15132" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Periodic orbits and quantum many-body scars in integrable spin chains {#paper-arxiv-2607-15132 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-15132" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-16">2026-07-16</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>quant-ph</code> <code>cond-mat.stat-mech</code> <code>Bethe ansatz</code> <code>quantum integrability</code></p>
-  <h3>Periodic orbits and quantum many-body scars in integrable spin chains</h3>
+  <p class="radar-paper-title" aria-hidden="true">Periodic orbits and quantum many-body scars in integrable spin chains</p>
   <p class="radar-paper-meta">Elena Petrova, Maksym Serbyn, Marko Ljubotina · <a href="https://arxiv.org/abs/2607.15132">arXiv</a> · <a href="https://arxiv.org/pdf/2607.15132">PDF</a></p>
   <p class="radar-paper-overview">论文把量子多体疤痕的周期轨道图景放入可积 XYZ/XXZ 自旋链，定位支撑疤痕态的 Bethe 态，并解释近等间距能级塔的来源。结果把通常分别讨论的疤痕动力学、经典周期轨道和 Bethe 代数结构连接起来。</p>
   <details class="radar-paper-details">
@@ -138,10 +173,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-15013" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Quasi-Pfaffian Solutions to Integrable Systems via Sylvester-Moutard Transformations {#paper-arxiv-2607-15013 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-15013" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-16">2026-07-16</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math-ph</code> <code>Pfaffian</code> <code>Bäcklund transformation</code></p>
-  <h3>Quasi-Pfaffian Solutions to Integrable Systems via Sylvester-Moutard Transformations</h3>
+  <p class="radar-paper-title" aria-hidden="true">Quasi-Pfaffian Solutions to Integrable Systems via Sylvester-Moutard Transformations</p>
   <p class="radar-paper-meta">Claire R. Gilson, Chen Shu · <a href="https://arxiv.org/abs/2607.15013">arXiv</a> · <a href="https://arxiv.org/pdf/2607.15013">PDF</a></p>
   <p class="radar-paper-overview">论文引入适用于非交换情形的 quasi-Pfaffian，并由其 Sylvester identity 构造新的 Sylvester--Moutard transformation。该变换可为 Novikov--Veselov、二维 sine-Gordon 等 Moutard 型可积系统生成解。</p>
   <details class="radar-paper-details">
@@ -163,10 +200,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1137-25m1764062" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### The Inverse Scattering Transform and Analyticity of Symmetric Solutions for the Integrable Nonlinear Schrödinger Equations {#paper-doi-10-1137-25m1764062 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1137-25m1764062" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-15">2026-07-15</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>inverse scattering</code> <code>Riemann--Hilbert problem</code></p>
-  <h3>The Inverse Scattering Transform and Analyticity of Symmetric Solutions for the Integrable Nonlinear Schrödinger Equations</h3>
+  <p class="radar-paper-title" aria-hidden="true">The Inverse Scattering Transform and Analyticity of Symmetric Solutions for the Integrable Nonlinear Schrödinger Equations</p>
   <p class="radar-paper-meta">Takuya Sato · <a href="https://doi.org/10.1137/25M1764062">SIAM Journal on Mathematical Analysis</a></p>
   <p class="radar-paper-overview">论文用 inverse scattering 研究可积 NLS 方程中具有空间对称性的解，并证明这类对称解在相应变量中的解析性。</p>
   <details class="radar-paper-details">
@@ -188,10 +227,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1103-99hb-q8bd" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Yang--Baxter Sigma Model from Twistor Space {#paper-doi-10-1103-99hb-q8bd .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1103-99hb-q8bd" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-15">2026-07-15</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>hep-th</code> <code>math-ph</code> <code>Yang--Baxter equation</code> <code>Chern--Simons theory</code></p>
-  <h3>Yang--Baxter Sigma Model from Twistor Space</h3>
+  <p class="radar-paper-title" aria-hidden="true">Yang--Baxter Sigma Model from Twistor Space</p>
   <p class="radar-paper-meta">Meer Ashwinkumar, Jitendra Pal · <a href="https://arxiv.org/abs/2602.11288">arXiv</a> · <a href="https://arxiv.org/pdf/2602.11288">PDF</a> · <a href="https://doi.org/10.1103/99hb-q8bd">Physical Review D</a></p>
   <p class="radar-paper-overview">论文从 twistor space 上的六维 holomorphic Chern--Simons theory 导出四维可积场论，并在算子满足 modified classical Yang--Baxter equation 时恢复 Yang--Baxter sigma model 的结构。</p>
   <details class="radar-paper-details">
@@ -213,10 +254,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1007-s11005-026-02119-y" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Riemann--Hilbert Approach for the Nonlocal Modified Korteweg--de Vries Equation with a Step-Like Oscillating Background {#paper-doi-10-1007-s11005-026-02119-y .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1007-s11005-026-02119-y" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-15">2026-07-15</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>Riemann--Hilbert problem</code> <code>inverse scattering</code></p>
-  <h3>Riemann--Hilbert Approach for the Nonlocal Modified Korteweg--de Vries Equation with a Step-Like Oscillating Background</h3>
+  <p class="radar-paper-title" aria-hidden="true">Riemann--Hilbert Approach for the Nonlocal Modified Korteweg--de Vries Equation with a Step-Like Oscillating Background</p>
   <p class="radar-paper-meta">Yan Rybalko · <a href="https://arxiv.org/abs/2601.15841">arXiv</a> · <a href="https://arxiv.org/pdf/2601.15841">PDF</a> · <a href="https://doi.org/10.1007/s11005-026-02119-y">Letters in Mathematical Physics</a></p>
   <p class="radar-paper-overview">论文为带振荡阶跃背景的非局部 mKdV 初值问题建立 Riemann--Hilbert 框架，并区分背景振幅与波数关系不同的三类二孤子族。</p>
   <details class="radar-paper-details">
@@ -238,10 +281,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-13773" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers {#paper-arxiv-2607-13773 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-13773" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-15">2026-07-15</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.PS</code> <code>nlin.SI</code> <code>Darboux transformation</code> <code>topological vector potential</code></p>
-  <h3>Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers</h3>
+  <p class="radar-paper-title" aria-hidden="true">Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers</p>
   <p class="radar-paper-meta">Jin-Peng Yang, Yan-Hong Qin · <a href="https://arxiv.org/abs/2607.13773">arXiv</a> · <a href="https://arxiv.org/pdf/2607.13773">PDF</a></p>
   <p class="radar-paper-overview">作者研究两分量 Fokas--Lenells 模型在平面波背景上的多峰--多谷孤子，系统分类基本形态，并把构造推广到任意峰谷组合。论文还通过弱白噪声数值实验检查传播稳健性，并用复平面中的强度零点和极点描述一种拓扑特征。</p>
   <details class="radar-paper-details">
@@ -263,10 +308,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-13673" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Deriving the AdS₃ × S³ × T⁴ Quantum Spectral Curve I: Y-system and discontinuity relations {#paper-arxiv-2607-13673 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-13673" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-15">2026-07-15</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>hep-th</code> <code>nlin.SI</code> <code>quantum integrability</code> <code>Bethe ansatz</code></p>
-  <h3>Deriving the AdS₃ × S³ × T⁴ Quantum Spectral Curve I: Y-system and discontinuity relations</h3>
+  <p class="radar-paper-title" aria-hidden="true">Deriving the AdS₃ × S³ × T⁴ Quantum Spectral Curve I: Y-system and discontinuity relations</p>
   <p class="radar-paper-meta">Andrea Cavaglià, Nicolò Primi, Davide Polvara, Alessandro Sfondrini, Roberto Tateo · <a href="https://arxiv.org/abs/2607.13673">arXiv</a> · <a href="https://arxiv.org/pdf/2607.13673">PDF</a></p>
   <p class="radar-paper-overview">论文从 mirror thermodynamic Bethe ansatz 出发，启动纯 Ramond--Ramond 背景下 <span class="arithmatex">\(\mathrm{AdS}_3\times\mathrm{S}^3\times\mathrm{T}^4\)</span> Quantum Spectral Curve 的系统推导。当前工作建立 Y-system 及其 discontinuity relations，为后续 T-system 和 QSC 构造提供解析基础。</p>
   <details class="radar-paper-details">
@@ -288,10 +335,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1103-sz13-9shg" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Experimental Observation of Ballistic Correlations in Integrable Turbulence {#paper-doi-10-1103-sz13-9shg .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1103-sz13-9shg" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-14">2026-07-14</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>nlin.PS</code> <code>cond-mat.stat-mech</code> <code>generalized hydrodynamics</code> <code>inverse scattering</code></p>
-  <h3>Experimental Observation of Ballistic Correlations in Integrable Turbulence</h3>
+  <p class="radar-paper-title" aria-hidden="true">Experimental Observation of Ballistic Correlations in Integrable Turbulence</p>
   <p class="radar-paper-meta">Elias Charnay, Adrien Escoubet, François Copie, Stéphane Randoux, Thibault Bonnemain, Alvise Bastianello, Pierre Suret · <a href="https://arxiv.org/abs/2601.21085">arXiv</a> · <a href="https://arxiv.org/pdf/2601.21085">PDF</a> · <a href="https://doi.org/10.1103/sz13-9shg">Physical Review Letters</a></p>
   <p class="radar-paper-overview">实验在聚焦 NLS 光纤平台中直接测得可积湍流的双时弹道关联，并用散射数据得到的态密度与 generalized hydrodynamics 作无拟合参数比较。</p>
   <details class="radar-paper-details">
@@ -313,10 +362,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-12339" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Eigenvalue-Based Approach to Manipulate and Reconstruct Nonlinear Pulses: Towards Soliton Tomography {#paper-arxiv-2607-12339 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-12339" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-14">2026-07-14</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.PS</code> <code>inverse scattering</code> <code>inverse problem</code></p>
-  <h3>Eigenvalue-Based Approach to Manipulate and Reconstruct Nonlinear Pulses: Towards Soliton Tomography</h3>
+  <p class="radar-paper-title" aria-hidden="true">Eigenvalue-Based Approach to Manipulate and Reconstruct Nonlinear Pulses: Towards Soliton Tomography</p>
   <p class="radar-paper-meta">Sergey Dremov, Rustam Mullyadzhanov, Andrey Gelash · <a href="https://arxiv.org/abs/2607.12339">arXiv</a> · <a href="https://arxiv.org/pdf/2607.12339">PDF</a></p>
   <p class="radar-paper-overview">推导 soliton eigenvalue response functions，并建立由输出本征值偏移反演未知脉冲扰动的积分方程，包含含噪重构测试。可积谱数据直接参与控制和反问题，形成 soliton tomography 的具体方法框架。</p>
   <details class="radar-paper-details">
@@ -338,10 +389,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1103-vbsx-xyjm" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Soliton Turbulence of a Strongly Driven One-Dimensional Bose Gas {#paper-doi-10-1103-vbsx-xyjm .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1103-vbsx-xyjm" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-13">2026-07-13</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>cond-mat.quant-gas</code> <code>nlin.PS</code> <code>soliton gas</code> <code>inverse scattering</code></p>
-  <h3>Soliton Turbulence of a Strongly Driven One-Dimensional Bose Gas</h3>
+  <p class="radar-paper-title" aria-hidden="true">Soliton Turbulence of a Strongly Driven One-Dimensional Bose Gas</p>
   <p class="radar-paper-meta">Manon Ballu, Romain Dubessy, Aurélien Perrin, Hélène Perrin, Anna Minguzzi · <a href="https://arxiv.org/abs/2603.24832">arXiv</a> · <a href="https://arxiv.org/pdf/2603.24832">PDF</a> · <a href="https://doi.org/10.1103/vbsx-xyjm">Physical Review A</a></p>
   <p class="radar-paper-overview">论文研究受周期驱动的一维弱相互作用 Bose gas，发现从稀疏暗孤子到强相互缠绕 soliton turbulence 的跨越，并用动量分布幂律区分两种状态。</p>
   <details class="radar-paper-details">
@@ -363,10 +416,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1007-s10231-026-01703-2" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Reflections and Drinfeld Twists for Set-Theoretic Yang--Baxter Maps {#paper-doi-10-1007-s10231-026-01703-2 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1007-s10231-026-01703-2" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-13">2026-07-13</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>math.QA</code> <code>Yang--Baxter equation</code></p>
-  <h3>Reflections and Drinfeld Twists for Set-Theoretic Yang--Baxter Maps</h3>
+  <p class="radar-paper-title" aria-hidden="true">Reflections and Drinfeld Twists for Set-Theoretic Yang--Baxter Maps</p>
   <p class="radar-paper-meta">Davide Ferri · <a href="https://arxiv.org/abs/2504.21678">arXiv</a> · <a href="https://arxiv.org/pdf/2504.21678">PDF</a> · <a href="https://doi.org/10.1007/s10231-026-01703-2">Annali di Matematica Pura ed Applicata</a></p>
   <p class="radar-paper-overview">论文证明 set-theoretic Yang--Baxter 解上的 reflection 会产生 Drinfeld twist，并把这一对应推广到 braided groups。</p>
   <details class="radar-paper-details">
@@ -388,10 +443,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1007-jhep07-2026-123" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Integrable deformations of the Breitenlohner--Maison model from 4d Chern--Simons theory {#paper-doi-10-1007-jhep07-2026-123 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1007-jhep07-2026-123" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-13">2026-07-13</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>Yang--Baxter equation</code> <code>Chern--Simons theory</code></p>
-  <h3>Integrable deformations of the Breitenlohner--Maison model from 4d Chern--Simons theory</h3>
+  <p class="radar-paper-title" aria-hidden="true">Integrable deformations of the Breitenlohner--Maison model from 4d Chern--Simons theory</p>
   <p class="radar-paper-meta">Meer Ashwinkumar, Matthias Blau · <a href="https://arxiv.org/abs/2604.26452">arXiv</a> · <a href="https://arxiv.org/pdf/2604.26452">PDF</a> · <a href="https://doi.org/10.1007/JHEP07(2026)123">Journal of High Energy Physics 2026, 123 (2026)</a></p>
   <p class="radar-paper-overview">从四维 Chern--Simons theory 推导 Breitenlohner--Maison sigma model 及其高秩推广的可积形变。为描述四维广义相对论平稳轴对称扇区的 sigma model 建立统一的可积形变来源，把引力模型、Chern--Simons 构造和 Yang--Baxter deformation 直接连接起来。</p>
   <details class="radar-paper-details">
@@ -413,10 +470,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1007-jhep07-2026-120" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Integrability in three-dimensional gravity: eigenfunction-forced KdV flows {#paper-doi-10-1007-jhep07-2026-120 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1007-jhep07-2026-120" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-13">2026-07-13</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>mKdV hierarchy</code> <code>inverse scattering</code></p>
-  <h3>Integrability in three-dimensional gravity: eigenfunction-forced KdV flows</h3>
+  <p class="radar-paper-title" aria-hidden="true">Integrability in three-dimensional gravity: eigenfunction-forced KdV flows</p>
   <p class="radar-paper-meta">Hamed Adami, Anouchah Latifi · <a href="https://arxiv.org/abs/2510.10519">arXiv</a> · <a href="https://arxiv.org/pdf/2510.10519">PDF</a> · <a href="https://doi.org/10.1007/JHEP07(2026)120">Journal of High Energy Physics 2026, 120 (2026)</a></p>
   <p class="radar-paper-overview">从三维引力的 Chern--Simons 表述和手征边界条件导出 potential mKdV hierarchy 及 eigenfunction-forced KdV dynamics。将自洽本征函数驱动的强迫 KdV 与 AdS<span class="arithmatex">\(_3\)</span> 边界动力学统一起来，同时给出孤子和辐射两类扇区的可积分析。</p>
   <details class="radar-paper-details">
@@ -438,10 +497,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-12142" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W29" data-radar-month="2026-07">
+### Computational homological methods for integrable field theories {#paper-arxiv-2607-12142 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-12142" data-radar-week="2026-W29" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-13">2026-07-13</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>hep-th</code> <code>math-ph</code> <code>Chern--Simons theory</code> <code>Lax pair</code></p>
-  <h3>Computational homological methods for integrable field theories</h3>
+  <p class="radar-paper-title" aria-hidden="true">Computational homological methods for integrable field theories</p>
   <p class="radar-paper-meta">Marco Benini, Ryan A. Cullinan, Alexander Schenkel, Benoit Vicedo · <a href="https://arxiv.org/abs/2607.12142">arXiv</a> · <a href="https://arxiv.org/pdf/2607.12142">PDF</a></p>
   <p class="radar-paper-overview">论文把从四维半全纯 Chern--Simons theory 构造二维可积场论的同调方法变成可执行计算。通过显式 homotopy transfer，作者恢复带 Wess--Zumino 项的 principal chiral model 作用量及其标准 Lax connection。</p>
   <details class="radar-paper-details">
@@ -463,10 +524,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-10954" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Exact vector Akhmediev breathers dominated by a linearly stable frequency {#paper-arxiv-2607-10954 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-10954" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-12">2026-07-12</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.PS</code> <code>nlin.SI</code></p>
-  <h3>Exact vector Akhmediev breathers dominated by a linearly stable frequency</h3>
+  <p class="radar-paper-title" aria-hidden="true">Exact vector Akhmediev breathers dominated by a linearly stable frequency</p>
   <p class="radar-paper-meta">Wen-Rong Sun, Chong Liu, Lei Wang, Fabio Baronio · <a href="https://arxiv.org/abs/2607.10954">arXiv</a> · <a href="https://arxiv.org/pdf/2607.10954">PDF</a></p>
   <p class="radar-paper-overview">构造由不稳定模触发、但峰值处由线性稳定谐波主导的 exact vector Akhmediev breather。揭示标量 MI 直觉在多分量系统中的失效，并把稳定频率的自发主导机制定量归因于 four-wave mixing。</p>
   <details class="radar-paper-details">
@@ -488,10 +551,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-10870" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Loop-type geometric folding of exact solutions of shifted nonlocal NLS and MKdV equations {#paper-arxiv-2607-10870 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-10870" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-12">2026-07-12</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>integrable geometry</code> <code>Darboux transformation</code></p>
-  <h3>Loop-type geometric folding of exact solutions of shifted nonlocal NLS and MKdV equations</h3>
+  <p class="radar-paper-title" aria-hidden="true">Loop-type geometric folding of exact solutions of shifted nonlocal NLS and MKdV equations</p>
   <p class="radar-paper-meta">Aslı Pekcan · <a href="https://arxiv.org/abs/2607.10870">arXiv</a> · <a href="https://arxiv.org/pdf/2607.10870">PDF</a></p>
   <p class="radar-paper-overview">论文提出一种几何 folding 框架，把 shifted nonlocal NLS 与 mKdV 的已知精确解重新参数化为 regular loop、oscillating loop 和 singular folded profiles。它关注的不是再求一组孤子，而是何种空间参数化会把一维精确解折叠成不同几何波形。</p>
   <details class="radar-paper-details">
@@ -513,10 +578,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-09333" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Discrete Gerdjikov-Ivanov models and their higher-order counterparts from the Cauchy matrix scheme {#paper-arxiv-2607-09333 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-09333" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-10">2026-07-10</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>integrable discretization</code></p>
-  <h3>Discrete Gerdjikov-Ivanov models and their higher-order counterparts from the Cauchy matrix scheme</h3>
+  <p class="radar-paper-title" aria-hidden="true">Discrete Gerdjikov-Ivanov models and their higher-order counterparts from the Cauchy matrix scheme</p>
   <p class="radar-paper-meta">Xiao-gang Mu, Song-lin Zhao · <a href="https://arxiv.org/abs/2607.09333">arXiv</a> · <a href="https://arxiv.org/pdf/2607.09333">PDF</a></p>
   <p class="radar-paper-overview">构造四族 fully discrete GI models 和四族 higher-order GI lattice models，得到 <span class="arithmatex">\(N\)</span>-soliton 与 multiple-pole 解，并通过连续极限恢复连续 GI/hGI 方程。</p>
   <details class="radar-paper-details">
@@ -538,10 +605,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-09180" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Dispersionless modified DKP hierarchy as the Yang--Baxter equation {#paper-arxiv-2607-09180 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-09180" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-10">2026-07-10</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>Yang--Baxter equation</code> <code>tau function</code></p>
-  <h3>Dispersionless modified DKP hierarchy as the Yang--Baxter equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Dispersionless modified DKP hierarchy as the Yang--Baxter equation</p>
   <p class="radar-paper-meta">A. Zabrodin · <a href="https://arxiv.org/abs/2607.09180">arXiv</a> · <a href="https://arxiv.org/pdf/2607.09180">PDF</a></p>
   <p class="radar-paper-overview">建立 dispersionless modified DKP hierarchy 与 Yang--Baxter equation 的等价关系。给出经典可积层级与量子可积核心代数结构之间的直接等价桥梁。</p>
   <details class="radar-paper-details">
@@ -563,10 +632,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-08901" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Integrability of Cauchy problems for discrete conformal maps and circle patterns {#paper-arxiv-2607-08901 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-08901" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-09">2026-07-09</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math.DS</code> <code>nlin.SI</code> <code>integrable discretization</code> <code>symplectic geometry</code></p>
-  <h3>Integrability of Cauchy problems for discrete conformal maps and circle patterns</h3>
+  <p class="radar-paper-title" aria-hidden="true">Integrability of Cauchy problems for discrete conformal maps and circle patterns</p>
   <p class="radar-paper-meta">Maxim Arnold, Anton Izosimov · <a href="https://arxiv.org/abs/2607.08901">arXiv</a> · <a href="https://arxiv.org/pdf/2607.08901">PDF</a></p>
   <p class="radar-paper-overview">证明 quasi-periodic 离散共形映射 Cauchy problem 的 Liouville 可积性，并将结论转移到 Schramm circle patterns。在离散共形几何中得到严格的可积性定理及具体几何结果，而不只是建立形式类比。</p>
   <details class="radar-paper-details">
@@ -588,10 +659,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-08536" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Soft edge limit of the Laguerre beta-ensemble at the lower edge {#paper-arxiv-2607-08536 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-08536" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-09">2026-07-09</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math.PR</code> <code>math-ph</code> <code>integrable probability</code></p>
-  <h3>Soft edge limit of the Laguerre beta-ensemble at the lower edge</h3>
+  <p class="radar-paper-title" aria-hidden="true">Soft edge limit of the Laguerre beta-ensemble at the lower edge</p>
   <p class="radar-paper-meta">Yun Li, Benedek Valkó, Jiaming Xu · <a href="https://arxiv.org/abs/2607.08536">arXiv</a> · <a href="https://arxiv.org/pdf/2607.08536">PDF</a></p>
   <p class="radar-paper-overview">论文补全 Laguerre <span class="arithmatex">\(\beta\)</span>-ensemble 下边缘的软边极限图景：当参数 <span class="arithmatex">\(a_n\to\infty\)</span> 且 <span class="arithmatex">\(a_n/n\to0\)</span> 时，适当缩放后的最低本征值过程收敛到 <span class="arithmatex">\(\mathrm{Airy}_\beta\)</span>。部分参数区间还得到随机三对角算子逆的算子级收敛。</p>
   <details class="radar-paper-details">
@@ -613,10 +686,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1103-y66t-t8zw" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Integrability from a single conservation law in quantum spin chains {#paper-doi-10-1103-y66t-t8zw .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1103-y66t-t8zw" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-08">2026-07-08</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>math-ph</code> <code>Yang--Baxter equation</code> <code>quantum integrability</code></p>
-  <h3>Integrability from a single conservation law in quantum spin chains</h3>
+  <p class="radar-paper-title" aria-hidden="true">Integrability from a single conservation law in quantum spin chains</p>
   <p class="radar-paper-meta">Akihiro Hokkyo · <a href="https://arxiv.org/abs/2508.20713">arXiv</a> · <a href="https://arxiv.org/pdf/2508.20713">PDF</a> · <a href="https://doi.org/10.1103/y66t-t8zw">Physical Review B</a></p>
   <p class="radar-paper-overview">证明平移不变、有限程量子自旋链中一个特定低阶守恒律已经蕴含无穷多个局部守恒量。将常用的经验判据提升为严格充分条件，为系统识别新的量子可积模型提供更短、更可验证的入口。</p>
   <details class="radar-paper-details">
@@ -638,10 +713,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-07617" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Loop Equations Characterize Random Matrix Statistics {#paper-arxiv-2607-07617 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-07617" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-08">2026-07-08</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>loop equations</code> <code>integrable probability</code></p>
-  <h3>Loop Equations Characterize Random Matrix Statistics</h3>
+  <p class="radar-paper-title" aria-hidden="true">Loop Equations Characterize Random Matrix Statistics</p>
   <p class="radar-paper-meta">Paul Bourgade, Jiaoyang Huang · <a href="https://arxiv.org/abs/2607.07617">arXiv</a> · <a href="https://arxiv.org/pdf/2607.07617">PDF</a></p>
   <p class="radar-paper-overview">利用 loop equations 给出 Sine<span class="arithmatex">\(_\beta\)</span> 与 Airy<span class="arithmatex">\(_\beta\)</span> 过程的唯一性刻画。用结构化方程直接刻画普适极限对象，为证明 universality 提供只需验证近似 loop equations 的新路线。</p>
   <details class="radar-paper-details">
@@ -663,10 +740,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-07345" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Spin-current-controlled anisotropic deformation of magnetic lump solitons {#paper-arxiv-2607-07345 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-07345" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-08">2026-07-08</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.PS</code> <code>nlin.SI</code> <code>Darboux transformation</code></p>
-  <h3>Spin-current-controlled anisotropic deformation of magnetic lump solitons</h3>
+  <p class="radar-paper-title" aria-hidden="true">Spin-current-controlled anisotropic deformation of magnetic lump solitons</p>
   <p class="radar-paper-meta">Xiao-Qi Cui, Xin-Wei Jin, Shiyi Wang, Xiao-Yong Wen, Zhan-Ying Yang · <a href="https://arxiv.org/abs/2607.07345">arXiv</a> · <a href="https://arxiv.org/pdf/2607.07345">PDF</a></p>
   <p class="radar-paper-overview">构造二维非线性自旋系统中的基本和高阶 magnetic lump，并研究有效自旋流如何控制其各向异性形变和准一维极限。自旋流对空间形状的控制不是单个解的偶然现象，而是贯穿基本和高阶 lump family 的统一几何调制规律，并产生连续的维数交叉机制。</p>
   <details class="radar-paper-details">
@@ -688,10 +767,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-06980" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic {#paper-arxiv-2607-06980 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-06980" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-08">2026-07-08</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>Lax pair</code> <code>Painlevé</code></p>
-  <h3>On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic</h3>
+  <p class="radar-paper-title" aria-hidden="true">On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic</p>
   <p class="radar-paper-meta">Nalini Joshi, Tomas Lasic Latimer, Pieter Roffelsen · <a href="https://arxiv.org/abs/2607.06980">arXiv</a> · <a href="https://arxiv.org/pdf/2607.06980">PDF</a></p>
   <p class="radar-paper-overview">在有限特征中给出统一方法，为经典 Painlevé 方程产生由素数索引的可数积分族。Lax 表示在特征 <span class="arithmatex">\(p\)</span> 下转化为新的守恒量生成机制，把经典复数域可积结构到有限特征问题。</p>
   <details class="radar-paper-details">
@@ -713,10 +794,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-06942" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Invariant Measures for Soliton Systems Generated by Mealy Automata {#paper-arxiv-2607-06942 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-06942" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-08">2026-07-08</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>generalized hydrodynamics</code></p>
-  <h3>Invariant Measures for Soliton Systems Generated by Mealy Automata</h3>
+  <p class="radar-paper-title" aria-hidden="true">Invariant Measures for Soliton Systems Generated by Mealy Automata</p>
   <p class="radar-paper-meta">Takahiro Kanazawa, Yutaro Nakabayashi · <a href="https://arxiv.org/abs/2607.06942">arXiv</a> · <a href="https://arxiv.org/pdf/2607.06942">PDF</a></p>
   <p class="radar-paper-overview">给出 Mealy automata 孤子系统中 Bernoulli/Markov 测度保持不变的判据，并分析孤子速度和 phase shift。将离散孤子系统从精确动力学推进到不变测度、广义 Gibbs ensemble 和 generalized hydrodynamics 的概率基础。</p>
   <details class="radar-paper-details">
@@ -738,10 +821,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-06409" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation {#paper-arxiv-2607-06409 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-06409" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-07">2026-07-07</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Darboux transformation</code> <code>Bäcklund transformation</code></p>
-  <h3>Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Asymptotic analysis of N-elliptic localized solutions for the Fokas--Lenells equation</p>
   <p class="radar-paper-meta">Bao-Feng Feng, Wang Tang, Guo-Fu Yu · <a href="https://arxiv.org/abs/2607.06409">arXiv</a> · <a href="https://arxiv.org/pdf/2607.06409">PDF</a></p>
   <p class="radar-paper-overview">对 <span class="arithmatex">\(N\)</span>-elliptic localized solutions 给出系统的渐近分解和对称性分析。重点不是新增解图，而是把高阶椭圆局域解转化为可解释的远场组成和渐近结构。</p>
   <details class="radar-paper-details">
@@ -763,10 +848,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-06119" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Wave Kinetics and Thermalization in Kadomtsev--Petviashvili-I System {#paper-arxiv-2607-06119 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-06119" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-07">2026-07-07</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>inverse scattering</code> <code>wave kinetics</code></p>
-  <h3>Wave Kinetics and Thermalization in Kadomtsev--Petviashvili-I System</h3>
+  <p class="radar-paper-title" aria-hidden="true">Wave Kinetics and Thermalization in Kadomtsev--Petviashvili-I System</p>
   <p class="radar-paper-meta">Kiran Venkata Kolluru, Giorgio Krstulovic, Alan C. Newell, Sergey Nazarenko · <a href="https://arxiv.org/abs/2607.06119">arXiv</a> · <a href="https://arxiv.org/pdf/2607.06119">PDF</a></p>
   <p class="radar-paper-overview">研究 KP-I 随机波场的 wave-kinetic 演化、Rayleigh--Jeans thermalization、非局域谱传输和 condensation-like spectral peak。</p>
   <details class="radar-paper-details">
@@ -788,10 +875,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2504-05200" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Affine hypersurfaces and superintegrable systems {#paper-arxiv-2504-05200 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2504-05200" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-07">2026-07-07</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>math.DG</code> <code>integrable geometry</code></p>
-  <h3>Affine hypersurfaces and superintegrable systems</h3>
+  <p class="radar-paper-title" aria-hidden="true">Affine hypersurfaces and superintegrable systems</p>
   <p class="radar-paper-meta">Vicente Cortés, Andreas Vollmer · <a href="https://arxiv.org/abs/2504.05200">arXiv</a> · <a href="https://arxiv.org/pdf/2504.05200">PDF</a> · <a href="https://doi.org/10.1112/jlms.70618">Journal of the London Mathematical Society e70618 (2026)</a></p>
   <p class="radar-paper-overview">论文研究 abundant second-order conformally superintegrable systems 的几何编码，建立它们与一类非退化相对仿射超曲面正规化之间的对应。将高维超可积系统的分类问题转化为仿射微分几何问题，并给出两类几何对象之间的必要充分条件和共形等价对应。</p>
   <details class="radar-paper-details">
@@ -813,10 +902,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1103-n2hm-lk94" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Integrable black hole dynamics in the asymptotic structure of AdS$_{3}$ {#paper-doi-10-1103-n2hm-lk94 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1103-n2hm-lk94" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-06">2026-07-06</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>hep-th</code> <code>gr-qc</code> <code>AKNS hierarchy</code></p>
-  <h3>Integrable black hole dynamics in the asymptotic structure of AdS<span class="arithmatex">$_{3}$</span></h3>
+  <p class="radar-paper-title" aria-hidden="true">Integrable black hole dynamics in the asymptotic structure of AdS<span class="arithmatex">$_{3}$</span></p>
   <p class="radar-paper-meta">Marcela Cárdenas, Francisco Correa, Miguel Pino · <a href="https://arxiv.org/abs/2504.20292">arXiv</a> · <a href="https://arxiv.org/pdf/2504.20292">PDF</a> · <a href="https://doi.org/10.1103/n2hm-lk94">Physical Review D</a></p>
   <p class="radar-paper-overview">论文研究 AdS<span class="arithmatex">\(_3\)</span> 的可积渐近对称性、相应规范荷代数及黑洞热力学，并构造与 KdV 方程相关的 cnoidal black hole。可积谱数据不再只是形式类比，而直接进入黑洞热力学量的描述，把 AKNS 谱几何与非轴对称黑洞温度联系起来。</p>
   <details class="radar-paper-details">
@@ -838,10 +929,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-05681" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Lund--Regge Geometry and Integrability of a Generalized Konno--Oono System {#paper-arxiv-2607-05681 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-05681" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-06">2026-07-06</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>conservation laws</code></p>
-  <h3>Lund--Regge Geometry and Integrability of a Generalized Konno--Oono System</h3>
+  <p class="radar-paper-title" aria-hidden="true">Lund--Regge Geometry and Integrability of a Generalized Konno--Oono System</p>
   <p class="radar-paper-meta">Jose Luis Diaz Palencia, Enrique G. Reyes · <a href="https://arxiv.org/abs/2607.05681">arXiv</a> · <a href="https://arxiv.org/pdf/2607.05681">PDF</a></p>
   <p class="radar-paper-overview">建立 generalized Konno--Oono system 的可积性，并解释其与 <span class="arithmatex">\(S^3\)</span> 中曲面几何的联系。同一套结构同时产生可积性证明、守恒律和曲面几何解释。</p>
   <details class="radar-paper-details">
@@ -863,10 +956,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-04756" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W28" data-radar-month="2026-07">
+### Integrable full discretization of the multi-component short pulse equation {#paper-arxiv-2607-04756 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-04756" data-radar-week="2026-W28" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-06">2026-07-06</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>integrable discretization</code> <code>Pfaffian</code></p>
-  <h3>Integrable full discretization of the multi-component short pulse equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Integrable full discretization of the multi-component short pulse equation</p>
   <p class="radar-paper-meta">Ayako Hori, Yuta Tanaka, Ken-ichi Maruno, Yasuhiro Ohta, Bao-Feng Feng · <a href="https://arxiv.org/abs/2607.04756">arXiv</a> · <a href="https://arxiv.org/pdf/2607.04756">PDF</a></p>
   <p class="radar-paper-overview">构造多分量 short-pulse 方程的半离散和全离散 analogue，并给出精确 <span class="arithmatex">\(N\)</span>-soliton 解及自适应移动网格解释。连续模型的双线性/Pfaffian 结构、精确解和移动网格意义在全离散层面同时保留，不是普通差分近似。</p>
   <details class="radar-paper-details">
@@ -888,10 +983,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-04075" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W27" data-radar-month="2026-07">
+### Wei-Norman approach for non-Hermitian driven spin-S systems and its application to defect freezing {#paper-arxiv-2607-04075 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-04075" data-radar-week="2026-W27" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-05">2026-07-05</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>quant-ph</code> <code>nlin.SI</code> <code>quantum integrability</code></p>
-  <h3>Wei-Norman approach for non-Hermitian driven spin-S systems and its application to defect freezing</h3>
+  <p class="radar-paper-title" aria-hidden="true">Wei-Norman approach for non-Hermitian driven spin-S systems and its application to defect freezing</p>
   <p class="radar-paper-meta">Mingwei Meng, Chen Sun · <a href="https://arxiv.org/abs/2607.04075">arXiv</a> · <a href="https://arxiv.org/pdf/2607.04075">PDF</a></p>
   <p class="radar-paper-overview">论文为一般非 Hermitian 时变 spin-<span class="arithmatex">\(S\)</span> 驱动建立闭式演化公式，把多能级动力学归约到 spin-<span class="arithmatex">\(1/2\)</span> 问题。应用到 <span class="arithmatex">\(\mathcal{PT}\)</span>-symmetric SSH quench 后，得到 defect freezing 的解析激发概率、临界奇性和高阶 exceptional points 条件。</p>
   <details class="radar-paper-details">
@@ -913,10 +1010,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-03555" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W27" data-radar-month="2026-07">
+### Maximal Densities of Finite-Gap Solutions of the Sine-Gordon Equation {#paper-arxiv-2607-03555 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-03555" data-radar-week="2026-W27" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-03">2026-07-03</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>Yang--Baxter equation</code> <code>Lax pair</code></p>
-  <h3>Maximal Densities of Finite-Gap Solutions of the Sine-Gordon Equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Maximal Densities of Finite-Gap Solutions of the Sine-Gordon Equation</p>
   <p class="radar-paper-meta">Otis C. Wright III · <a href="https://arxiv.org/abs/2607.03555">arXiv</a> · <a href="https://arxiv.org/pdf/2607.03555">PDF</a></p>
   <p class="radar-paper-overview">论文研究实数 sine-Gordon 方程有限带解的平均密度，并给出由谱数据控制的最优上界。结果把高亏格 theta-function 解的整体振荡强度压缩为可计算的谱不变量问题。</p>
   <details class="radar-paper-details">
@@ -938,10 +1037,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-02359" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W27" data-radar-month="2026-07">
+### Correlation and entanglement dynamics of free fermions in disguise {#paper-arxiv-2607-02359 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-02359" data-radar-week="2026-W27" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-02">2026-07-02</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>quant-ph</code> <code>quantum integrability</code> <code>conservation laws</code></p>
-  <h3>Correlation and entanglement dynamics of free fermions in disguise</h3>
+  <p class="radar-paper-title" aria-hidden="true">Correlation and entanglement dynamics of free fermions in disguise</p>
   <p class="radar-paper-meta">Dávid Szász-Schagrin, Pablo Bayona-Pena, Lorenzo Piroli, Eric Vernier · <a href="https://arxiv.org/abs/2607.02359">arXiv</a> · <a href="https://arxiv.org/pdf/2607.02359">PDF</a></p>
   <p class="radar-paper-overview">论文研究可映射为“伪装自由费米子”的自旋链淬火，其中所有能级具有指数简并。作者构造广义 Gibbs ensemble 的准动量分布和局域观测量公式，并检验标准准粒子纠缠增长图景在这种简并结构下的适用边界。</p>
   <details class="radar-paper-details">
@@ -963,10 +1064,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-02093" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W27" data-radar-month="2026-07">
+### Open-boundary integrable quantum circuits with different geometries {#paper-arxiv-2607-02093 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-02093" data-radar-week="2026-W27" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-02">2026-07-02</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math-ph</code> <code>nlin.SI</code> <code>Yang--Baxter equation</code> <code>quantum integrability</code></p>
-  <h3>Open-boundary integrable quantum circuits with different geometries</h3>
+  <p class="radar-paper-title" aria-hidden="true">Open-boundary integrable quantum circuits with different geometries</p>
   <p class="radar-paper-meta">Miguel García Fernández, Chiara Paletta, Ana L. Retore · <a href="https://arxiv.org/abs/2607.02093">arXiv</a> · <a href="https://arxiv.org/pdf/2607.02093">PDF</a></p>
   <p class="radar-paper-overview">论文构造适用于不同开放边界几何的 Yang--Baxter 可积量子电路，并统一描述其边界演化。重点在于把 transfer matrix 与 reflection algebra 的结构推广到非周期电路，而不是只处理一条固定链。</p>
   <details class="radar-paper-details">
@@ -988,10 +1091,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-01545" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W27" data-radar-month="2026-07">
+### Learning Effective Soliton Dynamics from Scattering Data {#paper-arxiv-2607-01545 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-01545" data-radar-week="2026-W27" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-01">2026-07-01</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>physics.comp-ph</code> <code>nlin.SI</code> <code>inverse scattering</code></p>
-  <h3>Learning Effective Soliton Dynamics from Scattering Data</h3>
+  <p class="radar-paper-title" aria-hidden="true">Learning Effective Soliton Dynamics from Scattering Data</p>
   <p class="radar-paper-meta">Seth Minor, Vanja Dukic, David M. Bortz · <a href="https://arxiv.org/abs/2607.01545">arXiv</a> · <a href="https://arxiv.org/pdf/2607.01545">PDF</a></p>
   <p class="radar-paper-overview">论文从散射数据中学习孤子有效动力学，把 inverse-scattering variables 与 weak-form system identification 结合起来。该方法试图在保留可积谱坐标解释性的同时，从含噪观测中恢复低维相互作用规律。</p>
   <details class="radar-paper-details">
@@ -1013,10 +1118,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-01493" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W27" data-radar-month="2026-07">
+### Learning Lax Pairs: Revisiting the Classical Paradigm {#paper-arxiv-2607-01493 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-01493" data-radar-week="2026-W27" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-01">2026-07-01</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Lax pair</code></p>
-  <h3>Learning Lax Pairs: Revisiting the Classical Paradigm</h3>
+  <p class="radar-paper-title" aria-hidden="true">Learning Lax Pairs: Revisiting the Classical Paradigm</p>
   <p class="radar-paper-meta">Jimmie Adriazola, Gino Biondini, Wei Zhu, Panayotis G. Kevrekidis · <a href="https://arxiv.org/abs/2607.01493">arXiv</a> · <a href="https://arxiv.org/pdf/2607.01493">PDF</a></p>
   <p class="radar-paper-overview">论文把 Lax pair 的发现转化为可训练的结构识别问题，并提出 SILO 框架约束算子形式与零曲率条件。作者以 KdV 等经典模型检验方法，关注的是能否从数据重新识别隐藏的可积表示。</p>
   <details class="radar-paper-details">
@@ -1038,10 +1145,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-01348" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W27" data-radar-month="2026-07">
+### Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation {#paper-arxiv-2607-01348 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-01348" data-radar-week="2026-W27" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-01">2026-07-01</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>finite-gap</code></p>
-  <h3>Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation</p>
   <p class="radar-paper-meta">Otis C. Wright · <a href="https://arxiv.org/abs/2607.01348">arXiv</a> · <a href="https://arxiv.org/pdf/2607.01348">PDF</a></p>
   <p class="radar-paper-overview">论文为 focusing 与 defocusing mKdV 的有限带解建立尖锐振幅上界。上界直接由谱曲线及其不变量控制，使复杂 theta-function 解的最大振幅可以通过有限维谱数据判断。</p>
   <details class="radar-paper-details">
@@ -1063,10 +1172,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2607-00594" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W27" data-radar-month="2026-07">
+### Yangian Doubles and off-Shell Bethe Vectors {#paper-arxiv-2607-00594 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-00594" data-radar-week="2026-W27" data-radar-month="2026-07">
   <p class="radar-paper-date"><time datetime="2026-07-01">2026-07-01</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Bethe ansatz</code> <code>quantum integrability</code></p>
-  <h3>Yangian Doubles and off-Shell Bethe Vectors</h3>
+  <p class="radar-paper-title" aria-hidden="true">Yangian Doubles and off-Shell Bethe Vectors</p>
   <p class="radar-paper-meta">A. Liashyk, S. Pakuliak, E. Ragoucy · <a href="https://arxiv.org/abs/2607.00594">arXiv</a> · <a href="https://arxiv.org/pdf/2607.00594">PDF</a></p>
   <p class="radar-paper-overview">论文从经典系列的 Yangian doubles 电流实现出发，为一般 <span class="arithmatex">\(\mathfrak g\)</span>-invariant 可积模型构造 off-shell Bethe vectors。所得向量满足递推关系和 on-shell 本征值证明所需的定义性质，把不同经典李代数模型放入统一构造。</p>
   <details class="radar-paper-details">
@@ -1090,10 +1201,12 @@
 
 <p id="month-2026-06" class="radar-month-label" data-radar-month-group="2026-06">2026 年 6 月</p>
 
-<article id="paper-arxiv-2607-00231" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W27" data-radar-month="2026-06">
+### The 2j-k and j-2k Bi-orthogonal Polynomials on the Unit Circle: Further Properties and Riemann-Hilbert Characterizations {#paper-arxiv-2607-00231 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-00231" data-radar-week="2026-W27" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-30">2026-06-30</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math.CA</code> <code>Riemann--Hilbert problem</code> <code>multiple orthogonal polynomials</code></p>
-  <h3>The 2j-k and j-2k Bi-orthogonal Polynomials on the Unit Circle: Further Properties and Riemann-Hilbert Characterizations</h3>
+  <p class="radar-paper-title" aria-hidden="true">The 2j-k and j-2k Bi-orthogonal Polynomials on the Unit Circle: Further Properties and Riemann-Hilbert Characterizations</p>
   <p class="radar-paper-meta">Roozbeh Gharakhloo, Nicholas S. Witte · <a href="https://arxiv.org/abs/2607.00231">arXiv</a> · <a href="https://arxiv.org/pdf/2607.00231">PDF</a></p>
   <p class="radar-paper-overview">论文继续发展单位圆上的 <span class="arithmatex">\(2j-k\)</span> 与 <span class="arithmatex">\(j-2k\)</span> bi-orthogonal polynomial systems，统一其递推关系、Christoffel--Darboux 公式并建立 Riemann--Hilbert characterization。它把超出经典 Toeplitz 情形的两类非标准正交系统组织成可用于渐近分析的谱框架。</p>
   <details class="radar-paper-details">
@@ -1115,10 +1228,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-30717" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W27" data-radar-month="2026-06">
+### The auxiliary-deformed Breitenlohner--Maison model: duality frames and higher-dimensional origin {#paper-arxiv-2606-30717 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-30717" data-radar-week="2026-W27" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-29">2026-06-29</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>hep-th</code> <code>nlin.SI</code></p>
-  <h3>The auxiliary-deformed Breitenlohner--Maison model: duality frames and higher-dimensional origin</h3>
+  <p class="radar-paper-title" aria-hidden="true">The auxiliary-deformed Breitenlohner--Maison model: duality frames and higher-dimensional origin</p>
   <p class="radar-paper-meta">Daniele Bielli, Mattia Cesàro · <a href="https://arxiv.org/abs/2606.30717">arXiv</a> · <a href="https://arxiv.org/pdf/2606.30717">PDF</a></p>
   <p class="radar-paper-overview">论文研究 Breitenlohner--Maison 可积模型的辅助场形变及不同 duality frames，并追溯其高维引力来源。它澄清了二维可积约化、辅助场描述和高维微分同胚不变性之间的对应关系。</p>
   <details class="radar-paper-details">
@@ -1140,10 +1255,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-29263" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Conserved quantities of discretizations by polarization {#paper-arxiv-2606-29263 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-29263" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-28">2026-06-28</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math.NA</code> <code>Hamiltonian structure</code> <code>integrable discretization</code></p>
-  <h3>Conserved quantities of discretizations by polarization</h3>
+  <p class="radar-paper-title" aria-hidden="true">Conserved quantities of discretizations by polarization</p>
   <p class="radar-paper-meta">Noah Gießing, Yuri B. Suris · <a href="https://arxiv.org/abs/2606.29263">arXiv</a> · <a href="https://arxiv.org/pdf/2606.29263">PDF</a></p>
   <p class="radar-paper-overview">论文系统分析由 polarization 得到的多步离散化，说明一类 polynomial ODE 的守恒量如何在离散后继续存在。结果把 Kahan 型方法推广到更高次数和更多步长，并给出统一的不变量构造。</p>
   <details class="radar-paper-details">
@@ -1165,10 +1282,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-29156" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Tritronquée Painlevé II asymptotics for the focusing nonlinear Schrödinger equation with nonzero boundary conditions {#paper-arxiv-2606-29156 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-29156" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-28">2026-06-28</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>Riemann--Hilbert problem</code> <code>nonlinear steepest descent</code></p>
-  <h3>Tritronquée Painlevé II asymptotics for the focusing nonlinear Schrödinger equation with nonzero boundary conditions</h3>
+  <p class="radar-paper-title" aria-hidden="true">Tritronquée Painlevé II asymptotics for the focusing nonlinear Schrödinger equation with nonzero boundary conditions</p>
   <p class="radar-paper-meta">Haibing Zhang, Xianguo Geng, Kedong Wang · <a href="https://arxiv.org/abs/2606.29156">arXiv</a> · <a href="https://arxiv.org/pdf/2606.29156">PDF</a></p>
   <p class="radar-paper-overview">论文研究非零边界 focusing NLS 在临界过渡区的长时行为，并通过 double-scaling Riemann--Hilbert 分析得到精细渐近。局部主项由一个特定的 tritronquée Painlevé-II 解描述，揭示了不同渐近扇区之间的普适过渡机制。</p>
   <details class="radar-paper-details">
@@ -1190,10 +1309,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-29103" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Reduced Trilinear Reformulation of the Nakamura Conjecture {#paper-arxiv-2606-29103 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-29103" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-27">2026-06-27</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>gr-qc</code> <code>bilinear method</code></p>
-  <h3>Reduced Trilinear Reformulation of the Nakamura Conjecture</h3>
+  <p class="radar-paper-title" aria-hidden="true">Reduced Trilinear Reformulation of the Nakamura Conjecture</p>
   <p class="radar-paper-meta">Takeshi Fukuyama · <a href="https://arxiv.org/abs/2606.29103">arXiv</a> · <a href="https://arxiv.org/pdf/2606.29103">PDF</a></p>
   <p class="radar-paper-overview">论文用具有 <span class="arithmatex">\(Z_3\)</span> 对称性的三线性 Hirota 算子重新表述 Nakamura conjecture。该形式把 Tomimatsu--Sato 解族与 Toda-molecule hierarchy 的代数结构联系起来，并显著压缩原有关系式。</p>
   <details class="radar-paper-details">
@@ -1215,10 +1336,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-28579" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Transition asymptotics for the real solutions of the sinh-Gordon Painlevé III equation {#paper-arxiv-2606-28579 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-28579" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-26">2026-06-26</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Painlevé</code></p>
-  <h3>Transition asymptotics for the real solutions of the sinh-Gordon Painlevé III equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Transition asymptotics for the real solutions of the sinh-Gordon Painlevé III equation</p>
   <p class="radar-paper-meta">Kenta Miyahara, Maxim L. Yattselev · <a href="https://arxiv.org/abs/2606.28579">arXiv</a> · <a href="https://arxiv.org/pdf/2606.28579">PDF</a></p>
   <p class="radar-paper-overview">论文研究 sinh-Gordon 型 Painlevé-III 实解在临界参数附近的过渡渐近。作者从 monodromy data 出发建立 double-scaling 公式，统一描述不同振荡或衰减区域之间的转换。</p>
   <details class="radar-paper-details">
@@ -1240,10 +1363,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-28250" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Perturbation theory for kinks of the defocusing modified Korteweg--de Vries equation {#paper-arxiv-2606-28250 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-28250" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-26">2026-06-26</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>nlin.PS</code></p>
-  <h3>Perturbation theory for kinks of the defocusing modified Korteweg--de Vries equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Perturbation theory for kinks of the defocusing modified Korteweg--de Vries equation</p>
   <p class="radar-paper-meta">Nicholas J. Ossi, Barbara Prinari, Theodoros P. Horikis, Dimitrios J. Frantzeskakis · <a href="https://arxiv.org/abs/2606.28250">arXiv</a> · <a href="https://arxiv.org/pdf/2606.28250">PDF</a></p>
   <p class="radar-paper-overview">论文为 defocusing mKdV kink 建立基于 squared eigenfunctions 的扰动理论。框架同时刻画 kink 参数漂移、连续谱辐射和 radiative shelf，使非零背景下的微扰响应得到统一分解。</p>
   <details class="radar-paper-details">
@@ -1265,10 +1390,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-27337" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Exact subsystem dynamics in the deterministic Floquet-PXP model {#paper-arxiv-2606-27337 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-27337" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-25">2026-06-25</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>quant-ph</code> <code>transfer matrix</code></p>
-  <h3>Exact subsystem dynamics in the deterministic Floquet-PXP model</h3>
+  <p class="radar-paper-title" aria-hidden="true">Exact subsystem dynamics in the deterministic Floquet-PXP model</p>
   <p class="radar-paper-meta">Katja Klobas · <a href="https://arxiv.org/abs/2606.27337">arXiv</a> · <a href="https://arxiv.org/pdf/2606.27337">PDF</a></p>
   <p class="radar-paper-overview">论文证明 deterministic Floquet--PXP 模型的 Rule 201 具有精确可解的子系统动力学：任意时刻的 influence matrix 都可由固定有限维 matrix-product operator 表示。由此可以解析计算多时自相关，而其复杂度不随时间失控增长。</p>
   <details class="radar-paper-details">
@@ -1290,10 +1417,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-27261" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Non-colliding space-time inhomogeneous Markov chains {#paper-arxiv-2606-27261 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-27261" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-25">2026-06-25</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math.PR</code> <code>math-ph</code> <code>integrable probability</code> <code>nonlinear steepest descent</code></p>
-  <h3>Non-colliding space-time inhomogeneous Markov chains</h3>
+  <p class="radar-paper-title" aria-hidden="true">Non-colliding space-time inhomogeneous Markov chains</p>
   <p class="radar-paper-meta">Theodoros Assiotis, Miles Foster Nyamundanda · <a href="https://arxiv.org/abs/2606.27261">arXiv</a> · <a href="https://arxiv.org/pdf/2606.27261">PDF</a></p>
   <p class="radar-paper-overview">论文求出一类时空非齐次可积 Markov 链碰撞时间尾概率的显式首项渐近，并给出定量误差。由于空间非齐次性阻断了常用 Brownian coupling，作者发展了新的最速下降与 Karlin--McGregor 半群展开组合。</p>
   <details class="radar-paper-details">
@@ -1315,10 +1444,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-27186" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### An integrable approach to macroscopic fluctuation theory for the multispecies SSEP {#paper-arxiv-2606-27186 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-27186" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-25">2026-06-25</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>math-ph</code> <code>AKNS hierarchy</code> <code>inverse scattering</code></p>
-  <h3>An integrable approach to macroscopic fluctuation theory for the multispecies SSEP</h3>
+  <p class="radar-paper-title" aria-hidden="true">An integrable approach to macroscopic fluctuation theory for the multispecies SSEP</p>
   <p class="radar-paper-meta">Luigi Cantini · <a href="https://arxiv.org/abs/2606.27186">arXiv</a> · <a href="https://arxiv.org/pdf/2606.27186">PDF</a></p>
   <p class="radar-paper-overview">论文证明多组分 SSEP 的 macroscopic fluctuation theory saddle equations 构成 Landau--Lifshitz 型可积系统，并可经 gauge transformation 化为 AKNS 形式。借助 inverse scattering，作者求出多组分电流的大偏差生成函数及条件密度轨道。</p>
   <details class="radar-paper-details">
@@ -1340,10 +1471,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-27125" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### The Ising Model Coupled to 2D Gravity: Critical Partition Function {#paper-arxiv-2606-27125 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-27125" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-25">2026-06-25</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math-ph</code> <code>nlin.SI</code> <code>Riemann--Hilbert problem</code> <code>nonlinear steepest descent</code></p>
-  <h3>The Ising Model Coupled to 2D Gravity: Critical Partition Function</h3>
+  <p class="radar-paper-title" aria-hidden="true">The Ising Model Coupled to 2D Gravity: Critical Partition Function</p>
   <p class="radar-paper-meta">Maurice Duits, Nathan Hayford, Seung-Yeop Lee · <a href="https://arxiv.org/abs/2606.27125">arXiv</a> · <a href="https://arxiv.org/pdf/2606.27125">PDF</a></p>
   <p class="radar-paper-overview">这项工作研究二维引力中的临界 Ising 模型如何从有限维 two-matrix model 进入连续极限。作者把临界配分函数与 <span class="arithmatex">\((3,4)\)</span> string equation 的 tau-function 严格联系起来，为随机曲面上的统计模型提供了可控制的 double-scaling 描述。</p>
   <details class="radar-paper-details">
@@ -1365,10 +1498,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-26526" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Integrable pentagram-type maps on polyhedra via partial difference operators {#paper-arxiv-2606-26526 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-26526" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-25">2026-06-25</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Lax pair</code> <code>Poisson structure</code></p>
-  <h3>Integrable pentagram-type maps on polyhedra via partial difference operators</h3>
+  <p class="radar-paper-title" aria-hidden="true">Integrable pentagram-type maps on polyhedra via partial difference operators</p>
   <p class="radar-paper-meta">Bao Wang · <a href="https://arxiv.org/abs/2606.26526">arXiv</a> · <a href="https://arxiv.org/pdf/2606.26526">PDF</a></p>
   <p class="radar-paper-overview">论文把 pentagram-type maps 推广到 twisted polyhedra，并用部分差分算子描述其演化。可积性来自算子 refactorization 与 Poisson--Lie 几何，从而把离散投影几何放入统一的代数框架。</p>
   <details class="radar-paper-details">
@@ -1390,10 +1525,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-26510" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Symmetries of the Generalized Yang--Baxter Equations {#paper-arxiv-2606-26510 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-26510" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-25">2026-06-25</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Yang--Baxter equation</code> <code>Hamiltonian structure</code></p>
-  <h3>Symmetries of the Generalized Yang--Baxter Equations</h3>
+  <p class="radar-paper-title" aria-hidden="true">Symmetries of the Generalized Yang--Baxter Equations</p>
   <p class="radar-paper-meta">Pramod Padmanabhan, Somnath Maity, Akash Sinha, Vladimir Korepin · <a href="https://arxiv.org/abs/2606.26510">arXiv</a> · <a href="https://arxiv.org/pdf/2606.26510">PDF</a></p>
   <p class="radar-paper-overview">论文系统研究 generalized Yang--Baxter equations 的对称性与等价变换。结果说明不同方程和解族如何通过群作用组织，并为构造相应的 <span class="arithmatex">\(R\)</span>-matrix 与可积 Hamiltonian 提供结构约束。</p>
   <details class="radar-paper-details">
@@ -1415,10 +1552,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1103-g7hk-tlq1" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Taxonomy of integrable and ground-state solvable models: Jastrow wave functions on graphs and parent Hamiltonians {#paper-doi-10-1103-g7hk-tlq1 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1103-g7hk-tlq1" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-24">2026-06-24</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>quant-ph</code> <code>cond-mat.quant-gas</code> <code>Hamiltonian structure</code></p>
-  <h3>Taxonomy of integrable and ground-state solvable models: Jastrow wave functions on graphs and parent Hamiltonians</h3>
+  <p class="radar-paper-title" aria-hidden="true">Taxonomy of integrable and ground-state solvable models: Jastrow wave functions on graphs and parent Hamiltonians</p>
   <p class="radar-paper-meta">Nilanjan Sasmal, Adolfo del Campo · <a href="https://arxiv.org/abs/2602.22315">arXiv</a> · <a href="https://arxiv.org/pdf/2602.22315">PDF</a> · <a href="https://doi.org/10.1103/g7hk-tlq1">Physical Review B</a></p>
   <p class="radar-paper-overview">论文建立 generalized Jastrow ground states 与图上 parent Hamiltonians 的分类框架。它区分严格可积模型与仅基态可解模型，并给出从波函数结构反推相互作用与守恒量的条件。</p>
   <details class="radar-paper-details">
@@ -1440,10 +1579,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-25846" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Tri-Hamiltonian structure of an asymmetric generalized Ablowitz-Ladik hierarchy and a Frobenius manifold {#paper-arxiv-2606-25846 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-25846" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-24">2026-06-24</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Ablowitz--Ladik hierarchy</code> <code>Hamiltonian structure</code></p>
-  <h3>Tri-Hamiltonian structure of an asymmetric generalized Ablowitz-Ladik hierarchy and a Frobenius manifold</h3>
+  <p class="radar-paper-title" aria-hidden="true">Tri-Hamiltonian structure of an asymmetric generalized Ablowitz-Ladik hierarchy and a Frobenius manifold</p>
   <p class="radar-paper-meta">Hanxue Zhang, Qiulan Zhao, Xinyue Li · <a href="https://arxiv.org/abs/2606.25846">arXiv</a> · <a href="https://arxiv.org/pdf/2606.25846">PDF</a></p>
   <p class="radar-paper-overview">论文为非对称 generalized Ablowitz--Ladik hierarchy 构造 full-dispersive 的局部 tri-Hamiltonian 结构。作者进一步计算 central invariants，并把色散极限与 Frobenius geometry 联系起来。</p>
   <details class="radar-paper-details">
@@ -1465,10 +1606,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-25802" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Global Results on the Classification of Two-Component Integrable Evolutionary Systems {#paper-arxiv-2606-25802 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-25802" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-24">2026-06-24</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>Drinfeld--Sokolov hierarchy</code></p>
-  <h3>Global Results on the Classification of Two-Component Integrable Evolutionary Systems</h3>
+  <p class="radar-paper-title" aria-hidden="true">Global Results on the Classification of Two-Component Integrable Evolutionary Systems</p>
   <p class="radar-paper-meta">Alexander V. Mikhailov, Vladimir Novikov, Jing Ping Wang · <a href="https://arxiv.org/abs/2606.25802">arXiv</a> · <a href="https://arxiv.org/pdf/2606.25802">PDF</a></p>
   <p class="radar-paper-overview">论文完成一类二分量 polynomial evolutionary systems 的全局可积性分类，得到 24 个互不等价的系统族。分类不只罗列方程，还识别其约化、变换关系以及与 Drinfeld--Sokolov 层级的联系。</p>
   <details class="radar-paper-details">
@@ -1490,10 +1633,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-25739" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### A novel 2+1-dimensional extended Dym equation: moving boundary problems solvable via Painlevé II symmetry reduction {#paper-arxiv-2606-25739 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-25739" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-24">2026-06-24</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math.CA</code> <code>nlin.SI</code> <code>Painlevé</code></p>
-  <h3>A novel 2+1-dimensional extended Dym equation: moving boundary problems solvable via Painlevé II symmetry reduction</h3>
+  <p class="radar-paper-title" aria-hidden="true">A novel 2+1-dimensional extended Dym equation: moving boundary problems solvable via Painlevé II symmetry reduction</p>
   <p class="radar-paper-meta">Colin Rogers, Pablo Amster · <a href="https://arxiv.org/abs/2606.25739">arXiv</a> · <a href="https://arxiv.org/pdf/2606.25739">PDF</a></p>
   <p class="radar-paper-overview">论文提出一个 <span class="arithmatex">\((2+1)\)</span> 维 extended Dym equation，并发现其 Painlevé II symmetry reduction 可以精确求解一类 Stefan-type moving-boundary problems。它把孤子方程的对称约化用于带自由边界的传热型问题。</p>
   <details class="radar-paper-details">
@@ -1515,10 +1660,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1103-hvzz-8zmt" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Noninvertible Kramers-Wannier duality symmetries for the discrete-time quantum Ising chain {#paper-doi-10-1103-hvzz-8zmt .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1103-hvzz-8zmt" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-23">2026-06-23</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>quant-ph</code> <code>cond-mat.str-el</code> <code>inverse scattering</code> <code>integrable discretization</code></p>
-  <h3>Noninvertible Kramers-Wannier duality symmetries for the discrete-time quantum Ising chain</h3>
+  <p class="radar-paper-title" aria-hidden="true">Noninvertible Kramers-Wannier duality symmetries for the discrete-time quantum Ising chain</p>
   <p class="radar-paper-meta">Akash Sinha, Pramod Padmanabhan, Vladimir Korepin · <a href="https://arxiv.org/abs/2511.03947">arXiv</a> · <a href="https://arxiv.org/pdf/2511.03947">PDF</a> · <a href="https://doi.org/10.1103/hvzz-8zmt">Physical Review B</a></p>
   <p class="radar-paper-overview">论文研究横场 Ising 链离散时间演化中的 noninvertible Kramers--Wannier duality。通过可积 Trotterization 与 transfer-matrix 结构，作者刻画这些对偶对 Floquet phases 和边界条件的约束。</p>
   <details class="radar-paper-details">
@@ -1540,10 +1687,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-24662" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### A symmetry reduction of the Painlevé IV hierarchy to the Flaschka--Newell Painlevé II hierarchy {#paper-arxiv-2606-24662 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-24662" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-23">2026-06-23</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math-ph</code> <code>nlin.SI</code> <code>mKdV hierarchy</code> <code>Painlevé hierarchy</code></p>
-  <h3>A symmetry reduction of the Painlevé IV hierarchy to the Flaschka--Newell Painlevé II hierarchy</h3>
+  <p class="radar-paper-title" aria-hidden="true">A symmetry reduction of the Painlevé IV hierarchy to the Flaschka--Newell Painlevé II hierarchy</p>
   <p class="radar-paper-meta">Mohamad Alameddine, Olivier Marchal · <a href="https://arxiv.org/abs/2606.24662">arXiv</a> · <a href="https://arxiv.org/pdf/2606.24662">PDF</a></p>
   <p class="radar-paper-overview">论文构造从偶数 Painlevé-IV hierarchy 到 Flaschka--Newell Painlevé-II hierarchy 的对称约化。Lax matrices、Darboux coordinates 与 Hamiltonians 在约化下被显式对应，使两套层级的关系提升为完整的可积结构映射。</p>
   <details class="radar-paper-details">
@@ -1565,10 +1714,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-24435" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation {#paper-arxiv-2606-24435 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-24435" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-23">2026-06-23</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math.AP</code> <code>Riemann--Hilbert problem</code> <code>soliton gas</code></p>
-  <h3>Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation</p>
   <p class="radar-paper-meta">Deng Shan Wang, Xinyu Wang · <a href="https://arxiv.org/abs/2606.24435">arXiv</a> · <a href="https://arxiv.org/pdf/2606.24435">PDF</a></p>
   <p class="radar-paper-overview">论文研究 derivative NLS 的孤子气体极限，从反射为零的 <span class="arithmatex">\(N\)</span>-soliton Riemann--Hilbert problem 出发，把 <span class="arithmatex">\(N\to\infty\)</span> 的连续谱极限转化为 <span class="arithmatex">\(\bar\partial\)</span>-problem。作者进一步得到大空间、长时间分区渐近、有效速度动理学方程以及 Fredholm determinant 表示。</p>
   <details class="radar-paper-details">
@@ -1590,10 +1741,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-24273" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Arithmetic Supports of Lax Difference Hierarchies {#paper-arxiv-2606-24273 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-24273" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-23">2026-06-23</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Lax pair</code> <code>finite-gap</code></p>
-  <h3>Arithmetic Supports of Lax Difference Hierarchies</h3>
+  <p class="radar-paper-title" aria-hidden="true">Arithmetic Supports of Lax Difference Hierarchies</p>
   <p class="radar-paper-meta">Sylvain Carpentier · <a href="https://arxiv.org/abs/2606.24273">arXiv</a> · <a href="https://arxiv.org/pdf/2606.24273">PDF</a></p>
   <p class="radar-paper-overview">论文研究 finite-band scalar difference Lax hierarchies 的算术支集，并给出决定允许流与守恒量的组合条件。该框架统一覆盖 Toda、Volterra 等离散层级中的若干支集现象。</p>
   <details class="radar-paper-details">
@@ -1615,10 +1768,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-23803" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Infinite-Level Hierarchy of Solvable Quantum Circuits {#paper-arxiv-2606-23803 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-23803" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-22">2026-06-22</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>quant-ph</code> <code>nlin.SI</code> <code>quantum integrability</code></p>
-  <h3>Infinite-Level Hierarchy of Solvable Quantum Circuits</h3>
+  <p class="radar-paper-title" aria-hidden="true">Infinite-Level Hierarchy of Solvable Quantum Circuits</p>
   <p class="radar-paper-meta">Michael A. Rampp, Suhail A. Rather, Pieter W. Claeys · <a href="https://arxiv.org/abs/2606.23803">arXiv</a> · <a href="https://arxiv.org/pdf/2606.23803">PDF</a></p>
   <p class="radar-paper-overview">论文提出一个无限层级的量子电路可解条件，修复 generalized dual-unitary hierarchy 在第二层以后不能控制整个时空相关函数的问题。新条件在每一层都有非平凡解，并可与既有层级组合以精确计算相关与纠缠动力学。</p>
   <details class="radar-paper-details">
@@ -1640,10 +1795,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-23167" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Bihamiltonian structure of the (n,1)-type rational reductions of the 2D-Toda hierarchy {#paper-arxiv-2606-23167 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-23167" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-22">2026-06-22</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>2D Toda hierarchy</code> <code>Hamiltonian structure</code></p>
-  <h3>Bihamiltonian structure of the (n,1)-type rational reductions of the 2D-Toda hierarchy</h3>
+  <p class="radar-paper-title" aria-hidden="true">Bihamiltonian structure of the (n,1)-type rational reductions of the 2D-Toda hierarchy</p>
   <p class="radar-paper-meta">Haonan Qu, Qiulan Zhao · <a href="https://arxiv.org/abs/2606.23167">arXiv</a> · <a href="https://arxiv.org/pdf/2606.23167">PDF</a></p>
   <p class="radar-paper-overview">论文为 2D-Toda hierarchy 的 <span class="arithmatex">\((n,1)\)</span>-type rational reductions 构造双 Hamiltonian 结构。结果把约化后的 Poisson 几何与 generalized Frobenius manifold 及其 dispersionless principal hierarchy 联系起来。</p>
   <details class="radar-paper-details">
@@ -1665,10 +1822,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-22808" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W26" data-radar-month="2026-06">
+### Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent $(3+1)$ Nonlinear Schrödinger Systems {#paper-arxiv-2606-22808 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-22808" data-radar-week="2026-W26" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-22">2026-06-22</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code></p>
-  <h3>Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent <span class="arithmatex">$(3+1)$</span> Nonlinear Schrödinger Systems</h3>
+  <p class="radar-paper-title" aria-hidden="true">Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent <span class="arithmatex">$(3+1)$</span> Nonlinear Schrödinger Systems</p>
   <p class="radar-paper-meta">O. V. Kaptsov · <a href="https://arxiv.org/abs/2606.22808">arXiv</a> · <a href="https://arxiv.org/pdf/2606.22808">PDF</a></p>
   <p class="radar-paper-overview">论文给出多分量 <span class="arithmatex">\((3+1)\)</span> 维 NLS 系统的精确 harmonic dimensional reduction 与 conformal lifting。该构造把低维 vortex、spin-current、rogue-wave 和 self-induced-transparency 解系统提升到高维，而不破坏其可解结构。</p>
   <details class="radar-paper-details">
@@ -1690,10 +1849,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-24925" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### Invariants for a family of discrete equations with the Laurent property {#paper-arxiv-2606-24925 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-24925" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-21">2026-06-21</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>integrable discretization</code> <code>Laurent property</code></p>
-  <h3>Invariants for a family of discrete equations with the Laurent property</h3>
+  <p class="radar-paper-title" aria-hidden="true">Invariants for a family of discrete equations with the Laurent property</p>
   <p class="radar-paper-meta">Andrei K. Svinin · <a href="https://arxiv.org/abs/2606.24925">arXiv</a> · <a href="https://arxiv.org/pdf/2606.24925">PDF</a></p>
   <p class="radar-paper-overview">论文研究一族具有 Laurent property 的离散递推，并构造其保持不变的量。结果把 Somos-5 型现象推广到更广的映射族，同时说明代数熵、周期性与不变量之间的关系。</p>
   <details class="radar-paper-details">
@@ -1715,10 +1876,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-22438" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### Long-time asymptotics of a full arbitrary-genus dark soliton gas for the defocusing nonlinear Schrödinger equation {#paper-arxiv-2606-22438 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-22438" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-21">2026-06-21</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>Riemann--Hilbert problem</code> <code>nonlinear steepest descent</code></p>
-  <h3>Long-time asymptotics of a full arbitrary-genus dark soliton gas for the defocusing nonlinear Schrödinger equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Long-time asymptotics of a full arbitrary-genus dark soliton gas for the defocusing nonlinear Schrödinger equation</p>
   <p class="radar-paper-meta">Dedi Yan, Xianguo Geng, Mingming Chen · <a href="https://arxiv.org/abs/2606.22438">arXiv</a> · <a href="https://arxiv.org/pdf/2606.22438">PDF</a></p>
   <p class="radar-paper-overview">论文给出 defocusing NLS 中任意亏格 dark soliton gas 的完整长时渐近。分析覆盖由 <span class="arithmatex">\(2N+1\)</span> 个谱带形成的有限带背景，并说明不同速度区域中的相结构如何由谱曲线决定。</p>
   <details class="radar-paper-details">
@@ -1740,10 +1903,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-22004" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### The asymmetric five vertex model on a rectangle {#paper-arxiv-2606-22004 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-22004" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-20">2026-06-20</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>math-ph</code> <code>math.PR</code> <code>integrable probability</code> <code>transfer matrix</code></p>
-  <h3>The asymmetric five vertex model on a rectangle</h3>
+  <p class="radar-paper-title" aria-hidden="true">The asymmetric five vertex model on a rectangle</p>
   <p class="radar-paper-meta">Jan de Gier, Richard Kenyon, Michael Wheeler, Yuyang Zhou · <a href="https://arxiv.org/abs/2606.22004">arXiv</a> · <a href="https://arxiv.org/pdf/2606.22004">PDF</a></p>
   <p class="radar-paper-overview">论文为矩形区域上的非齐次 asymmetric five-vertex model、任意上下边界条件导出行列式配分函数。该结果不依赖通常的 non-intersecting paths 或 free-fermion 简化，因此为更一般边界下的五顶点模型提供了新的精确表达。</p>
   <details class="radar-paper-details">
@@ -1765,10 +1930,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-46298-ocnmp-18125" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### Liouville Integrable Lotka--Volterra Systems {#paper-doi-10-46298-ocnmp-18125 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-46298-ocnmp-18125" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-18">2026-06-18</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>Hamiltonian structure</code> <code>Poisson structure</code></p>
-  <h3>Liouville Integrable Lotka--Volterra Systems</h3>
+  <p class="radar-paper-title" aria-hidden="true">Liouville Integrable Lotka--Volterra Systems</p>
   <p class="radar-paper-meta">Peter H. van der Kamp, David I. McLaren, G. R. W. Quispel · <a href="https://arxiv.org/abs/2604.01743">arXiv</a> · <a href="https://arxiv.org/pdf/2604.01743">PDF</a> · <a href="https://doi.org/10.46298/ocnmp.18125">Open Communications in Nonlinear Mathematical Physics</a></p>
   <p class="radar-paper-overview">论文在任意维数构造大批多参数 Lotka--Volterra 系统，并证明它们具有 Liouville integrability；可积族的数量随维数呈二次增长。</p>
   <details class="radar-paper-details">
@@ -1790,10 +1957,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1209-0295-5075-ae7152" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### Quantum Simulation of Non-Unitary Operators Generated by R-Matrices in the Yang--Baxter Equation {#paper-doi-10-1209-0295-5075-ae7152 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1209-0295-5075-ae7152" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-17">2026-06-17</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>Yang--Baxter equation</code> <code>quantum integrability</code></p>
-  <h3>Quantum Simulation of Non-Unitary Operators Generated by R-Matrices in the Yang--Baxter Equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Quantum Simulation of Non-Unitary Operators Generated by R-Matrices in the Yang--Baxter Equation</p>
   <p class="radar-paper-meta">Chao Zheng, Jiamin Zhou, Jiatong Cheng, Guanru Feng · <a href="https://doi.org/10.1209/0295-5075/ae7152">Europhysics Letters</a></p>
   <p class="radar-paper-overview">论文提出量子电路方案，模拟由 Yang--Baxter <span class="arithmatex">\(R\)</span>-matrix 产生的非酉 Yang--Lee anyon 编织算子，把非酉可积代数对象转化为可执行的概率量子操作。</p>
   <details class="radar-paper-details">
@@ -1815,10 +1984,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-18701" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### An integrable semi-discretization of the two-component Hunter-Saxton equation {#paper-arxiv-2606-18701 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-18701" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-17">2026-06-17</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>integrable discretization</code> <code>bilinear method</code></p>
-  <h3>An integrable semi-discretization of the two-component Hunter-Saxton equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">An integrable semi-discretization of the two-component Hunter-Saxton equation</p>
   <p class="radar-paper-meta">Ayako Hori, Yuta Tanaka, Ken-ichi Maruno, Yasuhiro Ohta · <a href="https://arxiv.org/abs/2606.18701">arXiv</a> · <a href="https://arxiv.org/pdf/2606.18701">PDF</a></p>
   <p class="radar-paper-overview">论文为 two-component Hunter--Saxton 方程构造保持可积结构的半离散模型，同时给出双线性形式、离散 hodograph 关系和行列式孤子解。它处理的是离散化过程中如何同时保存谱结构与精确解，而不是普通数值近似。</p>
   <details class="radar-paper-details">
@@ -1840,10 +2011,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-46298-ocnmp-18295" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### Moving Boundary Problems for a Cuspon Equation and Reciprocal Associates: Exact Solution via Painlevé Symmetry Reduction {#paper-doi-10-46298-ocnmp-18295 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-46298-ocnmp-18295" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-16">2026-06-16</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>Painlevé</code> <code>Bäcklund transformation</code></p>
-  <h3>Moving Boundary Problems for a Cuspon Equation and Reciprocal Associates: Exact Solution via Painlevé Symmetry Reduction</h3>
+  <p class="radar-paper-title" aria-hidden="true">Moving Boundary Problems for a Cuspon Equation and Reciprocal Associates: Exact Solution via Painlevé Symmetry Reduction</p>
   <p class="radar-paper-meta">Colin Rogers, Sandra Carillo · <a href="https://arxiv.org/abs/2605.22565">arXiv</a> · <a href="https://arxiv.org/pdf/2605.22565">PDF</a> · <a href="https://doi.org/10.46298/ocnmp.18295">Open Communications in Nonlinear Mathematical Physics</a></p>
   <p class="radar-paper-overview">论文把 cuspon 方程及其互易关联模型中的 Stefan 型移动边界问题约化到 Painlevé II，从而得到一族可精确求解的自由边界问题。</p>
   <details class="radar-paper-details">
@@ -1865,10 +2038,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1088-1751-8121-ae767e" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### Special Solutions to Five Autonomous Integrable Partial Difference Equations via the Third and Sixth Painlevé Equations and the Garnier System in Two Variables {#paper-doi-10-1088-1751-8121-ae767e .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1088-1751-8121-ae767e" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-16">2026-06-16</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>Painlevé</code> <code>integrable discretization</code></p>
-  <h3>Special Solutions to Five Autonomous Integrable Partial Difference Equations via the Third and Sixth Painlevé Equations and the Garnier System in Two Variables</h3>
+  <p class="radar-paper-title" aria-hidden="true">Special Solutions to Five Autonomous Integrable Partial Difference Equations via the Third and Sixth Painlevé Equations and the Garnier System in Two Variables</p>
   <p class="radar-paper-meta">Nobutaka Nakazono · <a href="https://doi.org/10.1088/1751-8121/ae767e">Journal of Physics A: Mathematical and Theoretical</a></p>
   <p class="radar-paper-overview">论文把五个自治可积偏差分方程的特殊解统一连接到 Painlevé III、VI 以及二变量 Garnier system，为离散方程的解结构提供等单值型描述。</p>
   <details class="radar-paper-details">
@@ -1890,10 +2065,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1007-jhep06-2026-173" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### On the Integrable Structure of the SU(2) Wess--Zumino--Novikov--Witten Model {#paper-doi-10-1007-jhep06-2026-173 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1007-jhep06-2026-173" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-16">2026-06-16</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>hep-th</code> <code>quantum integrability</code> <code>Bethe ansatz</code></p>
-  <h3>On the Integrable Structure of the SU(2) Wess--Zumino--Novikov--Witten Model</h3>
+  <p class="radar-paper-title" aria-hidden="true">On the Integrable Structure of the SU(2) Wess--Zumino--Novikov--Witten Model</p>
   <p class="radar-paper-meta">Sylvain Lacroix, Adrien Molines · <a href="https://arxiv.org/abs/2601.20960">arXiv</a> · <a href="https://arxiv.org/pdf/2601.20960">PDF</a> · <a href="https://doi.org/10.1007/JHEP06(2026)173">Journal of High Energy Physics</a></p>
   <p class="radar-paper-overview">论文研究 SU(2) Wess--Zumino--Novikov--Witten 模型的量子可积结构，显式构造首批高自旋局域运动积分，并把直接对角化结果与 affine Bethe ansatz、ODE/IQFT 预测进行核对。</p>
   <details class="radar-paper-details">
@@ -1915,10 +2092,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-21468-scipostphys-20-6-164" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### Strong Zero Modes in Integrable Spin-S Chains {#paper-doi-10-21468-scipostphys-20-6-164 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-21468-scipostphys-20-6-164" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-15">2026-06-15</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>quant-ph</code> <code>quantum integrability</code> <code>Bethe ansatz</code></p>
-  <h3>Strong Zero Modes in Integrable Spin-S Chains</h3>
+  <p class="radar-paper-title" aria-hidden="true">Strong Zero Modes in Integrable Spin-S Chains</p>
   <p class="radar-paper-meta">Fabian H. L. Essler, Paul Fendley, Eric Vernier · <a href="https://arxiv.org/abs/2512.07742">arXiv</a> · <a href="https://arxiv.org/pdf/2512.07742">PDF</a> · <a href="https://doi.org/10.21468/SciPostPhys.20.6.164">SciPost Physics</a></p>
   <p class="radar-paper-overview">论文为带开边界和边界场的可积 spin-<span class="arithmatex">\(S\)</span> 链构造精确 strong zero modes，并解释这些边缘算子怎样产生无限相干时间和多重基态结构。</p>
   <details class="radar-paper-details">
@@ -1940,10 +2119,12 @@
   </details>
 </article>
 
-<article id="paper-doi-10-1007-s10955-026-03637-8" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### Matrix-Product State Skeletons in Onsager-Integrable Quantum Chains {#paper-doi-10-1007-s10955-026-03637-8 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1007-s10955-026-03637-8" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-15">2026-06-15</time> · 正式发表</p>
   <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>quant-ph</code> <code>quantum integrability</code> <code>transfer matrix</code></p>
-  <h3>Matrix-Product State Skeletons in Onsager-Integrable Quantum Chains</h3>
+  <p class="radar-paper-title" aria-hidden="true">Matrix-Product State Skeletons in Onsager-Integrable Quantum Chains</p>
   <p class="radar-paper-meta">Imogen Camp, Nick G. Jones · <a href="https://arxiv.org/abs/2511.07212">arXiv</a> · <a href="https://arxiv.org/pdf/2511.07212">PDF</a> · <a href="https://doi.org/10.1007/s10955-026-03637-8">Journal of Statistical Physics</a></p>
   <p class="radar-paper-overview">论文在相互作用的 Onsager-integrable chiral clock chains 中构造稠密的 matrix-product-state skeleton，使一组精确有限键维本征态贯穿相图的有隙区域，并可用于逼近一般基态。</p>
   <details class="radar-paper-details">
@@ -1965,10 +2146,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-17238" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### Vector peakon equations and isospectral flows in Clifford algebras {#paper-arxiv-2606-17238 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-17238" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-15">2026-06-15</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Lax pair</code> <code>Hamiltonian structure</code></p>
-  <h3>Vector peakon equations and isospectral flows in Clifford algebras</h3>
+  <p class="radar-paper-title" aria-hidden="true">Vector peakon equations and isospectral flows in Clifford algebras</p>
   <p class="radar-paper-meta">Andrew N. W. Hone, Vladimir S. Novikov, Jacek Szmigielski · <a href="https://arxiv.org/abs/2606.17238">arXiv</a> · <a href="https://arxiv.org/pdf/2606.17238">PDF</a></p>
   <p class="radar-paper-overview">论文把 peakon 谱问题推广到 Clifford algebra 值变量，导出一族向量 peakon 方程和等谱流。除构造新系统外，还完成二分量情形的分类，并分析行波约化的 Liouville 可积性。</p>
   <details class="radar-paper-details">
@@ -1990,10 +2173,12 @@
   </details>
 </article>
 
-<article id="paper-arxiv-2606-16789" class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-week="2026-W25" data-radar-month="2026-06">
+### Pole Dynamics, Linearization, and Perturbations of the Satsuma--Mimura Equation {#paper-arxiv-2606-16789 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2606-16789" data-radar-week="2026-W25" data-radar-month="2026-06">
   <p class="radar-paper-date"><time datetime="2026-06-15">2026-06-15</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>Lax pair</code> <code>integrable discretization</code></p>
-  <h3>Pole Dynamics, Linearization, and Perturbations of the Satsuma--Mimura Equation</h3>
+  <p class="radar-paper-title" aria-hidden="true">Pole Dynamics, Linearization, and Perturbations of the Satsuma--Mimura Equation</p>
   <p class="radar-paper-meta">Lingjuan Yan, Xingbiao Hu, Yajie Liu, Yingnan Zhang · <a href="https://arxiv.org/abs/2606.16789">arXiv</a> · <a href="https://arxiv.org/pdf/2606.16789">PDF</a></p>
   <p class="radar-paper-overview">论文从 Satsuma--Mimura 方程的有理解极点出发，建立极点动力学、精确线性化和多类扰动之间的统一描述。重点是把 PDE 的奇点运动转化为可计算的有限维系统。</p>
   <details class="radar-paper-details">

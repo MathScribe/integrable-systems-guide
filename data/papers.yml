@@ -1964,3 +1964,14 @@
   updated: "2026-07-17"
   metadata_checked_at: "2026-07-20"
   tags: ["integrable discretization", "singularity confinement"]
+
+- id: "arxiv:2607.15237"
+  title: "\"Goldfish'' equations for infinitely many particles"
+  authors: ["Francois Leyvraz"]
+  url: "https://arxiv.org/abs/2607.15237"
+  arxiv_id: "2607.15237"
+  doi: "10.48550/arXiv.2607.15237"
+  submitted: "2026-07-16"
+  updated: "2026-07-16"
+  metadata_checked_at: "2026-07-20"
+  tags: ["Hamiltonian structure"]
