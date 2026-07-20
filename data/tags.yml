@@ -1,41 +1,48 @@
-topics:
-  - IST
-  - RHP
-  - nonlinear_steepest_descent
-  - dbar_steepest_descent
-  - nonlinear_dispersive_PDE
-  - DNLS
-  - NLS
-  - soliton_stability
-  - soliton_resolution
-  - finite_gap
-  - spectral_theory
-  - Fourier_analysis
-  - functional_analysis
-  - Riemann_surfaces
-
-equations:
-  - KdV
-  - mKdV
-  - NLS
-  - DNLS
-  - AKNS
-  - sine_Gordon
-  - Toda
-  - Camassa_Holm
-  - short_pulse
-
-methods:
-  - Lax_pair
-  - Jost_solutions
-  - Marchenko_equations
-  - Beals_Coifman
-  - small_norm_RHP
-  - g_function
-  - lens_opening
-  - model_RHP
-  - parametrix
-  - Evans_function
-  - modulation_analysis
-  - theta_functions
-  - finite_gap_integration
+# Public research-radar tags. Frontier entries may display at most two values
+# from this list. Keep standard terminology here instead of inventing labels
+# during daily curation.
+frontier_structure_tags:
+  - AKNS hierarchy
+  - 2D Toda hierarchy
+  - Ablowitz--Ladik hierarchy
+  - Drinfeld--Sokolov hierarchy
+  - mKdV hierarchy
+  - Painlevé hierarchy
+  - Riemann--Hilbert problem
+  - nonlinear steepest descent
+  - inverse scattering
+  - Darboux transformation
+  - Bäcklund transformation
+  - Yang--Baxter equation
+  - Lax pair
+  - Hamiltonian structure
+  - Poisson structure
+  - Frobenius manifold
+  - finite-gap
+  - spectral curve
+  - Painlevé
+  - isomonodromy
+  - tau function
+  - integrable discretization
+  - recursion operator
+  - soliton gas
+  - soliton resolution
+  - generalized hydrodynamics
+  - loop equations
+  - integrable probability
+  - quantum integrability
+  - transfer matrix
+  - Bethe ansatz
+  - Chern--Simons theory
+  - inverse problem
+  - conservation laws
+  - symplectic geometry
+  - integrable geometry
+  - topological vector potential
+  - wave kinetics
+  - multiple orthogonal polynomials
+  - Laurent property
+  - Pfaffian
+  - bilinear method
+  - squared eigenfunctions
+  - Poisson--Lie geometry

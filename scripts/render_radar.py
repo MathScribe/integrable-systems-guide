@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
-"""Render the research-radar homepage and archives from YAML data.
-
-The renderer supports two schemas during the migration:
-
-* the legacy daily-edition schema, whose generated output is kept unchanged;
-* the compact 30-day ``frontier`` schema, which emits native paper cards and
-  expandable research annotations without relying on JavaScript.
-"""
+"""Render the cumulative research-radar homepage."""
 
 from __future__ import annotations
 
@@ -14,7 +7,7 @@ import argparse
 import html
 import re
 from collections import defaultdict
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -24,19 +17,6 @@ ROOT = Path(__file__).resolve().parents[1]
 PAPERS_PATH = ROOT / "data" / "papers.yml"
 EDITIONS_PATH = ROOT / "data" / "editions.yml"
 HOME_PATH = ROOT / "docs" / "index.md"
-ARCHIVE_INDEX_PATH = ROOT / "docs" / "radar" / "index.md"
-LATEST_PATH = ROOT / "docs" / "radar" / "latest.md"
-
-ROLE_LABELS = {
-    "recent": "近期进展",
-    "missed-recent": "近期漏读",
-    "journal-version": "正式版本",
-    "group-adjacent": "课题组相关",
-    "method-background": "方法基础",
-    "review-map": "综述地图",
-    "backlog-core": "核心旧文",
-    "adjacent": "相邻方向",
-}
 
 SIGNAL_LABELS = {
     "new-preprint": "新预印本",
@@ -45,6 +25,7 @@ SIGNAL_LABELS = {
 }
 
 ARXIV_CATEGORY_RE = re.compile(r"^[a-z-]+(?:\.(?:[A-Z]{2}|[a-z-]+))?$")
+MATH_TOKEN_RE = re.compile(r"(\\\(.+?\\\)|\\\[.+?\\\]|(?<!\\)\$(?!\$).+?(?<!\\)\$)")
 
 
 def load_yaml(path: Path) -> Any:
@@ -56,40 +37,6 @@ def paper_map() -> dict[str, dict[str, Any]]:
     return {paper["id"]: paper for paper in papers}
 
 
-def source_links(paper: dict[str, Any]) -> str:
-    links: list[str] = []
-    arxiv_id = paper.get("arxiv_id")
-    if arxiv_id:
-        version = paper.get("version") or ""
-        label = f"arXiv:{arxiv_id}{version}"
-        url = paper.get("url", "")
-        if "arxiv.org" not in url:
-            url = f"https://arxiv.org/abs/{arxiv_id}"
-        links.append(f"[{label}]({url})")
-
-    doi = paper.get("doi")
-    if doi and not str(doi).lower().startswith("10.48550/arxiv"):
-        journal = paper.get("journal")
-        label = f"{journal}, doi:{doi}" if journal else f"doi:{doi}"
-        links.append(f"[{label}](https://doi.org/{doi})")
-
-    if not links:
-        links.append(f"[source]({paper['url']})")
-    return " · ".join(links)
-
-
-def date_label(paper: dict[str, Any]) -> str:
-    submitted = paper.get("submitted")
-    updated = paper.get("updated")
-    if submitted and updated and submitted != updated:
-        return f"提交 {submitted}，修订 {updated}"
-    if submitted:
-        return f"提交 {submitted}"
-    if paper.get("year"):
-        return str(paper["year"])
-    return ""
-
-
 def compact(text: str) -> str:
     value = " ".join(str(text).split())
     return re.sub(
@@ -99,177 +46,8 @@ def compact(text: str) -> str:
     )
 
 
-def tag_line(paper: dict[str, Any], role: str, limit: int = 5) -> str:
-    tags = [ROLE_LABELS[role], *paper.get("tags", [])[:limit]]
-    return " ".join(f"`{tag}`" for tag in tags)
-
-
-def render_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
-    """Render one legacy entry without changing the historical output."""
-    authors = ", ".join(paper["authors"])
-    metadata = f"{authors} · {source_links(paper)}"
-    dates = date_label(paper)
-    if dates:
-        metadata += f" · {dates}"
-    return "\n".join(
-        [
-            f"### {paper['title']}",
-            "",
-            metadata + "  ",
-            tag_line(paper, entry["role"]),
-            "",
-            f"**做了什么。** {compact(entry['what_it_does'])}",
-            "",
-            f"**为什么值得读。** {compact(entry['why_read'])}",
-        ]
-    )
-
-
-def render_week(week: dict[str, Any], editions: list[dict[str, Any]], papers: dict[str, dict[str, Any]]) -> str:
-    sections = [
-        f"# 研究雷达归档 · {week['id']}",
-        "",
-        "[全部归档](index.md) · [返回首页](../index.md)",
-        "",
-        f"{week['date_range']} · {compact(week['summary'])}",
-        "",
-    ]
-    for edition in sorted(editions, key=lambda item: item["date"], reverse=True):
-        roles = [ROLE_LABELS[entry["role"]] for entry in edition["entries"]]
-        role_summary = " ".join(f"`{role}`" for role in dict.fromkeys(roles))
-        sections.extend(
-            [
-                f"## {edition['date']}",
-                "",
-                f"{len(edition['entries'])} 篇 · {role_summary}",
-                "",
-                compact(edition["summary"]),
-                "",
-            ]
-        )
-        for entry in edition["entries"]:
-            sections.extend([render_entry(papers[entry["paper_id"]], entry), ""])
-        sections.extend(["---", ""])
-    if sections[-2:] == ["---", ""]:
-        sections = sections[:-2]
-    return "\n".join(sections).rstrip() + "\n"
-
-
-def homepage_items(editions: list[dict[str, Any]]) -> list[tuple[dict[str, Any], dict[str, Any]]]:
-    selected: list[tuple[dict[str, Any], dict[str, Any]]] = []
-    seen: set[str] = set()
-    for edition in sorted(editions, key=lambda item: item["date"], reverse=True)[:3]:
-        ranked = sorted(
-            (entry for entry in edition["entries"] if entry.get("homepage_rank") is not None),
-            key=lambda entry: entry["homepage_rank"],
-        )[:3]
-        for entry in ranked:
-            if entry["paper_id"] in seen:
-                continue
-            selected.append((edition, entry))
-            seen.add(entry["paper_id"])
-            if len(selected) == 8:
-                return selected
-    return selected
-
-
-def render_home(editions: list[dict[str, Any]], papers: dict[str, dict[str, Any]]) -> str:
-    lines = [
-        "# 可积系统研究雷达",
-        "",
-        "面向 DNLS、耦合与多分量 NLS、IST、Riemann--Hilbert 方法、长时渐近、有限带解和非线性波的持续阅读入口。",
-        "",
-        "最新论文：[arXiv · Exactly Solvable and Integrable Systems](https://arxiv.org/list/nlin.SI/recent) · [arXiv · Pattern Formation and Solitons](https://arxiv.org/list/nlin.PS/recent)",
-        "",
-        "[研究雷达归档](radar/index.md) · [资源](resources.md) · [核心主题](topics.md) · [课题组相关](group-work.md)",
-        "",
-        "## 近期推荐",
-        "",
-        "这里汇总最近三期中优先级较高的论文，而不是重复展示当天简报。详细注释和完整推荐历史保存在周归档中。",
-        "",
-    ]
-    for edition, entry in homepage_items(editions):
-        paper = papers[entry["paper_id"]]
-        authors = ", ".join(paper["authors"])
-        lines.extend(
-            [
-                f"### {paper['title']}",
-                "",
-                f"{authors} · {source_links(paper)}  ",
-                tag_line(paper, entry["role"], limit=3),
-                "",
-                compact(entry["what_it_does"]),
-                "",
-                f"推荐于 {edition['date']} · [查看详细说明](radar/{edition['week']}.md#{edition['date']})",
-                "",
-            ]
-        )
-    lines.extend(
-        [
-            "## 其他入口",
-            "",
-            "- [Resources / 资源](resources.md)：最新论文、文献检索、课程讲义和研究资料入口。",
-            "- [Group work / 课题组相关](group-work.md)：本地研究背景、公开笔记和相关链接。",
-            "- [Core topics / 核心主题](topics.md)：本站目前关注的方程、方法和非线性波主题。",
-            "- [About / 关于](about.md)：策展原则、元数据政策、AI 使用和许可证说明。",
-            "",
-            "推荐日期表示本站收录时间，不等同于论文发表日期。元数据核对和 AI 使用说明见 [About / 关于](about.md)。",
-        ]
-    )
-    return "\n".join(lines).rstrip() + "\n"
-
-
-def render_archive_index(weeks: list[dict[str, Any]], editions: list[dict[str, Any]]) -> str:
-    counts: dict[str, int] = defaultdict(int)
-    paper_ids: dict[str, set[str]] = defaultdict(set)
-    for edition in editions:
-        counts[edition["week"]] += 1
-        paper_ids[edition["week"]].update(entry["paper_id"] for entry in edition["entries"])
-
-    lines = [
-        "# 研究雷达归档",
-        "",
-        "归档按周组织；每日推荐日期保留在周页面中，用于追溯当时的编辑选择。",
-        "",
-        "[返回首页](../index.md)",
-        "",
-    ]
-    by_year: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for week in weeks:
-        by_year[week["id"].split("-W", 1)[0]].append(week)
-    for year in sorted(by_year, reverse=True):
-        lines.extend([f"## {year}", ""])
-        for week in sorted(by_year[year], key=lambda item: item["id"], reverse=True):
-            tags = " ".join(f"`{tag}`" for tag in week.get("tags", []))
-            lines.extend(
-                [
-                    f"### {week['id']} · {week['date_range']}",
-                    "",
-                    f"{counts[week['id']]} 期 · {len(paper_ids[week['id']])} 篇",
-                    "",
-                    tags,
-                    "",
-                    compact(week["summary"]),
-                    "",
-                    f"[查看本周完整归档]({week['id']}.md)",
-                    "",
-                ]
-            )
-    return "\n".join(lines).rstrip() + "\n"
-
-
-def render_latest(editions: list[dict[str, Any]]) -> str:
-    latest = max(editions, key=lambda item: item["date"])
-    return (
-        "# 最新研究雷达条目\n\n"
-        "本站不再维护一份与周归档重复的完整“最新简报”。\n\n"
-        f"最新一期：[{latest['date']}]({latest['week']}.md#{latest['date']})。\n\n"
-        "也可以直接查看 [研究雷达归档](index.md) 或返回 [首页](../index.md)。\n"
-    )
-
-
 # ---------------------------------------------------------------------------
-# Compact 30-day schema
+# Cumulative frontier schema
 # ---------------------------------------------------------------------------
 
 
@@ -327,6 +105,11 @@ def validate_frontier(frontier: dict[str, Any], papers: dict[str, dict[str, Any]
         if paper_id in seen:
             raise ValueError(f"frontier contains duplicate paper_id: {paper_id}")
         seen.add(paper_id)
+
+    checked_through = parse_iso_date(frontier.get("checked_through"), "frontier.checked_through")
+    latest_signal = max(parse_iso_date(entry["signal_date"], "signal_date") for entry in entries)
+    if checked_through < latest_signal:
+        raise ValueError("frontier.checked_through cannot precede the latest signal_date")
     return entries
 
 
@@ -342,7 +125,18 @@ def source_links_html(paper: dict[str, Any]) -> str:
     doi = paper.get("doi")
     if doi and not str(doi).lower().startswith("10.48550/arxiv"):
         doi_url = f"https://doi.org/{doi}"
-        links.append(f'<a href="{html.escape(doi_url, quote=True)}">DOI / 期刊</a>')
+        journal = compact(str(paper.get("journal") or "DOI / 期刊"))
+        citation_parts = [str(value) for value in (paper.get("volume"), paper.get("article_number") or paper.get("pages")) if value]
+        citation = ", ".join(citation_parts)
+        year = paper.get("year")
+        journal_label = journal
+        if citation:
+            journal_label += f" {citation}"
+        if year:
+            journal_label += f" ({year})"
+        links.append(
+            f'<a href="{html.escape(doi_url, quote=True)}">{html.escape(journal_label)}</a>'
+        )
 
     if not links:
         links.append(f'<a href="{html.escape(str(paper["url"]), quote=True)}">来源</a>')
@@ -354,33 +148,83 @@ def render_html_tags(entry: dict[str, Any]) -> str:
     return " ".join(f"<code>{html.escape(str(tag))}</code>" for tag in tags)
 
 
+def render_rich_text(value: Any) -> str:
+    """Escape prose while preserving MathJax delimiters inside raw HTML cards."""
+    text = compact(str(value))
+    parts = MATH_TOKEN_RE.split(text)
+    return "".join(
+        f'<span class="arithmatex">{html.escape(part)}</span>'
+        if MATH_TOKEN_RE.fullmatch(part)
+        else html.escape(part)
+        for part in parts
+    )
+
+
+def html_id(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+
+
+def short_date_range(value: str) -> str:
+    match = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2}) 至 \d{4}-(\d{2})-(\d{2})", value)
+    if not match:
+        return value
+    _, start_month, start_day, end_month, end_day = match.groups()
+    if start_month == end_month:
+        return f"{int(start_month)} 月 {int(start_day)}–{int(end_day)} 日"
+    return f"{int(start_month)} 月 {int(start_day)} 日–{int(end_month)} 月 {int(end_day)} 日"
+
+
 def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
     authors = ", ".join(paper["authors"])
     signal_label = SIGNAL_LABELS[entry["signal_type"]]
     tags = render_html_tags(entry)
     tag_paragraph = f'  <p class="radar-paper-tags">{tags}</p>\n' if tags else ""
+    anchor = f'paper-{html_id(entry["paper_id"])}'
+    week_id = frontier_week_id(entry)
+    month_id = entry["signal_date"][:7]
+    source_date_note = ""
+    if (
+        entry["signal_type"] == "new-preprint"
+        and paper.get("submitted")
+        and paper["submitted"] != entry["signal_date"]
+    ):
+        source_date_note = (
+            f' · arXiv 提交日期 <time datetime="{html.escape(str(paper["submitted"]), quote=True)}">'
+            f'{html.escape(str(paper["submitted"]))}</time>（UTC）'
+        )
+    elif (
+        entry["signal_type"] == "major-revision"
+        and paper.get("updated")
+        and paper["updated"] != entry["signal_date"]
+    ):
+        source_date_note = (
+            f' · arXiv 修订日期 <time datetime="{html.escape(str(paper["updated"]), quote=True)}">'
+            f'{html.escape(str(paper["updated"]))}</time>（UTC）'
+        )
     return (
-        '<article class="radar-paper-card radar-paper-card--native" data-radar-native="true">\n'
+        f'<article id="{anchor}" class="radar-paper-card radar-paper-card--native" data-radar-native="true" '
+        f'data-radar-week="{html.escape(week_id, quote=True)}" '
+        f'data-radar-month="{html.escape(month_id, quote=True)}">\n'
         f'  <p class="radar-paper-date"><time datetime="{html.escape(entry["signal_date"], quote=True)}">'
-        f'{html.escape(entry["signal_date"])}</time> · {html.escape(signal_label)}</p>\n'
+        f'{html.escape(entry["signal_date"])}</time> · {html.escape(signal_label)}{source_date_note}</p>\n'
         f"{tag_paragraph}"
-        f'  <h3>{html.escape(str(paper["title"]))}</h3>\n'
+        f'  <h3>{render_rich_text(paper["title"])}</h3>\n'
         f'  <p class="radar-paper-meta">{html.escape(authors)} · {source_links_html(paper)}</p>\n'
-        f'  <p class="radar-paper-overview">{html.escape(compact(entry["summary"]))}</p>\n'
+        f'  <p class="radar-paper-overview">{render_rich_text(entry["summary"])}</p>\n'
         '  <details class="radar-paper-details">\n'
         '    <summary>展开研究内容与创新</summary>\n'
         '    <div class="radar-paper-detail-grid">\n'
         '      <section>\n'
         '        <h4>研究问题与主要结果</h4>\n'
-        f'        <p>{html.escape(compact(entry["main_result"]))}</p>\n'
+        f'        <p>{render_rich_text(entry["main_result"])}</p>\n'
         '      </section>\n'
         '      <section>\n'
         '        <h4>可积结构与方法</h4>\n'
-        f'        <p>{html.escape(compact(entry["integrable_structure"]))}</p>\n'
+        f'        <p>{render_rich_text(entry["integrable_structure"])}</p>\n'
         '      </section>\n'
         '      <section>\n'
         '        <h4>创新</h4>\n'
-        f'        <p>{html.escape(compact(entry["innovation"]))}</p>\n'
+        f'        <p>{render_rich_text(entry["innovation"])}</p>\n'
         '      </section>\n'
         '    </div>\n'
         '  </details>\n'
@@ -396,176 +240,117 @@ def frontier_week_id(entry: dict[str, Any]) -> str:
     return f"{iso_year}-W{iso_week:02d}"
 
 
-def visible_frontier_entries(frontier: dict[str, Any], papers: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
-    entries = validate_frontier(frontier, papers)
-    latest_value = frontier.get("generated_through") or max(entry["signal_date"] for entry in entries)
-    latest = parse_iso_date(str(latest_value), "frontier.generated_through")
-    window_days = int(frontier.get("window_days", 30))
-    if window_days < 1:
-        raise ValueError("frontier.window_days must be positive")
-    first = latest - timedelta(days=window_days - 1)
+def all_frontier_entries(frontier: dict[str, Any], papers: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
     return sorted(
-        (entry for entry in entries if first <= parse_iso_date(entry["signal_date"], "signal_date") <= latest),
+        validate_frontier(frontier, papers),
         key=lambda entry: (entry["signal_date"], entry["paper_id"]),
         reverse=True,
     )
 
 
+def render_screening_details(week: dict[str, Any]) -> str:
+    screening = week.get("screening", {})
+    if not screening:
+        return ""
+    paragraphs: list[str] = []
+    if week.get("summary"):
+        paragraphs.append(compact(week["summary"]))
+    body = " ".join(render_rich_text(paragraph) for paragraph in paragraphs)
+    week_id = str(week["id"])
+    return (
+        f'<p class="radar-week-overview" data-radar-screening-week="{html.escape(week_id, quote=True)}" hidden>'
+        f'<strong>本周概览：</strong>{body}</p>'
+    )
+
+
 def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]) -> str:
     frontier = data["frontier"]
-    entries = visible_frontier_entries(frontier, papers)
+    entries = all_frontier_entries(frontier, papers)
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for entry in entries:
         grouped[frontier_week_id(entry)].append(entry)
 
     week_map = {week["id"]: week for week in data.get("frontier_weeks", data.get("weeks", []))}
-    window_days = int(frontier.get("window_days", 30))
+    week_ids = sorted(grouped, reverse=True)
+    week_metadata = "\n".join(
+        f'  <span hidden data-radar-week-option="{html.escape(week_id, quote=True)}" '
+        f'data-label="{html.escape(week_id.replace("-W", " 年第 ") + " 周 · " + short_date_range(week_map.get(week_id, {}).get("date_range", week_id)), quote=True)}" '
+        f'data-count="{len(grouped[week_id])}"></span>'
+        for week_id in week_ids
+    )
     lines = [
         "# 可积系统研究雷达",
         "",
-        "面向可积系统读者，关注最近出现的强创新、新方向和新方法。主题边界保持宽松，但每篇都必须能够说明可积结构怎样参与主要结果。",
+        "这里精选近期可积系统及相关数学物理方向的新论文，重点呈现值得关注的新结构、新方法和新结果。",
         "",
-        f"当前显示最近 {window_days} 天的论文事件；日期指首次公开、重大修订或首次正式在线发表，而不是本站收录日期。",
+        "论文按首次公开、重大修订或正式发表日期排序。每条包括简要概览和可展开说明；内容由自动流程整理，数学结论请以原论文为准。",
         "",
-        "论文说明由自动流程整理，并经元数据核验；除特别标注外，不代表编辑已经完整阅读或逐句审校。",
+        "候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。",
         "",
-        "[研究雷达归档](radar/index.md) · [资源](resources.md) · [核心主题](topics.md) · [课题组相关](group-work.md)",
+        f'<div class="radar-week-navigation" data-default-week="{html.escape(week_ids[0], quote=True)}" '
+        f'data-total-count="{len(entries)}">',
+        '  <button type="button" data-radar-action="older">← 较早一周</button>',
+        '  <span class="radar-week-current" aria-live="polite"></span>',
+        '  <button type="button" data-radar-action="newer">较新一周 →</button>',
+        '  <button type="button" class="radar-show-all" data-radar-action="all">查看全部</button>',
+        '  <div class="radar-local-search" role="search">',
+        '    <label for="radar-paper-search">搜索论文</label>',
+        '    <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">',
+        '    <span class="radar-search-count" aria-live="polite"></span>',
+        '  </div>',
+        f"{week_metadata}",
+        "</div>",
         "",
     ]
-    for week_id in sorted(grouped, reverse=True):
-        week = week_map.get(week_id, {})
-        heading = week.get("date_range", week_id)
-        lines.extend([f"## {week_id} · {heading}", "", f"{len(grouped[week_id])} 篇", ""])
+    for week_id in week_ids:
+        screening = render_screening_details(week_map.get(week_id, {"id": week_id}))
+        if screening:
+            lines.extend([screening, ""])
+
+    rendered_month: str | None = None
+    for week_id in week_ids:
         for entry in grouped[week_id]:
+            month_id = entry["signal_date"][:7]
+            if month_id != rendered_month:
+                year, month = month_id.split("-", 1)
+                lines.extend(
+                    [
+                        f'<p id="month-{month_id}" class="radar-month-label" '
+                        f'data-radar-month-group="{month_id}">{int(year)} 年 {int(month)} 月</p>',
+                        "",
+                    ]
+                )
+                rendered_month = month_id
             lines.extend([render_frontier_entry(papers[entry["paper_id"]], entry), ""])
-    return "\n".join(lines).rstrip() + "\n"
-
-
-def screening_note(screening: dict[str, Any]) -> list[str]:
-    if not screening:
-        return []
-    lines = ["## 本周筛选说明", ""]
-    sources = screening.get("sources_checked", [])
-    if sources:
-        lines.extend(["检查来源：" + "；".join(compact(source) for source in sources) + "。", ""])
-    count_fields = [
-        ("raw_candidates", "去重候选"),
-        ("title_screened", "标题筛选"),
-        ("abstract_screened", "摘要筛选"),
-        ("selected", "最终收录"),
-    ]
-    counts = [f"{label} {screening[field]}" for field, label in count_fields if field in screening]
-    if counts:
-        lines.extend(["；".join(counts) + "。", ""])
-    if screening.get("coverage_note"):
-        lines.extend([compact(screening["coverage_note"]), ""])
-    return lines
-
-
-def render_frontier_week(
-    week: dict[str, Any], entries: list[dict[str, Any]], papers: dict[str, dict[str, Any]]
-) -> str:
-    lines = [
-        f"# 研究雷达归档 · {week['id']}",
-        "",
-        "[全部归档](index.md) · [返回首页](../index.md)",
-        "",
-        f"{week.get('date_range', week['id'])} · {compact(week.get('summary', ''))}",
-        "",
-        f"本周收录 {len(entries)} 篇。",
-        "",
-    ]
-    for entry in sorted(entries, key=lambda item: (item["signal_date"], item["paper_id"]), reverse=True):
-        lines.extend([render_frontier_entry(papers[entry["paper_id"]], entry), ""])
-    lines.extend(screening_note(week.get("screening", {})))
-    return "\n".join(lines).rstrip() + "\n"
-
-
-def render_frontier_archive_index(
-    weeks: list[dict[str, Any]], entries: list[dict[str, Any]]
-) -> str:
-    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for entry in entries:
-        grouped[frontier_week_id(entry)].append(entry)
-    week_map = {week["id"]: week for week in weeks}
-    lines = [
-        "# 研究雷达归档",
-        "",
-        "归档按论文实际事件日期分周组织。周页面只展示最终收录论文和聚合筛选信息。",
-        "",
-        "[返回首页](../index.md)",
-        "",
-    ]
-    by_year: dict[str, list[str]] = defaultdict(list)
-    for week_id in grouped:
-        by_year[week_id.split("-W", 1)[0]].append(week_id)
-    for year in sorted(by_year, reverse=True):
-        lines.extend([f"## {year}", ""])
-        for week_id in sorted(by_year[year], reverse=True):
-            week = week_map.get(week_id, {})
-            date_range = week.get("date_range", week_id)
-            summary = compact(week.get("summary", ""))
-            lines.extend(
-                [
-                    f"### {week_id} · {date_range}",
-                    "",
-                    f"{len(grouped[week_id])} 篇",
-                    "",
-                ]
-            )
-            if summary:
-                lines.extend([summary, ""])
-            lines.extend([f"[查看本周论文]({week_id}.md)", ""])
-    return "\n".join(lines).rstrip() + "\n"
-
-
-def render_frontier_latest(entries: list[dict[str, Any]]) -> str:
-    latest = max(entries, key=lambda entry: (entry["signal_date"], entry["paper_id"]))
-    week_id = frontier_week_id(latest)
-    return (
-        "# 最新研究雷达条目\n\n"
-        "最新论文直接显示在首页；这里仅保留旧链接的兼容入口。\n\n"
-        f"当前最新事件日期为 {latest['signal_date']}，见 [{week_id}]({week_id}.md)。\n\n"
-        "也可以查看 [研究雷达归档](index.md) 或返回 [首页](../index.md)。\n"
+    lines.extend(
+        [
+            "## 站内导航",
+            "",
+            "- [Core topics / 核心主题](topics.md)：当前关注的方程、方法与研究问题。",
+            "- [Resources / 资源](resources.md)：论文检索、课程与专题资料。",
+            "- [Group work / 课题组相关](group-work.md)：公开笔记与研究链接。",
+            "- [About / 关于](about.md)：选稿原则、数据来源与 AI 使用说明。",
+            "",
+            "## 数据来源与筛选",
+            "",
+            "论文通过 arXiv 分类与跨分类检索、Crossref、期刊 online-first 页面及出版商记录发现和核验。候选按 arXiv ID、DOI 和题名去重，再依据可积结构在研究中的实际作用和创新强度筛选；普通网页搜索只用于查漏，不作为最终依据。",
+            "",
+            "日期沿用来源记录：arXiv 版本页保留 UTC 提交与修订日期，新预印本按官方 announcement date 排序和分周；期刊采用出版商标注的首次在线发表日期。每日检索按北京时间执行。",
+            "",
+            "每日执行检索，但不要求每天发布，也不设置固定篇数。更多信息见[数据与筛选方法](editorial-policy.md)。",
+        ]
     )
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def expected_outputs() -> dict[Path, str]:
     data = load_yaml(EDITIONS_PATH)
     papers = paper_map()
 
-    if data.get("frontier"):
-        entries = visible_frontier_entries(data["frontier"], papers)
-        weeks = data.get("frontier_weeks", data.get("weeks", []))
-        outputs = {
-            HOME_PATH: render_frontier_home(data, papers),
-            ARCHIVE_INDEX_PATH: render_frontier_archive_index(weeks, entries),
-            LATEST_PATH: render_frontier_latest(entries),
-        }
-        entries_by_week: dict[str, list[dict[str, Any]]] = defaultdict(list)
-        for entry in entries:
-            entries_by_week[frontier_week_id(entry)].append(entry)
-        week_map = {week["id"]: week for week in weeks}
-        for week_id, week_entries in entries_by_week.items():
-            week = week_map.get(week_id, {"id": week_id, "date_range": week_id, "summary": ""})
-            path = ROOT / "docs" / "radar" / f"{week_id}.md"
-            outputs[path] = render_frontier_week(week, week_entries, papers)
-        return outputs
+    if not data.get("frontier"):
+        raise ValueError("data/editions.yml requires frontier data")
 
-    weeks = data["weeks"]
-    editions = data["editions"]
-    outputs = {
-        HOME_PATH: render_home(editions, papers),
-        ARCHIVE_INDEX_PATH: render_archive_index(weeks, editions),
-        LATEST_PATH: render_latest(editions),
-    }
-    editions_by_week: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for edition in editions:
-        editions_by_week[edition["week"]].append(edition)
-    for week in weeks:
-        path = ROOT / "docs" / "radar" / f"{week['id']}.md"
-        outputs[path] = render_week(week, editions_by_week[week["id"]], papers)
-    return outputs
+    return {HOME_PATH: render_frontier_home(data, papers)}
 
 
 def main() -> None:

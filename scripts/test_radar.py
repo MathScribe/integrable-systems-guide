@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression tests for the compact 30-day radar schema and confirmed sample."""
+"""Regression tests for the cumulative compact radar and confirmed sample."""
 
 from __future__ import annotations
 
@@ -41,6 +41,7 @@ def test_component_contract() -> None:
             "url": "https://arxiv.org/abs/2607.13773",
             "arxiv_id": "2607.13773",
             "doi": "10.48550/arXiv.2607.13773",
+            "submitted": "2026-07-14",
         },
         "arxiv:old": {
             "id": "arxiv:old",
@@ -57,8 +58,8 @@ def test_component_contract() -> None:
     card = render_radar.render_frontier_entry(papers["arxiv:2607.13773"], entry)
 
     required_fragments = (
-        "研究问题与主要结果",
-        "可积结构与方法",
+        "<h4>研究问题与主要结果</h4>",
+        "<h4>可积结构与方法</h4>",
         "<h4>创新</h4>",
         "展开研究内容与创新",
         "2026-07-15",
@@ -66,6 +67,9 @@ def test_component_contract() -> None:
         "Darboux transformation",
         "arXiv</a>",
         "PDF</a>",
+        "arXiv 提交日期",
+        "2026-07-14",
+        "（UTC）",
     )
     for fragment in required_fragments:
         assert fragment in card, fragment
@@ -83,6 +87,12 @@ def test_component_contract() -> None:
     for fragment in forbidden_fragments:
         assert fragment not in card, fragment
 
+    math_card = render_radar.render_frontier_entry(
+        papers["arxiv:2607.13773"],
+        {**entry, "summary": r"在有限 \(n\) 层面得到结果。"},
+    )
+    assert '<span class="arithmatex">\\(n\\)</span>' in math_card
+
     old_entry = {
         **sample_entry("arxiv:old"),
         "signal_date": "2026-05-01",
@@ -90,12 +100,11 @@ def test_component_contract() -> None:
         "structure_tags": ["inverse scattering"],
     }
     frontier = {
-        "window_days": 30,
-        "generated_through": "2026-07-19",
+        "checked_through": "2026-07-19",
         "entries": [entry, old_entry],
     }
-    visible = render_radar.visible_frontier_entries(frontier, papers)
-    assert [item["paper_id"] for item in visible] == ["arxiv:2607.13773"]
+    cumulative = render_radar.all_frontier_entries(frontier, papers)
+    assert [item["paper_id"] for item in cumulative] == ["arxiv:2607.13773", "arxiv:old"]
 
     home = render_radar.render_frontier_home(
         {
@@ -104,15 +113,37 @@ def test_component_contract() -> None:
                     "id": "2026-W29",
                     "date_range": "2026-07-13 至 2026-07-19",
                     "summary": "测试周。",
+                    "screening": {"selected": 2},
                 }
             ],
             "frontier": frontier,
         },
         papers,
     )
-    assert "最近 30 天" in home
+    assert "这里精选近期" in home
     assert "2026-W29" in home
     assert "Multihump-Multivalley Soliton Families" in home
+    assert "Old paper" in home
+    assert "## 站内导航" in home
+    assert 'class="radar-week-navigation"' in home
+    assert 'data-radar-action="older"' in home
+    assert 'data-radar-action="newer"' in home
+    assert 'data-radar-action="all"' in home
+    assert 'id="radar-paper-search"' in home
+    assert "搜索标题、作者、标签或内容" in home
+    assert 'class="radar-week-overview" data-radar-screening-week="2026-W29" hidden' in home
+    assert "<strong>本周概览：</strong>测试周。" in home
+    assert home.index("radar-week-overview") < home.index("radar-paper-card")
+    assert 'data-default-week="2026-W29"' in home
+    assert 'data-radar-week="2026-W29"' in home
+    assert 'data-radar-month-group="2026-07"' in home
+    assert "候选来源：" in home
+    assert "## 数据来源与筛选" in home
+    assert "Crossref" in home
+    assert "普通网页搜索只用于查漏" in home
+    assert "[数据与筛选方法](editorial-policy.md)" in home
+    assert home.index("## 数据来源与筛选") > home.index("## 站内导航")
+    assert "Exactly Solvable and Integrable Systems" not in home
     assert "推荐于" not in home
 
     invalid = {**entry, "structure_tags": ["one", "two", "three"]}
@@ -128,32 +159,32 @@ def test_enabled_frontier() -> None:
     data = yaml.safe_load((ROOT / "data" / "editions.yml").read_text(encoding="utf-8"))
     frontier = data.get("frontier")
     assert frontier is not None, "the frontier dataset must be enabled"
-    assert frontier.get("window_days") == 30
     assert "frontier_staging" not in data
 
     registry = render_radar.paper_map()
     entries = render_radar.validate_frontier(frontier, registry)
-    visible = render_radar.visible_frontier_entries(frontier, registry)
+    cumulative = render_radar.all_frontier_entries(frontier, registry)
     assert entries
-    assert visible
+    assert cumulative
     assert len({entry["paper_id"] for entry in entries}) == len(entries)
 
     # Freeze the confirmed migration baseline without blocking future daily updates.
-    if frontier.get("generated_through") == "2026-07-19":
+    if frontier.get("checked_through") == "2026-07-20":
         expected_counts = {
-            "2026-W25": 2,
-            "2026-W26": 16,
-            "2026-W27": 6,
-            "2026-W28": 15,
-            "2026-W29": 5,
+            "2026-W25": 13,
+            "2026-W26": 22,
+            "2026-W27": 10,
+            "2026-W28": 17,
+            "2026-W29": 16,
+            "2026-W30": 1,
         }
-        assert len(entries) == 44
-        assert len(visible) == 44
+        assert len(entries) == 79
+        assert len(cumulative) == 79
         assert Counter(render_radar.frontier_week_id(entry) for entry in entries) == expected_counts
         assert {week["id"] for week in data["frontier_weeks"]} == set(expected_counts)
         assert Counter(entry["signal_type"] for entry in entries) == {
-            "new-preprint": 36,
-            "journal-publication": 8,
+            "new-preprint": 57,
+            "journal-publication": 22,
         }
 
 

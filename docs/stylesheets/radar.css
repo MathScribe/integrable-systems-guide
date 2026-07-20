@@ -1,6 +1,124 @@
+.radar-week-navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.15rem;
+}
+
+.radar-week-navigation button {
+  padding: 0.3rem 0.62rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.35rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+}
+
+.radar-week-navigation button:hover:not(:disabled),
+.radar-week-navigation button:focus-visible {
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+  outline: none;
+}
+
+.radar-week-navigation button:disabled {
+  cursor: default;
+  opacity: 0.42;
+}
+
+.radar-week-current {
+  min-width: 9.5rem;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.radar-week-navigation .radar-show-all {
+  margin-left: auto;
+}
+
+.radar-local-search {
+  display: grid;
+  grid-template-columns: auto minmax(12rem, 1fr) auto;
+  align-items: center;
+  gap: 0.55rem;
+  width: 100%;
+  margin-top: 0.15rem;
+}
+
+.radar-local-search label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.radar-local-search input {
+  width: 100%;
+  padding: 0.42rem 0.65rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.radar-local-search input:focus {
+  border-color: var(--md-accent-fg-color);
+  outline: 2px solid color-mix(in srgb, var(--md-accent-fg-color) 18%, transparent);
+}
+
+.radar-search-count {
+  min-width: 4.2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.76rem;
+  white-space: nowrap;
+}
+
+.radar-month-label {
+  margin: 1.1rem 0 0.45rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.radar-week-overview {
+  margin: 0.65rem 0 1.05rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.radar-week-overview[hidden] {
+  display: none !important;
+}
+
+.radar-week-overview strong {
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+}
+
+.radar-all-mode .radar-paper-card {
+  margin: 0.48rem 0;
+  padding: 0.58rem 0.75rem;
+}
+
+.radar-all-mode .radar-paper-overview {
+  display: none;
+}
+
+.radar-all-mode .radar-paper-tags {
+  margin-bottom: 0.3rem;
+}
+
 .radar-paper-card {
-  margin: 1rem 0;
-  padding: 1rem 1.1rem;
+  margin: 0.75rem 0;
+  padding: 0.78rem 0.9rem;
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 0.65rem;
   background: var(--md-default-bg-color);
@@ -8,13 +126,13 @@
 }
 
 .radar-paper-card > h3 {
-  margin: 0.15rem 0 0.45rem;
+  margin: 0.1rem 0 0.3rem;
   font-size: 1.05rem;
   line-height: 1.4;
 }
 
 .radar-paper-meta {
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.3rem;
   color: var(--md-default-fg-color--light);
   font-size: 0.82rem;
   line-height: 1.5;
@@ -24,7 +142,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.32rem;
-  margin: 0.25rem 0 0.65rem;
+  margin: 0.18rem 0 0.42rem;
 }
 
 .radar-paper-tags code {
@@ -35,14 +153,14 @@
 }
 
 .radar-paper-overview {
-  margin: 0.55rem 0 0.7rem;
-  line-height: 1.68;
+  margin: 0.38rem 0 0.5rem;
+  line-height: 1.62;
 }
 
 .radar-paper-details {
-  margin-top: 0.45rem;
+  margin-top: 0.3rem;
   border-top: 1px solid var(--md-default-fg-color--lightest);
-  padding-top: 0.55rem;
+  padding-top: 0.42rem;
 }
 
 .radar-paper-details > summary {
@@ -67,17 +185,18 @@
 }
 
 .radar-paper-detail-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.9rem;
-  margin-top: 0.75rem;
+  margin-top: 0.55rem;
 }
 
 .radar-paper-detail-grid section {
   min-width: 0;
-  padding: 0.65rem 0.75rem;
-  border-radius: 0.45rem;
-  background: var(--md-code-bg-color);
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.radar-paper-detail-grid section:first-child {
+  border-top: 0;
+  padding-top: 0.15rem;
 }
 
 .radar-paper-detail-grid h4 {
@@ -92,11 +211,24 @@
 }
 
 @media screen and (max-width: 52rem) {
-  .radar-paper-detail-grid {
-    grid-template-columns: 1fr;
+  .radar-week-current {
+    order: -1;
+    width: 100%;
+  }
+
+  .radar-week-navigation .radar-show-all {
+    margin-left: 0;
+  }
+
+  .radar-local-search {
+    grid-template-columns: 1fr auto;
+  }
+
+  .radar-local-search label {
+    grid-column: 1 / -1;
   }
 
   .radar-paper-card {
-    padding: 0.85rem 0.9rem;
+    padding: 0.72rem 0.78rem;
   }
 }

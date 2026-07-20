@@ -1,79 +1,91 @@
 # Integrable Systems Research Guide
 
-A compact research guide and AI-assisted research radar for integrable systems, inverse scattering transform, Riemann--Hilbert problems, nonlinear steepest descent, nonlinear waves, finite-gap methods, and related spectral/geometric techniques.
+A compact, AI-assisted research radar for integrable systems and related mathematical physics.
 
 **Public site:** https://mathscribe.github.io/integrable-systems-guide/
 
-The site is a maintained reading radar rather than a same-day paper feed. The homepage shows a rolling selection from recent editions; weekly archive pages are the permanent recommendation record.
+The site is designed for researchers already familiar with integrable PDEs, spectral methods, and nonlinear waves. It selectively records recent papers whose integrable structure or integrability-driven result is sufficiently innovative to merit attention. It is neither an arXiv mirror nor a personalized reading list.
 
-## Project principles
+## Public model
 
-1. Keep the public navigation short.
-2. Recommend a useful reading set rather than merely listing papers uploaded that day.
-3. Treat the edition date as recommendation history, not as a publication-date claim.
-4. Mix recent papers with missed papers, older high-relevance work, formal journal versions, group-adjacent work, and method/background papers when useful.
-5. Prefer formal journal/DOI records for older work.
-6. Keep current bibliographic facts separate from editorial recommendation history.
-7. Treat AI-assisted curation as a discovery aid, not as mathematical verification.
-8. Automate rendering and consistency checks, while keeping paper selection and annotation reviewable.
+- The homepage defaults to the latest ISO week.
+- Readers can move between weeks or open a searchable cumulative view grouped by month.
+- Each paper shows bibliographic metadata, official arXiv categories, at most two controlled structure tags, and a concise overview.
+- Details expand into `研究问题与主要结果`, `可积结构与方法`, and `创新`.
+- The homepage is the single paper browser; week navigation, search, and the cumulative view stay on that page.
 
-## Data and rendering model
+## Authoritative data
 
-- `data/papers.yml` stores current bibliographic metadata and stable identities.
-- `data/editions.yml` stores recommendation dates, reading roles, homepage priority, and annotations.
-- `scripts/render_radar.py` generates the homepage, weekly archives, archive index, and the short latest-compatibility page.
-- `scripts/validate_radar.py` validates paper identities, edition references, roles, week numbers, and homepage ranks.
+- `data/papers.yml` stores one current bibliographic record per paper.
+- `data/editions.yml` stores the cumulative `frontier` events and weekly summaries. Superseded reading-chain editions remain available through Git history rather than the active data file.
+- `data/tags.yml` contains the controlled public structure-tag vocabulary.
+- Generated Markdown in `docs/index.md` must not be edited by hand.
 
-`data/editions.yml` is the authoritative source for recommendation history. Updating an arXiv version changes `data/papers.yml`; it does not create a new edition entry.
+`frontier.checked_through` records the latest date for which the bounded discovery pass completed successfully. It is a maintenance checkpoint, not a public recommendation date.
 
-## Editorial workflow
+One paper has one public frontier entry. When a selected preprint receives a qualifying major revision or its first formal journal publication, update its existing paper and frontier records rather than adding a duplicate card. Git history preserves the earlier state.
 
-1. Search current primary sources manually, including arXiv versions, DOI/journal records, author or group pages, references from current reading, and selected backlog material.
-2. Deduplicate by arXiv ID, DOI, and normalized title against `data/papers.yml`.
-3. Refresh the current full author list, title, source links, submission and revision dates, version, DOI, and journal information.
-4. Select roughly 3--7 papers according to quality and research relevance.
-5. Add edition entries with a stable role, an abstract-grounded “what it does” note, and a “why read” note.
-6. Assign `homepage_rank` only to the small subset that should appear in the rolling homepage view.
-7. Run the renderer and validators, review the complete diff, and open or update one pull request.
-8. Keep the PR open for explicit owner review; do not merge or enable auto-merge without approval.
+## Local Codex workflow
 
-An existing arXiv ID is not recommended again merely because a new version appears. Its current metadata is refreshed in place. Metadata-only changes and new recommendations remain separate in the PR description.
+The canonical reusable prompt and maintenance instructions are in [maintenance/daily-radar-workflow.md](maintenance/daily-radar-workflow.md). The public-facing account of discovery, Crossref and publisher verification, selection, and annotation is in [docs/editorial-policy.md](docs/editorial-policy.md).
 
-## Current site structure
+In short:
+
+1. Discover recent candidates broadly; do not fill a quota.
+2. Separate discovery from selection.
+3. Verify selected candidates against primary sources.
+4. Update structured YAML only.
+5. Render pages deterministically.
+6. Run the complete local check.
+7. Inspect the diff and open one reviewable PR only when there is a real change.
+8. Never merge or enable auto-merge without explicit owner approval.
+
+Daily maintenance means checking every day, not publishing every day. Zero-paper days are valid. Old background papers, method primers, and missed backlog items do not enter the public radar merely to maintain output.
+
+## Commands
+
+```powershell
+.venv\Scripts\python.exe scripts\render_radar.py
+.venv\Scripts\python.exe scripts\check_project.py
+.venv\Scripts\python.exe -m mkdocs serve
+```
+
+On macOS or Linux, use the active environment's `python` executable instead.
+
+## Repository structure
 
 ```text
-docs/index.md                  # Rolling recommendations from recent editions
-docs/radar/index.md            # Weekly archive index
-docs/radar/latest.md           # Short compatibility pointer only
-docs/radar/YYYY-WXX.md         # Permanent weekly files with dated editions
-docs/resources.md              # Learning resources and search links
-docs/group-work.md             # Local group-related links and public notes
-docs/topics.md                 # Compact topic scope
-docs/about.md                  # Site model, curation policy, metadata, AI use
+data/papers.yml                 Bibliographic registry and deduplication identities
+data/editions.yml               Cumulative frontier entries and weekly summaries
+data/tags.yml                   Controlled public structure tags
 
-data/papers.yml                # Current bibliographic metadata registry
-data/editions.yml              # Recommendation history and annotations
-scripts/render_radar.py        # Deterministic page renderer
-scripts/validate_radar.py      # Registry and edition validation
-.github/workflows/quality.yml  # Rendering checks and strict MkDocs build
+scripts/render_radar.py         Deterministic page renderer
+scripts/validate_radar.py       Bibliographic identity validation
+scripts/validate_frontier_data.py
+                                 Frontier text and controlled-tag validation
+scripts/test_radar.py           Radar component and dataset regression tests
+scripts/check_project.py        Single local validation entry point
+
+maintenance/daily-radar-workflow.md
+                                 Canonical Codex discovery, selection, and PR procedure
+
+docs/index.md                   Generated main radar page
+docs/about.md                   Public explanation of scope and AI use
+docs/editorial-policy.md        Public discovery, selection, event, and metadata policy
+docs/resources.md               Curated external resources
+
+.github/workflows/quality.yml   Pull-request validation
+.github/workflows/deploy-mkdocs.yml
+                                 GitHub Pages deployment after merge
 ```
 
-Only files under `docs/` are published by MkDocs.
+## Editorial boundary
 
-## Local preview
+Thematic relevance is a broad gate; innovation strength is decisive. Integrable geometry, probability, random matrices, quantum many-body systems, statistical physics, gravity, and optics may be included when integrability is central to the conclusion. Public annotations use neutral, evidence-grounded language and do not publish negative assessments of papers that were not selected.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python scripts/validate_radar.py
-python scripts/render_radar.py --check
-mkdocs serve
-```
+## Publication policy
 
-## Publication phases
-
-The current phase requires explicit owner review and merge approval. Automatic publication may be enabled only after the owner confirms that the reviewed process has been stable enough. CI success alone is not merge approval.
+CI success is not merge approval. Local Codex prepares a reviewable branch and PR; the owner decides whether to merge.
 
 ## License
 

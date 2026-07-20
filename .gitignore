@@ -7,6 +7,10 @@ __pycache__/
 
 # MkDocs build output
 site/
+site-preview/
+site-check/
+.mkdocs-preview.*
+local-github-pages-home.png
 
 # OS/editor noise
 .DS_Store
