@@ -1,0 +1,56 @@
+name: Render radar branch
+
+on:
+  push:
+    branches:
+      - "codex/daily-radar-*"
+    paths:
+      - "data/papers.yml"
+      - "data/editions.yml"
+      - "data/tags.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-radar-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    env:
+      PIP_DISABLE_PIP_VERSION_CHECK: "1"
+    steps:
+      - name: Check out radar branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install --quiet -r requirements.txt
+
+      - name: Render generated radar page
+        run: python scripts/render_radar.py
+
+      - name: Run complete project check
+        run: python scripts/check_project.py
+
+      - name: Commit generated page when changed
+        shell: bash
+        run: |
+          if git diff --quiet -- docs/index.md; then
+            echo "Renderer produced no tracked page change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/index.md
+          git commit -m "Render research radar"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
