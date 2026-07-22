@@ -2105,3 +2105,88 @@
     - "Quantum Spectral Curve"
     - "harmonic sums"
     - "planar N=4 super Yang--Mills"
+
+- id: "doi:10.1088/1742-5468/ae80b5"
+  title: "Integrability of Multispecies Long-Range Swap Models with Species-Dependent Interpolation"
+  authors:
+    - "Eunghyun Lee"
+  url: "https://doi.org/10.1088/1742-5468/ae80b5"
+  arxiv_id: "2604.12136"
+  doi: "10.1088/1742-5468/ae80b5"
+  journal: "Journal of Statistical Mechanics: Theory and Experiment"
+  volume: "2026"
+  issue: "7"
+  article_number: "073102"
+  year: 2026
+  published: "2026-07-20"
+  submitted: "2026-04-13"
+  updated: "2026-04-13"
+  version: "v1"
+  metadata_checked_at: "2026-07-22"
+  tags:
+    - "multispecies exclusion process"
+    - "coordinate Bethe ansatz"
+    - "Yang--Baxter equation"
+    - "long-range swap"
+
+- id: "doi:10.1017/prm.2026.10167"
+  title: "Linear Systems, Determinants, and Solutions of the Kadomtsev--Petviashvili Equation"
+  authors:
+    - "Gordon Blower"
+    - "Simon J. Malham"
+  url: "https://doi.org/10.1017/prm.2026.10167"
+  arxiv_id: "2512.15245"
+  doi: "10.1017/prm.2026.10167"
+  journal: "Proceedings of the Royal Society of Edinburgh: Section A Mathematics"
+  pages: "1-55"
+  year: 2026
+  published: "2026-07-21"
+  submitted: "2025-12-17"
+  updated: "2025-12-17"
+  version: "v1"
+  metadata_checked_at: "2026-07-22"
+  tags:
+    - "Kadomtsev--Petviashvili equation"
+    - "Fredholm determinant"
+    - "tau function"
+    - "linear systems"
+
+- id: "doi:10.1088/1751-8121/ae8490"
+  title: "Adiabatic Perturbation Theory for the F=1 Spinor Nonlinear Schrödinger Equation with Nonvanishing Boundary Conditions"
+  authors:
+    - "Vassilis Rothos"
+  url: "https://doi.org/10.1088/1751-8121/ae8490"
+  arxiv_id: null
+  doi: "10.1088/1751-8121/ae8490"
+  journal: "Journal of Physics A: Mathematical and Theoretical"
+  volume: "59"
+  issue: "29"
+  article_number: "295701"
+  year: 2026
+  published: "2026-07-20"
+  metadata_checked_at: "2026-07-22"
+  tags:
+    - "spinor nonlinear Schrödinger equation"
+    - "Riemann--Hilbert problem"
+    - "adiabatic perturbation theory"
+    - "nonvanishing boundary conditions"
+
+- id: "doi:10.1515/zna-2026-0116"
+  title: "Dynamical Fermionization and Emergent Bethe Rapidity Structure in the Spatial Density of Cold Quenched Lieb--Liniger Gas"
+  authors:
+    - "Sumita Datta"
+    - "James M. Rejcek"
+    - "Rajasee Datta"
+    - "Maxim Olshanii"
+  url: "https://doi.org/10.1515/zna-2026-0116"
+  arxiv_id: null
+  doi: "10.1515/zna-2026-0116"
+  journal: "Zeitschrift für Naturforschung A"
+  year: 2026
+  published: "2026-07-20"
+  metadata_checked_at: "2026-07-22"
+  tags:
+    - "Lieb--Liniger model"
+    - "Bethe rapidities"
+    - "dynamical fermionization"
+    - "quantum Monte Carlo"
