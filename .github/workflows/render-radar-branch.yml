@@ -8,6 +8,7 @@ on:
       - "data/papers.yml"
       - "data/editions.yml"
       - "data/tags.yml"
+      - "maintenance/radar-update-2026-07-22.yml"
 
 permissions:
   contents: write
@@ -36,21 +37,61 @@ jobs:
       - name: Install dependencies
         run: pip install --quiet -r requirements.txt
 
+      - name: Apply staged radar data
+        if: ${{ hashFiles('maintenance/radar-update-2026-07-22.yml') != '' }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+
+          staging_path = Path('maintenance/radar-update-2026-07-22.yml')
+          staging = yaml.safe_load(staging_path.read_text(encoding='utf-8'))
+
+          papers_path = Path('data/papers.yml')
+          papers_text = papers_path.read_text(encoding='utf-8').rstrip() + '\n'
+          for paper in staging['papers']:
+              marker = f'- id: "{paper["id"]}"'
+              if marker in papers_text:
+                  continue
+              papers_text += '\n' + paper['yaml'].rstrip() + '\n'
+          papers_path.write_text(papers_text, encoding='utf-8')
+
+          editions_path = Path('data/editions.yml')
+          editions = yaml.safe_load(editions_path.read_text(encoding='utf-8'))
+          frontier = editions['frontier']
+          existing = {entry['paper_id'] for entry in frontier['entries']}
+          for entry in staging['entries']:
+              if entry['paper_id'] not in existing:
+                  frontier['entries'].append(entry)
+                  existing.add(entry['paper_id'])
+          frontier['checked_through'] = staging['checked_through']
+
+          week = next(item for item in editions['frontier_weeks'] if item['id'] == staging['week']['id'])
+          week['summary'] = staging['week']['summary']
+          week['screening']['selected'] = sum(
+              1 for entry in frontier['entries'] if entry.get('week') == staging['week']['id']
+          )
+          editions_path.write_text(
+              yaml.safe_dump(editions, allow_unicode=True, sort_keys=False, width=120),
+              encoding='utf-8',
+          )
+          PY
+
       - name: Render generated radar page
         run: python scripts/render_radar.py
 
       - name: Run complete project check
         run: python scripts/check_project.py
 
-      - name: Commit generated page when changed
+      - name: Commit radar data and generated page when changed
         shell: bash
         run: |
-          if git diff --quiet -- docs/index.md; then
-            echo "Renderer produced no tracked page change."
+          if git diff --quiet -- data/papers.yml data/editions.yml docs/index.md; then
+            echo "Renderer produced no tracked radar change."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/index.md
-          git commit -m "Render research radar"
+          git add data/papers.yml data/editions.yml docs/index.md
+          git commit -m "Update the July 21 research radar"
           git push origin "HEAD:${GITHUB_REF_NAME}"
