@@ -46,18 +46,18 @@ frontier_weeks:
     coverage_note: 公开页面只展示最终收录论文。期刊 online-first 覆盖仍可能不完整。
 - id: 2026-W30
   date_range: 2026-07-20 至 2026-07-26
-  summary: 可积格点方程中的 taishi 奇点及其 Box--Ball 符号动力学。
+  summary: 本周新增非交换 Volterra 层级、退化 Darboux 极限、谱曲线递归、Bethe/Yang--Baxter 模型、KP 行列式方法及 Riemann--Hilbert 扰动理论。
   screening:
     sources_checked:
     - arXiv 分类与跨分类结构词、结果词检索
     - Crossref、期刊 online-first 与出版商记录核验
-    selected: 1
+    selected: 12
     coverage_note: 本周仍在进行中；公开页面只展示截至当前检查日期的最终收录论文。
 frontier:
-  checked_through: '2026-07-20'
+  checked_through: '2026-07-21'
   entries:
   - paper_id: arxiv:2607.15132
-    signal_date: '2026-07-16'
+    signal_date: '2026-07-17'
     signal_type: new-preprint
     week: 2026-W29
     arxiv_categories:
@@ -71,7 +71,7 @@ frontier:
     integrable_structure: Bethe ansatz 提供本征态的量子数与根构型，Bethe equations 中零动量 magnon pairs 的解耦给出能级塔间距的解析解释。可积链因此不是背景模型，而是把轨道结构翻译成微观本征态结构的关键工具。
     innovation: 论文给出量子疤痕与 Bethe 根构型之间可计算的对应，并从 Bethe equations 解释能级塔，而不只是在可积模型中数值观察异常态。对弱破缺可积性的延伸还显示，这一微观结构能够组织邻近非可积动力学。
   - paper_id: arxiv:2607.15013
-    signal_date: '2026-07-16'
+    signal_date: '2026-07-17'
     signal_type: new-preprint
     week: 2026-W29
     arxiv_categories:
@@ -1087,3 +1087,148 @@ frontier:
     main_result: 有限 Goldfish 系统可通过“多项式系数到零点”的变换化为自由运动。论文用有限多项式截断逼近整函数，控制零点、时间导数和无限求和的极限，并借助一致收敛与复分析工具证明：当零点沿共同解析区域连续演化且避开重根时，极限零点满足相应的无限耦合常微分方程。作者还给出保证这种正则演化的充分增长条件，并分析失控零点产生的奇异例子。
     integrable_structure: Goldfish 方程的可解性来自线性运动的多项式系数与非线性零点动力学之间的对应。推广到无限粒子后，多项式被整函数及其无穷乘积取代；Hadamard 分解、有限零点截断、Cauchy 导数估计、Rouché 定理和隐函数定理共同保证有限维可解结构能够在受控条件下传递到极限。
     innovation: 工作把原本只对任意有限粒子数成立的零点线性化机制推进到一类可数无限粒子解，并明确识别“多项式次数”在整函数情形中失效所造成的新障碍。结论不是对有限公式形式取极限，而是给出无限系统成立的解析条件、收敛论证和反例边界；与此同时，论文没有声称已经解决任意初值或完整动力学的存在性问题。
+  - paper_id: arxiv:2607.17749
+    signal_date: '2026-07-21'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags: []
+    summary: 论文证明 anti-self-dual Yang--Mills 方程的 quasi-Grammian 与 quasi-Wronskian 两类 N 孤子表示在渐近区域只相差常矩阵因子，并显式计算多孤子碰撞的相移。结果说明两种表示描述同一类四维孤子，并补充了低阶精确
+      quasi-Grammian 解。
+    main_result: 作者在 Yang equation 的 J-matrix 表述中比较两种非交换行列式型 N 孤子解，计算 WZW4 模型在 U(2) 情形的作用量密度，并证明两类解具有相同的渐近孤子轮廓。论文进一步给出碰撞相移因子以及
+      N 不超过 4 时的显式 quasi-Grammian 解。
+    integrable_structure: quasi-Grammian 与 quasi-Wronskian 是 ASDYM 孤子解的两种封闭表示；渐近分解把非交换矩阵解还原为可比较的孤子轮廓和相移数据。ASDYM/Yang equation
+      的可积结构因此直接控制解表示及多孤子散射。
+    innovation: 工作首次在一般 N 层面建立两类表示的渐近等价，并把等价性落实到可观测的作用量密度和碰撞相移，而不只是形式恒等式。低阶精确公式还为进一步检验高维 Sato 型结构提供具体样本。
+  - paper_id: arxiv:2607.17868
+    signal_date: '2026-07-21'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - integrable discretization
+    summary: 论文识别出一类与 differential-difference 动力学相容的新非交换代数，并在其上构造非阿贝尔 Volterra 层级的约化。该代数位于量子代数与自由结合代数之间，方法还可推广到 Toda 和 Ablowitz--Ladik
+      等系统。
+    main_result: 作者从非交换依赖变量的动力学相容性出发，提出新的代数关系，并说明这些关系在 Volterra 层级的演化下保持封闭。由此得到一批新的非阿贝尔约化，而不是在既有量子或 Grassmann 代数上重复已知构造。
+    integrable_structure: Volterra hierarchy 的交换流和差分演化给出代数关系必须满足的相容条件；新的非交换代数反过来保留层级结构，使约化后的系统仍处于可积 differential-difference
+      框架中。
+    innovation: 新增内容是动力学相容的中间型非交换代数及其系统性约化机制。它把非阿贝尔可积格点方程的可选代数背景从少数标准类别扩展到一套可推广的新结构。
+  - paper_id: arxiv:2607.17955
+    signal_date: '2026-07-21'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - nlin.SI
+    structure_tags:
+    - Darboux transformation
+    summary: 论文研究耦合 Fokas--Lenells 系统平面波背景上由实谱多重空间根产生的 Darboux 极限，分类可容许的射影零集并证明所得解全局正则。临界背景还产生持续零分支和沿抛物走廊出现的非局域平台。
+    main_result: 非实双根可以直接生成正则的一阶变换，而实双根和三重根需要沿方向取实谱极限。作者推导领先谱修正、确定允许的参数方向，并分析抛物走廊、三次水平集和特征线上的渐近平台结构。
+    integrable_structure: Darboux transformation 把 Lax 谱问题中的多重空间根转化为精确解；实谱退化要求同时控制特征向量零集和谱参数修正。多重根的代数几何直接决定解的正则性与远场形态。
+    innovation: 工作补足了通常非实谱 Darboux 构造无法覆盖的实双根和三重根情形，给出方向极限、可容许零集与全局正则性的统一处理。临界零分支导致的非局域平台也是这一退化机制中新出现的结构。
+  - paper_id: arxiv:2607.16820
+    signal_date: '2026-07-21'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - nlin.PS
+    - quant-ph
+    structure_tags: []
+    summary: 论文把含 Lee--Huang--Yang 修正的二维扩展 Gross--Pitaevskii 模型渐近约化为可积 KP 和 Davey--Stewartson 方程，并由此构造线孤子、lump、环孤子与 dromion。原模型数值模拟进一步检验这些近似结构的传播稳健性。
+    main_result: 作者在调制稳定背景上实施多尺度展开，得到分别控制不同二维局域结构的有效方程。解析近似随后被嵌回量子液滴模型；线孤子、lump 和环孤子与理论预测较接近，dromion 则表现出更明显的辐射和波形偏离。
+    integrable_structure: KP 与 Davey--Stewartson 模型不是附带类比，而是从扩展 GPE 中导出的主导有效动力学。它们提供显式二维孤子族，并把原模型中不同空间局域机制组织为可计算的渐近解。
+    innovation: 论文在量子涨落修正的液滴背景中统一构造多类二维孤子，并把可积约化的解析预测与原方程数值演化逐类比较。新增重点是 LHY 环境下可实验关联的多维结构及其有效可积描述。
+  - paper_id: arxiv:2607.17711
+    signal_date: '2026-07-21'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - math-ph
+    - math.AG
+    structure_tags:
+    - spectral curve
+    summary: 论文把广义拓扑递归扩展到以指数型或本质奇点作为分歧点的紧谱曲线。通过轮廓变形，本质奇点的递归贡献被改写为亚纯点留数，并可视为高阶拓扑递归在分歧阶趋于无穷时的收敛极限。
+    main_result: 作者利用广义拓扑递归的全局表述变形递归留数轮廓，避免直接在本质奇点处计算。所得框架覆盖指数奇点及更一般情形，并通过超越函数和 Mirzakhani 曲线的 x-y 对偶等例子展示关联函数的构造。
+    integrable_structure: 谱曲线上的递归核、分歧数据和留数公式共同定义普适关联函数；轮廓变形把非亚纯局部行为重新编码为可处理的亚纯贡献。该机制保持了拓扑递归框架，而没有另行引入非统一的奇点规则。
+    innovation: 工作为指数分歧谱曲线提供封闭递归方案，并建立其与 Bouchard--Eynard 高阶递归极限之间的机制联系。它把此前超出标准有限阶分歧设置的本质奇点纳入统一计算体系。
+  - paper_id: arxiv:2607.18120
+    signal_date: '2026-07-21'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - math-ph
+    - hep-th
+    structure_tags:
+    - Riemann--Hilbert problem
+    - tau function
+    summary: 论文用 (1,k) Virasoro 共形块构造修正 Riemann--Hilbert 问题的解，并详细处理 k=2、中心荷 c=-2 的情形。作者在三穿孔问题中给出显式解和适当初值下的唯一性证明，同时得到新的 tau-function
+      双线性关系。
+    main_result: 当 k 大于 1 时，穿孔处更强的奇性使 RH 解不再自动唯一，共形块空间维数也相应增加。论文在 symplectic fermion 对应的 k=2 情形中建立具体构造，分析初值条件并证明三穿孔解的唯一性。
+    integrable_structure: Riemann--Hilbert 跳跃数据与 Virasoro 共形块之间的对应给出解的解析构造；tau function 则编码相关等单值结构。新双线性关系把 c=-2 共形场论数据转化为可检验的可积恒等式。
+    innovation: 工作把既有 CFT/RH 对应推进到更奇异且存在非唯一性的 (1,k) 模型，并在 c=-2 情形完成显式构造与唯一性控制。新的 tau-function 双线性关系是该扩展产生的具体结构结果。
+  - paper_id: arxiv:2607.17613
+    signal_date: '2026-07-21'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - hep-th
+    structure_tags:
+    - quantum integrability
+    summary: 论文给出 planar N=4 super Yang--Mills 奇数共形自旋下三圈 BFKL 本征值的闭式表示，以解析延拓的嵌套调和和与有理函数组织各自旋结果。零频截距逐自旋复现独立 Quantum Spectral
+      Curve 数值，并附带完整可复现数据。
+    main_result: 作者从三圈 integrand 精确提取每个奇数自旋的原子表，构造整数平移梯上的有限闭式，并验证到较高自旋。论文还分离调和和层与残余核，证明一类分母素数增长规律，并提出统一奇偶自旋的母生成函数猜想。
+    integrable_structure: BFKL 谱问题和 Quantum Spectral Curve 提供相互独立的谱数据校验；调和和、hermitian separability 与递推结构把三圈本征值组织成可计算的闭式。可积谱结构直接约束系数与截距，而不是仅提供背景模型。
+    innovation: 工作把此前依赖逐点或数值信息的奇数自旋 NNLO 谱数据整理为精确闭式和可再生成的数据链，并揭示系数算术中的新素数障碍。逐自旋 QSC 一致性和配套验证脚本使结果具有较强的可复核性。
+  - paper_id: doi:10.1088/1742-5468/ae80b5
+    signal_date: '2026-07-20'
+    signal_type: journal-publication
+    week: 2026-W30
+    arxiv_categories:
+    - math.PR
+    - math-ph
+    structure_tags:
+    - Bethe ansatz
+    - Yang--Baxter equation
+    summary: 论文构造物种依赖相互作用机制的多物种长程交换排斥过程，并证明多类组成仍保持 Bethe ansatz 可积性。模型允许不同物种分别采用 TASEP 型或 drop--push 型动力学，还扩展到双向运动。
+    main_result: 作者在二元参数情形中对任意物种组成建立二粒子可约化性，并导出满足 Yang--Baxter 方程的散射矩阵；在连续插值参数下，又识别出若干保持可积的非平凡物种组合。所得散射矩阵具有真正依赖物种的对角元，可用于推导精确转移概率。
+    integrable_structure: coordinate Bethe ansatz 把多粒子演化约化为二体散射一致性，Yang--Baxter 方程保证不同碰撞次序相容。这里被允许随物种变化的是微观相互作用规则本身，而不只是跳跃速率。
+    innovation: 相比同一物种共享相互作用机制的既有多物种可积模型，论文证明异质机制仍可保留可积分解散射，并给出二元、连续插值及双向动力学下的明确成立范围。
+  - paper_id: doi:10.1017/prm.2026.10167
+    signal_date: '2026-07-21'
+    signal_type: journal-publication
+    week: 2026-W30
+    arxiv_categories:
+    - math.AP
+    structure_tags:
+    - tau function
+    - inverse scattering
+    summary: 论文把连续时间线性系统的 Hankel 算子和 Fredholm 行列式组织成 KP 方程的解生成框架。线性系统的 impulse response 决定 tau function，并形成可用于数值计算 KP 解的算子方法。
+    main_result: 对线性系统 \((-A,B,C)\)，作者研究由半群和输入输出算子构成的 Hankel 积分算子及相关算子代数，证明相应 Fredholm 行列式产生 KP 解。论文还把 Pöppe 的半可加算子识别为核函数平移作用的轨道，并用 Fedosov 乘积表达其 bracket 运算。
+    integrable_structure: 线性散射数据经 Hankel 算子进入 GLM 型重构，Fredholm 行列式承担 KP tau function 的角色；算子代数恒等式则把线性系统演化转化为 KP 层级所需的非线性微分关系。
+    innovation: 工作把抽象线性系统、Pöppe 算子代数与 KP tau function 放入同一可计算框架，并说明行列式公式不仅给出解析解，还能作为数值生成 KP 解的有效方法。
+  - paper_id: doi:10.1088/1751-8121/ae8490
+    signal_date: '2026-07-20'
+    signal_type: journal-publication
+    week: 2026-W30
+    arxiv_categories: []
+    structure_tags:
+    - Riemann--Hilbert problem
+    summary: 论文为非零边界的可积 \(F=1\) spinor NLS 建立系统的绝热扰动理论，直接从 Riemann--Hilbert 问题推导散射数据的慢演化。单孤子扇区由此闭合为包含内部极化态的有限维动力系统。
+    main_result: 对保持背景的小扰动，作者推导复本征值、极化向量、孤子中心与相位、留数振幅等谱参数的演化方程。局域扰动下的调制方程可写成单孤子本征函数的显式积分，并在零边界极限退化到已有扰动理论。
+    integrable_structure: Riemann--Hilbert 表述把局域激发编码为离散谱点和极化数据，扰动项在同一谱框架内给出这些数据的绝热漂移。矩阵极化变量产生了标量 NLS 中不存在的受约束演化方程。
+    innovation: 新增内容是非零背景、多分量极化和一般小扰动的统一闭合理论，使 spinor 孤子的全部有效参数都能从谱问题中系统演化，而不是只追踪位置和相位。
+  - paper_id: doi:10.1515/zna-2026-0116
+    signal_date: '2026-07-20'
+    signal_type: journal-publication
+    week: 2026-W30
+    arxiv_categories: []
+    structure_tags:
+    - Bethe ansatz
+    - inverse problem
+    summary: 论文研究冷原子 Lieb--Liniger 气体释放后的实空间密度能否直接携带 Bethe rapidity 信息。数值结果显示，按速度变量 \(x/t\) 重标度后的渐近密度趋于稳定，并随相互作用强度逼近相应 rapidity 分布。
+    main_result: 作者从硬壁盒中的相互作用基态出发，在固定耦合下实施几何骤变，并用 generalized Feynman--Kac quantum Monte Carlo 计算多体演化。速度空间密度在不同时间塌缩为近似定常曲线，其展宽随耦合增强而系统变化，并快速接近 Tonks--Girardeau 极限。
+    integrable_structure: Lieb--Liniger 模型的 Bethe rapidities 编码守恒准动量分布；弹道膨胀把这组谱信息映射到可观测的实空间密度。比较 \(x/t\) 密度与 rapidity 分布提供了无需直接动量测量的间接读出机制。
+    innovation: 工作提出并数值验证从膨胀后的空间密度提取 rapidity 结构的实验相关路径，把 dynamical fermionization 从定性现象推进为可积谱数据的观测接口。

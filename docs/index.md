@@ -6,7 +6,7 @@
 
 候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。
 
-<div class="radar-week-navigation" data-default-week="2026-W30" data-total-count="80">
+<div class="radar-week-navigation" data-default-week="2026-W30" data-total-count="91">
   <button type="button" data-radar-action="older">← 较早一周</button>
   <span class="radar-week-current" aria-live="polite"></span>
   <button type="button" data-radar-action="newer">较新一周 →</button>
@@ -16,7 +16,7 @@
     <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">
     <span class="radar-search-count" aria-live="polite"></span>
   </div>
-  <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="1"></span>
+  <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="12"></span>
   <span hidden data-radar-week-option="2026-W29" data-label="2026 年第 29 周 · 7 月 13–19 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W28" data-label="2026 年第 28 周 · 7 月 6–12 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W27" data-label="2026 年第 27 周 · 6 月 29 日–7 月 5 日" data-count="10"></span>
@@ -24,7 +24,7 @@
   <span hidden data-radar-week-option="2026-W25" data-label="2026 年第 25 周 · 6 月 15–21 日" data-count="13"></span>
 </div>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>可积格点方程中的 taishi 奇点及其 Box--Ball 符号动力学。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>本周新增非交换 Volterra 层级、退化 Darboux 极限、谱曲线递归、Bethe/Yang--Baxter 模型、KP 行列式方法及 Riemann--Hilbert 扰动理论。</p>
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W29" hidden><strong>本周概览：</strong>Quantum Spectral Curve、Chern--Simons 可积引力、无限粒子 Goldfish 系统、孤子层析与 HCIZ 矩阵模型。</p>
 
@@ -37,6 +37,303 @@
 <p class="radar-week-overview" data-radar-screening-week="2026-W25" hidden><strong>本周概览：</strong>向量峰子谱流、可积半离散化、量子自旋链、Painlevé 约化与有限维 Hamilton 系统。</p>
 
 <p id="month-2026-07" class="radar-month-label" data-radar-month-group="2026-07">2026 年 7 月</p>
+
+### Linear Systems, Determinants, and Solutions of the Kadomtsev--Petviashvili Equation {#paper-doi-10-1017-prm-2026-10167 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1017-prm-2026-10167" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-21">2026-07-21</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>math.AP</code> <code>tau function</code> <code>inverse scattering</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Linear Systems, Determinants, and Solutions of the Kadomtsev--Petviashvili Equation</p>
+  <p class="radar-paper-meta">Gordon Blower, Simon J. Malham · <a href="https://arxiv.org/abs/2512.15245">arXiv</a> · <a href="https://arxiv.org/pdf/2512.15245">PDF</a> · <a href="https://doi.org/10.1017/prm.2026.10167">Proceedings of the Royal Society of Edinburgh: Section A Mathematics 1-55 (2026)</a></p>
+  <p class="radar-paper-overview">论文把连续时间线性系统的 Hankel 算子和 Fredholm 行列式组织成 KP 方程的解生成框架。线性系统的 impulse response 决定 tau function，并形成可用于数值计算 KP 解的算子方法。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>对线性系统 <span class="arithmatex">\((-A,B,C)\)</span>，作者研究由半群和输入输出算子构成的 Hankel 积分算子及相关算子代数，证明相应 Fredholm 行列式产生 KP 解。论文还把 Pöppe 的半可加算子识别为核函数平移作用的轨道，并用 Fedosov 乘积表达其 bracket 运算。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>线性散射数据经 Hankel 算子进入 GLM 型重构，Fredholm 行列式承担 KP tau function 的角色；算子代数恒等式则把线性系统演化转化为 KP 层级所需的非线性微分关系。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作把抽象线性系统、Pöppe 算子代数与 KP tau function 放入同一可计算框架，并说明行列式公式不仅给出解析解，还能作为数值生成 KP 解的有效方法。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### $(1,k)$ CFT and RH problem with the $c=-2$ case {#paper-arxiv-2607-18120 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-18120" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-21">2026-07-21</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-20">2026-07-20</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>hep-th</code> <code>Riemann--Hilbert problem</code> <code>tau function</code></p>
+  <p class="radar-paper-title" aria-hidden="true"><span class="arithmatex">$(1,k)$</span> CFT and RH problem with the <span class="arithmatex">$c=-2$</span> case</p>
+  <p class="radar-paper-meta">Mikhail Bershtein, Andrei Grigorev, Anton Shchechkin · <a href="https://arxiv.org/abs/2607.18120">arXiv</a> · <a href="https://arxiv.org/pdf/2607.18120">PDF</a></p>
+  <p class="radar-paper-overview">论文用 (1,k) Virasoro 共形块构造修正 Riemann--Hilbert 问题的解，并详细处理 k=2、中心荷 c=-2 的情形。作者在三穿孔问题中给出显式解和适当初值下的唯一性证明，同时得到新的 tau-function 双线性关系。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>当 k 大于 1 时，穿孔处更强的奇性使 RH 解不再自动唯一，共形块空间维数也相应增加。论文在 symplectic fermion 对应的 k=2 情形中建立具体构造，分析初值条件并证明三穿孔解的唯一性。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Riemann--Hilbert 跳跃数据与 Virasoro 共形块之间的对应给出解的解析构造；tau function 则编码相关等单值结构。新双线性关系把 c=-2 共形场论数据转化为可检验的可积恒等式。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作把既有 CFT/RH 对应推进到更奇异且存在非唯一性的 (1,k) 模型，并在 c=-2 情形完成显式构造与唯一性控制。新的 tau-function 双线性关系是该扩展产生的具体结构结果。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Real-Spectrum Darboux Limits at Multiple Spatial Roots of the Coupled Fokas-Lenells System {#paper-arxiv-2607-17955 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-17955" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-21">2026-07-21</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-20">2026-07-20</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>Darboux transformation</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Real-Spectrum Darboux Limits at Multiple Spatial Roots of the Coupled Fokas-Lenells System</p>
+  <p class="radar-paper-meta">Muchen Dong, Lei Wang · <a href="https://arxiv.org/abs/2607.17955">arXiv</a> · <a href="https://arxiv.org/pdf/2607.17955">PDF</a></p>
+  <p class="radar-paper-overview">论文研究耦合 Fokas--Lenells 系统平面波背景上由实谱多重空间根产生的 Darboux 极限，分类可容许的射影零集并证明所得解全局正则。临界背景还产生持续零分支和沿抛物走廊出现的非局域平台。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>非实双根可以直接生成正则的一阶变换，而实双根和三重根需要沿方向取实谱极限。作者推导领先谱修正、确定允许的参数方向，并分析抛物走廊、三次水平集和特征线上的渐近平台结构。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Darboux transformation 把 Lax 谱问题中的多重空间根转化为精确解；实谱退化要求同时控制特征向量零集和谱参数修正。多重根的代数几何直接决定解的正则性与远场形态。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作补足了通常非实谱 Darboux 构造无法覆盖的实双根和三重根情形，给出方向极限、可容许零集与全局正则性的统一处理。临界零分支导致的非局域平台也是这一退化机制中新出现的结构。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Integrable Volterra hierarchies over nonabelian algebras {#paper-arxiv-2607-17868 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-17868" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-21">2026-07-21</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-20">2026-07-20</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>integrable discretization</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Integrable Volterra hierarchies over nonabelian algebras</p>
+  <p class="radar-paper-meta">J. P. Wang, S. Carpentier, A. V. Mikhailov · <a href="https://arxiv.org/abs/2607.17868">arXiv</a> · <a href="https://arxiv.org/pdf/2607.17868">PDF</a></p>
+  <p class="radar-paper-overview">论文识别出一类与 differential-difference 动力学相容的新非交换代数，并在其上构造非阿贝尔 Volterra 层级的约化。该代数位于量子代数与自由结合代数之间，方法还可推广到 Toda 和 Ablowitz--Ladik 等系统。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者从非交换依赖变量的动力学相容性出发，提出新的代数关系，并说明这些关系在 Volterra 层级的演化下保持封闭。由此得到一批新的非阿贝尔约化，而不是在既有量子或 Grassmann 代数上重复已知构造。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Volterra hierarchy 的交换流和差分演化给出代数关系必须满足的相容条件；新的非交换代数反过来保留层级结构，使约化后的系统仍处于可积 differential-difference 框架中。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>新增内容是动力学相容的中间型非交换代数及其系统性约化机制。它把非阿贝尔可积格点方程的可选代数背景从少数标准类别扩展到一套可推广的新结构。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Asymptotic Equivalence Between Quasi-Grammian and Quasi-Wronskian $N$-Soliton Solutions of the Anti-Self-Dual Yang-Mills Equation {#paper-arxiv-2607-17749 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-17749" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-21">2026-07-21</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-20">2026-07-20</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Asymptotic Equivalence Between Quasi-Grammian and Quasi-Wronskian <span class="arithmatex">$N$</span>-Soliton Solutions of the Anti-Self-Dual Yang-Mills Equation</p>
+  <p class="radar-paper-meta">Shan-Chi Huang · <a href="https://arxiv.org/abs/2607.17749">arXiv</a> · <a href="https://arxiv.org/pdf/2607.17749">PDF</a></p>
+  <p class="radar-paper-overview">论文证明 anti-self-dual Yang--Mills 方程的 quasi-Grammian 与 quasi-Wronskian 两类 N 孤子表示在渐近区域只相差常矩阵因子，并显式计算多孤子碰撞的相移。结果说明两种表示描述同一类四维孤子，并补充了低阶精确 quasi-Grammian 解。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者在 Yang equation 的 J-matrix 表述中比较两种非交换行列式型 N 孤子解，计算 WZW4 模型在 U(2) 情形的作用量密度，并证明两类解具有相同的渐近孤子轮廓。论文进一步给出碰撞相移因子以及 N 不超过 4 时的显式 quasi-Grammian 解。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>quasi-Grammian 与 quasi-Wronskian 是 ASDYM 孤子解的两种封闭表示；渐近分解把非交换矩阵解还原为可比较的孤子轮廓和相移数据。ASDYM/Yang equation 的可积结构因此直接控制解表示及多孤子散射。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作首次在一般 N 层面建立两类表示的渐近等价，并把等价性落实到可观测的作用量密度和碰撞相移，而不只是形式恒等式。低阶精确公式还为进一步检验高维 Sato 型结构提供具体样本。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Universal Correlators on Exponentially Ramified Spectral Curves {#paper-arxiv-2607-17711 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-17711" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-21">2026-07-21</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-20">2026-07-20</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>math.AG</code> <code>spectral curve</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Universal Correlators on Exponentially Ramified Spectral Curves</p>
+  <p class="radar-paper-meta">Mohamad Alameddine, Alexander Hock · <a href="https://arxiv.org/abs/2607.17711">arXiv</a> · <a href="https://arxiv.org/pdf/2607.17711">PDF</a></p>
+  <p class="radar-paper-overview">论文把广义拓扑递归扩展到以指数型或本质奇点作为分歧点的紧谱曲线。通过轮廓变形，本质奇点的递归贡献被改写为亚纯点留数，并可视为高阶拓扑递归在分歧阶趋于无穷时的收敛极限。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者利用广义拓扑递归的全局表述变形递归留数轮廓，避免直接在本质奇点处计算。所得框架覆盖指数奇点及更一般情形，并通过超越函数和 Mirzakhani 曲线的 x-y 对偶等例子展示关联函数的构造。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>谱曲线上的递归核、分歧数据和留数公式共同定义普适关联函数；轮廓变形把非亚纯局部行为重新编码为可处理的亚纯贡献。该机制保持了拓扑递归框架，而没有另行引入非统一的奇点规则。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作为指数分歧谱曲线提供封闭递归方案，并建立其与 Bouchard--Eynard 高阶递归极限之间的机制联系。它把此前超出标准有限阶分歧设置的本质奇点纳入统一计算体系。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### The next-to-next-to-leading order BFKL eigenvalue at odd conformal spin in planar N=4 super Yang-Mills: closed form, coefficient structure, and arithmetic {#paper-arxiv-2607-17613 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-17613" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-21">2026-07-21</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-20">2026-07-20</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>hep-th</code> <code>quantum integrability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">The next-to-next-to-leading order BFKL eigenvalue at odd conformal spin in planar N=4 super Yang-Mills: closed form, coefficient structure, and arithmetic</p>
+  <p class="radar-paper-meta">Alex Prygarin, Claudelle Capasia Madjuogang Sandeu · <a href="https://arxiv.org/abs/2607.17613">arXiv</a> · <a href="https://arxiv.org/pdf/2607.17613">PDF</a></p>
+  <p class="radar-paper-overview">论文给出 planar N=4 super Yang--Mills 奇数共形自旋下三圈 BFKL 本征值的闭式表示，以解析延拓的嵌套调和和与有理函数组织各自旋结果。零频截距逐自旋复现独立 Quantum Spectral Curve 数值，并附带完整可复现数据。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者从三圈 integrand 精确提取每个奇数自旋的原子表，构造整数平移梯上的有限闭式，并验证到较高自旋。论文还分离调和和层与残余核，证明一类分母素数增长规律，并提出统一奇偶自旋的母生成函数猜想。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>BFKL 谱问题和 Quantum Spectral Curve 提供相互独立的谱数据校验；调和和、hermitian separability 与递推结构把三圈本征值组织成可计算的闭式。可积谱结构直接约束系数与截距，而不是仅提供背景模型。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作把此前依赖逐点或数值信息的奇数自旋 NNLO 谱数据整理为精确闭式和可再生成的数据链，并揭示系数算术中的新素数障碍。逐自旋 QSC 一致性和配套验证脚本使结果具有较强的可复核性。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Two-dimensional solitons in extended GPE models with Lee-Huang-Yang corrections {#paper-arxiv-2607-16820 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-16820" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-21">2026-07-21</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-18">2026-07-18</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.PS</code> <code>quant-ph</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Two-dimensional solitons in extended GPE models with Lee-Huang-Yang corrections</p>
+  <p class="radar-paper-meta">G. N. Koutsokostas, F. Bristy, E. C. Psychogiou, G. A. Bougas, G. C. Katsimiga, S. I. Mistakidis, P. G. Kevrekidis, D. J. Frantzeskakis · <a href="https://arxiv.org/abs/2607.16820">arXiv</a> · <a href="https://arxiv.org/pdf/2607.16820">PDF</a></p>
+  <p class="radar-paper-overview">论文把含 Lee--Huang--Yang 修正的二维扩展 Gross--Pitaevskii 模型渐近约化为可积 KP 和 Davey--Stewartson 方程，并由此构造线孤子、lump、环孤子与 dromion。原模型数值模拟进一步检验这些近似结构的传播稳健性。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者在调制稳定背景上实施多尺度展开，得到分别控制不同二维局域结构的有效方程。解析近似随后被嵌回量子液滴模型；线孤子、lump 和环孤子与理论预测较接近，dromion 则表现出更明显的辐射和波形偏离。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>KP 与 Davey--Stewartson 模型不是附带类比，而是从扩展 GPE 中导出的主导有效动力学。它们提供显式二维孤子族，并把原模型中不同空间局域机制组织为可计算的渐近解。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>论文在量子涨落修正的液滴背景中统一构造多类二维孤子，并把可积约化的解析预测与原方程数值演化逐类比较。新增重点是 LHY 环境下可实验关联的多维结构及其有效可积描述。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Dynamical Fermionization and Emergent Bethe Rapidity Structure in the Spatial Density of Cold Quenched Lieb--Liniger Gas {#paper-doi-10-1515-zna-2026-0116 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1515-zna-2026-0116" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-20">2026-07-20</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>Bethe ansatz</code> <code>inverse problem</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Dynamical Fermionization and Emergent Bethe Rapidity Structure in the Spatial Density of Cold Quenched Lieb--Liniger Gas</p>
+  <p class="radar-paper-meta">Sumita Datta, James M. Rejcek, Rajasee Datta, Maxim Olshanii · <a href="https://doi.org/10.1515/zna-2026-0116">Zeitschrift für Naturforschung A (2026)</a></p>
+  <p class="radar-paper-overview">论文研究冷原子 Lieb--Liniger 气体释放后的实空间密度能否直接携带 Bethe rapidity 信息。数值结果显示，按速度变量 <span class="arithmatex">\(x/t\)</span> 重标度后的渐近密度趋于稳定，并随相互作用强度逼近相应 rapidity 分布。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者从硬壁盒中的相互作用基态出发，在固定耦合下实施几何骤变，并用 generalized Feynman--Kac quantum Monte Carlo 计算多体演化。速度空间密度在不同时间塌缩为近似定常曲线，其展宽随耦合增强而系统变化，并快速接近 Tonks--Girardeau 极限。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Lieb--Liniger 模型的 Bethe rapidities 编码守恒准动量分布；弹道膨胀把这组谱信息映射到可观测的实空间密度。比较 <span class="arithmatex">\(x/t\)</span> 密度与 rapidity 分布提供了无需直接动量测量的间接读出机制。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作提出并数值验证从膨胀后的空间密度提取 rapidity 结构的实验相关路径，把 dynamical fermionization 从定性现象推进为可积谱数据的观测接口。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Adiabatic Perturbation Theory for the F=1 Spinor Nonlinear Schrödinger Equation with Nonvanishing Boundary Conditions {#paper-doi-10-1088-1751-8121-ae8490 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1088-1751-8121-ae8490" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-20">2026-07-20</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>Riemann--Hilbert problem</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Adiabatic Perturbation Theory for the F=1 Spinor Nonlinear Schrödinger Equation with Nonvanishing Boundary Conditions</p>
+  <p class="radar-paper-meta">Vassilis Rothos · <a href="https://doi.org/10.1088/1751-8121/ae8490">Journal of Physics A: Mathematical and Theoretical 59, 295701 (2026)</a></p>
+  <p class="radar-paper-overview">论文为非零边界的可积 <span class="arithmatex">\(F=1\)</span> spinor NLS 建立系统的绝热扰动理论，直接从 Riemann--Hilbert 问题推导散射数据的慢演化。单孤子扇区由此闭合为包含内部极化态的有限维动力系统。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>对保持背景的小扰动，作者推导复本征值、极化向量、孤子中心与相位、留数振幅等谱参数的演化方程。局域扰动下的调制方程可写成单孤子本征函数的显式积分，并在零边界极限退化到已有扰动理论。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Riemann--Hilbert 表述把局域激发编码为离散谱点和极化数据，扰动项在同一谱框架内给出这些数据的绝热漂移。矩阵极化变量产生了标量 NLS 中不存在的受约束演化方程。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>新增内容是非零背景、多分量极化和一般小扰动的统一闭合理论，使 spinor 孤子的全部有效参数都能从谱问题中系统演化，而不是只追踪位置和相位。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Integrability of Multispecies Long-Range Swap Models with Species-Dependent Interpolation {#paper-doi-10-1088-1742-5468-ae80b5 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1088-1742-5468-ae80b5" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-20">2026-07-20</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>math.PR</code> <code>math-ph</code> <code>Bethe ansatz</code> <code>Yang--Baxter equation</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Integrability of Multispecies Long-Range Swap Models with Species-Dependent Interpolation</p>
+  <p class="radar-paper-meta">Eunghyun Lee · <a href="https://arxiv.org/abs/2604.12136">arXiv</a> · <a href="https://arxiv.org/pdf/2604.12136">PDF</a> · <a href="https://doi.org/10.1088/1742-5468/ae80b5">Journal of Statistical Mechanics: Theory and Experiment 2026, 073102 (2026)</a></p>
+  <p class="radar-paper-overview">论文构造物种依赖相互作用机制的多物种长程交换排斥过程，并证明多类组成仍保持 Bethe ansatz 可积性。模型允许不同物种分别采用 TASEP 型或 drop--push 型动力学，还扩展到双向运动。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者在二元参数情形中对任意物种组成建立二粒子可约化性，并导出满足 Yang--Baxter 方程的散射矩阵；在连续插值参数下，又识别出若干保持可积的非平凡物种组合。所得散射矩阵具有真正依赖物种的对角元，可用于推导精确转移概率。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>coordinate Bethe ansatz 把多粒子演化约化为二体散射一致性，Yang--Baxter 方程保证不同碰撞次序相容。这里被允许随物种变化的是微观相互作用规则本身，而不只是跳跃速率。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>相比同一物种共享相互作用机制的既有多物种可积模型，论文证明异质机制仍可保留可积分解散射，并给出二元、连续插值及双向动力学下的明确成立范围。</p>
+      </section>
+    </div>
+  </details>
+</article>
 
 ### Singularity Interactions for Lattice Equations: Introducing the Taishi {#paper-arxiv-2607-15670 .radar-search-heading}
 
@@ -119,37 +416,10 @@
   </details>
 </article>
 
-### A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges {#paper-doi-10-1007-s10955-026-03663-6 .radar-search-heading}
-
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1007-s10955-026-03663-6" data-radar-week="2026-W29" data-radar-month="2026-07">
-  <p class="radar-paper-date"><time datetime="2026-07-16">2026-07-16</time> · 正式发表</p>
-  <p class="radar-paper-tags"><code>math-ph</code> <code>hep-th</code> <code>2D Toda hierarchy</code> <code>Riemann--Hilbert problem</code></p>
-  <p class="radar-paper-title" aria-hidden="true">A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges</p>
-  <p class="radar-paper-meta">Maksim Kosmakov · <a href="https://arxiv.org/abs/2510.22120">arXiv</a> · <a href="https://arxiv.org/pdf/2510.22120">PDF</a> · <a href="https://doi.org/10.1007/s10955-026-03663-6">Journal of Statistical Physics 193, 93 (2026)</a></p>
-  <p class="radar-paper-overview">论文构造带两个 HCIZ 因子的 Hermitian Gaussian matrix model，使有限维本征值分布精确对应任意起点和终点重数的 non-intersecting Brownian bridges。它把路径模型、矩阵模型和 2D Toda/Riemann--Hilbert 结构放进同一有限维框架。</p>
-  <details class="radar-paper-details">
-    <summary>展开研究内容与创新</summary>
-    <div class="radar-paper-detail-grid">
-      <section>
-        <h4>研究问题与主要结果</h4>
-        <p>作者从多起点、多终点非相交 Brownian bridges 的 Karlin--McGregor 密度出发，构造一个双 HCIZ 修饰的 Gaussian matrix ensemble，并证明两者的本征值联合分布完全一致。随后利用 mixed multiple orthogonal polynomials 描述相关相关核，并推导矩阵积分满足的 Schwinger--Dyson 与 Virasoro 型恒等式。</p>
-      </section>
-      <section>
-        <h4>可积结构与方法</h4>
-        <p>模型连接 Karlin--McGregor law、mixed multiple orthogonal polynomials、Riemann--Hilbert problem、2D Toda tau-function 和 Schwinger--Dyson/Virasoro identities。</p>
-      </section>
-      <section>
-        <h4>创新</h4>
-        <p>补出了多起点、多终点 Brownian bridge 问题此前缺失的显式矩阵模型来源，并在有限 <span class="arithmatex">\(n\)</span> 层面统一路径分布、谱模型和可积层级结构。</p>
-      </section>
-    </div>
-  </details>
-</article>
-
 ### Periodic orbits and quantum many-body scars in integrable spin chains {#paper-arxiv-2607-15132 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-15132" data-radar-week="2026-W29" data-radar-month="2026-07">
-  <p class="radar-paper-date"><time datetime="2026-07-16">2026-07-16</time> · 新预印本</p>
+  <p class="radar-paper-date"><time datetime="2026-07-17">2026-07-17</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-16">2026-07-16</time>（UTC）</p>
   <p class="radar-paper-tags"><code>quant-ph</code> <code>cond-mat.stat-mech</code> <code>Bethe ansatz</code> <code>quantum integrability</code></p>
   <p class="radar-paper-title" aria-hidden="true">Periodic orbits and quantum many-body scars in integrable spin chains</p>
   <p class="radar-paper-meta">Elena Petrova, Maksym Serbyn, Marko Ljubotina · <a href="https://arxiv.org/abs/2607.15132">arXiv</a> · <a href="https://arxiv.org/pdf/2607.15132">PDF</a></p>
@@ -176,7 +446,7 @@
 ### Quasi-Pfaffian Solutions to Integrable Systems via Sylvester-Moutard Transformations {#paper-arxiv-2607-15013 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-15013" data-radar-week="2026-W29" data-radar-month="2026-07">
-  <p class="radar-paper-date"><time datetime="2026-07-16">2026-07-16</time> · 新预印本</p>
+  <p class="radar-paper-date"><time datetime="2026-07-17">2026-07-17</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-16">2026-07-16</time>（UTC）</p>
   <p class="radar-paper-tags"><code>math-ph</code> <code>Pfaffian</code> <code>Bäcklund transformation</code></p>
   <p class="radar-paper-title" aria-hidden="true">Quasi-Pfaffian Solutions to Integrable Systems via Sylvester-Moutard Transformations</p>
   <p class="radar-paper-meta">Claire R. Gilson, Chen Shu · <a href="https://arxiv.org/abs/2607.15013">arXiv</a> · <a href="https://arxiv.org/pdf/2607.15013">PDF</a></p>
@@ -195,6 +465,33 @@
       <section>
         <h4>创新</h4>
         <p>新增内容是 quasi-Pfaffian 结构及由它导出的 Sylvester--Moutard transformation，而非把既有 determinant 公式改写符号。它为非交换或矩阵值二维可积系统提供了一种新的变换与解表示工具。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges {#paper-doi-10-1007-s10955-026-03663-6 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1007-s10955-026-03663-6" data-radar-week="2026-W29" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-16">2026-07-16</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>hep-th</code> <code>2D Toda hierarchy</code> <code>Riemann--Hilbert problem</code></p>
+  <p class="radar-paper-title" aria-hidden="true">A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges</p>
+  <p class="radar-paper-meta">Maksim Kosmakov · <a href="https://arxiv.org/abs/2510.22120">arXiv</a> · <a href="https://arxiv.org/pdf/2510.22120">PDF</a> · <a href="https://doi.org/10.1007/s10955-026-03663-6">Journal of Statistical Physics 193, 93 (2026)</a></p>
+  <p class="radar-paper-overview">论文构造带两个 HCIZ 因子的 Hermitian Gaussian matrix model，使有限维本征值分布精确对应任意起点和终点重数的 non-intersecting Brownian bridges。它把路径模型、矩阵模型和 2D Toda/Riemann--Hilbert 结构放进同一有限维框架。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者从多起点、多终点非相交 Brownian bridges 的 Karlin--McGregor 密度出发，构造一个双 HCIZ 修饰的 Gaussian matrix ensemble，并证明两者的本征值联合分布完全一致。随后利用 mixed multiple orthogonal polynomials 描述相关相关核，并推导矩阵积分满足的 Schwinger--Dyson 与 Virasoro 型恒等式。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>模型连接 Karlin--McGregor law、mixed multiple orthogonal polynomials、Riemann--Hilbert problem、2D Toda tau-function 和 Schwinger--Dyson/Virasoro identities。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>补出了多起点、多终点 Brownian bridge 问题此前缺失的显式矩阵模型来源，并在有限 <span class="arithmatex">\(n\)</span> 层面统一路径分布、谱模型和可积层级结构。</p>
       </section>
     </div>
   </details>
