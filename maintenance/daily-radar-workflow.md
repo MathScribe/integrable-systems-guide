@@ -37,6 +37,11 @@ Record the run's actual queries, source status, candidates, evidence depth, and
 decision in a local audit artifact. A source failure is not a zero-result run and
 must not advance that source's watermark.
 
+For every journal-only candidate that reaches detailed review, also record the
+venue authority tier (`A`, `B`, or `C`) and the evidence supporting that tier,
+using `maintenance/radar-selection-policy.md`. Venue tier is internal editorial
+evidence, never a public label, and never replaces the content threshold.
+
 ## Weekly publication check
 
 At least once per ISO week:

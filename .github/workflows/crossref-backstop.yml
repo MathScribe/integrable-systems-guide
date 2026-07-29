@@ -12,6 +12,9 @@ permissions:
 jobs:
   discover:
     runs-on: ubuntu-latest
+    # Crossref is a non-blocking backstop. A stalled endpoint must not leave a
+    # scheduled job running indefinitely or delay the editorial workflow.
+    timeout-minutes: 5
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

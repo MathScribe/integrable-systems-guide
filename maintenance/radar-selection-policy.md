@@ -68,12 +68,37 @@ Title-only evidence cannot support selection. An abstract may support a cautious
 decision; formula-level mechanisms, proof claims, and comparisons beyond the
 abstract require inspection of the paper.
 
-For journal-only discoveries, venue reputation is evidence of review reliability,
-not a substitute for content. Prefer established general mathematics journals,
-strong subject journals, core mathematical-physics venues, and reliable
-specialist journals. Do not select an incidental paper because its venue is
-prestigious, and do not reject an important structural result merely because it
-appears in a specialist venue.
+For journal-only discoveries, classify venue authority internally before making
+the editorial decision:
+
+- **Tier A — authoritative field venue:** an established general mathematics
+  journal, leading subject journal, or core mathematical-physics venue with
+  demonstrated editorial competence in the paper's area. This is a strong
+  reliability signal, but the paper must still pass the same novelty and
+  integrability tests.
+- **Tier B — reliable specialist venue:** an established specialist journal with
+  relevant peer-review competence. This is a supporting signal; selection
+  requires a clearly identifiable structural or methodological advance rather
+  than publication status alone.
+- **Tier C — no authority bonus:** a broad high-volume venue, a venue remote from
+  the mathematical subject, an unfamiliar or weakly evidenced venue, or a record
+  known only from an index or aggregator. Select only when primary paper evidence
+  independently establishes an unusually strong result and the publisher record
+  verifies the publication event.
+
+An unclassified venue defaults to Tier C until evidence supports a higher tier.
+Determine the tier from the full journal identity, field fit, publisher record,
+and established editorial and review role—not from an author's reputation or a
+publisher brand alone. Do not maintain a supposedly exhaustive journal whitelist
+or enumerate journal homepages as the discovery method; specialized high-quality
+mathematics venues must remain eligible.
+
+For every journal-only candidate that reaches detailed review, record the tier
+and a short basis in the internal run audit. The tier is not a public badge and
+must not appear on the paper card. Venue authority is evidence of review
+reliability, not a substitute for content: do not select an incidental paper
+because its venue is prestigious, and do not reject an important structural
+result merely because it appears in a specialist venue.
 
 Author reputation may trigger closer inspection but never determines selection.
 
