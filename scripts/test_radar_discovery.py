@@ -25,6 +25,7 @@ def load_module(name: str, path: str):
 
 crossref = load_module("fetch_crossref_candidates", "scripts/fetch_crossref_candidates.py")
 arxiv = load_module("fetch_arxiv_candidates", "scripts/fetch_arxiv_candidates.py")
+zbmath = load_module("fetch_zbmath_candidates", "scripts/fetch_zbmath_candidates.py")
 
 
 class FakeResponse(io.BytesIO):
@@ -75,6 +76,29 @@ def crossref_config(queries: list[dict], *, workers: int = 1) -> dict:
             "max_retries": 0,
             "queries": queries,
         },
+    }
+
+
+def zbmath_item(identifier: int, title: str, datestamp: str) -> dict:
+    return {
+        "id": identifier,
+        "title": {"title": title, "subtitle": None, "addition": None},
+        "datestamp": datestamp,
+        "year": 2026,
+        "contributors": {"authors": [{"name": "Example, Ada"}]},
+        "source": {
+            "source": "Journal of Tests 1, 1-10 (2026)",
+            "series": [{"title": "Journal of Tests"}],
+        },
+        "msc": [{"code": "37K10"}],
+        "links": [
+            {
+                "type": "doi",
+                "identifier": f"10.1/{identifier}",
+                "url": f"https://doi.org/10.1/{identifier}",
+            }
+        ],
+        "zbmath_url": f"https://zbmath.org/?q=an:{identifier}",
     }
 
 
@@ -206,6 +230,85 @@ def test_arxiv_dates_and_cross_category_deduplication() -> None:
     assert partial["status"] == "partial"
 
 
+def test_zbmath_bounded_msc_pagination_and_datestamp_filter() -> None:
+    fake = FakeUrlOpen(
+        [
+            {
+                "status": {
+                    "execution_bool": True,
+                    "nr_total_results": 3,
+                },
+                "result": [
+                    zbmath_item(1, "Recent integrable hierarchy", "2026-07-20T00:00:00Z"),
+                    zbmath_item(2, "Old indexed paper", "2026-06-01T00:00:00Z"),
+                ],
+            },
+            {
+                "status": {
+                    "execution_bool": True,
+                    "nr_total_results": 3,
+                },
+                "result": [
+                    zbmath_item(3, "Recent inverse problem", "2026-07-22T00:00:00Z")
+                ],
+            },
+        ]
+    )
+    manifest = zbmath.fetch_manifest(
+        {
+            "schema_version": 1,
+            "zbmath": {
+                "rows_per_page": 2,
+                "max_pages": 2,
+                "timeout_seconds": 1,
+                "max_retries": 0,
+                "msc_codes": ["37K10", "37K15"],
+            },
+        },
+        start_value="2026-07-01T00:00:00Z",
+        end_value="2026-07-29T00:00:00Z",
+        urlopen=fake,
+        sleep=lambda _: None,
+    )
+    assert manifest["status"] == "complete"
+    assert manifest["query"]["result_set_exhausted"] is True
+    assert manifest["candidate_count"] == 2
+    assert [item["zbmath_id"] for item in manifest["candidates"]] == ["1", "3"]
+    assert len(fake.urls) == 2
+    assert "page=0" in fake.urls[0]
+    assert "page=1" in fake.urls[1]
+
+    truncated = zbmath.fetch_manifest(
+        {
+            "schema_version": 1,
+            "zbmath": {
+                "rows_per_page": 1,
+                "max_pages": 1,
+                "timeout_seconds": 1,
+                "max_retries": 0,
+                "msc_codes": ["37K10"],
+            },
+        },
+        start_value="2026-07-01T00:00:00Z",
+        end_value="2026-07-29T00:00:00Z",
+        urlopen=FakeUrlOpen(
+            [
+                {
+                    "status": {"execution_bool": True, "nr_total_results": 3},
+                    "result": [
+                        zbmath_item(
+                            1, "Recent integrable hierarchy", "2026-07-20T00:00:00Z"
+                        )
+                    ],
+                }
+            ]
+        ),
+        sleep=lambda _: None,
+    )
+    assert truncated["status"] == "partial"
+    assert truncated["query"]["result_set_exhausted"] is False
+
+
 def test_frozen_editorial_calibration_set() -> None:
     data = yaml.safe_load(
         (ROOT / "maintenance" / "radar-calibration.yml").read_text(encoding="utf-8")
@@ -229,6 +332,7 @@ def main() -> None:
     test_crossref_ranked_title_filter()
     test_crossref_deduplication_and_failure_degradation()
     test_arxiv_dates_and_cross_category_deduplication()
+    test_zbmath_bounded_msc_pagination_and_datestamp_filter()
     test_frozen_editorial_calibration_set()
     print("bounded discovery and editorial calibration tests passed")
 

@@ -118,6 +118,11 @@ def main() -> None:
         raise ValueError("sources.zbmath.kind must be mathematical-index-backstop")
     if zbmath.get("cadence") not in {"weekly", "biweekly"}:
         raise ValueError("sources.zbmath.cadence must be weekly or biweekly")
+    zbmath_checked_at = zbmath.get("checked_at")
+    if zbmath_checked_at is not None:
+        parse_utc_timestamp(zbmath_checked_at, "sources.zbmath.checked_at")
+    if zbmath.get("last_status") == "complete" and zbmath_checked_at is None:
+        raise ValueError("a complete zbMATH backstop requires checked_at")
 
     publisher = require_mapping(
         sources.get("publisher_verification"), "sources.publisher_verification"
@@ -125,6 +130,11 @@ def main() -> None:
     validate_status(publisher, "sources.publisher_verification")
     if publisher.get("kind") != "candidate-verification":
         raise ValueError("publisher verification is candidate evidence, not a coverage watermark")
+    publisher_checked_at = publisher.get("checked_at")
+    if publisher_checked_at is not None:
+        parse_utc_timestamp(
+            publisher_checked_at, "sources.publisher_verification.checked_at"
+        )
 
     print(
         "validated independent radar source state; "
