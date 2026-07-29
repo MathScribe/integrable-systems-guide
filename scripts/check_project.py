@@ -21,7 +21,9 @@ def main() -> None:
     python = sys.executable
     run("paper registry identities", [python, "scripts/validate_radar.py"])
     run("frontier data and controlled tags", [python, "scripts/validate_frontier_data.py"])
+    run("source watermarks and discovery state", [python, "scripts/validate_radar_state.py"])
     run("radar regression tests", [python, "scripts/test_radar.py"])
+    run("bounded discovery and calibration tests", [python, "scripts/test_radar_discovery.py"])
     run("generated page consistency", [python, "scripts/render_radar.py", "--check"])
 
     node = shutil.which("node")

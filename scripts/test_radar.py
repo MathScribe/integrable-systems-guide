@@ -100,7 +100,6 @@ def test_component_contract() -> None:
         "structure_tags": ["inverse scattering"],
     }
     frontier = {
-        "checked_through": "2026-07-19",
         "entries": [entry, old_entry],
     }
     cumulative = render_radar.all_frontier_entries(frontier, papers)
@@ -176,24 +175,20 @@ def test_enabled_frontier() -> None:
     assert cumulative
     assert len({entry["paper_id"] for entry in entries}) == len(entries)
 
-    # Freeze the confirmed migration baseline without blocking future daily updates.
-    if frontier.get("checked_through") == "2026-07-20":
-        expected_counts = {
-            "2026-W25": 13,
-            "2026-W26": 22,
-            "2026-W27": 10,
-            "2026-W28": 17,
-            "2026-W29": 17,
-            "2026-W30": 1,
-        }
-        assert len(entries) == 80
-        assert len(cumulative) == 80
-        assert Counter(render_radar.frontier_week_id(entry) for entry in entries) == expected_counts
-        assert {week["id"] for week in data["frontier_weeks"]} == set(expected_counts)
-        assert Counter(entry["signal_type"] for entry in entries) == {
-            "new-preprint": 58,
-            "journal-publication": 22,
-        }
+    assert "checked_through" not in frontier
+    expected_counts = {
+        week["id"]: week["screening"]["selected"]
+        for week in data["frontier_weeks"]
+    }
+    assert len(entries) == sum(expected_counts.values())
+    assert len(cumulative) == len(entries)
+    assert Counter(render_radar.frontier_week_id(entry) for entry in entries) == expected_counts
+    assert {week["id"] for week in data["frontier_weeks"]} == set(expected_counts)
+    assert set(Counter(entry["signal_type"] for entry in entries)) <= {
+        "new-preprint",
+        "major-revision",
+        "journal-publication",
+    }
 
 
 def main() -> None:

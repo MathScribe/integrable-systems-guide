@@ -1,0 +1,47 @@
+name: Crossref title backstop
+
+on:
+  schedule:
+    # Monday 06:45 Beijing time, before the 07:30 editorial run.
+    - cron: '45 22 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    # Crossref is a non-blocking backstop. A stalled endpoint must not leave a
+    # scheduled job running indefinitely or delay the editorial workflow.
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run bounded title backstop
+        shell: bash
+        run: |
+          from_date="$(date -u -d '10 days ago' +%F)"
+          until_date="$(date -u +%F)"
+          mkdir -p radar-artifacts
+          python scripts/fetch_crossref_candidates.py \
+            --from "$from_date" \
+            --until "$until_date" \
+            --output radar-artifacts/crossref-title-backstop.json
+
+      - name: Upload candidate manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: crossref-title-backstop
+          path: radar-artifacts/crossref-title-backstop.json
+          if-no-files-found: error
+          retention-days: 30

@@ -20,8 +20,12 @@ Routine wording, bibliography, formatting, author-order, metadata, and minor-cor
 
 Discovery and selection are separate stages.
 
-1. Read `data/papers.yml`, `data/editions.yml`, and this file before searching.
-2. Use `frontier.checked_through` as the last successful coverage date. Search from that date through the current date, with a short overlap when practical so delayed announcements are not missed.
+1. Read `data/papers.yml`, `data/editions.yml`,
+   `maintenance/radar-state.yml`, `maintenance/radar-selection-policy.md`, and
+   this file before searching.
+2. Determine each discovery interval from that source's last successful
+   watermark in `maintenance/radar-state.yml`. Never infer Crossref or
+   publisher coverage from the latest public paper date.
 3. Check complete recent coverage of arXiv `nlin.SI` and `nlin.PS`.
 4. Run bounded cross-category searches in mathematical physics, probability, geometry, combinatorics, quantum many-body physics, statistical physics, gravity, optics, and related areas.
 5. Use both structure terms and result terms. Useful result terms include classification, arbitrary-order families, asymptotics, transition regimes, inverse problems, control, tomography, exact distributions, transport, topology, experiments, and data-driven integrability.
@@ -29,13 +33,27 @@ Discovery and selection are separate stages.
 
 Discovery should favor recall: uncertain candidates may remain in the working notes, but discovery alone never authorizes publication.
 
+Record the run's actual queries, source status, candidates, evidence depth, and
+decision in a local audit artifact. A source failure is not a zero-result run and
+must not advance that source's watermark.
+
+For every journal-only candidate that reaches detailed review, also record the
+venue authority tier (`A`, `B`, or `C`) and the evidence supporting that tier,
+using `maintenance/radar-selection-policy.md`. Venue tier is internal editorial
+evidence, never a public label, and never replaces the content threshold.
+
 ## Weekly publication check
 
 At least once per ISO week:
 
-1. query Crossref by the target publication window and bounded structure terms;
-2. query Crossref by exact title and author for selected or previously registered arXiv papers that do not yet have verified journal metadata;
-3. inspect the Latest articles or Online first pages of relevant journals for records that Crossref may not yet expose reliably;
+1. run the configured Crossref ranked-title backstop over an overlapping
+   first-online window. Use only strong title phrases and local exact matching;
+   do not paginate broad terms as if mirroring Crossref;
+2. query Crossref by exact title and author for recently selected or previously
+   registered arXiv papers that do not yet have verified journal metadata;
+3. inspect publisher pages only for strong candidates, known metadata conflicts,
+   or a documented high-risk source gap; do not enumerate journal homepages as
+   the primary discovery method;
 4. open the DOI target on the publisher site and verify the full journal name, author list, volume, issue, pages or article number, and first online publication date;
 5. distinguish first online publication from later issue assignment, which is not a new research event;
 6. review whether a source outage or narrow query caused an obvious coverage gap.
@@ -44,9 +62,21 @@ General web search may be used with exact-title, site-restricted, structure-term
 
 For every strong daily candidate, DOI and publication metadata should still be checked immediately; the weekly pass is the systematic backstop.
 
+Crossref and publisher checks have independent state. The Crossref title pass is
+a selective backstop, not a claim that every Crossref record was inspected.
+Its failure must not block publication of already verified arXiv events, and a
+successful arXiv run must not be described as successful Crossref coverage.
+Prefer the latest successful artifact from the repository's weekly Crossref
+backstop workflow. Do not make the interactive daily run wait repeatedly on an
+unresponsive Crossref endpoint.
+
 ## Selection
 
 Thematic relevance is a broad gate; innovation strength is decisive. Apply the same field-wide criteria to every candidate.
+
+Use `maintenance/radar-selection-policy.md` as the detailed, versioned editorial
+contract. Freshness, identity, and non-duplication are hard eligibility gates.
+There is no fixed daily or weekly count, minimum, or maximum.
 
 Internally ask:
 
@@ -77,15 +107,21 @@ arXiv normally has no Friday or Saturday announcements. A paper submitted before
 
 `data/papers.yml` contains one current bibliographic record per paper. Do not create separate arXiv and DOI records for the same work.
 
-`data/editions.yml` contains one public `frontier` entry per paper. If a selected paper later has a qualifying major revision or first journal publication, update the existing paper and frontier entries:
+`data/editions.yml` contains one public `frontier` entry per paper. If a selected paper later has a qualifying major revision, update the existing paper and frontier entries:
 
 - retain the original arXiv ID and submission date;
-- add or refresh journal metadata;
 - change `signal_type` and `signal_date` to the new qualifying event;
 - update the annotation only where the new event changes the result;
 - do not append a duplicate public card.
 
 Git history preserves the earlier event state.
+
+If a selected preprint later receives routine first journal publication, add or
+refresh its DOI and journal metadata without changing `signal_type`,
+`signal_date`, or its position as a new recommendation. A journal publication is
+a public radar event only for a newly discovered work that has not already been
+recommended, or when the formal version itself adds a separately qualifying
+major result.
 
 ## Data entry
 
@@ -113,7 +149,11 @@ The four prose fields have different jobs:
 
 Do not reuse a complete sentence across fields. In particular, `main_result` must not repeat `summary`, and `innovation` must not merely restate the last sentence of either field. When only an abstract has been checked, keep the annotation within what the abstract supports; inspect the PDF before adding formula-level mechanisms, proof details, priority claims, or comparisons that are not explicit in the abstract.
 
-After a successful complete discovery run, advance `frontier.checked_through` even when no paper is selected. A check-only change does not need its own daily PR; carry the date forward with the next content change or the weekly maintenance PR.
+After a successful source run, advance only that source's watermark in
+`maintenance/radar-state.yml`, even when no paper is selected. A check-only
+change does not need its own daily PR; carry the state forward with the next
+content change or weekly maintenance PR. Never create or restore a unified
+`frontier.checked_through` field.
 
 Do not use public contribution classes such as core/adjacent or structure advance. Do not add per-paper `自动整理` badges, BibTeX buttons, recommendation dates, title-fragment tags, or invented terminology.
 

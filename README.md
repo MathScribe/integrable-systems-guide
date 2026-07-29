@@ -21,7 +21,9 @@ The site is designed for researchers already familiar with integrable PDEs, spec
 - `data/tags.yml` contains the controlled public structure-tag vocabulary.
 - Generated Markdown in `docs/index.md` must not be edited by hand.
 
-`frontier.checked_through` records the latest date for which the bounded discovery pass completed successfully. It is a maintenance checkpoint, not a public recommendation date.
+`maintenance/radar-state.yml` records independent source watermarks. Public
+event dates remain in `data/editions.yml`; a source watermark advances only
+after that source's bounded discovery pass completes successfully.
 
 One paper has one public frontier entry. When a selected preprint receives a qualifying major revision or its first formal journal publication, update its existing paper and frontier records rather than adding a duplicate card. Git history preserves the earlier state.
 

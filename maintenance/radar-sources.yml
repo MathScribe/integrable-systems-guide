@@ -1,0 +1,132 @@
+schema_version: 1
+
+arxiv:
+  core_categories:
+    - nlin.SI
+    - nlin.PS
+
+  cross_categories:
+    - math-ph
+    - math.AP
+    - math.AG
+    - math.DG
+    - math.CO
+    - math.PR
+    - math.QA
+    - quant-ph
+    - cond-mat.stat-mech
+    - cond-mat.str-el
+    - hep-th
+    - physics.optics
+
+crossref:
+  # Crossref is a ranked title backstop, not a database mirror. A daily run
+  # inspects only the first ranked page for each strong phrase. Broader terms
+  # such as "Hamiltonian", "Poisson", and "soliton" are intentionally absent:
+  # by themselves they produce too much unrelated literature.
+  rows_per_page: 50
+  concurrent_queries: 8
+  timeout_seconds: 5
+  max_retries: 0
+
+  # Every returned record must also pass a local title regular expression.
+  # This prevents tokenized searches such as "Yang-Baxter" from treating every
+  # occurrence of "Baxter" as relevant.
+  queries:
+    - id: integrability
+      field: title
+      term: integrable
+      patterns:
+        - '\bintegrab(?:le|ility|ilities)\b'
+
+    - id: lax
+      field: title
+      term: Lax
+      patterns:
+        - '\bLax(?:\s+pairs?|\s+representation|\s+operators?)\b'
+
+    - id: inverse-scattering
+      field: title
+      term: inverse scattering
+      patterns:
+        - '\binverse[-\s]+scattering\b'
+
+    - id: riemann-hilbert
+      field: title
+      term: Riemann-Hilbert
+      patterns:
+        - '\bRiemann[-–—\s]+Hilbert\b'
+
+    - id: painleve
+      field: title
+      term: Painleve
+      patterns:
+        - '\bPainlev[eé]\b'
+        - '\bPainlev[eé]\s+(?:I|II|III|IV|V|VI|[1-6])\b'
+
+    - id: isomonodromy
+      field: title
+      term: isomonodromic
+      patterns:
+        - '\bisomonodrom(?:y|ic|ical|ically)\b'
+
+    - id: tau-function
+      field: title
+      term: tau function
+      patterns:
+        - '\btau[-\s]+functions?\b'
+
+    - id: yang-baxter
+      field: title
+      term: Yang-Baxter
+      patterns:
+        - '\bYang[-–—\s]+Baxter\b'
+
+    - id: bethe-ansatz
+      field: title
+      term: Bethe ansatz
+      patterns:
+        - '\bBethe[-\s]+ansatz\b'
+        - '\bBethe[-\s]+equations?\b'
+
+    - id: quantum-spectral-curve
+      field: title
+      term: quantum spectral curve
+      patterns:
+        - '\bquantum[-\s]+spectral[-\s]+curves?\b'
+
+    - id: integrable-hierarchy
+      field: title
+      term: integrable hierarchy
+      patterns:
+        - '\bintegrable[-\s]+hierarch(?:y|ies)\b'
+
+    - id: r-matrix
+      field: title
+      term: r-matrix
+      patterns:
+        - '\br[-\s]*matri(?:x|ces)\b'
+
+    - id: topological-recursion
+      field: title
+      term: topological recursion
+      patterns:
+        - '\btopological[-\s]+recursion\b'
+
+    - id: darboux-transformation
+      field: title
+      term: Darboux transformation
+      patterns:
+        - '\bDarboux[-\s]+transformations?\b'
+
+    - id: finite-gap
+      field: title
+      term: finite-gap
+      patterns:
+        - '\bfinite[-\s]+gap\b'
+
+    - id: integrable-probability
+      field: title
+      term: integrable probability
+      patterns:
+        - '\bintegrable[-\s]+probability\b'

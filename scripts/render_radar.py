@@ -106,10 +106,11 @@ def validate_frontier(frontier: dict[str, Any], papers: dict[str, dict[str, Any]
             raise ValueError(f"frontier contains duplicate paper_id: {paper_id}")
         seen.add(paper_id)
 
-    checked_through = parse_iso_date(frontier.get("checked_through"), "frontier.checked_through")
-    latest_signal = max(parse_iso_date(entry["signal_date"], "signal_date") for entry in entries)
-    if checked_through < latest_signal:
-        raise ValueError("frontier.checked_through cannot precede the latest signal_date")
+    if "checked_through" in frontier:
+        raise ValueError(
+            "frontier.checked_through is obsolete; source watermarks belong in "
+            "maintenance/radar-state.yml"
+        )
     return entries
 
 

@@ -54,7 +54,6 @@ frontier_weeks:
     selected: 12
     coverage_note: 本周仍在进行中；公开页面只展示截至当前检查日期的最终收录论文。
 frontier:
-  checked_through: '2026-07-21'
   entries:
   - paper_id: arxiv:2607.15132
     signal_date: '2026-07-17'

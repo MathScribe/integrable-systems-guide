@@ -1,0 +1,25 @@
+schema_version: 1
+policy_version: 1
+window:
+  from: '2026-07-23'
+  until: '2026-07-29'
+
+# Frozen editorial regression set; this is not rendered as a public rejection log.
+candidates:
+  - {id: 'arxiv:2607.19413', event_date: '2026-07-23', decision: excluded, reason_code: review-without-substantial-new-result}
+  - {id: 'arxiv:2607.19649', event_date: '2026-07-23', decision: selected, reason_code: rigorous-new-analytic-mechanism}
+  - {id: 'arxiv:2607.19980', event_date: '2026-07-23', decision: excluded, reason_code: integrability-not-central}
+  - {id: 'arxiv:2607.20106', event_date: '2026-07-23', decision: selected, reason_code: explicit-structure-reduction}
+  - {id: 'arxiv:2607.20109', event_date: '2026-07-23', decision: selected, reason_code: general-combinatorial-framework}
+  - {id: 'arxiv:2607.20509', event_date: '2026-07-24', decision: excluded, reason_code: not-first-public-release}
+  - {id: 'arxiv:2607.20983', event_date: '2026-07-24', decision: selected, reason_code: new-lax-r-matrix-mechanism}
+  - {id: 'arxiv:2607.22084', event_date: '2026-07-27', decision: selected, reason_code: conjecture-resolving-bi-hamiltonian-structure}
+  - {id: 'arxiv:2607.22202', event_date: '2026-07-27', decision: borderline, reason_code: value-threshold-needs-full-text}
+  - {id: 'arxiv:2607.22685', event_date: '2026-07-28', decision: excluded, reason_code: numerical-method-without-structural-advance}
+  - {id: 'arxiv:2607.23151', event_date: '2026-07-28', decision: excluded, reason_code: routine-explicit-solution-construction}
+  - {id: 'arxiv:2607.23422', event_date: '2026-07-28', decision: borderline, reason_code: routine-method-transfer-risk}
+  - {id: 'arxiv:2607.23616', event_date: '2026-07-28', decision: excluded, reason_code: integrability-not-central}
+  - {id: 'arxiv:2607.23932', event_date: '2026-07-28', decision: excluded, reason_code: integrability-not-central}
+  - {id: 'arxiv:2607.25596', event_date: '2026-07-29', decision: borderline, reason_code: primary-evidence-not-yet-available}
+  - {id: 'arxiv:2607.25897', event_date: '2026-07-29', decision: excluded, reason_code: outside-editorial-scope}
+  - {id: 'arxiv:2607.25898', event_date: '2026-07-29', decision: excluded, reason_code: integrability-not-central}
