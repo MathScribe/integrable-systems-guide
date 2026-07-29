@@ -70,6 +70,24 @@ Prefer the latest successful artifact from the repository's weekly Crossref
 backstop workflow. Do not make the interactive daily run wait repeatedly on an
 unresponsive Crossref endpoint.
 
+## Biweekly mathematics-index check
+
+Every two weeks, use the configured zbMATH backstop to catch journal papers that
+may lack a strong title phrase:
+
+1. query only journal articles from the current publication year in the
+   configured integrable-systems MSC classes;
+2. exhaust the bounded result set up to the configured hard cap, then retain
+   only records newly indexed inside the overlapping datestamp window;
+3. apply the same cheap relevance filter and strict value threshold used for
+   other sources;
+4. verify every surviving DOI and first-online date on Crossref and the
+   publisher page before treating it as a journal event.
+
+This pass is deliberately based on mathematical classification rather than a
+journal whitelist. Its successful status means the bounded MSC query completed;
+it does not mean all of zbMATH or every mathematics journal was inspected.
+
 ## Selection
 
 Thematic relevance is a broad gate; innovation strength is decisive. Apply the same field-wide criteria to every candidate.

@@ -1,0 +1,67 @@
+name: zbMATH MSC backstop
+
+on:
+  schedule:
+    # Every Monday at 06:30 Beijing time. The cadence step runs the actual
+    # query only in even ISO weeks, giving a stable two-week schedule.
+    - cron: '30 22 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Determine biweekly cadence
+        id: cadence
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          week="$(date -u -d '8 hours' +%V)"
+          if (( 10#$week % 2 == 0 )); then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping odd ISO week $week"
+          fi
+
+      - name: Checkout repository
+        if: steps.cadence.outputs.run == 'true'
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        if: steps.cadence.outputs.run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        if: steps.cadence.outputs.run == 'true'
+        run: pip install -r requirements.txt
+
+      - name: Run bounded MSC backstop
+        if: steps.cadence.outputs.run == 'true'
+        shell: bash
+        run: |
+          from_timestamp="$(date -u -d '30 days ago' +%Y-%m-%dT%H:%M:%SZ)"
+          until_timestamp="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          mkdir -p radar-artifacts
+          python scripts/fetch_zbmath_candidates.py \
+            --from-datestamp "$from_timestamp" \
+            --until-datestamp "$until_timestamp" \
+            --output radar-artifacts/zbmath-msc-backstop.json
+
+      - name: Upload candidate manifest
+        if: always() && steps.cadence.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: zbmath-msc-backstop
+          path: radar-artifacts/zbmath-msc-backstop.json
+          if-no-files-found: error
+          retention-days: 30

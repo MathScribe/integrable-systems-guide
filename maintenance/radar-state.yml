@@ -20,19 +20,19 @@ sources:
 
   crossref:
     kind: ranked-title-backstop
-    title_query_through: null
-    reconciliation_checked_at: null
+    title_query_through: '2026-07-29'
+    reconciliation_checked_at: '2026-07-29T12:26:48.134186Z'
     reconciliation_cadence: weekly
     overlap_days: 3
-    last_status: failed
+    last_status: complete
 
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
-    checked_at: null
-    last_status: not-configured
+    checked_at: '2026-07-29T12:22:53.639006Z'
+    last_status: complete
 
   publisher_verification:
     kind: candidate-verification
-    checked_at: null
+    checked_at: '2026-07-29T12:26:48.134186Z'
     last_status: candidate-only

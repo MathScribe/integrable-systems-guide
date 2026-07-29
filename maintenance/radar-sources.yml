@@ -25,9 +25,12 @@ crossref:
   # such as "Hamiltonian", "Poisson", and "soliton" are intentionally absent:
   # by themselves they produce too much unrelated literature.
   rows_per_page: 50
-  concurrent_queries: 8
-  timeout_seconds: 5
-  max_retries: 0
+  # Crossref rate-limits short concurrent bursts. The bounded weekly pass is
+  # small enough to run serially; modest retries are faster and more reliable
+  # than issuing all title queries at once.
+  concurrent_queries: 1
+  timeout_seconds: 10
+  max_retries: 2
 
   # Every returned record must also pass a local title regular expression.
   # This prevents tokenized searches such as "Yang-Baxter" from treating every
@@ -130,3 +133,24 @@ crossref:
       term: integrable probability
       patterns:
         - '\bintegrable[-\s]+probability\b'
+
+zbmath:
+  # A mathematics-specific backstop for journal papers whose titles do not
+  # contain one of the strong Crossref phrases. This is a bounded MSC query,
+  # not a journal whitelist or a zbMATH database mirror.
+  rows_per_page: 100
+  max_pages: 6
+  timeout_seconds: 20
+  max_retries: 2
+  overlap_days: 30
+  msc_codes:
+    - 37K10
+    - 37K15
+    - 37K20
+    - 37K30
+    - 37K35
+    - 37K40
+    - 37K60
+    - 35Q51
+    - 34M55
+    - 81R12

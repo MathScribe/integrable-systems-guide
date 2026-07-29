@@ -39,6 +39,7 @@ jobs:
             --output radar-artifacts/crossref-title-backstop.json
 
       - name: Upload candidate manifest
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: crossref-title-backstop

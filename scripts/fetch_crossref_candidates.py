@@ -419,6 +419,10 @@ def main() -> None:
         f"{sum(query.get('raw_items', 0) for query in manifest['queries'])} raw records "
         f"to {args.output}"
     )
+    if manifest["status"] != "complete":
+        raise SystemExit(
+            f"Crossref backstop incomplete: {manifest['failed_query_count']} queries failed"
+        )
 
 
 if __name__ == "__main__":
