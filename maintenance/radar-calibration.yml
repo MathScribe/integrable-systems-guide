@@ -20,6 +20,6 @@ candidates:
   - {id: 'arxiv:2607.23422', event_date: '2026-07-28', decision: borderline, reason_code: routine-method-transfer-risk}
   - {id: 'arxiv:2607.23616', event_date: '2026-07-28', decision: excluded, reason_code: integrability-not-central}
   - {id: 'arxiv:2607.23932', event_date: '2026-07-28', decision: excluded, reason_code: integrability-not-central}
-  - {id: 'arxiv:2607.25596', event_date: '2026-07-29', decision: borderline, reason_code: primary-evidence-not-yet-available}
+  - {id: 'arxiv:2607.25596', event_date: '2026-07-29', decision: selected, reason_code: general-tau-function-construction}
   - {id: 'arxiv:2607.25897', event_date: '2026-07-29', decision: excluded, reason_code: outside-editorial-scope}
   - {id: 'arxiv:2607.25898', event_date: '2026-07-29', decision: excluded, reason_code: integrability-not-central}

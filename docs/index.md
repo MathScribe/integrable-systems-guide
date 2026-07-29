@@ -6,7 +6,7 @@
 
 候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。
 
-<div class="radar-week-navigation" data-default-week="2026-W31" data-total-count="100">
+<div class="radar-week-navigation" data-default-week="2026-W31" data-total-count="101">
   <button type="button" data-radar-action="older">← 较早一周</button>
   <span class="radar-week-current" aria-live="polite"></span>
   <button type="button" data-radar-action="newer">较新一周 →</button>
@@ -16,7 +16,7 @@
     <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">
     <span class="radar-search-count" aria-live="polite"></span>
   </div>
-  <span hidden data-radar-week-option="2026-W31" data-label="2026 年第 31 周 · 7 月 27 日–8 月 2 日" data-count="1"></span>
+  <span hidden data-radar-week-option="2026-W31" data-label="2026 年第 31 周 · 7 月 27 日–8 月 2 日" data-count="2"></span>
   <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="20"></span>
   <span hidden data-radar-week-option="2026-W29" data-label="2026 年第 29 周 · 7 月 13–19 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W28" data-label="2026 年第 28 周 · 7 月 6–12 日" data-count="17"></span>
@@ -25,7 +25,7 @@
   <span hidden data-radar-week-option="2026-W25" data-label="2026 年第 25 周 · 6 月 15–21 日" data-count="13"></span>
 </div>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W31" hidden><strong>本周概览：</strong>本周首先关注非半单 partial CohFT 所产生的第二 Hamilton 结构。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W31" hidden><strong>本周概览：</strong>本周关注非半单 partial CohFT 的第二 Hamilton 结构，以及受限矩阵 KP 层级的 tau-function 与玻色--费米构造。</p>
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程、Lax/r-matrix 结构及量子超可积分类。</p>
 
@@ -40,6 +40,33 @@
 <p class="radar-week-overview" data-radar-screening-week="2026-W25" hidden><strong>本周概览：</strong>向量峰子谱流、可积半离散化、量子自旋链、Painlevé 约化与有限维 Hamilton 系统。</p>
 
 <p id="month-2026-07" class="radar-month-label" data-radar-month-group="2026-07">2026 年 7 月</p>
+
+### Tau functions of the constrained matrix KP hierarchy {#paper-arxiv-2607-25596 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-25596" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-29">2026-07-29</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-28">2026-07-28</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>tau function</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Tau functions of the constrained matrix KP hierarchy</p>
+  <p class="radar-paper-meta">Xiaohan Fan, Jipeng Cheng, Jinbiao Wang · <a href="https://arxiv.org/abs/2607.25596">arXiv</a> · <a href="https://arxiv.org/pdf/2607.25596">PDF</a></p>
+  <p class="radar-paper-overview">论文为受限矩阵 KP 层级建立 tau-function 表述和解构造。作者把矩阵 KP 看作多分量 KP 的约化，导出受限层级的双线性方程，并用多分量玻色--费米对应构造 tau functions。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者定义一般的 <span class="arithmatex">\((k,m)\)</span>-受限 <span class="arithmatex">\(N\)</span>-分量 KP 层级，先证明波函数形式的双线性恒等式，再转写为 tau-function 与 Hirota 双线性方程。将各分量时间约化后得到受限矩阵 KP 的 tau functions 和显式解，并给出 <span class="arithmatex">\(2\times2\)</span> 例子。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>伪微分 Lax 算子的有限秩负部约束把矩阵层级嵌入多分量 KP；后者的 tau 数据和玻色--费米对应随后把双线性恒等式转化为真空期望值形式的系统解构造。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>既有受限矩阵 KP 解通常依赖 quasi-determinants；该工作提供覆盖一般 <span class="arithmatex">\((k,m,N)\)</span> 参数的 tau-function 路径，把非交换矩阵层级与多分量 KP 的费米表示直接连接起来。</p>
+      </section>
+    </div>
+  </details>
+</article>
 
 ### Lifts of partial cohomological field theories and examples of bi-Hamiltonian structures in the non-semisimple case {#paper-arxiv-2607-22084 .radar-search-heading}
 
