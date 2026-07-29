@@ -315,8 +315,8 @@ def test_frozen_editorial_calibration_set() -> None:
     )
     candidates = data["candidates"]
     assert data["schema_version"] == 1
-    assert len(candidates) == 17
-    assert len({item["id"] for item in candidates}) == 17
+    assert len(candidates) == 19
+    assert len({item["id"] for item in candidates}) == 19
     assert all(
         data["window"]["from"] <= item["event_date"] <= data["window"]["until"]
         for item in candidates
@@ -325,7 +325,7 @@ def test_frozen_editorial_calibration_set() -> None:
         decision: sum(item["decision"] == decision for item in candidates)
         for decision in {"selected", "excluded", "borderline"}
     }
-    assert counts == {"selected": 6, "excluded": 9, "borderline": 2}
+    assert counts == {"selected": 8, "excluded": 9, "borderline": 2}
 
 
 def main() -> None:

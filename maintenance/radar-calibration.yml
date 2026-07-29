@@ -23,3 +23,5 @@ candidates:
   - {id: 'arxiv:2607.25596', event_date: '2026-07-29', decision: selected, reason_code: general-tau-function-construction}
   - {id: 'arxiv:2607.25897', event_date: '2026-07-29', decision: excluded, reason_code: outside-editorial-scope}
   - {id: 'arxiv:2607.25898', event_date: '2026-07-29', decision: excluded, reason_code: integrability-not-central}
+  - {id: 'doi:10.1134/S0040577926070111', event_date: '2026-07-24', decision: selected, reason_code: new-double-negative-flow-systems}
+  - {id: 'doi:10.1063/5.0331826', event_date: '2026-07-27', decision: selected, reason_code: new-open-elliptic-toda-construction}

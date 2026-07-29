@@ -46,22 +46,22 @@ frontier_weeks:
     coverage_note: 公开页面只展示最终收录论文。期刊 online-first 覆盖仍可能不完整。
 - id: 2026-W30
   date_range: 2026-07-20 至 2026-07-26
-  summary: 本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程、Lax/r-matrix 结构及量子超可积分类。
+  summary: 本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程、Lax/r-matrix 结构、量子超可积分类及双负时间可积方程。
   screening:
     sources_checked:
     - arXiv nlin.SI / nlin.PS 核心分类
-    - Crossref 题名补漏本轮不可用；不影响已核验 arXiv 事件
-    selected: 20
-    coverage_note: 核心分类已处理至 7 月 26 日；跨分类补漏保持独立水位。
+    - Crossref 强题名补漏与出版社首次在线记录
+    selected: 21
+    coverage_note: 核心分类已处理至 7 月 26 日；期刊补漏已通过独立水位处理至 7 月 29 日。
 - id: 2026-W31
   date_range: 2026-07-27 至 2026-08-02
-  summary: 本周关注非半单 partial CohFT 的第二 Hamilton 结构，以及受限矩阵 KP 层级的 tau-function 与玻色--费米构造。
+  summary: 本周关注非半单 partial CohFT 的第二 Hamilton 结构、受限矩阵 KP 层级的 tau-function 与玻色--费米构造，以及带边界的开放椭圆 Toda 链。
   screening:
     sources_checked:
     - arXiv nlin.SI / nlin.PS 核心分类与有限跨分类检索
-    - Crossref 题名补漏本轮不可用；不影响已核验 arXiv 事件
-    selected: 2
-    coverage_note: 核心分类与跨分类补漏均已处理至 7 月 29 日；Crossref 保持独立状态。
+    - Crossref 强题名补漏、zbMATH MSC 补漏与出版社首次在线记录
+    selected: 3
+    coverage_note: 核心分类、跨分类和独立期刊补漏均已处理至 7 月 29 日。
 frontier:
   entries:
   - paper_id: arxiv:2607.15132
@@ -1376,3 +1376,28 @@ frontier:
     main_result: 作者定义一般的 \((k,m)\)-受限 \(N\)-分量 KP 层级，先证明波函数形式的双线性恒等式，再转写为 tau-function 与 Hirota 双线性方程。将各分量时间约化后得到受限矩阵 KP 的 tau functions 和显式解，并给出 \(2\times2\) 例子。
     integrable_structure: 伪微分 Lax 算子的有限秩负部约束把矩阵层级嵌入多分量 KP；后者的 tau 数据和玻色--费米对应随后把双线性恒等式转化为真空期望值形式的系统解构造。
     innovation: 既有受限矩阵 KP 解通常依赖 quasi-determinants；该工作提供覆盖一般 \((k,m,N)\) 参数的 tau-function 路径，把非交换矩阵层级与多分量 KP 的费米表示直接连接起来。
+  - paper_id: doi:10.1134/S0040577926070111
+    signal_date: '2026-07-24'
+    signal_type: journal-publication
+    week: 2026-W30
+    arxiv_categories:
+    - nlin.SI
+    structure_tags:
+    - Lax pair
+    summary: 论文构造两个同时含有两个负编号演化变量的 \(2+1\) 维可积系统，把通常只沿正时间展开的可积层级推进到双负时间方向。
+    main_result: 作者从结合代数上的新交换子恒等式出发，经特殊伪微分算子和 dressing 程序得到两个非线性系统。一个系统含连续变量 \(t_1,t_{-1},x_{-1}\)，另一个同时含离散格点和两个负时间；相容条件给出 Lax 表述，散射数据演化可显式写出。
+    integrable_structure: 交换子恒等式先生成线性化方程，dressing 再把它提升为非线性可积系统及其相容线性问题。负编号时间并非形式换元，而是改变层级方向并产生新的连续与微分--差分动力学。
+    innovation: 既有负流构造通常只含一个负时间；本文给出同时含两个负编号演化的两类系统，并展示如何从代数恒等式系统地产生它们。直接散射和完整积分量仍待研究，但新层级机制本身已经明确建立。
+  - paper_id: doi:10.1063/5.0331826
+    signal_date: '2026-07-27'
+    signal_type: journal-publication
+    week: 2026-W31
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Lax pair
+    summary: 论文为 Krichever 的经典椭圆 Toda 链构造带边界项的开放模型，并以因子化 Lax 矩阵和与开放 XYZ 链的规范等价证明其可积结构。
+    main_result: 作者从周期椭圆 Toda 链的因子化局部 Lax 矩阵出发，引入端点边界自由度并构造开放链的单值矩阵。所得模型通过规范变换连接到具有边界的 XYZ 自旋链，由此得到保持可积性的边界 Hamiltonian。
+    integrable_structure: 因子化 Lax 矩阵编码椭圆 Toda 动力学；与 XYZ 链的规范等价把开放边界问题转移到成熟的边界自旋链结构中，使端点项与整体可积性同时受控。
+    innovation: 工作补上了经典椭圆 Toda 链的开放边界版本，并给出可复用的 Lax/规范等价构造，而不只是为周期模型附加经验性边界势。
