@@ -74,7 +74,6 @@ def main() -> None:
     if not isinstance(entries, list) or not entries:
         raise ValueError("frontier.entries must be a non-empty list")
 
-    arxiv_watermarks: list[date] = []
     for source_name in ARXIV_SOURCES:
         source = require_mapping(sources.get(source_name), f"sources.{source_name}")
         if source.get("kind") != "arxiv-announcement":
@@ -87,17 +86,11 @@ def main() -> None:
             raise ValueError(
                 f"sources.{source_name} must remain complete at its last successful watermark"
             )
-        arxiv_watermarks.append(watermark)
 
-    latest_public_arxiv = max(
-        parse_date(entry["signal_date"], f"{entry['paper_id']}.signal_date")
-        for entry in entries
-        if entry.get("signal_type") in {"new-preprint", "major-revision"}
-    )
-    if min(arxiv_watermarks) < latest_public_arxiv:
-        raise ValueError(
-            "the common arXiv announcement watermark cannot precede a public arXiv event"
-        )
+    # Public entries do not retain discovery provenance, and one paper can be
+    # present in several arXiv lists. Do not compare every public event against
+    # the minimum of independent source watermarks: a lagging cross-category
+    # pass must not invalidate a paper already covered by a core list.
 
     crossref = require_mapping(sources.get("crossref"), "sources.crossref")
     if crossref.get("kind") != "ranked-title-backstop":
@@ -135,7 +128,10 @@ def main() -> None:
 
     print(
         "validated independent radar source state; "
-        f"arXiv announced through {min(arxiv_watermarks).isoformat()}, "
+        f"nlin.SI through {sources['arxiv_nlin_si']['announced_through']}, "
+        f"nlin.PS through {sources['arxiv_nlin_ps']['announced_through']}, "
+        "cross-category through "
+        f"{sources['arxiv_cross_category']['announced_through']}, "
         f"Crossref status {crossref_status}"
     )
 
