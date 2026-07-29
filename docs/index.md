@@ -6,7 +6,7 @@
 
 候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。
 
-<div class="radar-week-navigation" data-default-week="2026-W31" data-total-count="99">
+<div class="radar-week-navigation" data-default-week="2026-W31" data-total-count="100">
   <button type="button" data-radar-action="older">← 较早一周</button>
   <span class="radar-week-current" aria-live="polite"></span>
   <button type="button" data-radar-action="newer">较新一周 →</button>
@@ -17,7 +17,7 @@
     <span class="radar-search-count" aria-live="polite"></span>
   </div>
   <span hidden data-radar-week-option="2026-W31" data-label="2026 年第 31 周 · 7 月 27 日–8 月 2 日" data-count="1"></span>
-  <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="19"></span>
+  <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="20"></span>
   <span hidden data-radar-week-option="2026-W29" data-label="2026 年第 29 周 · 7 月 13–19 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W28" data-label="2026 年第 28 周 · 7 月 6–12 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W27" data-label="2026 年第 27 周 · 6 月 29 日–7 月 5 日" data-count="10"></span>
@@ -27,7 +27,7 @@
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W31" hidden><strong>本周概览：</strong>本周首先关注非半单 partial CohFT 所产生的第二 Hamilton 结构。</p>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程及 Lax/r-matrix 结构。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程、Lax/r-matrix 结构及量子超可积分类。</p>
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W29" hidden><strong>本周概览：</strong>Quantum Spectral Curve、Chern--Simons 可积引力、无限粒子 Goldfish 系统、孤子层析与 HCIZ 矩阵模型。</p>
 
@@ -198,6 +198,33 @@
       <section>
         <h4>创新</h4>
         <p>相比只描述有限时间区域的既有紧化，论文补齐 <span class="arithmatex">\(t=0\)</span> 和 <span class="arithmatex">\(t=\infty\)</span> 两端，并用分量级第一积分给出叶层而非仅给出空间本身的边界结构。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Superintegrable systems of two interacting spin-1/2 particles with first-order vector integrals of motion {#paper-arxiv-2607-19155 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-19155" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-22">2026-07-22</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-21">2026-07-21</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>Hamiltonian structure</code> <code>quantum integrability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Superintegrable systems of two interacting spin-1/2 particles with first-order vector integrals of motion</p>
+  <p class="radar-paper-meta">O. Ogulcan Tuncer, I. Yurdusen · <a href="https://arxiv.org/abs/2607.19155">arXiv</a> · <a href="https://arxiv.org/pdf/2607.19155">PDF</a></p>
+  <p class="radar-paper-overview">论文完整分类一类三维两自旋-<span class="arithmatex">\(\frac12\)</span> 粒子 Hamilton 系统：在 <span class="arithmatex">\(V_4=0\)</span> 的相互作用范围内，找出所有具有非平凡一阶矢量运动积分的势与对应积分。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者从相对位置、动量、轨道角动量和两个自旋向量构造最一般的 Hermitian 一阶矢量算子。它与 Hamiltonian 的对易条件化为超定径向决定方程，求解后得到允许势和矢量积分的完整清单，并讨论部分对称代数及一个可精确约化的代表性模型。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>一阶矢量积分把量子超可积性转化为 Hamiltonian 与一般矢量算子的对易约束；决定方程同时限制中心势、自旋轨道、自旋--自旋及张量耦合，使可积结构直接承担分类机制。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>结果把此前针对标量和赝标量一阶积分的分类推进到矢量积分，并在包含多种自旋耦合的统一 Hamiltonian 类中给出完整分类，而不是只构造少数可解例子。</p>
       </section>
     </div>
   </details>

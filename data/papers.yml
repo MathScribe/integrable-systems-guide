@@ -2341,3 +2341,21 @@
     - "non-semisimple theory"
     - "bi-Hamiltonian structure"
     - "second Poisson bracket"
+
+- id: "arxiv:2607.19155"
+  title: "Superintegrable systems of two interacting spin-1/2 particles with first-order vector integrals of motion"
+  authors:
+    - "O. Ogulcan Tuncer"
+    - "I. Yurdusen"
+  url: "https://arxiv.org/abs/2607.19155"
+  arxiv_id: "2607.19155"
+  doi: "10.48550/arXiv.2607.19155"
+  submitted: "2026-07-21"
+  updated: "2026-07-21"
+  version: "v1"
+  metadata_checked_at: "2026-07-29"
+  tags:
+    - "quantum superintegrability"
+    - "spin-1/2 particles"
+    - "first-order vector integrals"
+    - "determining equations"

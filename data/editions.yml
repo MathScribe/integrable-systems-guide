@@ -46,12 +46,12 @@ frontier_weeks:
     coverage_note: 公开页面只展示最终收录论文。期刊 online-first 覆盖仍可能不完整。
 - id: 2026-W30
   date_range: 2026-07-20 至 2026-07-26
-  summary: 本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程及 Lax/r-matrix 结构。
+  summary: 本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程、Lax/r-matrix 结构及量子超可积分类。
   screening:
     sources_checked:
     - arXiv nlin.SI / nlin.PS 核心分类
     - Crossref 题名补漏本轮不可用；不影响已核验 arXiv 事件
-    selected: 19
+    selected: 20
     coverage_note: 核心分类已处理至 7 月 26 日；跨分类补漏保持独立水位。
 - id: 2026-W31
   date_range: 2026-07-27 至 2026-08-02
@@ -1351,3 +1351,16 @@ frontier:
     main_result: 新 lift 推广已有构造，并给出一族非半单 partial CohFT；作者在这些例子中验证第二 Poisson bracket 的显式公式，从而确认 Buryak 等人关于新非半单情形的猜想，并把构造联系到 Weil bundle 上的 Morimoto lift。
     integrable_structure: partial CohFT 生成可积层级，局部多向量场的 lift 同时传递 Poisson 数据；第二 bracket 与原 Hamilton 结构相容，使提升后的非半单系统成为真正的双 Hamilton 层级。
     innovation: 结果提供了系统而非零散的非半单双 Hamilton 例子，并把 CohFT lift、显式第二 Poisson bracket 与几何结构的 Weil bundle 提升放入同一机制。
+  - paper_id: arxiv:2607.19155
+    signal_date: '2026-07-22'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - math-ph
+    structure_tags:
+    - Hamiltonian structure
+    - quantum integrability
+    summary: 论文完整分类一类三维两自旋-\(\frac12\) 粒子 Hamilton 系统：在 \(V_4=0\) 的相互作用范围内，找出所有具有非平凡一阶矢量运动积分的势与对应积分。
+    main_result: 作者从相对位置、动量、轨道角动量和两个自旋向量构造最一般的 Hermitian 一阶矢量算子。它与 Hamiltonian 的对易条件化为超定径向决定方程，求解后得到允许势和矢量积分的完整清单，并讨论部分对称代数及一个可精确约化的代表性模型。
+    integrable_structure: 一阶矢量积分把量子超可积性转化为 Hamiltonian 与一般矢量算子的对易约束；决定方程同时限制中心势、自旋轨道、自旋--自旋及张量耦合，使可积结构直接承担分类机制。
+    innovation: 结果把此前针对标量和赝标量一阶积分的分类推进到矢量积分，并在包含多种自旋耦合的统一 Hamiltonian 类中给出完整分类，而不是只构造少数可解例子。
