@@ -20,3 +20,6 @@ local-github-pages-home.png
 # Temporary files
 *.tmp
 *.bak
+
+# Local research-radar candidate audits and policy replays
+.agents/radar-evaluation/

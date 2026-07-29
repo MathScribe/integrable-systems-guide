@@ -1,0 +1,38 @@
+schema_version: 1
+
+# Source coverage is operational state, not a public paper date. A source may
+# fail without changing another source's successful watermark.
+sources:
+  arxiv_nlin_si:
+    kind: arxiv-announcement
+    announced_through: '2026-07-21'
+    last_status: complete
+
+  arxiv_nlin_ps:
+    kind: arxiv-announcement
+    announced_through: '2026-07-21'
+    last_status: complete
+
+  arxiv_cross_category:
+    kind: arxiv-announcement
+    announced_through: '2026-07-21'
+    last_status: complete
+
+  crossref:
+    kind: ranked-title-backstop
+    title_query_through: null
+    reconciliation_checked_at: null
+    reconciliation_cadence: weekly
+    overlap_days: 3
+    last_status: not-established
+
+  zbmath:
+    kind: mathematical-index-backstop
+    cadence: biweekly
+    checked_at: null
+    last_status: not-configured
+
+  publisher_verification:
+    kind: candidate-verification
+    checked_at: null
+    last_status: candidate-only

@@ -40,7 +40,9 @@ jobs:
         run: |
           python scripts/validate_radar.py
           python scripts/validate_frontier_data.py
+          python scripts/validate_radar_state.py
           python scripts/test_radar.py
+          python scripts/test_radar_discovery.py
           python scripts/render_radar.py --check
           node --check docs/javascripts/radar.js
 
