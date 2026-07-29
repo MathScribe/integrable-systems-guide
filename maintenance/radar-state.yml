@@ -5,17 +5,17 @@ schema_version: 1
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-07-21'
+    announced_through: '2026-07-29'
     last_status: complete
 
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-07-21'
+    announced_through: '2026-07-29'
     last_status: complete
 
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-07-21'
+    announced_through: '2026-07-29'
     last_status: complete
 
   crossref:
@@ -24,7 +24,7 @@ sources:
     reconciliation_checked_at: null
     reconciliation_cadence: weekly
     overlap_days: 3
-    last_status: not-established
+    last_status: failed
 
   zbmath:
     kind: mathematical-index-backstop

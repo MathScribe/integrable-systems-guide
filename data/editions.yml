@@ -46,13 +46,22 @@ frontier_weeks:
     coverage_note: 公开页面只展示最终收录论文。期刊 online-first 覆盖仍可能不完整。
 - id: 2026-W30
   date_range: 2026-07-20 至 2026-07-26
-  summary: 本周新增非交换 Volterra 层级、退化 Darboux 极限、谱曲线递归、Bethe/Yang--Baxter 模型、KP 行列式方法及 Riemann--Hilbert 扰动理论。
+  summary: 本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程、Lax/r-matrix 结构及量子超可积分类。
   screening:
     sources_checked:
-    - arXiv 分类与跨分类结构词、结果词检索
-    - Crossref、期刊 online-first 与出版商记录核验
-    selected: 12
-    coverage_note: 本周仍在进行中；公开页面只展示截至当前检查日期的最终收录论文。
+    - arXiv nlin.SI / nlin.PS 核心分类
+    - Crossref 题名补漏本轮不可用；不影响已核验 arXiv 事件
+    selected: 20
+    coverage_note: 核心分类已处理至 7 月 26 日；跨分类补漏保持独立水位。
+- id: 2026-W31
+  date_range: 2026-07-27 至 2026-08-02
+  summary: 本周首先关注非半单 partial CohFT 所产生的第二 Hamilton 结构。
+  screening:
+    sources_checked:
+    - arXiv nlin.SI / nlin.PS 核心分类
+    - Crossref 题名补漏本轮不可用；不影响已核验 arXiv 事件
+    selected: 1
+    coverage_note: 核心分类已处理至 7 月 29 日；跨分类补漏仍待独立完成。
 frontier:
   entries:
   - paper_id: arxiv:2607.15132
@@ -1231,3 +1240,127 @@ frontier:
     main_result: 作者从硬壁盒中的相互作用基态出发，在固定耦合下实施几何骤变，并用 generalized Feynman--Kac quantum Monte Carlo 计算多体演化。速度空间密度在不同时间塌缩为近似定常曲线，其展宽随耦合增强而系统变化，并快速接近 Tonks--Girardeau 极限。
     integrable_structure: Lieb--Liniger 模型的 Bethe rapidities 编码守恒准动量分布；弹道膨胀把这组谱信息映射到可观测的实空间密度。比较 \(x/t\) 密度与 rapidity 分布提供了无需直接动量测量的间接读出机制。
     innovation: 工作提出并数值验证从膨胀后的空间密度提取 rapidity 结构的实验相关路径，把 dynamical fermionization 从定性现象推进为可积谱数据的观测接口。
+  - paper_id: arxiv:2607.19119
+    signal_date: '2026-07-22'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - nlin.SI
+    - math.AP
+    structure_tags:
+    - Riemann--Hilbert problem
+    - nonlinear steepest descent
+    summary: 论文给出 defocusing Hirota 方程在有限亏格代数几何背景上的全半平面长时渐近。四个时空区域分别由相移有限亏格主项、Painlevé XXXIV 过渡修正、辐射项和快速衰减误差控制。
+    main_result: 相函数的临界值把 \((x,t)\) 半平面分成四区；各区主项均为相移后的有限亏格解，但次阶尺度依次表现为 \(t^{-1/3}\) 的 Painlevé XXXIV 模型、\(t^{-1/2}\) 的 Zakharov--Manakov 辐射或 \(O(t^{-1})\) 误差。作者还指出构造可推广到更高阶 AKNS 流。
+    integrable_structure: 有限亏格背景决定基准谱曲线和准周期主项，Riemann--Hilbert 表述把初值扰动编码为跳跃数据；Deift--Zhou 变形再按驻相点退化类型选择有限亏格、局部 Painlevé 或辐射模型。
+    innovation: 新增结果是在同一谱框架内覆盖整个时空半平面，并明确连接有限亏格主项、Painlevé 临界过渡和连续谱辐射三种此前需要分区处理的渐近机制。
+  - paper_id: arxiv:2607.19285
+    signal_date: '2026-07-22'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - math.AG
+    - nlin.SI
+    structure_tags:
+    - Painlevé
+    - Hamiltonian structure
+    summary: 论文把 Painlevé V 叶层的紧化分析推进到时间参数 \(t=0\) 与 \(t=\infty\) 的边界。每个边界分量上都得到 Hamilton 向量场的第一积分，从而可显式描述边界叶层。
+    main_result: 作者研究已有紧化在两个时间端点附近的叶片行为，并逐个边界分量构造第一积分。该积分把紧化空间上的 Hamilton 流限制为可直接刻画的水平集，给出边界退化的显式几何描述。
+    integrable_structure: Painlevé V 的 Hamilton 向量场定义叶层动力学；紧化加入的边界除子记录时间端点处的退化。第一积分在各边界分量上把局部流转换成可计算的代数几何数据。
+    innovation: 相比只描述有限时间区域的既有紧化，论文补齐 \(t=0\) 和 \(t=\infty\) 两端，并用分量级第一积分给出叶层而非仅给出空间本身的边界结构。
+  - paper_id: arxiv:2607.18959
+    signal_date: '2026-07-22'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - math-ph
+    - cond-mat.stat-mech
+    structure_tags:
+    - Yang--Baxter equation
+    summary: 论文从集合论 Yang--Baxter 解构造带反应粒子种类的多物种 SSEP，并证明周期系统及两类开放边界的可积性。模型允许粒子成对蒸发、凝聚或转化，并可推广到任意数量的反应种类。
+    main_result: 作者先完整分析 \((p,1)\)-SSEP 的周期扇区，再由 reflection equation 解的 Baxterization 构造两类开放边界；随后推广到 \((p,q)\)-SSEP，并在一种可积边界下计算开放非平衡稳态的物理量。
+    integrable_structure: 集合论 Yang--Baxter 解保证体相多粒子更新的相容性，reflection equation 控制边界散射；Baxterization 把离散代数解提升为可用于 Markov 生成元的参数族。
+    innovation: 工作不是在既有 SSEP 上只增加反应率，而是由 Yang--Baxter 数据系统地产生反应种类、周期动力学和开放边界，并保持可积性及稳态可计算性。
+  - paper_id: arxiv:2607.19649
+    signal_date: '2026-07-23'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - nlin.SI
+    - math.AP
+    structure_tags:
+    - inverse scattering
+    - Riemann--Hilbert problem
+    summary: 论文以逆散射证明 reverse space-time nonlocal Fokas--Lenells 方程在加权 Sobolev 初值下的整体适定性。核心困难是非 Hermitian 约化破坏通常的跳跃矩阵强制性，作者用定量小数据条件重新建立正定控制。
+    main_result: 谱一致化消除 KN 型负流谱问题的奇性；反射系数的一致界保证跳跃矩阵 Hermitian 部分正定，进而通过 Fredholm 与 vanishing lemma 证明奇异积分算子可逆。最终得到势与散射数据间的 \(L^2\)-Sobolev 双射、排除连续谱奇性，并建立全局唯一解及 Lipschitz 解映射。
+    integrable_structure: 逆散射把 Cauchy 问题分解为直接谱变换、散射数据演化和 Riemann--Hilbert 重构；非局域约化改变谱对称性，因此可逆性证明必须在谱层面重新构造 coercivity。
+    innovation: 论文把非局域 Fokas--Lenells 的形式逆散射推进为完整的整体适定性理论，并针对非 Hermitian 对称给出可量化的正定性与双射机制。
+  - paper_id: arxiv:2607.20106
+    signal_date: '2026-07-23'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - math-ph
+    - math.SG
+    structure_tags:
+    - Hamiltonian structure
+    - isomonodromy
+    summary: 论文通过 Painlevé IV 层级的 \(\mathbb Z_2\) 对称约化，显式导出 Flaschka--Newell Painlevé II 层级的 Hamiltonians 与 Lax 矩阵。关键步骤是构造适应 involution 的 Darboux 坐标。
+    main_result: 经过合适的平凡化变换，对称在新坐标中对角作用，其不动点集因此可显式识别为辛子流形。作者在该子流形上完成 Hamilton 约化，得到 Painlevé II 层级各阶 Hamiltonian 与 Lax 表示。
+    integrable_structure: 亚纯联络空间提供 isomonodromic 辛几何，Darboux 坐标把 \(\mathbb Z_2\) 约束转成正则坐标条件；限制辛形式和 Hamiltonians 后，约化流自动保留 Lax 与 Hamilton 结构。
+    innovation: 工作给出的不只是 Painlevé II 层级存在 Hamilton 表述，而是一套可显式计算的对称适应坐标和约化程序，可用于其他带离散对称的 isomonodromic 系统。
+  - paper_id: arxiv:2607.20109
+    signal_date: '2026-07-23'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - nlin.SI
+    - math.CO
+    structure_tags:
+    - 2D Toda hierarchy
+    - integrable geometry
+    summary: 论文把 KP 孤子、全非负 Grassmannian 与热带几何的组合算法推广到 2D Toda lattice 和 Davey--Stewartson 方程。由 Grassmannian 元素可以系统生成两类方程的 contour plots。
+    main_result: 两个系统的孤子解同样由 Sato Grassmannian 参数化。作者据此构造从 totally nonnegative Grassmannian 数据到平面轮廓图的算法，并在渐近区域恢复且细化既有的孤子分类结果。
+    integrable_structure: Sato Grassmannian 统一编码 tau 数据，热带极限把指数项竞争转化为多面体分区；全非负性进一步控制轮廓交汇和孤子标签，使组合算法直接对应可积解的几何。
+    innovation: 论文实现了此前对 KP 情形已知、但仅被建议可能推广的组合机制，并同时覆盖离散方向的 2D Toda 与二维 Davey--Stewartson 两种不同孤子几何。
+  - paper_id: arxiv:2607.20983
+    signal_date: '2026-07-24'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - nlin.SI
+    - math.DS
+    structure_tags:
+    - Lax pair
+    - Poisson structure
+    summary: 论文为多类二维各向同性振子构造带谱参数的 Lax pairs 与动力学 \(r\)-matrices。一个突出例子给出全部三个守恒量，但它们形成非阿贝尔 Poisson 代数而非彼此对易。
+    main_result: 对谐振子，作者得到 \(4\times4\) 块 Lax pair 和两个对易模态能量，同时构造 \(2\times2\) 表示以恢复三个独立守恒量。方法继续推广到二次加四次非谐振子、含旋转能模型以及变量变换后的 Rajeev--Ranken 模型。
+    integrable_structure: Lax 方程生成守恒谱不变量，动力学 \(r\)-matrix 描述其 Poisson bracket。不同矩阵表示分别突出 Liouville 对易积分与超可积系统的非阿贝尔守恒代数。
+    innovation: 工作展示了带谱参数 Lax 表示并不必然只生成对易积分，并在一组可显式比较的振子模型中统一给出 Lax 与 \(r\)-matrix 构造。
+  - paper_id: arxiv:2607.22084
+    signal_date: '2026-07-27'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories:
+    - math-ph
+    - math.DG
+    structure_tags:
+    - Hamiltonian structure
+    - Frobenius manifold
+    summary: 论文定义 partial cohomological field theory 及局部多向量场相对于 Frobenius algebra 的 lift，并由此系统产生非半单齐次理论。相应可积系统获得第二 Hamilton 结构。
+    main_result: 新 lift 推广已有构造，并给出一族非半单 partial CohFT；作者在这些例子中验证第二 Poisson bracket 的显式公式，从而确认 Buryak 等人关于新非半单情形的猜想，并把构造联系到 Weil bundle 上的 Morimoto lift。
+    integrable_structure: partial CohFT 生成可积层级，局部多向量场的 lift 同时传递 Poisson 数据；第二 bracket 与原 Hamilton 结构相容，使提升后的非半单系统成为真正的双 Hamilton 层级。
+    innovation: 结果提供了系统而非零散的非半单双 Hamilton 例子，并把 CohFT lift、显式第二 Poisson bracket 与几何结构的 Weil bundle 提升放入同一机制。
+  - paper_id: arxiv:2607.19155
+    signal_date: '2026-07-22'
+    signal_type: new-preprint
+    week: 2026-W30
+    arxiv_categories:
+    - math-ph
+    structure_tags:
+    - Hamiltonian structure
+    - quantum integrability
+    summary: 论文完整分类一类三维两自旋-\(\frac12\) 粒子 Hamilton 系统：在 \(V_4=0\) 的相互作用范围内，找出所有具有非平凡一阶矢量运动积分的势与对应积分。
+    main_result: 作者从相对位置、动量、轨道角动量和两个自旋向量构造最一般的 Hermitian 一阶矢量算子。它与 Hamiltonian 的对易条件化为超定径向决定方程，求解后得到允许势和矢量积分的完整清单，并讨论部分对称代数及一个可精确约化的代表性模型。
+    integrable_structure: 一阶矢量积分把量子超可积性转化为 Hamiltonian 与一般矢量算子的对易约束；决定方程同时限制中心势、自旋轨道、自旋--自旋及张量耦合，使可积结构直接承担分类机制。
+    innovation: 结果把此前针对标量和赝标量一阶积分的分类推进到矢量积分，并在包含多种自旋耦合的统一 Hamiltonian 类中给出完整分类，而不是只构造少数可解例子。
