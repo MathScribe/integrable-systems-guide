@@ -6,7 +6,7 @@
 
 候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。
 
-<div class="radar-week-navigation" data-default-week="2026-W31" data-total-count="101">
+<div class="radar-week-navigation" data-default-week="2026-W31" data-total-count="103">
   <button type="button" data-radar-action="older">← 较早一周</button>
   <span class="radar-week-current" aria-live="polite"></span>
   <button type="button" data-radar-action="newer">较新一周 →</button>
@@ -16,8 +16,8 @@
     <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">
     <span class="radar-search-count" aria-live="polite"></span>
   </div>
-  <span hidden data-radar-week-option="2026-W31" data-label="2026 年第 31 周 · 7 月 27 日–8 月 2 日" data-count="2"></span>
-  <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="20"></span>
+  <span hidden data-radar-week-option="2026-W31" data-label="2026 年第 31 周 · 7 月 27 日–8 月 2 日" data-count="3"></span>
+  <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="21"></span>
   <span hidden data-radar-week-option="2026-W29" data-label="2026 年第 29 周 · 7 月 13–19 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W28" data-label="2026 年第 28 周 · 7 月 6–12 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W27" data-label="2026 年第 27 周 · 6 月 29 日–7 月 5 日" data-count="10"></span>
@@ -25,9 +25,9 @@
   <span hidden data-radar-week-option="2026-W25" data-label="2026 年第 25 周 · 6 月 15–21 日" data-count="13"></span>
 </div>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W31" hidden><strong>本周概览：</strong>本周关注非半单 partial CohFT 的第二 Hamilton 结构，以及受限矩阵 KP 层级的 tau-function 与玻色--费米构造。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W31" hidden><strong>本周概览：</strong>本周关注非半单 partial CohFT 的第二 Hamilton 结构、受限矩阵 KP 层级的 tau-function 与玻色--费米构造，以及带边界的开放椭圆 Toda 链。</p>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程、Lax/r-matrix 结构及量子超可积分类。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程、Lax/r-matrix 结构、量子超可积分类及双负时间可积方程。</p>
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W29" hidden><strong>本周概览：</strong>Quantum Spectral Curve、Chern--Simons 可积引力、无限粒子 Goldfish 系统、孤子层析与 HCIZ 矩阵模型。</p>
 
@@ -68,6 +68,33 @@
   </details>
 </article>
 
+### Integrable open elliptic Toda chain with boundaries {#paper-doi-10-1063-5-0331826 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1063-5-0331826" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-27">2026-07-27</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Lax pair</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Integrable open elliptic Toda chain with boundaries</p>
+  <p class="radar-paper-meta">Andrei Zotov · <a href="https://arxiv.org/abs/2602.13903">arXiv</a> · <a href="https://arxiv.org/pdf/2602.13903">PDF</a> · <a href="https://doi.org/10.1063/5.0331826">Journal of Mathematical Physics 67, 072704 (2026)</a></p>
+  <p class="radar-paper-overview">论文为 Krichever 的经典椭圆 Toda 链构造带边界项的开放模型，并以因子化 Lax 矩阵和与开放 XYZ 链的规范等价证明其可积结构。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者从周期椭圆 Toda 链的因子化局部 Lax 矩阵出发，引入端点边界自由度并构造开放链的单值矩阵。所得模型通过规范变换连接到具有边界的 XYZ 自旋链，由此得到保持可积性的边界 Hamiltonian。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>因子化 Lax 矩阵编码椭圆 Toda 动力学；与 XYZ 链的规范等价把开放边界问题转移到成熟的边界自旋链结构中，使端点项与整体可积性同时受控。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作补上了经典椭圆 Toda 链的开放边界版本，并给出可复用的 Lax/规范等价构造，而不只是为周期模型附加经验性边界势。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
 ### Lifts of partial cohomological field theories and examples of bi-Hamiltonian structures in the non-semisimple case {#paper-arxiv-2607-22084 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-22084" data-radar-week="2026-W31" data-radar-month="2026-07">
@@ -90,6 +117,33 @@
       <section>
         <h4>创新</h4>
         <p>结果提供了系统而非零散的非半单双 Hamilton 例子，并把 CohFT lift、显式第二 Poisson bracket 与几何结构的 Weil bundle 提升放入同一机制。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Integrable equations with negative evolution numbers {#paper-doi-10-1134-s0040577926070111 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1134-s0040577926070111" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-24">2026-07-24</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>Lax pair</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Integrable equations with negative evolution numbers</p>
+  <p class="radar-paper-meta">Andrei K. Pogrebkov · <a href="https://arxiv.org/abs/2605.27185">arXiv</a> · <a href="https://arxiv.org/pdf/2605.27185">PDF</a> · <a href="https://doi.org/10.1134/S0040577926070111">Theoretical and Mathematical Physics 228, 1225-1235 (2026)</a></p>
+  <p class="radar-paper-overview">论文构造两个同时含有两个负编号演化变量的 <span class="arithmatex">\(2+1\)</span> 维可积系统，把通常只沿正时间展开的可积层级推进到双负时间方向。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者从结合代数上的新交换子恒等式出发，经特殊伪微分算子和 dressing 程序得到两个非线性系统。一个系统含连续变量 <span class="arithmatex">\(t_1,t_{-1},x_{-1}\)</span>，另一个同时含离散格点和两个负时间；相容条件给出 Lax 表述，散射数据演化可显式写出。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>交换子恒等式先生成线性化方程，dressing 再把它提升为非线性可积系统及其相容线性问题。负编号时间并非形式换元，而是改变层级方向并产生新的连续与微分--差分动力学。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>既有负流构造通常只含一个负时间；本文给出同时含两个负编号演化的两类系统，并展示如何从代数恒等式系统地产生它们。直接散射和完整积分量仍待研究，但新层级机制本身已经明确建立。</p>
       </section>
     </div>
   </details>
