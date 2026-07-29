@@ -6,7 +6,7 @@
 
 候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。
 
-<div class="radar-week-navigation" data-default-week="2026-W30" data-total-count="91">
+<div class="radar-week-navigation" data-default-week="2026-W31" data-total-count="99">
   <button type="button" data-radar-action="older">← 较早一周</button>
   <span class="radar-week-current" aria-live="polite"></span>
   <button type="button" data-radar-action="newer">较新一周 →</button>
@@ -16,7 +16,8 @@
     <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">
     <span class="radar-search-count" aria-live="polite"></span>
   </div>
-  <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="12"></span>
+  <span hidden data-radar-week-option="2026-W31" data-label="2026 年第 31 周 · 7 月 27 日–8 月 2 日" data-count="1"></span>
+  <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="19"></span>
   <span hidden data-radar-week-option="2026-W29" data-label="2026 年第 29 周 · 7 月 13–19 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W28" data-label="2026 年第 28 周 · 7 月 6–12 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W27" data-label="2026 年第 27 周 · 6 月 29 日–7 月 5 日" data-count="10"></span>
@@ -24,7 +25,9 @@
   <span hidden data-radar-week-option="2026-W25" data-label="2026 年第 25 周 · 6 月 15–21 日" data-count="13"></span>
 </div>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>本周新增非交换 Volterra 层级、退化 Darboux 极限、谱曲线递归、Bethe/Yang--Baxter 模型、KP 行列式方法及 Riemann--Hilbert 扰动理论。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W31" hidden><strong>本周概览：</strong>本周首先关注非半单 partial CohFT 所产生的第二 Hamilton 结构。</p>
+
+<p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程及 Lax/r-matrix 结构。</p>
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W29" hidden><strong>本周概览：</strong>Quantum Spectral Curve、Chern--Simons 可积引力、无限粒子 Goldfish 系统、孤子层析与 HCIZ 矩阵模型。</p>
 
@@ -37,6 +40,222 @@
 <p class="radar-week-overview" data-radar-screening-week="2026-W25" hidden><strong>本周概览：</strong>向量峰子谱流、可积半离散化、量子自旋链、Painlevé 约化与有限维 Hamilton 系统。</p>
 
 <p id="month-2026-07" class="radar-month-label" data-radar-month-group="2026-07">2026 年 7 月</p>
+
+### Lifts of partial cohomological field theories and examples of bi-Hamiltonian structures in the non-semisimple case {#paper-arxiv-2607-22084 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-22084" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-27">2026-07-27</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-24">2026-07-24</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>math.DG</code> <code>Hamiltonian structure</code> <code>Frobenius manifold</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Lifts of partial cohomological field theories and examples of bi-Hamiltonian structures in the non-semisimple case</p>
+  <p class="radar-paper-meta">Guido Carlet, Dimitrios Makris, Sergey Shadrin · <a href="https://arxiv.org/abs/2607.22084">arXiv</a> · <a href="https://arxiv.org/pdf/2607.22084">PDF</a></p>
+  <p class="radar-paper-overview">论文定义 partial cohomological field theory 及局部多向量场相对于 Frobenius algebra 的 lift，并由此系统产生非半单齐次理论。相应可积系统获得第二 Hamilton 结构。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>新 lift 推广已有构造，并给出一族非半单 partial CohFT；作者在这些例子中验证第二 Poisson bracket 的显式公式，从而确认 Buryak 等人关于新非半单情形的猜想，并把构造联系到 Weil bundle 上的 Morimoto lift。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>partial CohFT 生成可积层级，局部多向量场的 lift 同时传递 Poisson 数据；第二 bracket 与原 Hamilton 结构相容，使提升后的非半单系统成为真正的双 Hamilton 层级。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>结果提供了系统而非零散的非半单双 Hamilton 例子，并把 CohFT lift、显式第二 Poisson bracket 与几何结构的 Weil bundle 提升放入同一机制。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Lax pairs and r-matrices for some two-dimensional isotropic oscillators {#paper-arxiv-2607-20983 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-20983" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-24">2026-07-24</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-23">2026-07-23</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math.DS</code> <code>Lax pair</code> <code>Poisson structure</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Lax pairs and r-matrices for some two-dimensional isotropic oscillators</p>
+  <p class="radar-paper-meta">Govind S. Krishnaswami, Garima Rajpoot, Srividya N. Vaidya · <a href="https://arxiv.org/abs/2607.20983">arXiv</a> · <a href="https://arxiv.org/pdf/2607.20983">PDF</a></p>
+  <p class="radar-paper-overview">论文为多类二维各向同性振子构造带谱参数的 Lax pairs 与动力学 <span class="arithmatex">\(r\)</span>-matrices。一个突出例子给出全部三个守恒量，但它们形成非阿贝尔 Poisson 代数而非彼此对易。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>对谐振子，作者得到 <span class="arithmatex">\(4\times4\)</span> 块 Lax pair 和两个对易模态能量，同时构造 <span class="arithmatex">\(2\times2\)</span> 表示以恢复三个独立守恒量。方法继续推广到二次加四次非谐振子、含旋转能模型以及变量变换后的 Rajeev--Ranken 模型。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Lax 方程生成守恒谱不变量，动力学 <span class="arithmatex">\(r\)</span>-matrix 描述其 Poisson bracket。不同矩阵表示分别突出 Liouville 对易积分与超可积系统的非阿贝尔守恒代数。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作展示了带谱参数 Lax 表示并不必然只生成对易积分，并在一组可显式比较的振子模型中统一给出 Lax 与 <span class="arithmatex">\(r\)</span>-matrix 构造。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Combinatorial geometry of the 2D Toda lattice and Davey Stewartson equation {#paper-arxiv-2607-20109 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-20109" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-23">2026-07-23</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-22">2026-07-22</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math.CO</code> <code>2D Toda hierarchy</code> <code>integrable geometry</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Combinatorial geometry of the 2D Toda lattice and Davey Stewartson equation</p>
+  <p class="radar-paper-meta">Rodrigo Navarro Betancourt, Marvin Anas Hahn, Vera Posch, Vincenzo Reda · <a href="https://arxiv.org/abs/2607.20109">arXiv</a> · <a href="https://arxiv.org/pdf/2607.20109">PDF</a></p>
+  <p class="radar-paper-overview">论文把 KP 孤子、全非负 Grassmannian 与热带几何的组合算法推广到 2D Toda lattice 和 Davey--Stewartson 方程。由 Grassmannian 元素可以系统生成两类方程的 contour plots。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>两个系统的孤子解同样由 Sato Grassmannian 参数化。作者据此构造从 totally nonnegative Grassmannian 数据到平面轮廓图的算法，并在渐近区域恢复且细化既有的孤子分类结果。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Sato Grassmannian 统一编码 tau 数据，热带极限把指数项竞争转化为多面体分区；全非负性进一步控制轮廓交汇和孤子标签，使组合算法直接对应可积解的几何。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>论文实现了此前对 KP 情形已知、但仅被建议可能推广的组合机制，并同时覆盖离散方向的 2D Toda 与二维 Davey--Stewartson 两种不同孤子几何。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Explicit Hamiltonian structure of the Flaschka-Newell Painlevé II hierarchy via symmetry reduction of the Painlevé IV hierarchy {#paper-arxiv-2607-20106 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-20106" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-23">2026-07-23</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-22">2026-07-22</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>math.SG</code> <code>Hamiltonian structure</code> <code>isomonodromy</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Explicit Hamiltonian structure of the Flaschka-Newell Painlevé II hierarchy via symmetry reduction of the Painlevé IV hierarchy</p>
+  <p class="radar-paper-meta">Olivier Marchal, Mohamad Alameddine, Sergej Laub · <a href="https://arxiv.org/abs/2607.20106">arXiv</a> · <a href="https://arxiv.org/pdf/2607.20106">PDF</a></p>
+  <p class="radar-paper-overview">论文通过 Painlevé IV 层级的 <span class="arithmatex">\(\mathbb Z_2\)</span> 对称约化，显式导出 Flaschka--Newell Painlevé II 层级的 Hamiltonians 与 Lax 矩阵。关键步骤是构造适应 involution 的 Darboux 坐标。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>经过合适的平凡化变换，对称在新坐标中对角作用，其不动点集因此可显式识别为辛子流形。作者在该子流形上完成 Hamilton 约化，得到 Painlevé II 层级各阶 Hamiltonian 与 Lax 表示。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>亚纯联络空间提供 isomonodromic 辛几何，Darboux 坐标把 <span class="arithmatex">\(\mathbb Z_2\)</span> 约束转成正则坐标条件；限制辛形式和 Hamiltonians 后，约化流自动保留 Lax 与 Hamilton 结构。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作给出的不只是 Painlevé II 层级存在 Hamilton 表述，而是一套可显式计算的对称适应坐标和约化程序，可用于其他带离散对称的 isomonodromic 系统。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### On the global well-posedness for the nonlocal Fokas-Lenells equation with the weighted Sobolev initial data on the line {#paper-arxiv-2607-19649 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-19649" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-23">2026-07-23</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-22">2026-07-22</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math.AP</code> <code>inverse scattering</code> <code>Riemann--Hilbert problem</code></p>
+  <p class="radar-paper-title" aria-hidden="true">On the global well-posedness for the nonlocal Fokas-Lenells equation with the weighted Sobolev initial data on the line</p>
+  <p class="radar-paper-meta">Zhenya Yan, Guoqiang Zhang, Guancheng Zhu · <a href="https://arxiv.org/abs/2607.19649">arXiv</a> · <a href="https://arxiv.org/pdf/2607.19649">PDF</a></p>
+  <p class="radar-paper-overview">论文以逆散射证明 reverse space-time nonlocal Fokas--Lenells 方程在加权 Sobolev 初值下的整体适定性。核心困难是非 Hermitian 约化破坏通常的跳跃矩阵强制性，作者用定量小数据条件重新建立正定控制。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>谱一致化消除 KN 型负流谱问题的奇性；反射系数的一致界保证跳跃矩阵 Hermitian 部分正定，进而通过 Fredholm 与 vanishing lemma 证明奇异积分算子可逆。最终得到势与散射数据间的 <span class="arithmatex">\(L^2\)</span>-Sobolev 双射、排除连续谱奇性，并建立全局唯一解及 Lipschitz 解映射。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>逆散射把 Cauchy 问题分解为直接谱变换、散射数据演化和 Riemann--Hilbert 重构；非局域约化改变谱对称性，因此可逆性证明必须在谱层面重新构造 coercivity。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>论文把非局域 Fokas--Lenells 的形式逆散射推进为完整的整体适定性理论，并针对非 Hermitian 对称给出可量化的正定性与双射机制。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Compactification of the fifth Painlevé foliation {#paper-arxiv-2607-19285 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-19285" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-22">2026-07-22</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-21">2026-07-21</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.AG</code> <code>nlin.SI</code> <code>Painlevé</code> <code>Hamiltonian structure</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Compactification of the fifth Painlevé foliation</p>
+  <p class="radar-paper-meta">Mattia Morbello · <a href="https://arxiv.org/abs/2607.19285">arXiv</a> · <a href="https://arxiv.org/pdf/2607.19285">PDF</a></p>
+  <p class="radar-paper-overview">论文把 Painlevé V 叶层的紧化分析推进到时间参数 <span class="arithmatex">\(t=0\)</span> 与 <span class="arithmatex">\(t=\infty\)</span> 的边界。每个边界分量上都得到 Hamilton 向量场的第一积分，从而可显式描述边界叶层。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者研究已有紧化在两个时间端点附近的叶片行为，并逐个边界分量构造第一积分。该积分把紧化空间上的 Hamilton 流限制为可直接刻画的水平集，给出边界退化的显式几何描述。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Painlevé V 的 Hamilton 向量场定义叶层动力学；紧化加入的边界除子记录时间端点处的退化。第一积分在各边界分量上把局部流转换成可计算的代数几何数据。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>相比只描述有限时间区域的既有紧化，论文补齐 <span class="arithmatex">\(t=0\)</span> 和 <span class="arithmatex">\(t=\infty\)</span> 两端，并用分量级第一积分给出叶层而非仅给出空间本身的边界结构。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Long-time asymptotic behavior for the defocusing Hirota equation on a finite-genus algebro-geometric background {#paper-arxiv-2607-19119 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-19119" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-22">2026-07-22</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-21">2026-07-21</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math.AP</code> <code>Riemann--Hilbert problem</code> <code>nonlinear steepest descent</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Long-time asymptotic behavior for the defocusing Hirota equation on a finite-genus algebro-geometric background</p>
+  <p class="radar-paper-meta">Taohua Luo, Zhenya Yan, Guoqiang Zhang · <a href="https://arxiv.org/abs/2607.19119">arXiv</a> · <a href="https://arxiv.org/pdf/2607.19119">PDF</a></p>
+  <p class="radar-paper-overview">论文给出 defocusing Hirota 方程在有限亏格代数几何背景上的全半平面长时渐近。四个时空区域分别由相移有限亏格主项、Painlevé XXXIV 过渡修正、辐射项和快速衰减误差控制。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>相函数的临界值把 <span class="arithmatex">\((x,t)\)</span> 半平面分成四区；各区主项均为相移后的有限亏格解，但次阶尺度依次表现为 <span class="arithmatex">\(t^{-1/3}\)</span> 的 Painlevé XXXIV 模型、<span class="arithmatex">\(t^{-1/2}\)</span> 的 Zakharov--Manakov 辐射或 <span class="arithmatex">\(O(t^{-1})\)</span> 误差。作者还指出构造可推广到更高阶 AKNS 流。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>有限亏格背景决定基准谱曲线和准周期主项，Riemann--Hilbert 表述把初值扰动编码为跳跃数据；Deift--Zhou 变形再按驻相点退化类型选择有限亏格、局部 Painlevé 或辐射模型。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>新增结果是在同一谱框架内覆盖整个时空半平面，并明确连接有限亏格主项、Painlevé 临界过渡和连续谱辐射三种此前需要分区处理的渐近机制。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Integrable multi-species SSEP with reactive particle species {#paper-arxiv-2607-18959 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-18959" data-radar-week="2026-W30" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-22">2026-07-22</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-21">2026-07-21</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>cond-mat.stat-mech</code> <code>Yang--Baxter equation</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Integrable multi-species SSEP with reactive particle species</p>
+  <p class="radar-paper-meta">Mathieu Dabrowski, Loïc Poulain d&#x27;Andecy, Eric Ragoucy · <a href="https://arxiv.org/abs/2607.18959">arXiv</a> · <a href="https://arxiv.org/pdf/2607.18959">PDF</a></p>
+  <p class="radar-paper-overview">论文从集合论 Yang--Baxter 解构造带反应粒子种类的多物种 SSEP，并证明周期系统及两类开放边界的可积性。模型允许粒子成对蒸发、凝聚或转化，并可推广到任意数量的反应种类。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者先完整分析 <span class="arithmatex">\((p,1)\)</span>-SSEP 的周期扇区，再由 reflection equation 解的 Baxterization 构造两类开放边界；随后推广到 <span class="arithmatex">\((p,q)\)</span>-SSEP，并在一种可积边界下计算开放非平衡稳态的物理量。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>集合论 Yang--Baxter 解保证体相多粒子更新的相容性，reflection equation 控制边界散射；Baxterization 把离散代数解提升为可用于 Markov 生成元的参数族。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作不是在既有 SSEP 上只增加反应率，而是由 Yang--Baxter 数据系统地产生反应种类、周期动力学和开放边界，并保持可积性及稳态可计算性。</p>
+      </section>
+    </div>
+  </details>
+</article>
 
 ### Linear Systems, Determinants, and Solutions of the Kadomtsev--Petviashvili Equation {#paper-doi-10-1017-prm-2026-10167 .radar-search-heading}
 
