@@ -222,7 +222,7 @@ def test_frozen_editorial_calibration_set() -> None:
         decision: sum(item["decision"] == decision for item in candidates)
         for decision in {"selected", "excluded", "borderline"}
     }
-    assert counts == {"selected": 5, "excluded": 9, "borderline": 3}
+    assert counts == {"selected": 6, "excluded": 9, "borderline": 2}
 
 
 def main() -> None:

@@ -2359,3 +2359,22 @@
     - "spin-1/2 particles"
     - "first-order vector integrals"
     - "determining equations"
+
+- id: "arxiv:2607.25596"
+  title: "Tau functions of the constrained matrix KP hierarchy"
+  authors:
+    - "Xiaohan Fan"
+    - "Jipeng Cheng"
+    - "Jinbiao Wang"
+  url: "https://arxiv.org/abs/2607.25596"
+  arxiv_id: "2607.25596"
+  doi: "10.48550/arXiv.2607.25596"
+  submitted: "2026-07-28"
+  updated: "2026-07-28"
+  version: "v1"
+  metadata_checked_at: "2026-07-29"
+  tags:
+    - "constrained matrix KP hierarchy"
+    - "multi-component KP hierarchy"
+    - "tau function"
+    - "boson--fermion correspondence"
