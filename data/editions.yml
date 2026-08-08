@@ -55,13 +55,22 @@ frontier_weeks:
     coverage_note: 核心分类已处理至 7 月 26 日；期刊补漏已通过独立水位处理至 7 月 29 日。
 - id: 2026-W31
   date_range: 2026-07-27 至 2026-08-02
-  summary: 本周关注非半单 partial CohFT 的第二 Hamilton 结构、受限矩阵 KP 层级的 tau-function 与玻色--费米构造，以及带边界的开放椭圆 Toda 链。
+  summary: 本周关注非半单 partial CohFT 的第二 Hamilton 结构、受限矩阵 KP 层级、开放椭圆 Toda 链，以及 BEC rogue wave 的非线性谱机制。
   screening:
     sources_checked:
     - arXiv nlin.SI / nlin.PS 核心分类与有限跨分类检索
     - Crossref 强题名补漏、zbMATH MSC 补漏与出版社首次在线记录
-    selected: 3
-    coverage_note: 核心分类、跨分类和独立期刊补漏均已处理至 7 月 29 日。
+    selected: 4
+    coverage_note: 核心分类、跨分类和独立期刊补漏均已处理至 8 月 2 日。
+- id: 2026-W32
+  date_range: 2026-08-03 至 2026-08-09
+  summary: Hamiltonian/Yang--Baxter 判据、CohFT/Poisson 结构、KPZ 的 Hirota--Miwa 方程、q-Painlevé 与拓扑递归、Krylov--Toda 对应及数据驱动 Lax 核验。
+  screening:
+    sources_checked:
+    - arXiv nlin.SI / nlin.PS 核心分类与有限跨分类检索
+    - Crossref 强题名补漏与出版社首次在线记录
+    selected: 16
+    coverage_note: arXiv 核心与跨分类已处理至 8 月 7 日；Crossref 强题名补漏已处理至 8 月 8 日；zbMATH 双周补漏本周未到期。
 frontier:
   entries:
   - paper_id: arxiv:2607.15132
@@ -1401,3 +1410,238 @@ frontier:
     main_result: 作者从周期椭圆 Toda 链的因子化局部 Lax 矩阵出发，引入端点边界自由度并构造开放链的单值矩阵。所得模型通过规范变换连接到具有边界的 XYZ 自旋链，由此得到保持可积性的边界 Hamiltonian。
     integrable_structure: 因子化 Lax 矩阵编码椭圆 Toda 动力学；与 XYZ 链的规范等价把开放边界问题转移到成熟的边界自旋链结构中，使端点项与整体可积性同时受控。
     innovation: 工作补上了经典椭圆 Toda 链的开放边界版本，并给出可复用的 Lax/规范等价构造，而不只是为周期模型附加经验性边界势。
+  - paper_id: arxiv:2607.27734
+    signal_date: '2026-07-31'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories:
+    - nlin.PS
+    - nlin.SI
+    structure_tags:
+    - inverse scattering
+    - Darboux transformation
+    summary: 论文用非线性 Fourier 变换分析 BEC 中两类一阶 rogue wave，把极端局域事件和实验观测到的 Peregrine soliton 追溯到离散孤子模的相干演化。作者还提出按离散谱相位匹配进行逆向谱设计的控制思路。
+    main_result: 对 Gaussian wave packet，初始宽度增加会引入更多离散本征值，并推动基本孤子、束缚态与 Christmas-tree 型 rogue-wave 结构之间的转换；对实验 Peregrine 数据，局域扰动通过重排离散谱和相位实现多模相干聚焦。论文进一步把同一分析延伸到高阶 rogue wave，并给出相位匹配的逆设计方案。
+    integrable_structure: focusing NLS 的 Zakharov--Shabat 散射问题把 BEC 波形映射为离散本征值和相位数据，Darboux reconstruction 再检验这些谱模是否能够重建观测到的局域峰。可积谱在这里直接承担机制识别与控制坐标的角色。
+    innovation: 新增内容不是再次构造 Peregrine 解，而是用 nonlinear Fourier spectrum 统一解释 Gaussian 诱发事件与实验波形，并把对 rogue-wave 形成的诊断推进为可操作的离散谱工程。
+  - paper_id: arxiv:2607.29373
+    signal_date: '2026-08-03'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - math-ph
+    - math.DG
+    structure_tags:
+    - integrable geometry
+    summary: 论文证明 Bolsinov--Konyaev--Matveev 关于 hydrodynamic-type 系统的猜想：在 \(\mathfrak{gl}\)-regular 条件下，可积性迫使演化算子及其全部对称的 Haantjes tensor 局部消失。该结论把形式可积性转化为可检验的张量几何约束。
+    main_result: 作者处理 \(\mathbf u_t=A(\mathbf u)\mathbf u_x\) 型系统，证明若 \(A\) 在一点 \(\mathfrak{gl}\)-regular 且系统可积，则在该点邻域内 \(A\) 和所有对称算子的 Haantjes tensor 均为零。结合已有结果，代数一般点附近的系统可写成由向量场与满足 Hertling--Manin 条件的交换结合乘积控制的形式。
+    integrable_structure: Haantjes torsion 衡量算子场的特征分布能否同时对角化；无穷对称流把这一微分几何条件从单个演化矩阵传递到整个可积族。由此产生的交换结合乘积为 hydrodynamic hierarchy 提供局部几何模型。
+    innovation: 工作完成了一个必要性猜想的证明，并由此给出 \(\mathfrak{gl}\)-regular hydrodynamic systems 在一般点附近的统一局部表示，而非只验证若干可对角化例子。
+  - paper_id: arxiv:2607.29660
+    signal_date: '2026-08-03'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - cond-mat.stat-mech
+    - nlin.SI
+    structure_tags:
+    - Yang--Baxter equation
+    - conservation laws
+    summary: 论文在一类标准各向同性量子自旋链中证明 Reshetikhin condition 不仅必要，而且足以保证 Yang--Baxter 可积性。于是寻找 \(R\)-matrix 的问题可改写为直接检查局域 Hamiltonian 与能流守恒。
+    main_result: 作者从 Hamiltonian 层面的 Reshetikhin condition 出发，证明它等价于存在满足 Yang--Baxter equation 的可解结构，并进一步等价于无穷局域守恒量层级。由于该条件也等价于总能流守恒，判据可直接在模型或实验可观测量上检验。
+    integrable_structure: Yang--Baxter equation 通常从 \(R\)-matrix 生成 commuting transfer matrices；这里局域三站点守恒条件反向恢复这一代数结构。结果把分解散射、局域守恒律和 Hamiltonian 判据闭合为双向等价关系。
+    innovation: 核心突破是把长期作为必要筛选工具的 Reshetikhin condition 提升为必要充分条件，从而用一个局域守恒关系取代对谱参数 \(R\)-matrix 的直接搜索。
+  - paper_id: arxiv:2608.00117
+    signal_date: '2026-08-03'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - math.GT
+    - math-ph
+    structure_tags:
+    - spectral curve
+    summary: 论文为任意拓扑的 maps 给出纯组合的递归切除公式，并在形式生成函数层面导出 topological recursion，无需解析性假设。构造同时覆盖带自避 loop model 的 maps 与允许任意拓扑面片的 stuffed maps。
+    main_result: 作者反复执行 Tutte algorithm，直到曲面拓扑发生改变，由此得到由根边界出发的 pair-of-pants decomposition。该双射解释 topological recursion 与 blobbed topological recursion 的所有项，包括此前缺少组合含义的 recursion kernel。
+    integrable_structure: topological recursion 把不同 genus 与边界数的生成函数组织为由局部递归核驱动的层级。新的切除双射在离散 map 上实现同一层级关系，使谱曲线式递归在正式级数层面具有直接的组合来源。
+    innovation: 结果补上了 recursion kernel 的双射解释，并把公式从普通 maps 一次扩展到 loop-decorated 与 stuffed 情形；它提供的是统一的拓扑递归机制，而非逐 genus 的枚举计算。
+  - paper_id: arxiv:2509.12345
+    signal_date: '2026-08-03'
+    signal_type: journal-publication
+    week: 2026-W32
+    arxiv_categories:
+    - math-ph
+    - math.CA
+    structure_tags:
+    - Riemann--Hilbert problem
+    - nonlinear steepest descent
+    summary: 论文扩展 Toeplitz+Hankel determinants 的 \(4\times4\) Riemann--Hilbert 渐近框架，解除早期分析对 symbols winding numbers 的限制。作为应用，作者处理 Toeplitz 与 Hankel winding numbers 分别为零和一的情形，并求相应正交多项式范数的渐近。
+    main_result: 前一框架虽可做 Deift--Zhou steepest descent，却排除了最自然的零 winding number 配置。本文重组模型 RHP 与变形步骤，使更广的 winding-number 组合可进入渐近分析，并在一个此前不可及的配置上完成正交系统范数的显式计算。
+    integrable_structure: \(4\times4\) Riemann--Hilbert problem 同时编码 Toeplitz 与 Hankel symbols 以及相关正交多项式；nonlinear steepest descent 把大阶数极限转化为全局与局部模型问题的匹配。
+    innovation: 工作针对既有方法的结构性禁区给出可执行修正，使零 winding number 不再被排除，并显著扩大同一 RHP 框架可覆盖的 determinant 渐近类别。
+  - paper_id: arxiv:2608.00462
+    signal_date: '2026-08-04'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - math.AG
+    - math-ph
+    structure_tags:
+    - Poisson structure
+    - Frobenius manifold
+    summary: 论文证明 Dubrovin--Liu--Yang--Zhang 关于 rank-one CohFT 的猜想：其 Dubrovin--Zhang hierarchy 的 Poisson bracket 为常数，当且仅当理论由满足 Calabi--Yau 条件的 triple Hodge class 给出。
+    main_result: 作者在 rank-one cohomological field theories 的完整范围内建立双向分类。一方面 triple Hodge parameters 满足 Calabi--Yau relation 时产生 constant bracket；另一方面，只要 Dubrovin--Zhang Poisson structure 为常数，相应 CohFT 必须落入这一 triple Hodge family。
+    integrable_structure: Dubrovin--Zhang construction 把 CohFT 的交数数据转换为色散可积层级及其 Poisson bracket。常数性条件因而不是坐标简化，而是反向约束原始几何理论的分类信号。
+    innovation: 结果把一个关于 bracket 形状的必要条件提升为 rank-one 情形的精确 if-and-only-if 定理，完整识别了所有具有常 Poisson 结构的 CohFT 来源。
+  - paper_id: arxiv:2608.01293
+    signal_date: '2026-08-04'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Lax pair
+    - conservation laws
+    summary: 论文把基于守恒律的 deformation algorithm 从 \((1+1)\) 维推广到 \((2+1)\) 维 parent systems，并为 KP 与 Nizhnik--Novikov--Veselov 方程构造无限族更高维可积层级。所得系统带有闭式 Lax pairs，并能约化出两类 Harry--Dym 型 reciprocal systems。
+    main_result: 作者引入相互交换、依赖场的 deformation operators，把两个二维空间模型提升为 \((m+3)\)-维层级；有限截断给出具体的 \((3+1)\)-维 KP 与 \((4+1)\)-维 generalized NNV 系统。Lax operators 的交换子直接验证相容性，进一步的对称约化恢复原方程并产生各向异性与各向同性的 HD-type 模型。
+    integrable_structure: 守恒律为新增空间方向定义 deformation flows，相互交换保证多方向演化相容；Lax commutator 在提升后仍为零，从而同时控制强、弱两类 Lax structures。reciprocal reduction 则把高维层级与新的 HD-type 系统连接起来。
+    innovation: 新方法解决了 deformation algorithm 对 \((2+1)\) 维模型的推广问题，并给出任意维层级、显式 Lax 表示和 reciprocal links 的统一构造，而非单独猜测一两个高维方程。
+  - paper_id: arxiv:2608.02179
+    signal_date: '2026-08-04'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - math-ph
+    - math.AG
+    structure_tags:
+    - spectral curve
+    - loop equations
+    summary: 论文建立 \((r,s)\)-Airy structures 的 \(q\)-deformation，并用 \(q\)-difference operators 构造 quantum spectral curves 的全阶 \(q\)-WKB 解。主要结果分类所有满足 \(q\)-topological type property 的 \((r,s,q)\) 与 \(q\)-Casimir 配置。
+    main_result: 对 \(q\)-quantized curve 的矩阵系统，作者构造 non-perturbative connected amplitudes，并证明它们满足 shifted \(q\)-loop equations；这些方程可解释为 \(q\)-deformed \(\mathcal W(\mathfrak{gl}_r)\) algebra 的 Ward identities。分类定理随后保证半经典展开由 \(q\)-topological recursion 唯一确定。
+    integrable_structure: quantum curve 提供 \(q\)-difference spectral problem，\(q\)-WKB 给出全阶形式解，loop equations 与 \(\mathcal W\)-constraints 则约束 genus expansion。topological type property 是这些数据能否闭合为递归层级的判据。
+    innovation: 工作不仅提出一套 \(q\)-递归公式，还完成可容许参数与 Casimir data 的严格分类，使 \(q\)-topological recursion 的适用范围成为可判定条件。
+  - paper_id: arxiv:2608.01878
+    signal_date: '2026-08-05'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - math-ph
+    - nlin.SI
+    structure_tags:
+    - Hamiltonian structure
+    - Poisson structure
+    summary: 论文用 Guillemin--Sternberg torus action 研究紧半单 Lie group 作用下的 collective Hamiltonians，并给出保证其超可积性的函数维数等式。相应 torus momentum map 同时提供 action variables。
+    main_result: 对带 Hamiltonian \(G\)-action 的 symplectic manifold，作者考察由 momentum map 拉回的 \(G\)-不变函数代数 \(\mathfrak H\) 及其 Poisson centralizer \(\mathfrak F\)。证明两者 differential dimensions 之和等于相空间维数；配合非平凡性条件，这足以使 \(\mathfrak H\) 定义 superintegrable system。
+    integrable_structure: momentum map 把 Lie--Poisson 不变量提升为 commuting collective Hamiltonians，centralizer 提供补足超可积性所需的守恒函数。Guillemin--Sternberg torus action 的动量坐标则把这些抽象积分转化为 action variables。
+    innovation: 新方法用一个经典 torus action 统一计算 collective systems 的可积维数，并直接抽取 action variables，为既有 Bolsinov--Jovanović 型结果提供不同且可操作的几何路径。
+  - paper_id: arxiv:2608.02772
+    signal_date: '2026-08-05'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - math.PR
+    - math-ph
+    structure_tags:
+    - bilinear method
+    - integrable probability
+    summary: 论文把十八个 KPZ universality class 的精确可解模型统一到一组非阿贝尔 Hirota--Miwa equations 中，覆盖四种缩放区域。核心框架把 Fredholm kernel data 压缩为满足封闭矩阵差分--微分方程的有限维 observable。
+    main_result: 作者先在有向格点图上把 Fredholm determinant 数据组织成 overdetermined linear problem，得到 diamond equations；随后构造 Darboux transformation，把无限维 kernel 信息映射到保持同一方程的矩阵量。标量约化恢复 variable-coefficient Hirota--Miwa equations，并把逐模型验证降为检查少量 kernel linear conditions。
+    integrable_structure: diamond equations 是 non-Abelian Hirota--Miwa system 的 gauge-equivalent 参数化，线性问题的相容性产生非线性闭合。Darboux dressing 在压缩 Fredholm 数据时保持该相容结构，使 KPZ 分布的行列式表示进入统一可积层级。
+    innovation: 工作给出跨十八个模型和四种 scaling regimes 的统一矩阵框架，取代各模型分别推导双线性方程的做法，并把 multipoint data 与非阿贝尔可积系统直接连接起来。
+  - paper_id: arxiv:2608.02861
+    signal_date: '2026-08-05'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - math-ph
+    - math.PR
+    structure_tags:
+    - loop equations
+    - spectral curve
+    summary: 论文定义路径空间泛函到 tensor algebra 形式级数的非交换 Laplace transform，并将其用于随机酉矩阵值 path development 的 quantum path signatures。planar loop equations 由此获得非交换谱形式，随后被提升为由 topological recursion 组织的 \(1/N\) genus expansion。
+    main_result: 新变换把路径泛函上的自然 convolution 送到形式级数的代数乘积。对 quantum path signature，作者先导出 planar spectral loop equations，再构造高 genus 修正，并得到每一阶在 path space 上满足的积分方程层级。
+    integrable_structure: loop equations 编码矩阵路径矩的递归约束，非交换 spectral variables 把它们重写成适合 genus expansion 的形式；topological recursion 随后逐阶组织 \(1/N\) corrections。
+    innovation: 工作把 rough-path signature、随机矩阵 loop equations 与 topological recursion 连接成一个明确变换链，并首次给出路径空间高 genus 修正的层级方程。
+  - paper_id: arxiv:2608.03345
+    signal_date: '2026-08-05'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - math-ph
+    - math.CA
+    structure_tags:
+    - tau function
+    - Riemann--Hilbert problem
+    summary: 论文通过 associated general Riemann--Hilbert problem，把 \(q\)-Painlevé VI 的 tau function 构造成 Fredholm determinant。tau 的零点与 RHP 的逐点不可解性精确对应，并可用来表示 \(q\)PVI transcendents。
+    main_result: 作者证明该 Fredholm determinant 在定义域内解析，并刻画其零集。原 tau function 与三个参数平移副本共同给出 \(q\)PVI 解；四个函数各自为零时，对应 transcendents 落到初值空间的特定 exceptional line。论文还推导小时间的渐近展开。
+    integrable_structure: \(q\)-difference Riemann--Hilbert data 编码等单值动力学，Fredholm determinant 将可解性障碍压缩为单个解析函数。参数 shifts 把 tau-family 与初值空间中的特殊除子连接起来。
+    innovation: 结果同时提供解析 tau 构造、RHP solvability 判据和 transcendents 的参数平移表示，使 \(q\)PVI 的动力学与初值几何由同一 determinant 控制。
+  - paper_id: arxiv:2307.15837
+    signal_date: '2026-08-05'
+    signal_type: journal-publication
+    week: 2026-W32
+    arxiv_categories:
+    - math.AP
+    - math-ph
+    structure_tags:
+    - inverse scattering
+    - Riemann--Hilbert problem
+    summary: 论文用 inverse scattering transform 证明 integrable nonlocal derivative NLS 在加权 Sobolev 空间中的整体解存在性。关键步骤是建立势函数与反射系数之间的双射，使 Riemann--Hilbert 重构可用于全时间演化。
+    main_result: 作者处理 \(H^2(\mathbb R)\cap H^{1,1}(\mathbb R)\) 初值，构造直接与逆散射映射并控制反射数据的时间演化。通过证明 potential--reflection coefficient correspondence 的 bijectivity，得到初值问题的 global solution。
+    integrable_structure: 非局域约化规定散射数据的对称性，Riemann--Hilbert problem 负责从随时间演化的反射系数重建解。直接散射和逆映射的双向控制把形式 IST 提升为整体存在性证明。
+    innovation: 工作将 nonlocal derivative NLS 的可积表示推进到加权 Sobolev 空间中的严格 global-solution 理论，新增重点是散射变换的双射性，而非又一组显式孤子。
+  - paper_id: arxiv:2608.04850
+    signal_date: '2026-08-06'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - quant-ph
+    - math-ph
+    structure_tags:
+    - 2D Toda hierarchy
+    - tau function
+    summary: 论文发现非 Hermitian Arnoldi reduction 的 diagonal 与 subdiagonal coefficients 构成封闭的有限二维 Toda sector。Krylov Gram determinants 正是 Toda tau functions，并同时编码 holomorphic Krylov subspaces 的量子几何与 counterdiabatic transport。
+    main_result: 对固定有限维 Hamiltonian 和 holomorphically deformed cyclic state，作者证明 Gram determinants 满足 finite 2D Toda lattice，Flaschka variables 与 Arnoldi coefficients 精确一致。subdiagonal coefficients 的平方给出 Fubini--Study metric 与 Berry curvature；沿实参数路径，Arnoldi-frame connection 还产生实现精确等谱输运的 Hermitian tridiagonal generator。
+    integrable_structure: Gram determinant 的连续变形生成 Toda tau hierarchy，而 Arnoldi recursion 把同一变量读作 Krylov reduction 系数。Toda flow 因而在不求完整 upper Hessenberg matrix 的情况下闭合，并把可积动力学直接连接到量子态空间几何。
+    innovation: 工作揭示了 2D Toda、非 Hermitian Krylov geometry 和 counterdiabatic driving 之间的精确对应，使 Arnoldi 算法中的一部分系数获得独立的可积与几何意义。
+  - paper_id: arxiv:2608.05146
+    signal_date: '2026-08-06'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - hep-th
+    - nlin.SI
+    structure_tags:
+    - Lax pair
+    summary: 论文用机器学习从局域 currents 搜索二维 nonlinear sigma models 的 Lax connections，并在两个已知可积模型中恢复完整谱参数族。对 \(T^{1,1}\) 的低损失候选，解析核验却证明它是不能编码完整场方程的 fake Lax connection。
+    main_result: 框架在 \(SU(2)\) principal chiral model 与 symmetric coset \(S^2\) 上无需以已知 spectral curves 为训练目标即可恢复标准 Lax family。应用到 non-symmetric coset \(T^{1,1}\) 时，优化得到稳定的 block-diagonal ansatz；它只满足 on-shell flatness，在 point-particle reduction 才成为真正的 mechanical Lax pair。
+    integrable_structure: 训练损失检查候选 connection 的平坦性，但 genuine integrability 还要求零曲率条件与二维 equations of motion 等价。谱参数族的恢复与 fake candidate 的反例共同说明，Lax 搜索必须在数值提案后接上解析等价性验证。
+    innovation: 新贡献既是可从 local-current data 自动提出 Lax ansatz 的方法，也是一个明确的失败判据：低 flatness loss 不能认证可积性。该正反两组实验为数据驱动 Lax 发现建立了可复核的验证流程。
+  - paper_id: arxiv:2608.05952
+    signal_date: '2026-08-07'
+    signal_type: new-preprint
+    week: 2026-W32
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Hamiltonian structure
+    - Poisson structure
+    summary: 论文先用 Painlevé test 否定 Berry polynomial curl-force model 的既有可积性猜想，再构造一个四参数 curl-force family 并确定其可积参数子流形。该子族具有第二 Hamiltonian、相容 Poisson tensors、分离变量和 Lax representation。
+    main_result: 原模型的 Laurent expansion 缺少容纳一般解所需的任意常数，因而不能通过标准 Painlevé test。对新族，作者给出 bi-Hamiltonian 结构与 complex characteristic variables，并由 separated form 推广出任意次数的 polynomial integrable curl-force Hamiltonians；同时分析零 curl 约化和椭圆周期轨道。
+    integrable_structure: 两个相容 Poisson tensors 组织 Lenard 型守恒结构，separation variables 将动力学降为可积的一维关系，Lax matrix 则产生谱不变量。Painlevé analysis 作为独立诊断，区分封闭轨道与真正 Liouville integrability。
+    innovation: 工作同时关闭一个由数值周期轨道引出的假阳性，并给出任意 polynomial degree 的新可积 curl-force 家族，展示了“排除旧猜想—构造新机制”的完整结构结果。
+  - paper_id: arxiv:2311.17051
+    signal_date: '2026-08-07'
+    signal_type: journal-publication
+    week: 2026-W32
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Riemann--Hilbert problem
+    - nonlinear steepest descent
+    summary: 论文给出从 Painlevé II Riemann--Hilbert problem 系统计算长时间高阶渐近项的方法。原问题被改写为两个圆上的矩阵分解，并逐阶约化为有限代数线性系统。
+    main_result: 作者在 homogeneous Painlevé II 的 nonlinear steepest descent 中建立可迭代的高阶校正程序，避免每增加一阶都重新处理完整 RHP。该方法被用于显式求出 Painlevé II tau function 的长时间渐近行为。
+    integrable_structure: 等单值 Riemann--Hilbert problem 编码 Painlevé II 解与 tau data；圆轮廓上的 factorization 把大参数误差问题化为逐阶可解的有限矩阵系统。每一级输出继续作为下一阶跳跃校正。
+    innovation: 新增内容是面向完整 asymptotic series 的算法化框架，而不止 leading-order formula；有限线性系统的递推形式使高阶 Painlevé 渐近能够系统生成。
