@@ -1,18 +1,26 @@
-# Integrable Systems Research Guide
+# Integrable Systems Research Radar
 
-A compact, AI-assisted research radar for integrable systems and related mathematical physics.
+A selective, AI-assisted radar for recent research in integrable systems and related mathematical physics.
 
 **Public site:** https://mathscribe.github.io/integrable-systems-guide/
 
-The site is designed for researchers already familiar with integrable PDEs, spectral methods, and nonlinear waves. It selectively records recent papers whose integrable structure or integrability-driven result is sufficiently innovative to merit attention. It is neither an arXiv mirror nor a personalized reading list.
+The radar is designed for researchers familiar with integrable PDEs, spectral methods, nonlinear waves, and adjacent areas of mathematical physics. It highlights recent papers in which integrability is central to a substantive new structure, method, or result. It is neither a comprehensive literature database nor a personalized reading list.
 
-## Public model
+## What the site provides
 
 - The homepage defaults to the latest ISO week.
-- Readers can move between weeks or open a searchable cumulative view grouped by month.
-- Each paper shows bibliographic metadata, official arXiv categories, at most two controlled structure tags, and a concise overview.
-- Details expand into `研究问题与主要结果`, `可积结构与方法`, and `创新`.
-- The homepage is the single paper browser; week navigation, search, and the cumulative view stay on that page.
+- Readers can browse earlier weeks or switch to a searchable cumulative view grouped by month.
+- Each paper card includes verified bibliographic metadata, official arXiv categories, up to two controlled structure tags, and a concise overview.
+- Expandable notes explain the research question and main results, the role of the integrable structure and methods, and the paper's specific advance over prior work.
+- New preprints, qualifying major revisions, and first formal journal publications are treated as distinct research events.
+
+The radar is checked daily, but publication is event-driven: there is no daily or weekly quota, and a completed screening pass may select no papers.
+
+## Editorial approach
+
+Discovery is intentionally broad; inclusion is selective. Thematic relevance is only the first gate. A paper is included when its integrable structure plays a substantive role and the source material supports a clear, nontrivial advance.
+
+AI assists with candidate discovery, deduplication, metadata cleanup, initial screening, annotation drafting, page generation, and consistency checks. Primary sources are used for verification, every repository change remains reviewable, and the maintainer retains editorial and merge responsibility. Public annotations summarize the available evidence; they do not independently validate mathematical proofs or priority claims.
 
 ## Authoritative data
 
@@ -27,7 +35,7 @@ after that source's bounded discovery pass completes successfully.
 
 One paper has one public frontier entry. When a selected preprint receives a qualifying major revision or its first formal journal publication, update its existing paper and frontier records rather than adding a duplicate card. Git history preserves the earlier state.
 
-## Local Codex workflow
+## Maintenance workflow
 
 The canonical reusable prompt and maintenance instructions are in [maintenance/daily-radar-workflow.md](maintenance/daily-radar-workflow.md). The public-facing account of discovery, Crossref and publisher verification, selection, and annotation is in [docs/editorial-policy.md](docs/editorial-policy.md).
 
@@ -81,9 +89,9 @@ docs/resources.md               Curated external resources
                                  GitHub Pages deployment after merge
 ```
 
-## Editorial boundary
+## Scope
 
-Thematic relevance is a broad gate; innovation strength is decisive. Integrable geometry, probability, random matrices, quantum many-body systems, statistical physics, gravity, and optics may be included when integrability is central to the conclusion. Public annotations use neutral, evidence-grounded language and do not publish negative assessments of papers that were not selected.
+The radar covers integrable systems broadly. Integrable geometry, probability, random matrices, quantum many-body systems, statistical physics, gravity, and optics may be included when integrability is central to the main conclusion. Public annotations use neutral, evidence-grounded language and do not publish paper-by-paper assessments of work that was not selected.
 
 ## Publication policy
 

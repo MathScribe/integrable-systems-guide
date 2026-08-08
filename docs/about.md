@@ -1,8 +1,8 @@
 # About / 关于
 
-This project is a small research-oriented guide for integrable systems and related methods.
+This project is a selective, AI-assisted radar for recent research in integrable systems and related mathematical physics.
 
-这是一个面向可积系统研究者的轻量论文雷达，重点呈现近期值得关注的新方向、新结构和新方法，而不是建设完整论文数据库或 arXiv 镜像。
+这是一个面向可积系统及相关数学物理研究者的精选论文雷达，重点呈现近期值得关注的新结构、新方法和新结果，而不是建设完整论文数据库或 arXiv 镜像。
 
 ## Site purpose / 网站定位
 
@@ -14,17 +14,9 @@ This project is a small research-oriented guide for integrable systems and relat
 
 ## AI and editorial responsibility / AI 与编辑责任
 
-AI 用于候选发现、去重、元数据清洗、初步筛选和文字整理。论文说明经过元数据核验；除特别标注外，不代表编辑已经完整阅读或逐句审校。数学结论和优先权判断请以原论文为准。
+AI 用于候选发现、去重、元数据清洗、初步筛选、文字整理、页面生成和一致性检查。入选决定和仓库变更均由维护者审核，元数据和论文说明以原始来源核验。除特别标注外，公开说明不代表编辑已经逐句审校全文、独立验证数学证明或确认优先权判断；相关结论请以原论文为准。
 
 本站不是课题组官方网站，也不代表任何作者、研究组或机构的正式立场。
-
-## Design references / 设计参考
-
-本站借鉴成熟论文列表的高信息密度和快速浏览方式，但不复制其数据库、全文搜索、作者网络或 feed 系统。[Leonid Petrov 的 Integrable Probability 网站](https://lpetrov.cc/)等专题资源只用于人工查漏和资料导航，不被镜像或自动同步。
-
-- [CS 自学指南](https://csdiy.wiki/)
-- [清华大学数学课程学习指南 / MathLoveYou](https://mathloveyou.github.io/)
-- [目录 - 小时百科](https://wuli.wiki/online/index.html)
 
 ## License / 许可证
 

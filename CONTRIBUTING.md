@@ -45,7 +45,7 @@ Add or revise a resource directly in `docs/resources.md` only after checking:
 Use this prompt to prepare a clean issue comment:
 
 ```text
-Please turn the following mathematical resource into a candidate entry for an integrable-systems research guide. Do not invent missing information.
+Please turn the following mathematical resource into a candidate entry for the curated resources section of an integrable-systems research radar. Do not invent missing information.
 
 Resource URL:
 [PASTE LINK]
