@@ -2769,3 +2769,235 @@
     - "inverse scattering"
     - "Riemann--Hilbert problem"
     - "weighted Sobolev space"
+
+- id: "arxiv:2607.22021"
+  title: "Classification of Six-dimensional Real Nilpotent Lie Bialgebras of Symplectic Type and their Poisson-Lie Groups"
+  authors: ["A. Poursistani", "Gh. Haghighatdoost", "J. Abedi-Fardad"]
+  url: "https://arxiv.org/abs/2607.22021"
+  arxiv_id: "2607.22021"
+  doi: "10.48550/arXiv.2607.22021"
+  submitted: "2026-07-24"
+  updated: "2026-07-24"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["Poisson--Lie geometry", "Hamiltonian structure"]
+
+- id: "arxiv:2607.22202"
+  title: "Mersenne Representation, the Conolly Sequence, and Soliton Profiles over Finite Fields"
+  authors: ["Fumitaka Yura"]
+  url: "https://arxiv.org/abs/2607.22202"
+  arxiv_id: "2607.22202"
+  doi: "10.48550/arXiv.2607.22202"
+  submitted: "2026-07-24"
+  updated: "2026-07-24"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["tau function", "integrable discretization"]
+
+- id: "arxiv:2607.22933"
+  title: "Emergent integrable dynamics in a non-integrable Rydberg-atom chain"
+  authors: ["Gianluca Morettini", "Luca Capizzi", "Leonardo Mazza", "Maurizio Fagotti"]
+  url: "https://arxiv.org/abs/2607.22933"
+  arxiv_id: "2607.22933"
+  doi: "10.48550/arXiv.2607.22933"
+  submitted: "2026-07-24"
+  updated: "2026-07-24"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["quantum integrability", "generalized hydrodynamics"]
+
+- id: "arxiv:2607.23151"
+  title: "Explicit higher order rational rogue waves of the nonlinear Schrödinger equation"
+  authors: ["Robert Conte"]
+  url: "https://arxiv.org/abs/2607.23151"
+  arxiv_id: "2607.23151"
+  doi: "10.48550/arXiv.2607.23151"
+  submitted: "2026-07-25"
+  updated: "2026-07-25"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  metadata_note: "The PDF identifies Robert Conte as the sole author; the arXiv feed incorrectly exposes two affiliations as additional authors."
+  tags: ["Darboux transformation", "bilinear method"]
+
+- id: "arxiv:2607.23422"
+  title: "Loop Algebra Splitting and Darboux Transformations for Nonlocal Derivative Nonlinear Schrödinger Hierarchies"
+  authors: ["Ziqi Li", "Zhiwei Wu"]
+  url: "https://arxiv.org/abs/2607.23422"
+  arxiv_id: "2607.23422"
+  doi: "10.48550/arXiv.2607.23422"
+  submitted: "2026-07-26"
+  updated: "2026-07-26"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["Darboux transformation", "inverse scattering"]
+
+- id: "arxiv:2607.23864"
+  title: "Localization of quantum systems at Liouville tori"
+  authors: ["Ood Shabtai"]
+  url: "https://arxiv.org/abs/2607.23864"
+  arxiv_id: "2607.23864"
+  doi: "10.48550/arXiv.2607.23864"
+  submitted: "2026-07-26"
+  updated: "2026-07-26"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["quantum integrability", "symplectic geometry"]
+
+- id: "arxiv:2607.24920"
+  title: "Split Heun functions via blown-up surface defects"
+  authors: ["Saebyeok Jeong", "Tommaso Pedroni"]
+  url: "https://arxiv.org/abs/2607.24920"
+  arxiv_id: "2607.24920"
+  doi: "10.48550/arXiv.2607.24920"
+  submitted: "2026-07-27"
+  updated: "2026-07-27"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["isomonodromy", "spectral curve"]
+
+- id: "arxiv:2607.25625"
+  title: "Entanglement asymmetry in the gapped XYZ spin-1/2 chain"
+  authors: ["Felipe Taha Sant'Ana"]
+  url: "https://arxiv.org/abs/2607.25625"
+  arxiv_id: "2607.25625"
+  doi: "10.48550/arXiv.2607.25625"
+  submitted: "2026-07-28"
+  updated: "2026-07-28"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["quantum integrability", "Bethe ansatz"]
+
+- id: "arxiv:2607.25661"
+  title: "Discrete power-law decay of subsystem distance after a quantum quench"
+  authors: ["Bin Sui", "Jiaju Zhang"]
+  url: "https://arxiv.org/abs/2607.25661"
+  arxiv_id: "2607.25661"
+  doi: "10.48550/arXiv.2607.25661"
+  submitted: "2026-07-28"
+  updated: "2026-07-28"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["quantum integrability", "conservation laws"]
+
+- id: "arxiv:2607.26223"
+  title: "The pair correlation function of the Sine_6 process"
+  authors: ["Shengqi Qiu", "Yahui Qu", "Lingfan Yuan", "Benedek Valkó", "Spencer Venancio"]
+  url: "https://arxiv.org/abs/2607.26223"
+  arxiv_id: "2607.26223"
+  doi: "10.48550/arXiv.2607.26223"
+  submitted: "2026-07-28"
+  updated: "2026-07-28"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["integrable probability"]
+
+- id: "arxiv:2607.26262"
+  title: "The boundary-driven multispecies harmonic process"
+  authors: ["Francesco Casini", "Rouven Frassek", "Cristian Giardinà"]
+  url: "https://arxiv.org/abs/2607.26262"
+  arxiv_id: "2607.26262"
+  doi: "10.48550/arXiv.2607.26262"
+  submitted: "2026-07-28"
+  updated: "2026-07-28"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["Yang--Baxter equation", "transfer matrix"]
+
+- id: "arxiv:2607.27810"
+  title: "Perturbed Beta Corners Process"
+  authors: ["Leonid Petrov", "Jiaming Xu"]
+  url: "https://arxiv.org/abs/2607.27810"
+  arxiv_id: "2607.27810"
+  doi: "10.48550/arXiv.2607.27810"
+  submitted: "2026-07-30"
+  updated: "2026-07-30"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["integrable probability"]
+
+- id: "arxiv:2607.27935"
+  title: "Generalized Kazakov-Migdal Models on Graphs via Artin-Ihara L-function and Random Partitions"
+  authors: ["So Matsuura", "Kazutoshi Ohta"]
+  url: "https://arxiv.org/abs/2607.27935"
+  arxiv_id: "2607.27935"
+  doi: "10.48550/arXiv.2607.27935"
+  submitted: "2026-07-30"
+  updated: "2026-07-30"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["spectral curve", "integrable probability"]
+
+- id: "arxiv:2607.28043"
+  title: "Quantum Trigonometric Spin Ruijsenaars-Schneider Models from K-theoretic Coulomb Branches"
+  authors: ["Gleb Arutyunov", "Lukas Hardi", "Rob Klabbers"]
+  url: "https://arxiv.org/abs/2607.28043"
+  arxiv_id: "2607.28043"
+  doi: "10.48550/arXiv.2607.28043"
+  submitted: "2026-07-30"
+  updated: "2026-07-30"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["quantum integrability", "transfer matrix"]
+
+- id: "arxiv:2607.28454"
+  title: "Integrability in Asymptotic Symmetries of Spacetime: the BMS3 scenario"
+  authors: ["Corentin Vitel"]
+  url: "https://arxiv.org/abs/2607.28454"
+  arxiv_id: "2607.28454"
+  doi: "10.48550/arXiv.2607.28454"
+  submitted: "2026-07-30"
+  updated: "2026-07-30"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["Hamiltonian structure", "Lax pair"]
+
+- id: "arxiv:2604.04640"
+  title: "Effective Bethe Ansatz for Spin-1 Non-integrable Models"
+  authors: ["Zhuohang Wang", "Rui-Dong Zhu"]
+  url: "https://doi.org/10.1088/1751-8121/ae880e"
+  arxiv_id: "2604.04640"
+  doi: "10.1088/1751-8121/ae880e"
+  journal: "Journal of Physics A: Mathematical and Theoretical"
+  volume: "59"
+  issue: "30"
+  article_number: "305001"
+  year: 2026
+  published: "2026-07-27"
+  submitted: "2026-04-06"
+  updated: "2026-06-15"
+  version: "v2"
+  metadata_checked_at: "2026-08-08"
+  tags: ["Bethe ansatz", "quantum integrability"]
+
+- id: "arxiv:2602.17436"
+  title: "Matrix-product operator dualities in integrable lattice models"
+  authors: ["Yuan Miao", "András Molnár", "Nick G. Jones"]
+  url: "https://doi.org/10.1088/1751-8121/ae880b"
+  arxiv_id: "2602.17436"
+  doi: "10.1088/1751-8121/ae880b"
+  journal: "Journal of Physics A: Mathematical and Theoretical"
+  volume: "59"
+  issue: "30"
+  article_number: "305002"
+  year: 2026
+  published: "2026-07-29"
+  submitted: "2026-02-19"
+  updated: "2026-07-29"
+  version: "v2"
+  metadata_checked_at: "2026-08-08"
+  tags: ["Yang--Baxter equation", "transfer matrix"]
+
+- id: "arxiv:2411.10401"
+  title: "Pointwise Weyl Laws for Quantum Completely Integrable Systems"
+  authors: ["Suresh Eswarathasan", "Allan Greenleaf", "Blake Keeler"]
+  url: "https://doi.org/10.1515/forum-2025-0485"
+  arxiv_id: "2411.10401"
+  doi: "10.1515/forum-2025-0485"
+  journal: "Forum Mathematicum"
+  year: 2026
+  published: "2026-07-29"
+  submitted: "2024-11-15"
+  updated: "2024-11-15"
+  version: "v1"
+  metadata_checked_at: "2026-08-08"
+  tags: ["quantum integrability", "symplectic geometry"]
