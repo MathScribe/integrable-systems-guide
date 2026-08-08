@@ -5,23 +5,23 @@ schema_version: 1
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-07-29'
+    announced_through: '2026-08-07'
     last_status: complete
 
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-07-29'
+    announced_through: '2026-08-07'
     last_status: complete
 
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-07-29'
+    announced_through: '2026-08-07'
     last_status: complete
 
   crossref:
     kind: ranked-title-backstop
-    title_query_through: '2026-07-29'
-    reconciliation_checked_at: '2026-07-29T12:26:48.134186Z'
+    title_query_through: '2026-08-08'
+    reconciliation_checked_at: '2026-08-08T05:27:56.163010Z'
     reconciliation_cadence: weekly
     overlap_days: 3
     last_status: complete
@@ -34,5 +34,5 @@ sources:
 
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-07-29T12:26:48.134186Z'
+    checked_at: '2026-08-08T05:27:56.163010Z'
     last_status: candidate-only
