@@ -6,7 +6,7 @@
 
 候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。
 
-<div class="radar-week-navigation" data-default-week="2026-W32" data-total-count="120">
+<div class="radar-week-navigation" data-default-week="2026-W32" data-total-count="138">
   <button type="button" data-radar-action="older">← 较早一周</button>
   <span class="radar-week-current" aria-live="polite"></span>
   <button type="button" data-radar-action="newer">较新一周 →</button>
@@ -17,7 +17,7 @@
     <span class="radar-search-count" aria-live="polite"></span>
   </div>
   <span hidden data-radar-week-option="2026-W32" data-label="2026 年第 32 周 · 8 月 3–9 日" data-count="16"></span>
-  <span hidden data-radar-week-option="2026-W31" data-label="2026 年第 31 周 · 7 月 27 日–8 月 2 日" data-count="4"></span>
+  <span hidden data-radar-week-option="2026-W31" data-label="2026 年第 31 周 · 7 月 27 日–8 月 2 日" data-count="22"></span>
   <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="21"></span>
   <span hidden data-radar-week-option="2026-W29" data-label="2026 年第 29 周 · 7 月 13–19 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W28" data-label="2026 年第 28 周 · 7 月 6–12 日" data-count="17"></span>
@@ -28,7 +28,7 @@
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W32" hidden><strong>本周概览：</strong>Hamiltonian/Yang--Baxter 判据、CohFT/Poisson 结构、KPZ 的 Hirota--Miwa 方程、q-Painlevé 与拓扑递归、Krylov--Toda 对应及数据驱动 Lax 核验。</p>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W31" hidden><strong>本周概览：</strong>本周关注非半单 partial CohFT 的第二 Hamilton 结构、受限矩阵 KP 层级、开放椭圆 Toda 链，以及 BEC rogue wave 的非线性谱机制。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W31" hidden><strong>本周概览：</strong>本周覆盖 Poisson--Lie 分类、有限域孤子、量子可积动力学、DNLS 层级、随机矩阵过程、Yang--Baxter 边界系统、Ruijsenaars--Schneider 模型及 BMS3 可积结构。</p>
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W30" hidden><strong>本周概览：</strong>本周新增非交换 Volterra 层级、Painlevé Hamilton 几何、有限亏格渐近、Yang--Baxter 随机过程、Lax/r-matrix 结构、量子超可积分类及双负时间可积方程。</p>
 
@@ -478,6 +478,114 @@
 
 <p id="month-2026-07" class="radar-month-label" data-radar-month-group="2026-07">2026 年 7 月</p>
 
+### Integrability in Asymptotic Symmetries of Spacetime: the BMS3 scenario {#paper-arxiv-2607-28454 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-28454" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-31">2026-07-31</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-30">2026-07-30</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>gr-qc</code> <code>Hamiltonian structure</code> <code>Lax pair</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Integrability in Asymptotic Symmetries of Spacetime: the BMS3 scenario</p>
+  <p class="radar-paper-meta">Corentin Vitel · <a href="https://arxiv.org/abs/2607.28454">arXiv</a> · <a href="https://arxiv.org/pdf/2607.28454">PDF</a></p>
+  <p class="radar-paper-overview">论文系统重构 BMS3 渐近对称中的可积层级，并明确其双 Hamilton、Nijenhuis 与 Lax 结构。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者分析 AdS 到平直极限、两种时间参数化和 Lie--Poisson 选择，并将层级流解释为共轭轨道上的 Lax dynamics。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>相容 Poisson brackets、recursion/Nijenhuis operator 与 Lax flows 共同生成 BMS3 hierarchy。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作澄清了同一渐近对称代数上不同可积描述的关系及其非唯一性。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Quantum Trigonometric Spin Ruijsenaars-Schneider Models from K-theoretic Coulomb Branches {#paper-arxiv-2607-28043 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-28043" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-31">2026-07-31</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-30">2026-07-30</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>hep-th</code> <code>math-ph</code> <code>quantum integrability</code> <code>transfer matrix</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Quantum Trigonometric Spin Ruijsenaars-Schneider Models from K-theoretic Coulomb Branches</p>
+  <p class="radar-paper-meta">Gleb Arutyunov, Lukas Hardi, Rob Klabbers · <a href="https://arxiv.org/abs/2607.28043">arXiv</a> · <a href="https://arxiv.org/pdf/2607.28043">PDF</a></p>
+  <p class="radar-paper-overview">论文从 K-theoretic Coulomb branches 构造量子三角 spin Ruijsenaars--Schneider 模型。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者建立 L-operator algebra、量子行列式和 Bethe 子代数，并得到一族彼此对易的量子 Hamiltonians。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>量子 L-operator 与 transfer-matrix/Bethe algebra 保证 Ruijsenaars--Schneider Hamiltonians 对易。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作给出带自旋三角 RS 模型的系统量子化及规范理论来源。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Generalized Kazakov-Migdal Models on Graphs via Artin-Ihara L-function and Random Partitions {#paper-arxiv-2607-27935 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-27935" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-31">2026-07-31</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-30">2026-07-30</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>hep-th</code> <code>spectral curve</code> <code>integrable probability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Generalized Kazakov-Migdal Models on Graphs via Artin-Ihara L-function and Random Partitions</p>
+  <p class="radar-paper-meta">So Matsuura, Kazutoshi Ohta · <a href="https://arxiv.org/abs/2607.27935">arXiv</a> · <a href="https://arxiv.org/pdf/2607.27935">PDF</a></p>
+  <p class="radar-paper-overview">论文以 Artin--Ihara L-function 统一构造图上的 generalized Kazakov--Migdal matrix models，并连接随机分拆。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>对 cycle graph，作者用 Schur measure 精确求解大 N 极限，分析 Gross--Witten--Wadia 转变、Young diagram 和凝聚现象。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>图的 zeta/L-function 数据进入矩阵积分，并在大 N 极限生成谱曲线。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>图结构、随机分拆与矩阵模型相变获得统一的精确框架。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Perturbed Beta Corners Process {#paper-arxiv-2607-27810 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-27810" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-31">2026-07-31</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-30">2026-07-30</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.PR</code> <code>math-ph</code> <code>integrable probability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Perturbed Beta Corners Process</p>
+  <p class="radar-paper-meta">Leonid Petrov, Jiaming Xu · <a href="https://arxiv.org/abs/2607.27810">arXiv</a> · <a href="https://arxiv.org/pdf/2607.27810">PDF</a></p>
+  <p class="radar-paper-overview">论文通过 multivariate Bessel functions 引入适用于任意 beta 的 perturbed Beta Corners process。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者在 beta 趋于无穷的两个尺度中证明大数定律和中心极限定理，并识别变形格点上的离散 GFF 涨落。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>interlacing arrays 与 Bessel transform 提供跨层级的精确概率结构。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>新形变突破经典 beta 值限制，并给出完整的零温极限涨落图景。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
 ### Nonlinear Fourier spectral signatures of rogue waves observed in Bose-Einstein condensates {#paper-arxiv-2607-27734 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-27734" data-radar-week="2026-W31" data-radar-month="2026-07">
@@ -500,6 +608,114 @@
       <section>
         <h4>创新</h4>
         <p>新增内容不是再次构造 Peregrine 解，而是用 nonlinear Fourier spectrum 统一解释 Gaussian 诱发事件与实验波形，并把对 rogue-wave 形成的诊断推进为可操作的离散谱工程。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### The boundary-driven multispecies harmonic process {#paper-arxiv-2607-26262 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-26262" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-30">2026-07-30</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-28">2026-07-28</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>math.PR</code> <code>Yang--Baxter equation</code> <code>transfer matrix</code></p>
+  <p class="radar-paper-title" aria-hidden="true">The boundary-driven multispecies harmonic process</p>
+  <p class="radar-paper-meta">Francesco Casini, Rouven Frassek, Cristian Giardinà · <a href="https://arxiv.org/abs/2607.26262">arXiv</a> · <a href="https://arxiv.org/pdf/2607.26262">PDF</a></p>
+  <p class="radar-paper-overview">论文构造边界驱动多物种 harmonic process，并证明其生成元对应开放有理高秩 Heisenberg chain。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者给出 operator-valued R/K matrices、double-row transfer matrix 及三类对偶过程，从而获得稳态与可解性工具。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Yang--Baxter 与 reflection equations 保证开放链 transfer matrices 对易。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>多物种边界随机过程、量子链和多重对偶性被统一到同一开放可积框架。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### The pair correlation function of the Sine_6 process {#paper-arxiv-2607-26223 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-26223" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-30">2026-07-30</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-28">2026-07-28</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.PR</code> <code>math-ph</code> <code>integrable probability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">The pair correlation function of the Sine_6 process</p>
+  <p class="radar-paper-meta">Shengqi Qiu, Yahui Qu, Lingfan Yuan, Benedek Valkó, Spencer Venancio · <a href="https://arxiv.org/abs/2607.26223">arXiv</a> · <a href="https://arxiv.org/pdf/2607.26223">PDF</a></p>
+  <p class="radar-paper-overview">论文首次给出 Sine_6 process 两点相关函数的单变量 Bessel 型特殊函数表示。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者把原有多重积分压缩为可计算的一维表达，并验证小间距和大间距渐近。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Sine_beta 点过程的精确相关结构在 beta=6 时闭合为特殊函数公式。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>结果把 beta=1、2、4 之外的非经典情形推进到显式两点统计。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Discrete power-law decay of subsystem distance after a quantum quench {#paper-arxiv-2607-25661 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-25661" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-29">2026-07-29</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-28">2026-07-28</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>quant-ph</code> <code>cond-mat.stat-mech</code> <code>quantum integrability</code> <code>conservation laws</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Discrete power-law decay of subsystem distance after a quantum quench</p>
+  <p class="radar-paper-meta">Bin Sui, Jiaju Zhang · <a href="https://arxiv.org/abs/2607.25661">arXiv</a> · <a href="https://arxiv.org/pdf/2607.25661">PDF</a></p>
+  <p class="radar-paper-overview">论文发现量子淬火后子系统距离只能按一组离散幂律指数衰减，并在可积 Ising 链中完成分类。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者从广义 Gibbs ensemble 的动量奇点和鞍点结构推导允许的指数，并以精确数值验证不同初态的衰减类。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>可积准粒子占据数与局域守恒量决定稳态及其靠近速度。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>连续可调的淬火参数最终落入离散的普适衰减指数集合。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Entanglement asymmetry in the gapped XYZ spin-1/2 chain {#paper-arxiv-2607-25625 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-25625" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-29">2026-07-29</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-28">2026-07-28</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>quant-ph</code> <code>quantum integrability</code> <code>Bethe ansatz</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Entanglement asymmetry in the gapped XYZ spin-1/2 chain</p>
+  <p class="radar-paper-meta">Felipe Taha Sant&#x27;Ana · <a href="https://arxiv.org/abs/2607.25625">arXiv</a> · <a href="https://arxiv.org/pdf/2607.25625">PDF</a></p>
+  <p class="radar-paper-overview">论文解析研究有隙 XYZ 自旋链的 entanglement asymmetry，并统一 MPS、sine-Gordon 与 Baxter 解的结果。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者证明 charged moments 恒等式，结合 form factors 和精确晶格解得到相位依赖的渐近公式，并用 DMRG 核验。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Baxter 可积解和 sine-Gordon form factors 提供从晶格到场论的精确桥梁。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作给出对称性恢复量在整个有隙相中的统一解析刻画。</p>
       </section>
     </div>
   </details>
@@ -532,6 +748,195 @@
   </details>
 </article>
 
+### Split Heun functions via blown-up surface defects {#paper-arxiv-2607-24920 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-24920" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-29">2026-07-29</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-27">2026-07-27</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>hep-th</code> <code>math-ph</code> <code>isomonodromy</code> <code>spectral curve</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Split Heun functions via blown-up surface defects</p>
+  <p class="radar-paper-meta">Saebyeok Jeong, Tommaso Pedroni · <a href="https://arxiv.org/abs/2607.24920">arXiv</a> · <a href="https://arxiv.org/pdf/2607.24920">PDF</a></p>
+  <p class="radar-paper-overview">论文用 blown-up surface defects 构造 split Heun functions，并处理共振参数处传统级数失效的问题。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者给出新的 blow-up equations 与重求和公式，计算 band-edge monodromy 并推广到一般 flavor 数据。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Heun monodromy、Seiberg--Witten 谱曲线和 surface-defect partition functions 组成等单值结构。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>新函数框架在共振和 band-edge 区域仍保持可计算性。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Matrix-product operator dualities in integrable lattice models {#paper-arxiv-2602-17436 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2602-17436" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-29">2026-07-29</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>quant-ph</code> <code>Yang--Baxter equation</code> <code>transfer matrix</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Matrix-product operator dualities in integrable lattice models</p>
+  <p class="radar-paper-meta">Yuan Miao, András Molnár, Nick G. Jones · <a href="https://arxiv.org/abs/2602.17436">arXiv</a> · <a href="https://arxiv.org/pdf/2602.17436">PDF</a> · <a href="https://doi.org/10.1088/1751-8121/ae880b">Journal of Physics A: Mathematical and Theoretical 59, 305002 (2026)</a></p>
+  <p class="radar-paper-overview">论文研究可逆和不可逆 matrix-product-operator dualities 如何变换可积格点模型的 Yang--Baxter 结构。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者导出 duality 后的 modified Yang--Baxter algebra，并在 XXZ 等模型中展示 Hamiltonian、荷与谱结构的传递。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>MPO intertwiner 把 transfer matrices 和 R-matrix relations 映射到对偶模型。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>对偶性不再只比较 Hamiltonian，而能追踪完整的可积代数结构。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Pointwise Weyl Laws for Quantum Completely Integrable Systems {#paper-arxiv-2411-10401 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2411-10401" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-29">2026-07-29</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>math.AP</code> <code>math-ph</code> <code>quantum integrability</code> <code>symplectic geometry</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Pointwise Weyl Laws for Quantum Completely Integrable Systems</p>
+  <p class="radar-paper-meta">Suresh Eswarathasan, Allan Greenleaf, Blake Keeler · <a href="https://arxiv.org/abs/2411.10401">arXiv</a> · <a href="https://arxiv.org/pdf/2411.10401">PDF</a> · <a href="https://doi.org/10.1515/forum-2025-0485">Forum Mathematicum (2026)</a></p>
+  <p class="radar-paper-overview">论文为 quantum completely integrable systems 建立 microlocalized pointwise Weyl laws。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者在正则 joint-energy surfaces 上得到局部联合谱函数的主项和余项，并以旋转曲面等例子说明。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>交换伪微分算子的联合谱与经典 Liouville foliation 控制点态谱渐近。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>结果把整体联合 Weyl law 精细化到位置与相空间方向分辨的局部定理。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Localization of quantum systems at Liouville tori {#paper-arxiv-2607-23864 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-23864" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-28">2026-07-28</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-26">2026-07-26</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>math.SG</code> <code>quantum integrability</code> <code>symplectic geometry</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Localization of quantum systems at Liouville tori</p>
+  <p class="radar-paper-meta">Ood Shabtai · <a href="https://arxiv.org/abs/2607.23864">arXiv</a> · <a href="https://arxiv.org/pdf/2607.23864">PDF</a></p>
+  <p class="radar-paper-overview">论文证明半经典量子可积系统的联合本征态可局域到经典 Liouville tori，并给出算子级极限描述。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>对交换 Berezin--Toeplitz observables，作者把本征截面嵌入固定环面的 L2 空间并证明其强收敛到乘法算子模型。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Arnold--Liouville 环面与联合谱把经典作用变量和量子本征态直接对应。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>结果把测度意义的半经典局域加强为固定 Hilbert 空间中的算子收敛。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Loop Algebra Splitting and Darboux Transformations for Nonlocal Derivative Nonlinear Schrödinger Hierarchies {#paper-arxiv-2607-23422 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-23422" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-28">2026-07-28</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-26">2026-07-26</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>Darboux transformation</code> <code>inverse scattering</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Loop Algebra Splitting and Darboux Transformations for Nonlocal Derivative Nonlinear Schrödinger Hierarchies</p>
+  <p class="radar-paper-meta">Ziqi Li, Zhiwei Wu · <a href="https://arxiv.org/abs/2607.23422">arXiv</a> · <a href="https://arxiv.org/pdf/2607.23422">PDF</a></p>
+  <p class="radar-paper-overview">论文以统一的 loop-algebra splitting 构造多类非局部 derivative NLS 层级及其 Darboux transformations。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者系统推导约化层级、分解理论和显式 Darboux 公式，并说明不同非局部模型如何从同一代数框架产生。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>loop algebra 的正负分裂生成相容流，Darboux transformation 保持对应谱问题。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>分散的非局部 DNLS 模型由统一的层级与变换机制组织起来。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Explicit higher order rational rogue waves of the nonlinear Schrödinger equation {#paper-arxiv-2607-23151 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-23151" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-28">2026-07-28</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-25">2026-07-25</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>Darboux transformation</code> <code>bilinear method</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Explicit higher order rational rogue waves of the nonlinear Schrödinger equation</p>
+  <p class="radar-paper-meta">Robert Conte · <a href="https://arxiv.org/abs/2607.23151">arXiv</a> · <a href="https://arxiv.org/pdf/2607.23151">PDF</a></p>
+  <p class="radar-paper-overview">论文为任意阶 NLS 有理 rogue wave 建立三项递推，显著降低保留全部自由参数时的计算成本。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>新递推只需低一阶的三个行列式，并据此显式得到含六个任意复参数的七阶 rogue wave。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Wronskian、Darboux/Bäcklund 来源与双线性行列式结构共同保证递推闭合。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作突破高阶全参数表达式的计算瓶颈，而不是再给出少量特例图形。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Emergent integrable dynamics in a non-integrable Rydberg-atom chain {#paper-arxiv-2607-22933 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-22933" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-28">2026-07-28</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-24">2026-07-24</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>cond-mat.quant-gas</code> <code>quant-ph</code> <code>quantum integrability</code> <code>generalized hydrodynamics</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Emergent integrable dynamics in a non-integrable Rydberg-atom chain</p>
+  <p class="radar-paper-meta">Gianluca Morettini, Luca Capizzi, Leonardo Mazza, Maurizio Fagotti · <a href="https://arxiv.org/abs/2607.22933">arXiv</a> · <a href="https://arxiv.org/pdf/2607.22933">PDF</a></p>
+  <p class="radar-paper-overview">论文在非可积 Rydberg 原子链中发现依赖初态的涌现可积动力学，并刻画其与扩散行为的转变。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>特定低密度扇区可映射到有效自由 Fermi gas；加入长程耦合后，作者观察到从弹道可积输运到扩散的清晰变化。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>有效自由粒子守恒量组织非可积 Hamiltonian 内的一类长寿命动力学扇区。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作给出同一实验模型中可积与非可积演化共存的状态选择机制。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
 ### Integrable open elliptic Toda chain with boundaries {#paper-doi-10-1063-5-0331826 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1063-5-0331826" data-radar-week="2026-W31" data-radar-month="2026-07">
@@ -559,6 +964,33 @@
   </details>
 </article>
 
+### Mersenne Representation, the Conolly Sequence, and Soliton Profiles over Finite Fields {#paper-arxiv-2607-22202 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-22202" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-27">2026-07-27</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-24">2026-07-24</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.CO</code> <code>nlin.SI</code> <code>tau function</code> <code>integrable discretization</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Mersenne Representation, the Conolly Sequence, and Soliton Profiles over Finite Fields</p>
+  <p class="radar-paper-meta">Fumitaka Yura · <a href="https://arxiv.org/abs/2607.22202">arXiv</a> · <a href="https://arxiv.org/pdf/2607.22202">PDF</a></p>
+  <p class="radar-paper-overview">论文用 Mersenne 表示连接 Conolly 序列与有限域 box--ball system 的孤子轮廓。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者构造整数值行波及其 tau-function 表示，并从组合数据恢复有限域中的全局孤子形状。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>离散 tau function 编码 box--ball 动力学与行波传播。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>新表示把经典组合序列直接转化为有限域孤子解的可计算描述。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
 ### Lifts of partial cohomological field theories and examples of bi-Hamiltonian structures in the non-semisimple case {#paper-arxiv-2607-22084 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-22084" data-radar-week="2026-W31" data-radar-month="2026-07">
@@ -581,6 +1013,60 @@
       <section>
         <h4>创新</h4>
         <p>结果提供了系统而非零散的非半单双 Hamilton 例子，并把 CohFT lift、显式第二 Poisson bracket 与几何结构的 Weil bundle 提升放入同一机制。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Classification of Six-dimensional Real Nilpotent Lie Bialgebras of Symplectic Type and their Poisson-Lie Groups {#paper-arxiv-2607-22021 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2607-22021" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-27">2026-07-27</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-07-24">2026-07-24</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>Poisson--Lie geometry</code> <code>Hamiltonian structure</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Classification of Six-dimensional Real Nilpotent Lie Bialgebras of Symplectic Type and their Poisson-Lie Groups</p>
+  <p class="radar-paper-meta">A. Poursistani, Gh. Haghighatdoost, J. Abedi-Fardad · <a href="https://arxiv.org/abs/2607.22021">arXiv</a> · <a href="https://arxiv.org/pdf/2607.22021">PDF</a></p>
+  <p class="radar-paper-overview">论文完成六维实幂零辛型 Lie bialgebras 及其 Poisson--Lie groups 的分类，并从所得 Poisson 结构构造新的可积 Hamilton 系统。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者给出同构分类、相应 Poisson brackets 与群结构，并展示如何提取成组对易积分。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Poisson--Lie geometry 把 Lie bialgebra 数据转化为 Hamiltonian flows 和对易守恒量。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作把分类、显式 Poisson 结构和可积系统构造放在同一套六维框架中。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Effective Bethe Ansatz for Spin-1 Non-integrable Models {#paper-arxiv-2604-04640 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2604-04640" data-radar-week="2026-W31" data-radar-month="2026-07">
+  <p class="radar-paper-date"><time datetime="2026-07-27">2026-07-27</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>nlin.SI</code> <code>Bethe ansatz</code> <code>quantum integrability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Effective Bethe Ansatz for Spin-1 Non-integrable Models</p>
+  <p class="radar-paper-meta">Zhuohang Wang, Rui-Dong Zhu · <a href="https://arxiv.org/abs/2604.04640">arXiv</a> · <a href="https://arxiv.org/pdf/2604.04640">PDF</a> · <a href="https://doi.org/10.1088/1751-8121/ae880e">Journal of Physics A: Mathematical and Theoretical 59, 305001 (2026)</a></p>
+  <p class="radar-paper-overview">论文系统检验从两个可积端点连续变形得到的 effective Bethe ansatz 在非可积 spin-1 链中的有效范围。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>变分 Bethe wavefunctions 在广泛参数区保持高保真度，并能追踪纠缠、能级交叉及失效边界。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>两个精确 Bethe-solvable 端点提供可控的波函数基底和量子数。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作把“邻近可积点”的经验近似变成定量可验证的跨参数基准。</p>
       </section>
     </div>
   </details>

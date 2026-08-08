@@ -55,13 +55,13 @@ frontier_weeks:
     coverage_note: 核心分类已处理至 7 月 26 日；期刊补漏已通过独立水位处理至 7 月 29 日。
 - id: 2026-W31
   date_range: 2026-07-27 至 2026-08-02
-  summary: 本周关注非半单 partial CohFT 的第二 Hamilton 结构、受限矩阵 KP 层级、开放椭圆 Toda 链，以及 BEC rogue wave 的非线性谱机制。
+  summary: 本周覆盖 Poisson--Lie 分类、有限域孤子、量子可积动力学、DNLS 层级、随机矩阵过程、Yang--Baxter 边界系统、Ruijsenaars--Schneider 模型及 BMS3 可积结构。
   screening:
     sources_checked:
-    - arXiv nlin.SI / nlin.PS 核心分类与有限跨分类检索
+    - arXiv 14 个相关分类的整周提交批次与结构词检索
     - Crossref 强题名补漏、zbMATH MSC 补漏与出版社首次在线记录
-    selected: 4
-    coverage_note: 核心分类、跨分类和独立期刊补漏均已处理至 8 月 2 日。
+    selected: 22
+    coverage_note: 已对 7 月 27 日至 8 月 2 日做整周历史复查，并核验入选论文的主源与事件日期。
 - id: 2026-W32
   date_range: 2026-08-03 至 2026-08-09
   summary: Hamiltonian/Yang--Baxter 判据、CohFT/Poisson 结构、KPZ 的 Hirota--Miwa 方程、q-Painlevé 与拓扑递归、Krylov--Toda 对应及数据驱动 Lax 核验。
@@ -1424,6 +1424,186 @@ frontier:
     main_result: 对 Gaussian wave packet，初始宽度增加会引入更多离散本征值，并推动基本孤子、束缚态与 Christmas-tree 型 rogue-wave 结构之间的转换；对实验 Peregrine 数据，局域扰动通过重排离散谱和相位实现多模相干聚焦。论文进一步把同一分析延伸到高阶 rogue wave，并给出相位匹配的逆设计方案。
     integrable_structure: focusing NLS 的 Zakharov--Shabat 散射问题把 BEC 波形映射为离散本征值和相位数据，Darboux reconstruction 再检验这些谱模是否能够重建观测到的局域峰。可积谱在这里直接承担机制识别与控制坐标的角色。
     innovation: 新增内容不是再次构造 Peregrine 解，而是用 nonlinear Fourier spectrum 统一解释 Gaussian 诱发事件与实验波形，并把对 rogue-wave 形成的诊断推进为可操作的离散谱工程。
+  - paper_id: arxiv:2607.22021
+    signal_date: '2026-07-27'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [math-ph]
+    structure_tags: [Poisson--Lie geometry, Hamiltonian structure]
+    summary: 论文完成六维实幂零辛型 Lie bialgebras 及其 Poisson--Lie groups 的分类，并从所得 Poisson 结构构造新的可积 Hamilton 系统。
+    main_result: 作者给出同构分类、相应 Poisson brackets 与群结构，并展示如何提取成组对易积分。
+    integrable_structure: Poisson--Lie geometry 把 Lie bialgebra 数据转化为 Hamiltonian flows 和对易守恒量。
+    innovation: 工作把分类、显式 Poisson 结构和可积系统构造放在同一套六维框架中。
+  - paper_id: arxiv:2607.22202
+    signal_date: '2026-07-27'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [math.CO, nlin.SI]
+    structure_tags: [tau function, integrable discretization]
+    summary: 论文用 Mersenne 表示连接 Conolly 序列与有限域 box--ball system 的孤子轮廓。
+    main_result: 作者构造整数值行波及其 tau-function 表示，并从组合数据恢复有限域中的全局孤子形状。
+    integrable_structure: 离散 tau function 编码 box--ball 动力学与行波传播。
+    innovation: 新表示把经典组合序列直接转化为有限域孤子解的可计算描述。
+  - paper_id: arxiv:2607.22933
+    signal_date: '2026-07-28'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [cond-mat.quant-gas, quant-ph]
+    structure_tags: [quantum integrability, generalized hydrodynamics]
+    summary: 论文在非可积 Rydberg 原子链中发现依赖初态的涌现可积动力学，并刻画其与扩散行为的转变。
+    main_result: 特定低密度扇区可映射到有效自由 Fermi gas；加入长程耦合后，作者观察到从弹道可积输运到扩散的清晰变化。
+    integrable_structure: 有效自由粒子守恒量组织非可积 Hamiltonian 内的一类长寿命动力学扇区。
+    innovation: 工作给出同一实验模型中可积与非可积演化共存的状态选择机制。
+  - paper_id: arxiv:2607.23151
+    signal_date: '2026-07-28'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [math-ph]
+    structure_tags: [Darboux transformation, bilinear method]
+    summary: 论文为任意阶 NLS 有理 rogue wave 建立三项递推，显著降低保留全部自由参数时的计算成本。
+    main_result: 新递推只需低一阶的三个行列式，并据此显式得到含六个任意复参数的七阶 rogue wave。
+    integrable_structure: Wronskian、Darboux/Bäcklund 来源与双线性行列式结构共同保证递推闭合。
+    innovation: 工作突破高阶全参数表达式的计算瓶颈，而不是再给出少量特例图形。
+  - paper_id: arxiv:2607.23422
+    signal_date: '2026-07-28'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [nlin.SI]
+    structure_tags: [Darboux transformation, inverse scattering]
+    summary: 论文以统一的 loop-algebra splitting 构造多类非局部 derivative NLS 层级及其 Darboux transformations。
+    main_result: 作者系统推导约化层级、分解理论和显式 Darboux 公式，并说明不同非局部模型如何从同一代数框架产生。
+    integrable_structure: loop algebra 的正负分裂生成相容流，Darboux transformation 保持对应谱问题。
+    innovation: 分散的非局部 DNLS 模型由统一的层级与变换机制组织起来。
+  - paper_id: arxiv:2607.23864
+    signal_date: '2026-07-28'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [math-ph, math.SG]
+    structure_tags: [quantum integrability, symplectic geometry]
+    summary: 论文证明半经典量子可积系统的联合本征态可局域到经典 Liouville tori，并给出算子级极限描述。
+    main_result: 对交换 Berezin--Toeplitz observables，作者把本征截面嵌入固定环面的 L2 空间并证明其强收敛到乘法算子模型。
+    integrable_structure: Arnold--Liouville 环面与联合谱把经典作用变量和量子本征态直接对应。
+    innovation: 结果把测度意义的半经典局域加强为固定 Hilbert 空间中的算子收敛。
+  - paper_id: arxiv:2607.24920
+    signal_date: '2026-07-29'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [hep-th, math-ph]
+    structure_tags: [isomonodromy, spectral curve]
+    summary: 论文用 blown-up surface defects 构造 split Heun functions，并处理共振参数处传统级数失效的问题。
+    main_result: 作者给出新的 blow-up equations 与重求和公式，计算 band-edge monodromy 并推广到一般 flavor 数据。
+    integrable_structure: Heun monodromy、Seiberg--Witten 谱曲线和 surface-defect partition functions 组成等单值结构。
+    innovation: 新函数框架在共振和 band-edge 区域仍保持可计算性。
+  - paper_id: arxiv:2607.25625
+    signal_date: '2026-07-29'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [cond-mat.stat-mech, quant-ph]
+    structure_tags: [quantum integrability, Bethe ansatz]
+    summary: 论文解析研究有隙 XYZ 自旋链的 entanglement asymmetry，并统一 MPS、sine-Gordon 与 Baxter 解的结果。
+    main_result: 作者证明 charged moments 恒等式，结合 form factors 和精确晶格解得到相位依赖的渐近公式，并用 DMRG 核验。
+    integrable_structure: Baxter 可积解和 sine-Gordon form factors 提供从晶格到场论的精确桥梁。
+    innovation: 工作给出对称性恢复量在整个有隙相中的统一解析刻画。
+  - paper_id: arxiv:2607.25661
+    signal_date: '2026-07-29'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [quant-ph, cond-mat.stat-mech]
+    structure_tags: [quantum integrability, conservation laws]
+    summary: 论文发现量子淬火后子系统距离只能按一组离散幂律指数衰减，并在可积 Ising 链中完成分类。
+    main_result: 作者从广义 Gibbs ensemble 的动量奇点和鞍点结构推导允许的指数，并以精确数值验证不同初态的衰减类。
+    integrable_structure: 可积准粒子占据数与局域守恒量决定稳态及其靠近速度。
+    innovation: 连续可调的淬火参数最终落入离散的普适衰减指数集合。
+  - paper_id: arxiv:2607.26223
+    signal_date: '2026-07-30'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [math.PR, math-ph]
+    structure_tags: [integrable probability]
+    summary: 论文首次给出 Sine_6 process 两点相关函数的单变量 Bessel 型特殊函数表示。
+    main_result: 作者把原有多重积分压缩为可计算的一维表达，并验证小间距和大间距渐近。
+    integrable_structure: Sine_beta 点过程的精确相关结构在 beta=6 时闭合为特殊函数公式。
+    innovation: 结果把 beta=1、2、4 之外的非经典情形推进到显式两点统计。
+  - paper_id: arxiv:2607.26262
+    signal_date: '2026-07-30'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [math-ph, math.PR]
+    structure_tags: [Yang--Baxter equation, transfer matrix]
+    summary: 论文构造边界驱动多物种 harmonic process，并证明其生成元对应开放有理高秩 Heisenberg chain。
+    main_result: 作者给出 operator-valued R/K matrices、double-row transfer matrix 及三类对偶过程，从而获得稳态与可解性工具。
+    integrable_structure: Yang--Baxter 与 reflection equations 保证开放链 transfer matrices 对易。
+    innovation: 多物种边界随机过程、量子链和多重对偶性被统一到同一开放可积框架。
+  - paper_id: arxiv:2607.27810
+    signal_date: '2026-07-31'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [math.PR, math-ph]
+    structure_tags: [integrable probability]
+    summary: 论文通过 multivariate Bessel functions 引入适用于任意 beta 的 perturbed Beta Corners process。
+    main_result: 作者在 beta 趋于无穷的两个尺度中证明大数定律和中心极限定理，并识别变形格点上的离散 GFF 涨落。
+    integrable_structure: interlacing arrays 与 Bessel transform 提供跨层级的精确概率结构。
+    innovation: 新形变突破经典 beta 值限制，并给出完整的零温极限涨落图景。
+  - paper_id: arxiv:2607.27935
+    signal_date: '2026-07-31'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [hep-th]
+    structure_tags: [spectral curve, integrable probability]
+    summary: 论文以 Artin--Ihara L-function 统一构造图上的 generalized Kazakov--Migdal matrix models，并连接随机分拆。
+    main_result: 对 cycle graph，作者用 Schur measure 精确求解大 N 极限，分析 Gross--Witten--Wadia 转变、Young diagram 和凝聚现象。
+    integrable_structure: 图的 zeta/L-function 数据进入矩阵积分，并在大 N 极限生成谱曲线。
+    innovation: 图结构、随机分拆与矩阵模型相变获得统一的精确框架。
+  - paper_id: arxiv:2607.28043
+    signal_date: '2026-07-31'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [hep-th, math-ph]
+    structure_tags: [quantum integrability, transfer matrix]
+    summary: 论文从 K-theoretic Coulomb branches 构造量子三角 spin Ruijsenaars--Schneider 模型。
+    main_result: 作者建立 L-operator algebra、量子行列式和 Bethe 子代数，并得到一族彼此对易的量子 Hamiltonians。
+    integrable_structure: 量子 L-operator 与 transfer-matrix/Bethe algebra 保证 Ruijsenaars--Schneider Hamiltonians 对易。
+    innovation: 工作给出带自旋三角 RS 模型的系统量子化及规范理论来源。
+  - paper_id: arxiv:2607.28454
+    signal_date: '2026-07-31'
+    signal_type: new-preprint
+    week: 2026-W31
+    arxiv_categories: [math-ph, gr-qc]
+    structure_tags: [Hamiltonian structure, Lax pair]
+    summary: 论文系统重构 BMS3 渐近对称中的可积层级，并明确其双 Hamilton、Nijenhuis 与 Lax 结构。
+    main_result: 作者分析 AdS 到平直极限、两种时间参数化和 Lie--Poisson 选择，并将层级流解释为共轭轨道上的 Lax dynamics。
+    integrable_structure: 相容 Poisson brackets、recursion/Nijenhuis operator 与 Lax flows 共同生成 BMS3 hierarchy。
+    innovation: 工作澄清了同一渐近对称代数上不同可积描述的关系及其非唯一性。
+  - paper_id: arxiv:2604.04640
+    signal_date: '2026-07-27'
+    signal_type: journal-publication
+    week: 2026-W31
+    arxiv_categories: [cond-mat.stat-mech, nlin.SI]
+    structure_tags: [Bethe ansatz, quantum integrability]
+    summary: 论文系统检验从两个可积端点连续变形得到的 effective Bethe ansatz 在非可积 spin-1 链中的有效范围。
+    main_result: 变分 Bethe wavefunctions 在广泛参数区保持高保真度，并能追踪纠缠、能级交叉及失效边界。
+    integrable_structure: 两个精确 Bethe-solvable 端点提供可控的波函数基底和量子数。
+    innovation: 工作把“邻近可积点”的经验近似变成定量可验证的跨参数基准。
+  - paper_id: arxiv:2602.17436
+    signal_date: '2026-07-29'
+    signal_type: journal-publication
+    week: 2026-W31
+    arxiv_categories: [cond-mat.stat-mech, quant-ph]
+    structure_tags: [Yang--Baxter equation, transfer matrix]
+    summary: 论文研究可逆和不可逆 matrix-product-operator dualities 如何变换可积格点模型的 Yang--Baxter 结构。
+    main_result: 作者导出 duality 后的 modified Yang--Baxter algebra，并在 XXZ 等模型中展示 Hamiltonian、荷与谱结构的传递。
+    integrable_structure: MPO intertwiner 把 transfer matrices 和 R-matrix relations 映射到对偶模型。
+    innovation: 对偶性不再只比较 Hamiltonian，而能追踪完整的可积代数结构。
+  - paper_id: arxiv:2411.10401
+    signal_date: '2026-07-29'
+    signal_type: journal-publication
+    week: 2026-W31
+    arxiv_categories: [math.AP, math-ph]
+    structure_tags: [quantum integrability, symplectic geometry]
+    summary: 论文为 quantum completely integrable systems 建立 microlocalized pointwise Weyl laws。
+    main_result: 作者在正则 joint-energy surfaces 上得到局部联合谱函数的主项和余项，并以旋转曲面等例子说明。
+    integrable_structure: 交换伪微分算子的联合谱与经典 Liouville foliation 控制点态谱渐近。
+    innovation: 结果把整体联合 Weyl law 精细化到位置与相空间方向分辨的局部定理。
   - paper_id: arxiv:2607.29373
     signal_date: '2026-08-03'
     signal_type: new-preprint
