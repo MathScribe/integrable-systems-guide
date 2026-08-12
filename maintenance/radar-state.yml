@@ -5,23 +5,23 @@ schema_version: 1
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-08-07'
+    announced_through: '2026-08-11'
     last_status: complete
 
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-08-07'
+    announced_through: '2026-08-11'
     last_status: complete
 
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-08-07'
+    announced_through: '2026-08-11'
     last_status: complete
 
   crossref:
     kind: ranked-title-backstop
-    title_query_through: '2026-08-08'
-    reconciliation_checked_at: '2026-08-08T05:27:56.163010Z'
+    title_query_through: '2026-08-12'
+    reconciliation_checked_at: '2026-08-12T08:44:15.151287Z'
     reconciliation_cadence: weekly
     overlap_days: 3
     last_status: complete
@@ -29,10 +29,10 @@ sources:
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
-    checked_at: '2026-07-29T12:22:53.639006Z'
+    checked_at: '2026-08-12T08:44:24.527649Z'
     last_status: complete
 
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-08-08T05:27:56.163010Z'
+    checked_at: '2026-08-12T08:57:34.554850Z'
     last_status: candidate-only
