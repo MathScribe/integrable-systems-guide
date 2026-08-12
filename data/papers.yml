@@ -1917,8 +1917,12 @@
   arxiv_id: "2602.11288"
   doi: "10.1103/99hb-q8bd"
   journal: "Physical Review D"
-  published: "2026-07-15"
-  metadata_checked_at: "2026-07-20"
+  volume: "114"
+  issue: "4"
+  article_number: "046008"
+  year: 2026
+  published: "2026-08-10"
+  metadata_checked_at: "2026-08-12"
   tags: ["Yang--Baxter equation", "Chern--Simons theory"]
 
 - id: "doi:10.1088/1361-6544/ae7fe7"
@@ -3001,3 +3005,136 @@
   version: "v1"
   metadata_checked_at: "2026-08-08"
   tags: ["quantum integrability", "symplectic geometry"]
+
+- id: "arxiv:2608.06889"
+  title: "The direct scattering problem for the defocusing nonlinear Schrödinger equation with step-like periodic background"
+  authors: ["Dinghao Zhu"]
+  url: "https://arxiv.org/abs/2608.06889"
+  arxiv_id: "2608.06889"
+  doi: "10.48550/arXiv.2608.06889"
+  submitted: "2026-08-07"
+  updated: "2026-08-07"
+  version: "v1"
+  metadata_checked_at: "2026-08-12"
+  tags: ["defocusing NLS", "inverse scattering", "step-like periodic background", "Riemann--Hilbert problem", "dark-soliton gas"]
+
+- id: "arxiv:2608.07263"
+  title: "Diagonalization of the Toda flow for arbitrary isospectral symmetric matrices"
+  authors: ["David Martínez Torres", "Carlos Tomei"]
+  url: "https://arxiv.org/abs/2608.07263"
+  arxiv_id: "2608.07263"
+  doi: "10.48550/arXiv.2608.07263"
+  submitted: "2026-08-07"
+  updated: "2026-08-07"
+  version: "v1"
+  metadata_checked_at: "2026-08-12"
+  tags: ["Toda flow", "isospectral manifolds", "partial flag manifolds", "matrix factorization", "Lax pair"]
+
+- id: "arxiv:2608.08205"
+  title: "Out-of-equilibrium inhomogeneous XX chains: Exact results and the hydrodynamic limit"
+  authors: ["Vincenzo Alba", "Federico Rottoli"]
+  url: "https://arxiv.org/abs/2608.08205"
+  arxiv_id: "2608.08205"
+  doi: "10.48550/arXiv.2608.08205"
+  submitted: "2026-08-08"
+  updated: "2026-08-08"
+  version: "v1"
+  metadata_checked_at: "2026-08-12"
+  tags: ["XX chain", "quantum quench", "Riemann--Hilbert problem", "hydrodynamic limit", "two-point correlations"]
+
+- id: "arxiv:2608.08397"
+  title: "A Riemann--Hilbert representation for Sobolev orthogonal polynomials"
+  authors: ["Alex Little"]
+  url: "https://arxiv.org/abs/2608.08397"
+  arxiv_id: "2608.08397"
+  doi: "10.48550/arXiv.2608.08397"
+  submitted: "2026-08-09"
+  updated: "2026-08-09"
+  version: "v1"
+  metadata_checked_at: "2026-08-12"
+  tags: ["Sobolev orthogonal polynomials", "multiple orthogonal polynomials", "Riemann--Hilbert problem", "Christoffel--Darboux formula", "WKB"]
+
+- id: "arxiv:2608.08455"
+  title: "Generalized Freud weight, discrete Painlevé I hierarchy and full asymptotics of Hankel determinants"
+  authors: ["Wen-Gao Long", "Lin-Rong Tang", "Chao Min"]
+  url: "https://arxiv.org/abs/2608.08455"
+  arxiv_id: "2608.08455"
+  doi: "10.48550/arXiv.2608.08455"
+  submitted: "2026-08-09"
+  updated: "2026-08-09"
+  version: "v1"
+  metadata_checked_at: "2026-08-12"
+  tags: ["generalized Freud weight", "discrete Painlevé I hierarchy", "Hankel determinants", "orthogonal polynomials", "full asymptotics"]
+
+- id: "arxiv:2608.08480"
+  title: "Nonisospectral Integrability and Exact Current Fluctuations in the Two-Dimensional SSEP"
+  authors: ["Tingfei Li"]
+  url: "https://arxiv.org/abs/2608.08480"
+  arxiv_id: "2608.08480"
+  doi: "10.48550/arXiv.2608.08480"
+  submitted: "2026-08-09"
+  updated: "2026-08-09"
+  version: "v1"
+  metadata_checked_at: "2026-08-12"
+  tags: ["SSEP", "macroscopic fluctuation theory", "nonisospectral scattering", "current large deviations", "scalar factorization"]
+
+- id: "arxiv:2608.09081"
+  title: "Scalene Yang--Baxter triples as a source of hidden symmetries beyond the ordinary Yang--Baxter equation"
+  authors: ["Pramod Padmanabhan", "Somnath Maity", "Vladimir E. Korepin"]
+  url: "https://arxiv.org/abs/2608.09081"
+  arxiv_id: "2608.09081"
+  doi: "10.48550/arXiv.2608.09081"
+  submitted: "2026-08-10"
+  updated: "2026-08-10"
+  version: "v1"
+  metadata_checked_at: "2026-08-12"
+  tags: ["scalene Yang--Baxter equation", "transfer matrix", "hidden symmetry", "non-Hermitian spin chain", "Reshetikhin condition"]
+
+- id: "doi:10.1007/JHEP08(2026)081"
+  title: "A Hamiltonian formalism for topological recursion"
+  authors: ["Hiroyuki Fuji", "Masahide Manabe", "Yoshiyuki Watabiki"]
+  url: "https://doi.org/10.1007/JHEP08(2026)081"
+  arxiv_id: "2512.14059"
+  doi: "10.1007/JHEP08(2026)081"
+  journal: "Journal of High Energy Physics"
+  volume: "2026"
+  article_number: "081"
+  year: 2026
+  published: "2026-08-10"
+  submitted: "2025-12-16"
+  updated: "2026-08-11"
+  version: "v3"
+  metadata_checked_at: "2026-08-12"
+  metadata_note: "The 2026-08-11 v3 replacement followed first online publication and is recorded as a routine published-version update, not a separate major revision."
+  tags: ["topological recursion", "spectral curves", "string field Hamiltonian", "Schwinger--Dyson equations", "matrix models"]
+
+- id: "doi:10.1103/shbc-ggbj"
+  title: "Burgers equation from nonthermal stationary states in nearly integrable gases"
+  authors: ["Paweł Lisiak", "Maciej Łebek", "Miłosz Panfil"]
+  url: "https://doi.org/10.1103/shbc-ggbj"
+  doi: "10.1103/shbc-ggbj"
+  journal: "Physical Review E"
+  volume: "114"
+  issue: "2"
+  article_number: "024115"
+  year: 2026
+  published: "2026-08-10"
+  metadata_checked_at: "2026-08-12"
+  tags: ["nearly integrable gases", "nonthermal stationary states", "Burgers equation", "Chapman--Enskog theory", "generalized hydrodynamics"]
+
+- id: "arxiv:2505.02941"
+  title: "Relativistic Toda Lattice and Equivariant K-Homology of Affine Grassmannian"
+  authors: ["Takeshi Ikeda", "Shinsuke Iwao", "Satoshi Naito", "Kohei Yamaguchi"]
+  url: "https://doi.org/10.3842/SIGMA.2026.065"
+  arxiv_id: "2505.02941"
+  doi: "10.3842/SIGMA.2026.065"
+  journal: "SIGMA"
+  volume: "22"
+  article_number: "065"
+  year: 2026
+  published: "2026-07-06"
+  submitted: "2025-05-05"
+  updated: "2026-07-06"
+  version: "v3"
+  metadata_checked_at: "2026-08-12"
+  tags: ["relativistic Toda lattice", "equivariant quantum K-theory", "affine Grassmannian", "K-Peterson isomorphism", "K-theoretic double k-Schur functions"]
