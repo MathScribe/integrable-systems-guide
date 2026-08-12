@@ -3138,3 +3138,39 @@
   version: "v3"
   metadata_checked_at: "2026-08-12"
   tags: ["relativistic Toda lattice", "equivariant quantum K-theory", "affine Grassmannian", "K-Peterson isomorphism", "K-theoretic double k-Schur functions"]
+
+- id: "arxiv:2608.10772"
+  title: "Differential equations for bipartite maps with bounded face degrees"
+  authors: ["Valentin Bonzom"]
+  url: "https://arxiv.org/abs/2608.10772"
+  arxiv_id: "2608.10772"
+  doi: "10.48550/arXiv.2608.10772"
+  submitted: "2026-08-11"
+  updated: "2026-08-11"
+  version: "v1"
+  metadata_checked_at: "2026-08-13"
+  tags: ["bipartite maps", "KP hierarchy", "Virasoro constraints", "map enumeration", "differential algebraicity"]
+
+- id: "arxiv:2608.10840"
+  title: "Monodromy defects in ABJM theory and integrability"
+  authors: ["Charlotte Kristjansen", "Andrey Shusharin"]
+  url: "https://arxiv.org/abs/2608.10840"
+  arxiv_id: "2608.10840"
+  doi: "10.48550/arXiv.2608.10840"
+  submitted: "2026-08-11"
+  updated: "2026-08-11"
+  version: "v1"
+  metadata_checked_at: "2026-08-13"
+  tags: ["ABJM theory", "monodromy defects", "integrable boundary states", "matrix product states", "Bethe ansatz"]
+
+- id: "arxiv:2608.11179"
+  title: "Arithmetic selection rules in dispersionless Hamiltonian systems"
+  authors: ["Fatma Aydogmus", "Mustafa Mullahasanoglu"]
+  url: "https://arxiv.org/abs/2608.11179"
+  arxiv_id: "2608.11179"
+  doi: "10.48550/arXiv.2608.11179"
+  submitted: "2026-08-11"
+  updated: "2026-08-11"
+  version: "v1"
+  metadata_checked_at: "2026-08-13"
+  tags: ["dispersionless Hamiltonian systems", "monomial conservation laws", "negative Pell equation", "involutive integrals", "Motzkin numbers"]
