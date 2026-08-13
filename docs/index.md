@@ -6,7 +6,7 @@
 
 候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。
 
-<div class="radar-week-navigation" data-default-week="2026-W33" data-total-count="148">
+<div class="radar-week-navigation" data-default-week="2026-W33" data-total-count="151">
   <button type="button" data-radar-action="older">← 较早一周</button>
   <span class="radar-week-current" aria-live="polite"></span>
   <button type="button" data-radar-action="newer">较新一周 →</button>
@@ -16,7 +16,7 @@
     <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">
     <span class="radar-search-count" aria-live="polite"></span>
   </div>
-  <span hidden data-radar-week-option="2026-W33" data-label="2026 年第 33 周 · 8 月 10–16 日" data-count="10"></span>
+  <span hidden data-radar-week-option="2026-W33" data-label="2026 年第 33 周 · 8 月 10–16 日" data-count="13"></span>
   <span hidden data-radar-week-option="2026-W32" data-label="2026 年第 32 周 · 8 月 3–9 日" data-count="16"></span>
   <span hidden data-radar-week-option="2026-W31" data-label="2026 年第 31 周 · 7 月 27 日–8 月 2 日" data-count="22"></span>
   <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="21"></span>
@@ -27,7 +27,7 @@
   <span hidden data-radar-week-option="2026-W25" data-label="2026 年第 25 周 · 6 月 15–21 日" data-count="13"></span>
 </div>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W33" hidden><strong>本周概览：</strong>阶跃周期背景 NLS 散射、Toda 流线性化、Sobolev 正交多项式 RHP、离散 Painlevé/Hankel 渐近、二维 SSEP 电流涨落、Yang--Baxter 隐对称、拓扑递归 Hamiltonian 与近可积输运。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W33" hidden><strong>本周概览：</strong>阶跃周期背景 NLS 散射、Toda 流线性化、Sobolev 正交多项式 RHP、离散 Painlevé/Hankel 渐近、二维 SSEP 电流涨落、Yang--Baxter 隐对称、拓扑递归 Hamiltonian、近可积输运，以及 KP 映射计数、ABJM 边界可积性和 Hamilton 系统的算术选择律。</p>
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W32" hidden><strong>本周概览：</strong>Hamiltonian/Yang--Baxter 判据、CohFT/Poisson 结构、KPZ 的 Hirota--Miwa 方程、q-Painlevé 与拓扑递归、Krylov--Toda 对应及数据驱动 Lax 核验。</p>
 
@@ -46,6 +46,87 @@
 <p class="radar-week-overview" data-radar-screening-week="2026-W25" hidden><strong>本周概览：</strong>向量峰子谱流、可积半离散化、量子自旋链、Painlevé 约化与有限维 Hamilton 系统。</p>
 
 <p id="month-2026-08" class="radar-month-label" data-radar-month-group="2026-08">2026 年 8 月</p>
+
+### Arithmetic selection rules in dispersionless Hamiltonian systems {#paper-arxiv-2608-11179 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2608-11179" data-radar-week="2026-W33" data-radar-month="2026-08">
+  <p class="radar-paper-date"><time datetime="2026-08-12">2026-08-12</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-08-11">2026-08-11</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Hamiltonian structure</code> <code>conservation laws</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Arithmetic selection rules in dispersionless Hamiltonian systems</p>
+  <p class="radar-paper-meta">Fatma Aydogmus, Mustafa Mullahasanoglu · <a href="https://arxiv.org/abs/2608.11179">arXiv</a> · <a href="https://arxiv.org/pdf/2608.11179">PDF</a></p>
+  <p class="radar-paper-overview">论文把色散为零 Hamilton 系统中单项式守恒荷的存在条件化为算术选择律；在一个新的指数配对中，该条件成为负 Pell 方程，并由此产生无限多成对指数及相互对合的积分。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者对任意幂次的单项式荷推导 Poisson 对易条件，并在 <span class="arithmatex">\((r,s)=(2,3)\)</span> 情形把允许指数约化为 <span class="arithmatex">\(x^2-3y^2=-2\)</span>。Pell 方程的递推解给出无限序列的守恒积分，同时统一解释与 Motzkin、二项式计数相关的若干 dispersionless 模型及 Burgers reduction。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>局域 Hamiltonian density 决定流方程与 Poisson bracket；要求不同单项式荷两两对合后，连续的指数选择问题变成离散的丢番图条件。负 Pell 方程的解群因而直接组织一族 commuting Hamiltonians。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>新推进在于揭示“哪些幂次能形成可积荷族”的算术机制：不再逐项猜测守恒量，而是用 Pell 递推系统生成无限族，并把看似分散的组合数系数和 dispersionless Hamiltonian flows 放到同一选择律下。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Monodromy defects in ABJM theory and integrability {#paper-arxiv-2608-10840 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2608-10840" data-radar-week="2026-W33" data-radar-month="2026-08">
+  <p class="radar-paper-date"><time datetime="2026-08-12">2026-08-12</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-08-11">2026-08-11</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>hep-th</code> <code>quantum integrability</code> <code>Bethe ansatz</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Monodromy defects in ABJM theory and integrability</p>
+  <p class="radar-paper-meta">Charlotte Kristjansen, Andrey Shusharin · <a href="https://arxiv.org/abs/2608.10840">arXiv</a> · <a href="https://arxiv.org/pdf/2608.10840">PDF</a></p>
+  <p class="radar-paper-overview">论文把 ABJM 理论中的一族超对称 monodromy defects 表示为交替 <span class="arithmatex">\(SU(4)\)</span> 自旋链的可积边界态，并为非保护算符的一点函数给出闭式表达。统一构造同时包含 vortex loops、giant graviton 与 Wilson-loop 极限。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者从 defect 数据构造 matrix product states，验证其满足刻画 integrable boundary states 的 KT relation；随后用 algebraic Bethe ansatz 求得这些边界态与 on-shell Bethe states 的解析 overlap，从而得到 planar leading-order 一点函数，并计算最简单情形的首个量子修正。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>ABJM 的单迹算符对应交替 <span class="arithmatex">\(SU(4)\)</span> spin chain，缺陷则转化为 boundary state。KT relation 保证边界态只与成对 Bethe roots 的本征态耦合，Bethe ansatz 的 overlap 公式直接生成 defect one-point functions。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作把若干已知特殊缺陷纳入一个由 monodromy 参数控制的可积 matrix-product-state family，并给出适用于一般非保护算符的解析一点函数机制，而非只计算少数保护量或个别极限。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Differential equations for bipartite maps with bounded face degrees {#paper-arxiv-2608-10772 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2608-10772" data-radar-week="2026-W33" data-radar-month="2026-08">
+  <p class="radar-paper-date"><time datetime="2026-08-12">2026-08-12</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-08-11">2026-08-11</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.CO</code> <code>nlin.SI</code> <code>tau function</code> <code>loop equations</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Differential equations for bipartite maps with bounded face degrees</p>
+  <p class="radar-paper-meta">Valentin Bonzom · <a href="https://arxiv.org/abs/2608.10772">arXiv</a> · <a href="https://arxiv.org/pdf/2608.10772">PDF</a></p>
+  <p class="radar-paper-overview">论文为面度有统一上界的双部嵌入图建立有限的微分递推系统，可同时追踪边数、黑白顶点数、各面度和亏格。该系统把此前逐类求解的映射枚举推进到任意固定面度上界的统一算法。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>对最大面度为 <span class="arithmatex">\(2d\)</span> 的双部映射，作者从 KP hierarchy 与 Virasoro constraints 导出一个微分代数方程及 <span class="arithmatex">\(d-1\)</span> 条三角递推；它们从较低阶数据逐层确定全部生成函数系数，因而可计算任意指定统计量下的映射数。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>映射配分函数是 KP tau function，KP 方程给出 hook-Schur 导数之间的恒等式；Virasoro constraints 再把这些导数闭合为面权和顶点变量上的微分关系。两套结构联用才产生有限、可递归求解的系统。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>核心新增不是又一低面度例子，而是对任意有界面度给出统一闭合机制与可执行递推，并证明相应生成函数的微分代数性，补上一般双部映射计数中缺少的有限递推框架。</p>
+      </section>
+    </div>
+  </details>
+</article>
 
 ### Scalene Yang--Baxter triples as a source of hidden symmetries beyond the ordinary Yang--Baxter equation {#paper-arxiv-2608-09081 .radar-search-heading}
 
