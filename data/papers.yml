@@ -3174,3 +3174,52 @@
   version: "v1"
   metadata_checked_at: "2026-08-13"
   tags: ["dispersionless Hamiltonian systems", "monomial conservation laws", "negative Pell equation", "involutive integrals", "Motzkin numbers"]
+
+- id: "arxiv:2603.17943"
+  title: "The full strong coupling expansion of the cusp anomalous dimension and the O(6) mass gap"
+  authors: ["Zoltan Bajnok", "Bercel Boldis", "Dennis le Plat"]
+  url: "https://arxiv.org/abs/2603.17943"
+  arxiv_id: "2603.17943"
+  doi: "10.48550/arXiv.2603.17943"
+  submitted: "2026-03-18"
+  updated: "2026-08-12"
+  version: "v2"
+  metadata_checked_at: "2026-08-14"
+  metadata_note: "The 2026-08-12 v2 is recorded as a major-revision event: it adds the full O(6) mass-gap transseries and its nonperturbative relation to the cusp anomalous dimension; v1 treated only the cusp quantity."
+  tags: ["quantum integrability", "transseries", "resurgence", "cusp anomalous dimension", "O(6) mass gap"]
+
+- id: "arxiv:2608.11960"
+  title: "Conifold Gap Theorem for Topological Recursion"
+  authors: ["Bohan Fang", "Juping Chen", "Linji Chen", "Zhengyu Zong"]
+  url: "https://arxiv.org/abs/2608.11960"
+  arxiv_id: "2608.11960"
+  doi: "10.48550/arXiv.2608.11960"
+  submitted: "2026-08-12"
+  updated: "2026-08-12"
+  version: "v1"
+  metadata_checked_at: "2026-08-14"
+  tags: ["topological recursion", "toric mirror curves", "conifold gap", "spectral curves", "plumbing degeneration"]
+
+- id: "arxiv:2608.12006"
+  title: "New Families and Operations on Integrable Graphs"
+  authors: ["Matthew Visomirski", "Christopher Griffin"]
+  url: "https://arxiv.org/abs/2608.12006"
+  arxiv_id: "2608.12006"
+  doi: "10.48550/arXiv.2608.12006"
+  submitted: "2026-08-12"
+  updated: "2026-08-12"
+  version: "v1"
+  metadata_checked_at: "2026-08-14"
+  tags: ["Lotka--Volterra systems", "replicator dynamics", "integrable graphs", "Poisson structure", "conservation laws"]
+
+- id: "arxiv:2608.12247"
+  title: "Quantum Airy Structures and Matrix Models: a supercurrent approach"
+  authors: ["Leszek Hadasz", "Mykhailo Hontarenko"]
+  url: "https://arxiv.org/abs/2608.12247"
+  arxiv_id: "2608.12247"
+  doi: "10.48550/arXiv.2608.12247"
+  submitted: "2026-08-12"
+  updated: "2026-08-12"
+  version: "v1"
+  metadata_checked_at: "2026-08-14"
+  tags: ["Super Quantum Airy Structures", "super-Virasoro constraints", "super-Miwa transformation", "matrix models", "topological recursion"]

@@ -6,7 +6,7 @@
 
 候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。
 
-<div class="radar-week-navigation" data-default-week="2026-W33" data-total-count="151">
+<div class="radar-week-navigation" data-default-week="2026-W33" data-total-count="155">
   <button type="button" data-radar-action="older">← 较早一周</button>
   <span class="radar-week-current" aria-live="polite"></span>
   <button type="button" data-radar-action="newer">较新一周 →</button>
@@ -16,7 +16,7 @@
     <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">
     <span class="radar-search-count" aria-live="polite"></span>
   </div>
-  <span hidden data-radar-week-option="2026-W33" data-label="2026 年第 33 周 · 8 月 10–16 日" data-count="13"></span>
+  <span hidden data-radar-week-option="2026-W33" data-label="2026 年第 33 周 · 8 月 10–16 日" data-count="17"></span>
   <span hidden data-radar-week-option="2026-W32" data-label="2026 年第 32 周 · 8 月 3–9 日" data-count="16"></span>
   <span hidden data-radar-week-option="2026-W31" data-label="2026 年第 31 周 · 7 月 27 日–8 月 2 日" data-count="22"></span>
   <span hidden data-radar-week-option="2026-W30" data-label="2026 年第 30 周 · 7 月 20–26 日" data-count="21"></span>
@@ -27,7 +27,7 @@
   <span hidden data-radar-week-option="2026-W25" data-label="2026 年第 25 周 · 6 月 15–21 日" data-count="13"></span>
 </div>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W33" hidden><strong>本周概览：</strong>阶跃周期背景 NLS 散射、Toda 流线性化、Sobolev 正交多项式 RHP、离散 Painlevé/Hankel 渐近、二维 SSEP 电流涨落、Yang--Baxter 隐对称、拓扑递归 Hamiltonian、近可积输运，以及 KP 映射计数、ABJM 边界可积性和 Hamilton 系统的算术选择律。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W33" hidden><strong>本周概览：</strong>阶跃周期背景 NLS 散射、Toda 流线性化、Sobolev 正交多项式 RHP、离散 Painlevé/Hankel 渐近、二维 SSEP 电流涨落、Yang--Baxter 隐对称、拓扑递归 Hamiltonian 与 conifold gap、近可积输运、KP 映射计数、ABJM 边界可积性、Hamilton 系统的算术选择律，以及可积图、Super Quantum Airy Structures 和强耦合 transseries。</p>
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W32" hidden><strong>本周概览：</strong>Hamiltonian/Yang--Baxter 判据、CohFT/Poisson 结构、KPZ 的 Hirota--Miwa 方程、q-Painlevé 与拓扑递归、Krylov--Toda 对应及数据驱动 Lax 核验。</p>
 
@@ -46,6 +46,114 @@
 <p class="radar-week-overview" data-radar-screening-week="2026-W25" hidden><strong>本周概览：</strong>向量峰子谱流、可积半离散化、量子自旋链、Painlevé 约化与有限维 Hamilton 系统。</p>
 
 <p id="month-2026-08" class="radar-month-label" data-radar-month-group="2026-08">2026 年 8 月</p>
+
+### Quantum Airy Structures and Matrix Models: a supercurrent approach {#paper-arxiv-2608-12247 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2608-12247" data-radar-week="2026-W33" data-radar-month="2026-08">
+  <p class="radar-paper-date"><time datetime="2026-08-13">2026-08-13</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-08-12">2026-08-12</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>hep-th</code> <code>spectral curve</code> <code>loop equations</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Quantum Airy Structures and Matrix Models: a supercurrent approach</p>
+  <p class="radar-paper-meta">Leszek Hadasz, Mykhailo Hontarenko · <a href="https://arxiv.org/abs/2608.12247">arXiv</a> · <a href="https://arxiv.org/pdf/2608.12247">PDF</a></p>
+  <p class="radar-paper-overview">论文用单一 super-current 统一构造四种 Neveu--Schwarz/Ramond monodromy sectors 的 super-Virasoro constraints，并给出 sector-dependent super-Miwa transformations。核心结果是在 Miwa locus 上建立 NS--NS 与 R--R differential constraints 的精确 similarity transformation。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>dilaton shifts 在 NS--NS、R--NS sectors 产生普通 Super Quantum Airy Structures；含 Ramond fermion 的 sectors 则需要一个额外 odd coordinate。显式 intertwining prefactor 由 bosonic determinant、cubic Airy weight 和 NS/R propagator 差给出的 Grassmann kernel 组成，并完整处理 Ramond zero mode。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Super Quantum Airy operators 闭合为 Lie superalgebra constraints，并递归确定 partition function；super-Miwa map 把抽象 modes 变成 spectral variables 上的 differential operators。该 quadratic-density 结构与 super loop equations、local super-spectral curves 和 topological recursion 对接。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作补出 ordinary Kontsevich theory 中已有、但 supersymmetric setting 一直缺少的 sector-resolved Miwa dictionary 与精确 NS/R intertwiner。论文明确当前结果是 Ward constraints 而非已构造的 matrix integral 或完整 recursion，因此公开注释保留这一边界。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### New Families and Operations on Integrable Graphs {#paper-arxiv-2608-12006 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2608-12006" data-radar-week="2026-W33" data-radar-month="2026-08">
+  <p class="radar-paper-date"><time datetime="2026-08-13">2026-08-13</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-08-12">2026-08-12</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Hamiltonian structure</code> <code>conservation laws</code></p>
+  <p class="radar-paper-title" aria-hidden="true">New Families and Operations on Integrable Graphs</p>
+  <p class="radar-paper-meta">Matthew Visomirski, Christopher Griffin · <a href="https://arxiv.org/abs/2608.12006">arXiv</a> · <a href="https://arxiv.org/pdf/2608.12006">PDF</a></p>
+  <p class="radar-paper-overview">论文从有向图的 interaction matrices 构造 Lotka--Volterra/replicator Hamilton systems，证明新的 spoke graphs 与 balanced tournaments 的 anti-clones 形成可积族，并补全六个顶点以内可积图的分类。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>对 spoke 与 anti-clone 操作，作者显式构造足够多的多项式守恒量，证明它们代数独立且在非线性 Poisson bracket 下两两对合；所得数量满足维数与 Poisson rank 的可积性计数。分类结果解释了此前六顶点枚举中的剩余 outliers。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>图的 skew-symmetric adjacency matrix 同时给出 replicator vector field 与 log-canonical Poisson bracket；non-cycles、Casimirs 和 balanced subtournaments 组合成 commuting Hamiltonians。图操作因而直接生成完整守恒荷族，而不只是产生可数值求解的动力系统。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>新增的是两个可证明的家族级生成机制和守恒量处方，而非少数低阶图例；spoking 给出无限族，anti-cloning 把奇数 balanced tournaments 系统扩张，并使六顶点 taxonomy 闭合。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Conifold Gap Theorem for Topological Recursion {#paper-arxiv-2608-11960 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2608-11960" data-radar-week="2026-W33" data-radar-month="2026-08">
+  <p class="radar-paper-date"><time datetime="2026-08-13">2026-08-13</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-08-12">2026-08-12</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.AG</code> <code>math-ph</code> <code>spectral curve</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Conifold Gap Theorem for Topological Recursion</p>
+  <p class="radar-paper-meta">Bohan Fang, Juping Chen, Linji Chen, Zhengyu Zong · <a href="https://arxiv.org/abs/2608.11960">arXiv</a> · <a href="https://arxiv.org/pdf/2608.11960">PDF</a></p>
+  <p class="radar-paper-overview">论文证明 toric mirror curves 的 conifold gap theorem：任意取得一般单节点退化的局部解析族，在每个固定 <span class="arithmatex">\(g\geq2\)</span> 都只有一个普适极项，其余部分对横向参数和 spectator moduli 联合全纯。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>以消失周期 <span class="arithmatex">\(t\)</span> 为局部坐标，作者证明 <span class="arithmatex">\(F_g^c=B_{2g}[2g(2g-2)]^{-1}t^{2-2g}+H_g\)</span>，其中 <span class="arithmatex">\(H_g\)</span> 联合全纯；中间负幂和对数项全部消失。定理同时覆盖 separating 与 nonseparating nodes，并允许超出纯 filling-fraction 的一般族变形。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Eynard--Orantin topological recursion 作用于带 logarithmic initial data 的 toric spectral curves；适当 framing 排除 vital punctures，使普通 recursion 可用。节点 normal form、移动族上的 bidifferential 估计、special geometry 与 Gaussian leading limit 共同固定唯一的极部。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>此前严格 gap 结果主要依赖少数显式曲线或模型；这里不使用闭式公式，把结论提升到任意亏格 toric mirror curve 的一般单节点族，并统一控制外部复结构、spectator moduli 与两类节点。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### The full strong coupling expansion of the cusp anomalous dimension and the O(6) mass gap {#paper-arxiv-2603-17943 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2603-17943" data-radar-week="2026-W33" data-radar-month="2026-08">
+  <p class="radar-paper-date"><time datetime="2026-08-13">2026-08-13</time> · 重大修订 · arXiv 修订日期 <time datetime="2026-08-12">2026-08-12</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>hep-th</code> <code>quantum integrability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">The full strong coupling expansion of the cusp anomalous dimension and the O(6) mass gap</p>
+  <p class="radar-paper-meta">Zoltan Bajnok, Bercel Boldis, Dennis le Plat · <a href="https://arxiv.org/abs/2603.17943">arXiv</a> · <a href="https://arxiv.org/pdf/2603.17943">PDF</a></p>
+  <p class="radar-paper-overview">这次 major revision 把 <span class="arithmatex">\(\mathcal N=4\)</span> SYM cusp anomalous dimension 的强耦合 transseries 扩展到 <span class="arithmatex">\(O(6)\)</span> sigma-model mass gap，并建立两者完整的非微扰关系。新增结果把 v1 的单一 observable 推进为同一可积结构控制的成对 transseries。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>cusp anomalous dimension 被写成两个半无限 Bessel-kernel determinants 的比值；其非微扰扇区由奇整数分拆组织，并具有可迭代计算的 Stokes constants。v2 进一步求出 <span class="arithmatex">\(O(6)\)</span> mass gap 的完整 transseries，明确它如何固定 AdS/CFT string 描述中的动态质量尺度并与 cusp quantity 对接。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>平面 <span class="arithmatex">\(\mathcal N=4\)</span> SYM 的可积性给出 cusp anomalous dimension 的精确方程，determinant representation 再把强耦合解组织为可做 Borel--resurgence 分析的多参数 transseries。质量隙与 cusp 的同一非微扰尺度由这一精确结构关联，而不是靠独立的渐近拟合。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>v1 已有 cusp transseries；v2 新增完整 <span class="arithmatex">\(O(6)\)</span> mass-gap 扇区及其与 cusp 的全非微扰联系，因此属于会改变雷达注释的实质修订，而非润色或 published-version 更新。</p>
+      </section>
+    </div>
+  </details>
+</article>
 
 ### Arithmetic selection rules in dispersionless Hamiltonian systems {#paper-arxiv-2608-11179 .radar-search-heading}
 

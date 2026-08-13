@@ -73,13 +73,13 @@ frontier_weeks:
     coverage_note: arXiv 核心与跨分类已处理至 8 月 7 日；Crossref 强题名补漏已处理至 8 月 8 日；zbMATH 双周补漏本周未到期。
 - id: 2026-W33
   date_range: 2026-08-10 至 2026-08-16
-  summary: 阶跃周期背景 NLS 散射、Toda 流线性化、Sobolev 正交多项式 RHP、离散 Painlevé/Hankel 渐近、二维 SSEP 电流涨落、Yang--Baxter 隐对称、拓扑递归 Hamiltonian、近可积输运，以及 KP 映射计数、ABJM 边界可积性和 Hamilton 系统的算术选择律。
+  summary: 阶跃周期背景 NLS 散射、Toda 流线性化、Sobolev 正交多项式 RHP、离散 Painlevé/Hankel 渐近、二维 SSEP 电流涨落、Yang--Baxter 隐对称、拓扑递归 Hamiltonian 与 conifold gap、近可积输运、KP 映射计数、ABJM 边界可积性、Hamilton 系统的算术选择律，以及可积图、Super Quantum Airy Structures 和强耦合 transseries。
   screening:
     sources_checked:
     - arXiv nlin.SI / nlin.PS 与 12 个跨分类的完整增量公告
     - Crossref 强题名补漏、zbMATH MSC 双周补漏与出版社首次在线记录
-    selected: 13
-    coverage_note: arXiv 核心与跨分类已处理至 8 月 12 日；Crossref 强题名补漏已处理至 8 月 12 日；zbMATH 双周 MSC 补漏于 8 月 12 日完成。
+    selected: 17
+    coverage_note: arXiv 核心与跨分类已处理至 8 月 13 日；Crossref 强题名补漏已处理至 8 月 12 日；zbMATH 双周 MSC 补漏于 8 月 12 日完成。
 frontier:
   entries:
   - paper_id: arxiv:2607.15132
@@ -2010,3 +2010,55 @@ frontier:
     main_result: 作者对任意幂次的单项式荷推导 Poisson 对易条件，并在 \((r,s)=(2,3)\) 情形把允许指数约化为 \(x^2-3y^2=-2\)。Pell 方程的递推解给出无限序列的守恒积分，同时统一解释与 Motzkin、二项式计数相关的若干 dispersionless 模型及 Burgers reduction。
     integrable_structure: 局域 Hamiltonian density 决定流方程与 Poisson bracket；要求不同单项式荷两两对合后，连续的指数选择问题变成离散的丢番图条件。负 Pell 方程的解群因而直接组织一族 commuting Hamiltonians。
     innovation: 新推进在于揭示“哪些幂次能形成可积荷族”的算术机制：不再逐项猜测守恒量，而是用 Pell 递推系统生成无限族，并把看似分散的组合数系数和 dispersionless Hamiltonian flows 放到同一选择律下。
+  - paper_id: arxiv:2603.17943
+    signal_date: '2026-08-13'
+    signal_type: major-revision
+    week: 2026-W33
+    arxiv_categories:
+    - hep-th
+    structure_tags:
+    - quantum integrability
+    summary: 这次 major revision 把 \(\mathcal N=4\) SYM cusp anomalous dimension 的强耦合 transseries 扩展到 \(O(6)\) sigma-model mass gap，并建立两者完整的非微扰关系。新增结果把 v1 的单一 observable 推进为同一可积结构控制的成对 transseries。
+    main_result: cusp anomalous dimension 被写成两个半无限 Bessel-kernel determinants 的比值；其非微扰扇区由奇整数分拆组织，并具有可迭代计算的 Stokes constants。v2 进一步求出 \(O(6)\) mass gap 的完整 transseries，明确它如何固定 AdS/CFT string 描述中的动态质量尺度并与 cusp quantity 对接。
+    integrable_structure: 平面 \(\mathcal N=4\) SYM 的可积性给出 cusp anomalous dimension 的精确方程，determinant representation 再把强耦合解组织为可做 Borel--resurgence 分析的多参数 transseries。质量隙与 cusp 的同一非微扰尺度由这一精确结构关联，而不是靠独立的渐近拟合。
+    innovation: v1 已有 cusp transseries；v2 新增完整 \(O(6)\) mass-gap 扇区及其与 cusp 的全非微扰联系，因此属于会改变雷达注释的实质修订，而非润色或 published-version 更新。
+  - paper_id: arxiv:2608.11960
+    signal_date: '2026-08-13'
+    signal_type: new-preprint
+    week: 2026-W33
+    arxiv_categories:
+    - math.AG
+    - math-ph
+    structure_tags:
+    - spectral curve
+    summary: 论文证明 toric mirror curves 的 conifold gap theorem：任意取得一般单节点退化的局部解析族，在每个固定 \(g\geq2\) 都只有一个普适极项，其余部分对横向参数和 spectator moduli 联合全纯。
+    main_result: 以消失周期 \(t\) 为局部坐标，作者证明 \(F_g^c=B_{2g}[2g(2g-2)]^{-1}t^{2-2g}+H_g\)，其中 \(H_g\) 联合全纯；中间负幂和对数项全部消失。定理同时覆盖 separating 与 nonseparating nodes，并允许超出纯 filling-fraction 的一般族变形。
+    integrable_structure: Eynard--Orantin topological recursion 作用于带 logarithmic initial data 的 toric spectral curves；适当 framing 排除 vital punctures，使普通 recursion 可用。节点 normal form、移动族上的 bidifferential 估计、special geometry 与 Gaussian leading limit 共同固定唯一的极部。
+    innovation: 此前严格 gap 结果主要依赖少数显式曲线或模型；这里不使用闭式公式，把结论提升到任意亏格 toric mirror curve 的一般单节点族，并统一控制外部复结构、spectator moduli 与两类节点。
+  - paper_id: arxiv:2608.12006
+    signal_date: '2026-08-13'
+    signal_type: new-preprint
+    week: 2026-W33
+    arxiv_categories:
+    - nlin.SI
+    - math-ph
+    structure_tags:
+    - Hamiltonian structure
+    - conservation laws
+    summary: 论文从有向图的 interaction matrices 构造 Lotka--Volterra/replicator Hamilton systems，证明新的 spoke graphs 与 balanced tournaments 的 anti-clones 形成可积族，并补全六个顶点以内可积图的分类。
+    main_result: 对 spoke 与 anti-clone 操作，作者显式构造足够多的多项式守恒量，证明它们代数独立且在非线性 Poisson bracket 下两两对合；所得数量满足维数与 Poisson rank 的可积性计数。分类结果解释了此前六顶点枚举中的剩余 outliers。
+    integrable_structure: 图的 skew-symmetric adjacency matrix 同时给出 replicator vector field 与 log-canonical Poisson bracket；non-cycles、Casimirs 和 balanced subtournaments 组合成 commuting Hamiltonians。图操作因而直接生成完整守恒荷族，而不只是产生可数值求解的动力系统。
+    innovation: 新增的是两个可证明的家族级生成机制和守恒量处方，而非少数低阶图例；spoking 给出无限族，anti-cloning 把奇数 balanced tournaments 系统扩张，并使六顶点 taxonomy 闭合。
+  - paper_id: arxiv:2608.12247
+    signal_date: '2026-08-13'
+    signal_type: new-preprint
+    week: 2026-W33
+    arxiv_categories:
+    - hep-th
+    structure_tags:
+    - spectral curve
+    - loop equations
+    summary: 论文用单一 super-current 统一构造四种 Neveu--Schwarz/Ramond monodromy sectors 的 super-Virasoro constraints，并给出 sector-dependent super-Miwa transformations。核心结果是在 Miwa locus 上建立 NS--NS 与 R--R differential constraints 的精确 similarity transformation。
+    main_result: dilaton shifts 在 NS--NS、R--NS sectors 产生普通 Super Quantum Airy Structures；含 Ramond fermion 的 sectors 则需要一个额外 odd coordinate。显式 intertwining prefactor 由 bosonic determinant、cubic Airy weight 和 NS/R propagator 差给出的 Grassmann kernel 组成，并完整处理 Ramond zero mode。
+    integrable_structure: Super Quantum Airy operators 闭合为 Lie superalgebra constraints，并递归确定 partition function；super-Miwa map 把抽象 modes 变成 spectral variables 上的 differential operators。该 quadratic-density 结构与 super loop equations、local super-spectral curves 和 topological recursion 对接。
+    innovation: 工作补出 ordinary Kontsevich theory 中已有、但 supersymmetric setting 一直缺少的 sector-resolved Miwa dictionary 与精确 NS/R intertwiner。论文明确当前结果是 Ward constraints 而非已构造的 matrix integral 或完整 recursion，因此公开注释保留这一边界。

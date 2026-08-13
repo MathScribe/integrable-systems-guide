@@ -5,17 +5,17 @@ schema_version: 1
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-08-12'
+    announced_through: '2026-08-13'
     last_status: complete
 
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-08-12'
+    announced_through: '2026-08-13'
     last_status: complete
 
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-08-12'
+    announced_through: '2026-08-13'
     last_status: complete
 
   crossref:
