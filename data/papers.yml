@@ -2160,7 +2160,7 @@
   authors:
     - "Vassilis Rothos"
   url: "https://doi.org/10.1088/1751-8121/ae8490"
-  arxiv_id: null
+  arxiv_id: "2608.14124"
   doi: "10.1088/1751-8121/ae8490"
   journal: "Journal of Physics A: Mathematical and Theoretical"
   volume: "59"
@@ -2168,7 +2168,11 @@
   article_number: "295701"
   year: 2026
   published: "2026-07-20"
-  metadata_checked_at: "2026-07-22"
+  submitted: "2026-08-14"
+  updated: "2026-08-14"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  metadata_note: "The arXiv posting appeared after the already-recorded 2026-07-20 version of record; it is linked as metadata and is not treated as a new radar event."
   tags:
     - "spinor nonlinear Schrödinger equation"
     - "Riemann--Hilbert problem"
@@ -3174,3 +3178,197 @@
   version: "v1"
   metadata_checked_at: "2026-08-13"
   tags: ["dispersionless Hamiltonian systems", "monomial conservation laws", "negative Pell equation", "involutive integrals", "Motzkin numbers"]
+
+- id: "arxiv:2603.17943"
+  title: "The full strong coupling expansion of the cusp anomalous dimension and the O(6) mass gap"
+  authors: ["Zoltan Bajnok", "Bercel Boldis", "Dennis le Plat"]
+  url: "https://arxiv.org/abs/2603.17943"
+  arxiv_id: "2603.17943"
+  doi: "10.48550/arXiv.2603.17943"
+  submitted: "2026-03-18"
+  updated: "2026-08-12"
+  version: "v2"
+  metadata_checked_at: "2026-08-14"
+  metadata_note: "The 2026-08-12 v2 is recorded as a major-revision event: it adds the full O(6) mass-gap transseries and its nonperturbative relation to the cusp anomalous dimension; v1 treated only the cusp quantity."
+  tags: ["quantum integrability", "transseries", "resurgence", "cusp anomalous dimension", "O(6) mass gap"]
+
+- id: "arxiv:2608.11960"
+  title: "Conifold Gap Theorem for Topological Recursion"
+  authors: ["Bohan Fang", "Juping Chen", "Linji Chen", "Zhengyu Zong"]
+  url: "https://arxiv.org/abs/2608.11960"
+  arxiv_id: "2608.11960"
+  doi: "10.48550/arXiv.2608.11960"
+  submitted: "2026-08-12"
+  updated: "2026-08-12"
+  version: "v1"
+  metadata_checked_at: "2026-08-14"
+  tags: ["topological recursion", "toric mirror curves", "conifold gap", "spectral curves", "plumbing degeneration"]
+
+- id: "arxiv:2608.12006"
+  title: "New Families and Operations on Integrable Graphs"
+  authors: ["Matthew Visomirski", "Christopher Griffin"]
+  url: "https://arxiv.org/abs/2608.12006"
+  arxiv_id: "2608.12006"
+  doi: "10.48550/arXiv.2608.12006"
+  submitted: "2026-08-12"
+  updated: "2026-08-12"
+  version: "v1"
+  metadata_checked_at: "2026-08-14"
+  tags: ["Lotka--Volterra systems", "replicator dynamics", "integrable graphs", "Poisson structure", "conservation laws"]
+
+- id: "arxiv:2608.12247"
+  title: "Quantum Airy Structures and Matrix Models: a supercurrent approach"
+  authors: ["Leszek Hadasz", "Mykhailo Hontarenko"]
+  url: "https://arxiv.org/abs/2608.12247"
+  arxiv_id: "2608.12247"
+  doi: "10.48550/arXiv.2608.12247"
+  submitted: "2026-08-12"
+  updated: "2026-08-12"
+  version: "v1"
+  metadata_checked_at: "2026-08-14"
+  tags: ["Super Quantum Airy Structures", "super-Virasoro constraints", "super-Miwa transformation", "matrix models", "topological recursion"]
+
+- id: "arxiv:2608.14365"
+  title: "Form factors of field exponentials in the 1+1 dimensional Sine-Gordon model"
+  authors: ["Karol K. Kozlowski", "Alex Simon"]
+  url: "https://arxiv.org/abs/2608.14365"
+  arxiv_id: "2608.14365"
+  doi: "10.48550/arXiv.2608.14365"
+  submitted: "2026-08-14"
+  updated: "2026-08-14"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["quantum integrability", "Bethe ansatz"]
+
+- id: "arxiv:2608.14699"
+  title: "Integrability of Hamiltonian systems on COLCS Manifold"
+  authors: ["Antonio J. Pan-Collantes", "Xuefeng Zhao"]
+  url: "https://arxiv.org/abs/2608.14699"
+  arxiv_id: "2608.14699"
+  doi: "10.48550/arXiv.2608.14699"
+  submitted: "2026-08-10"
+  updated: "2026-08-10"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  metadata_note: "The paper first appeared in the monitored math-ph announcement stream on 2026-08-18 after its 2026-08-10 submission date."
+  tags: ["Hamiltonian structure", "Poisson structure"]
+
+- id: "arxiv:2608.15155"
+  title: "On a class of 3D second-order integrable Lagrangians and their dispersive deformations"
+  authors: ["Lingling Xue", "E.V. Ferapontov", "M.V. Pavlov"]
+  url: "https://arxiv.org/abs/2608.15155"
+  arxiv_id: "2608.15155"
+  doi: "10.48550/arXiv.2608.15155"
+  submitted: "2026-08-15"
+  updated: "2026-08-15"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["Lax pair", "integrable discretization"]
+
+- id: "arxiv:2608.15484"
+  title: "Poisson structures for a similarity reduction of the Drinfeld-Sokolov hierarchy of type A"
+  authors: ["Takao Suzuki"]
+  url: "https://arxiv.org/abs/2608.15484"
+  arxiv_id: "2608.15484"
+  doi: "10.48550/arXiv.2608.15484"
+  submitted: "2026-08-16"
+  updated: "2026-08-16"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["Drinfeld--Sokolov hierarchy", "Poisson structure"]
+
+- id: "arxiv:2608.15756"
+  title: "Bootstrapping bilinear relations of discrete Painlevé systems from 5d gauge theories"
+  authors: ["Minsung Kim", "Xin Wang"]
+  url: "https://arxiv.org/abs/2608.15756"
+  arxiv_id: "2608.15756"
+  doi: "10.48550/arXiv.2608.15756"
+  submitted: "2026-08-16"
+  updated: "2026-08-16"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["Painlevé", "tau function"]
+
+- id: "arxiv:2608.16496"
+  title: "New 5th-order Schwarzian evolution equations and their higher-order symmetries"
+  authors: ["Marianna Euler", "Norbert Euler"]
+  url: "https://arxiv.org/abs/2608.16496"
+  arxiv_id: "2608.16496"
+  doi: "10.48550/arXiv.2608.16496"
+  submitted: "2026-08-17"
+  updated: "2026-08-17"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["recursion operator", "integrable hierarchy"]
+
+- id: "arxiv:2608.16865"
+  title: "Unitary Yang--Baxter Operators: Towards a Classification"
+  authors: ["Cesar Galindo", "Eric C. Rowell"]
+  url: "https://arxiv.org/abs/2608.16865"
+  arxiv_id: "2608.16865"
+  doi: "10.48550/arXiv.2608.16865"
+  submitted: "2026-08-17"
+  updated: "2026-08-17"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["Yang--Baxter equation", "quantum integrability"]
+
+- id: "arxiv:2608.17211"
+  title: "Variable-mass sine-Gordon with point defects: integrability, soliton transmission, and quasi-conservation"
+  authors: ["A.R. Aguirre", "H. Blas", "H.F. Callisaya", "M.C. de Oliveira"]
+  url: "https://arxiv.org/abs/2608.17211"
+  arxiv_id: "2608.17211"
+  doi: "10.48550/arXiv.2608.17211"
+  submitted: "2026-08-17"
+  updated: "2026-08-17"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["Lax pair", "Bäcklund transformation"]
+
+- id: "arxiv:2608.17837"
+  title: "Elliptic spin Ruijsenaars-Schneider integrable models from 5d N=1 gauge theories"
+  authors: ["Gleb Arutyunov", "Lukas Hardi"]
+  url: "https://arxiv.org/abs/2608.17837"
+  arxiv_id: "2608.17837"
+  doi: "10.48550/arXiv.2608.17837"
+  submitted: "2026-08-18"
+  updated: "2026-08-18"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["Poisson structure", "quantum integrability"]
+
+- id: "arxiv:2608.18630"
+  title: "Long-time asymptotics of the integrable defocusing Wadati-Konno-Ichikawa equation with a finite-genus algebro-geometric background"
+  authors: ["Taohua Luo", "Zhenya Yan", "Guoqiang Zhang"]
+  url: "https://arxiv.org/abs/2608.18630"
+  arxiv_id: "2608.18630"
+  doi: "10.48550/arXiv.2608.18630"
+  submitted: "2026-08-19"
+  updated: "2026-08-19"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["Riemann--Hilbert problem", "nonlinear steepest descent"]
+
+- id: "arxiv:2608.19324"
+  title: "Black Holes, the Bethe Ansatz, and Elliptic Calogero--Moser Systems"
+  authors: ["Marco Fazzi", "Kuba Krawczyk"]
+  url: "https://arxiv.org/abs/2608.19324"
+  arxiv_id: "2608.19324"
+  doi: "10.48550/arXiv.2608.19324"
+  submitted: "2026-08-19"
+  updated: "2026-08-19"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["Bethe ansatz", "quantum integrability"]
+
+- id: "arxiv:2608.19519"
+  title: "Beyond Integrability Preserving Renormalization-Group Protocol in Non-Hermitian Hamiltonians with Time-Dependent Interaction Strengths"
+  authors: ["Parameshwar R. Pasnoori"]
+  url: "https://arxiv.org/abs/2608.19519"
+  arxiv_id: "2608.19519"
+  doi: "10.48550/arXiv.2608.19519"
+  submitted: "2026-08-20"
+  updated: "2026-08-20"
+  version: "v1"
+  metadata_checked_at: "2026-08-23"
+  tags: ["Bethe ansatz", "quantum integrability"]
