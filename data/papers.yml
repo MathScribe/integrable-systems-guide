@@ -2675,9 +2675,10 @@
   arxiv_id: "2608.05146"
   doi: "10.48550/arXiv.2608.05146"
   submitted: "2026-08-05"
-  updated: "2026-08-05"
-  version: "v1"
-  metadata_checked_at: "2026-08-08"
+  updated: "2026-08-24"
+  version: "v2"
+  metadata_checked_at: "2026-08-27"
+  metadata_note: "The 2026-08-24 v2 keeps the paper's main conclusions and is recorded as a routine revision rather than a new radar event."
   tags:
     - "machine learning"
     - "Lax connections"
@@ -2930,9 +2931,10 @@
   arxiv_id: "2607.27935"
   doi: "10.48550/arXiv.2607.27935"
   submitted: "2026-07-30"
-  updated: "2026-07-30"
-  version: "v1"
-  metadata_checked_at: "2026-08-08"
+  updated: "2026-08-26"
+  version: "v2"
+  metadata_checked_at: "2026-08-27"
+  metadata_note: "The 2026-08-26 v2 corrects typos and is not treated as a major revision."
   tags: ["spectral curve", "integrable probability"]
 
 - id: "arxiv:2607.28043"
@@ -3077,9 +3079,10 @@
   arxiv_id: "2608.08480"
   doi: "10.48550/arXiv.2608.08480"
   submitted: "2026-08-09"
-  updated: "2026-08-09"
-  version: "v1"
-  metadata_checked_at: "2026-08-12"
+  updated: "2026-08-24"
+  version: "v2"
+  metadata_checked_at: "2026-08-27"
+  metadata_note: "The 2026-08-24 v2 adds a more rigorous discussion and a preliminary appendix for the SCGF calculation; it does not introduce a separately qualifying main result."
   tags: ["SSEP", "macroscopic fluctuation theory", "nonisospectral scattering", "current large deviations", "scalar factorization"]
 
 - id: "arxiv:2608.09081"
@@ -3372,3 +3375,192 @@
   version: "v1"
   metadata_checked_at: "2026-08-23"
   tags: ["Bethe ansatz", "quantum integrability"]
+
+- id: "arxiv:2512.15566"
+  title: "Integrable models from 4d holomorphic BF theory"
+  authors: ["Lewis T. Cole", "Ben Hoare"]
+  url: "https://doi.org/10.21468/SciPostPhys.21.2.044"
+  arxiv_id: "2512.15566"
+  doi: "10.21468/SciPostPhys.21.2.044"
+  journal: "SciPost Physics"
+  volume: "21"
+  issue: "2"
+  article_number: "044"
+  year: 2026
+  published: "2026-08-18"
+  submitted: "2025-12-17"
+  updated: "2025-12-17"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["holomorphic BF theory", "holomorphic integrability", "defect construction", "higher-dimensional integrability"]
+
+- id: "arxiv:2605.04823"
+  title: "Expectation values after an integrable boundary quantum quench"
+  authors: ["Zoltán Bajnok", "Dávid Fülepi", "Máté Lencsés"]
+  url: "https://doi.org/10.1007/JHEP08(2026)132"
+  arxiv_id: "2605.04823"
+  doi: "10.1007/JHEP08(2026)132"
+  journal: "Journal of High Energy Physics"
+  volume: "2026"
+  issue: "8"
+  article_number: "132"
+  year: 2026
+  published: "2026-08-17"
+  submitted: "2026-05-06"
+  updated: "2026-06-18"
+  version: "v2"
+  metadata_checked_at: "2026-08-27"
+  tags: ["integrable boundary quench", "boundary form factors", "Lee--Yang model", "real-time dynamics"]
+
+- id: "arxiv:2604.16233"
+  title: "Jet-Density of Finite-Gap Solutions for Classes of BKM Systems"
+  authors: ["Manuel Quaschner", "Wijnand Steneker"]
+  url: "https://doi.org/10.1088/1361-6544/ae95d1"
+  arxiv_id: "2604.16233"
+  doi: "10.1088/1361-6544/ae95d1"
+  journal: "Nonlinearity"
+  volume: "39"
+  issue: "8"
+  article_number: "085027"
+  year: 2026
+  published: "2026-08-19"
+  submitted: "2026-04-17"
+  updated: "2026-04-17"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["BKM systems", "finite-gap solutions", "jet density", "Stäckel systems", "Camassa--Holm equation"]
+
+- id: "arxiv:2508.14030"
+  title: "Modular Transformations of Tau Functions and Conformal Blocks on the Torus"
+  authors: ["Fabrizio Del Monte", "Harini Desiraju", "Pavlo Gavrylenko"]
+  url: "https://doi.org/10.1007/s00023-026-01722-y"
+  arxiv_id: "2508.14030"
+  doi: "10.1007/s00023-026-01722-y"
+  journal: "Annales Henri Poincaré"
+  year: 2026
+  published: "2026-08-21"
+  submitted: "2025-08-19"
+  updated: "2025-08-19"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["isomonodromic tau function", "Virasoro conformal blocks", "modular kernel", "character variety"]
+
+- id: "arxiv:2608.20714"
+  title: "Multiparameter Quantum Affine Spaces and the Scalene Yang--Baxter Equation"
+  authors: ["Pramod Padmanabhan", "Somnath Maity", "Vladimir Korepin"]
+  url: "https://arxiv.org/abs/2608.20714"
+  arxiv_id: "2608.20714"
+  doi: "10.48550/arXiv.2608.20714"
+  submitted: "2026-08-21"
+  updated: "2026-08-21"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["scalene Yang--Baxter equation", "quantum affine spaces", "noncommutative algebras", "Heisenberg--Weyl operators"]
+
+- id: "arxiv:2608.20721"
+  title: "A Parameterization of Small Amplitude KP Finite Gap Solutions via Classical Schottky Uniformization and Persistence of One and Two Gap Solutions"
+  authors: ["Haoxuan Liu", "Zuhong You", "Xiaoping Yuan"]
+  url: "https://arxiv.org/abs/2608.20721"
+  arxiv_id: "2608.20721"
+  doi: "10.48550/arXiv.2608.20721"
+  submitted: "2026-08-21"
+  updated: "2026-08-21"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["KP equation", "finite-gap solutions", "Schottky uniformization", "Hamiltonian perturbations", "Lyapunov--Schmidt reduction"]
+
+- id: "arxiv:2608.23770"
+  title: "General Construction of Time-Dependent Integrable Chiral Field Theories"
+  authors: ["Pradip Kattel"]
+  url: "https://arxiv.org/abs/2608.23770"
+  arxiv_id: "2608.23770"
+  doi: "10.48550/arXiv.2608.23770"
+  submitted: "2026-08-24"
+  updated: "2026-08-24"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["time-dependent integrability", "factorized scattering", "Yang--Baxter equation", "qKZ equations", "chiral field theory"]
+
+- id: "arxiv:2608.24423"
+  title: "Joint moments of characteristic polynomials in the circular Jacobi ensemble and Painlevé equations"
+  authors: ["Thomas Bothner", "Fei Wei"]
+  url: "https://arxiv.org/abs/2608.24423"
+  arxiv_id: "2608.24423"
+  doi: "10.48550/arXiv.2608.24423"
+  submitted: "2026-08-25"
+  updated: "2026-08-25"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["circular Jacobi ensemble", "characteristic polynomials", "Painlevé V", "Painlevé III", "Hua--Pickrell measures"]
+
+- id: "arxiv:2608.24538"
+  title: "Direct linearization, Cauchy matrix and Sato Grassmannian"
+  authors: ["Kanehisa Takasaki"]
+  url: "https://arxiv.org/abs/2608.24538"
+  arxiv_id: "2608.24538"
+  doi: "10.48550/arXiv.2608.24538"
+  submitted: "2026-08-25"
+  updated: "2026-08-25"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["direct linearization", "Cauchy matrix", "Sato Grassmannian", "KP hierarchy", "ASDYM hierarchy"]
+
+- id: "arxiv:2608.24613"
+  title: "Transport interpretation of entanglement Hamiltonian cumulants in integrable quantum quenches"
+  authors: ["Riccardo Travaglino", "Pasquale Calabrese"]
+  url: "https://arxiv.org/abs/2608.24613"
+  arxiv_id: "2608.24613"
+  doi: "10.48550/arXiv.2608.24613"
+  submitted: "2026-08-25"
+  updated: "2026-08-25"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["entanglement Hamiltonian", "quantum quench", "charge-current cumulants", "space-time duality", "integrable transport"]
+
+- id: "arxiv:2608.25283"
+  title: "Almost periodic solutions of the defocusing mKdV equation"
+  authors: ["Long Li", "Milivoje Lukić"]
+  url: "https://arxiv.org/abs/2608.25283"
+  arxiv_id: "2608.25283"
+  doi: "10.48550/arXiv.2608.25283"
+  submitted: "2026-08-26"
+  updated: "2026-08-26"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["defocusing mKdV", "almost periodic solutions", "reflectionless Dirac operator", "Craig conditions", "quasiperiodic data"]
+
+- id: "arxiv:2608.25594"
+  title: "On monodromy of monodromy surfaces"
+  authors: ["Pieter Roffelsen", "Alexander Stokes"]
+  url: "https://arxiv.org/abs/2608.25594"
+  arxiv_id: "2608.25594"
+  doi: "10.48550/arXiv.2608.25594"
+  submitted: "2026-08-26"
+  updated: "2026-08-26"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["Painlevé equations", "monodromy surfaces", "affine del Pezzo surfaces", "Weyl groups", "Riemann--Hilbert correspondence"]
+
+- id: "arxiv:2608.25647"
+  title: "Sato-theoretic construction of the anti-self-dual Yang-Mills hierarchy and the Ward conjecture"
+  authors: ["Shangshuai Li", "Da-jun Zhang"]
+  url: "https://arxiv.org/abs/2608.25647"
+  arxiv_id: "2608.25647"
+  doi: "10.48550/arXiv.2608.25647"
+  submitted: "2026-08-26"
+  updated: "2026-08-26"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["anti-self-dual Yang--Mills hierarchy", "Sato theory", "Riemann--Hilbert decomposition", "Sato Grassmannian", "Ward conjecture"]
+
+- id: "arxiv:2608.26054"
+  title: "Numerical Direct Scattering Transform for Dark Solitons"
+  authors: ["Ilya Mullyadzhanov", "Sergey Dremov", "Andrey Gelash"]
+  url: "https://arxiv.org/abs/2608.26054"
+  arxiv_id: "2608.26054"
+  doi: "10.48550/arXiv.2608.26054"
+  submitted: "2026-08-26"
+  updated: "2026-08-26"
+  version: "v1"
+  metadata_checked_at: "2026-08-27"
+  tags: ["dark solitons", "direct scattering transform", "Zakharov--Shabat problem", "continuous-wave background", "norming constants"]
