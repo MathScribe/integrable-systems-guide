@@ -82,13 +82,22 @@ frontier_weeks:
     coverage_note: arXiv 核心与跨分类已处理至 8 月 13 日；Crossref 强题名补漏已处理至 8 月 12 日；zbMATH 双周 MSC 补漏于 8 月 12 日完成。
 - id: 2026-W34
   date_range: 2026-08-17 至 2026-08-23
-  summary: 本周聚焦 Sine--Gordon form factors、COLCS Hamilton 几何、三维可积 Lagrangian 分类、Drinfeld--Sokolov Poisson 结构、离散 Painlevé bootstrap、Schwarzian 方程分类、Yang--Baxter operators、可积点缺陷、椭圆 spin Ruijsenaars--Schneider、有限亏格 WKI 渐近与 Bethe--Calogero/RG 对应。
+  summary: 本周聚焦 Sine--Gordon form factors、Hamilton/Poisson 几何、Painlevé 与 Yang--Baxter 结构、有限带近似、可积边界淬火、全纯 BF 场论、有限亏格渐近及环面 tau function 的模变换。
   screening:
     sources_checked:
     - arXiv nlin.SI / nlin.PS 核心分类与 12 个配置内跨分类的完整增量公告
     - Crossref 最新周度 artifact、zbMATH 最新双周 MSC artifact 与候选出版社首次在线记录
-    selected: 12
-    coverage_note: arXiv 核心与跨分类已处理至 8 月 21 日（当周最后一个官方公告批次）；Crossref 强题名补漏已处理至 8 月 16 日；zbMATH 双周 MSC artifact 已处理至 8 月 16 日。
+    selected: 16
+    coverage_note: arXiv 核心与跨分类已处理至 8 月 21 日（当周最后一个官方公告批次）；Crossref 强题名补漏已处理至 8 月 23 日；zbMATH 双周 MSC artifact 已处理至 8 月 16 日。
+- id: 2026-W35
+  date_range: 2026-08-24 至 2026-08-30
+  summary: 本周新增 scalene Yang--Baxter 代数、KP 有限带持久性、时间依赖可积场论、Painlevé 随机矩阵矩、Sato/ASDYM 层级、量子淬火输运、几乎周期 mKdV 与暗孤子直接散射方法。
+  screening:
+    sources_checked:
+    - arXiv nlin.SI / nlin.PS 核心分类与 12 个配置内跨分类的完整增量公告
+    - arXiv 配置分类 replacement 增量与 Crossref 最新周度 artifact
+    selected: 10
+    coverage_note: arXiv 核心、跨分类和替换记录已处理至 8 月 27 日；Crossref 强题名补漏已处理至 8 月 23 日；zbMATH 双周补漏尚未到下一次到期点。
 frontier:
   entries:
   - paper_id: arxiv:2607.15132
@@ -2191,3 +2200,143 @@ frontier:
     main_result: 借助 generalized Bethe ansatz，作者证明沿 RG 流动的 couplings 仍按 t=log Lambda 对应 RG trajectories；但静态模型中 RG-invariant 的 couplings 在驱动模型中既可保持常数，也可遵循一类额外的受限 time dependence。因此 preserving-integrability protocols 严格大于普通 RG trajectories。
     integrable_structure: non-Hermitian Bethe equations 的时间一致性给出 coupling differential constraints；这些 constraints 将 running 与 invariant directions 分开，并直接刻画允许的驱动流形。
     innovation: 工作改写了“可积驱动等同 RG 轨迹”的既有一般结论，给出 non-Hermitian setting 中更大的完整允许类，而不是对单个精确可解 Hamiltonian 做参数调节。
+  - paper_id: arxiv:2605.04823
+    signal_date: '2026-08-17'
+    signal_type: journal-publication
+    week: 2026-W34
+    arxiv_categories: [hep-th, cond-mat.stat-mech]
+    structure_tags: [quantum integrability]
+    summary: 论文为“一个可积边界条件突然切换到另一个”的 boundary quantum quench 建立 form-factor 分析框架，并在 Lee--Yang 模型的共形点与 massive perturbation 中计算实时期望值，以适配边界变化的 truncated conformal space 数值作核验。
+    main_result: 作者用 bulk form factors 与 boundary-changing operators 展开 quench 后态和局域算符矩阵元，先在共形 Lee--Yang 理论中处理边界切换，再延伸到 massive integrable QFT，求出 pre-quench vacuum 的演化以及 quench 后局域算符的 vacuum-to-vacuum amplitudes。
+    integrable_structure: 因子化 bulk/boundary scattering 决定可积边界态与 form factors；boundary-changing operator 把两套边界条件缝合进同一个谱展开，使实时动力学仍能使用可积 QFT 的精确矩阵元。
+    innovation: 新增的是面向 integrable boundary-to-boundary quench 的一般计算路线，而不是只研究体相参数骤变；解析 form-factor expansion 与边界版 TCSA 的逐项比较给出了可复核的动态框架。
+  - paper_id: arxiv:2512.15566
+    signal_date: '2026-08-18'
+    signal_type: journal-publication
+    week: 2026-W34
+    arxiv_categories: [hep-th]
+    structure_tags: [integrable geometry]
+    summary: 论文从四维 holomorphic BF theory 的 defect setup 构造二维 holomorphically integrable field theories，并解释这种结构如何介于一维和二维的通常可积性概念之间。一个显式模型展示了场方程、对称性与无穷解族。
+    main_result: 作者选择 BF 理论中的缺陷与边界数据，导出二维局域场论并完成初步经典分析；利用剩余对称性，构造运动方程的一族无穷精确解，同时讨论该机制向部分或完全全纯的高维理论及量子化问题的延伸。
+    integrable_structure: 高维 holomorphic gauge theory 把解析方向与 defect 数据传递给二维场方程，产生比普通二维零曲率结构更偏全纯、又比一般高维模型更受约束的守恒与可解扇区。
+    innovation: 工作提供从 4d holomorphic BF defects 系统生成较高维可积性玩具模型的几何来源，并明确比较不同维数中的可积性概念，而非为一个既有二维模型补写高维作用量。
+  - paper_id: arxiv:2604.16233
+    signal_date: '2026-08-19'
+    signal_type: journal-publication
+    week: 2026-W34
+    arxiv_categories: [math.AP, math-ph]
+    structure_tags: [finite-gap, Hamiltonian structure]
+    summary: 论文证明 BKM PDE 类的任意阶初值 jet 可由 finite-gap solutions 逼近，覆盖 KdV、Kaup--Boussinesq 与 Camassa--Holm 所在的不同类别。结果把有限带解从特殊显式族提升为局部初值空间中的稠密结构。
+    main_result: 一个代数 finite-reduction map 将 Stäckel system 的解送到 BKM PDE。对包含 KdV 和 Kaup--Boussinesq 的类别，作者由三角结构得到完整 jet-surjectivity；对 Camassa--Holm 类，则在实数初值开集和复数 Zariski-open 稠密集上证明相应结论。
+    integrable_structure: Stäckel 系统提供有限维 Liouville-integrable 动力学，finite-reduction map 将其谱数据转化为 PDE 的 finite-gap solutions；三角 jet map 使不同阶局部导数可按顺序独立控制。
+    innovation: 核心推进是对一般 BKM 类建立任意阶 jet-density 与明确的满射范围，说明 finite-gap data 能逼近广泛局部初值，而不再只是产生少数代数几何解。
+  - paper_id: arxiv:2508.14030
+    signal_date: '2026-08-21'
+    signal_type: journal-publication
+    week: 2026-W34
+    arxiv_categories: [math-ph, hep-th]
+    structure_tags: [tau function, isomonodromy]
+    summary: 论文求出一次穿孔环面上 isomonodromic tau function 的模变换 connection constant，并由此得到此前未知的精确 \(c=1\) Virasoro modular kernel。结果还把该 kernel、半经典极限和 character variety 的 canonical transformations 统一起来。
+    main_result: 作者比较沿环面 A、B cycles 的两种 pants decompositions，积分 tau function 归一化一形式之差，得到 \(\tau\mapsto-1/\tau\) 的显式连接常数。借助 tau/CFT 对应，进一步导出 \(c=1\) conformal blocks 的闭式 modular kernel，并将其与 \(c\to\infty\) kernel 及 complex Chern--Simons amplitudes 对接。
+    integrable_structure: 环面 isomonodromic deformation 的 monodromy data 定义 Hamiltonian character variety，tau function 生成其辛变换；模群交换两套分解，connection constant 因而同时控制 tau 渐近和 Virasoro conformal blocks 的积分变换。
+    innovation: 工作关闭了 genus-one tau construction 中剩余的显式 connection problem，并首次给出 \(c=1\) Virasoro modular kernel 的闭式表达，使等单值、CFT 与 character-variety 几何由同一生成函数连接。
+  - paper_id: arxiv:2608.20714
+    signal_date: '2026-08-24'
+    signal_type: new-preprint
+    week: 2026-W35
+    arxiv_categories: [nlin.SI, cond-mat.stat-mech]
+    structure_tags: [Yang--Baxter equation, quantum integrability]
+    summary: 论文从二次非交换代数构造不依赖具体表示的 scalene Yang--Baxter solution families，并把双生成元的连续形变推广到任意生成元数。所得交换矩阵被方程强制为精确乘法形式。
+    main_result: 对 multiparameter quantum affine spaces，作者给出有限维奇异矩阵与 Heisenberg--Weyl realizations，也构造 bilateral weighted shifts 等无限维实现。一般情形中的三个算子满足 scalene YBE，但各自不满足普通 non-braided YBE，因此形成真正 Yang--Baxter-irreducible triples。
+    integrable_structure: scalene YBE 以三个不同算子的相容关系替代单一 \(R\)-matrix 的自相容；非交换生成元的 exchange matrix 同时编码全部二体交换，并由三体相容性固定其乘法约束。
+    innovation: 工作把此前依赖具体矩阵搜索的 scalene triples 提升为任意生成元、跨有限与无限维表示的代数生成机制，并明确分离它们与普通 Yang--Baxter solutions。
+  - paper_id: arxiv:2608.20721
+    signal_date: '2026-08-24'
+    signal_type: new-preprint
+    week: 2026-W35
+    arxiv_categories: [math.AP]
+    structure_tags: [finite-gap, Hamiltonian structure]
+    summary: 论文用 classical Schottky uniformization 参数化具有预定空间波数的小振幅 KP finite-gap solutions，使其可进入 Lyapunov--Schmidt reduction。由此证明 KP-I/KP-II 的周期 one-gap 解及 KP-I 的双周期 two-gap 解在 Hamiltonian perturbations 下持续存在。
+    main_result: 作者把退化 Schottky data、周期矩阵和 theta-function 展开重写为由振幅及指定 wavevectors 控制的坐标，并证明参数映射在小振幅区域可逆。该坐标消除 finite-gap 表示与扰动方程之间的尺度不匹配，从而关闭一、二 gap 情形的分岔与持久性论证。
+    integrable_structure: KP 的代数几何解由谱曲线及其 Jacobian/theta data 编码；Schottky uniformization 把这些全局数据转成可微的局部参数，Hamiltonian 结构随后控制 Lyapunov--Schmidt 约化中的核与可解条件。
+    innovation: 新增重点是适合扰动分析、又保留指定物理波数的 finite-gap 参数化，而不只是写出低亏格 theta solutions；它首次把该坐标用于证明若干 KP finite-gap waves 对一般 Hamiltonian perturbations 的持续性。
+  - paper_id: arxiv:2608.23770
+    signal_date: '2026-08-26'
+    signal_type: new-preprint
+    week: 2026-W35
+    arxiv_categories: [hep-th, nlin.SI]
+    structure_tags: [Yang--Baxter equation, quantum integrability]
+    summary: 论文给出从 autonomous difference-form \(S\)-matrices 系统构造时间依赖可积手征场论的程序。非自治相互作用由散射数据、手征运动学与空间齐次性唯一限制，而不是独立猜测。
+    main_result: 谱参数沿左右自由特征线输运，空间齐次的 right-left scattering 迫使物理时空到谱空间的映射为 affine；inverse Cayley transform 再确定局域接触相互作用及其时间依赖。Rational \(SU(N)\)、trigonometric \(U_q(\widehat{\mathfrak{sl}}_2)\) 与 rational \(O(N)\) examples 均由同一处方产生。
+    integrable_structure: Yang--Baxter equation 保证多体散射可因子化；圆周周期性把谱空间振幅组织为相容 qKZ equations，其 flat discrete transport 拉回物理坐标后给出时间依赖多体波函数。
+    innovation: 方法建立 autonomous factorized scattering 到 nonautonomous field theory 的一般几何映射，并证明允许的时间依赖受 affine characteristic transport 固定，超出逐模型调参保持可积性的做法。
+  - paper_id: arxiv:2608.24423
+    signal_date: '2026-08-26'
+    signal_type: new-preprint
+    week: 2026-W35
+    arxiv_categories: [math-ph, nlin.SI]
+    structure_tags: [Painlevé, integrable probability]
+    summary: 论文把 circular Jacobi ensemble 中 characteristic polynomials 及其导数的 joint moments 精确连接到 Painlevé equations：有限 \(N\) 由 \(\sigma\)-Painlevé V 控制，大 \(N\) 缩放极限由 \(\sigma\)-Painlevé III' 表示。
+    main_result: 有限维结论覆盖容许区间内全部实 moment exponents；极限公式进一步给出一个特定随机变量在复参数下的特征函数。作者还处理高阶导数 moments，并把 Hua--Pickrell ergodic decomposition 产生的一列随机变量的 joint-moment theorem 从实参数扩展到复参数。
+    integrable_structure: 随机矩阵的行列式矩与等单值 Hamiltonian/tau data 对应，有限 \(N\) 与缩放极限分别落在 Painlevé V 和 III' 的 \(\sigma\)-forms；参数延拓由同一解析结构控制。
+    innovation: 工作同时给出 finite-size 与 scaling-limit 的 Painlevé characterization，解决一个已有开放问题并覆盖 higher derivatives/complex parameters，而非只计算某个整数矩或单一极限。
+  - paper_id: arxiv:2608.24538
+    signal_date: '2026-08-26'
+    signal_type: new-preprint
+    week: 2026-W35
+    arxiv_categories: [nlin.SI, math-ph]
+    structure_tags: [AKNS hierarchy, integrable geometry]
+    summary: 论文证明 direct linearization 中无限矩阵 \(U\) 的非线性演化可解释为 Sato Grassmannian 顶胞仿射坐标的 KP flows，并用 negative flows 扩展这一几何解释。扩展系统实质上等价于 two-component KP hierarchy。
+    main_result: 作者逐项匹配 \(U\) 的矩阵元与 Grassmannian coordinates，说明 Cauchy matrix approach 如何从同一几何产生。多分量推广进一步连接 AKNS 与 ASDYM hierarchies，并把相应 multi-component Sato Grassmannians 识别为统一的参数空间。
+    integrable_structure: Sato Grassmannian 把 KP wave subspaces、positive/negative flows 与 affine coordinates 组织成线性群作用；direct-linearization 的 quadratic matrix equations 正是这些坐标中的非线性投影，Cauchy matrices 给出有限秩实现。
+    innovation: 新结果把 direct linearization、Cauchy matrix 和 Sato theory 三套常被分开使用的构造证明为同一几何机制，并把对应推广到 two-component KP、AKNS 与 ASDYM 层级。
+  - paper_id: arxiv:2608.24613
+    signal_date: '2026-08-26'
+    signal_type: new-preprint
+    week: 2026-W35
+    arxiv_categories: [cond-mat.stat-mech, quant-ph]
+    structure_tags: [quantum integrability, generalized hydrodynamics]
+    summary: 论文证明相互作用可积模型全局淬火后，entanglement Hamiltonian 的全部 cumulants 精确等于初态所选宏观态中适当守恒荷 currents 的 cumulants，从而给纠缠谱涨落建立直接输运解释。
+    main_result: 基于 space-time duality，作者把 reduced density matrix 的谱生成量映射到守恒流的 full counting statistics。公式在 free-fermion 与 conformal limits 退化为左右传播激发的 current-cumulant difference，并在不存在独立左右 mover 算子分解的相互作用模型中仍保持成立。
+    integrable_structure: 无穷守恒荷和稳定准粒子决定淬火宏观态及其 currents；space-time duality 将 entanglement cut 转成输运观测，使 Bethe/GHD 描述的流统计直接控制 entanglement Hamiltonian spectrum。
+    innovation: 工作把以往主要适用于 von Neumann entropy 的准粒子输运图景提升到 entanglement Hamiltonian 的全 cumulant hierarchy，并给出跨自由、共形和相互作用可积系统的统一精确对应。
+  - paper_id: arxiv:2608.25283
+    signal_date: '2026-08-27'
+    signal_type: new-preprint
+    week: 2026-W35
+    arxiv_categories: [math.AP, math.SP]
+    structure_tags: [finite-gap, inverse scattering]
+    summary: 论文处理 defocusing mKdV 的 almost-periodic Cauchy problem：当初值对应满足 Craig-type 谱条件的 reflectionless Dirac operator 时，证明解在时空中几乎周期，并在适当局部有界类中唯一。
+    main_result: 作者从无穷带谱数据构造 mKdV 流，控制 Dirichlet data 在 gap variables 上的演化，并证明重构势同时满足 PDE、继承 almost periodicity 与初值。结论特别覆盖具有 Diophantine frequencies 的小解析 quasiperiodic data。
+    integrable_structure: reflectionless Dirac operator 的谱隙、Abel coordinates 与 trace formulas 承担无限亏格 inverse-spectral transform；Craig conditions 保证无穷维向量场和势重构收敛，从而把谱线性流转回 mKdV dynamics。
+    innovation: 结果把 finite/quasiperiodic-gap 解理论推进到受控的一般 almost-periodic 谱类，并同时给出存在性与自然解类中的唯一性，而非只构造一组形式准周期解。
+  - paper_id: arxiv:2608.25594
+    signal_date: '2026-08-27'
+    signal_type: new-preprint
+    week: 2026-W35
+    arxiv_categories: [math.AG, math-ph]
+    structure_tags: [Painlevé, isomonodromy]
+    summary: 论文把 Painlevé VI、IV、II、I 的 monodromy surfaces 实现为带指定无穷远除子的嵌入 affine del Pezzo surfaces，并证明这些曲面的 monodromy groups 正是相应 affine Weyl symmetry groups 的有限部分。
+    main_result: 作者分别从参数空间回路诱导的直线置换、incidence variety 函数域的 Galois 作用和交图组合自同构三条路径实现同一 monodromy group。由此把模去对称后的 Painlevé parameter spaces 解释为一类嵌入仿射曲面的模空间。
+    integrable_structure: Riemann--Hilbert correspondence 把 Painlevé initial-value spaces 送到由线性 ODE monodromy invariants 定义的 affine surfaces；Weyl symmetry 在该映射下虽局部平凡化，其有限部分仍作为曲面族的参数 monodromy 存活。
+    innovation: 工作对四个 Painlevé types 给出统一的 del Pezzo、Galois 与组合描述，并识别此前隐藏在 Riemann--Hilbert quotient 后的有限 Weyl action，而不是逐方程列举 birational symmetries。
+  - paper_id: arxiv:2608.25647
+    signal_date: '2026-08-27'
+    signal_type: new-preprint
+    week: 2026-W35
+    arxiv_categories: [nlin.SI]
+    structure_tags: [Riemann--Hilbert problem, integrable geometry]
+    summary: 论文为 anti-self-dual Yang--Mills hierarchy 建立基于 normalized Riemann--Hilbert decomposition 的 Sato dressing framework。四扇区展开产生双无限 relative-coordinate 矩阵，推广 Sato Grassmannian big cell 的仿射坐标。
+    main_result: 作者推导 Sato--Wilson equations、连续 coordinate flows 及离散对应，并在 dimensional-reduction constraints 下恢复多类经典可积层级；这些层级的 nonlinear variables 被识别为双无限数组中的特定 relative coordinates。
+    integrable_structure: normalized Riemann--Hilbert factorization 提供 dressing data，四种正负展开同时编码连续和离散 flows；Sato-type Grassmannian coordinates 将 ASDYM hierarchy 的零曲率条件转成可交换线性演化。
+    innovation: 新框架把 ASDYM 的层级、离散化和经典约化统一进一套 Sato 坐标系统，并显式扩大通常只含单向仿射坐标的 big-cell 描述，为 Ward-type reductions 提供可计算母结构。
+  - paper_id: arxiv:2608.26054
+    signal_date: '2026-08-27'
+    signal_type: new-preprint
+    week: 2026-W35
+    arxiv_categories: [nlin.PS, nlin.SI]
+    structure_tags: [inverse scattering, inverse problem]
+    summary: 论文提出面向 continuous-wave background 的 defocusing NLS numerical direct scattering transform，可从复杂波场同时提取暗孤子的离散本征值、norming constants 与连续谱数据。
+    main_result: 算法数值求解带 CW 边界条件的 Zakharov--Shabat problem，并用解析 transfer-matrix relations 恢复完整 scattering data。矩形凹陷和 tanh 凹陷两个可含任意数暗孤子的精确例子用于验证；高精度算术进一步稳定最敏感的 norming constants。
+    integrable_structure: defocusing NLS 的直接散射把波形分解为暗孤子离散谱与连续辐射，transfer matrix 将有限区间数值传播连接到非零背景上的 Jost normalization；谱数据由此成为可重构的非线性 Fourier coordinates。
+    innovation: 该方法补足暗孤子在非零连续背景上的完整 numerical DST，并把 norming constants 纳入稳健提取，使数值或实验波场可进行定量 soliton content 识别，而不只拟合强度凹陷的位置和速度。
