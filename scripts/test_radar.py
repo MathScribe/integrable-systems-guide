@@ -15,6 +15,13 @@ if SPEC is None or SPEC.loader is None:
     raise RuntimeError("cannot load scripts/render_radar.py")
 render_radar = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(render_radar)
+VALIDATE_SPEC = importlib.util.spec_from_file_location(
+    "validate_radar", ROOT / "scripts" / "validate_radar.py"
+)
+if VALIDATE_SPEC is None or VALIDATE_SPEC.loader is None:
+    raise RuntimeError("cannot load scripts/validate_radar.py")
+validate_radar = importlib.util.module_from_spec(VALIDATE_SPEC)
+VALIDATE_SPEC.loader.exec_module(validate_radar)
 
 
 def sample_entry(paper_id: str = "arxiv:2607.13773") -> dict[str, object]:
@@ -191,9 +198,38 @@ def test_enabled_frontier() -> None:
     }
 
 
+def test_bibliographic_date_and_version_validation() -> None:
+    paper = {
+        "id": "arxiv:2608.12345",
+        "title": "A validation fixture",
+        "authors": ["Ada Example"],
+        "url": "https://arxiv.org/abs/2608.12345",
+        "arxiv_id": "2608.12345",
+        "submitted": "2026-08-20",
+        "updated": "2026-08-22",
+        "version": "v2",
+        "metadata_checked_at": "2026-08-23",
+    }
+    assert validate_radar.validate_papers([paper]) == 1
+
+    invalid_cases = (
+        ({**paper, "updated": "2026-08-19"}, "precedes"),
+        ({**paper, "version": "2"}, "invalid arXiv version"),
+        ({**paper, "submitted": "2026/08/20"}, "ISO date"),
+    )
+    for invalid, expected_message in invalid_cases:
+        try:
+            validate_radar.validate_papers([invalid])
+        except ValueError as exc:
+            assert expected_message in str(exc)
+        else:
+            raise AssertionError(f"invalid bibliographic metadata accepted: {invalid}")
+
+
 def main() -> None:
     test_component_contract()
     test_enabled_frontier()
+    test_bibliographic_date_and_version_validation()
     print("compact radar schema and enabled frontier tests passed")
 
 

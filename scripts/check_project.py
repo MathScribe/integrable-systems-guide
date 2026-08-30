@@ -37,11 +37,14 @@ def main() -> None:
     site_dir = ROOT / "site-check"
     if site_dir.exists():
         shutil.rmtree(site_dir)
-    run(
-        "strict MkDocs build",
-        [python, "-m", "mkdocs", "build", "--strict", "--site-dir", str(site_dir)],
-    )
-    shutil.rmtree(site_dir)
+    try:
+        run(
+            "strict MkDocs build",
+            [python, "-m", "mkdocs", "build", "--strict", "--site-dir", str(site_dir)],
+        )
+    finally:
+        if site_dir.exists():
+            shutil.rmtree(site_dir)
 
     print("\nAll project checks passed.")
 

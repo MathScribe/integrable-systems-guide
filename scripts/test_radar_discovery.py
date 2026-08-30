@@ -189,7 +189,7 @@ def test_arxiv_dates_and_cross_category_deduplication() -> None:
       <dt><a href="/abs/2607.23422">arXiv:2607.23422</a>{cross_list}</dt>
       <dd><div class="meta">
         <div class="list-title mathjax"><span>Title:</span>Loop Algebra Splitting</div>
-        <div class="list-authors"><a>Ziqi Li</a>, <a>Zhiwei Wu</a></div>
+        <div class="list-authors"><a>Ziqi Li, Jr.</a>, <a>Zhiwei Wu</a></div>
         <div class="list-subjects"><span>Subjects:</span>
           Mathematical Physics (math-ph); Exactly Solvable and Integrable Systems (nlin.SI)
         </div>
@@ -217,7 +217,7 @@ def test_arxiv_dates_and_cross_category_deduplication() -> None:
     candidate = manifest["candidates"][0]
     assert candidate["announcement_date"] == "2026-07-28"
     assert candidate["source_categories"] == ["math-ph", "nlin.SI"]
-    assert candidate["authors"] == ["Ziqi Li", "Zhiwei Wu"]
+    assert candidate["authors"] == ["Ziqi Li, Jr.", "Zhiwei Wu"]
 
     partial = arxiv.fetch_manifest(
         ["nlin.SI"],
