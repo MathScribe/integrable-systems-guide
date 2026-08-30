@@ -35,6 +35,7 @@ ENTRY_RE = re.compile(
 )
 DIV_RE_TEMPLATE = r"<div\s+class=['\"]{class_name}[^'\"]*['\"]>(.*?)</div>"
 TAG_RE = re.compile(r"<[^>]+>")
+ANCHOR_RE = re.compile(r"<a\b[^>]*>(.*?)</a>", flags=re.DOTALL | re.IGNORECASE)
 ARXIV_ID_RE = re.compile(r"arXiv:(\d{4}\.\d{4,5})", flags=re.IGNORECASE)
 DATE_RE = re.compile(
     r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s+(\d{1,2}\s+[A-Z][a-z]{2}\s+\d{4})"
@@ -48,7 +49,7 @@ def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(TAG_RE.sub(" ", value))).strip()
 
 
-def div_text(fragment: str, class_name: str) -> str:
+def div_fragment(fragment: str, class_name: str) -> str:
     match = re.search(
         DIV_RE_TEMPLATE.format(class_name=re.escape(class_name)),
         fragment,
@@ -56,8 +57,25 @@ def div_text(fragment: str, class_name: str) -> str:
     )
     if not match:
         return ""
-    text = clean_text(match.group(1))
+    return match.group(1)
+
+
+def div_text(fragment: str, class_name: str) -> str:
+    text = clean_text(div_fragment(fragment, class_name))
     return re.sub(r"^(?:Title|Comments|Subjects):\s*", "", text, flags=re.IGNORECASE)
+
+
+def author_names(fragment: str) -> list[str]:
+    """Read author anchors so commas inside a displayed name stay intact."""
+    authors_fragment = div_fragment(fragment, "list-authors")
+    names = [clean_text(value) for value in ANCHOR_RE.findall(authors_fragment)]
+    names = [name for name in names if name]
+    if names:
+        return names
+
+    # Keep a conservative fallback for archived or test fixtures that omit links.
+    authors_text = clean_text(authors_fragment)
+    return [part.strip() for part in authors_text.split(",") if part.strip()]
 
 
 def parse_heading(fragment: str) -> date:
@@ -79,11 +97,10 @@ def parse_entry(fragment: str, announcement_date: date, source_category: str) ->
         raise ValueError("arXiv list entry has no identifier")
     arxiv_id = arxiv_match.group(1)
     title = div_text(dd, "list-title")
-    authors_text = div_text(dd, "list-authors")
+    authors = author_names(dd)
     subjects_text = div_text(dd, "list-subjects")
-    if not title or not authors_text:
+    if not title or not authors:
         raise ValueError(f"arXiv:{arxiv_id} is missing title or authors")
-    authors = [part.strip() for part in authors_text.split(",") if part.strip()]
     categories = CATEGORY_RE.findall(subjects_text)
     cross_list_match = re.search(r"\(cross-list from ([^)]+)\)", clean_text(dt))
     return {
