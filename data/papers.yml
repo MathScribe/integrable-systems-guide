@@ -1634,17 +1634,23 @@
     - "conservation laws"
 
 - id: "arxiv:2607.00594"
-  title: "Yangian Doubles and off-Shell Bethe Vectors"
+  title: "Bethe Vectors in Quantum Integrable Models with Classical Symmetries"
   authors:
     - "A. Liashyk"
     - "S. Pakuliak"
     - "E. Ragoucy"
-  url: "https://arxiv.org/abs/2607.00594"
+  url: "https://doi.org/10.1007/s00220-026-05724-z"
   arxiv_id: "2607.00594"
-  doi: "10.48550/arXiv.2607.00594"
+  doi: "10.1007/s00220-026-05724-z"
+  journal: "Communications in Mathematical Physics"
+  volume: "407"
+  article_number: "218"
+  year: 2026
+  published: "2026-08-28"
   submitted: "2026-07-01"
   updated: "2026-07-01"
-  metadata_checked_at: "2026-07-20"
+  metadata_checked_at: "2026-09-04"
+  metadata_note: "The registry now uses the version-of-record title and journal metadata; the routine publication does not create a second radar event."
   tags:
     - "Bethe ansatz"
     - "quantum integrability"
@@ -3564,3 +3570,158 @@
   version: "v1"
   metadata_checked_at: "2026-08-27"
   tags: ["dark solitons", "direct scattering transform", "Zakharov--Shabat problem", "continuous-wave background", "norming constants"]
+
+- id: "arxiv:2608.27415"
+  title: "Wedge problems and dispersive shock waves in the two-dimensional Toda lattice"
+  authors: ["Marco Calabrese", "Gino Biondini", "Christopher Chong", "Panayotis Kevrekidis"]
+  url: "https://arxiv.org/abs/2608.27415"
+  arxiv_id: "2608.27415"
+  doi: "10.48550/arXiv.2608.27415"
+  submitted: "2026-08-27"
+  updated: "2026-08-27"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["two-dimensional Toda lattice", "dispersive shock waves", "Whitham modulation theory", "Mach reflection", "exact soliton solutions"]
+
+- id: "arxiv:2608.27709"
+  title: "A new family of Darboux integrable partial differential equations"
+  authors: ["S. Ya. Startsev"]
+  url: "https://arxiv.org/abs/2608.27709"
+  arxiv_id: "2608.27709"
+  doi: "10.48550/arXiv.2608.27709"
+  submitted: "2026-08-27"
+  updated: "2026-08-27"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["Darboux integrability", "hyperbolic PDE", "characteristic integrals", "differential substitutions"]
+
+- id: "arxiv:2608.28942"
+  title: "Action-angle variables and phase space formulation of Hermitian matrix models"
+  authors: ["Arghya Chattopadhyay"]
+  url: "https://arxiv.org/abs/2608.28942"
+  arxiv_id: "2608.28942"
+  doi: "10.48550/arXiv.2608.28942"
+  submitted: "2026-08-28"
+  updated: "2026-08-28"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["Hermitian matrix models", "action-angle variables", "orthogonal polynomials", "spectral curve", "multicut phase"]
+
+- id: "arxiv:2608.29964"
+  title: "Nijenhuis torsion and Frölicher-Nijenhuis brackets of recursion operators via their full-fledged forms"
+  authors: ["Petr Vojcak"]
+  url: "https://arxiv.org/abs/2608.29964"
+  arxiv_id: "2608.29964"
+  doi: "10.48550/arXiv.2608.29964"
+  submitted: "2026-08-30"
+  updated: "2026-08-30"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["recursion operators", "Nijenhuis torsion", "Frölicher--Nijenhuis bracket", "nonlocal symmetries", "four-dimensional universal hierarchy equation"]
+
+- id: "arxiv:2608.31080"
+  title: "Boundary Quantum Knizhnik-Zamolodchikov Equations and Integrability of Quantum Field Theories with Time-Dependent Bulk and Boundary Coupling Strengths"
+  authors: ["Parameshwar R. Pasnoori"]
+  url: "https://arxiv.org/abs/2608.31080"
+  arxiv_id: "2608.31080"
+  doi: "10.48550/arXiv.2608.31080"
+  submitted: "2026-08-31"
+  updated: "2026-08-31"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["boundary quantum Knizhnik--Zamolodchikov equations", "generalized Bethe ansatz", "time-dependent integrability", "open boundary conditions", "dynamical invariants"]
+
+- id: "arxiv:2609.00164"
+  title: "Exact joint eigenvalue densities of non-Hermitian random matrices are Calogero scattering states"
+  authors: ["Zhenyu Xiao", "Ze Chen", "Yifei Liu", "Shinsei Ryu"]
+  url: "https://arxiv.org/abs/2609.00164"
+  arxiv_id: "2609.00164"
+  doi: "10.48550/arXiv.2609.00164"
+  submitted: "2026-08-31"
+  updated: "2026-08-31"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["non-Hermitian random matrices", "Calogero model", "joint eigenvalue density", "level statistics", "transposition symmetry"]
+
+- id: "arxiv:2609.00517"
+  title: "Topological Recursion on Spectral Curves with Infinite Ramification Loci"
+  authors: ["Quinten Weller"]
+  url: "https://arxiv.org/abs/2609.00517"
+  arxiv_id: "2609.00517"
+  doi: "10.48550/arXiv.2609.00517"
+  submitted: "2026-09-01"
+  updated: "2026-09-01"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["topological recursion", "spectral curves", "infinite ramification", "quantum curves", "exponential curves"]
+
+- id: "arxiv:2609.01454"
+  title: "Lagrangian varieties from $q$-matrix models"
+  authors: ["Victor Mishnyakov", "Maxim Zabzine"]
+  url: "https://arxiv.org/abs/2609.01454"
+  arxiv_id: "2609.01454"
+  doi: "10.48550/arXiv.2609.01454"
+  submitted: "2026-09-01"
+  updated: "2026-09-01"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["q-matrix models", "Lagrangian varieties", "inverse characteristic polynomials", "anti-symplectic involutions", "mirror curves"]
+
+- id: "arxiv:2609.01953"
+  title: "Superintegrability of stratified symplectic spaces"
+  authors: ["Zhuo Chen", "Kai Jiang", "Nicolai Reshetikhin", "Husileng Xiao"]
+  url: "https://arxiv.org/abs/2609.01953"
+  arxiv_id: "2609.01953"
+  doi: "10.48550/arXiv.2609.01953"
+  submitted: "2026-09-01"
+  updated: "2026-09-01"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["stratified symplectic spaces", "superintegrability", "spin Calogero--Moser--Sutherland systems", "Hamiltonian reduction", "SU(3)"]
+
+- id: "arxiv:2609.02765"
+  title: "Quantum wreath products and Yang-Baxter equations"
+  authors: ["Alexandre Minets"]
+  url: "https://arxiv.org/abs/2609.02765"
+  arxiv_id: "2609.02765"
+  doi: "10.48550/arXiv.2609.02765"
+  submitted: "2026-09-02"
+  updated: "2026-09-02"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["quantum wreath products", "Yang--Baxter equation", "PBW basis", "deformed braid relations", "quiver Hecke algebras"]
+
+- id: "arxiv:2603.02158"
+  title: "Crossover from generalized to conventional hydrodynamics in nearly integrable systems under relaxation time approximation"
+  authors: ["Saikat Santra", "Maciej Łebek", "Miłosz Panfil"]
+  url: "https://doi.org/10.1103/8232-shpj"
+  arxiv_id: "2603.02158"
+  doi: "10.1103/8232-shpj"
+  journal: "Physical Review E"
+  volume: "114"
+  issue: "2"
+  article_number: "024155"
+  year: 2026
+  published: "2026-08-27"
+  submitted: "2026-03-02"
+  updated: "2026-03-02"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["nearly integrable systems", "generalized hydrodynamics", "relaxation time approximation", "Navier--Stokes hydrodynamics", "transport coefficients"]
+
+- id: "arxiv:2606.14541"
+  title: "Yang-Baxter symmetries of Type II supergravity"
+  authors: ["Igor Bogatyrev", "Edvard T. Musaev", "Timophey Petrov"]
+  url: "https://doi.org/10.1140/epjc/s10052-026-16262-2"
+  arxiv_id: "2606.14541"
+  doi: "10.1140/epjc/s10052-026-16262-2"
+  journal: "The European Physical Journal C"
+  volume: "86"
+  article_number: "1001"
+  year: 2026
+  published: "2026-08-24"
+  submitted: "2026-06-12"
+  updated: "2026-06-12"
+  version: "v1"
+  metadata_checked_at: "2026-09-04"
+  tags: ["Yang--Baxter deformation", "Type II supergravity", "double field theory", "solution-generating transformation", "boundary terms"]
