@@ -3506,9 +3506,9 @@
   arxiv_id: "2608.24538"
   doi: "10.48550/arXiv.2608.24538"
   submitted: "2026-08-25"
-  updated: "2026-08-25"
-  version: "v1"
-  metadata_checked_at: "2026-08-27"
+  updated: "2026-09-04"
+  version: "v2"
+  metadata_checked_at: "2026-09-07"
   tags: ["direct linearization", "Cauchy matrix", "Sato Grassmannian", "KP hierarchy", "ASDYM hierarchy"]
 
 - id: "arxiv:2608.24613"
@@ -3725,3 +3725,299 @@
   version: "v1"
   metadata_checked_at: "2026-09-04"
   tags: ["Yang--Baxter deformation", "Type II supergravity", "double field theory", "solution-generating transformation", "boundary terms"]
+
+- id: arxiv:2609.02952
+  title: Isomonodromic Deformations for Linear $q$-Difference Systems of Degree One
+  authors:
+  - Yiming Ma
+  url: https://arxiv.org/abs/2609.02952
+  arxiv_id: '2609.02952'
+  doi: 10.48550/arXiv.2609.02952
+  submitted: '2026-09-02'
+  submitted_at: '2026-09-02T00:21:12Z'
+  updated: '2026-09-02'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - isomonodromy
+  - tau function
+- id: arxiv:2609.03018
+  title: Microscopically exact transport equation for the quantum Calogero model
+  authors:
+  - Vir B. Bulchandani
+  - Fabian H. L. Essler
+  url: https://arxiv.org/abs/2609.03018
+  arxiv_id: '2609.03018'
+  doi: 10.48550/arXiv.2609.03018
+  submitted: '2026-09-02'
+  submitted_at: '2026-09-02T18:00:08Z'
+  updated: '2026-09-02'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - quantum integrability
+  - generalized hydrodynamics
+- id: arxiv:2609.03112
+  title: Poissonian pair correlations for the three-particle Sutherland model
+  authors:
+  - Christopher Lutsko
+  url: https://arxiv.org/abs/2609.03112
+  arxiv_id: '2609.03112'
+  doi: 10.48550/arXiv.2609.03112
+  submitted: '2026-09-02'
+  submitted_at: '2026-09-02T19:48:29Z'
+  updated: '2026-09-02'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - quantum integrability
+  - integrable probability
+- id: arxiv:2609.03197
+  title: Computational Algorithms for Invariant Reduction of Variational Forms
+  authors:
+  - Kostya Druzhkov
+  - Alexey Shevyakov
+  url: https://arxiv.org/abs/2609.03197
+  arxiv_id: '2609.03197'
+  doi: 10.48550/arXiv.2609.03197
+  submitted: '2026-09-02'
+  submitted_at: '2026-09-02T22:26:45Z'
+  updated: '2026-09-02'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - conservation laws
+  - symplectic geometry
+- id: arxiv:2609.03532
+  title: Airy limit for the Jack process and topological expansion
+  authors:
+  - Jiaming Xu
+  url: https://arxiv.org/abs/2609.03532
+  arxiv_id: '2609.03532'
+  doi: 10.48550/arXiv.2609.03532
+  submitted: '2026-09-03'
+  submitted_at: '2026-09-03T08:31:18Z'
+  updated: '2026-09-03'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - integrable probability
+  - quantum integrability
+- id: arxiv:2609.04374
+  title: Higher-Dimensional Integrable Scattering
+  authors:
+  - Lewis T. Cole
+  url: https://arxiv.org/abs/2609.04374
+  arxiv_id: '2609.04374'
+  doi: 10.48550/arXiv.2609.04374
+  submitted: '2026-09-03'
+  submitted_at: '2026-09-03T18:38:17Z'
+  updated: '2026-09-03'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - integrable geometry
+- id: arxiv:2609.04378
+  title: 'Fukui-Kawakami chains: spectrum and hidden $\mathfrak{gl}(1|1)$-symmetry'
+  authors:
+  - Rob Klabbers
+  - Antoine Lefebvre
+  url: https://arxiv.org/abs/2609.04378
+  arxiv_id: '2609.04378'
+  doi: 10.48550/arXiv.2609.04378
+  submitted: '2026-09-03'
+  submitted_at: '2026-09-03T18:40:41Z'
+  updated: '2026-09-03'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - Bethe ansatz
+  - quantum integrability
+- id: arxiv:2609.04595
+  title: Michell-Prager type truss structures constructed from integrable discrete power function and discrete logarithmic function
+  authors:
+  - Motoki Masada
+  - Kentaro Hayakawa
+  - Kazuki Hayashi
+  - Yoshiki Jikumaru
+  - Kenji Kajiwara
+  - Yohei Yokosuka
+  url: https://arxiv.org/abs/2609.04595
+  arxiv_id: '2609.04595'
+  doi: 10.48550/arXiv.2609.04595
+  submitted: '2026-09-04'
+  submitted_at: '2026-09-04T00:52:00Z'
+  updated: '2026-09-04'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - integrable discretization
+  - integrable geometry
+- id: arxiv:2609.04691
+  title: Complex singularities for Burgers' equation with piecewise-continuous initial conditions
+  authors:
+  - Jacob C. Gentner
+  - Michael C. Dallaston
+  - Scott W. McCue
+  url: https://arxiv.org/abs/2609.04691
+  arxiv_id: '2609.04691'
+  doi: 10.48550/arXiv.2609.04691
+  submitted: '2026-09-04'
+  submitted_at: '2026-09-04T03:44:56Z'
+  updated: '2026-09-04'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags: []
+- id: arxiv:2609.04739
+  title: q-Opers and Quantum/Classical Duality Beyond Type A
+  authors:
+  - Peter Koroteev
+  - Myungbo Shim
+  - Rahul Singh
+  url: https://arxiv.org/abs/2609.04739
+  arxiv_id: '2609.04739'
+  doi: 10.48550/arXiv.2609.04739
+  submitted: '2026-09-04'
+  submitted_at: '2026-09-04T05:13:48Z'
+  updated: '2026-09-04'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - Bethe ansatz
+  - integrable geometry
+- id: arxiv:2609.04814
+  title: Spin-Charge Subordination in the Infinite-$U$ $SU(N)$ Hubbard Chain
+  authors:
+  - Cătălin Paşcu Moca
+  - Ovidiu I. Pâţu
+  - Gergely Zaránd
+  - Balázs Dóra
+  url: https://arxiv.org/abs/2609.04814
+  arxiv_id: '2609.04814'
+  doi: 10.48550/arXiv.2609.04814
+  submitted: '2026-09-04'
+  submitted_at: '2026-09-04T07:11:01Z'
+  updated: '2026-09-04'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - quantum integrability
+  - integrable probability
+- id: arxiv:2609.04873
+  title: Evolution of instability fronts in sine-Gordon equation dynamics
+  authors:
+  - A. M. Kamchatnov
+  url: https://arxiv.org/abs/2609.04873
+  arxiv_id: '2609.04873'
+  doi: 10.48550/arXiv.2609.04873
+  submitted: '2026-09-04'
+  submitted_at: '2026-09-04T08:31:17Z'
+  updated: '2026-09-04'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - finite-gap
+- id: arxiv:2609.05103
+  title: 'From quadratic integrals to Nijenhuis operators: two-dimensional dictionary'
+  authors:
+  - Dinmukhammed Akpan
+  url: https://arxiv.org/abs/2609.05103
+  arxiv_id: '2609.05103'
+  doi: 10.48550/arXiv.2609.05103
+  submitted: '2026-09-04'
+  submitted_at: '2026-09-04T12:54:31Z'
+  updated: '2026-09-04'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - integrable geometry
+  - Hamiltonian structure
+- id: arxiv:2609.05121
+  title: On the growth of operator entanglement in brickwork circuits with Yang--Baxter gates
+  authors:
+  - Balázs Pozsgay
+  url: https://arxiv.org/abs/2609.05121
+  arxiv_id: '2609.05121'
+  doi: 10.48550/arXiv.2609.05121
+  submitted: '2026-09-04'
+  submitted_at: '2026-09-04T13:19:46Z'
+  updated: '2026-09-04'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - Yang--Baxter equation
+  - quantum integrability
+- id: arxiv:2507.18586
+  title: Implementation of the inverse scattering transform method for the nonlinear Schrödinger equation
+  authors:
+  - Vladislav V. Kravchenko
+  url: https://doi.org/10.1007/s40590-026-00949-3
+  arxiv_id: '2507.18586'
+  doi: 10.1007/s40590-026-00949-3
+  submitted: '2025-07-24'
+  submitted_at: '2025-07-24T17:09:46Z'
+  updated: '2025-07-24'
+  version: v1
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - inverse scattering
+  - inverse problem
+  journal: Boletín de la Sociedad Matemática Mexicana
+  year: 2026
+  published: '2026-09-04'
+  volume: '32'
+  issue: '3'
+  article_number: '116'
+- id: arxiv:2606.24704
+  title: 'The sine-Gordon equation in light-cone coordinates on the half-lines revisited: a Riemann–Hilbert approach'
+  authors:
+  - Iryna Karpenko
+  url: https://doi.org/10.1007/s11005-026-02147-8
+  arxiv_id: '2606.24704'
+  doi: 10.1007/s11005-026-02147-8
+  submitted: '2026-06-23'
+  submitted_at: '2026-06-23T15:31:16Z'
+  updated: '2026-07-16'
+  version: v2
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - Riemann--Hilbert problem
+  - inverse scattering
+  journal: Letters in Mathematical Physics
+  year: 2026
+  published: '2026-09-03'
+  volume: '116'
+  issue: '5'
+  article_number: '116'
+- id: arxiv:2408.13375
+  title: Yang-Baxter Extremal Characters of Wreath Products of Finite Groups with the Infinite Symmetric Group
+  authors:
+  - Hicham Assakaf
+  url: https://doi.org/10.1007/s10468-026-10419-z
+  arxiv_id: '2408.13375'
+  doi: 10.1007/s10468-026-10419-z
+  submitted: '2024-08-23'
+  submitted_at: '2024-08-23T21:18:07Z'
+  updated: '2025-12-12'
+  version: v2
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - Yang--Baxter equation
+  journal: Algebras and Representation Theory
+  year: 2026
+  published: '2026-09-01'
+- id: arxiv:2603.09522
+  title: Weak-Coupling Limit of the Lattice Nonlinear Schr\"odinger Integral Equation
+  authors:
+  - Felipe Taha Sant'Ana
+  url: https://arxiv.org/abs/2603.09522
+  arxiv_id: '2603.09522'
+  doi: 10.48550/arXiv.2603.09522
+  submitted: '2026-03-10'
+  submitted_at: '2026-03-10T11:26:29Z'
+  updated: '2026-09-04'
+  version: v3
+  metadata_checked_at: '2026-09-07'
+  tags:
+  - Bethe ansatz
+  - integrable probability
