@@ -1223,22 +1223,29 @@
     - "Lax pair"
     - "Poisson structure"
 
-- id: "arxiv:2606.26510"
-  title: "Symmetries of the Generalized Yang--Baxter Equations"
+- id: arxiv:2606.26510
+  title: Symmetries of the Generalized Yang--Baxter Equations
   authors:
-    - "Pramod Padmanabhan"
-    - "Somnath Maity"
-    - "Akash Sinha"
-    - "Vladimir Korepin"
-  url: "https://arxiv.org/abs/2606.26510"
-  arxiv_id: "2606.26510"
-  doi: "10.48550/arXiv.2606.26510"
-  submitted: "2026-06-25"
-  updated: "2026-06-25"
-  metadata_checked_at: "2026-07-20"
+  - Pramod Padmanabhan
+  - Somnath Maity
+  - Akash Sinha
+  - Vladimir Korepin
+  url: https://doi.org/10.46298/ocnmp.18633
+  arxiv_id: '2606.26510'
+  doi: 10.46298/ocnmp.18633
+  submitted: '2026-06-25'
+  submitted_at: '2026-06-25T01:31:19Z'
+  updated: '2026-09-09'
+  version: v2
+  metadata_checked_at: '2026-09-12'
   tags:
-    - "Yang--Baxter equation"
-    - "Hamiltonian structure"
+  - Yang--Baxter equation
+  - Hamiltonian structure
+  journal: Open Communications in Nonlinear Mathematical Physics
+  year: 2026
+  published: '2026-09-10'
+  volume: Special Issue in honour of Jarmo Hietarinta
+  article_number: '18633'
 
 - id: "arxiv:2606.28579"
   title: "Transition asymptotics for the real solutions of the sinh-Gordon Painlevé III equation"
@@ -4021,3 +4028,327 @@
   tags:
   - Bethe ansatz
   - integrable probability
+
+- id: arxiv:2609.06217
+  title: On Bäcklund transformations preserving the Darboux integrability of hyperbolic equations
+  authors:
+  - Sergey Ya. Startsev
+  url: https://arxiv.org/abs/2609.06217
+  arxiv_id: '2609.06217'
+  doi: 10.48550/arXiv.2609.06217
+  submitted: '2026-09-05'
+  submitted_at: '2026-09-05T18:25:47Z'
+  updated: '2026-09-05'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - Bäcklund transformation
+  - integrable geometry
+- id: arxiv:2609.05733
+  title: The topology of tridiagonal isospectral sets
+  authors:
+  - David Martínez Torres
+  url: https://arxiv.org/abs/2609.05733
+  arxiv_id: '2609.05733'
+  doi: 10.48550/arXiv.2609.05733
+  submitted: '2026-09-04'
+  submitted_at: '2026-09-04T21:31:38Z'
+  updated: '2026-09-04'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - integrable geometry
+- id: arxiv:2609.06241
+  title: Tropicalization of Fock's inverse spectral transform
+  authors:
+  - Terrence George
+  url: https://arxiv.org/abs/2609.06241
+  arxiv_id: '2609.06241'
+  doi: 10.48550/arXiv.2609.06241
+  submitted: '2026-09-05'
+  submitted_at: '2026-09-05T19:52:04Z'
+  updated: '2026-09-05'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - spectral curve
+  - integrable geometry
+- id: arxiv:2609.06821
+  title: Mirror Counts of Spectral Curves
+  authors:
+  - Tom Graber
+  - Mingyuan Hu
+  - Eric Zaslow
+  url: https://arxiv.org/abs/2609.06821
+  arxiv_id: '2609.06821'
+  doi: 10.48550/arXiv.2609.06821
+  submitted: '2026-09-06'
+  submitted_at: '2026-09-06T20:29:18Z'
+  updated: '2026-09-06'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - spectral curve
+  - integrable geometry
+- id: arxiv:2609.07239
+  title: Critical and subcritical fusion asymptotics for Sine$_\beta$ correlation functions
+  authors:
+  - Weiyang Fang
+  url: https://arxiv.org/abs/2609.07239
+  arxiv_id: '2609.07239'
+  doi: 10.48550/arXiv.2609.07239
+  submitted: '2026-09-07'
+  submitted_at: '2026-09-07T08:57:12Z'
+  updated: '2026-09-07'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - integrable probability
+- id: arxiv:2609.07485
+  title: Möbius Invariant Dimers and Miquel Dynamics
+  authors:
+  - Niklas C. Affolter
+  - Luis Mühlhoff
+  url: https://arxiv.org/abs/2609.07485
+  arxiv_id: '2609.07485'
+  doi: 10.48550/arXiv.2609.07485
+  submitted: '2026-09-07'
+  submitted_at: '2026-09-07T13:39:18Z'
+  updated: '2026-09-07'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - integrable geometry
+  - integrable probability
+- id: arxiv:2609.07588
+  title: $q$-Oper Structures on a Formal Punctured Disc
+  authors:
+  - Rudrendra Kashyap
+  - Rahul Singh
+  url: https://arxiv.org/abs/2609.07588
+  arxiv_id: '2609.07588'
+  doi: 10.48550/arXiv.2609.07588
+  submitted: '2026-09-07'
+  submitted_at: '2026-09-07T15:00:51Z'
+  updated: '2026-09-07'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - integrable geometry
+- id: arxiv:2609.07612
+  title: Exact spin form factors and correlations at a massive Kramers-Wannier interface
+  authors:
+  - Zoltan Bajnok
+  - Yizhuang Liu
+  url: https://arxiv.org/abs/2609.07612
+  arxiv_id: '2609.07612'
+  doi: 10.48550/arXiv.2609.07612
+  submitted: '2026-09-07'
+  submitted_at: '2026-09-07T15:19:33Z'
+  updated: '2026-09-07'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - quantum integrability
+- id: arxiv:2609.08987
+  title: Exact Phase-Space Rotation in the Trapped Quantum Calogero Model
+  authors:
+  - Akash Sarkar
+  url: https://arxiv.org/abs/2609.08987
+  arxiv_id: '2609.08987'
+  doi: 10.48550/arXiv.2609.08987
+  submitted: '2026-09-08'
+  submitted_at: '2026-09-08T16:29:07Z'
+  updated: '2026-09-08'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - Lax pair
+  - quantum integrability
+- id: arxiv:2609.09139
+  title: Large-scale dynamics of integrable quenches
+  authors:
+  - David X. Horvath
+  - Bruno Bertini
+  url: https://arxiv.org/abs/2609.09139
+  arxiv_id: '2609.09139'
+  doi: 10.48550/arXiv.2609.09139
+  submitted: '2026-09-08'
+  submitted_at: '2026-09-08T17:56:05Z'
+  updated: '2026-09-08'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - generalized hydrodynamics
+  - quantum integrability
+- id: arxiv:2609.09273
+  title: Constant Maps and Exponentially Small Sectors in ABJM Bethe Observables
+  authors:
+  - Seyed Morteza Hosseini
+  url: https://arxiv.org/abs/2609.09273
+  arxiv_id: '2609.09273'
+  doi: 10.48550/arXiv.2609.09273
+  submitted: '2026-09-08'
+  submitted_at: '2026-09-08T18:00:00Z'
+  updated: '2026-09-08'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - Bethe ansatz
+  - quantum integrability
+- id: arxiv:2609.10284
+  title: Jack Content Operators and the Deformed ${\mathcal W}_{1+\infty}$ Algebra
+  authors:
+  - Jean-Yves Thibon
+  url: https://arxiv.org/abs/2609.10284
+  arxiv_id: '2609.10284'
+  doi: 10.48550/arXiv.2609.10284
+  submitted: '2026-09-09'
+  submitted_at: '2026-09-09T15:02:58Z'
+  updated: '2026-09-09'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - quantum integrability
+- id: arxiv:2609.10358
+  title: Periodic ASEP and random walks on affine Hecke Algebra
+  authors:
+  - Alexey Bufetov
+  - Nimisha Pahuja
+  url: https://arxiv.org/abs/2609.10358
+  arxiv_id: '2609.10358'
+  doi: 10.48550/arXiv.2609.10358
+  submitted: '2026-09-09'
+  submitted_at: '2026-09-09T15:53:26Z'
+  updated: '2026-09-09'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - integrable probability
+- id: arxiv:2609.11415
+  title: Rare-History Transitions in Temporally Random Integrable Quantum Circuits
+  authors:
+  - Tingfei Li
+  - Jie Gu
+  url: https://arxiv.org/abs/2609.11415
+  arxiv_id: '2609.11415'
+  doi: 10.48550/arXiv.2609.11415
+  submitted: '2026-09-10'
+  submitted_at: '2026-09-10T11:46:36Z'
+  updated: '2026-09-10'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - Bethe ansatz
+  - generalized hydrodynamics
+- id: arxiv:2609.11469
+  title: A proof of the Hodge universality conjecture at nonzero dispersion
+  authors:
+  - Francisco Hernández Iglesias
+  url: https://arxiv.org/abs/2609.11469
+  arxiv_id: '2609.11469'
+  doi: 10.48550/arXiv.2609.11469
+  submitted: '2026-09-10'
+  submitted_at: '2026-09-10T12:37:58Z'
+  updated: '2026-09-10'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - Hamiltonian structure
+  - tau function
+- id: arxiv:2609.11543
+  title: Fourth-Order Fusion Asymptotics for $\mathrm{Sine}_\beta$ Correlation Functions
+  authors:
+  - Weiyang Fang
+  url: https://arxiv.org/abs/2609.11543
+  arxiv_id: '2609.11543'
+  doi: 10.48550/arXiv.2609.11543
+  submitted: '2026-09-10'
+  submitted_at: '2026-09-10T13:40:54Z'
+  updated: '2026-09-10'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  tags:
+  - integrable probability
+- id: arxiv:2207.09528
+  title: Dimers and Beauville integrable systems
+  authors:
+  - Terrence George
+  - Giovanni Inchiostro
+  url: https://doi.org/10.1007/s00029-026-01194-2
+  arxiv_id: '2207.09528'
+  doi: 10.1007/s00029-026-01194-2
+  submitted: '2022-07-19'
+  submitted_at: '2022-07-19T19:54:37Z'
+  updated: '2026-03-05'
+  version: v2
+  metadata_checked_at: '2026-09-12'
+  journal: Selecta Mathematica
+  year: 2026
+  published: '2026-09-08'
+  volume: '32'
+  issue: '4'
+  article_number: '94'
+  tags:
+  - Poisson structure
+  - spectral curve
+- id: arxiv:2509.06417
+  title: Inverse Scattering Problem for a Cubic String Having the Shape of a Step
+  authors:
+  - Vladimir A. Zolotarev
+  url: https://doi.org/10.1007/s11785-026-02036-x
+  arxiv_id: '2509.06417'
+  doi: 10.1007/s11785-026-02036-x
+  submitted: '2025-09-08'
+  submitted_at: '2025-09-08T08:13:15Z'
+  updated: '2025-09-08'
+  version: v1
+  metadata_checked_at: '2026-09-12'
+  journal: Complex Analysis and Operator Theory
+  year: 2026
+  published: '2026-09-09'
+  volume: '20'
+  issue: '7'
+  article_number: '177'
+  tags:
+  - inverse scattering
+  - inverse problem
+- id: arxiv:2411.18685
+  title: Solving the $4 \times 4$ quantum Yang-Baxter equation
+  authors:
+  - Marius de Leeuw
+  - Vera Posch
+  url: https://doi.org/10.21468/scipostphys.21.3.060
+  arxiv_id: '2411.18685'
+  doi: 10.21468/scipostphys.21.3.060
+  submitted: '2024-11-27'
+  submitted_at: '2024-11-27T19:00:01Z'
+  updated: '2026-06-24'
+  version: v6
+  metadata_checked_at: '2026-09-12'
+  journal: SciPost Physics
+  year: 2026
+  published: '2026-09-10'
+  volume: '21'
+  issue: '3'
+  article_number: '060'
+  tags:
+  - Yang--Baxter equation
+  - Lax pair
+- id: doi:10.1134/s1995080225607179
+  arxiv_id: null
+  title: Derivative NLS Type Zamolodchikov Tetrahedron Map on a Noncommutative Division Ring
+  doi: 10.1134/s1995080225607179
+  url: https://doi.org/10.1134/s1995080225607179
+  journal: Lobachevskii Journal of Mathematics
+  year: 2026
+  published: '2026-09-06'
+  metadata_checked_at: '2026-09-12'
+  authors:
+  - A. A. Kutuzova
+  volume: '47'
+  issue: '5'
+  pages: 2364-2373
+  tags:
+  - Yang--Baxter equation
+  - Darboux transformation

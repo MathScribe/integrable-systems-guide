@@ -5,36 +5,36 @@ schema_version: 1
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-09-07'
+    announced_through: '2026-09-11'
     last_status: complete
 
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-09-07'
+    announced_through: '2026-09-11'
     last_status: complete
 
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-09-07'
+    announced_through: '2026-09-11'
     last_status: complete
-    coverage_note: 'New-announcement coverage is complete. Replacement listings checked for 2026-09-07; 2026-09-04 replacement gap remains after API timeout.'
+    coverage_note: 'New announcements complete through 2026-09-11. Official replacement lists checked for 2026-09-11. Historical replacement coverage for 2026-09-04 and 2026-09-08 to 2026-09-10 remains incomplete: the date-filtered API missed known revisions and the sorted fallback timed out.'
 
   crossref:
     kind: ranked-title-backstop
-    title_query_through: '2026-09-07'
-    reconciliation_checked_at: '2026-09-03T16:46:46Z'
+    title_query_through: '2026-09-12'
+    reconciliation_checked_at: '2026-09-12T04:20:13.468414Z'
     reconciliation_cadence: weekly
-    reconciliation_note: '2026-09-07 exact-title/author pass was partial after TLS EOF errors; retain the last successful reconciliation timestamp. Ranked-title coverage is independently complete.'
+    reconciliation_note: '2026-09-12 exact-title/author checks completed for 16 new selections and the remaining 2609.04873 query from the prior weekly pass; no exact journal matches found.'
     overlap_days: 3
     last_status: complete
 
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
-    checked_at: '2026-08-16T22:47:15.222733Z'
-    last_status: partial
+    checked_at: '2026-09-12T04:12:51.095865Z'
+    last_status: complete
 
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-09-07T02:45:03.024480Z'
+    checked_at: '2026-09-12T04:21:05.660214Z'
     last_status: candidate-only

@@ -6,7 +6,7 @@
 
 候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。
 
-<div class="radar-week-navigation" data-default-week="2026-W37" data-total-count="211">
+<div class="radar-week-navigation" data-default-week="2026-W37" data-total-count="231">
   <button type="button" data-radar-action="older">← 较早一周</button>
   <span class="radar-week-current" aria-live="polite"></span>
   <button type="button" data-radar-action="newer">较新一周 →</button>
@@ -16,8 +16,8 @@
     <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">
     <span class="radar-search-count" aria-live="polite"></span>
   </div>
-  <span hidden data-radar-week-option="2026-W37" data-label="2026 年第 37 周 · 9 月 7–13 日" data-count="10"></span>
-  <span hidden data-radar-week-option="2026-W36" data-label="2026 年第 36 周 · 8 月 31 日–9 月 6 日" data-count="17"></span>
+  <span hidden data-radar-week-option="2026-W37" data-label="2026 年第 37 周 · 9 月 7–13 日" data-count="29"></span>
+  <span hidden data-radar-week-option="2026-W36" data-label="2026 年第 36 周 · 8 月 31 日–9 月 6 日" data-count="18"></span>
   <span hidden data-radar-week-option="2026-W35" data-label="2026 年第 35 周 · 8 月 24–30 日" data-count="13"></span>
   <span hidden data-radar-week-option="2026-W34" data-label="2026 年第 34 周 · 8 月 17–23 日" data-count="16"></span>
   <span hidden data-radar-week-option="2026-W33" data-label="2026 年第 33 周 · 8 月 10–16 日" data-count="17"></span>
@@ -31,7 +31,7 @@
   <span hidden data-radar-week-option="2026-W25" data-label="2026 年第 25 周 · 6 月 15–21 日" data-count="13"></span>
 </div>
 
-<p class="radar-week-overview" data-radar-screening-week="2026-W37" hidden><strong>本周概览：</strong>本周新增高维孤子散射、q-oper 量子—经典对偶、Yang–Baxter 纠缠界、Hubbard 计数统计、长程链隐藏对称、离散桁架几何及格点 NLS 概率方法修订。</p>
+<p class="radar-week-overview" data-radar-screening-week="2026-W37" hidden><strong>本周概览：</strong>本周涵盖 Hodge 普适性、dimer 与热带谱几何、量子 Calogero 相空间动力学、可积淬火与电流涨落、Sine-beta 融合渐近，以及 Yang–Baxter 分类与 Ising 界面关联。</p>
 
 <p class="radar-week-overview" data-radar-screening-week="2026-W36" hidden><strong>本周概览：</strong>本周覆盖 Calogero 微观输运与随机矩阵、Jack 软边缘极限、q-差分等单值变形、Sutherland 谱统计、变分结构约化、NLS 数值逆散射及 sine-Gordon 半轴问题。</p>
 
@@ -58,6 +58,519 @@
 <p class="radar-week-overview" data-radar-screening-week="2026-W25" hidden><strong>本周概览：</strong>向量峰子谱流、可积半离散化、量子自旋链、Painlevé 约化与有限维 Hamilton 系统。</p>
 
 <p id="month-2026-09" class="radar-month-label" data-radar-month-group="2026-09">2026 年 9 月</p>
+
+### Fourth-Order Fusion Asymptotics for $\mathrm{Sine}_\beta$ Correlation Functions {#paper-arxiv-2609-11543 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-11543" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-11">2026-09-11</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-10">2026-09-10</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.PR</code> <code>integrable probability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Fourth-Order Fusion Asymptotics for <span class="arithmatex">$\mathrm{Sine}_\beta$</span> Correlation Functions</p>
+  <p class="radar-paper-meta">Weiyang Fang · <a href="https://arxiv.org/abs/2609.11543">arXiv</a> · <a href="https://arxiv.org/pdf/2609.11543">PDF</a></p>
+  <p class="radar-paper-overview">论文把 Sine-beta 关联函数的全碰撞渐近推进到四阶。在 m beta 大于 3 时，四阶系数显式依赖中心化碰撞构型的二次与四次幂和。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者以有限维 Ward 恒等式求 Hua–Pickrell 环境的四阶逆矩，并证明相关矩收敛；对正则体点的一般酉系综，还证明有限粒子融合系数的四阶收敛和联合二阶极限。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Hua–Pickrell 精确统计与 Ward 关系提供所需矩公式，特征多项式导数界和酉系综核的普适性将这些公式转入碰撞渐近。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>结果覆盖完整的 m beta 大于 3 区域而不要求每个解析导数都有四阶矩，并明确区分无额外环境假设的酉结果与一般 beta 的条件性迁移准则。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### A proof of the Hodge universality conjecture at nonzero dispersion {#paper-arxiv-2609-11469 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-11469" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-11">2026-09-11</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-10">2026-09-10</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>nlin.SI</code> <code>Hamiltonian structure</code> <code>tau function</code></p>
+  <p class="radar-paper-title" aria-hidden="true">A proof of the Hodge universality conjecture at nonzero dispersion</p>
+  <p class="radar-paper-meta">Francisco Hernández Iglesias · <a href="https://arxiv.org/abs/2609.11469">arXiv</a> · <a href="https://arxiv.org/pdf/2609.11469">PDF</a></p>
+  <p class="radar-paper-overview">论文证明非零色散下的 Hodge 普适性猜想。广义标准形中的标量 tau-对称 Hamiltonian 形变层级，由首个 Hamilton 密度中的特定系数唯一决定。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>决定数据包括非零的 u_x 平方项系数，以及所有 g 不小于 2 的 u_xx 的 g 次幂项系数；由此将原层级确定到正规 Miura 变换，再结合 Hodge 类双分歧层级的既有构造得到普适性。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>tau 对称性、Hamiltonian 条件和正规 Miura 等价限制可允许的色散形变，使无限层级的分类归结到首个密度中的可识别参数。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作给出非零色散情形的唯一性与分类结论，关闭 Hodge 层级构造之外是否还存在其他同类标量形变这一问题中的相应缺口。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Rare-History Transitions in Temporally Random Integrable Quantum Circuits {#paper-arxiv-2609-11415 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-11415" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-11">2026-09-11</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-10">2026-09-10</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>nlin.SI</code> <code>Bethe ansatz</code> <code>generalized hydrodynamics</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Rare-History Transitions in Temporally Random Integrable Quantum Circuits</p>
+  <p class="radar-paper-meta">Tingfei Li, Jie Gu · <a href="https://arxiv.org/abs/2609.11415">arXiv</a> · <a href="https://arxiv.org/pdf/2609.11415">PDF</a></p>
+  <p class="radar-paper-overview">论文研究时间随机驱动的可积量子电路中的电流涨落。稀有驱动历史的概率代价与电流增益竞争，可产生主导历史类别之间的一阶切换及 cusp 终点。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>对固定层组成，热力学 Bethe ansatz dressing 与弹道涨落理论给出条件电流统计；对组成作退火大偏差收缩后预测相变结构，并分析有限时间如何将跃迁抹平。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>可交换性把完整驱动次序精确约化为层组成，TBA 则控制每一组成下的准粒子统计，使时间随机性成为可计算的历史空间变量。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作揭示时间无序如何在保持可积结构的同时产生稀有历史切换，并将条件统计、退火收缩与有限时间效应连接起来。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Periodic ASEP and random walks on affine Hecke Algebra {#paper-arxiv-2609-10358 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-10358" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-10">2026-09-10</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-09">2026-09-09</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.PR</code> <code>math.CO</code> <code>integrable probability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Periodic ASEP and random walks on affine Hecke Algebra</p>
+  <p class="radar-paper-meta">Alexey Bufetov, Nimisha Pahuja · <a href="https://arxiv.org/abs/2609.10358">arXiv</a> · <a href="https://arxiv.org/pdf/2609.10358">PDF</a></p>
+  <p class="radar-paper-overview">论文研究固定周期、阶跃初值的周期 ASEP 的长时间行为。作者证明极限形状定理，并求得单个第二类粒子的渐近分布。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>单物种结果将此前周期 TASEP 的结论扩展到允许双向跳跃的 ASEP；同一结果也描述仿射 Hecke 代数上相关随机游走的极限行为。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>仿射 Hecke 代数给出周期排斥过程的代数表示，把粒子演化和代数随机游走联系起来，用于组织极限形状与标记粒子的统计。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作从全非对称的周期过程推进到一般 ASEP，并同时处理宏观形状及第二类粒子的分布，而不仅是平均密度演化。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Jack Content Operators and the Deformed ${\mathcal W}_{1+\infty}$ Algebra {#paper-arxiv-2609-10284 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-10284" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-10">2026-09-10</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-09">2026-09-09</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.CO</code> <code>quantum integrability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Jack Content Operators and the Deformed <span class="arithmatex">${\mathcal W}_{1+\infty}$</span> Algebra</p>
+  <p class="radar-paper-meta">Jean-Yves Thibon · <a href="https://arxiv.org/abs/2609.10284">arXiv</a> · <a href="https://arxiv.org/pdf/2609.10284">PDF</a></p>
+  <p class="radar-paper-overview">论文在球面退化双仿射 Hecke 代数及其稳定极限中构造 Jack 内容算子。其谱由 Young 图的 alpha-content 幂和给出，并与变形 W 代数联系起来。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>从 Heckman–Polychronakos 积分出发，作者通过 Hall 伴随得到正确约定下的乘法算子，推导 Jack cut-and-join 与稳定三循环算子，并用变形 W 代数或仿射 Yangian 组织电流关系。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Calogero–Sutherland 型可交换积分控制 Jack 谱数据，代数中的升降算子和 Cartan 模将这些积分嵌入统一的电流代数结构。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作厘清 Jack 形变中两种对偶约定及 Virasoro 补全的区别，给出正确形变框架；所建议的整系数形式仍未作为已证结果宣称。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Constant Maps and Exponentially Small Sectors in ABJM Bethe Observables {#paper-arxiv-2609-09273 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-09273" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-10">2026-09-10</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-08">2026-09-08</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>hep-th</code> <code>Bethe ansatz</code> <code>quantum integrability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Constant Maps and Exponentially Small Sectors in ABJM Bethe Observables</p>
+  <p class="radar-paper-meta">Seyed Morteza Hosseini · <a href="https://arxiv.org/abs/2609.09273">arXiv</a> · <a href="https://arxiv.org/pdf/2609.09273">PDF</a></p>
+  <p class="radar-paper-overview">论文利用高精度 Bethe 真空数据重建 ABJM 有限秩扭曲指标中的常数映射项，并证明其收敛积分表达。指数小扇区还呈现数论结构，但全阶延拓部分保留为猜想。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>在明确限定的有限表达式类别内，作者结合符号回归和整数关系得到指标常数项，证明对正实 k 成立的积分公式，并提取任意亏格的 type-IIA 系数。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Bethe 真空提供精确有限秩数据；Hessian、有效 dilaton 与一圈因子携带超出壳上扭曲超势的信息，使同一谱框架能够区分两种观测量。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作从此前的超势推进到指标本身，并将若干数值常数变为解析积分；模形式给出的全阶补全及其奇点推论需以文中声明的延拓假设为前提。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Solving the $4 \times 4$ quantum Yang-Baxter equation {#paper-arxiv-2411-18685 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2411-18685" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-10">2026-09-10</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>cond-mat.stat-mech</code> <code>Yang--Baxter equation</code> <code>Lax pair</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Solving the <span class="arithmatex">$4 \times 4$</span> quantum Yang-Baxter equation</p>
+  <p class="radar-paper-meta">Marius de Leeuw, Vera Posch · <a href="https://arxiv.org/abs/2411.18685">arXiv</a> · <a href="https://arxiv.org/pdf/2411.18685">PDF</a> · <a href="https://doi.org/10.21468/scipostphys.21.3.060">SciPost Physics 21, 060 (2026)</a></p>
+  <p class="radar-paper-overview">论文补全四乘四解析 Yang–Baxter 方程解的分类，重点处理非正则解。作者还说明正则情形下 Lax 算子与 R-matrix 的对应关系，在非正则情形可能失效。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>工作列出剩余非正则解，并构造非正则 Lax 算子，其基本交换关系产生的正则 R-matrix 满足修正的 Yang–Baxter 方程，而非通常方程。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Yang–Baxter 相容性、基本交换关系及 Lax 表述共同决定局部量子可积数据；正则性是这些结构之间建立标准对应的重要条件。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>贡献包括非正则解析解的分类与对应失效机制，明确了从 Lax 交换关系推导通常 Yang–Baxter 性质的适用边界。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Large-scale dynamics of integrable quenches {#paper-arxiv-2609-09139 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-09139" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-08">2026-09-08</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>cond-mat.stat-mech</code> <code>quant-ph</code> <code>generalized hydrodynamics</code> <code>quantum integrability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Large-scale dynamics of integrable quenches</p>
+  <p class="radar-paper-meta">David X. Horvath, Bruno Bertini · <a href="https://arxiv.org/abs/2609.09139">arXiv</a> · <a href="https://arxiv.org/pdf/2609.09139">PDF</a></p>
+  <p class="radar-paper-overview">论文将弹道宏观涨落理论推广到可积量子淬火，推导守恒荷全计数统计的时间演化方程。对自由费米子和 Rule 54 模型，方程可显式求解。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者建立淬火问题所需的路径积分并作鞍点分析，得到控制计数统计的一组 PDE；已知精确结果得到恢复，Rule 54 的描述还覆盖完整弹道时空窗口。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>稳定准粒子的弹道传播和宏观涨落作用量共同组织非平衡计数统计，鞍点方程把可积动力学中的守恒荷演化转成可求解的大尺度问题。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作将此前限于准平衡环境的 BMFT 用于淬火，并在相互作用可积模型中补全了整个弹道区域的计数统计。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Exact Phase-Space Rotation in the Trapped Quantum Calogero Model {#paper-arxiv-2609-08987 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-08987" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-08">2026-09-08</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>cond-mat.other</code> <code>cond-mat.stat-mech</code> <code>Lax pair</code> <code>quantum integrability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Exact Phase-Space Rotation in the Trapped Quantum Calogero Model</p>
+  <p class="radar-paper-meta">Akash Sarkar · <a href="https://arxiv.org/abs/2609.08987">arXiv</a> · <a href="https://arxiv.org/pdf/2609.08987">PDF</a></p>
+  <p class="radar-paper-overview">论文把量子 Calogero 模型的微观相空间描述推广到外加谐振势。构造的 Wigner 算子期望服从精确旋转方程，对任意初态和全部相互作用阶数成立。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>相空间分布以谐振周期作刚性旋转，其各阶矩组成旋转多重态而非分别守恒；二次扇区唯一的守恒组合正比于受困 Hamiltonian，去掉外势后恢复自由传播方程。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>量子 Lax 对支持 Hermitian Wigner 算子的构造，外势将无陷阱情形的快度输运变成相空间旋转，并相应重组矩与守恒量。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>结果给出受困 Calogero 等时动力学的微观实现，补充了无外势输运理论中没有的旋转结构与守恒组合约束。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Exact spin form factors and correlations at a massive Kramers-Wannier interface {#paper-arxiv-2609-07612 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-07612" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-07">2026-09-07</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>hep-th</code> <code>cond-mat.stat-mech</code> <code>quantum integrability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Exact spin form factors and correlations at a massive Kramers-Wannier interface</p>
+  <p class="radar-paper-meta">Zoltan Bajnok, Yizhuang Liu · <a href="https://arxiv.org/abs/2609.07612">arXiv</a> · <a href="https://arxiv.org/pdf/2609.07612">PDF</a></p>
+  <p class="radar-paper-overview">论文求得标度 Ising 模型中连接有序相与无序相的有质量 Kramers–Wannier 界面的精确自旋形状因子和关联函数。界面关联具有因子化 Fredholm 行列式表达。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者结合非均匀自对偶 Ising 链和交换 Euclidean 时空后得到的混合热平均，计算有限体积 Neveu–Schwarz/Ramond 自旋矩阵元，并以缺陷 TCSA 和独立费米链计算检验。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>自由 Majorana 描述与 Toeplitz/Fredholm 方法把跨界面的谱数据和自旋矩阵元联系起来，使非均匀界面中的关联仍可精确求出。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作把精确形状因子及关联计算落实到连接不同相的有质量界面，并以两种独立计算检验界面谱与矩阵元。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### $q$-Oper Structures on a Formal Punctured Disc {#paper-arxiv-2609-07588 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-07588" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-07">2026-09-07</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.RT</code> <code>math.AG</code> <code>integrable geometry</code></p>
+  <p class="radar-paper-title" aria-hidden="true"><span class="arithmatex">$q$</span>-Oper Structures on a Formal Punctured Disc</p>
+  <p class="radar-paper-meta">Rudrendra Kashyap, Rahul Singh · <a href="https://arxiv.org/abs/2609.07588">arXiv</a> · <a href="https://arxiv.org/pdf/2609.07588">PDF</a></p>
+  <p class="radar-paper-overview">论文证明形式穿孔圆盘上 q-oper 结构的普遍存在性。对任意连通约化复代数群，只要 q 不是单位根，每个相应 q-联络都容许 q-oper 结构。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>结果统一覆盖一般约化群的形式局部 q-联络；定理限定在形式穿孔圆盘和非单位根参数下，不直接断言全局曲线上的同类存在性。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>q-oper 为差分联络附加满足横截条件的旗结构，是组织可积谱问题的代数几何对象；本文解决这种附加结构在形式局部是否存在的问题。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作把 q-oper 构造从特定联络的例子提升为一般存在性定理，明确了群、参数和局部几何所需的条件。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Möbius Invariant Dimers and Miquel Dynamics {#paper-arxiv-2609-07485 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-07485" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-07">2026-09-07</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math-ph</code> <code>math.DS</code> <code>integrable geometry</code> <code>integrable probability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Möbius Invariant Dimers and Miquel Dynamics</p>
+  <p class="radar-paper-meta">Niklas C. Affolter, Luis Mühlhoff · <a href="https://arxiv.org/abs/2609.07485">arXiv</a> · <a href="https://arxiv.org/pdf/2609.07485">PDF</a></p>
+  <p class="radar-paper-overview">论文建立圆图案与 dimer 模型之间的 Möbius 不变对应，并证明 Miquel 动力学保持配分函数。新的对应还具有与 t-embedding 的 Lorentz 提升相关的隐藏对称性。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者将原先的 Euclidean 不变性提升到 PO(3,1)，给出由 t-embedding 凸性保证面权为正的条件，并分析 PO(3,3) 对称及多个几何实例。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Miquel 动力学连接圆图案的几何演化与 dimer 配分函数不变量；面权的正性条件使这种对应也适用于概率模型。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作扩大了圆图案—dimer 对应的自然对称群，并把动力学不变量、权重正性与隐藏群作用放入同一构造。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Critical and subcritical fusion asymptotics for Sine$_\beta$ correlation functions {#paper-arxiv-2609-07239 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-07239" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-07">2026-09-07</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.PR</code> <code>integrable probability</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Critical and subcritical fusion asymptotics for Sine<span class="arithmatex">$_\beta$</span> correlation functions</p>
+  <p class="radar-paper-meta">Weiyang Fang · <a href="https://arxiv.org/abs/2609.07239">arXiv</a> · <a href="https://arxiv.org/pdf/2609.07239">PDF</a></p>
+  <p class="radar-paper-overview">论文求得 Sine-beta 关联函数在临界与次临界融合区域的首个修正项。次临界情形出现非整数幂，临界线上则出现二次幂乘对数的修正。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>对融合点数 m 与参数 beta 满足 m beta 不大于 1 的范围，作者给出显式系数及其符号；通过圆 Jacobi 权的几何插值建立绝对收敛的单粒子恒等式，并控制碰撞尺度极限。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>圆 Jacobi 系综和随机 zeta 期望将多点融合转为带电荷的精确统计表达，插值增加一个融合电荷并保留必要的可积矩余量。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作解决先前留下的临界、次临界修正猜想，与超临界二阶展开互补，揭示跨越矩阈值时修正阶数的改变。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Mirror Counts of Spectral Curves {#paper-arxiv-2609-06821 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-06821" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-06">2026-09-06</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.SG</code> <code>math.AG</code> <code>spectral curve</code> <code>integrable geometry</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Mirror Counts of Spectral Curves</p>
+  <p class="radar-paper-meta">Tom Graber, Mingyuan Hu, Eric Zaslow · <a href="https://arxiv.org/abs/2609.06821">arXiv</a> · <a href="https://arxiv.org/pdf/2609.06821">PDF</a></p>
+  <p class="radar-paper-overview">论文把 toric 曲面上固定边界交点的有理结点曲线计数，联系到可积系统镜像一侧的构造性层计数。作者定义对偶计数问题并证明两侧计数相等。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>相对 Jacobian 构成的可积系统被解释为二维环面上具有指定微支撑的层模空间的镜像；工作通过类 ruling 数据实现计数，并比较热带与对数 Gromov–Witten 方法的例子。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>谱曲线及其 Jacobian 组织可积纤维结构，镜像对应将曲线侧的数据转到 Legendrian 链环控制的层空间，使几何计数拥有另一种可计算表达。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>本文证明的是有理曲线计数的等价性；ruling 分层恢复 Block–Göttsche 精细不变量及更高亏格信息的联系仍作为猜想提出。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Tropicalization of Fock&#x27;s inverse spectral transform {#paper-arxiv-2609-06241 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-06241" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-05">2026-09-05</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.AG</code> <code>math-ph</code> <code>spectral curve</code> <code>integrable geometry</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Tropicalization of Fock&#x27;s inverse spectral transform</p>
+  <p class="radar-paper-meta">Terrence George · <a href="https://arxiv.org/abs/2609.06241">arXiv</a> · <a href="https://arxiv.org/pdf/2609.06241">PDF</a></p>
+  <p class="radar-paper-overview">论文研究 Fock 逆谱变换在 Harnack 谱曲线退化时的热带极限。作者证明逆谱变换与热带化相容，并得到热带版本的 Fay 三割线恒等式。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>工作逐项分析 Fock 公式中经典几何对象的首阶渐近，证明其由对应的热带数据决定，从而在热带谱数据上构造逆谱映射。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>dimer 谱变换为 cluster 可积系统提供作用角坐标；逆变换的退化分析说明这些坐标如何在谱曲线变成结点曲线时转入热带几何。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作将显式逆谱公式与热带退化建立可交换的联系，同时把支撑经典谱构造的 Fay 恒等式带入热带框架。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### On Bäcklund transformations preserving the Darboux integrability of hyperbolic equations {#paper-arxiv-2609-06217 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-06217" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-05">2026-09-05</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Bäcklund transformation</code> <code>integrable geometry</code></p>
+  <p class="radar-paper-title" aria-hidden="true">On Bäcklund transformations preserving the Darboux integrability of hyperbolic equations</p>
+  <p class="radar-paper-meta">Sergey Ya. Startsev · <a href="https://arxiv.org/abs/2609.06217">arXiv</a> · <a href="https://arxiv.org/pdf/2609.06217">PDF</a></p>
+  <p class="radar-paper-overview">论文证明两类 Bäcklund 变换保持标量双曲方程的 Darboux 可积性，并据此检查已有方程分类的完整性。进一步构造的可积方程族由三个二元任意函数参数化。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者将变换作用于已有 Darboux 可积方程表，恢复一个不在原表内但已知的方程，再以此构造任意函数族。文中对该族的新颖性保留审慎表述。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Bäcklund 关系将一个方程的解映射到另一个方程，保持 Darboux 可积性的定理使这种映射同时成为产生可积方程和检验分类遗漏的工具。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>贡献包括可积性保持判据与任意函数参数化构造，超出仅为单个方程写出一次变换或少数显式解的范围。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### The topology of tridiagonal isospectral sets {#paper-arxiv-2609-05733 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-05733" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 新预印本 · arXiv 提交日期 <time datetime="2026-09-04">2026-09-04</time>（UTC）</p>
+  <p class="radar-paper-tags"><code>math.DG</code> <code>math.AT</code> <code>integrable geometry</code></p>
+  <p class="radar-paper-title" aria-hidden="true">The topology of tridiagonal isospectral sets</p>
+  <p class="radar-paper-meta">David Martínez Torres · <a href="https://arxiv.org/abs/2609.05733">arXiv</a> · <a href="https://arxiv.org/pdf/2609.05733">PDF</a></p>
+  <p class="radar-paper-overview">论文刻画具有重特征值的实对称三对角矩阵等谱集合的拓扑。该集合由干净相交的子流形组成，具有可由组合数据计算的 Betti 数，并且是非球面的。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者将单谱情形的结果推广到任意谱，证明整系数同调无挠，Betti 数由谱对应的多重集排列上升数给出，并将构造扩展到分裂实半单 Lie 代数。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>Toda 向量场及其 Lyapunov 函数控制等谱集合上的胞腔分解，把可积流的几何转化为拓扑计算，而重谱引起的子流形交叠需在分解中保留。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作处理等谱集合不再光滑时的拓扑结构，使原先依赖单特征值假设的同调与同伦描述适用于退化谱。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Inverse Scattering Problem for a Cubic String Having the Shape of a Step {#paper-arxiv-2509-06417 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2509-06417" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-09">2026-09-09</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>math.CA</code> <code>inverse scattering</code> <code>inverse problem</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Inverse Scattering Problem for a Cubic String Having the Shape of a Step</p>
+  <p class="radar-paper-meta">Vladimir A. Zolotarev · <a href="https://arxiv.org/abs/2509.06417">arXiv</a> · <a href="https://arxiv.org/pdf/2509.06417">PDF</a> · <a href="https://doi.org/10.1007/s11785-026-02036-x">Complex Analysis and Operator Theory 20, 177 (2026)</a></p>
+  <p class="radar-paper-overview">论文研究阶跃形 cubic string 的逆散射问题，区分从正无穷和负无穷入射的两套对偶散射描述。两者都可通过线性奇异方程组实现势的唯一重建。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者分别建立直接问题与对偶问题的主奇异方程组，并证明如何由其解恢复势，从而处理两端不同背景下的散射数据与重建。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>三阶谱问题的正、逆散射关系是整个重建的核心；将左右入射分开处理，使阶跃背景的方向差异保留在线性奇异方程中。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作为阶跃 cubic string 给出成对的散射框架及明确的唯一恢复路径，将背景不对称纳入逆问题的构造。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Dimers and Beauville integrable systems {#paper-arxiv-2207-09528 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2207-09528" data-radar-week="2026-W37" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-08">2026-09-08</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>nlin.SI</code> <code>math.AG</code> <code>Poisson structure</code> <code>spectral curve</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Dimers and Beauville integrable systems</p>
+  <p class="radar-paper-meta">Terrence George, Giovanni Inchiostro · <a href="https://arxiv.org/abs/2207.09528">arXiv</a> · <a href="https://arxiv.org/pdf/2207.09528">PDF</a> · <a href="https://doi.org/10.1007/s00029-026-01194-2">Selecta Mathematica 32, 94 (2026)</a></p>
+  <p class="radar-paper-overview">论文证明标准三角形 Newton 多边形对应的 dimer cluster 系统与 Beauville 系统在谱变换下双有理等价。关键结论是谱变换同时匹配两侧的 Poisson 结构。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>对 toric 曲面为复射影平面的情形，Hamiltonian 的对应由构造给出；作者进一步证明 Poisson 相容性，从而将相空间的双有理映射提升为可积系统的双有理同构。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>dimer 模型提供 cluster Poisson 数据，Beauville 系统提供谱曲线及 Jacobian 的几何描述，谱变换把二者的守恒量与括号结构联系起来。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作补足仅匹配 Hamiltonian 尚不能保证的 Poisson 层面条件，进而说明该类 Beauville 可积系统容许 cluster 代数结构。</p>
+      </section>
+    </div>
+  </details>
+</article>
 
 ### On the growth of operator entanglement in brickwork circuits with Yang--Baxter gates {#paper-arxiv-2609-05121 .radar-search-heading}
 
@@ -324,6 +837,33 @@
       <section>
         <h4>创新</h4>
         <p>相比 v2 的匹配渐近及复兴展开讨论，v3 增加 killed Cauchy walk、退出分布与双边界更新分析，并把非微扰部分明确限定为候选尺度。</p>
+      </section>
+    </div>
+  </details>
+</article>
+
+### Derivative NLS Type Zamolodchikov Tetrahedron Map on a Noncommutative Division Ring {#paper-doi-10-1134-s1995080225607179 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1134-s1995080225607179" data-radar-week="2026-W36" data-radar-month="2026-09">
+  <p class="radar-paper-date"><time datetime="2026-09-06">2026-09-06</time> · 正式发表</p>
+  <p class="radar-paper-tags"><code>Yang--Baxter equation</code> <code>Darboux transformation</code></p>
+  <p class="radar-paper-title" aria-hidden="true">Derivative NLS Type Zamolodchikov Tetrahedron Map on a Noncommutative Division Ring</p>
+  <p class="radar-paper-meta">A. A. Kutuzova · <a href="https://doi.org/10.1134/s1995080225607179">Lobachevskii Journal of Mathematics 47, 2364-2373 (2026)</a></p>
+  <p class="radar-paper-overview">论文在非交换除环上构造 DNLS 型 Zamolodchikov 四面体映射。该映射来自非交换 Darboux 矩阵的局部 Yang–Baxter 关系。</p>
+  <details class="radar-paper-details">
+    <summary>展开研究内容与创新</summary>
+    <div class="radar-paper-detail-grid">
+      <section>
+        <h4>研究问题与主要结果</h4>
+        <p>作者为导数非线性 Schrödinger 方程的非交换 Darboux 数据建立映射，并证明它满足集合论的四面体方程，保留非交换乘法次序对相容性的影响。</p>
+      </section>
+      <section>
+        <h4>可积结构与方法</h4>
+        <p>局部 Yang–Baxter 因子化联系 Darboux 矩阵与离散映射，四面体方程则表达更高维组合过程的相容性。</p>
+      </section>
+      <section>
+        <h4>创新</h4>
+        <p>工作将 DNLS 来源的离散相容结构实现于一般非交换除环，得到一个经过四面体方程验证的非交换构造。</p>
       </section>
     </div>
   </details>
@@ -5093,7 +5633,7 @@
   <p class="radar-paper-date"><time datetime="2026-06-25">2026-06-25</time> · 新预印本</p>
   <p class="radar-paper-tags"><code>nlin.SI</code> <code>math-ph</code> <code>Yang--Baxter equation</code> <code>Hamiltonian structure</code></p>
   <p class="radar-paper-title" aria-hidden="true">Symmetries of the Generalized Yang--Baxter Equations</p>
-  <p class="radar-paper-meta">Pramod Padmanabhan, Somnath Maity, Akash Sinha, Vladimir Korepin · <a href="https://arxiv.org/abs/2606.26510">arXiv</a> · <a href="https://arxiv.org/pdf/2606.26510">PDF</a></p>
+  <p class="radar-paper-meta">Pramod Padmanabhan, Somnath Maity, Akash Sinha, Vladimir Korepin · <a href="https://arxiv.org/abs/2606.26510">arXiv</a> · <a href="https://arxiv.org/pdf/2606.26510">PDF</a> · <a href="https://doi.org/10.46298/ocnmp.18633">Open Communications in Nonlinear Mathematical Physics Special Issue in honour of Jarmo Hietarinta, 18633 (2026)</a></p>
   <p class="radar-paper-overview">论文系统研究 generalized Yang--Baxter equations 的对称性与等价变换。结果说明不同方程和解族如何通过群作用组织，并为构造相应的 <span class="arithmatex">\(R\)</span>-matrix 与可积 Hamiltonian 提供结构约束。</p>
   <details class="radar-paper-details">
     <summary>展开研究内容与创新</summary>
