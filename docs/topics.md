@@ -1,6 +1,12 @@
 # Core topics / 核心主题
 
-本页只列出当前关注范围。等某一主题积累了足够论文、笔记或计算内容后，再拆分为独立页面。
+本页列出当前关注范围。下面的入口直接打开首页相应的论文筛选结果，原有方法、模型和研究问题保留在后文。
+
+## Browse papers / 按主题浏览
+
+- [反散射](./index.md?topic=inverse%20scattering) · [Riemann–Hilbert 方法](./index.md?topic=Riemann--Hilbert%20problem) · [非线性最速下降](./index.md?topic=nonlinear%20steepest%20descent)
+- [Darboux 变换](./index.md?topic=Darboux%20transformation) · [有限带](./index.md?topic=finite-gap) · [孤子气体](./index.md?topic=soliton%20gas)
+- [Painlevé](./index.md?topic=Painlev%C3%A9) · [谱曲线](./index.md?topic=spectral%20curve) · [全部论文](index.md)
 
 ## Methods / 方法
 

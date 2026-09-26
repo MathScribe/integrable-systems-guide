@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Render the cumulative research-radar homepage."""
+"""Render the radar homepage and supporting pages."""
 
 from __future__ import annotations
 
 import argparse
 import html
+import json
 import re
 from collections import defaultdict
 from datetime import date
@@ -114,7 +115,7 @@ def validate_frontier(frontier: dict[str, Any], papers: dict[str, dict[str, Any]
     return entries
 
 
-def source_links_html(paper: dict[str, Any]) -> str:
+def source_links_html(paper: dict[str, Any], *, new_tab: bool = False) -> str:
     links: list[str] = []
     arxiv_id = paper.get("arxiv_id")
     if arxiv_id:
@@ -141,7 +142,10 @@ def source_links_html(paper: dict[str, Any]) -> str:
 
     if not links:
         links.append(f'<a href="{html.escape(str(paper["url"]), quote=True)}">来源</a>')
-    return " · ".join(links)
+    result = " · ".join(links)
+    if new_tab:
+        result = result.replace('<a href=', '<a target="_blank" rel="noopener noreferrer" href=')
+    return result
 
 
 def render_html_tags(entry: dict[str, Any]) -> str:
@@ -177,6 +181,7 @@ def short_date_range(value: str) -> str:
 
 def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
     authors = ", ".join(paper["authors"])
+    short_authors = authors if len(paper["authors"]) <= 3 else ", ".join(paper["authors"][:2]) + ", et al."
     signal_label = SIGNAL_LABELS[entry["signal_type"]]
     tags = render_html_tags(entry)
     tag_paragraph = f'  <p class="radar-paper-tags">{tags}</p>\n' if tags else ""
@@ -202,20 +207,30 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
             f' · arXiv 修订日期 <time datetime="{html.escape(str(paper["updated"]), quote=True)}">'
             f'{html.escape(str(paper["updated"]))}</time>（UTC）'
         )
+    tags_data = html.escape(json.dumps(entry.get("structure_tags", []), ensure_ascii=False), quote=True)
+    date_note = f'    <p class="radar-source-date">{source_date_note.removeprefix(" · ")}</p>\n' if source_date_note else ""
     return (
         f'### {html.escape(str(paper["title"]))} {{#{anchor} .radar-search-heading}}\n\n'
         f'<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" '
         f'data-radar-anchor="{anchor}" '
         f'data-radar-week="{html.escape(week_id, quote=True)}" '
-        f'data-radar-month="{html.escape(month_id, quote=True)}">\n'
-        f'  <p class="radar-paper-date"><time datetime="{html.escape(entry["signal_date"], quote=True)}">'
-        f'{html.escape(entry["signal_date"])}</time> · {html.escape(signal_label)}{source_date_note}</p>\n'
-        f"{tag_paragraph}"
-        f'  <p class="radar-paper-title" aria-hidden="true">{render_rich_text(paper["title"])}</p>\n'
-        f'  <p class="radar-paper-meta">{html.escape(authors)} · {source_links_html(paper)}</p>\n'
-        f'  <p class="radar-paper-overview">{render_rich_text(entry["summary"])}</p>\n'
+        f'data-radar-month="{html.escape(month_id, quote=True)}" '
+        f'data-radar-date="{entry["signal_date"]}" data-radar-tags="{tags_data}">\n'
         '  <details class="radar-paper-details">\n'
-        '    <summary>展开研究内容与创新</summary>\n'
+        '    <summary class="radar-row-summary">\n'
+        f'      <span class="radar-row-heading"><span class="radar-paper-title">{render_rich_text(paper["title"])}</span>'
+        '<span class="radar-expand-icon" aria-hidden="true">⌄</span></span>\n'
+        '      <span class="radar-row-meta">'
+        f'<span class="radar-row-authors" title="{html.escape(authors, quote=True)}">{html.escape(short_authors)}</span>'
+        f'<span class="radar-row-sources">{source_links_html(paper, new_tab=True)}</span>'
+        f'<time datetime="{entry["signal_date"]}">{entry["signal_date"]}</time></span>\n'
+        '    </summary>\n'
+        '    <div class="radar-expanded-content">\n'
+        f'    <p class="radar-paper-meta">{html.escape(authors)}</p>\n'
+        f'    <p class="radar-paper-overview">{render_rich_text(entry["summary"])}</p>\n'
+        f"{tag_paragraph}"
+        f'    <p class="radar-source-date">{html.escape(signal_label)} · {entry["signal_date"]}</p>\n'
+        f"{date_note}"
         '    <div class="radar-paper-detail-grid">\n'
         '      <section>\n'
         '        <h4>研究问题与主要结果</h4>\n'
@@ -229,6 +244,8 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
         '        <h4>创新</h4>\n'
         f'        <p>{render_rich_text(entry["innovation"])}</p>\n'
         '      </section>\n'
+        '    </div>\n'
+        f'    <a class="radar-permalink" href="#{anchor}">本文固定链接 ↗</a>\n'
         '    </div>\n'
         '  </details>\n'
         '</article>'
@@ -282,27 +299,34 @@ def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]
         for week_id in week_ids
     )
     lines = [
-        "# 可积系统研究雷达",
-        "",
-        "这里精选近期可积系统及相关数学物理方向的新论文，重点呈现值得关注的新结构、新方法和新结果。",
-        "",
-        "论文按首次公开、重大修订或正式发表日期排序。每条包括简要概览和可展开说明；内容由自动流程整理，数学结论请以原论文为准。",
-        "",
-        "候选来源：[arXiv nlin.SI](https://arxiv.org/list/nlin.SI/recent) · [arXiv nlin.PS](https://arxiv.org/list/nlin.PS/recent)，并通过跨分类检索、Crossref、期刊 online-first 页面和出版商记录补充与核验。",
-        "",
-        f'<div class="radar-week-navigation" data-default-week="{html.escape(week_ids[0], quote=True)}" '
-        f'data-total-count="{len(entries)}">',
-        '  <button type="button" data-radar-action="older">← 较早一周</button>',
-        '  <span class="radar-week-current" aria-live="polite"></span>',
-        '  <button type="button" data-radar-action="newer">较新一周 →</button>',
-        '  <button type="button" class="radar-show-all" data-radar-action="all">查看全部</button>',
-        '  <div class="radar-local-search" role="search">',
-        '    <label for="radar-paper-search">搜索论文</label>',
-        '    <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">',
-        '    <span class="radar-search-count" aria-live="polite"></span>',
+        '---\ntitle: 可积系统研究雷达\nhide:\n  - toc\n---\n',
+        '<header class="radar-hero">',
+        '  <p class="radar-eyebrow">INTEGRABLE SYSTEMS <span>RESEARCH RADAR</span></p>',
+        '  <h1 id="research-radar">可积系统研究雷达<span class="radar-title-dot">.</span></h1>',
+        '  <p class="radar-hero-intro">这里精选近期可积系统的研究进展，关注具体问题，也寻找新的研究方向。</p>',
+        '  <div class="radar-hero-bottom">',
+        f'    <p class="radar-collection-size">精选论文 · 按公开日期倒序</p>',
+        '    <nav class="radar-hero-links" aria-label="探索网站"><a href="topics/">研究主题 <span>↗</span></a><a href="group-work/">课题组论文 <span>↗</span></a></nav>',
         '  </div>',
+        '</header>',
+        "",
+        '<div class="radar-week-navigation" data-default-period="all" '
+        f'data-total-count="{len(entries)}">',
+        '  <div class="radar-browse-heading"><h2>论文浏览</h2><span class="radar-search-count" role="status" aria-live="polite"></span></div>',
+        '  <div class="radar-filter-bar">',
+        '  <div class="radar-local-search" role="search">',
+        '    <label class="radar-visually-hidden" for="radar-paper-search">搜索论文</label>',
+        '    <span class="radar-search-icon" aria-hidden="true">⌕</span>',
+        '    <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">',
+        '  </div>',
+        '    <select id="radar-time-filter" aria-label="时间范围"><option value="all">全部时间</option><option value="30">最近 30 天</option><option value="90">最近 3 个月</option><option value="custom">自定义日期</option></select>',
+        '    <select id="radar-topic-filter" aria-label="主题或方法"><option value="">全部主题 / 方法</option></select>',
+        '  </div>',
+        '  <div class="radar-custom-dates" hidden><label>从 <input type="date" id="radar-date-from"></label><label>至 <input type="date" id="radar-date-to"></label></div>',
+        '  <div class="radar-filter-footer"><span>点击题名展开说明 · 原文链接在新标签页打开</span><button type="button" data-radar-action="reset" hidden>清除筛选 ×</button></div>',
         f"{week_metadata}",
         "</div>",
+        '<p class="radar-empty-state" hidden>没有找到匹配论文。试试其他关键词，或清除筛选。</p>',
         "",
     ]
     for week_id in week_ids:
@@ -310,40 +334,100 @@ def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]
         if screening:
             lines.extend([screening, ""])
 
-    rendered_month: str | None = None
     for week_id in week_ids:
         for entry in grouped[week_id]:
-            month_id = entry["signal_date"][:7]
-            if month_id != rendered_month:
-                year, month = month_id.split("-", 1)
-                lines.extend(
-                    [
-                        f'<p id="month-{month_id}" class="radar-month-label" '
-                        f'data-radar-month-group="{month_id}">{int(year)} 年 {int(month)} 月</p>',
-                        "",
-                    ]
-                )
-                rendered_month = month_id
             lines.extend([render_frontier_entry(papers[entry["paper_id"]], entry), ""])
+    lines.extend([
+        '<nav class="radar-pagination" aria-label="论文分页"><span data-radar-page-info></span><div><button type="button" data-radar-action="previous" disabled>← 上一页</button><span data-radar-page></span><button type="button" data-radar-action="next">下一页 →</button></div></nav>',
+        "",
+    ])
     lines.extend(
         [
             "## 站内导航",
             "",
             "- [Core topics / 核心主题](topics.md)：当前关注的方程、方法与研究问题。",
             "- [Resources / 资源](resources.md)：论文检索、课程与专题资料。",
-            "- [Group work / 课题组相关](group-work.md)：公开笔记与研究链接。",
+            "- [Group work / 课题组相关](group-work.md)：查询相关论文与公开资料。",
             "- [About / 关于](about.md)：选稿原则、数据来源与 AI 使用说明。",
             "",
             "## 数据来源与筛选",
             "",
-            "论文通过 arXiv 分类与跨分类检索、Crossref、期刊 online-first 页面及出版商记录发现和核验。候选按 arXiv ID、DOI 和题名去重，再依据可积结构在研究中的实际作用和创新强度筛选；普通网页搜索只用于查漏，不作为最终依据。",
+            "论文来自 arXiv 与期刊记录，并通过 Crossref 等来源补漏。按研究相关性与具体进展筛选，不设置固定篇数。",
             "",
-            "日期沿用来源记录：arXiv 版本页保留 UTC 提交与修订日期，新预印本按官方 announcement date 排序和分周；期刊采用出版商标注的首次在线发表日期。每日检索按北京时间执行。",
+            "论文按首次公开、重大修订或正式发表日期排序。内容由自动流程整理，数学结论请以原论文为准。",
             "",
-            "每日执行检索，但不要求每天发布，也不设置固定篇数。更多信息见[数据与筛选方法](editorial-policy.md)。",
+            "[数据来源](sources.md) · [数据与筛选方法](editorial-policy.md)",
         ]
     )
     return "\n".join(lines).rstrip() + "\n"
+
+
+def render_group_work(group: dict[str, str]) -> str:
+    name = html.escape(group["name"], quote=True)
+    orcid = group["orcid"]
+    if not re.fullmatch(r"\d{4}-\d{4}-\d{4}-\d{3}[\dX]", orcid):
+        raise ValueError("group-work.orcid must be an ORCID identifier")
+    return f'''# Group work / 课题组相关
+
+查询凌黎明及合作者的可积系统相关论文。
+
+<section class="group-papers" data-group-papers data-author="{name}" data-orcid="{orcid}">
+  <div class="group-papers-header">
+    <div><p class="group-papers-eyebrow">PUBLICATIONS</p><h2>{html.escape(group["display_name"])}</h2></div>
+    <a class="group-profile-link" href="{html.escape(group["homepage"], quote=True)}" target="_blank" rel="noopener noreferrer">个人主页 ↗</a>
+  </div>
+  <div class="group-papers-controls">
+    <label class="group-search-label"><span class="group-visually-hidden">搜索论文标题、作者或期刊</span><input type="search" data-paper-query placeholder="搜索标题、作者或期刊" autocomplete="off"></label>
+    <label><span class="group-visually-hidden">发表年份</span><select data-paper-year aria-label="发表年份"><option value="">全部年份</option></select></label>
+  </div>
+  <div class="group-papers-toolbar"><span data-paper-status role="status" aria-live="polite">正在查询论文…</span><button type="button" data-paper-retry hidden>重新查询</button></div>
+  <div class="group-papers-results" data-paper-results aria-busy="true"></div>
+  <div class="group-papers-footer">
+    <span class="group-papers-source">来自 <a href="https://search.crossref.org/?q={name.replace(' ', '%20')}" target="_blank" rel="noopener noreferrer">Crossref</a> · 相关期刊论文</span>
+    <nav class="group-pagination" aria-label="论文翻页"><button type="button" data-paper-prev disabled aria-label="上一页">←</button><span data-paper-page></span><button type="button" data-paper-next disabled aria-label="下一页">→</button></nav>
+  </div>
+  <noscript><p>请启用 JavaScript 查询论文，或前往 <a href="https://search.crossref.org/?q={name.replace(' ', '%20')}">Crossref</a>。</p></noscript>
+</section>
+
+## 作者与文献入口
+
+保留不同数据库的检索入口，便于查看预印本、引用信息和更多相关工作。
+
+<div class="group-resource-links">
+  <a href="{html.escape(group["homepage"], quote=True)}"><strong>凌黎明 / Liming Ling</strong><span>华南理工大学数学学院主页 ↗</span></a>
+  <a href="https://mathscinet.ams.org/mathscinet/publications-search?query=Liming%20Ling&amp;page=1&amp;size=20&amp;sort=newest&amp;facets"><strong>MathSciNet</strong><span>论文与数学评论 ↗</span></a>
+  <a href="https://arxiv.org/search/?query=Liming+Ling&amp;searchtype=author"><strong>arXiv</strong><span>预印本与最新版本 ↗</span></a>
+  <a href="https://scholar.google.com/scholar?q=%22Liming+Ling%22"><strong>Google Scholar</strong><span>论文与引用检索 ↗</span></a>
+  <a href="https://www.semanticscholar.org/search?q=Liming%20Ling&amp;sort=relevance"><strong>Semantic Scholar</strong><span>文献关联与引用 ↗</span></a>
+</div>
+
+## Public notes / 公开笔记
+
+[killlakill/courseNotes](https://codeberg.org/killlakill/courseNotes) · 公开课程笔记与学习资料。
+
+## Reading projects / 读书项目
+
+后续在这里整理读书项目与相关笔记。
+'''
+
+
+def render_sources() -> str:
+    return '''# 数据来源
+
+本站从 arXiv 和期刊记录中发现论文，并依据研究问题、方法与结果筛选。
+
+| 来源 | 用途 |
+| --- | --- |
+| [arXiv](https://arxiv.org/) | 新预印本与修订，重点关注可积系统、非线性波及相关分析方法 |
+| [Crossref](https://www.crossref.org/) 与 [zbMATH](https://zbmath.org/) | 期刊论文检索、DOI 匹配与文献补漏 |
+| 出版商页面与原论文 | 核对正式发表信息、摘要与研究内容 |
+
+论文条目提供 arXiv 或 DOI 原文入口。日期区分预印本公告、首次在线发表和期刊卷期；卷期年份可能晚于首次上线年份。
+
+课题组页面的查询组件直接读取 Crossref，展示相关期刊论文；查询结果受其收录和作者信息完整度影响，不等同于首页精选。
+
+[筛选方法](editorial-policy.md) · [返回首页](index.md)
+'''
 
 
 def expected_outputs() -> dict[Path, str]:
@@ -353,7 +437,11 @@ def expected_outputs() -> dict[Path, str]:
     if not data.get("frontier"):
         raise ValueError("data/editions.yml requires frontier data")
 
-    return {HOME_PATH: render_frontier_home(data, papers)}
+    return {
+        HOME_PATH: render_frontier_home(data, papers),
+        ROOT / "docs" / "group-work.md": render_group_work(load_yaml(ROOT / "data" / "group-work.yml")),
+        ROOT / "docs" / "sources.md": render_sources(),
+    }
 
 
 def main() -> None:

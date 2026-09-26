@@ -182,7 +182,11 @@ For the current ISO week, create or update exactly one `frontier_weeks` record c
 - the current `selected` count;
 - source types actually checked and any material coverage limitation.
 
-The public homepage displays only the current week's short overview in weekly mode and hides weekly overviews in the cumulative view.
+The public homepage defaults to a compact cumulative list with 20 papers per page.
+Date, topic, and full-collection text search narrow this list; pagination never
+changes editorial selection. A selected ISO-week archive displays that week's
+short overview. Other views hide weekly overviews. Collapsed rows show only the
+title and bibliography; all four annotation fields remain available on expansion.
 
 ## Rendering and validation
 

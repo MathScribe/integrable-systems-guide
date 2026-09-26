@@ -68,7 +68,7 @@ def test_component_contract() -> None:
         "<h4>研究问题与主要结果</h4>",
         "<h4>可积结构与方法</h4>",
         "<h4>创新</h4>",
-        "展开研究内容与创新",
+        'class="radar-row-summary"',
         "2026-07-15",
         "nlin.PS",
         "Darboux transformation",
@@ -132,33 +132,38 @@ def test_component_contract() -> None:
     assert "Old paper" in home
     assert "## 站内导航" in home
     assert 'class="radar-week-navigation"' in home
-    assert 'data-radar-action="older"' in home
-    assert 'data-radar-action="newer"' in home
-    assert 'data-radar-action="all"' in home
+    assert 'data-radar-action="previous"' in home
+    assert 'data-radar-action="next"' in home
+    assert 'data-radar-action="reset"' in home
     assert 'id="radar-paper-search"' in home
     assert "搜索标题、作者、标签或内容" in home
     assert 'class="radar-week-overview" data-radar-screening-week="2026-W29" hidden' in home
     assert "<strong>本周概览：</strong>测试周。" in home
     assert home.index("radar-week-overview") < home.index("radar-paper-card")
-    assert 'data-default-week="2026-W29"' in home
+    assert 'data-default-period="all"' in home
     assert 'data-radar-week="2026-W29"' in home
     assert '.radar-search-heading}' in home
     assert 'data-radar-anchor="paper-' in home
-    assert 'data-radar-month-group="2026-07"' in home
-    assert "候选来源：" in home
+    assert 'data-radar-date="2026-07-15"' in home
+    assert "论文来自 arXiv 与期刊记录" in home
+    assert 'id="radar-time-filter"' in home
+    assert 'id="radar-topic-filter"' in home
+    assert 'target="_blank" rel="noopener noreferrer"' in home
+    assert card.index('</summary>') < card.index('class="radar-paper-overview"')
+    assert '<details class="radar-paper-details" open' not in card
     assert "## 数据来源与筛选" in home
     assert "Crossref" in home
-    assert "普通网页搜索只用于查漏" in home
+    assert "[数据来源](sources.md)" in home
     assert "[数据与筛选方法](editorial-policy.md)" in home
     assert home.index("## 数据来源与筛选") > home.index("## 站内导航")
     assert "Exactly Solvable and Integrable Systems" not in home
     assert "推荐于" not in home
 
     javascript = (ROOT / "docs" / "javascripts" / "radar.js").read_text(encoding="utf-8")
-    assert 'window.addEventListener("hashchange", activeHashHandler)' in javascript
-    assert 'document.addEventListener("click", activePaperLinkHandler)' in javascript
+    assert 'window.addEventListener("hashchange", onHashChange)' in javascript
+    assert 'window.addEventListener("popstate", onPopState)' in javascript
     assert "card.dataset.radarWeek" in javascript
-    assert 'card.scrollIntoView({ block: "start" })' in javascript
+    assert 'target.card.scrollIntoView({ block: "start" })' in javascript
 
     invalid = {**entry, "structure_tags": ["one", "two", "three"]}
     try:
@@ -230,6 +235,9 @@ def main() -> None:
     test_component_contract()
     test_enabled_frontier()
     test_bibliographic_date_and_version_validation()
+    group_page = render_radar.render_group_work(render_radar.load_yaml(ROOT / "data" / "group-work.yml"))
+    for retained in ("data-group-papers", "MathSciNet", "Google Scholar", "Semantic Scholar", "arxiv.org/search", "Public notes", "courseNotes", "Reading projects"):
+        assert retained in group_page, f"group page lost existing content: {retained}"
     print("compact radar schema and enabled frontier tests passed")
 
 
