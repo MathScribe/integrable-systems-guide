@@ -1,6 +1,12 @@
 # Public research-radar tags. Frontier entries may display at most two values
 # from this list. Keep standard terminology here instead of inventing labels
 # during daily curation.
+frontier_directions:
+  spectral: 散射与谱方法
+  waves: 非线性波与稳定性
+  asymptotics: 渐近与统计
+  structures: 可积结构
+
 frontier_structure_tags:
   - AKNS hierarchy
   - 2D Toda hierarchy

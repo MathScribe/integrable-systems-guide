@@ -151,6 +151,9 @@ For every selected paper, maintain in `frontier.entries`:
 - `week`;
 - up to two official arXiv categories when applicable;
 - at most two structure tags selected from `data/tags.yml` under `frontier_structure_tags`;
+- one or two `directions` selected from `frontier_directions` in the same file:
+  spectral, waves, asymptotics, structures. These are the four public filters;
+  specific equation and method names remain searchable metadata;
 - `summary`: a compact but intelligible overview for deciding whether to read;
 - `main_result`: 研究问题与主要结果;
 - `integrable_structure`: 可积结构与方法;
@@ -175,7 +178,7 @@ content change or weekly maintenance PR. Never create or restore a unified
 
 Do not use public contribution classes such as core/adjacent or structure advance. Do not add per-paper `自动整理` badges, BibTeX buttons, recommendation dates, title-fragment tags, or invented terminology.
 
-For the current ISO week, create or update exactly one `frontier_weeks` record containing:
+For internal accounting, create or update exactly one current ISO-week `frontier_weeks` record containing:
 
 - `id` and `date_range`;
 - one concise, non-repetitive weekly `summary`;
@@ -183,10 +186,18 @@ For the current ISO week, create or update exactly one `frontier_weeks` record c
 - source types actually checked and any material coverage limitation.
 
 The public homepage defaults to a compact cumulative list with 20 papers per page.
-Date, topic, and full-collection text search narrow this list; pagination never
-changes editorial selection. A selected ISO-week archive displays that week's
-short overview. Other views hide weekly overviews. Collapsed rows show only the
-title and bibliography; all four annotation fields remain available on expansion.
+Date, research direction, and full-collection text search narrow this list;
+pagination never changes editorial selection. No weekly archive or weekly overview
+is displayed. Time choices are all collected papers, last 30 days, last 3 months,
+and a custom interval defaulting to the earliest collected event through today.
+Show the actual collection's month span, without implying exhaustive coverage.
+Collapsed rows show only the
+title and bibliography. Expanded rows present the main finding, supporting detail,
+and methods/scope in a compact reading view, without repeating bibliography or
+displaying a separate innovation section. The four editorial fields remain in the
+authoritative data and local search index. An optional `reading_note` mapping with
+`lead`, `detail` and `method_scope` provides an edited reading view; preserve material
+assumptions and distinguish numerical evidence from theorems when condensing it.
 
 ## Rendering and validation
 

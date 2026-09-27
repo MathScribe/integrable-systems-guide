@@ -32,6 +32,7 @@ def sample_entry(paper_id: str = "arxiv:2607.13773") -> dict[str, object]:
         "week": "2026-W29",
         "arxiv_categories": ["nlin.PS", "nlin.SI"],
         "structure_tags": ["Darboux transformation", "topological vector potential"],
+        "directions": ["waves", "structures"],
         "summary": "论文系统构造平面波背景上的任意多峰多谷孤子族，并给出新的拓扑分析。",
         "main_result": "作者分类基本解形态，并构造任意 K-hump 与 M-valley 的混合结构。",
         "integrable_structure": "方法基于两分量 Fokas--Lenells 系统的 N-fold Darboux transformation。",
@@ -65,9 +66,9 @@ def test_component_contract() -> None:
     card = render_radar.render_frontier_entry(papers["arxiv:2607.13773"], entry)
 
     required_fragments = (
-        "<h4>研究问题与主要结果</h4>",
-        "<h4>可积结构与方法</h4>",
-        "<h4>创新</h4>",
+        'class="radar-reading-detail"',
+        'class="radar-reading-method"',
+        "方法与范围",
         'class="radar-row-summary"',
         "2026-07-15",
         "nlin.PS",
@@ -127,21 +128,26 @@ def test_component_contract() -> None:
         papers,
     )
     assert "这里精选近期" in home
-    assert "2026-W29" in home
+    assert "2026-W29" not in home
     assert "Multihump-Multivalley Soliton Families" in home
     assert "Old paper" in home
     assert "## 站内导航" in home
-    assert 'class="radar-week-navigation"' in home
+    assert 'class="radar-browse-controls"' in home
     assert 'data-radar-action="previous"' in home
     assert 'data-radar-action="next"' in home
     assert 'data-radar-action="reset"' in home
     assert 'id="radar-paper-search"' in home
-    assert "搜索标题、作者、标签或内容" in home
-    assert 'class="radar-week-overview" data-radar-screening-week="2026-W29" hidden' in home
-    assert "<strong>本周概览：</strong>测试周。" in home
-    assert home.index("radar-week-overview") < home.index("radar-paper-card")
+    assert "搜索论文、作者、方程或方法" in home
+    assert "radar-week-overview" not in home
+    assert "本周概览" not in home
+    assert "data-radar-week-option" not in home
+    assert 'data-earliest-date="2026-05-01"' in home
+    assert "当前收录：2026.05—2026.07" in home
+    assert "全部已收录" in home
+    assert 'value="spectral">散射与谱方法' in home
+    assert 'value="asymptotics">渐近与统计' in home
     assert 'data-default-period="all"' in home
-    assert 'data-radar-week="2026-W29"' in home
+    assert 'data-radar-directions=' in home
     assert '.radar-search-heading}' in home
     assert 'data-radar-anchor="paper-' in home
     assert 'data-radar-date="2026-07-15"' in home
@@ -151,6 +157,22 @@ def test_component_contract() -> None:
     assert 'target="_blank" rel="noopener noreferrer"' in home
     assert card.index('</summary>') < card.index('class="radar-paper-overview"')
     assert '<details class="radar-paper-details" open' not in card
+    assert '<h4>创新</h4>' not in card
+    assert 'data-radar-search=' in card
+    note_entry = {**entry, "reading_note": {
+        "lead": "主结论 < 带条件的结论", "detail": "结果细节", "method_scope": "仅在小数据下成立",
+    }}
+    render_radar.validate_frontier_entry(note_entry, papers)
+    note_card = render_radar.render_frontier_entry(papers[entry["paper_id"]], note_entry)
+    assert "主结论 &lt; 带条件的结论" in note_card
+    assert "仅在小数据下成立" in note_card
+    assert 'class="radar-paper-meta"' not in note_card
+    try:
+        render_radar.validate_frontier_entry({**entry, "reading_note": {"lead": "不完整"}}, papers)
+    except ValueError as exc:
+        assert "reading_note" in str(exc)
+    else:
+        raise AssertionError("an incomplete reading note should be rejected")
     assert "## 数据来源与筛选" in home
     assert "Crossref" in home
     assert "[数据来源](sources.md)" in home
@@ -162,7 +184,7 @@ def test_component_contract() -> None:
     javascript = (ROOT / "docs" / "javascripts" / "radar.js").read_text(encoding="utf-8")
     assert 'window.addEventListener("hashchange", onHashChange)' in javascript
     assert 'window.addEventListener("popstate", onPopState)' in javascript
-    assert "card.dataset.radarWeek" in javascript
+    assert "card.dataset.radarDirections" in javascript
     assert 'target.card.scrollIntoView({ block: "start" })' in javascript
 
     invalid = {**entry, "structure_tags": ["one", "two", "three"]}

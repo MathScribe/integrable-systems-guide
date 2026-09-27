@@ -67,8 +67,10 @@ def main() -> None:
         if not authors or any(str(author).strip() in PLACEHOLDER_AUTHORS for author in authors):
             raise ValueError(f"{entry['paper_id']} requires verified author metadata")
 
-        for field in PUBLIC_TEXT_FIELDS:
-            text = str(entry[field])
+        public_text = {field: entry[field] for field in PUBLIC_TEXT_FIELDS}
+        public_text.update({f"reading_note.{key}": value for key, value in entry.get("reading_note", {}).items()})
+        for field, value in public_text.items():
+            text = str(value)
             if "?" in text:
                 raise ValueError(f"{entry['paper_id']}.{field} contains possible encoding damage")
             for term in FORBIDDEN_PUBLIC_TERMS:

@@ -7,7 +7,7 @@ import argparse
 import html
 import json
 import re
-from collections import defaultdict
+from functools import lru_cache
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -36,6 +36,11 @@ def load_yaml(path: Path) -> Any:
 def paper_map() -> dict[str, dict[str, Any]]:
     papers = load_yaml(PAPERS_PATH)
     return {paper["id"]: paper for paper in papers}
+
+
+@lru_cache(maxsize=1)
+def research_directions() -> dict[str, str]:
+    return load_yaml(ROOT / "data" / "tags.yml")["frontier_directions"]
 
 
 def compact(text: str) -> str:
@@ -92,6 +97,22 @@ def validate_frontier_entry(entry: dict[str, Any], papers: dict[str, dict[str, A
     tags = entry.get("structure_tags", [])
     if len(tags) > 2:
         raise ValueError(f"{paper_id} has more than two displayed structure tags")
+
+    directions = entry.get("directions", [])
+    if not isinstance(directions, list) or not 1 <= len(directions) <= 2:
+        raise ValueError(f"{paper_id} requires one or two research directions")
+    if any(not isinstance(direction, str) or direction not in research_directions() for direction in directions):
+        raise ValueError(f"{paper_id} has invalid research directions")
+    if len(set(directions)) != len(directions):
+        raise ValueError(f"{paper_id} has duplicate research directions")
+
+    note = entry.get("reading_note")
+    if note is not None:
+        if not isinstance(note, dict) or any(
+            not isinstance(note.get(field), str) or not compact(note[field])
+            for field in ("lead", "detail", "method_scope")
+        ):
+            raise ValueError(f"{paper_id}.reading_note requires lead, detail and method_scope")
 
 
 def validate_frontier(frontier: dict[str, Any], papers: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
@@ -183,10 +204,12 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
     authors = ", ".join(paper["authors"])
     short_authors = authors if len(paper["authors"]) <= 3 else ", ".join(paper["authors"][:2]) + ", et al."
     signal_label = SIGNAL_LABELS[entry["signal_type"]]
-    tags = render_html_tags(entry)
-    tag_paragraph = f'  <p class="radar-paper-tags">{tags}</p>\n' if tags else ""
+    note = entry.get("reading_note") or {
+        "lead": entry["summary"],
+        "detail": entry["main_result"],
+        "method_scope": entry["integrable_structure"],
+    }
     anchor = f'paper-{html_id(entry["paper_id"])}'
-    week_id = frontier_week_id(entry)
     month_id = entry["signal_date"][:7]
     source_date_note = ""
     if (
@@ -208,44 +231,46 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
             f'{html.escape(str(paper["updated"]))}</time>（UTC）'
         )
     tags_data = html.escape(json.dumps(entry.get("structure_tags", []), ensure_ascii=False), quote=True)
-    date_note = f'    <p class="radar-source-date">{source_date_note.removeprefix(" · ")}</p>\n' if source_date_note else ""
+    directions_data = html.escape(json.dumps(entry.get("directions", [])), quote=True)
+    date_description = f'{signal_label} · {entry["signal_date"]}'
+    if source_date_note:
+        date_description += re.sub(r"<[^>]+>", "", source_date_note)
+    if paper.get("version"):
+        date_description += f' · {paper["version"]}'
+    date_description = html.escape(html.unescape(date_description), quote=True)
+    author_html = html.escape(authors)
+    if short_authors != authors:
+        author_html = (
+            f'<span class="radar-authors-short">{html.escape(short_authors)}</span>'
+            f'<span class="radar-authors-full">{html.escape(authors)}</span>'
+        )
+    # Keep the editorial record searchable even when the reading view is shorter.
+    search_text = html.escape(" ".join([
+        *entry.get("arxiv_categories", []), *entry.get("structure_tags", []),
+        *(str(entry[field]) for field in ("summary", "main_result", "integrable_structure", "innovation")),
+    ]), quote=True)
     return (
         f'### {html.escape(str(paper["title"]))} {{#{anchor} .radar-search-heading}}\n\n'
         f'<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" '
         f'data-radar-anchor="{anchor}" '
-        f'data-radar-week="{html.escape(week_id, quote=True)}" '
         f'data-radar-month="{html.escape(month_id, quote=True)}" '
-        f'data-radar-date="{entry["signal_date"]}" data-radar-tags="{tags_data}">\n'
+        f'data-radar-date="{entry["signal_date"]}" data-radar-tags="{tags_data}" '
+        f'data-radar-directions="{directions_data}" '
+        f'data-radar-search="{search_text}">\n'
         '  <details class="radar-paper-details">\n'
         '    <summary class="radar-row-summary">\n'
         f'      <span class="radar-row-heading"><span class="radar-paper-title">{render_rich_text(paper["title"])}</span>'
+        f'<a class="radar-permalink" href="#{anchor}" aria-label="此论文固定链接" title="此论文固定链接">#</a>'
         '<span class="radar-expand-icon" aria-hidden="true">⌄</span></span>\n'
         '      <span class="radar-row-meta">'
-        f'<span class="radar-row-authors" title="{html.escape(authors, quote=True)}">{html.escape(short_authors)}</span>'
+        f'<span class="radar-row-authors" title="{html.escape(authors, quote=True)}">{author_html}</span>'
         f'<span class="radar-row-sources">{source_links_html(paper, new_tab=True)}</span>'
-        f'<time datetime="{entry["signal_date"]}">{entry["signal_date"]}</time></span>\n'
+        f'<time datetime="{entry["signal_date"]}" title="{date_description}" aria-label="{date_description}">{entry["signal_date"]}</time></span>\n'
         '    </summary>\n'
         '    <div class="radar-expanded-content">\n'
-        f'    <p class="radar-paper-meta">{html.escape(authors)}</p>\n'
-        f'    <p class="radar-paper-overview">{render_rich_text(entry["summary"])}</p>\n'
-        f"{tag_paragraph}"
-        f'    <p class="radar-source-date">{html.escape(signal_label)} · {entry["signal_date"]}</p>\n'
-        f"{date_note}"
-        '    <div class="radar-paper-detail-grid">\n'
-        '      <section>\n'
-        '        <h4>研究问题与主要结果</h4>\n'
-        f'        <p>{render_rich_text(entry["main_result"])}</p>\n'
-        '      </section>\n'
-        '      <section>\n'
-        '        <h4>可积结构与方法</h4>\n'
-        f'        <p>{render_rich_text(entry["integrable_structure"])}</p>\n'
-        '      </section>\n'
-        '      <section>\n'
-        '        <h4>创新</h4>\n'
-        f'        <p>{render_rich_text(entry["innovation"])}</p>\n'
-        '      </section>\n'
-        '    </div>\n'
-        f'    <a class="radar-permalink" href="#{anchor}">本文固定链接 ↗</a>\n'
+        f'    <p class="radar-paper-overview"><strong>{render_rich_text(note["lead"])}</strong></p>\n'
+        f'    <p class="radar-reading-detail">{render_rich_text(note["detail"])}</p>\n'
+        f'    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>{render_rich_text(note["method_scope"])}</p>\n'
         '    </div>\n'
         '  </details>\n'
         '</article>'
@@ -268,35 +293,15 @@ def all_frontier_entries(frontier: dict[str, Any], papers: dict[str, dict[str, A
     )
 
 
-def render_screening_details(week: dict[str, Any]) -> str:
-    screening = week.get("screening", {})
-    if not screening:
-        return ""
-    paragraphs: list[str] = []
-    if week.get("summary"):
-        paragraphs.append(compact(week["summary"]))
-    body = " ".join(render_rich_text(paragraph) for paragraph in paragraphs)
-    week_id = str(week["id"])
-    return (
-        f'<p class="radar-week-overview" data-radar-screening-week="{html.escape(week_id, quote=True)}" hidden>'
-        f'<strong>本周概览：</strong>{body}</p>'
-    )
-
-
 def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]) -> str:
     frontier = data["frontier"]
     entries = all_frontier_entries(frontier, papers)
-    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for entry in entries:
-        grouped[frontier_week_id(entry)].append(entry)
-
-    week_map = {week["id"]: week for week in data.get("frontier_weeks", data.get("weeks", []))}
-    week_ids = sorted(grouped, reverse=True)
-    week_metadata = "\n".join(
-        f'  <span hidden data-radar-week-option="{html.escape(week_id, quote=True)}" '
-        f'data-label="{html.escape(week_id.replace("-W", " 年第 ") + " 周 · " + short_date_range(week_map.get(week_id, {}).get("date_range", week_id)), quote=True)}" '
-        f'data-count="{len(grouped[week_id])}"></span>'
-        for week_id in week_ids
+    earliest = min(entry["signal_date"] for entry in entries)
+    latest = max(entry["signal_date"] for entry in entries)
+    coverage = f'{earliest[:7].replace("-", ".")}—{latest[:7].replace("-", ".")}'
+    direction_options = ''.join(
+        f'<option value="{html.escape(key, quote=True)}">{html.escape(label)}</option>'
+        for key, label in research_directions().items()
     )
     lines = [
         '---\ntitle: 可积系统研究雷达\nhide:\n  - toc\n---\n',
@@ -310,33 +315,26 @@ def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]
         '  </div>',
         '</header>',
         "",
-        '<div class="radar-week-navigation" data-default-period="all" '
-        f'data-total-count="{len(entries)}">',
+        '<div class="radar-browse-controls" data-default-period="all" '
+        f'data-total-count="{len(entries)}" data-earliest-date="{earliest}">',
         '  <div class="radar-browse-heading"><h2>论文浏览</h2><span class="radar-search-count" role="status" aria-live="polite"></span></div>',
         '  <div class="radar-filter-bar">',
         '  <div class="radar-local-search" role="search">',
         '    <label class="radar-visually-hidden" for="radar-paper-search">搜索论文</label>',
         '    <span class="radar-search-icon" aria-hidden="true">⌕</span>',
-        '    <input id="radar-paper-search" type="search" placeholder="搜索标题、作者、标签或内容" autocomplete="off">',
+        '    <input id="radar-paper-search" type="search" placeholder="搜索论文、作者、方程或方法" autocomplete="off">',
         '  </div>',
-        '    <select id="radar-time-filter" aria-label="时间范围"><option value="all">全部时间</option><option value="30">最近 30 天</option><option value="90">最近 3 个月</option><option value="custom">自定义日期</option></select>',
-        '    <select id="radar-topic-filter" aria-label="主题或方法"><option value="">全部主题 / 方法</option></select>',
+        '    <select id="radar-time-filter" aria-label="时间范围"><option value="all">全部已收录</option><option value="30">最近 30 天</option><option value="90">最近 3 个月</option><option value="custom">自定义时间</option></select>',
+        f'    <select id="radar-topic-filter" aria-label="研究方向"><option value="">全部方向</option>{direction_options}</select>',
         '  </div>',
-        '  <div class="radar-custom-dates" hidden><label>从 <input type="date" id="radar-date-from"></label><label>至 <input type="date" id="radar-date-to"></label></div>',
-        '  <div class="radar-filter-footer"><span>点击题名展开说明 · 原文链接在新标签页打开</span><button type="button" data-radar-action="reset" hidden>清除筛选 ×</button></div>',
-        f"{week_metadata}",
+        f'  <div class="radar-custom-dates" hidden><label>从 <input type="date" id="radar-date-from" value="{earliest}"></label><label>至 <input type="date" id="radar-date-to"></label></div>',
+        f'  <div class="radar-filter-footer"><span>当前收录：{coverage}</span><button type="button" data-radar-action="reset" hidden>清除筛选 ×</button></div>',
         "</div>",
         '<p class="radar-empty-state" hidden>没有找到匹配论文。试试其他关键词，或清除筛选。</p>',
         "",
     ]
-    for week_id in week_ids:
-        screening = render_screening_details(week_map.get(week_id, {"id": week_id}))
-        if screening:
-            lines.extend([screening, ""])
-
-    for week_id in week_ids:
-        for entry in grouped[week_id]:
-            lines.extend([render_frontier_entry(papers[entry["paper_id"]], entry), ""])
+    for entry in entries:
+        lines.extend([render_frontier_entry(papers[entry["paper_id"]], entry), ""])
     lines.extend([
         '<nav class="radar-pagination" aria-label="论文分页"><span data-radar-page-info></span><div><button type="button" data-radar-action="previous" disabled>← 上一页</button><span data-radar-page></span><button type="button" data-radar-action="next">下一页 →</button></div></nav>',
         "",
