@@ -1782,10 +1782,10 @@ frontier:
       detail: 先在纯辐射情形构造正、逆散射变换并证明其 Lipschitz 连续性，再通过严格论证的 Darboux–Bäcklund 变换及显式逆 Bäcklund 映射，将结果推广到含有限个孤子的解。
       method_scope: 初值属于 \(H^2(\mathbb{R})\cap H^{1,1}(\mathbb{R})\)，并满足向量 Kaup–Newell 谱问题的假设；允许有限离散谱，排除谱奇点。
   - paper_id: doi:10.1016/j.jde.2026.114803
-    signal_date: null
+    signal_date: '2026-09-25'
     signal_type: journal-publication
     added_on: '2026-09-27'
-    event_source: https://api.crossref.org/works/10.1016/j.jde.2026.114803
+    event_source: https://www.sciencedirect.com/science/article/pii/S0022039626007102
     directions:
     - waves
     reading_note:

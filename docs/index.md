@@ -32,11 +32,11 @@ hide:
 
 ### Orbital stability of vector multi-solitons in coupled NLS and modified KdV equations {#paper-doi-10-1016-j-jde-2026-114803 .radar-search-heading}
 
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114803" data-radar-month="2026-09" data-radar-date="" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;waves&quot;]" data-radar-search="vector multi-solitons coupled NLS modified KdV orbital stability">
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114803" data-radar-month="2026-09" data-radar-date="2026-09-25" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;waves&quot;]" data-radar-search="vector multi-solitons coupled NLS modified KdV orbital stability">
   <details class="radar-paper-details">
     <summary class="radar-row-summary">
       <span class="radar-row-heading"><span class="radar-paper-title">Orbital stability of vector multi-solitons in coupled NLS and modified KdV equations</span><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114803" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Liming Ling, Huajie Su">Liming Ling, Huajie Su</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jde.2026.114803">Journal of Differential Equations 486, 114803 (2027)</a></span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Liming Ling, Huajie Su">Liming Ling, Huajie Su</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jde.2026.114803">Journal of Differential Equations 486, 114803 (2027)</a></span><time datetime="2026-09-25" title="正式发表 · 2026-09-25" aria-label="正式发表 · 2026-09-25">2026-09-25</time></span>
     </summary>
     <div class="radar-expanded-content">
     <p class="radar-paper-overview"><strong>证明耦合 NLS 方程的 N 孤子（包括呼吸子与多峰孤子）以及耦合 mKdV 方程的多孤子在相应 Sobolev 空间中轨道稳定。</strong></p>

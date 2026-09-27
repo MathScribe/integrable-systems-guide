@@ -6019,7 +6019,7 @@
   doi: 10.1016/j.jde.2026.114803
   journal: Journal of Differential Equations
   year: 2027
-  published: null
+  published: '2026-09-25'
   metadata_checked_at: '2026-09-27'
   keywords:
   - vector multi-solitons
@@ -6028,7 +6028,7 @@
   - orbital stability
   volume: '486'
   article_number: '114803'
-  metadata_note: Bibliography and reading note checked against the local publisher PDF and Zotero webpage snapshot. The snapshot shows the issue date 2027-01-05 but no first-online date; keep the online date unknown.
+  metadata_note: Bibliography and reading note checked against the local publisher PDF and Zotero webpage snapshot. First-online date 2026-09-25 supplied by the owner from the publisher's Available online field on 2026-09-27; the 2027-01-05 issue date is separate.
 - id: arxiv:2609.27663
   title: Multiprecision computation of bright and dark solitons in the discrete nonlinear Schrödinger equation
   authors:
