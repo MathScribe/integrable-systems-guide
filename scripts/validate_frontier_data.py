@@ -67,7 +67,9 @@ def main() -> None:
         if not authors or any(str(author).strip() in PLACEHOLDER_AUTHORS for author in authors):
             raise ValueError(f"{entry['paper_id']} requires verified author metadata")
 
-        public_text = entry["reading_note"]
+        public_text = entry.get("reading_note")
+        if public_text is None:
+            continue
         for field, value in public_text.items():
             text = str(value)
             if "?" in text:
@@ -93,7 +95,7 @@ def main() -> None:
                 f"{entry['paper_id']} repeats the overview in the detailed main result"
             )
 
-    dates = [entry["signal_date"] for entry in entries]
+    dates = [render_radar.frontier_sort_date(entry) for entry in entries]
     print(
         f"validated {len(entries)} compact radar records "
         f"from {min(dates)} through {max(dates)}"

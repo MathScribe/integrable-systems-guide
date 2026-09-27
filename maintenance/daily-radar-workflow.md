@@ -46,7 +46,9 @@ Read `maintenance/radar-candidates.yml` before new discovery. Resolve concrete
 pending checks without redoing the completed broad search. Record titles, full
 authors, primary links, last-check date and next action for unresolved candidates.
 Remove resolved items from the queue; detailed exclusion judgments stay private.
-Historical additions explicitly deferred by the owner remain deferred.
+Close current-run exclusions and owner-deferred historical items in the private
+audit instead of keeping them in an active retry queue. Missing optional journal
+metadata alone is not an unresolved candidate; reconcile it opportunistically.
 
 For every journal-only candidate that reaches detailed review, also record the
 venue authority tier (`A`, `B`, or `C`) and the evidence supporting that tier,
@@ -68,7 +70,7 @@ At least once per ISO week:
 3. inspect publisher pages only for strong candidates, known metadata conflicts,
    or a documented high-risk source gap; do not enumerate journal homepages as
    the primary discovery method;
-4. open the DOI target on the publisher site and verify the full journal name, author list, volume, issue, pages or article number, and first online publication date;
+4. verify journal bibliography using publisher records or publisher-deposited Crossref metadata; inspect the DOI target for material conflicts or claims beyond that evidence. An unavailable publisher page does not require repeated retries;
 5. distinguish first online publication from later issue assignment, which is not a new research event;
 6. review whether a source outage or narrow query caused an obvious coverage gap.
 
@@ -96,8 +98,8 @@ may lack a strong title phrase:
    only records newly indexed inside the overlapping datestamp window;
 3. apply the same cheap relevance filter and strict value threshold used for
    other sources;
-4. verify every surviving DOI and first-online date on Crossref and the
-   publisher page before treating it as a journal event.
+4. verify each surviving DOI from the publisher or its Crossref deposit. Use a
+   known first-online date; an unknown date stays null under the bibliography-first rule.
 
 This pass is deliberately based on mathematical classification rather than a
 journal whitelist. Its successful status means the bounded MSC query completed;
@@ -128,16 +130,28 @@ Before editing data:
 
 - deduplicate by arXiv ID, DOI, and normalized title;
 - verify the title and full author list;
-- verify the event date and event type;
+- verify the event type and available event date; preserve unknown journal dates as null;
 - verify the current arXiv version, submission date, revision date, and official categories when applicable;
 - check withdrawal/retraction banners and version comments explicitly. Retain a
   withdrawn/retracted bibliographic record with its status, but remove it from
   the public selection and report the exact title, authors and primary evidence;
-- verify the abstract and the specific statements supporting the annotation;
+- verify the abstract and specific statements supporting any annotation; omit the
+  reading note when only reliable bibliography is available;
 - verify DOI, journal name, volume, issue, pages or article number, year, and first online publication date when applicable;
 - use arXiv, the paper PDF, DOI records, and publisher pages as final evidence.
 
 Keep bibliographic timestamps separate from the public event date. For an arXiv `new-preprint`, preserve the UTC submission timestamp in `papers.yml`, but use the official listing's announcement date as `signal_date`. For a `major-revision`, use the official replacement-list date. For a `journal-publication`, use the publisher's first-online date. Record the primary `event_source` URL for each newly selected event. The scan timestamp never changes the paper's event date. An OAI modification timestamp alone is not announcement evidence.
+
+Bibliography-first rule (owner approved 2026-09-27): a directly relevant journal
+record with verified title, full authors, journal, year and DOI may be included
+without an abstract or exact first-online date. A publisher's Crossref deposit is
+valid evidence; do not require a second successful publisher-page fetch. Omit
+unsupported reading notes, use `signal_date: null` when the day is unknown, and
+record `added_on` as the actual intake date. Ordering and time filtering fall back
+to intake only when the event date is absent; never print intake as publication.
+An existing verified arXiv announcement remains usable when journal first-online
+metadata is missing. Do not infer chronology from DOI creation or issue assignment.
+This rule does not authorize historical backfill or claims based only on a title.
 
 arXiv normally has no Friday or Saturday announcements. A paper submitted before the Friday 14:00 US Eastern cutoff can therefore carry a Friday UTC submission date while appearing in the following Monday category list. Preserve both dates and let the rendered card explain the distinction whenever they differ.
 
@@ -166,8 +180,9 @@ dates, optional withdrawal/retraction status, official `arxiv_categories` and
 searchable `keywords`. Store a journal DOI when known; the arXiv-issued DOI is
 derivable from arXiv ID and is not duplicated.
 
-Schema2 `editions.yml` stores only `paper_id`, `signal_date`, `signal_type`, one or
-two approved `directions`, the three-part `reading_note`, and the primary
+Schema2 `editions.yml` stores `paper_id`, nullable journal `signal_date`, `signal_type`,
+optional `added_on` (required for an unknown event date), one or two approved
+`directions`, an optional three-part `reading_note`, and the primary
 `event_source` URL for newly verified events. The four direction labels live in
 `tags.yml`; individual model/method keywords have no artificial two-tag limit.
 
@@ -203,8 +218,9 @@ Show the actual collection's month span, without implying exhaustive coverage.
 Collapsed rows show only the
 title and bibliography. Expanded rows present the main finding, supporting detail,
 and methods/scope in a compact reading view, without repeating bibliography or
-displaying a separate innovation section. Maintain a `reading_note` mapping with
-`lead`, `detail` and `method_scope` for each newly selected or edited paper. The lead
+displaying a separate innovation section. Bibliography-only rows have no empty
+expander. When supported by an abstract or full text, maintain a `reading_note`
+mapping with `lead`, `detail` and `method_scope`. The lead
 states the concrete result; detail supplies the distinguishing advance; methods/scope
 retains material assumptions and distinguishes numerical evidence from theorems.
 Keep these paragraphs complementary. Omit version bookkeeping, generic praise,

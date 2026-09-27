@@ -218,12 +218,45 @@ def test_enabled_frontier() -> None:
     assert data["schema_version"] == 2
     assert "frontier_weeks" not in data
     assert len(cumulative) == len(entries)
-    assert all(entry.get("reading_note") for entry in entries)
+    assert all(entry.get("reading_note") or registry[entry["paper_id"]].get("doi") for entry in entries)
     assert {entry["signal_type"] for entry in entries} <= {
         "new-preprint",
         "major-revision",
         "journal-publication",
     }
+
+
+def test_bibliography_without_event_date() -> None:
+    paper = {"id": "doi:10.1000/test", "title": "Journal example", "authors": ["Ada Example"],
+             "url": "https://doi.org/10.1000/test", "doi": "10.1000/test", "journal": "Journal", "year": 2027}
+    entry = {"paper_id": paper["id"], "signal_date": None, "signal_type": "journal-publication",
+             "added_on": "2026-09-27", "event_source": paper["url"], "directions": ["waves"]}
+    papers = {paper["id"]: paper}
+    render_radar.validate_frontier_entry(entry, papers)
+    card = render_radar.render_frontier_entry(paper, entry)
+    assert '<details' not in card and 'radar-expand-icon' not in card
+    assert '<time' not in card and 'None' not in card
+    assert 'data-radar-date=""' in card and 'data-radar-added-on="2026-09-27"' in card
+    assert 'Journal (2027)' in card and 'Ada Example' in card
+    dated = {**entry, "paper_id": "dated", "signal_date": "2026-09-26", "added_on": "2026-09-28"}
+    ordered = render_radar.all_frontier_entries({"entries": [dated, entry]}, {**papers, "dated": {**paper, "id": "dated"}})
+    assert ordered[0] == entry  # A known event keeps its date, regardless of intake.
+    assert '<time datetime="2026-09-26"' in render_radar.render_frontier_entry(paper, dated)
+    for invalid in ({**entry, "added_on": None}, {**entry, "signal_type": "new-preprint"},
+                    {**entry, "signal_date": ""}, {**entry, "reading_note": {}},
+                    {k: v for k, v in entry.items() if k != "event_source"}):
+        try:
+            render_radar.validate_frontier_entry(invalid, papers)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError(f"accepted incomplete bibliography fallback: {invalid}")
+    try:
+        render_radar.validate_frontier_entry(entry, {paper["id"]: {**paper, "doi": None}})
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("bibliography-only selection requires a journal DOI")
 
 
 def test_bibliographic_date_and_version_validation() -> None:
@@ -258,6 +291,7 @@ def main() -> None:
     test_component_contract()
     test_enabled_frontier()
     test_bibliographic_date_and_version_validation()
+    test_bibliography_without_event_date()
     group_page = render_radar.render_group_work(render_radar.load_yaml(ROOT / "data" / "group-work.yml"))
     for retained in ("data-group-papers", "MathSciNet", "Google Scholar", "Semantic Scholar", "arxiv.org/search", "Public notes", "courseNotes", "Reading projects"):
         assert retained in group_page, f"group page lost existing content: {retained}"

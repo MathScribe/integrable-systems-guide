@@ -47,7 +47,7 @@
     if (skipLink) skipLink.href = "#research-radar";
     const cards = [...root.querySelectorAll(":scope > article.radar-paper-card")];
     const entries = cards.map((card) => ({
-      card, anchor: card.dataset.radarAnchor, date: card.dataset.radarDate,
+      card, anchor: card.dataset.radarAnchor, date: card.dataset.radarDate || card.dataset.radarAddedOn,
       directions: JSON.parse(card.dataset.radarDirections || "[]"),
       search: fold(`${card.textContent} ${card.dataset.radarSearch || ""}`),
     }));
@@ -115,7 +115,7 @@
       try {
         sessionStorage.setItem(storageKey(), JSON.stringify({
           scroll: window.scrollY,
-          open: entries.filter((entry) => entry.card.querySelector("details").open).map((entry) => entry.anchor),
+          open: entries.filter((entry) => entry.card.querySelector("details")?.open).map((entry) => entry.anchor),
         }));
       } catch (_) { /* Browser storage is optional. */ }
     }
@@ -124,7 +124,10 @@
       try {
         const saved = JSON.parse(sessionStorage.getItem(storageKey()));
         if (!saved) return;
-        entries.forEach((entry) => { entry.card.querySelector("details").open = saved.open?.includes(entry.anchor) || false; });
+        entries.forEach((entry) => {
+          const details = entry.card.querySelector("details");
+          if (details) details.open = saved.open?.includes(entry.anchor) || false;
+        });
         if (restoreScroll && Number.isFinite(saved.scroll)) requestAnimationFrame(() => window.scrollTo(0, saved.scroll));
       } catch (_) { /* Invalid or unavailable storage does not block browsing. */ }
     }
@@ -175,7 +178,8 @@
       }
       page = Math.floor(filtered.indexOf(target) / PAGE_SIZE) + 1;
       render();
-      target.card.querySelector("details").open = true;
+      const details = target.card.querySelector("details");
+      if (details) details.open = true;
       writeURL(true, true);
       requestAnimationFrame(() => target.card.scrollIntoView({ block: "start" }));
       return true;
@@ -201,7 +205,7 @@
     }
     previous.addEventListener("click", () => turnPage(-1));
     next.addEventListener("click", () => turnPage(1));
-    cards.forEach((card) => card.querySelector("details").addEventListener("toggle", saveView));
+    cards.forEach((card) => card.querySelector("details")?.addEventListener("toggle", saveView));
     const onPopState = () => { readURL(); render(); if (!revealHashTarget()) restoreView(true); };
     const onHashChange = () => revealHashTarget();
     const onPageHide = () => saveView();

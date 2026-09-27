@@ -272,6 +272,11 @@
 .radar-paper-details[open] .radar-expand-icon { transform: rotate(180deg); }
 .radar-row-meta { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.12rem 0.65rem; padding-right: 1.3rem; margin-top: 0.18rem; font-size: 0.59rem; color: var(--radar-muted); line-height: 1.6; }
 .radar-row-authors { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 43%; }
+.radar-row-bibliography .radar-row-authors,
+.radar-row-bibliography .radar-row-sources { white-space: normal; max-width: none; overflow: visible; }
+.radar-row-bibliography .radar-paper-title { color: inherit; }
+.radar-row-bibliography .radar-paper-title:hover { color: var(--md-accent-fg-color); }
+.radar-row-bibliography .radar-row-heading .radar-permalink { display: inline; }
 .radar-row-sources { flex: 1; min-width: 4rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .radar-row-sources a { color: #567d74; }
 .radar-row-sources a:hover { color: var(--md-accent-fg-color); text-decoration: underline; }

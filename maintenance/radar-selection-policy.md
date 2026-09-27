@@ -24,8 +24,10 @@ Freshness is an eligibility condition, not a ranking signal.
 - A new preprint must belong to an unprocessed official arXiv announcement batch.
 - A major revision must belong to an unprocessed replacement batch and add a main
   theorem, core method, substantial analysis, experiment, or material conclusion.
-- A journal-only discovery must have a first-online date in the unprocessed
-  publication window.
+- A journal-only discovery normally has a first-online date in the unprocessed
+  publication window. Under the owner's 2026-09-27 bibliography-first amendment,
+  a relevant record found in the bounded current discovery pass may be included
+  with an unknown online date; preserve null and do not claim a dated new event.
 - A delayed index record keeps its real event date. It is not relabelled as a
   current recommendation merely because the radar observed it later.
 - A previously selected preprint that later receives routine journal publication
@@ -80,9 +82,14 @@ Normally exclude:
 
 ## Evidence and authority
 
-Title-only evidence cannot support selection. An abstract may support a cautious
-decision; formula-level mechanisms, proof claims, and comparisons beyond the
-abstract require inspection of the paper.
+Title-only evidence cannot support a reading note or a claim about a paper's
+advance. An abstract may support a cautious decision; formula-level mechanisms,
+proof claims, and comparisons beyond the abstract require inspection of the paper.
+The owner-approved bibliography-first path allows directly relevant current
+journal records with verified title, full authors, journal, year and DOI to appear
+as bibliography only. Do not manufacture an annotation or hold the item solely
+for missing optional metadata. This exception does not extend to speculative
+cross-field relevance, historical backfill, or unverified search snippets.
 
 For journal-only discoveries, classify venue authority internally before making
 the editorial decision:

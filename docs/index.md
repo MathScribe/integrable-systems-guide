@@ -9,7 +9,7 @@ hide:
   <h1 id="research-radar">可积系统研究雷达<span class="radar-title-dot">.</span></h1>
   <p class="radar-hero-intro">这里精选近期可积系统的研究进展，关注具体问题，也寻找新的研究方向。</p>
   <div class="radar-hero-bottom">
-    <p class="radar-collection-size">精选论文 · 按公开日期倒序</p>
+    <p class="radar-collection-size">精选论文 · 持续更新</p>
     <nav class="radar-hero-links" aria-label="探索网站"><a href="topics/">研究主题 <span>↗</span></a><a href="group-work/">课题组论文 <span>↗</span></a></nav>
   </div>
 </header>
@@ -2923,6 +2923,6 @@ hide:
 
 论文来自 arXiv 与期刊记录，并通过 Crossref 等来源补漏。按研究相关性与具体进展筛选，不设置固定篇数。
 
-论文按首次公开、重大修订或正式发表日期排序。内容由自动流程整理，数学结论请以原论文为准。
+日期与书目信息以来源记录为准。内容由自动流程整理，数学结论请以原论文为准。
 
 [数据来源](sources.md) · [数据与筛选方法](editorial-policy.md)

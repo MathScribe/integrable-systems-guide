@@ -6,18 +6,18 @@ is generated; raw source pages and editorial judgments are not copied into the s
 | Location | Responsibility |
 | --- | --- |
 | `data/papers.yml` | One current bibliography per work: ID, title, complete authors, primary URL, arXiv ID, journal DOI and citation, original/updated dates, version, verification date, optional status, categories and keywords |
-| `data/editions.yml` | Public selection: paper ID, actual event date/type, one or two directions, a single reading note, and primary event source when captured |
+| `data/editions.yml` | Public selection: paper ID, event date/type, optional intake date, one or two directions, optional single reading note, and primary evidence source |
 | `data/tags.yml` | Only the four approved direction IDs and labels |
 | `maintenance/radar-sources.yml` | Bounded discovery categories, query phrases, caps and date-basis configuration |
 | `maintenance/radar-state.yml` | Independent successful new/replacement, online/registration and index progress; explicit gaps and source limitations |
-| `maintenance/radar-candidates.yml` | Unresolved candidates with full identity, source links, last check and concrete next action; historical holds stay explicit |
+| `maintenance/radar-candidates.yml` | Active unresolved candidates with identity, sources and next action; closed/deferred decisions remain in private audits |
 | `.radar-audit/` | Ignored raw responses, detailed screening and comparison evidence, failed requests, private review reports |
 
 ## Retired and retained fields
 
 - Retired: `frontier_weeks` and `week`; counts/date groups can be derived if needed.
 - Retired: `summary`, `main_result`, `integrable_structure`, `innovation`; all selected
-  papers have `reading_note.lead/detail/method_scope`, now the sole prose source.
+  annotations use `reading_note.lead/detail/method_scope`, the sole prose source.
 - Merged: paper `tags` and entry `structure_tags` become paper `keywords`; categories
   also move to the bibliography. Keywords remain searchable, not extra UI filters.
 - Retained: `signal_date` and `signal_type`, because new, revised and published events
@@ -40,6 +40,18 @@ finds records missing published-online metadata, but never supplies a publicatio
 date. Preserve year/month precision; no synthetic January1 or first-of-month dates.
 The zbMATH issue-year window includes the following year and uses index timestamps
 only for discovery. Publisher first-online evidence determines journal events.
+
+Verified journal bibliography may be selected without a reading note. It renders
+as a compact row with primary links and no empty expander. Missing online dates
+are explicit `signal_date: null`, allowed only with journal DOI, citation year,
+primary `event_source` and valid `added_on`. A publisher's Crossref deposit is an
+acceptable primary metadata source. `added_on` is the actual site intake date,
+not a claim about first discovery or publication. Ordering and time filters use
+`signal_date` when known, otherwise `added_on`; the fallback is never printed as
+a publication date. Known event dates are never replaced by newer intake dates.
+Keep issue years (including next-year assignments) in the citation. Reconcile
+missing optional fields on a later successful source pass, without repeated
+publisher retries or an active pending item solely for those fields.
 
 The migration preserves all identities, event dates, selection and reading notes.
 Old fields remain recoverable from the pre-migration Git commit. Only verified

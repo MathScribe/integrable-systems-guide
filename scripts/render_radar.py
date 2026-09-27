@@ -67,7 +67,6 @@ def parse_iso_date(value: str, field: str) -> date:
 def validate_frontier_entry(entry: dict[str, Any], papers: dict[str, dict[str, Any]]) -> None:
     required = (
         "paper_id",
-        "signal_date",
         "signal_type",
     )
     missing = [field for field in required if not compact(entry.get(field, ""))]
@@ -80,10 +79,19 @@ def validate_frontier_entry(entry: dict[str, Any], papers: dict[str, dict[str, A
     if papers[paper_id].get("status") in {"withdrawn", "retracted"}:
         raise ValueError(f"{paper_id}: withdrawn/retracted records cannot remain in the public selection")
 
-    parse_iso_date(entry["signal_date"], f"{paper_id}.signal_date")
     signal_type = entry["signal_type"]
     if signal_type not in SIGNAL_LABELS:
         raise ValueError(f"{paper_id}.signal_type is invalid: {signal_type}")
+    bibliography = papers[paper_id]
+    verified_journal = all(bibliography.get(key) for key in ("doi", "journal", "year"))
+    if "signal_date" not in entry:
+        raise ValueError(f"{paper_id}.signal_date must be present, using null when unknown")
+    if entry["signal_date"] is not None:
+        parse_iso_date(entry["signal_date"], f"{paper_id}.signal_date")
+    elif signal_type != "journal-publication" or not verified_journal or not entry.get("event_source") or not entry.get("added_on"):
+        raise ValueError(f"{paper_id}: unknown signal_date requires journal bibliography, event_source and added_on")
+    if "added_on" in entry:
+        parse_iso_date(entry["added_on"], f"{paper_id}.added_on")
 
     retired = {"week", "summary", "main_result", "integrable_structure", "innovation", "structure_tags", "arxiv_categories"}
     if retired & entry.keys():
@@ -100,6 +108,8 @@ def validate_frontier_entry(entry: dict[str, Any], papers: dict[str, dict[str, A
         raise ValueError(f"{paper_id} has duplicate research directions")
 
     note = entry.get("reading_note")
+    if note is None and "reading_note" not in entry and verified_journal and entry.get("event_source"):
+        return
     if not isinstance(note, dict) or set(note) != {"lead", "detail", "method_scope"} or any(
         not isinstance(note.get(field), str) or not compact(note[field])
         for field in ("lead", "detail", "method_scope")
@@ -181,9 +191,10 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
     authors = ", ".join(paper["authors"])
     short_authors = authors if len(paper["authors"]) <= 3 else ", ".join(paper["authors"][:2]) + ", et al."
     signal_label = SIGNAL_LABELS[entry["signal_type"]]
-    note = entry["reading_note"]
+    note = entry.get("reading_note")
     anchor = f'paper-{html_id(entry["paper_id"])}'
-    month_id = entry["signal_date"][:7]
+    signal_date = entry["signal_date"] or ""
+    month_id = frontier_sort_date(entry)[:7]
     source_date_note = ""
     if (
         entry["signal_type"] == "new-preprint"
@@ -211,7 +222,7 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
         date_description += f' · {paper["version"]}'
     date_description = html.escape(html.unescape(date_description), quote=True)
     author_html = html.escape(authors)
-    if short_authors != authors:
+    if note and short_authors != authors:
         author_html = (
             f'<span class="radar-authors-short">{html.escape(short_authors)}</span>'
             f'<span class="radar-authors-full">{html.escape(authors)}</span>'
@@ -220,38 +231,57 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
     search_text = html.escape(" ".join([
         *paper.get("arxiv_categories", []), *paper.get("keywords", []),
     ]), quote=True)
+    date_html = (
+        f'<time datetime="{signal_date}" title="{date_description}" aria-label="{date_description}">{signal_date}</time>'
+        if signal_date else ""
+    )
+    heading = f'<span class="radar-paper-title">{render_rich_text(paper["title"])}</span>'
+    if not note:
+        heading = f'<a class="radar-paper-title" href="{html.escape(paper["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{render_rich_text(paper["title"])}</a>'
+    row = (
+        f'      <span class="radar-row-heading">{heading}'
+        f'<a class="radar-permalink" href="#{anchor}" aria-label="此论文固定链接" title="此论文固定链接">#</a>'
+        + ('<span class="radar-expand-icon" aria-hidden="true">⌄</span>' if note else "")
+        + '</span>\n      <span class="radar-row-meta">'
+        f'<span class="radar-row-authors" title="{html.escape(authors, quote=True)}">{author_html}</span>'
+        f'<span class="radar-row-sources">{source_links_html(paper, new_tab=True)}</span>'
+        f'{date_html}</span>\n'
+    )
+    content = f'<div class="radar-row-summary radar-row-bibliography">{row}</div>'
+    if note:
+        content = (
+            '  <details class="radar-paper-details">\n'
+            f'    <summary class="radar-row-summary">\n{row}    </summary>\n'
+            '    <div class="radar-expanded-content">\n'
+            f'    <p class="radar-paper-overview"><strong>{render_rich_text(note["lead"])}</strong></p>\n'
+            f'    <p class="radar-reading-detail">{render_rich_text(note["detail"])}</p>\n'
+            f'    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>{render_rich_text(note["method_scope"])}</p>\n'
+            '    </div>\n  </details>'
+        )
+    added_on_attr = f'data-radar-added-on="{entry["added_on"]}" ' if entry.get("added_on") else ""
     return (
         f'### {html.escape(str(paper["title"]))} {{#{anchor} .radar-search-heading}}\n\n'
         f'<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" '
         f'data-radar-anchor="{anchor}" '
         f'data-radar-month="{html.escape(month_id, quote=True)}" '
-        f'data-radar-date="{entry["signal_date"]}" '
+        f'data-radar-date="{signal_date}" '
+        f'{added_on_attr}'
         f'data-radar-directions="{directions_data}" '
         f'data-radar-search="{search_text}">\n'
-        '  <details class="radar-paper-details">\n'
-        '    <summary class="radar-row-summary">\n'
-        f'      <span class="radar-row-heading"><span class="radar-paper-title">{render_rich_text(paper["title"])}</span>'
-        f'<a class="radar-permalink" href="#{anchor}" aria-label="此论文固定链接" title="此论文固定链接">#</a>'
-        '<span class="radar-expand-icon" aria-hidden="true">⌄</span></span>\n'
-        '      <span class="radar-row-meta">'
-        f'<span class="radar-row-authors" title="{html.escape(authors, quote=True)}">{author_html}</span>'
-        f'<span class="radar-row-sources">{source_links_html(paper, new_tab=True)}</span>'
-        f'<time datetime="{entry["signal_date"]}" title="{date_description}" aria-label="{date_description}">{entry["signal_date"]}</time></span>\n'
-        '    </summary>\n'
-        '    <div class="radar-expanded-content">\n'
-        f'    <p class="radar-paper-overview"><strong>{render_rich_text(note["lead"])}</strong></p>\n'
-        f'    <p class="radar-reading-detail">{render_rich_text(note["detail"])}</p>\n'
-        f'    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>{render_rich_text(note["method_scope"])}</p>\n'
-        '    </div>\n'
-        '  </details>\n'
+        f'{content}\n'
         '</article>'
     )
+
+
+def frontier_sort_date(entry: dict[str, Any]) -> str:
+    """Intake is a fallback for browsing, never a fabricated publication date."""
+    return entry["signal_date"] or entry["added_on"]
 
 
 def all_frontier_entries(frontier: dict[str, Any], papers: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
     return sorted(
         validate_frontier(frontier, papers),
-        key=lambda entry: (entry["signal_date"], entry["paper_id"]),
+        key=lambda entry: (frontier_sort_date(entry), entry["paper_id"]),
         reverse=True,
     )
 
@@ -259,8 +289,8 @@ def all_frontier_entries(frontier: dict[str, Any], papers: dict[str, dict[str, A
 def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]) -> str:
     frontier = data["frontier"]
     entries = all_frontier_entries(frontier, papers)
-    earliest = min(entry["signal_date"] for entry in entries)
-    latest = max(entry["signal_date"] for entry in entries)
+    earliest = min(frontier_sort_date(entry) for entry in entries)
+    latest = max(frontier_sort_date(entry) for entry in entries)
     coverage = f'{earliest[:7].replace("-", ".")}—{latest[:7].replace("-", ".")}'
     direction_options = ''.join(
         f'<option value="{html.escape(key, quote=True)}">{html.escape(label)}</option>'
@@ -273,7 +303,7 @@ def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]
         '  <h1 id="research-radar">可积系统研究雷达<span class="radar-title-dot">.</span></h1>',
         '  <p class="radar-hero-intro">这里精选近期可积系统的研究进展，关注具体问题，也寻找新的研究方向。</p>',
         '  <div class="radar-hero-bottom">',
-        f'    <p class="radar-collection-size">精选论文 · 按公开日期倒序</p>',
+        '    <p class="radar-collection-size">精选论文 · 持续更新</p>',
         '    <nav class="radar-hero-links" aria-label="探索网站"><a href="topics/">研究主题 <span>↗</span></a><a href="group-work/">课题组论文 <span>↗</span></a></nav>',
         '  </div>',
         '</header>',
@@ -315,7 +345,7 @@ def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]
             "",
             "论文来自 arXiv 与期刊记录，并通过 Crossref 等来源补漏。按研究相关性与具体进展筛选，不设置固定篇数。",
             "",
-            "论文按首次公开、重大修订或正式发表日期排序。内容由自动流程整理，数学结论请以原论文为准。",
+            "日期与书目信息以来源记录为准。内容由自动流程整理，数学结论请以原论文为准。",
             "",
             "[数据来源](sources.md) · [数据与筛选方法](editorial-policy.md)",
         ]
