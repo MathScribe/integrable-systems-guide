@@ -49,6 +49,9 @@ jobs:
       - name: Build site
         run: mkdocs build --strict --site-dir site
 
+      - name: Verify asset cache versions
+        run: python scripts/check_site_assets.py site
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

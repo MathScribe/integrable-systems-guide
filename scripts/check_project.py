@@ -45,6 +45,7 @@ def main() -> None:
             "strict MkDocs build",
             [python, "-m", "mkdocs", "build", "--strict", "--site-dir", str(site_dir)],
         )
+        run("built asset cache versions", [python, "scripts/check_site_assets.py", str(site_dir)])
     finally:
         if site_dir.exists():
             shutil.rmtree(site_dir)

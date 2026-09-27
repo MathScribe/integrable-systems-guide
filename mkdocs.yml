@@ -43,6 +43,9 @@ markdown_extensions:
 plugins:
   - search
 
+hooks:
+  - scripts/version_assets.py
+
 extra_css:
   - stylesheets/radar.css
   - stylesheets/group-papers.css
