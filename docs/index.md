@@ -41,17 +41,33 @@ hide:
 ### Orbital stability of vector multi-solitons in coupled NLS and modified KdV equations {#paper-doi-10-1016-j-jde-2026-114803 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114803" data-radar-month="2026-09" data-radar-date="" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;waves&quot;]" data-radar-search="vector multi-solitons coupled NLS modified KdV orbital stability">
-<div class="radar-row-summary radar-row-bibliography">      <span class="radar-row-heading"><a class="radar-paper-title" href="https://doi.org/10.1016/j.jde.2026.114803" target="_blank" rel="noopener noreferrer">Orbital stability of vector multi-solitons in coupled NLS and modified KdV equations</a><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114803" aria-label="此论文固定链接" title="此论文固定链接">#</a></span>
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Orbital stability of vector multi-solitons in coupled NLS and modified KdV equations</span><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114803" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
       <span class="radar-row-meta"><span class="radar-row-authors" title="Liming Ling, Huajie Su">Liming Ling, Huajie Su</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jde.2026.114803">Journal of Differential Equations 486, 114803 (2027)</a></span></span>
-</div>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>证明耦合 NLS 方程的 N 孤子（包括呼吸子与多峰孤子）以及耦合 mKdV 方程的多孤子在相应 Sobolev 空间中轨道稳定。</strong></p>
+    <p class="radar-reading-detail">利用可积性质确定 Lyapunov 泛函二阶变分的负特征值个数，并将同一方法用于经典 NLS 与 mKdV 孤子的稳定性分析。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>耦合 NLS 的 N 孤子在 <span class="arithmatex">\(H^N(\mathbb{R};\mathbb{C}^2)\)</span> 中稳定；耦合 mKdV 的 <span class="arithmatex">\((N_1,N_2)\)</span> 孤子在 <span class="arithmatex">\(H^{2N_1+N_2}(\mathbb{R};\mathbb{R}^2)\)</span> 中稳定。结论为轨道稳定性。</p>
+    </div>
+  </details>
 </article>
 
 ### Global well-posedness and inverse scattering transform for the two-component derivative nonlinear Schrödinger equation {#paper-doi-10-1016-j-jde-2026-114789 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114789" data-radar-month="2026-09" data-radar-date="" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;spectral&quot;, &quot;waves&quot;]" data-radar-search="two-component derivative NLS inverse scattering transform well-posedness">
-<div class="radar-row-summary radar-row-bibliography">      <span class="radar-row-heading"><a class="radar-paper-title" href="https://doi.org/10.1016/j.jde.2026.114789" target="_blank" rel="noopener noreferrer">Global well-posedness and inverse scattering transform for the two-component derivative nonlinear Schrödinger equation</a><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114789" aria-label="此论文固定链接" title="此论文固定链接">#</a></span>
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Global well-posedness and inverse scattering transform for the two-component derivative nonlinear Schrödinger equation</span><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114789" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
       <span class="radar-row-meta"><span class="radar-row-authors" title="Zixuan Deng, Yubin Huang, Liming Ling">Zixuan Deng, Yubin Huang, Liming Ling</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jde.2026.114789">Journal of Differential Equations 487, 114789 (2027)</a></span></span>
-</div>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>建立两分量导数 NLS 方程在加权 Sobolev 空间中的整体适定性，涵盖无谱奇点且含有限个离散特征值的一般初值。</strong></p>
+    <p class="radar-reading-detail">先在纯辐射情形构造正、逆散射变换并证明其 Lipschitz 连续性，再通过严格论证的 Darboux–Bäcklund 变换及显式逆 Bäcklund 映射，将结果推广到含有限个孤子的解。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>初值属于 <span class="arithmatex">\(H^2(\mathbb{R})\cap H^{1,1}(\mathbb{R})\)</span>，并满足向量 Kaup–Newell 谱问题的假设；允许有限离散谱，排除谱奇点。</p>
+    </div>
+  </details>
 </article>
 
 ### Superintegrability of discrete-time rational Ruijsenaars-Schneider model and deformed polynomial symmetry algebras {#paper-arxiv-2609-30065 .radar-search-heading}

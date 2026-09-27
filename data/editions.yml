@@ -1777,6 +1777,10 @@ frontier:
     directions:
     - spectral
     - waves
+    reading_note:
+      lead: 建立两分量导数 NLS 方程在加权 Sobolev 空间中的整体适定性，涵盖无谱奇点且含有限个离散特征值的一般初值。
+      detail: 先在纯辐射情形构造正、逆散射变换并证明其 Lipschitz 连续性，再通过严格论证的 Darboux–Bäcklund 变换及显式逆 Bäcklund 映射，将结果推广到含有限个孤子的解。
+      method_scope: 初值属于 \(H^2(\mathbb{R})\cap H^{1,1}(\mathbb{R})\)，并满足向量 Kaup–Newell 谱问题的假设；允许有限离散谱，排除谱奇点。
   - paper_id: doi:10.1016/j.jde.2026.114803
     signal_date: null
     signal_type: journal-publication
@@ -1784,6 +1788,10 @@ frontier:
     event_source: https://api.crossref.org/works/10.1016/j.jde.2026.114803
     directions:
     - waves
+    reading_note:
+      lead: 证明耦合 NLS 方程的 N 孤子（包括呼吸子与多峰孤子）以及耦合 mKdV 方程的多孤子在相应 Sobolev 空间中轨道稳定。
+      detail: 利用可积性质确定 Lyapunov 泛函二阶变分的负特征值个数，并将同一方法用于经典 NLS 与 mKdV 孤子的稳定性分析。
+      method_scope: 耦合 NLS 的 N 孤子在 \(H^N(\mathbb{R};\mathbb{C}^2)\) 中稳定；耦合 mKdV 的 \((N_1,N_2)\) 孤子在 \(H^{2N_1+N_2}(\mathbb{R};\mathbb{R}^2)\) 中稳定。结论为轨道稳定性。
   - paper_id: arxiv:2609.27663
     signal_date: '2026-09-24'
     signal_type: new-preprint

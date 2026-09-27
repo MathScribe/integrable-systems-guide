@@ -126,6 +126,16 @@ These are internal selection rules. Public pages and PR descriptions must not pu
 
 ## Verification and identity
 
+For papers already saved by the owner, check Zotero's local attachments before
+declaring abstract/full-text evidence unavailable. Read local PDFs or saved
+publisher snapshots without modifying the Zotero library. For publisher access,
+prefer the owner's local campus-network route; GitHub's proxy instructions do
+not prescribe a publisher-access route. Do not change system proxy or network
+components without confirmation. If evidence is still inaccessible, report the
+exact title/DOI and ask the owner for the local attachment path instead of
+repeated fetches or an unnecessary alternate card design. A failed fetch means
+the agent could not retrieve the evidence, not that the paper lacks it.
+
 Before editing data:
 
 - deduplicate by arXiv ID, DOI, and normalized title;
