@@ -63,4 +63,4 @@ sources:
     kind: candidate-verification
     checked_at: '2026-09-27T03:56:10Z'
     last_status: candidate-only
-    coverage_note: Verified selected arXiv event dates from primary listings. All five added journal records now have reading notes; both JDE notes and the Physica D135406 note were checked against publisher PDFs saved in local Zotero. Physica D135406 page 1 confirms first online publication on 2026-09-15; the two JDE online dates remain unknown. Local PDF evidence adds no claim of new online-source coverage.
+    coverage_note: Verified selected arXiv event dates from primary listings. All five added journal records have reading notes checked against available abstracts or local publisher PDFs. Physica D135406 page 1 confirms first online publication on 2026-09-15; the saved JDE114789 pre-proof webpage confirms 2026-09-22. JDE114803's saved webpage shows only the 2027-01-05 issue date, so its online date remains unknown. Local evidence adds no claim of new online-source coverage.

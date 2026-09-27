@@ -46,22 +46,6 @@ hide:
   </details>
 </article>
 
-### Global well-posedness and inverse scattering transform for the two-component derivative nonlinear Schrödinger equation {#paper-doi-10-1016-j-jde-2026-114789 .radar-search-heading}
-
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114789" data-radar-month="2026-09" data-radar-date="" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;spectral&quot;, &quot;waves&quot;]" data-radar-search="two-component derivative NLS inverse scattering transform well-posedness">
-  <details class="radar-paper-details">
-    <summary class="radar-row-summary">
-      <span class="radar-row-heading"><span class="radar-paper-title">Global well-posedness and inverse scattering transform for the two-component derivative nonlinear Schrödinger equation</span><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114789" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Zixuan Deng, Yubin Huang, Liming Ling">Zixuan Deng, Yubin Huang, Liming Ling</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jde.2026.114789">Journal of Differential Equations 487, 114789 (2027)</a></span></span>
-    </summary>
-    <div class="radar-expanded-content">
-    <p class="radar-paper-overview"><strong>建立两分量导数 NLS 方程在加权 Sobolev 空间中的整体适定性，涵盖无谱奇点且含有限个离散特征值的一般初值。</strong></p>
-    <p class="radar-reading-detail">先在纯辐射情形构造正、逆散射变换并证明其 Lipschitz 连续性，再通过严格论证的 Darboux–Bäcklund 变换及显式逆 Bäcklund 映射，将结果推广到含有限个孤子的解。</p>
-    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>初值属于 <span class="arithmatex">\(H^2(\mathbb{R})\cap H^{1,1}(\mathbb{R})\)</span>，并满足向量 Kaup–Newell 谱问题的假设；允许有限离散谱，排除谱奇点。</p>
-    </div>
-  </details>
-</article>
-
 ### Superintegrability of discrete-time rational Ruijsenaars-Schneider model and deformed polynomial symmetry algebras {#paper-arxiv-2609-30065 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-30065" data-radar-month="2026-09" data-radar-date="2026-09-25" data-radar-directions="[&quot;structures&quot;]" data-radar-search="nlin.SI math-ph integrable discretization conservation laws">
@@ -186,6 +170,22 @@ hide:
     <p class="radar-paper-overview"><strong>将周期 Benjamin–Ono 的无理时刻正则性推进为精确算术判据，并给出尖锐 Hölder 与 Besov 描述。</strong></p>
     <p class="radar-reading-detail">相比早期版本的有限 Diophantine 类型充分条件，本次修订处理含跳跃 BV 初值的一般无理时刻，并建立局部能量和奇性结论。</p>
     <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>Tao 规范变换的平滑效应与二次 Fourier 级数。判据针对规定的实、均值零、含非零跳跃初值类。</p>
+    </div>
+  </details>
+</article>
+
+### Global well-posedness and inverse scattering transform for the two-component derivative nonlinear Schrödinger equation {#paper-doi-10-1016-j-jde-2026-114789 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114789" data-radar-month="2026-09" data-radar-date="2026-09-22" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;spectral&quot;, &quot;waves&quot;]" data-radar-search="two-component derivative NLS inverse scattering transform well-posedness">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Global well-posedness and inverse scattering transform for the two-component derivative nonlinear Schrödinger equation</span><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114789" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Zixuan Deng, Yubin Huang, Liming Ling">Zixuan Deng, Yubin Huang, Liming Ling</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jde.2026.114789">Journal of Differential Equations 487, 114789 (2027)</a></span><time datetime="2026-09-22" title="正式发表 · 2026-09-22" aria-label="正式发表 · 2026-09-22">2026-09-22</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>建立两分量导数 NLS 方程在加权 Sobolev 空间中的整体适定性，涵盖无谱奇点且含有限个离散特征值的一般初值。</strong></p>
+    <p class="radar-reading-detail">先在纯辐射情形构造正、逆散射变换并证明其 Lipschitz 连续性，再通过严格论证的 Darboux–Bäcklund 变换及显式逆 Bäcklund 映射，将结果推广到含有限个孤子的解。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>初值属于 <span class="arithmatex">\(H^2(\mathbb{R})\cap H^{1,1}(\mathbb{R})\)</span>，并满足向量 Kaup–Newell 谱问题的假设；允许有限离散谱，排除谱奇点。</p>
     </div>
   </details>
 </article>

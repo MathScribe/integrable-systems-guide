@@ -1770,10 +1770,10 @@ frontier:
       detail: 分离体区和边界的 Duhamel 表示给出相应 Strichartz 框架，用于带奇异界面作用及记忆型 NLS 扩展问题。
       method_scope: Bessel 参数的非负与负区间需不同估计；临界小数据和次临界适定性结论分别使用其规定假设。
   - paper_id: doi:10.1016/j.jde.2026.114789
-    signal_date: null
+    signal_date: '2026-09-22'
     signal_type: journal-publication
     added_on: '2026-09-27'
-    event_source: https://api.crossref.org/works/10.1016/j.jde.2026.114789
+    event_source: https://www.sciencedirect.com/science/article/pii/S0022039626006960
     directions:
     - spectral
     - waves
