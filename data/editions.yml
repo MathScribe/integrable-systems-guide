@@ -1769,3 +1769,49 @@ frontier:
       lead: 修订补充非线性边界 Schrödinger 理论的强迹与 Fourier–Hankel 限制定理，并修正若干临界唯一性和参数条件。
       detail: 分离体区和边界的 Duhamel 表示给出相应 Strichartz 框架，用于带奇异界面作用及记忆型 NLS 扩展问题。
       method_scope: Bessel 参数的非负与负区间需不同估计；临界小数据和次临界适定性结论分别使用其规定假设。
+  - paper_id: doi:10.1016/j.jde.2026.114789
+    signal_date: null
+    signal_type: journal-publication
+    added_on: '2026-09-27'
+    event_source: https://api.crossref.org/works/10.1016/j.jde.2026.114789
+    directions:
+    - spectral
+    - waves
+  - paper_id: doi:10.1016/j.jde.2026.114803
+    signal_date: null
+    signal_type: journal-publication
+    added_on: '2026-09-27'
+    event_source: https://api.crossref.org/works/10.1016/j.jde.2026.114803
+    directions:
+    - waves
+  - paper_id: arxiv:2609.27663
+    signal_date: '2026-09-24'
+    signal_type: new-preprint
+    added_on: '2026-09-27'
+    event_source: https://arxiv.org/catchup/nlin.PS/2026-09-24?abs=False&page=1
+    directions:
+    - waves
+    - spectral
+    reading_note:
+      lead: 利用多精度计算分辨离散 NLS 孤子稳定性中随晶格间距指数变小的特征值，使超越所有代数阶的谱效应可与指数渐近预测直接比较。
+      detail: 数值结果显示格点中心亮孤子谱稳定，格点间亮孤子以及两类暗孤子不稳定；暗孤子的相关特征值接近连续谱，因此需要更高计算精度。
+      method_scope: 结合驻定问题的精确 Jacobian、多精度算术与平方算子谱分析，研究离散非线性 Schrödinger 方程的亮、暗孤子；结论依据数值谱计算。
+  - paper_id: doi:10.1016/j.physd.2026.135406
+    signal_date: null
+    signal_type: journal-publication
+    added_on: '2026-09-27'
+    event_source: https://api.crossref.org/works/10.1016/j.physd.2026.135406
+    directions:
+    - structures
+  - paper_id: doi:10.1090/proc/17855
+    signal_date: '2026-09-16'
+    signal_type: journal-publication
+    added_on: '2026-09-27'
+    event_source: https://api.crossref.org/works/10.1090/proc/17855
+    directions:
+    - spectral
+    - structures
+    reading_note:
+      lead: 为 Konopelchenko–Dubrovsky 方程的一类高维扩展建立逆散射框架，处理 2+1、3+1、3+2 与 4+2 维方程的 Cauchy 问题。
+      detail: 将原 2+1 维方程的独立变量复化得到 4+2 维可积扩展，再经变量变换约化到 3+1 与 3+2 维，并构造约化方程的 Lax 对。
+      method_scope: 正、逆散射问题的构造结合 Fourier 分析与特征值方程。这里的高维推广针对这一 KD 方程族及其约化。

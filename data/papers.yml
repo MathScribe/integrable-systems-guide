@@ -5991,3 +5991,102 @@
   - Bessel operator
   - Strichartz estimates
   - weighted well-posedness
+- id: doi:10.1016/j.jde.2026.114789
+  title: Global well-posedness and inverse scattering transform for the two-component derivative nonlinear Schrödinger equation
+  authors:
+  - Zixuan Deng
+  - Yubin Huang
+  - Liming Ling
+  url: https://doi.org/10.1016/j.jde.2026.114789
+  doi: 10.1016/j.jde.2026.114789
+  journal: Journal of Differential Equations
+  year: 2027
+  published: null
+  metadata_checked_at: '2026-09-27'
+  keywords:
+  - two-component derivative NLS
+  - inverse scattering transform
+  - well-posedness
+  volume: '487'
+  article_number: '114789'
+  metadata_note: Bibliography verified from publisher-deposited Crossref record. First-online date unavailable; issue assignment is not an online date.
+- id: doi:10.1016/j.jde.2026.114803
+  title: Orbital stability of vector multi-solitons in coupled NLS and modified KdV equations
+  authors:
+  - Liming Ling
+  - Huajie Su
+  url: https://doi.org/10.1016/j.jde.2026.114803
+  doi: 10.1016/j.jde.2026.114803
+  journal: Journal of Differential Equations
+  year: 2027
+  published: null
+  metadata_checked_at: '2026-09-27'
+  keywords:
+  - vector multi-solitons
+  - coupled NLS
+  - modified KdV
+  - orbital stability
+  volume: '486'
+  article_number: '114803'
+  metadata_note: Bibliography verified from publisher-deposited Crossref record. First-online date unavailable; issue assignment is not an online date.
+- id: arxiv:2609.27663
+  title: Multiprecision computation of bright and dark solitons in the discrete nonlinear Schrödinger equation
+  authors:
+  - Rudy Kusdiantara
+  - Farrell T. Adriano
+  - Hadi Susanto
+  url: https://arxiv.org/abs/2609.27663
+  doi: 10.1016/j.physleta.2026.132170
+  journal: Physics Letters A
+  year: 2026
+  published: null
+  metadata_checked_at: '2026-09-27'
+  keywords:
+  - discrete nonlinear Schrödinger
+  - multiprecision
+  - spectral stability
+  - bright and dark solitons
+  volume: '597'
+  article_number: '132170'
+  metadata_note: Bibliography verified from publisher-deposited Crossref record. First-online date unavailable; issue assignment is not an online date.
+  arxiv_id: '2609.27663'
+  submitted: '2026-09-23'
+  submitted_at: '2026-09-23T10:34:52Z'
+  updated: '2026-09-23'
+  version: v1
+  arxiv_categories:
+  - nlin.PS
+- id: doi:10.1016/j.physd.2026.135406
+  title: Formulation of binary Darboux transformations for an integrable mKdV system with skew-symmetric matrix potentials
+  authors:
+  - Wen-Xiu Ma
+  url: https://doi.org/10.1016/j.physd.2026.135406
+  doi: 10.1016/j.physd.2026.135406
+  journal: 'Physica D: Nonlinear Phenomena'
+  year: 2026
+  published: null
+  metadata_checked_at: '2026-09-27'
+  keywords:
+  - binary Darboux transformation
+  - matrix mKdV
+  - skew-symmetric potentials
+  volume: '498'
+  article_number: '135406'
+  metadata_note: Bibliography verified from publisher-deposited Crossref record. First-online date unavailable; issue assignment is not an online date.
+- id: doi:10.1090/proc/17855
+  title: 'On the solutions of a class of high-dimensional KD equations: Inverse scattering transform, Fourier analysis and Cauchy problems'
+  authors:
+  - Linlin Gui
+  - Yufeng Zhang
+  url: https://doi.org/10.1090/proc/17855
+  doi: 10.1090/proc/17855
+  journal: Proceedings of the American Mathematical Society
+  year: 2026
+  published: '2026-09-16'
+  metadata_checked_at: '2026-09-27'
+  keywords:
+  - Konopelchenko–Dubrovsky
+  - inverse scattering transform
+  - Fourier analysis
+  - Cauchy problem
+  metadata_note: Bibliography verified from publisher-deposited Crossref record. First-online date is provided by the publisher deposit.

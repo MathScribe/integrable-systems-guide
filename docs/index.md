@@ -14,7 +14,7 @@ hide:
   </div>
 </header>
 
-<div class="radar-browse-controls" data-default-period="all" data-total-count="180" data-earliest-date="2026-06-15">
+<div class="radar-browse-controls" data-default-period="all" data-total-count="185" data-earliest-date="2026-06-15">
   <div class="radar-browse-heading"><h2>论文浏览</h2><span class="radar-search-count" role="status" aria-live="polite"></span></div>
   <div class="radar-filter-bar">
   <div class="radar-local-search" role="search">
@@ -29,6 +29,30 @@ hide:
   <div class="radar-filter-footer"><span>当前收录：2026.06—2026.09</span><button type="button" data-radar-action="reset" hidden>清除筛选 ×</button></div>
 </div>
 <p class="radar-empty-state" hidden>没有找到匹配论文。试试其他关键词，或清除筛选。</p>
+
+### Formulation of binary Darboux transformations for an integrable mKdV system with skew-symmetric matrix potentials {#paper-doi-10-1016-j-physd-2026-135406 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-physd-2026-135406" data-radar-month="2026-09" data-radar-date="" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;structures&quot;]" data-radar-search="binary Darboux transformation matrix mKdV skew-symmetric potentials">
+<div class="radar-row-summary radar-row-bibliography">      <span class="radar-row-heading"><a class="radar-paper-title" href="https://doi.org/10.1016/j.physd.2026.135406" target="_blank" rel="noopener noreferrer">Formulation of binary Darboux transformations for an integrable mKdV system with skew-symmetric matrix potentials</a><a class="radar-permalink" href="#paper-doi-10-1016-j-physd-2026-135406" aria-label="此论文固定链接" title="此论文固定链接">#</a></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Wen-Xiu Ma">Wen-Xiu Ma</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.physd.2026.135406">Physica D: Nonlinear Phenomena 498, 135406 (2026)</a></span></span>
+</div>
+</article>
+
+### Orbital stability of vector multi-solitons in coupled NLS and modified KdV equations {#paper-doi-10-1016-j-jde-2026-114803 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114803" data-radar-month="2026-09" data-radar-date="" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;waves&quot;]" data-radar-search="vector multi-solitons coupled NLS modified KdV orbital stability">
+<div class="radar-row-summary radar-row-bibliography">      <span class="radar-row-heading"><a class="radar-paper-title" href="https://doi.org/10.1016/j.jde.2026.114803" target="_blank" rel="noopener noreferrer">Orbital stability of vector multi-solitons in coupled NLS and modified KdV equations</a><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114803" aria-label="此论文固定链接" title="此论文固定链接">#</a></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Liming Ling, Huajie Su">Liming Ling, Huajie Su</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jde.2026.114803">Journal of Differential Equations 486, 114803 (2027)</a></span></span>
+</div>
+</article>
+
+### Global well-posedness and inverse scattering transform for the two-component derivative nonlinear Schrödinger equation {#paper-doi-10-1016-j-jde-2026-114789 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114789" data-radar-month="2026-09" data-radar-date="" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;spectral&quot;, &quot;waves&quot;]" data-radar-search="two-component derivative NLS inverse scattering transform well-posedness">
+<div class="radar-row-summary radar-row-bibliography">      <span class="radar-row-heading"><a class="radar-paper-title" href="https://doi.org/10.1016/j.jde.2026.114789" target="_blank" rel="noopener noreferrer">Global well-posedness and inverse scattering transform for the two-component derivative nonlinear Schrödinger equation</a><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114789" aria-label="此论文固定链接" title="此论文固定链接">#</a></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Zixuan Deng, Yubin Huang, Liming Ling">Zixuan Deng, Yubin Huang, Liming Ling</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jde.2026.114789">Journal of Differential Equations 487, 114789 (2027)</a></span></span>
+</div>
+</article>
 
 ### Superintegrability of discrete-time rational Ruijsenaars-Schneider model and deformed polynomial symmetry algebras {#paper-arxiv-2609-30065 .radar-search-heading}
 
@@ -106,6 +130,22 @@ hide:
     <p class="radar-paper-overview"><strong>将右半线 KdV 的局部适定性推进到 <span class="arithmatex">\(H^{-3/4}\)</span> 端点，补上此前严格高于该正则性的范围。</strong></p>
     <p class="radar-reading-detail">与端点空间相容的边界强迫算子控制低频行为和调制求和，使收缩映射在初边值问题中闭合。</p>
     <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>Besov 型 Bourgain 空间与边界算子估计；初值为 <span class="arithmatex">\(H^{-3/4}\)</span>，边界数据为 <span class="arithmatex">\(H^{1/12}\)</span>。</p>
+    </div>
+  </details>
+</article>
+
+### Multiprecision computation of bright and dark solitons in the discrete nonlinear Schrödinger equation {#paper-arxiv-2609-27663 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-27663" data-radar-month="2026-09" data-radar-date="2026-09-24" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;waves&quot;, &quot;spectral&quot;]" data-radar-search="nlin.PS discrete nonlinear Schrödinger multiprecision spectral stability bright and dark solitons">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Multiprecision computation of bright and dark solitons in the discrete nonlinear Schrödinger equation</span><a class="radar-permalink" href="#paper-arxiv-2609-27663" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Rudy Kusdiantara, Farrell T. Adriano, Hadi Susanto">Rudy Kusdiantara, Farrell T. Adriano, Hadi Susanto</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2609.27663">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2609.27663">PDF</a> · <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.physleta.2026.132170">Physics Letters A 597, 132170 (2026)</a></span><time datetime="2026-09-24" title="新预印本 · 2026-09-24 · arXiv 提交日期 2026-09-23（UTC） · v1" aria-label="新预印本 · 2026-09-24 · arXiv 提交日期 2026-09-23（UTC） · v1">2026-09-24</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>利用多精度计算分辨离散 NLS 孤子稳定性中随晶格间距指数变小的特征值，使超越所有代数阶的谱效应可与指数渐近预测直接比较。</strong></p>
+    <p class="radar-reading-detail">数值结果显示格点中心亮孤子谱稳定，格点间亮孤子以及两类暗孤子不稳定；暗孤子的相关特征值接近连续谱，因此需要更高计算精度。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>结合驻定问题的精确 Jacobian、多精度算术与平方算子谱分析，研究离散非线性 Schrödinger 方程的亮、暗孤子；结论依据数值谱计算。</p>
     </div>
   </details>
 </article>
@@ -426,6 +466,22 @@ hide:
     <p class="radar-paper-overview"><strong>用半经典 Bethe 方程的精确解定位 KdV 孤子气体中的准粒子，并建立局部场与孤子经验密度的联系。</strong></p>
     <p class="radar-reading-detail">本次修订减弱假设、加强结果，以流体元投影剔除区域外孤子，并在弱极限中恢复守恒密度。</p>
     <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>新的孤子 tau 表述及谱、位移参数条件，无需随机性假设。完整孤子气体动理学方程的严格推导仍是后续目标。</p>
+    </div>
+  </details>
+</article>
+
+### On the solutions of a class of high-dimensional KD equations: Inverse scattering transform, Fourier analysis and Cauchy problems {#paper-doi-10-1090-proc-17855 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1090-proc-17855" data-radar-month="2026-09" data-radar-date="2026-09-16" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;spectral&quot;, &quot;structures&quot;]" data-radar-search="Konopelchenko–Dubrovsky inverse scattering transform Fourier analysis Cauchy problem">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">On the solutions of a class of high-dimensional KD equations: Inverse scattering transform, Fourier analysis and Cauchy problems</span><a class="radar-permalink" href="#paper-doi-10-1090-proc-17855" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Linlin Gui, Yufeng Zhang">Linlin Gui, Yufeng Zhang</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1090/proc/17855">Proceedings of the American Mathematical Society (2026)</a></span><time datetime="2026-09-16" title="正式发表 · 2026-09-16" aria-label="正式发表 · 2026-09-16">2026-09-16</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>为 Konopelchenko–Dubrovsky 方程的一类高维扩展建立逆散射框架，处理 2+1、3+1、3+2 与 4+2 维方程的 Cauchy 问题。</strong></p>
+    <p class="radar-reading-detail">将原 2+1 维方程的独立变量复化得到 4+2 维可积扩展，再经变量变换约化到 3+1 与 3+2 维，并构造约化方程的 Lax 对。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>正、逆散射问题的构造结合 Fourier 分析与特征值方程。这里的高维推广针对这一 KD 方程族及其约化。</p>
     </div>
   </details>
 </article>

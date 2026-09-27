@@ -63,4 +63,4 @@ sources:
     kind: candidate-verification
     checked_at: '2026-09-27T03:56:10Z'
     last_status: candidate-only
-    coverage_note: Verified all selected arXiv event dates from primary listings; checked pending publisher targets without inferring dates from DOI registration. Two JDE records, PLA132170, Physica D135406 and AMS17855 remain in the durable pending queue.
+    coverage_note: Verified selected arXiv event dates from primary listings. Five journal candidates admitted using cached publisher-deposited Crossref bibliography under the owner-approved bibliography-first policy; two have abstract-based notes and three remain bibliography only. Unknown online dates stay null. Publisher target access remains limited; no repeated fetch or new source coverage claimed.
