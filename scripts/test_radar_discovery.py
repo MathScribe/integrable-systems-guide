@@ -6,6 +6,8 @@ from __future__ import annotations
 import importlib.util
 import io
 import json
+import uuid
+from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
@@ -26,6 +28,57 @@ def load_module(name: str, path: str):
 crossref = load_module("fetch_crossref_candidates", "scripts/fetch_crossref_candidates.py")
 arxiv = load_module("fetch_arxiv_candidates", "scripts/fetch_arxiv_candidates.py")
 zbmath = load_module("fetch_zbmath_candidates", "scripts/fetch_zbmath_candidates.py")
+catchup = load_module("fetch_arxiv_catchup", "scripts/fetch_arxiv_catchup.py")
+
+
+def test_source_precision_and_backstops() -> None:
+    assert crossref.crossref_date({"published-online":{"date-parts":[[2026]]}},"published-online") == "2026"
+    assert crossref.crossref_date({"published-online":{"date-parts":[[2026,9]]}},"published-online") == "2026-09"
+    query={"id":"inverse-scattering","field":"title","term":"inverse scattering","patterns":["inverse scattering"]}
+    cfg=crossref_config([query])
+    fake=FakeUrlOpen([{"message":{"total-results":1,"items":[crossref_item("10.1/new","Inverse scattering") ]}}])
+    result=crossref.fetch_manifest(cfg,start="2026-09-12",end="2026-09-27",mailto=None,date_basis="created",urlopen=fake)
+    assert "from-created-date%3A2026-09-12" in fake.urls[0]
+    assert "online-pub-date" not in fake.urls[0]
+    assert result["date_basis"] == "created" and result["coverage"] == "ranked-title-registration-backstop"
+    assert result["candidates"][0]["published_online"] == "2026-07-27"
+    now=datetime(2026,9,27,tzinfo=timezone.utc)
+    assert "py:2026 - 2027" in zbmath.build_search_string(now,now,["37K10"],future_years=1)
+
+
+def test_catchup_dates_types_and_failure() -> None:
+    def row(aid):
+        return f'''<dt><a href="/abs/{aid}">arXiv:{aid}</a></dt><dd>
+        <div class="list-title">Title: A spectral result</div>
+        <div class="list-authors"><a>A. Author</a></div>
+        <div class="list-subjects">Analysis of PDEs (math.AP)</div></dd>'''
+    page='<h1>Catchup on Wed, 16 Sep 2026</h1>Total of 3 entries'
+    page+='<h3>New submissions (showing 1 of 1 entries)</h3>'+row('2609.16480')
+    page+='<h3>Replacement submissions (showing 2 of 2 entries)</h3>'+row('2608.01293')+row('quant-ph/0601020')
+    items,total=catchup.parse_catchup(page,'math.AP','2026-09-16')
+    assert total==3 and [x['listing_type'] for x in items]==['new','replacement','replacement']
+    assert items[-1]['arxiv_id']=='quant-ph/0601020'
+    assert all(x['announcement_date']=='2026-09-16' for x in items)
+    for invalid in [page.replace('Total of 3','Total of 4'),page.replace('16 Sep','17 Sep'),'<html>Service unavailable</html>']:
+        try:catchup.parse_catchup(invalid,'math.AP','2026-09-16')
+        except ValueError:pass
+        else:raise AssertionError('Catchup error/wrong-date/incomplete pages must not pass')
+    cache_root=ROOT / '.radar-audit' / 'test-cache'
+    cache_root.mkdir(parents=True,exist_ok=True)
+    directory=cache_root / ('fixture-'+uuid.uuid4().hex)
+    directory.mkdir()
+    assert directory.resolve().is_relative_to(cache_root.resolve())
+    try:
+        def fetch(url,**kwargs):
+            if '/math-ph/' in url:raise TimeoutError('fixture failure')
+            return page
+        result=catchup.fetch_manifest(['math.AP','math-ph'],['2026-09-16'],cache_dir=Path(directory),fetch_text=fetch,progress=lambda _:None)
+        assert result['status']=='partial' and result['failed_request_count']==1, result
+        assert len(result['candidates'])==3
+        assert (Path(directory)/'catchup-math.AP-2026-09-16.html').exists()
+    finally:
+        for cached in directory.iterdir():cached.unlink()
+        directory.rmdir()
 
 
 class FakeResponse(io.BytesIO):
@@ -329,6 +382,8 @@ def test_frozen_editorial_calibration_set() -> None:
 
 
 def main() -> None:
+    test_source_precision_and_backstops()
+    test_catchup_dates_types_and_failure()
     test_crossref_ranked_title_filter()
     test_crossref_deduplication_and_failure_degradation()
     test_arxiv_dates_and_cross_category_deduplication()

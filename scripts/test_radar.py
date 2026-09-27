@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import importlib.util
-from collections import Counter
 from pathlib import Path
 
 import yaml
@@ -29,14 +28,12 @@ def sample_entry(paper_id: str = "arxiv:2607.13773") -> dict[str, object]:
         "paper_id": paper_id,
         "signal_date": "2026-07-15",
         "signal_type": "new-preprint",
-        "week": "2026-W29",
-        "arxiv_categories": ["nlin.PS", "nlin.SI"],
-        "structure_tags": ["Darboux transformation", "topological vector potential"],
         "directions": ["waves", "structures"],
-        "summary": "论文系统构造平面波背景上的任意多峰多谷孤子族，并给出新的拓扑分析。",
-        "main_result": "作者分类基本解形态，并构造任意 K-hump 与 M-valley 的混合结构。",
-        "integrable_structure": "方法基于两分量 Fokas--Lenells 系统的 N-fold Darboux transformation。",
-        "innovation": "结果从有限低阶例子推进到任意结构，并揭示零点与极点对虚拟单极场的共同贡献。",
+        "reading_note": {
+            "lead": "构造平面波背景上的任意多峰多谷孤子族。",
+            "detail": "分类基本解形态并构造任意 K-hump 与 M-valley 混合结构。",
+            "method_scope": "两分量 Fokas–Lenells 系统的 N-fold Darboux 变换。",
+        },
     }
 
 
@@ -50,6 +47,8 @@ def test_component_contract() -> None:
             "arxiv_id": "2607.13773",
             "doi": "10.48550/arXiv.2607.13773",
             "submitted": "2026-07-14",
+            "keywords": ["Darboux transformation", "topological vector potential"],
+            "arxiv_categories": ["nlin.PS", "nlin.SI"],
         },
         "arxiv:old": {
             "id": "arxiv:old",
@@ -97,15 +96,13 @@ def test_component_contract() -> None:
 
     math_card = render_radar.render_frontier_entry(
         papers["arxiv:2607.13773"],
-        {**entry, "summary": r"在有限 \(n\) 层面得到结果。"},
+        {**entry, "reading_note": {**entry["reading_note"], "lead": r"在有限 \(n\) 层面得到结果。"}},
     )
     assert '<span class="arithmatex">\\(n\\)</span>' in math_card
 
     old_entry = {
         **sample_entry("arxiv:old"),
         "signal_date": "2026-05-01",
-        "arxiv_categories": [],
-        "structure_tags": ["inverse scattering"],
     }
     frontier = {
         "entries": [entry, old_entry],
@@ -187,13 +184,13 @@ def test_component_contract() -> None:
     assert "card.dataset.radarDirections" in javascript
     assert 'target.card.scrollIntoView({ block: "start" })' in javascript
 
-    invalid = {**entry, "structure_tags": ["one", "two", "three"]}
+    invalid = {**entry, "directions": ["spectral", "waves", "structures"]}
     try:
         render_radar.validate_frontier_entry(invalid, papers)
     except ValueError as exc:
-        assert "more than two" in str(exc)
+        assert "one or two" in str(exc)
     else:
-        raise AssertionError("three displayed structure tags should be rejected")
+        raise AssertionError("three directions should be rejected")
 
 
 def test_enabled_frontier() -> None:
@@ -210,15 +207,11 @@ def test_enabled_frontier() -> None:
     assert len({entry["paper_id"] for entry in entries}) == len(entries)
 
     assert "checked_through" not in frontier
-    expected_counts = {
-        week["id"]: week["screening"]["selected"]
-        for week in data["frontier_weeks"]
-    }
-    assert len(entries) == sum(expected_counts.values())
+    assert data["schema_version"] == 2
+    assert "frontier_weeks" not in data
     assert len(cumulative) == len(entries)
-    assert Counter(render_radar.frontier_week_id(entry) for entry in entries) == expected_counts
-    assert {week["id"] for week in data["frontier_weeks"]} == set(expected_counts)
-    assert set(Counter(entry["signal_type"] for entry in entries)) <= {
+    assert all(entry.get("reading_note") for entry in entries)
+    assert {entry["signal_type"] for entry in entries} <= {
         "new-preprint",
         "major-revision",
         "journal-publication",

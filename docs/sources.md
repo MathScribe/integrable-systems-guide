@@ -4,11 +4,12 @@
 
 | 来源 | 用途 |
 | --- | --- |
-| [arXiv](https://arxiv.org/) | 新预印本与修订，重点关注可积系统、非线性波及相关分析方法 |
-| [Crossref](https://www.crossref.org/) 与 [zbMATH](https://zbmath.org/) | 期刊论文检索、DOI 匹配与文献补漏 |
+| [arXiv](https://arxiv.org/)及[历史公告](https://arxiv.org/catchup) | 新稿、修订与公告日期；同时核对当前版本及撤回状态 |
+| [Crossref](https://www.crossref.org/) | 期刊书目、DOI 匹配与近期发表线索 |
+| [zbMATH](https://zbmath.org/) | 按数学专业分类补查题名检索可能遗漏的论文 |
 | 出版商页面与原论文 | 核对正式发表信息、摘要与研究内容 |
 
-论文条目提供 arXiv 或 DOI 原文入口。日期区分预印本公告、首次在线发表和期刊卷期；卷期年份可能晚于首次上线年份。
+论文条目提供 arXiv 或 DOI 原文入口。排序区分预印本公告、重大修订与首次在线发表；DOI 注册日和期刊卷期不作为发表日期。尚未核实的候选留在维护队列，确认后再收录。
 
 课题组页面的查询组件直接读取 Crossref，展示相关期刊论文；查询结果受其收录和作者信息完整度影响，不等同于首页精选。
 

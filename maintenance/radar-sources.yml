@@ -16,10 +16,19 @@ arxiv:
     - quant-ph
     - cond-mat.stat-mech
     - cond-mat.str-el
+    - cond-mat.quant-gas
     - hep-th
     - physics.optics
 
 crossref:
+  # A separate registered-DOI pass catches online-first papers whose publishers
+  # omit published-online metadata. Created dates never become publication dates.
+  created_backstop_query_ids:
+    - inverse-scattering
+    - riemann-hilbert
+    - painleve
+    - darboux-transformation
+    - finite-gap
   # Crossref is a ranked title backstop, not a database mirror. A daily run
   # inspects only the first ranked page for each strong phrase. Broader terms
   # such as "Hamiltonian", "Poisson", and "soliton" are intentionally absent:
@@ -135,11 +144,12 @@ crossref:
         - '\bintegrable[-\s]+probability\b'
 
 zbmath:
+  future_issue_years: 1
   # A mathematics-specific backstop for journal papers whose titles do not
   # contain one of the strong Crossref phrases. This is a bounded MSC query,
   # not a journal whitelist or a zbMATH database mirror.
   rows_per_page: 100
-  max_pages: 6
+  max_pages: 8
   timeout_seconds: 20
   max_retries: 2
   overlap_days: 30

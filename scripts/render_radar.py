@@ -69,10 +69,6 @@ def validate_frontier_entry(entry: dict[str, Any], papers: dict[str, dict[str, A
         "paper_id",
         "signal_date",
         "signal_type",
-        "summary",
-        "main_result",
-        "integrable_structure",
-        "innovation",
     )
     missing = [field for field in required if not compact(entry.get(field, ""))]
     if missing:
@@ -81,22 +77,19 @@ def validate_frontier_entry(entry: dict[str, Any], papers: dict[str, dict[str, A
     paper_id = entry["paper_id"]
     if paper_id not in papers:
         raise ValueError(f"frontier entry references unknown paper_id: {paper_id}")
+    if papers[paper_id].get("status") in {"withdrawn", "retracted"}:
+        raise ValueError(f"{paper_id}: withdrawn/retracted records cannot remain in the public selection")
 
     parse_iso_date(entry["signal_date"], f"{paper_id}.signal_date")
     signal_type = entry["signal_type"]
     if signal_type not in SIGNAL_LABELS:
         raise ValueError(f"{paper_id}.signal_type is invalid: {signal_type}")
 
-    categories = entry.get("arxiv_categories", [])
-    if len(categories) > 2:
-        raise ValueError(f"{paper_id} has more than two displayed arXiv categories")
-    for category in categories:
-        if not ARXIV_CATEGORY_RE.fullmatch(str(category)):
-            raise ValueError(f"{paper_id} has invalid arXiv category: {category}")
-
-    tags = entry.get("structure_tags", [])
-    if len(tags) > 2:
-        raise ValueError(f"{paper_id} has more than two displayed structure tags")
+    retired = {"week", "summary", "main_result", "integrable_structure", "innovation", "structure_tags", "arxiv_categories"}
+    if retired & entry.keys():
+        raise ValueError(f"{paper_id} contains retired fields: {sorted(retired & entry.keys())}")
+    if entry.get("event_source") and not re.match(r"^https://", str(entry["event_source"])):
+        raise ValueError(f"{paper_id}.event_source must be a primary HTTPS source")
 
     directions = entry.get("directions", [])
     if not isinstance(directions, list) or not 1 <= len(directions) <= 2:
@@ -107,12 +100,11 @@ def validate_frontier_entry(entry: dict[str, Any], papers: dict[str, dict[str, A
         raise ValueError(f"{paper_id} has duplicate research directions")
 
     note = entry.get("reading_note")
-    if note is not None:
-        if not isinstance(note, dict) or any(
-            not isinstance(note.get(field), str) or not compact(note[field])
-            for field in ("lead", "detail", "method_scope")
-        ):
-            raise ValueError(f"{paper_id}.reading_note requires lead, detail and method_scope")
+    if not isinstance(note, dict) or set(note) != {"lead", "detail", "method_scope"} or any(
+        not isinstance(note.get(field), str) or not compact(note[field])
+        for field in ("lead", "detail", "method_scope")
+    ):
+        raise ValueError(f"{paper_id}.reading_note requires lead, detail and method_scope")
 
 
 def validate_frontier(frontier: dict[str, Any], papers: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
@@ -169,11 +161,6 @@ def source_links_html(paper: dict[str, Any], *, new_tab: bool = False) -> str:
     return result
 
 
-def render_html_tags(entry: dict[str, Any]) -> str:
-    tags = [*entry.get("arxiv_categories", [])[:2], *entry.get("structure_tags", [])[:2]]
-    return " ".join(f"<code>{html.escape(str(tag))}</code>" for tag in tags)
-
-
 def render_rich_text(value: Any) -> str:
     """Escape prose while preserving MathJax delimiters inside raw HTML cards."""
     text = compact(str(value))
@@ -190,25 +177,11 @@ def html_id(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
 
 
-def short_date_range(value: str) -> str:
-    match = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2}) 至 \d{4}-(\d{2})-(\d{2})", value)
-    if not match:
-        return value
-    _, start_month, start_day, end_month, end_day = match.groups()
-    if start_month == end_month:
-        return f"{int(start_month)} 月 {int(start_day)}–{int(end_day)} 日"
-    return f"{int(start_month)} 月 {int(start_day)} 日–{int(end_month)} 月 {int(end_day)} 日"
-
-
 def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
     authors = ", ".join(paper["authors"])
     short_authors = authors if len(paper["authors"]) <= 3 else ", ".join(paper["authors"][:2]) + ", et al."
     signal_label = SIGNAL_LABELS[entry["signal_type"]]
-    note = entry.get("reading_note") or {
-        "lead": entry["summary"],
-        "detail": entry["main_result"],
-        "method_scope": entry["integrable_structure"],
-    }
+    note = entry["reading_note"]
     anchor = f'paper-{html_id(entry["paper_id"])}'
     month_id = entry["signal_date"][:7]
     source_date_note = ""
@@ -230,7 +203,6 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
             f' · arXiv 修订日期 <time datetime="{html.escape(str(paper["updated"]), quote=True)}">'
             f'{html.escape(str(paper["updated"]))}</time>（UTC）'
         )
-    tags_data = html.escape(json.dumps(entry.get("structure_tags", []), ensure_ascii=False), quote=True)
     directions_data = html.escape(json.dumps(entry.get("directions", [])), quote=True)
     date_description = f'{signal_label} · {entry["signal_date"]}'
     if source_date_note:
@@ -244,17 +216,16 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
             f'<span class="radar-authors-short">{html.escape(short_authors)}</span>'
             f'<span class="radar-authors-full">{html.escape(authors)}</span>'
         )
-    # Keep the editorial record searchable even when the reading view is shorter.
+    # Index only stable keywords in addition to the visible, authoritative reading text.
     search_text = html.escape(" ".join([
-        *entry.get("arxiv_categories", []), *entry.get("structure_tags", []),
-        *(str(entry[field]) for field in ("summary", "main_result", "integrable_structure", "innovation")),
+        *paper.get("arxiv_categories", []), *paper.get("keywords", []),
     ]), quote=True)
     return (
         f'### {html.escape(str(paper["title"]))} {{#{anchor} .radar-search-heading}}\n\n'
         f'<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" '
         f'data-radar-anchor="{anchor}" '
         f'data-radar-month="{html.escape(month_id, quote=True)}" '
-        f'data-radar-date="{entry["signal_date"]}" data-radar-tags="{tags_data}" '
+        f'data-radar-date="{entry["signal_date"]}" '
         f'data-radar-directions="{directions_data}" '
         f'data-radar-search="{search_text}">\n'
         '  <details class="radar-paper-details">\n'
@@ -275,14 +246,6 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
         '  </details>\n'
         '</article>'
     )
-
-
-def frontier_week_id(entry: dict[str, Any]) -> str:
-    if entry.get("week"):
-        return str(entry["week"])
-    signal_date = parse_iso_date(entry["signal_date"], "signal_date")
-    iso_year, iso_week, _ = signal_date.isocalendar()
-    return f"{iso_year}-W{iso_week:02d}"
 
 
 def all_frontier_entries(frontier: dict[str, Any], papers: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
@@ -416,11 +379,12 @@ def render_sources() -> str:
 
 | 来源 | 用途 |
 | --- | --- |
-| [arXiv](https://arxiv.org/) | 新预印本与修订，重点关注可积系统、非线性波及相关分析方法 |
-| [Crossref](https://www.crossref.org/) 与 [zbMATH](https://zbmath.org/) | 期刊论文检索、DOI 匹配与文献补漏 |
+| [arXiv](https://arxiv.org/)及[历史公告](https://arxiv.org/catchup) | 新稿、修订与公告日期；同时核对当前版本及撤回状态 |
+| [Crossref](https://www.crossref.org/) | 期刊书目、DOI 匹配与近期发表线索 |
+| [zbMATH](https://zbmath.org/) | 按数学专业分类补查题名检索可能遗漏的论文 |
 | 出版商页面与原论文 | 核对正式发表信息、摘要与研究内容 |
 
-论文条目提供 arXiv 或 DOI 原文入口。日期区分预印本公告、首次在线发表和期刊卷期；卷期年份可能晚于首次上线年份。
+论文条目提供 arXiv 或 DOI 原文入口。排序区分预印本公告、重大修订与首次在线发表；DOI 注册日和期刊卷期不作为发表日期。尚未核实的候选留在维护队列，确认后再收录。
 
 课题组页面的查询组件直接读取 Crossref，展示相关期刊论文；查询结果受其收录和作者信息完整度影响，不等同于首页精选。
 

@@ -1,58 +1,6 @@
-# Public research-radar tags. Frontier entries may display at most two values
-# from this list. Keep standard terminology here instead of inventing labels
-# during daily curation.
+schema_version: 2
 frontier_directions:
   spectral: 散射与谱方法
   waves: 非线性波与稳定性
   asymptotics: 渐近与统计
   structures: 可积结构
-
-frontier_structure_tags:
-  - AKNS hierarchy
-  - 2D Toda hierarchy
-  - Ablowitz--Ladik hierarchy
-  - Drinfeld--Sokolov hierarchy
-  - mKdV hierarchy
-  - Painlevé hierarchy
-  - Riemann--Hilbert problem
-  - nonlinear steepest descent
-  - inverse scattering
-  - Darboux transformation
-  - Bäcklund transformation
-  - Yang--Baxter equation
-  - Lax pair
-  - Hamiltonian structure
-  - Poisson structure
-  - Frobenius manifold
-  - finite-gap
-  - spectral curve
-  - Painlevé
-  - isomonodromy
-  - tau function
-  - integrable discretization
-  - recursion operator
-  - soliton gas
-  - soliton resolution
-  - generalized hydrodynamics
-  - loop equations
-  - integrable probability
-  - quantum integrability
-  - transfer matrix
-  - Bethe ansatz
-  - Chern--Simons theory
-  - inverse problem
-  - conservation laws
-  - symplectic geometry
-  - integrable geometry
-  - topological vector potential
-  - wave kinetics
-  - multiple orthogonal polynomials
-  - Laurent property
-  - Pfaffian
-  - bilinear method
-  - squared eigenfunctions
-  - Poisson--Lie geometry
-  - Whitham modulation
-  - nonlinear-wave stability
-  - well-posedness
-  - nonlinear-wave transport

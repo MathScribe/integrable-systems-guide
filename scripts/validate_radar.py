@@ -13,6 +13,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 VERSION_RE = re.compile(r"v[1-9]\d*")
+CATEGORY_RE = re.compile(r"^[a-z-]+(?:\.(?:[A-Z]{2}|[a-z-]+))?$")
 DATE_FIELDS = ("submitted", "updated", "published", "metadata_checked_at")
 
 
@@ -53,6 +54,18 @@ def validate_papers(papers: Any) -> int:
                 raise ValueError(f"paper #{index} is missing {field}")
 
         paper_id = str(paper["id"])
+        if "tags" in paper:
+            raise ValueError(f"{paper_id}: tags is retired; use keywords")
+        if paper.get("status", "active") not in {"active", "withdrawn", "retracted"}:
+            raise ValueError(f"{paper_id}: invalid bibliographic status")
+        keywords = paper.get("keywords", [])
+        if not isinstance(keywords, list) or any(not isinstance(k,str) or not k.strip() for k in keywords):
+            raise ValueError(f"{paper_id}: keywords must be a string list")
+        if len(keywords) != len(set(keywords)):
+            raise ValueError(f"{paper_id}: duplicate keywords")
+        categories = paper.get("arxiv_categories", [])
+        if not isinstance(categories,list) or any(not isinstance(c,str) or not CATEGORY_RE.fullmatch(c) for c in categories):
+            raise ValueError(f"{paper_id}: invalid arXiv categories")
         if paper_id in paper_ids:
             raise ValueError(f"duplicate paper id: {paper_id}")
         paper_ids.add(paper_id)

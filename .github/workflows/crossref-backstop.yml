@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     # Crossref is a non-blocking backstop. A stalled endpoint must not leave a
     # scheduled job running indefinitely or delay the editorial workflow.
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -44,5 +44,24 @@ jobs:
         with:
           name: crossref-title-backstop
           path: radar-artifacts/crossref-title-backstop.json
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Run registered-DOI gap check
+        if: always()
+        shell: bash
+        run: |
+          python scripts/fetch_crossref_candidates.py \
+            --from "$(date -u -d '10 days ago' +%F)" \
+            --until "$(date -u +%F)" \
+            --date-basis created \
+            --output radar-artifacts/crossref-registration-backstop.json
+
+      - name: Upload registered-DOI candidates
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crossref-registration-backstop
+          path: radar-artifacts/crossref-registration-backstop.json
           if-no-files-found: error
           retention-days: 30

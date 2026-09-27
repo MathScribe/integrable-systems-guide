@@ -80,10 +80,15 @@ def crossref_date(item: dict[str, Any], field: str) -> str | None:
     numbers = parts[0]
     if not numbers:
         return None
+    # Preserve source precision: a year/month is not a January/first-day event.
     year = int(numbers[0])
-    month = int(numbers[1]) if len(numbers) > 1 else 1
-    day = int(numbers[2]) if len(numbers) > 2 else 1
-    return date(year, month, day).isoformat()
+    if len(numbers) == 1:
+        return f"{year:04d}"
+    month = int(numbers[1])
+    date(year, month, 1)
+    if len(numbers) == 2:
+        return f"{year:04d}-{month:02d}"
+    return date(year, month, int(numbers[2])).isoformat()
 
 
 def clean_text(value: object) -> str:
@@ -200,10 +205,14 @@ def build_url(
     end: str,
     rows: int,
     mailto: str | None,
+    date_basis: str = "online",
 ) -> str:
+    if date_basis not in {"online", "created"}:
+        raise ValueError("date_basis must be online or created")
+    date_filter = "online-pub" if date_basis == "online" else "created"
     params = {
         "filter": (
-            f"from-online-pub-date:{start},until-online-pub-date:{end},"
+            f"from-{date_filter}-date:{start},until-{date_filter}-date:{end},"
             "type:journal-article"
         ),
         f"query.{query['field']}": query["term"],
@@ -227,6 +236,7 @@ def fetch_query(
     timeout: int,
     max_retries: int,
     mailto: str | None,
+    date_basis: str = "online",
     urlopen: UrlOpen = urllib.request.urlopen,
     sleep: Sleep = time.sleep,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -236,6 +246,7 @@ def fetch_query(
         end=end,
         rows=rows,
         mailto=mailto,
+        date_basis=date_basis,
     )
     payload = request_json(
         url,
@@ -264,6 +275,7 @@ def fetch_query(
         "status": "complete",
         "field": query["field"],
         "term": query["term"],
+        "date_basis": date_basis,
         "total_results": total_results,
         "raw_items": len(items),
         "matched_items": len(matched),
@@ -278,6 +290,7 @@ def fetch_manifest(
     start: str,
     end: str,
     mailto: str | None,
+    date_basis: str = "online",
     urlopen: UrlOpen = urllib.request.urlopen,
     sleep: Sleep = time.sleep,
     progress: Callable[[str], None] | None = None,
@@ -287,7 +300,14 @@ def fetch_manifest(
     if start > end:
         raise ValueError("from date cannot be after until date")
 
-    crossref = config["crossref"]
+    if date_basis not in {"online", "created"}:
+        raise ValueError("date_basis must be online or created")
+    crossref = dict(config["crossref"])
+    if date_basis == "created" and crossref.get("created_backstop_query_ids"):
+        ids = set(crossref["created_backstop_query_ids"])
+        crossref["queries"] = [q for q in crossref["queries"] if q["id"] in ids]
+        if not crossref["queries"]:
+            raise ValueError("No queries configured for the DOI-created backstop")
     rows = int(crossref.get("rows_per_page", 200))
     concurrent_queries = int(crossref.get("concurrent_queries", 4))
     timeout = int(crossref.get("timeout_seconds", 30))
@@ -311,6 +331,7 @@ def fetch_manifest(
             timeout=timeout,
             max_retries=max_retries,
             mailto=mailto,
+            date_basis=date_basis,
             urlopen=urlopen,
             sleep=sleep,
         )
@@ -359,7 +380,9 @@ def fetch_manifest(
         "schema_version": 1,
         "source": "crossref",
         "status": "complete" if failures == 0 else "partial",
-        "coverage": "ranked-title-backstop",
+        "coverage": "ranked-title-backstop" if date_basis == "online" else "ranked-title-registration-backstop",
+        "date_basis": date_basis,
+        "date_note": "DOI creation and reduced-precision dates are discovery evidence, never proof of first online publication.",
         "window": {"from": start, "until": end},
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "queries": query_reports,
@@ -395,6 +418,7 @@ def parser() -> argparse.ArgumentParser:
     result.add_argument("--until", dest="end", required=True, help="inclusive ISO date")
     result.add_argument("--output", type=Path, required=True)
     result.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    result.add_argument("--date-basis", choices=("online", "created"), default="online")
     result.add_argument(
         "--mailto",
         default=os.environ.get("RADAR_CROSSREF_MAILTO"),
@@ -411,6 +435,7 @@ def main() -> None:
         start=args.start,
         end=args.end,
         mailto=args.mailto,
+        date_basis=args.date_basis,
         progress=lambda message: print(message, flush=True),
     )
     atomic_write_json(args.output, manifest)
