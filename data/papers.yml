@@ -1733,7 +1733,7 @@
   - cond-mat.stat-mech
   - math-ph
 - id: arxiv:2606.25739
-  title: 'A novel 2+1-dimensional extended Dym equation: moving boundary problems solvable via Painlevé II symmetry reduction'
+  title: 'A 2+1-dimensional extended Dym equation: moving boundary problems solvable via Painlevé II symmetry reduction'
   authors:
   - Colin Rogers
   - Pablo Amster
@@ -1741,13 +1741,14 @@
   arxiv_id: '2606.25739'
   doi: null
   submitted: '2026-06-24'
-  updated: '2026-06-24'
-  metadata_checked_at: '2026-07-20'
+  updated: '2026-09-18'
+  metadata_checked_at: '2026-09-27'
   keywords:
   - Painlevé
   arxiv_categories:
   - math.CA
   - nlin.SI
+  version: v2
 - id: arxiv:2606.23803
   title: Infinite-Level Hierarchy of Solvable Quantum Circuits
   authors:
@@ -2727,6 +2728,7 @@
   arxiv_categories:
   - nlin.SI
   - math-ph
+  - nlin.PS
 - id: arxiv:2608.01878
   title: Collective superintegrable systems from the Guillemin--Sternberg torus action
   authors:
@@ -3310,9 +3312,9 @@
   arxiv_id: '2608.07263'
   doi: null
   submitted: '2026-08-07'
-  updated: '2026-08-07'
-  version: v1
-  metadata_checked_at: '2026-08-12'
+  updated: '2026-09-04'
+  version: v2
+  metadata_checked_at: '2026-09-27'
   keywords:
   - Toda flow
   - isospectral manifolds
@@ -3856,9 +3858,9 @@
   year: 2026
   published: '2026-08-18'
   submitted: '2025-12-17'
-  updated: '2025-12-17'
-  version: v1
-  metadata_checked_at: '2026-08-27'
+  updated: '2026-09-21'
+  version: v2
+  metadata_checked_at: '2026-09-27'
   keywords:
   - holomorphic BF theory
   - holomorphic integrability
@@ -4100,9 +4102,9 @@
   arxiv_id: '2608.25594'
   doi: null
   submitted: '2026-08-26'
-  updated: '2026-08-26'
-  version: v1
-  metadata_checked_at: '2026-08-27'
+  updated: '2026-09-07'
+  version: v2
+  metadata_checked_at: '2026-09-27'
   keywords:
   - Painlevé equations
   - monodromy surfaces
@@ -4114,6 +4116,7 @@
   arxiv_categories:
   - math.AG
   - math-ph
+  - nlin.SI
 - id: arxiv:2608.25647
   title: Sato-theoretic construction of the anti-self-dual Yang-Mills hierarchy and the Ward conjecture
   authors:
@@ -4578,15 +4581,17 @@
   doi: null
   submitted: '2026-09-04'
   submitted_at: '2026-09-04T05:13:48Z'
-  updated: '2026-09-04'
-  version: v1
-  metadata_checked_at: '2026-09-07'
+  updated: '2026-09-15'
+  version: v2
+  metadata_checked_at: '2026-09-27'
   keywords:
   - Bethe ansatz
   - integrable geometry
   arxiv_categories:
   - math.AG
+  - hep-th
   - math-ph
+  - math.RT
 - id: arxiv:2609.04814
   title: Spin-Charge Subordination in the Infinite-$U$ $SU(N)$ Hubbard Chain
   authors:
@@ -4867,15 +4872,17 @@
   doi: null
   submitted: '2026-09-08'
   submitted_at: '2026-09-08T16:29:07Z'
-  updated: '2026-09-08'
-  version: v1
-  metadata_checked_at: '2026-09-12'
+  updated: '2026-09-17'
+  version: v2
+  metadata_checked_at: '2026-09-27'
   keywords:
   - Lax pair
   - quantum integrability
   arxiv_categories:
   - cond-mat.other
   - cond-mat.stat-mech
+  status: withdrawn
+  metadata_note: Author withdrawal confirmed on arXiv; listed on 2026-09-18. Bibliographic identity retained, removed from public selection.
 - id: arxiv:2609.09139
   title: Large-scale dynamics of integrable quenches
   authors:
@@ -5422,3 +5429,565 @@
   keywords:
   - inverse scattering
   - Riemann--Hilbert problem
+- id: arxiv:2609.12636
+  title: 'On the autonomisation of differential equations I: Sundman transformations for Painlevé equations I-IV'
+  authors:
+  - Pilar R. Gordoa
+  - Alexandru Iosif
+  - Andrew Pickering
+  url: https://arxiv.org/abs/2609.12636
+  arxiv_id: '2609.12636'
+  doi: null
+  submitted: '2026-09-11'
+  submitted_at: '2026-09-11T09:35:49Z'
+  updated: '2026-09-11'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - Painlevé
+  - Sundman transformation
+  - autonomisation
+- id: arxiv:2609.12876
+  title: Integral Representations for Solutions of the Linearized Fourth Painlevé Equation
+  authors:
+  - Oleg M. Kiselev
+  url: https://arxiv.org/abs/2609.12876
+  arxiv_id: '2609.12876'
+  doi: null
+  submitted: '2026-09-11'
+  submitted_at: '2026-09-11T14:04:28Z'
+  updated: '2026-09-11'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  - math.DG
+  keywords:
+  - Painlevé IV
+  - linearization
+  - Lax pair
+  - Stokes data
+  - contour integral
+- id: arxiv:2609.12970
+  title: Matrix Dressing Beyond Pfaff-Toda
+  authors:
+  - Sylvain Carpentier
+  - Marta Dell'Atti
+  url: https://arxiv.org/abs/2609.12970
+  arxiv_id: '2609.12970'
+  doi: null
+  submitted: '2026-09-11'
+  submitted_at: '2026-09-11T15:31:40Z'
+  updated: '2026-09-11'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  keywords:
+  - Pfaff-Toda
+  - Adler-Pfaff
+  - matrix dressing
+  - pseudodifference operators
+  - tau function
+- id: arxiv:2609.13769
+  title: Finite dimensional reductions of integrable differential-difference equations
+  authors:
+  - Alexander Mikhailov
+  url: https://arxiv.org/abs/2609.13769
+  arxiv_id: '2609.13769'
+  doi: null
+  submitted: '2026-09-12'
+  submitted_at: '2026-09-12T07:27:27Z'
+  updated: '2026-09-12'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  - math.DS
+  keywords:
+  - Volterra hierarchy
+  - reduction ideals
+  - finite-dimensional reductions
+  - noncommutative systems
+- id: arxiv:2609.14372
+  title: A Classification of Hirota-Integrable Supersymmetric Bilinear KdV-Type Equations
+  authors:
+  - Laurent Delisle
+  - Amine Jaouadi
+  url: https://arxiv.org/abs/2609.14372
+  arxiv_id: '2609.14372'
+  doi: null
+  submitted: '2026-09-13'
+  submitted_at: '2026-09-13T08:05:05Z'
+  updated: '2026-09-13'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  - quant-ph
+  keywords:
+  - supersymmetric KdV
+  - Hirota
+  - three-soliton condition
+  - bilinear equations
+- id: arxiv:2609.14457
+  title: Vector rogue wave patterns associated with generalized Hermite and Okamoto polynomials
+  authors:
+  - Hejiaqi Chen
+  - Dongwei Wu
+  - Chengfa Wu
+  - Guangxiong Zhang
+  url: https://arxiv.org/abs/2609.14457
+  arxiv_id: '2609.14457'
+  doi: null
+  submitted: '2026-09-13'
+  submitted_at: '2026-09-13T11:54:47Z'
+  updated: '2026-09-13'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - vector rogue waves
+  - multicomponent NLS
+  - Hirota equation
+  - Hermite polynomials
+  - Okamoto polynomials
+  - Painlevé IV
+- id: arxiv:2609.14996
+  title: 'Multivariable Painlevé-II equation: connection formulas for arbitrary system size'
+  authors:
+  - Nikolai A. Sinitsyn
+  url: https://arxiv.org/abs/2609.14996
+  arxiv_id: '2609.14996'
+  doi: null
+  submitted: '2026-09-14'
+  submitted_at: '2026-09-14T04:04:13Z'
+  updated: '2026-09-14'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  - cond-mat.dis-nn
+  - math-ph
+  - quant-ph
+  keywords:
+  - coupled Painlevé II
+  - connection formula
+  - WKB
+  - multivariable
+- id: arxiv:2609.16414
+  title: 'The Nakamura Conjecture Revisited: Toda Molecules and Stationary Axisymmetric Gravity'
+  authors:
+  - Takeshi Fukuyama
+  url: https://arxiv.org/abs/2609.16414
+  arxiv_id: '2609.16414'
+  doi: null
+  submitted: '2026-09-14'
+  submitted_at: '2026-09-14T22:46:00Z'
+  updated: '2026-09-19'
+  version: v2
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  - gr-qc
+  keywords:
+  - Nakamura conjecture
+  - Toda molecule
+  - Ernst equation
+  - Plücker relation
+  - Wronskian
+- id: arxiv:2609.19543
+  title: An integrable $\mathbb{Z}_2^2$-graded extension of Camassa-Holm equation and its bi-Hamiltonian structure
+  authors:
+  - N. Aizawa
+  - Ichi Fujii
+  - Ren Ito
+  - L. Vasconcellos
+  url: https://arxiv.org/abs/2609.19543
+  arxiv_id: '2609.19543'
+  doi: null
+  submitted: '2026-09-17'
+  submitted_at: '2026-09-17T01:08:25Z'
+  updated: '2026-09-17'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  keywords:
+  - Camassa-Holm
+  - graded Lie superalgebra
+  - bihamiltonian structure
+  - Lax pair
+- id: arxiv:2609.20679
+  title: Integrability of the deformed Toda systems
+  authors:
+  - Mikhail Vasilev
+  url: https://arxiv.org/abs/2609.20679
+  arxiv_id: '2609.20679'
+  doi: null
+  submitted: '2026-09-17'
+  submitted_at: '2026-09-17T16:49:35Z'
+  updated: '2026-09-17'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  - math.QA
+  keywords:
+  - deformed Toda
+  - Lax matrix
+  - quantum integrability
+  - algebraic Bethe ansatz
+- id: arxiv:2609.15316
+  title: On the commuting charges and the Bethe ansatz for the quantised Kadomtsev-Petviashvili equation
+  authors:
+  - Chiara Paletta
+  - Alessandro Torrielli
+  url: https://arxiv.org/abs/2609.15316
+  arxiv_id: '2609.15316'
+  doi: null
+  submitted: '2026-09-14'
+  submitted_at: '2026-09-14T10:05:03Z'
+  updated: '2026-09-14'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - hep-th
+  - math-ph
+  - nlin.SI
+  keywords:
+  - quantum KP
+  - Kadomtsev-Petviashvili
+  - Bethe ansatz
+  - conserved charge
+  - regularization
+- id: arxiv:2609.15091
+  title: Deformation of sine-Gordon two-soliton solutions in $\varphi^4$ kink-antikink configurations
+  authors:
+  - Aliakbar Moradi Marjaneh
+  - Danial Saadatmand
+  - Fabiano C. Simas
+  - Jarah Evslin
+  - Dionisio Bazeia
+  url: https://arxiv.org/abs/2609.15091
+  arxiv_id: '2609.15091'
+  doi: null
+  submitted: '2026-09-14'
+  submitted_at: '2026-09-14T06:09:49Z'
+  updated: '2026-09-14'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.PS
+  - math-ph
+  keywords:
+  - sine-Gordon
+  - phi4
+  - kink-antikink
+  - scattering initial data
+  - field deformation
+- id: arxiv:2609.19508
+  title: Radial dam breaks in a two-dimensional droplet bearing environment
+  authors:
+  - F. Bristy
+  - S. Chandramouli
+  - G. A. Bougas
+  - G. C. Katsimiga
+  - P. G. Kevrekidis
+  - S. I. Mistakidis
+  url: https://arxiv.org/abs/2609.19508
+  arxiv_id: '2609.19508'
+  doi: null
+  submitted: '2026-09-16'
+  submitted_at: '2026-09-16T23:50:02Z'
+  updated: '2026-09-16'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - cond-mat.quant-gas
+  - nlin.PS
+  - physics.atom-ph
+  - quant-ph
+  keywords:
+  - quantum droplets
+  - radial dam break
+  - dispersive shock waves
+  - Gross-Pitaevskii
+  - cubic-quintic NLS
+- id: arxiv:2609.12423
+  title: Scattering Across the Long-Range Threshold for One-Dimensional Nonlinear Schrödinger Equations
+  authors:
+  - Yonggeun Cho
+  - Jinyeop Lee
+  url: https://arxiv.org/abs/2609.12423
+  arxiv_id: '2609.12423'
+  doi: null
+  submitted: '2026-09-11'
+  submitted_at: '2026-09-11T04:17:58Z'
+  updated: '2026-09-11'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - one-dimensional NLS
+  - modified scattering
+  - long-range threshold
+  - nonlinear clock
+- id: arxiv:2609.12518
+  title: Large-data modified wave operators for the defocusing nonlinear Schrödinger equation in one space dimension with subcritical long-range nonlinearity
+  authors:
+  - Masaki Kawamoto
+  - Haruya Mizutani
+  url: https://arxiv.org/abs/2609.12518
+  arxiv_id: '2609.12518'
+  doi: null
+  submitted: '2026-09-11'
+  submitted_at: '2026-09-11T07:25:11Z'
+  updated: '2026-09-16'
+  version: v2
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - defocusing NLS
+  - modified wave operator
+  - final-state problem
+  - long-range scattering
+- id: arxiv:2609.16480
+  title: Asymptotic Stability of Multi-Solitons for Coupled Nonlinear Schrödinger Equations via the $\bar{\partial}$-Method
+  authors:
+  - Yubin Huang
+  - Liming Ling
+  - Huajie Su
+  url: https://arxiv.org/abs/2609.16480
+  arxiv_id: '2609.16480'
+  doi: null
+  submitted: '2026-09-15'
+  submitted_at: '2026-09-15T01:09:59Z'
+  updated: '2026-09-15'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - math.AP
+  - math-ph
+  keywords:
+  - coupled NLS
+  - Manakov
+  - multi-soliton asymptotic stability
+  - dbar steepest descent
+  - Darboux
+  - Yang-Baxter map
+- id: arxiv:2609.14423
+  title: Caterpillar Degenerations of Spectral Curves and Double Gelfand-Zeitlin Geometry
+  authors:
+  - George Y. Liu
+  url: https://arxiv.org/abs/2609.14423
+  arxiv_id: '2609.14423'
+  doi: null
+  submitted: '2026-09-13'
+  submitted_at: '2026-09-13T10:46:06Z'
+  updated: '2026-09-13'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - hep-th
+  - math-ph
+  keywords:
+  - spectral curve
+  - double Gelfand-Zeitlin
+  - Stokes matrix
+  - isomonodromic tau
+  - Painlevé III
+- id: arxiv:2609.12269
+  title: Inverse reconstruction of dissipative Kerr soliton interactions
+  authors:
+  - Carlo Silvestri
+  - Panayotis G. Kevrekidis
+  - Stephane Coen
+  - C. Martijn de Sterke
+  - Antoine F. J. Runge
+  url: https://arxiv.org/abs/2609.12269
+  arxiv_id: '2609.12269'
+  doi: null
+  submitted: '2026-09-10'
+  submitted_at: '2026-09-10T22:56:04Z'
+  updated: '2026-09-10'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - physics.optics
+  keywords:
+  - dissipative Kerr soliton
+  - Lugiato-Lefever
+  - interaction potential
+  - inverse reconstruction
+  - soliton crystal
+- id: arxiv:2609.14786
+  title: Fast dynamical control of quantum droplets via Feshbach resonances
+  authors:
+  - Jing Li
+  - Thomas Fogarty
+  - Thomas Busch
+  - Andreas Ruschhaupt
+  url: https://arxiv.org/abs/2609.14786
+  arxiv_id: '2609.14786'
+  doi: null
+  submitted: '2026-09-13'
+  submitted_at: '2026-09-13T20:54:05Z'
+  updated: '2026-09-13'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - cond-mat.quant-gas
+  keywords:
+  - quantum droplets
+  - shortcut to adiabaticity
+  - inverse engineering
+  - Feshbach resonance
+  - Gross-Pitaevskii
+- id: arxiv:2609.24063
+  title: Exact Nonperturbative Equilibrium Mode Statistics in Nonlinear Wave and Lattice Systems
+  authors:
+  - Jialin Zhang
+  - Yong Zhang
+  - Hong Zhao
+  url: https://arxiv.org/abs/2609.24063
+  arxiv_id: '2609.24063'
+  doi: null
+  submitted: '2026-09-21'
+  submitted_at: '2026-09-21T03:39:05Z'
+  updated: '2026-09-21'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - cond-mat.quant-gas
+  - math-ph
+  - physics.app-ph
+  keywords:
+  - nonlinear wave statistics
+  - MMT
+  - FPUT
+  - discrete NLS
+  - Rayleigh-Jeans
+  - quasicondensation
+- id: arxiv:2605.18093
+  title: Where solitons are in a KdV soliton gas
+  authors:
+  - Benjamin Doyon
+  url: https://arxiv.org/abs/2605.18093
+  arxiv_id: '2605.18093'
+  doi: null
+  submitted: '2026-05-18'
+  submitted_at: '2026-05-18T09:10:09Z'
+  updated: '2026-09-17'
+  version: v2
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - math-ph
+  - cond-mat.stat-mech
+  keywords:
+  - KdV soliton gas
+  - semiclassical Bethe equations
+  - quasiparticle position
+  - fluid-cell projection
+  - tau function
+- id: arxiv:2603.09224
+  title: 'Lax Pairs: Integrable, Less Integrable and Nonintegrable Systems'
+  authors:
+  - D. C. Antonopoulou
+  - S. Kamvissis
+  url: https://arxiv.org/abs/2603.09224
+  arxiv_id: '2603.09224'
+  doi: null
+  submitted: '2026-03-10'
+  submitted_at: '2026-03-10T05:45:17Z'
+  updated: '2026-09-15'
+  version: v3
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  - math.AP
+  - math.DS
+  keywords:
+  - focusing NLS
+  - half-line
+  - Dirichlet-to-Neumann
+  - breather
+  - boundary conditions
+  - unified transform
+- id: arxiv:2601.13203
+  title: Bihamiltonian tests for integrable systems associated to rank-$1$ F-CohFTs
+  authors:
+  - Alexandr Buryak
+  - Jianghao Xu
+  - Di Yang
+  url: https://arxiv.org/abs/2601.13203
+  arxiv_id: '2601.13203'
+  doi: null
+  submitted: '2026-01-19'
+  submitted_at: '2026-01-19T16:29:08Z'
+  updated: '2026-09-18'
+  version: v2
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  - math.AG
+  keywords:
+  - bihamiltonian hierarchy
+  - F-CohFT
+  - Miura invariants
+  - Camassa-Holm
+  - Degasperis-Procesi
+- id: arxiv:2608.02567
+  title: Talbot effect for the periodic Benjamin--Ono equation
+  authors:
+  - Xi Chen
+  url: https://arxiv.org/abs/2608.02567
+  arxiv_id: '2608.02567'
+  doi: null
+  submitted: '2026-08-03'
+  submitted_at: '2026-08-03T17:45:43Z'
+  updated: '2026-09-21'
+  version: v3
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - math.AP
+  - math-ph
+  keywords:
+  - Benjamin-Ono
+  - Talbot effect
+  - bounded variation
+  - arithmetic regularity
+  - Tao gauge transform
+- id: arxiv:2605.23229
+  title: Strichartz estimates for Schrödinger equations with nonlinear boundary interactions
+  authors:
+  - Nicola Garofalo
+  - Gigliola Staffilani
+  url: https://arxiv.org/abs/2605.23229
+  arxiv_id: '2605.23229'
+  doi: null
+  submitted: '2026-05-22'
+  submitted_at: '2026-05-22T04:42:00Z'
+  updated: '2026-09-08'
+  version: v2
+  metadata_checked_at: '2026-09-27'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Schrödinger equation
+  - nonlinear boundary
+  - Bessel operator
+  - Strichartz estimates
+  - weighted well-posedness
