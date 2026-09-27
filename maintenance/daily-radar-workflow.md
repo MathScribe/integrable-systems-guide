@@ -4,7 +4,7 @@ This file is the canonical operating procedure for maintaining the research rada
 
 ## Objective
 
-Maintain a cumulative, innovation-focused radar for researchers familiar with integrable PDEs, spectral methods, and related mathematical physics.
+Maintain a cumulative radar focused on integrable nonlinear waves, inverse scattering, spectral methods and concrete new directions connected to these research interests.
 
 Run discovery every day, but publish only qualifying research events. Zero-paper days are acceptable. Do not create a reading chain, fill a quota, or add old background papers merely to produce an update.
 
@@ -27,7 +27,7 @@ Discovery and selection are separate stages.
    watermark in `maintenance/radar-state.yml`. Never infer Crossref or
    publisher coverage from the latest public paper date.
 3. Check complete recent coverage of arXiv `nlin.SI` and `nlin.PS`.
-4. Run bounded cross-category searches in mathematical physics, probability, geometry, combinatorics, quantum many-body physics, statistical physics, gravity, optics, and related areas.
+4. Run bounded cross-category searches for concrete connections to the research focus in mathematical physics, probability, geometry, quantum theory, optics and related areas. Broad discovery is not a promise to cover each field comprehensively.
 5. Use both structure terms and result terms. Useful result terms include classification, arbitrary-order families, asymptotics, transition regimes, inverse problems, control, tomography, exact distributions, transport, topology, experiments, and data-driven integrability.
 6. Author, group, and specialist pages may be used for manual gap checking. Do not mirror or ingest their feeds.
 
@@ -90,7 +90,7 @@ it does not mean all of zbMATH or every mathematics journal was inspected.
 
 ## Selection
 
-Thematic relevance is a broad gate; innovation strength is decisive. Apply the same field-wide criteria to every candidate.
+Apply the focused research and useful-new-direction tests in policy version 2 consistently. Judge both relevance and the concrete advance; do not substitute a field label, author name or journal prestige for either.
 
 Use `maintenance/radar-selection-policy.md` as the detailed, versioned editorial
 contract. Freshness, identity, and non-duplication are hard eligibility gates.
@@ -98,10 +98,10 @@ There is no fixed daily or weekly count, minimum, or maximum.
 
 Internally ask:
 
-1. Does the paper introduce, reveal, or substantially extend an integrable structure or method?
-2. If not, does an existing integrable structure indispensably produce a clear, systematic, nontrivial innovation?
+1. Does the paper make a substantive advance on a problem, model or method directly relevant to the research focus?
+2. If not, does it establish a concrete new methodological or problem connection worth following from that focus?
 
-A paper may pass when either answer is clearly yes. Examples include a new classification, an arbitrary-order or arbitrary-parameter family, a new asymptotic regime or critical transition, a new topology or geometry mechanism, a new inverse/control/experimental method, a new statistical or transport structure, or a genuinely new application in which integrability is central.
+A paper may pass when either answer is clearly yes. Relevant well-posedness, stability and asymptotic results are eligible alongside new integrable structures, inverse methods and statistical or experimental connections. The new contribution must be explainable from primary evidence.
 
 Do not select a paper when integrability is incidental, method transfer is routine, the result is limited to a few low-order examples or parameter plots, or the innovation cannot be explained reliably from primary sources.
 

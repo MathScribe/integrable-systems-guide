@@ -21,21 +21,27 @@
     - "Darboux--Bäcklund transformation"
     - "asymptotics"
 
-- id: "arxiv:2607.04756"
-  title: "Integrable full discretization of the multi-component short pulse equation"
+- id: arxiv:2607.04756
+  title: Integrable full discretization of the multi-component short pulse equation
   authors:
-    - "Ayako Hori"
-    - "Yuta Tanaka"
-    - "Ken-ichi Maruno"
-    - "Yasuhiro Ohta"
-    - "Bao-Feng Feng"
-  url: "https://arxiv.org/abs/2607.04756"
-  arxiv_id: "2607.04756"
-  doi: null
+  - Ayako Hori
+  - Yuta Tanaka
+  - Ken-ichi Maruno
+  - Yasuhiro Ohta
+  - Bao-Feng Feng
+  url: https://arxiv.org/abs/2607.04756
+  arxiv_id: '2607.04756'
+  doi: 10.1088/1751-8121/aea3c6
   tags:
-    - "multi-component short pulse equation"
-    - "integrable discretization"
-    - "soliton systems"
+  - multi-component short pulse equation
+  - integrable discretization
+  - soliton systems
+  journal: 'Journal of Physics A: Mathematical and Theoretical'
+  volume: '59'
+  issue: '38'
+  pages: '385701'
+  year: 2026
+  metadata_checked_at: '2026-09-27'
 
 - id: "arxiv:2607.01348"
   title: "Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation"
@@ -69,22 +75,23 @@
     - "squared eigenfunctions"
     - "orbital stability"
 
-- id: "arxiv:2606.24435"
-  title: "Asymptotics of Soliton Gas for the Derivative Nonlinear Schrödinger Equation"
+- id: arxiv:2606.24435
+  title: 'Soliton gas for the derivative nonlinear Schrödinger equation: continuum dbar-problem, genus reduction and asymptotics'
   authors:
-    - "Deng Shan Wang"
-    - "Xinyu Wang"
-  url: "https://arxiv.org/abs/2606.24435"
-  arxiv_id: "2606.24435"
-  doi: "10.48550/arXiv.2606.24435"
-  submitted: "2026-06-23"
-  updated: "2026-06-23"
-  metadata_checked_at: "2026-07-20"
+  - Deng-Shan Wang
+  - Xinyu Wang
+  url: https://arxiv.org/abs/2606.24435
+  arxiv_id: '2606.24435'
+  doi: 10.48550/arXiv.2606.24435
+  submitted: '2026-06-23'
+  updated: '2026-08-01'
+  metadata_checked_at: '2026-09-27'
   tags:
-    - "DNLS"
-    - "soliton gas"
-    - "Riemann--Hilbert problem"
-    - "long-time asymptotics"
+  - DNLS
+  - soliton gas
+  - Riemann--Hilbert problem
+  - long-time asymptotics
+  version: v2
 
 - id: "arxiv:2605.28856"
   title: "Inverse scattering for the linear system associated with the coupled Gerdjikov--Ivanov equations"
@@ -2545,25 +2552,25 @@
     - "constant Poisson bracket"
     - "Calabi--Yau condition"
 
-- id: "arxiv:2608.01293"
-  title: "Deformation algorithm: Deforming (2+1)-dimensional integrable systems to higher dimensional ones"
+- id: arxiv:2608.01293
+  title: Deformations of (2+1)-dimensional integrable systems and isotropic and anisotropic Harry Dym variants
   authors:
-    - "Wang Fa-Ren"
-    - "Jia Man"
-    - "Lou S Y"
-  url: "https://arxiv.org/abs/2608.01293"
-  arxiv_id: "2608.01293"
-  doi: "10.48550/arXiv.2608.01293"
-  submitted: "2026-08-02"
-  updated: "2026-08-02"
-  version: "v1"
-  metadata_checked_at: "2026-08-08"
+  - Wang Fa-Ren
+  - Jia Man
+  - Lou S Y
+  url: https://arxiv.org/abs/2608.01293
+  arxiv_id: '2608.01293'
+  doi: 10.48550/arXiv.2608.01293
+  submitted: '2026-08-02'
+  updated: '2026-09-15'
+  version: v2
+  metadata_checked_at: '2026-09-27'
   tags:
-    - "deformation algorithm"
-    - "higher-dimensional integrable systems"
-    - "KP equation"
-    - "Nizhnik--Novikov--Veselov equation"
-    - "reciprocal systems"
+  - deformation algorithm
+  - higher-dimensional integrable systems
+  - KP equation
+  - Nizhnik--Novikov--Veselov equation
+  - reciprocal systems
 
 - id: "arxiv:2608.01878"
   title: "Collective superintegrable systems from the Guillemin--Sternberg torus action"
@@ -2766,31 +2773,31 @@
     - "tau function"
     - "asymptotic series"
 
-- id: "arxiv:2307.15837"
-  title: "Existence of global solutions for the nonlocal derivative nonlinear Schrödinger equation by the inverse scattering transform method"
+- id: arxiv:2307.15837
+  title: Existence of global solutions for the nonlocal derivative nonlinear Schrödinger equation by the inverse scattering transform method
   authors:
-    - "Yuan Li"
-    - "Engui Fan"
-  url: "https://doi.org/10.1007/s10473-026-0506-6"
-  arxiv_id: "2307.15837"
-  doi: "10.1007/s10473-026-0506-6"
-  journal: "Acta Mathematica Scientia"
-  volume: "46"
-  issue: "5"
-  pages: "2108-2142"
+  - Yuan Li
+  - Engui Fan
+  url: https://doi.org/10.1007/s10473-026-0506-6
+  arxiv_id: '2307.15837'
+  doi: 10.1007/s10473-026-0506-6
+  journal: Acta Mathematica Scientia
+  volume: '46'
+  issue: '5'
+  pages: 2108-2142
   year: 2026
-  published: "2026-08-05"
-  submitted: "2023-07-28"
-  updated: "2023-07-28"
-  version: "v1"
-  metadata_checked_at: "2026-08-08"
-  metadata_note: "The version of record uses the corrected word 'derivative' in the title and lists Yuan Li and Engui Fan; arXiv v1 uses 'derivation' and also lists Xinhan Liu."
+  published: '2026-08-05'
+  submitted: '2023-07-28'
+  updated: '2023-07-28'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  metadata_note: The version of record uses the corrected word 'derivative' in the title and lists Yuan Li and Engui Fan; arXiv v1 uses 'derivation' and also lists Xinhan Liu.
   tags:
-    - "nonlocal derivative NLS"
-    - "global solutions"
-    - "inverse scattering"
-    - "Riemann--Hilbert problem"
-    - "weighted Sobolev space"
+  - nonlocal derivative NLS
+  - global solutions
+  - inverse scattering
+  - Riemann--Hilbert problem
+  - weighted Sobolev space
 
 - id: "arxiv:2607.22021"
   title: "Classification of Six-dimensional Real Nilpotent Lie Bialgebras of Symplectic Type and their Poisson-Lie Groups"
@@ -3425,23 +3432,31 @@
   metadata_checked_at: "2026-08-27"
   tags: ["integrable boundary quench", "boundary form factors", "Lee--Yang model", "real-time dynamics"]
 
-- id: "arxiv:2604.16233"
-  title: "Jet-Density of Finite-Gap Solutions for Classes of BKM Systems"
-  authors: ["Manuel Quaschner", "Wijnand Steneker"]
-  url: "https://doi.org/10.1088/1361-6544/ae95d1"
-  arxiv_id: "2604.16233"
-  doi: "10.1088/1361-6544/ae95d1"
-  journal: "Nonlinearity"
-  volume: "39"
-  issue: "8"
-  article_number: "085027"
+- id: arxiv:2604.16233
+  title: Jet-Density of Finite-Gap Solutions for Classes of BKM Systems
+  authors:
+  - Manuel Quaschner
+  - Wijnand Steneker
+  url: https://doi.org/10.1088/1361-6544/ae95d1
+  arxiv_id: '2604.16233'
+  doi: 10.1088/1361-6544/ae95d1
+  journal: Nonlinearity
+  volume: '39'
+  issue: '8'
+  article_number: 085027
   year: 2026
-  published: "2026-08-19"
-  submitted: "2026-04-17"
-  updated: "2026-04-17"
-  version: "v1"
-  metadata_checked_at: "2026-08-27"
-  tags: ["BKM systems", "finite-gap solutions", "jet density", "Stäckel systems", "Camassa--Holm equation"]
+  published: '2026-08-19'
+  submitted: '2026-04-17'
+  updated: '2026-04-17'
+  version: v1
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - BKM systems
+  - finite-gap solutions
+  - jet density
+  - Stäckel systems
+  - Camassa--Holm equation
+  pages: 085027
 
 - id: "arxiv:2508.14030"
   title: "Modular Transformations of Tau Functions and Conformal Blocks on the Torus"
@@ -3986,7 +4001,7 @@
   submitted_at: '2026-06-23T15:31:16Z'
   updated: '2026-07-16'
   version: v2
-  metadata_checked_at: '2026-09-07'
+  metadata_checked_at: '2026-09-27'
   tags:
   - Riemann--Hilbert problem
   - inverse scattering
@@ -3996,6 +4011,7 @@
   volume: '116'
   issue: '5'
   article_number: '116'
+
 - id: arxiv:2408.13375
   title: Yang-Baxter Extremal Characters of Wreath Products of Finite Groups with the Infinite Symmetric Group
   authors:
@@ -4314,7 +4330,7 @@
   - inverse scattering
   - inverse problem
 - id: arxiv:2411.18685
-  title: Solving the $4 \times 4$ quantum Yang-Baxter equation
+  title: All 4 x 4 solutions of the quantum Yang-Baxter equation
   authors:
   - Marius de Leeuw
   - Vera Posch
@@ -4325,7 +4341,7 @@
   submitted_at: '2024-11-27T19:00:01Z'
   updated: '2026-06-24'
   version: v6
-  metadata_checked_at: '2026-09-12'
+  metadata_checked_at: '2026-09-27'
   journal: SciPost Physics
   year: 2026
   published: '2026-09-10'
@@ -4335,6 +4351,7 @@
   tags:
   - Yang--Baxter equation
   - Lax pair
+
 - id: doi:10.1134/s1995080225607179
   arxiv_id: null
   title: Derivative NLS Type Zamolodchikov Tetrahedron Map on a Noncommutative Division Ring
@@ -4352,3 +4369,325 @@
   tags:
   - Yang--Baxter equation
   - Darboux transformation
+
+- id: arxiv:2609.23795
+  title: Equations of state of hydrodynamic type and particle statistics of a Dyson gas in an analytic confining potential
+  authors:
+  - Antonio Moro
+  url: https://arxiv.org/abs/2609.23795
+  arxiv_id: '2609.23795'
+  doi: null
+  submitted: '2026-09-20'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - Hamiltonian structure
+  - integrable probability
+  version: v1
+  updated: '2026-09-20'
+
+- id: arxiv:2609.26669
+  title: On the dispersionless limit of the Manakov system, its Riemann invariants, and the modulational stability of its counterpropagating plane waves
+  authors:
+  - Jimmie Adriazola
+  - Gino Biondini
+  url: https://arxiv.org/abs/2609.26669
+  arxiv_id: '2609.26669'
+  doi: null
+  submitted: '2026-09-22'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - spectral curve
+  - Whitham modulation
+  version: v1
+  updated: '2026-09-22'
+
+- id: arxiv:2609.30065
+  title: Superintegrability of discrete-time rational Ruijsenaars-Schneider model and deformed polynomial symmetry algebras
+  authors:
+  - Pavel Drozdov
+  url: https://arxiv.org/abs/2609.30065
+  arxiv_id: '2609.30065'
+  doi: null
+  submitted: '2026-09-24'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - integrable discretization
+  - conservation laws
+  version: v1
+  updated: '2026-09-24'
+
+- id: arxiv:2609.22066
+  title: Generalized Hamiltonian formalism for spatially nonlocal nonlinear differential equations
+  authors:
+  - Ali Pazarci
+  - Nadir Ghazanfari
+  - Ilmar Gahramanov
+  url: https://arxiv.org/abs/2609.22066
+  arxiv_id: '2609.22066'
+  doi: null
+  submitted: '2026-09-18'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - Hamiltonian structure
+  - Poisson structure
+  version: v1
+  updated: '2026-09-18'
+
+- id: arxiv:2609.22352
+  title: Contour Computation of Linearized Painlevé II and IV Solutions with Monodromy-Based Error Control
+  authors:
+  - Oleg M. Kiselev
+  url: https://arxiv.org/abs/2609.22352
+  arxiv_id: '2609.22352'
+  doi: null
+  submitted: '2026-09-17'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - Painlevé
+  - isomonodromy
+  version: v1
+  updated: '2026-09-17'
+
+- id: arxiv:2609.23175
+  title: 'Six-wave scattering in Hamiltonian Dysthe equations: Euler matching and integrability obstructions'
+  authors:
+  - Alex J. Sutherland
+  - Solomon C. Yim
+  url: https://arxiv.org/abs/2609.23175
+  arxiv_id: '2609.23175'
+  doi: null
+  submitted: '2026-09-19'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - Hamiltonian structure
+  - wave kinetics
+  version: v1
+  updated: '2026-09-19'
+
+- id: arxiv:2609.29353
+  title: Lie and point symmetries of Nyzhnyk models
+  authors:
+  - Oleksandra O. Vinnichenko
+  - Vyacheslav M. Boyko
+  - Roman O. Popovych
+  url: https://arxiv.org/abs/2609.29353
+  arxiv_id: '2609.29353'
+  doi: null
+  submitted: '2026-09-24'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - Lax pair
+  version: v1
+  updated: '2026-09-24'
+
+- id: arxiv:2609.27080
+  title: 'Robustness of mKdV Breathers: A Numerical Perspective'
+  authors:
+  - Chandler Haight
+  - Svetlana Roudenko
+  - Diana Son
+  - Kai Yang
+  url: https://arxiv.org/abs/2609.27080
+  arxiv_id: '2609.27080'
+  doi: 10.1111/sapm.70263
+  submitted: '2026-09-22'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - mKdV hierarchy
+  - nonlinear-wave stability
+  version: v1
+  updated: '2026-09-22'
+  journal: Studies in Applied Mathematics
+  volume: '157'
+  issue: '1'
+  article_number: e70263
+  year: 2026
+  published: '2026-07-15'
+
+- id: arxiv:2609.21314
+  title: Uniform-in-Time Approximation of Calogero-Moser Particles by Continuum Multisolitons
+  authors:
+  - Hedong Wang
+  url: https://arxiv.org/abs/2609.21314
+  arxiv_id: '2609.21314'
+  doi: null
+  submitted: '2026-09-18'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - inverse scattering
+  - inverse problem
+  version: v1
+  updated: '2026-09-18'
+
+- id: arxiv:2609.23324
+  title: Global flows for the cubic nonlinear Schrödinger equation without decay assumptions
+  authors:
+  - Shinichi Kotani
+  - Yiqian Wang
+  - Jiahao Xu
+  - Shuo Zhang
+  url: https://arxiv.org/abs/2609.23324
+  arxiv_id: '2609.23324'
+  doi: null
+  submitted: '2026-09-20'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - inverse scattering
+  - tau function
+  version: v1
+  updated: '2026-09-20'
+
+- id: arxiv:2609.23625
+  title: Complete integrability of the Calogero--Sutherland DNLS equation on $L^2_+(\mathbb T)$
+  authors:
+  - Rana Badreddine
+  url: https://arxiv.org/abs/2609.23625
+  arxiv_id: '2609.23625'
+  doi: null
+  submitted: '2026-09-20'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - Lax pair
+  - inverse scattering
+  version: v1
+  updated: '2026-09-20'
+
+- id: arxiv:2609.23628
+  title: On inverse scattering for the one-dimensional nonlinear Dirac equation
+  authors:
+  - Hironobu Sasaki
+  url: https://arxiv.org/abs/2609.23628
+  arxiv_id: '2609.23628'
+  doi: null
+  submitted: '2026-09-20'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - inverse problem
+  version: v1
+  updated: '2026-09-20'
+
+- id: arxiv:2609.28009
+  title: Local well-posedness for the KdV equation on the half-line at the critical regularity $H^{-\frac34}$
+  authors:
+  - Márcio Cavalcante
+  url: https://arxiv.org/abs/2609.28009
+  arxiv_id: '2609.28009'
+  doi: null
+  submitted: '2026-09-23'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - well-posedness
+  version: v1
+  updated: '2026-09-23'
+
+- id: arxiv:2609.28975
+  title: Well-Posedness for KdV-Type Equations with Second-Order Derivative Nonlinearities
+  authors:
+  - Mingjuan Chen
+  - Ting Chen
+  - Zhong Wang
+  url: https://arxiv.org/abs/2609.28975
+  arxiv_id: '2609.28975'
+  doi: null
+  submitted: '2026-09-24'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - well-posedness
+  - conservation laws
+  version: v1
+  updated: '2026-09-24'
+
+- id: arxiv:2609.21917
+  title: Quantized Transport of Gap Solitons in the Harper-Hofstadter Model
+  authors:
+  - Oliver Ashfield
+  - Henry Davenport
+  - Tom Sheppard
+  - David G. Reid
+  - Holly A. J. Middleton-Spencer
+  - A. C. Berceanu
+  - Frank Schindler
+  - Iacopo Carusotto
+  - Hannah M. Price
+  url: https://arxiv.org/abs/2609.21917
+  arxiv_id: '2609.21917'
+  doi: null
+  submitted: '2026-09-18'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - nonlinear-wave transport
+  version: v1
+  updated: '2026-09-18'
+
+- id: arxiv:2609.21846
+  title: 'Sine-Gordon Model with Bosonic Tensor Networks: Continuum Matching and Soliton Scattering'
+  authors:
+  - Florian Hechenberger
+  - Tommaso Rainaldi
+  - Felix Ringer
+  url: https://arxiv.org/abs/2609.21846
+  arxiv_id: '2609.21846'
+  doi: null
+  submitted: '2026-09-18'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - quantum integrability
+  version: v1
+  updated: '2026-09-18'
+
+- id: arxiv:2609.28964
+  title: Resolvent reconstruction of minimal strings beyond KdV
+  authors:
+  - Wasif Ahmed
+  - Joydeep Naskar
+  url: https://arxiv.org/abs/2609.28964
+  arxiv_id: '2609.28964'
+  doi: null
+  submitted: '2026-09-24'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - spectral curve
+  - inverse problem
+  version: v1
+  updated: '2026-09-24'
+
+- id: arxiv:2606.15794
+  title: An integrable deformation of the sine(sinh)-Gordon model -- Malcev algebra
+  authors:
+  - Meseret Asrat
+  url: https://arxiv.org/abs/2606.15794
+  arxiv_id: '2606.15794'
+  doi: 10.1007/JHEP09(2026)208
+  submitted: '2026-06-14'
+  metadata_checked_at: '2026-09-27'
+  tags:
+  - Lax pair
+  - Yang--Baxter equation
+  version: v1
+  updated: '2026-06-14'
+  journal: Journal of High Energy Physics
+  volume: '2026'
+  issue: '9'
+  article_number: '208'
+  year: 2026
+  published: '2026-09-18'
+
+- id: doi:10.1140/epjb/s10051-026-01249-5
+  title: 'Inverse scattering transform for a defocusing local–nonlocal Lakshmanan–Porsezian–Daniel equation under nonzero boundary conditions: N-soliton solutions and asymptotic analysis'
+  authors:
+  - Xi-Yang Xie
+  - Si Li
+  - Zhong Du
+  url: https://doi.org/10.1140/epjb/s10051-026-01249-5
+  arxiv_id: null
+  tags:
+  - inverse scattering
+  - Riemann--Hilbert problem
+  doi: 10.1140/epjb/s10051-026-01249-5
+  journal: The European Physical Journal B
+  volume: '99'
+  issue: '9'
+  article_number: '144'
+  year: 2026
+  metadata_checked_at: '2026-09-27'
+  published: '2026-09-18'

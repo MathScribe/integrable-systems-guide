@@ -5,36 +5,41 @@ schema_version: 1
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-09-11'
+    announced_through: '2026-09-25'
     last_status: complete
+    coverage_note: 'New listings covered by the complete September directory and Sep21–25 dated lists, checked Sep27. Sep14–18 candidate announcement dates remain pending verification; replacement coverage after Sep11 is incomplete.'
 
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-09-11'
+    announced_through: '2026-09-25'
     last_status: complete
+    coverage_note: 'New listings covered by the complete September directory and Sep21–25 dated lists, checked Sep27. Submission dates are not substituted for unverified announcement dates; replacement coverage after Sep11 is incomplete.'
 
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-09-11'
+    announced_through: '2026-09-25'
     last_status: complete
-    coverage_note: 'New announcements complete through 2026-09-11. Official replacement lists checked for 2026-09-11. Historical replacement coverage for 2026-09-04 and 2026-09-08 to 2026-09-10 remains incomplete: the date-filtered API missed known revisions and the sorted fallback timed out.'
+    coverage_note: 'All 12 configured September category directories and Sep21–25 dated lists captured. Bounded title screening reviewed 49 candidates. Exact earlier announcement dates remain pending for some candidates. Replacement coverage after Sep11 and historical gaps Sep4 and Sep8–10 remain incomplete; failed API searches did not establish revision coverage.'
 
   crossref:
     kind: ranked-title-backstop
-    title_query_through: '2026-09-12'
+    title_query_through: '2026-09-27'
     reconciliation_checked_at: '2026-09-12T04:20:13.468414Z'
     reconciliation_cadence: weekly
     reconciliation_note: '2026-09-12 exact-title/author checks completed for 16 new selections and the remaining 2609.04873 query from the prior weekly pass; no exact journal matches found.'
     overlap_days: 3
     last_status: complete
+    title_query_note: 'Sep11–21 successful weekly artifact plus Sep18–27 overlapping ranked-title pass; all 16 configured queries completed. A separate Sep12–27 created-date gap check used five strong phrases; DOI registration is not a publication date. Seven existing records received title or journal metadata corrections; full-registry journal reconciliation was not repeated.'
 
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
-    checked_at: '2026-09-12T04:12:51.095865Z'
+    checked_at: '2026-09-27T02:12:13Z'
     last_status: complete
+    coverage_note: 'Successful Sep14 artifact plus overlapping Sep11–27 datestamp check: all 598 bounded 2026 records and five 2027 records retrieved. Indexing date and issue year do not establish first online publication.'
 
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-09-12T04:21:05.660214Z'
+    checked_at: '2026-09-27T02:12:13Z'
     last_status: candidate-only
+    coverage_note: 'First-online dates verified for included journal events. JDE 114789 and 114803, PLA 132170, and some index candidates still lack verified first-online dates; no dates inferred from DOI registration or future issue assignment.'
