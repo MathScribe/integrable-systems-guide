@@ -63,4 +63,4 @@ sources:
     kind: candidate-verification
     checked_at: '2026-09-27T03:56:10Z'
     last_status: candidate-only
-    coverage_note: Verified selected arXiv event dates from primary listings. Five journal candidates admitted using cached publisher-deposited Crossref bibliography; four now have abstract-based notes, including two checked against publisher PDFs saved in the owner's local Zotero library. One remains bibliography only pending access to its abstract or full text. Unknown online dates stay null; local PDF evidence adds no claim of new online-source coverage.
+    coverage_note: Verified selected arXiv event dates from primary listings. All five added journal records now have reading notes; both JDE notes and the Physica D135406 note were checked against publisher PDFs saved in local Zotero. Physica D135406 page 1 confirms first online publication on 2026-09-15; the two JDE online dates remain unknown. Local PDF evidence adds no claim of new online-source coverage.

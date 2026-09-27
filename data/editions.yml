@@ -1805,12 +1805,16 @@ frontier:
       detail: 数值结果显示格点中心亮孤子谱稳定，格点间亮孤子以及两类暗孤子不稳定；暗孤子的相关特征值接近连续谱，因此需要更高计算精度。
       method_scope: 结合驻定问题的精确 Jacobian、多精度算术与平方算子谱分析，研究离散非线性 Schrödinger 方程的亮、暗孤子；结论依据数值谱计算。
   - paper_id: doi:10.1016/j.physd.2026.135406
-    signal_date: null
+    signal_date: '2026-09-15'
     signal_type: journal-publication
     added_on: '2026-09-27'
-    event_source: https://api.crossref.org/works/10.1016/j.physd.2026.135406
+    event_source: https://doi.org/10.1016/j.physd.2026.135406
     directions:
     - structures
+    reading_note:
+      lead: 为具有斜对称矩阵势的 mKdV 系统构造保持该约化的二元 Darboux 变换，将特征值与伴随特征值重合的情形纳入扩展的 M 矩阵框架。
+      detail: 从与 \(\mathfrak{so}(2m)\) 相关的 AKNS 型 Lax 对出发，为重合谱点定义 M 矩阵元素的微分关系，并据此生成新解；文章给出零背景上的显式解示例。
+      method_scope: 构造要求 M 可逆，并在重合谱点满足相应正交条件；斜对称约化下 M 的阶数须为偶数。具体示例取 \(m=4\)、\(N=2\)。
   - paper_id: doi:10.1090/proc/17855
     signal_date: '2026-09-16'
     signal_type: journal-publication

@@ -30,14 +30,6 @@ hide:
 </div>
 <p class="radar-empty-state" hidden>没有找到匹配论文。试试其他关键词，或清除筛选。</p>
 
-### Formulation of binary Darboux transformations for an integrable mKdV system with skew-symmetric matrix potentials {#paper-doi-10-1016-j-physd-2026-135406 .radar-search-heading}
-
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-physd-2026-135406" data-radar-month="2026-09" data-radar-date="" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;structures&quot;]" data-radar-search="binary Darboux transformation matrix mKdV skew-symmetric potentials">
-<div class="radar-row-summary radar-row-bibliography">      <span class="radar-row-heading"><a class="radar-paper-title" href="https://doi.org/10.1016/j.physd.2026.135406" target="_blank" rel="noopener noreferrer">Formulation of binary Darboux transformations for an integrable mKdV system with skew-symmetric matrix potentials</a><a class="radar-permalink" href="#paper-doi-10-1016-j-physd-2026-135406" aria-label="此论文固定链接" title="此论文固定链接">#</a></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Wen-Xiu Ma">Wen-Xiu Ma</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.physd.2026.135406">Physica D: Nonlinear Phenomena 498, 135406 (2026)</a></span></span>
-</div>
-</article>
-
 ### Orbital stability of vector multi-solitons in coupled NLS and modified KdV equations {#paper-doi-10-1016-j-jde-2026-114803 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114803" data-radar-month="2026-09" data-radar-date="" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;waves&quot;]" data-radar-search="vector multi-solitons coupled NLS modified KdV orbital stability">
@@ -546,6 +538,22 @@ hide:
     <p class="radar-paper-overview"><strong>修订新增聚焦 NLS 半线问题的显式反例，展示 Dirichlet–Neumann 映射的连续性可能因边界数据而失效。</strong></p>
     <p class="radar-reading-detail">呼吸子构型与衰减边值理论作比较，说明体方程拥有 Lax 对，并不足以保证任意边界问题继承同样的可积描述。</p>
     <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>精确解、边界迹及初边值谱分析。反例针对文中数据类和连续性问题，不应泛化为半线 NLS 一概不适定。</p>
+    </div>
+  </details>
+</article>
+
+### Formulation of binary Darboux transformations for an integrable mKdV system with skew-symmetric matrix potentials {#paper-doi-10-1016-j-physd-2026-135406 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-physd-2026-135406" data-radar-month="2026-09" data-radar-date="2026-09-15" data-radar-added-on="2026-09-27" data-radar-directions="[&quot;structures&quot;]" data-radar-search="binary Darboux transformation matrix mKdV skew-symmetric potentials">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Formulation of binary Darboux transformations for an integrable mKdV system with skew-symmetric matrix potentials</span><a class="radar-permalink" href="#paper-doi-10-1016-j-physd-2026-135406" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Wen-Xiu Ma">Wen-Xiu Ma</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.physd.2026.135406">Physica D: Nonlinear Phenomena 498, 135406 (2026)</a></span><time datetime="2026-09-15" title="正式发表 · 2026-09-15" aria-label="正式发表 · 2026-09-15">2026-09-15</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>为具有斜对称矩阵势的 mKdV 系统构造保持该约化的二元 Darboux 变换，将特征值与伴随特征值重合的情形纳入扩展的 M 矩阵框架。</strong></p>
+    <p class="radar-reading-detail">从与 <span class="arithmatex">\(\mathfrak{so}(2m)\)</span> 相关的 AKNS 型 Lax 对出发，为重合谱点定义 M 矩阵元素的微分关系，并据此生成新解；文章给出零背景上的显式解示例。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>构造要求 M 可逆，并在重合谱点满足相应正交条件；斜对称约化下 M 的阶数须为偶数。具体示例取 <span class="arithmatex">\(m=4\)</span>、<span class="arithmatex">\(N=2\)</span>。</p>
     </div>
   </details>
 </article>
