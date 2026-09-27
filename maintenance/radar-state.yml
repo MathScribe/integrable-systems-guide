@@ -1,40 +1,66 @@
-schema_version: 1
-
-# Source coverage is operational state, not a public paper date. A source may
-# fail without changing another source's successful watermark.
+schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-09-11'
+    announced_through: '2026-09-25'
     last_status: complete
-
+    coverage_note: New-event discovery through Sep25 verified using saved month lists and official dated Catchup. Sep26–27 have no core listing events. No submission/OAI timestamps used as announcement dates.
+    replacements:
+      last_status: complete
+      checked_through: '2026-09-25'
+      open_gaps: []
+      coverage_note: Recovered Sep4, Sep8–10 and Sep14–25 official replacement listings; Sep11 had already been checked. Coverage is the official listing subset, excluding journal-reference-only updates and replacements beyond v5; inspect current histories for selected/high-priority records.
+    checked_at: '2026-09-27T03:56:10Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-09-11'
+    announced_through: '2026-09-25'
     last_status: complete
-
+    coverage_note: New-event discovery through Sep25 verified using saved month lists and official dated Catchup. Sep26–27 have no core listing events. No submission/OAI timestamps used as announcement dates.
+    replacements:
+      last_status: complete
+      checked_through: '2026-09-25'
+      open_gaps: []
+      coverage_note: Recovered Sep4, Sep8–10 and Sep14–25 official replacement listings; Sep11 had already been checked. Coverage is the official listing subset, excluding journal-reference-only updates and replacements beyond v5; inspect current histories for selected/high-priority records.
+    checked_at: '2026-09-27T03:56:10Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-09-11'
+    announced_through: '2026-09-25'
     last_status: complete
-    coverage_note: 'New announcements complete through 2026-09-11. Official replacement lists checked for 2026-09-11. Historical replacement coverage for 2026-09-04 and 2026-09-08 to 2026-09-10 remains incomplete: the date-filtered API missed known revisions and the sorted fallback timed out.'
-
+    coverage_note: New-event discovery through Sep25 verified using saved month lists and official dated Catchup. Sep26–27 have no core listing events. No submission/OAI timestamps used as announcement dates.
+    replacements:
+      last_status: complete
+      checked_through: '2026-09-25'
+      open_gaps: []
+      coverage_note: Recovered Sep4, Sep8–10 and Sep14–25 official replacement listings; Sep11 had already been checked. Coverage is the official listing subset, excluding journal-reference-only updates and replacements beyond v5; inspect current histories for selected/high-priority records.
+    checked_at: '2026-09-27T03:56:10Z'
+    additional_category_window:
+      category: cond-mat.quant-gas
+      from: '2026-09-14'
+      through: '2026-09-25'
+      note: New focused source added to close the observed quantum-droplet/soliton discovery gap; earlier history not claimed.
   crossref:
     kind: ranked-title-backstop
-    title_query_through: '2026-09-12'
     reconciliation_checked_at: '2026-09-12T04:20:13.468414Z'
     reconciliation_cadence: weekly
-    reconciliation_note: '2026-09-12 exact-title/author checks completed for 16 new selections and the remaining 2609.04873 query from the prior weekly pass; no exact journal matches found.'
+    reconciliation_note: 2026-09-12 exact-title/author checks completed for 16 new selections and the remaining 2609.04873 query from the prior weekly pass; no exact journal matches found.
     overlap_days: 3
-    last_status: complete
-
+    title_query_note: Sep11–21 successful weekly artifact plus Sep18–27 overlapping ranked-title pass; all 16 configured queries completed. A separate Sep12–27 created-date gap check used five strong phrases; DOI registration is not a publication date. Seven existing records received title or journal metadata corrections; full-registry journal reconciliation was not repeated.
+    online_query_through: '2026-09-27'
+    online_status: complete
+    registration_query_through: '2026-09-27'
+    registration_status: complete
+    registration_note: Completed separate five-phrase registered-DOI gap check; registration dates are not publication dates.
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
-    checked_at: '2026-09-12T04:12:51.095865Z'
+    checked_at: '2026-09-27T02:12:13Z'
     last_status: complete
-
+    coverage_note: 'Successful Sep14 artifact plus overlapping Sep11–27 datestamp check: all 598 bounded 2026 records and five 2027 records retrieved. Indexing date and issue year do not establish first online publication.'
+    publication_years:
+    - 2026
+    - 2027
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-09-12T04:21:05.660214Z'
+    checked_at: '2026-09-27T03:56:10Z'
     last_status: candidate-only
+    coverage_note: Verified selected arXiv event dates from primary listings. All five added journal records have reading notes checked against available abstracts or local publisher PDFs. Physica D135406 page 1 confirms first online publication on 2026-09-15; the saved JDE114789 pre-proof webpage confirms 2026-09-22. The owner supplied JDE114803's Available online date as 2026-09-25 from the publisher page. Local and owner-provided evidence adds no claim of new online-source coverage.

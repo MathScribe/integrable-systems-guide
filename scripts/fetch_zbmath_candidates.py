@@ -85,11 +85,14 @@ def request_json(
     raise AssertionError("unreachable retry loop")
 
 
-def build_search_string(start: datetime, end: datetime, codes: list[str]) -> str:
-    if start.year == end.year:
-        year_clause = str(end.year)
+def build_search_string(start: datetime, end: datetime, codes: list[str], *, future_years: int = 0) -> str:
+    if not isinstance(future_years, int) or not 0 <= future_years <= 1:
+        raise ValueError("future_years must be0 or1")
+    last_year = end.year + future_years
+    if start.year == last_year:
+        year_clause = str(last_year)
     else:
-        year_clause = f"{start.year} - {end.year}"
+        year_clause = f"{start.year} - {last_year}"
     code_clause = " | ".join(str(code) for code in codes)
     return f"dt:j & py:{year_clause} & cc:({code_clause})"
 
@@ -194,7 +197,8 @@ def fetch_manifest(
         raise ValueError("zbmath.max_pages must be between 1 and 20")
 
     codes = [str(code) for code in source["msc_codes"]]
-    query = build_search_string(start, end, codes)
+    future_years = int(source.get("future_issue_years", 0))
+    query = build_search_string(start, end, codes, future_years=future_years)
     candidates: dict[str, dict[str, Any]] = {}
     raw_items = 0
     pages_fetched = 0
@@ -253,6 +257,7 @@ def fetch_manifest(
         "query": {
             "search_string": query,
             "msc_codes": codes,
+            "publication_years": list(range(start.year, end.year + future_years + 1)),
             "total_results": total_results,
             "pages_fetched": pages_fetched,
             "raw_items": raw_items,

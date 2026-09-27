@@ -1,32 +1,16 @@
 # Core topics / 核心主题
 
-本页只列出当前关注范围。等某一主题积累了足够论文、笔记或计算内容后，再拆分为独立页面。
+首页按四个研究方向浏览，允许交叉归类。具体方程、方法和作者可直接搜索。
 
-## Methods / 方法
+## Browse papers / 按主题浏览
 
-- Inverse scattering transform / 反散射变换
-- Riemann--Hilbert problems / 黎曼--希尔伯特问题
-- Nonlinear steepest descent / 非线性最速下降法
-- $\bar\partial$ steepest descent
-- Darboux and Bäcklund transformations
+| 研究方向 | 主要内容 |
+| --- | --- |
+| [散射与谱方法](./index.md?topic=spectral) | IST、Riemann–Hilbert、有限隙、谱理论与反问题 |
+| [非线性波与稳定性](./index.md?topic=waves) | 孤子、呼吸子、怪波、适定性、稳定性与相关实验 |
+| [渐近与统计](./index.md?topic=asymptotics) | 长时间渐近、调制、孤子气体、概率极限与输运 |
+| [可积结构](./index.md?topic=structures) | Lax、Hamilton、Darboux、Painlevé 与可积离散化 |
 
-## Model equations / 模型方程
+[浏览全部论文](index.md)
 
-- NLS、DNLS、coupled NLS
-- Kaup--Newell、Chen--Lee--Liu、Gerdjikov--Ivanov、Fokas--Lenells
-- KdV、mKdV、short-pulse 和相关 AKNS-type systems
-- Coupled and multi-component integrable systems
-
-## Nonlinear waves / 非线性波
-
-- Solitons、breathers 和 rogue waves
-- Elliptic-background and finite-gap solutions
-- Soliton gas and continuum limits
-- Long-time asymptotics
-- Spectral and orbital stability
-
-## Geometry and computation / 几何与计算
-
-- Finite-gap and algebro-geometric methods
-- Riemann surfaces and theta functions
-- Numerical RHP and reproducible computation
+查找具体问题时，可在首页搜索 NLS、DNLS、Manakov、Fokas–Lenells、KdV、mKdV、Darboux、breather 等方程或方法名称，也可输入作者姓名。方向筛选与关键词可以组合使用。

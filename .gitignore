@@ -10,6 +10,7 @@ site/
 site-preview/
 site-check/
 .mkdocs-preview.*
+.mkdocs-preview-*.log
 local-github-pages-home.png
 
 # OS/editor noise
@@ -23,3 +24,4 @@ local-github-pages-home.png
 
 # Local research-radar candidate audits and policy replays
 .agents/radar-evaluation/
+.radar-audit/

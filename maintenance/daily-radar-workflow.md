@@ -4,7 +4,7 @@ This file is the canonical operating procedure for maintaining the research rada
 
 ## Objective
 
-Maintain a cumulative, innovation-focused radar for researchers familiar with integrable PDEs, spectral methods, and related mathematical physics.
+Maintain a cumulative radar focused on integrable nonlinear waves, inverse scattering, spectral methods and concrete new directions connected to these research interests.
 
 Run discovery every day, but publish only qualifying research events. Zero-paper days are acceptable. Do not create a reading chain, fill a quota, or add old background papers merely to produce an update.
 
@@ -26,8 +26,13 @@ Discovery and selection are separate stages.
 2. Determine each discovery interval from that source's last successful
    watermark in `maintenance/radar-state.yml`. Never infer Crossref or
    publisher coverage from the latest public paper date.
-3. Check complete recent coverage of arXiv `nlin.SI` and `nlin.PS`.
-4. Run bounded cross-category searches in mathematical physics, probability, geometry, combinatorics, quantum many-body physics, statistical physics, gravity, optics, and related areas.
+3. Check arXiv `nlin.SI` and `nlin.PS` new and replacement listings separately.
+   Use official dated Catchup pages for missing recent batches (up to90 days),
+   saving raw evidence and checking page dates and complete entry counts with
+   `scripts/fetch_arxiv_catchup.py`. Catchup excludes journal-reference-only
+   updates and replacements beyond v5; inspect current version histories for
+   selected/high-priority papers to cover known risks outside those listings.
+4. Run bounded cross-category searches for concrete connections to the research focus in mathematical physics, probability, geometry, quantum theory, optics and related areas. Broad discovery is not a promise to cover each field comprehensively.
 5. Use both structure terms and result terms. Useful result terms include classification, arbitrary-order families, asymptotics, transition regimes, inverse problems, control, tomography, exact distributions, transport, topology, experiments, and data-driven integrability.
 6. Author, group, and specialist pages may be used for manual gap checking. Do not mirror or ingest their feeds.
 
@@ -36,6 +41,14 @@ Discovery should favor recall: uncertain candidates may remain in the working no
 Record the run's actual queries, source status, candidates, evidence depth, and
 decision in a local audit artifact. A source failure is not a zero-result run and
 must not advance that source's watermark.
+
+Read `maintenance/radar-candidates.yml` before new discovery. Resolve concrete
+pending checks without redoing the completed broad search. Record titles, full
+authors, primary links, last-check date and next action for unresolved candidates.
+Remove resolved items from the queue; detailed exclusion judgments stay private.
+Close current-run exclusions and owner-deferred historical items in the private
+audit instead of keeping them in an active retry queue. Missing optional journal
+metadata alone is not an unresolved candidate; reconcile it opportunistically.
 
 For every journal-only candidate that reaches detailed review, also record the
 venue authority tier (`A`, `B`, or `C`) and the evidence supporting that tier,
@@ -47,14 +60,17 @@ evidence, never a public label, and never replaces the content threshold.
 At least once per ISO week:
 
 1. run the configured Crossref ranked-title backstop over an overlapping
-   first-online window. Use only strong title phrases and local exact matching;
-   do not paginate broad terms as if mirroring Crossref;
+   first-online window, and the separate five-phrase registered-DOI pass using
+   `--date-basis created`. Keep their statuses and watermarks independent. A DOI
+   creation timestamp can reveal a paper but never establish its publication date.
+   Preserve year/month date precision; never fill an unknown day with the first.
+   Do not paginate broad terms as if mirroring Crossref;
 2. query Crossref by exact title and author for recently selected or previously
    registered arXiv papers that do not yet have verified journal metadata;
 3. inspect publisher pages only for strong candidates, known metadata conflicts,
    or a documented high-risk source gap; do not enumerate journal homepages as
    the primary discovery method;
-4. open the DOI target on the publisher site and verify the full journal name, author list, volume, issue, pages or article number, and first online publication date;
+4. verify journal bibliography using publisher records or publisher-deposited Crossref metadata; inspect the DOI target for material conflicts or claims beyond that evidence. An unavailable publisher page does not require repeated retries;
 5. distinguish first online publication from later issue assignment, which is not a new research event;
 6. review whether a source outage or narrow query caused an obvious coverage gap.
 
@@ -75,14 +91,15 @@ unresponsive Crossref endpoint.
 Every two weeks, use the configured zbMATH backstop to catch journal papers that
 may lack a strong title phrase:
 
-1. query only journal articles from the current publication year in the
-   configured integrable-systems MSC classes;
+1. query only journal articles from the current and next issue years in the
+   configured integrable-systems MSC classes, catching next-year issue assignments
+   that are already online; this does not make the issue year an event date;
 2. exhaust the bounded result set up to the configured hard cap, then retain
    only records newly indexed inside the overlapping datestamp window;
 3. apply the same cheap relevance filter and strict value threshold used for
    other sources;
-4. verify every surviving DOI and first-online date on Crossref and the
-   publisher page before treating it as a journal event.
+4. verify each surviving DOI from the publisher or its Crossref deposit. Use a
+   known first-online date; an unknown date stays null under the bibliography-first rule.
 
 This pass is deliberately based on mathematical classification rather than a
 journal whitelist. Its successful status means the bounded MSC query completed;
@@ -90,7 +107,7 @@ it does not mean all of zbMATH or every mathematics journal was inspected.
 
 ## Selection
 
-Thematic relevance is a broad gate; innovation strength is decisive. Apply the same field-wide criteria to every candidate.
+Apply the focused research and useful-new-direction tests in policy version 2 consistently. Judge both relevance and the concrete advance; do not substitute a field label, author name or journal prestige for either.
 
 Use `maintenance/radar-selection-policy.md` as the detailed, versioned editorial
 contract. Freshness, identity, and non-duplication are hard eligibility gates.
@@ -98,10 +115,10 @@ There is no fixed daily or weekly count, minimum, or maximum.
 
 Internally ask:
 
-1. Does the paper introduce, reveal, or substantially extend an integrable structure or method?
-2. If not, does an existing integrable structure indispensably produce a clear, systematic, nontrivial innovation?
+1. Does the paper make a substantive advance on a problem, model or method directly relevant to the research focus?
+2. If not, does it establish a concrete new methodological or problem connection worth following from that focus?
 
-A paper may pass when either answer is clearly yes. Examples include a new classification, an arbitrary-order or arbitrary-parameter family, a new asymptotic regime or critical transition, a new topology or geometry mechanism, a new inverse/control/experimental method, a new statistical or transport structure, or a genuinely new application in which integrability is central.
+A paper may pass when either answer is clearly yes. Relevant well-posedness, stability and asymptotic results are eligible alongside new integrable structures, inverse methods and statistical or experimental connections. The new contribution must be explainable from primary evidence.
 
 Do not select a paper when integrability is incidental, method transfer is routine, the result is limited to a few low-order examples or parameter plots, or the innovation cannot be explained reliably from primary sources.
 
@@ -109,17 +126,42 @@ These are internal selection rules. Public pages and PR descriptions must not pu
 
 ## Verification and identity
 
+For papers already saved by the owner, check Zotero's local attachments before
+declaring abstract/full-text evidence unavailable. Read local PDFs or saved
+publisher snapshots without modifying the Zotero library. For publisher access,
+prefer the owner's local campus-network route; GitHub's proxy instructions do
+not prescribe a publisher-access route. Do not change system proxy or network
+components without confirmation. If evidence is still inaccessible, report the
+exact title/DOI and ask the owner for the local attachment path instead of
+repeated fetches or an unnecessary alternate card design. A failed fetch means
+the agent could not retrieve the evidence, not that the paper lacks it.
+
 Before editing data:
 
 - deduplicate by arXiv ID, DOI, and normalized title;
 - verify the title and full author list;
-- verify the event date and event type;
+- verify the event type and available event date; preserve unknown journal dates as null;
 - verify the current arXiv version, submission date, revision date, and official categories when applicable;
-- verify the abstract and the specific statements supporting the annotation;
+- check withdrawal/retraction banners and version comments explicitly. Retain a
+  withdrawn/retracted bibliographic record with its status, but remove it from
+  the public selection and report the exact title, authors and primary evidence;
+- verify the abstract and specific statements supporting any annotation; omit the
+  reading note when only reliable bibliography is available;
 - verify DOI, journal name, volume, issue, pages or article number, year, and first online publication date when applicable;
 - use arXiv, the paper PDF, DOI records, and publisher pages as final evidence.
 
-Keep bibliographic timestamps separate from the public event date. For an arXiv `new-preprint`, preserve the UTC submission timestamp in `papers.yml`, but use the official arXiv listing's announcement date as `signal_date`; this is the date on which the paper enters the public radar and determines its ISO week. For a `major-revision`, use the official replacement-list date. For a `journal-publication`, use the publisher's first-online date. The Beijing-time scan timestamp is operational metadata and never changes the public event date.
+Keep bibliographic timestamps separate from the public event date. For an arXiv `new-preprint`, preserve the UTC submission timestamp in `papers.yml`, but use the official listing's announcement date as `signal_date`. For a `major-revision`, use the official replacement-list date. For a `journal-publication`, use the publisher's first-online date. Record the primary `event_source` URL for each newly selected event. The scan timestamp never changes the paper's event date. An OAI modification timestamp alone is not announcement evidence.
+
+Bibliography-first rule (owner approved 2026-09-27): a directly relevant journal
+record with verified title, full authors, journal, year and DOI may be included
+without an abstract or exact first-online date. A publisher's Crossref deposit is
+valid evidence; do not require a second successful publisher-page fetch. Omit
+unsupported reading notes, use `signal_date: null` when the day is unknown, and
+record `added_on` as the actual intake date. Ordering and time filtering fall back
+to intake only when the event date is absent; never print intake as publication.
+An existing verified arXiv announcement remains usable when journal first-online
+metadata is missing. Do not infer chronology from DOI creation or issue assignment.
+This rule does not authorize historical backfill or claims based only on a title.
 
 arXiv normally has no Friday or Saturday announcements. A paper submitted before the Friday 14:00 US Eastern cutoff can therefore carry a Friday UTC submission date while appearing in the following Monday category list. Preserve both dates and let the rendered card explain the distinction whenever they differ.
 
@@ -143,29 +185,26 @@ major result.
 
 ## Data entry
 
-For every selected paper, maintain in `frontier.entries`:
+`papers.yml` stores identity, current bibliography, verified submission/version
+dates, optional withdrawal/retraction status, official `arxiv_categories` and
+searchable `keywords`. Store a journal DOI when known; the arXiv-issued DOI is
+derivable from arXiv ID and is not duplicated.
 
-- `paper_id`;
-- `signal_date`;
-- `signal_type`;
-- `week`;
-- up to two official arXiv categories when applicable;
-- at most two structure tags selected from `data/tags.yml` under `frontier_structure_tags`;
-- `summary`: a compact but intelligible overview for deciding whether to read;
-- `main_result`: 研究问题与主要结果;
-- `integrable_structure`: 可积结构与方法;
-- `innovation`: 创新，即相对于已有工作的具体新增内容，不作宣传性推断。
+Schema2 `editions.yml` stores `paper_id`, nullable journal `signal_date`, `signal_type`,
+optional `added_on` (required for an unknown event date), one or two approved
+`directions`, an optional three-part `reading_note`, and the primary
+`event_source` URL for newly verified events. The four direction labels live in
+`tags.yml`; individual model/method keywords have no artificial two-tag limit.
 
-Derive `week` from `signal_date`; do not derive it from the arXiv UTC submission timestamp or from the local scan date.
+Retired fields must not be restored: `frontier_weeks`, per-paper `week`, the four
+old prose fields, entry-level `structure_tags`, and registry `tags`. Old prose and
+weekly records remain recoverable in Git history; they are not hidden search text.
+Keep dates distinct and preserve source precision. Historical entries without a
+captured event URL may remain, but do not invent evidence for them.
 
-The four prose fields have different jobs:
-
-- `summary` compresses the research object, main result, and most notable point into two or three readable sentences;
-- `main_result` explains the question, the hierarchy of results, and the analytical, numerical, or experimental evidence;
-- `integrable_structure` explains what the integrable structure actually does in the argument rather than listing method names;
-- `innovation` states the source-supported comparison with prior scope or capability.
-
-Do not reuse a complete sentence across fields. In particular, `main_result` must not repeat `summary`, and `innovation` must not merely restate the last sentence of either field. When only an abstract has been checked, keep the annotation within what the abstract supports; inspect the PDF before adding formula-level mechanisms, proof details, priority claims, or comparisons that are not explicit in the abstract.
+When only an abstract has been checked, keep the reading note within its scope;
+inspect the paper before adding technical mechanisms, priority claims or detailed
+comparisons absent from the abstract. See `maintenance/radar-data-model.md`.
 
 After a successful source run, advance only that source's watermark in
 `maintenance/radar-state.yml`, even when no paper is selected. A check-only
@@ -175,14 +214,30 @@ content change or weekly maintenance PR. Never create or restore a unified
 
 Do not use public contribution classes such as core/adjacent or structure advance. Do not add per-paper `自动整理` badges, BibTeX buttons, recommendation dates, title-fragment tags, or invented terminology.
 
-For the current ISO week, create or update exactly one `frontier_weeks` record containing:
+Record actual source coverage and unresolved gaps in `radar-state.yml`, not weekly
+publication aggregates. New announcements and replacements, Crossref online dates
+and DOI registrations each retain independent progress. Counts are derived from
+the selected records when needed.
 
-- `id` and `date_range`;
-- one concise, non-repetitive weekly `summary`;
-- the current `selected` count;
-- source types actually checked and any material coverage limitation.
-
-The public homepage displays only the current week's short overview in weekly mode and hides weekly overviews in the cumulative view.
+The public homepage defaults to a compact cumulative list with 20 papers per page.
+Date, research direction, and full-collection text search narrow this list;
+pagination never changes editorial selection. No weekly archive or weekly overview
+is displayed. Time choices are all collected papers, last 30 days, last 3 months,
+and a custom interval defaulting to the earliest collected event through today.
+Show the actual collection's month span, without implying exhaustive coverage.
+Collapsed rows show only the
+title and bibliography. Expanded rows present the main finding, supporting detail,
+and methods/scope in a compact reading view, without repeating bibliography or
+displaying a separate innovation section. Bibliography-only rows have no empty
+expander. When supported by an abstract or full text, maintain a `reading_note`
+mapping with `lead`, `detail` and `method_scope`. The lead
+states the concrete result; detail supplies the distinguishing advance; methods/scope
+retains material assumptions and distinguishes numerical evidence from theorems.
+Keep these paragraphs complementary. Omit version bookkeeping, generic praise,
+unsupported priority claims and generic warnings about unrelated cases. Length may
+vary with the result; never discard a critical condition to meet a character target.
+The reading note is the only prose source for display and search; do not maintain
+parallel hidden descriptions.
 
 ## Rendering and validation
 

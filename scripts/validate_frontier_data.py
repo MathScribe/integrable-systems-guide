@@ -33,7 +33,7 @@ FORBIDDEN_CONTENT_MARKERS = (
     "reviewable PR",
     "自动合并",
 )
-PUBLIC_TEXT_FIELDS = ("summary", "main_result", "integrable_structure", "innovation")
+PUBLIC_TEXT_FIELDS = ("lead", "detail", "method_scope")
 PLACEHOLDER_AUTHORS = {"Author metadata unavailable", "Unknown author", "Unknown authors"}
 
 
@@ -41,34 +41,37 @@ def normalized_public_text(value: object) -> str:
     return re.sub(r"[^0-9a-z\u4e00-\u9fff]+", "", str(value).lower())
 
 
-def controlled_structure_tags() -> set[str]:
+def validate_direction_vocabulary() -> None:
     data = yaml.safe_load((ROOT / "data" / "tags.yml").read_text(encoding="utf-8"))
-    tags = data.get("frontier_structure_tags") if isinstance(data, dict) else None
-    if not isinstance(tags, list) or not tags or not all(isinstance(tag, str) and tag for tag in tags):
-        raise ValueError("data/tags.yml requires a non-empty frontier_structure_tags list")
-    if len(tags) != len(set(tags)):
-        raise ValueError("data/tags.yml contains duplicate frontier structure tags")
-    return set(tags)
+    directions = data.get("frontier_directions") if isinstance(data, dict) else None
+    if data.get("schema_version") != 2 or not isinstance(directions, dict):
+        raise ValueError("data/tags.yml requires schema2 and frontier_directions")
+    if set(directions) != {"spectral", "waves", "asymptotics", "structures"}:
+        raise ValueError("Only the four approved research directions are allowed")
+    if not all(isinstance(label,str) and label.strip() for label in directions.values()):
+        raise ValueError("Research direction labels must be non-empty")
 
 
 def main() -> None:
     data = yaml.safe_load((ROOT / "data" / "editions.yml").read_text(encoding="utf-8"))
-    frontier = data.get("frontier") or data.get("frontier_staging")
-    if frontier is None:
-        print("no compact radar records staged")
-        return
+    if data.get("schema_version") != 2 or set(data) != {"schema_version", "frontier"}:
+        raise ValueError("editions must use schema2 without retired weekly aggregates")
+    frontier = data["frontier"]
 
     papers = render_radar.paper_map()
     entries = render_radar.validate_frontier(frontier, papers)
-    allowed_tags = controlled_structure_tags()
+    validate_direction_vocabulary()
     for entry in entries:
         paper = papers[entry["paper_id"]]
         authors = paper.get("authors") or []
         if not authors or any(str(author).strip() in PLACEHOLDER_AUTHORS for author in authors):
             raise ValueError(f"{entry['paper_id']} requires verified author metadata")
 
-        for field in PUBLIC_TEXT_FIELDS:
-            text = str(entry[field])
+        public_text = entry.get("reading_note")
+        if public_text is None:
+            continue
+        for field, value in public_text.items():
+            text = str(value)
             if "?" in text:
                 raise ValueError(f"{entry['paper_id']}.{field} contains possible encoding damage")
             for term in FORBIDDEN_PUBLIC_TERMS:
@@ -82,8 +85,8 @@ def main() -> None:
                         f"{entry['paper_id']}.{field} contains report or workflow residue: {marker}"
                     )
 
-        summary = normalized_public_text(entry["summary"])
-        main_result = normalized_public_text(entry["main_result"])
+        summary = normalized_public_text(public_text["lead"])
+        main_result = normalized_public_text(public_text["detail"])
         if summary == main_result or (
             min(len(summary), len(main_result)) >= 30
             and (summary in main_result or main_result in summary)
@@ -92,11 +95,7 @@ def main() -> None:
                 f"{entry['paper_id']} repeats the overview in the detailed main result"
             )
 
-        for tag in entry.get("structure_tags", []):
-            if tag not in allowed_tags:
-                raise ValueError(f"{entry['paper_id']} has uncontrolled structure tag: {tag}")
-
-    dates = [entry["signal_date"] for entry in entries]
+    dates = [render_radar.frontier_sort_date(entry) for entry in entries]
     print(
         f"validated {len(entries)} compact radar records "
         f"from {min(dates)} through {max(dates)}"

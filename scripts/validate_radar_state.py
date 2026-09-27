@@ -58,8 +58,8 @@ def validate_status(source: dict[str, Any], field: str) -> str:
 
 def main() -> None:
     state = require_mapping(yaml.safe_load(STATE_PATH.read_text(encoding="utf-8")), "radar state")
-    if state.get("schema_version") != 1:
-        raise ValueError("maintenance/radar-state.yml schema_version must be 1")
+    if state.get("schema_version") != 2:
+        raise ValueError("maintenance/radar-state.yml schema_version must be2")
     sources = require_mapping(state.get("sources"), "sources")
 
     editions = require_mapping(
@@ -86,6 +86,11 @@ def main() -> None:
             raise ValueError(
                 f"sources.{source_name} must remain complete at its last successful watermark"
             )
+        replacements = require_mapping(source.get("replacements"), f"{source_name}.replacements")
+        replacement_status = validate_status(replacements, f"{source_name}.replacements")
+        parse_date(replacements.get("checked_through"), f"{source_name}.replacements.checked_through")
+        if replacement_status == "complete" and replacements.get("open_gaps"):
+            raise ValueError(f"{source_name}: complete replacement coverage cannot have unresolved gaps")
 
     # Public entries do not retain discovery provenance, and one paper can be
     # present in several arXiv lists. Do not compare every public event against
@@ -95,13 +100,20 @@ def main() -> None:
     crossref = require_mapping(sources.get("crossref"), "sources.crossref")
     if crossref.get("kind") != "ranked-title-backstop":
         raise ValueError("sources.crossref.kind must be ranked-title-backstop")
-    crossref_status = validate_status(crossref, "sources.crossref")
+    crossref_status = crossref.get("online_status")
+    if crossref_status not in ALLOWED_STATUSES or crossref.get("registration_status") not in ALLOWED_STATUSES:
+        raise ValueError("Crossref requires independent online and registration statuses")
     overlap_days = crossref.get("overlap_days")
     if not isinstance(overlap_days, int) or overlap_days < 1:
         raise ValueError("sources.crossref.overlap_days must be a positive integer")
-    title_query_through = crossref.get("title_query_through")
+    title_query_through = crossref.get("online_query_through")
     if title_query_through is not None:
-        parse_date(title_query_through, "sources.crossref.title_query_through")
+        parse_date(title_query_through, "sources.crossref.online_query_through")
+    registration_through = crossref.get("registration_query_through")
+    if registration_through is not None:
+        parse_date(registration_through, "sources.crossref.registration_query_through")
+    if crossref.get("registration_status") == "complete" and registration_through is None:
+        raise ValueError("Complete registration backstop requires its own watermark")
     reconciliation_checked_at = crossref.get("reconciliation_checked_at")
     if reconciliation_checked_at is not None:
         parse_utc_timestamp(
@@ -135,6 +147,21 @@ def main() -> None:
         parse_utc_timestamp(
             publisher_checked_at, "sources.publisher_verification.checked_at"
         )
+
+    queue = require_mapping(yaml.safe_load((ROOT / "maintenance/radar-candidates.yml").read_text(encoding="utf-8")), "candidate queue")
+    if queue.get("schema_version") != 1 or not isinstance(queue.get("candidates"), list):
+        raise ValueError("Candidate queue requires schema1 and candidates list")
+    seen = set()
+    selected = {entry["paper_id"] for entry in entries}
+    for item in queue["candidates"]:
+        if not isinstance(item,dict) or not all(item.get(key) for key in ("id","title","authors","sources","next_action","last_checked")):
+            raise ValueError("Pending candidate requires identity, authors, sources, check date and next action")
+        if item['id'] in seen or item['id'] in selected:
+            raise ValueError(f"Duplicate or already-selected pending candidate: {item['id']}")
+        seen.add(item['id'])
+        if item.get('status') not in {'pending','deferred-historical'}:
+            raise ValueError(f"Invalid pending status: {item['id']}")
+        parse_date(item['last_checked'], f"{item['id']}.last_checked")
 
     print(
         "validated independent radar source state; "

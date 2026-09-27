@@ -1,197 +1,234 @@
 (() => {
-  let activeHashHandler = null;
-  let activePaperLinkHandler = null;
+  const PAGE_SIZE = 20;
+  const fold = (text) => String(text || "").normalize("NFKD").replace(/\p{Diacritic}/gu, "").toLocaleLowerCase();
+  const isoDate = (date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+  const cleanDate = (value) => /^\d{4}-\d{2}-\d{2}$/.test(value || "") ? value : "";
 
-  function enableWeekFilter(root) {
-    const navigation = root.querySelector(":scope > .radar-week-navigation");
-    if (!navigation || navigation.dataset.radarReady === "true") return;
+  function defaultDateRange(from, to, earliest, today = isoDate(new Date())) {
+    return { from: cleanDate(from) || earliest, to: cleanDate(to) || today };
+  }
 
-    const weekOptions = [...navigation.querySelectorAll("[data-radar-week-option]")].map((option) => ({
-      id: option.dataset.radarWeekOption,
-      label: option.dataset.label,
-      count: Number(option.dataset.count),
+  function filterEntries(entries, filters, today = isoDate(new Date())) {
+    const words = fold(filters.q).trim().split(/\s+/).filter(Boolean);
+    let from = filters.period === "custom" ? filters.from : "";
+    let to = filters.period === "custom" ? filters.to : "";
+    if (["30", "90"].includes(filters.period)) {
+      const start = new Date(`${today}T12:00:00`);
+      start.setDate(start.getDate() - Number(filters.period) + 1);
+      from = isoDate(start);
+      to = today;
+    }
+    if (from && to && from > to) return [];
+    return entries.filter((entry) => (
+      (!from || entry.date >= from) && (!to || entry.date <= to)
+      && (!filters.topic || entry.directions.includes(filters.topic))
+      && words.every((word) => entry.search.includes(word))
+    ));
+  }
+
+  function paginate(entries, requestedPage, size = PAGE_SIZE) {
+    const pages = Math.ceil(entries.length / size);
+    const page = Math.min(Math.max(1, Number(requestedPage) || 1), Math.max(1, pages));
+    const start = (page - 1) * size;
+    return { page, pages, start, entries: entries.slice(start, start + size) };
+  }
+
+  if (typeof module !== "undefined" && module.exports) module.exports = { filterEntries, paginate, fold, defaultDateRange };
+  if (typeof document === "undefined") return;
+  let teardown = () => {};
+
+  function setup(root) {
+    const navigation = root.querySelector(":scope > .radar-browse-controls");
+    if (!navigation || navigation.dataset.radarReady) return;
+    teardown();
+    navigation.dataset.radarReady = "true";
+    root.classList.add("radar-home", "radar-compact");
+    const skipLink = document.querySelector("a.md-skip");
+    if (skipLink) skipLink.href = "#research-radar";
+    const cards = [...root.querySelectorAll(":scope > article.radar-paper-card")];
+    const entries = cards.map((card) => ({
+      card, anchor: card.dataset.radarAnchor, date: card.dataset.radarDate || card.dataset.radarAddedOn,
+      directions: JSON.parse(card.dataset.radarDirections || "[]"),
+      search: fold(`${card.textContent} ${card.dataset.radarSearch || ""}`),
     }));
-    const cards = [...root.querySelectorAll(":scope > article.radar-paper-card[data-radar-week]")];
-    const monthMarkers = [...root.querySelectorAll(":scope > .radar-month-label[data-radar-month-group]")];
-    const screeningNotes = [...root.querySelectorAll(":scope > .radar-week-overview[data-radar-screening-week]")];
-    const current = navigation.querySelector(".radar-week-current");
-    const older = navigation.querySelector('[data-radar-action="older"]');
-    const newer = navigation.querySelector('[data-radar-action="newer"]');
-    const showAll = navigation.querySelector('[data-radar-action="all"]');
-    const searchInput = navigation.querySelector("#radar-paper-search");
-    const searchCount = navigation.querySelector(".radar-search-count");
-    if (!weekOptions.length || !current || !older || !newer || !showAll || !searchInput || !searchCount) return;
+    const input = navigation.querySelector("#radar-paper-search");
+    const period = navigation.querySelector("#radar-time-filter");
+    const topic = navigation.querySelector("#radar-topic-filter");
+    const from = navigation.querySelector("#radar-date-from");
+    const to = navigation.querySelector("#radar-date-to");
+    const customDates = navigation.querySelector(".radar-custom-dates");
+    const count = navigation.querySelector(".radar-search-count");
+    const reset = navigation.querySelector('[data-radar-action="reset"]');
+    const empty = root.querySelector(".radar-empty-state");
+    const pagination = root.querySelector(".radar-pagination");
+    const previous = pagination.querySelector('[data-radar-action="previous"]');
+    const next = pagination.querySelector('[data-radar-action="next"]');
+    const pageLabel = pagination.querySelector("[data-radar-page]");
+    const pageInfo = pagination.querySelector("[data-radar-page-info]");
+    const earliestDate = navigation.dataset.earliestDate;
+    function initializeDates() {
+      const range = defaultDateRange(from.value, to.value, earliestDate);
+      from.value = range.from;
+      to.value = range.to;
+    }
+    let page = 1;
+    let totalPages = 0;
+    let ready = false;
+    let searchTimer;
 
-    let currentIndex = 0;
-    let showingAll = false;
-    const toc = document.querySelector(".md-sidebar--secondary .md-nav--secondary");
-
-    function cardAnchor(card) {
-      return card.dataset.radarAnchor || card.id;
+    function filters() {
+      return { q: input.value, period: period.value, topic: topic.value, from: from.value, to: to.value };
     }
 
-    function rebuildToc(selected) {
-      if (!toc) return;
-      const title = toc.querySelector(":scope > .md-nav__title");
-      const list = toc.querySelector(":scope > .md-nav__list");
-      if (!list) return;
-      if (title) title.textContent = selected === "all" ? "论文目录" : "本期论文";
-      list.replaceChildren();
-
-      function makeLink(item) {
-        const li = document.createElement("li");
-        li.className = "md-nav__item";
-        const link = document.createElement("a");
-        link.className = "md-nav__link";
-        link.href = item.href;
-        const span = document.createElement("span");
-        span.className = "md-ellipsis";
-        span.textContent = item.label;
-        link.appendChild(span);
-        li.appendChild(link);
-        return li;
-      }
-
-      if (selected === "all") {
-        monthMarkers.filter((marker) => !marker.hidden).forEach((marker) => {
-          const monthItem = makeLink({ href: `#${marker.id}`, label: marker.textContent.trim() });
-          const nested = document.createElement("nav");
-          nested.className = "md-nav";
-          const nestedList = document.createElement("ul");
-          nestedList.className = "md-nav__list";
-          cards
-            .filter((card) => !card.hidden && card.dataset.radarMonth === marker.dataset.radarMonthGroup)
-            .forEach((card) => {
-              nestedList.appendChild(makeLink({
-                href: `#${cardAnchor(card)}`,
-                label: card.querySelector(".radar-paper-title")?.textContent.trim() || cardAnchor(card),
-              }));
-            });
-          nested.appendChild(nestedList);
-          monthItem.appendChild(nested);
-          list.appendChild(monthItem);
-        });
-      } else {
-        cards
-          .filter((card) => !card.hidden && card.dataset.radarWeek === selected)
-          .forEach((card) => {
-            list.appendChild(makeLink({
-              href: `#${cardAnchor(card)}`,
-              label: card.querySelector(".radar-paper-title")?.textContent.trim() || cardAnchor(card),
-            }));
-          });
-      }
+    function readURL() {
+      const params = new URLSearchParams(location.search);
+      input.value = (params.get("q") || "").slice(0, 300);
+      const range = params.get("period") || "all";
+      period.value = [...period.options].some((option) => option.value === range) ? range : "all";
+      const tag = params.get("topic") || "";
+      topic.value = [...topic.options].some((option) => option.value === tag) ? tag : "";
+      // Old method-tag links now open a keyword search rather than silently losing their scope.
+      if (tag && !topic.value) input.value = `${input.value} ${tag}`.trim().slice(0, 300);
+      from.value = cleanDate(params.get("from"));
+      to.value = cleanDate(params.get("to"));
+      initializeDates();
+      const requested = Number(params.get("page"));
+      page = Number.isSafeInteger(requested) && requested > 0 ? requested : 1;
     }
 
-    function applySearch() {
-      const selected = weekOptions[currentIndex];
-      const query = searchInput.value.trim().toLocaleLowerCase();
-      let visibleCount = 0;
-
-      cards.forEach((card) => {
-        const inScope = showingAll || card.dataset.radarWeek === selected.id;
-        const matches = !query || card.textContent.toLocaleLowerCase().includes(query);
-        card.hidden = !(inScope && matches);
-        if (!card.hidden) visibleCount += 1;
+    function writeURL(replace = false, preserveHash = false) {
+      const url = new URL(location.href);
+      const values = { ...filters(), page: page > 1 ? String(page) : "" };
+      if (values.period === "all") values.period = "";
+      if (values.period !== "custom") { values.from = ""; values.to = ""; }
+      Object.entries(values).forEach(([key, value]) => {
+        if (value.trim()) url.searchParams.set(key, value.trim());
+        else url.searchParams.delete(key);
       });
-
-      monthMarkers.forEach((marker) => {
-        marker.hidden = !showingAll || !cards.some((card) => (
-          !card.hidden && card.dataset.radarMonth === marker.dataset.radarMonthGroup
-        ));
-      });
-      screeningNotes.forEach((note) => {
-        note.hidden = showingAll || note.dataset.radarScreeningWeek !== selected.id;
-      });
-
-      searchCount.textContent = query ? `找到 ${visibleCount} 篇` : "";
-      rebuildToc(showingAll ? "all" : selected.id);
+      if (!preserveHash) url.hash = "";
+      if (url.href !== location.href) history[replace ? "replaceState" : "pushState"](null, "", url);
     }
 
-    function showWeek(index) {
-      currentIndex = Math.max(0, Math.min(index, weekOptions.length - 1));
-      showingAll = false;
-      const selected = weekOptions[currentIndex];
-      root.classList.remove("radar-all-mode");
-      current.textContent = `${selected.label} · ${selected.count} 篇`;
-      older.disabled = currentIndex >= weekOptions.length - 1;
-      newer.disabled = currentIndex <= 0;
-      older.hidden = false;
-      newer.hidden = false;
-      showAll.textContent = "查看全部";
-      applySearch();
-    }
-
-    function showAllPapers() {
-      showingAll = true;
-      root.classList.add("radar-all-mode");
-      current.textContent = `全部论文 · ${navigation.dataset.totalCount} 篇`;
-      older.hidden = true;
-      newer.hidden = true;
-      showAll.textContent = "返回最新一周";
-      applySearch();
-    }
-
-    function revealHashTarget(hash = window.location.hash) {
-      if (!hash.startsWith("#paper-")) return false;
-
-      let targetId;
+    const storageKey = () => `radar-view-v1:${location.pathname}${location.search}`;
+    function saveView() {
+      if (!ready) return;
       try {
-        targetId = decodeURIComponent(hash.slice(1));
-      } catch (_error) {
-        return false;
+        sessionStorage.setItem(storageKey(), JSON.stringify({
+          scroll: window.scrollY,
+          open: entries.filter((entry) => entry.card.querySelector("details")?.open).map((entry) => entry.anchor),
+        }));
+      } catch (_) { /* Browser storage is optional. */ }
+    }
+
+    function restoreView(restoreScroll) {
+      try {
+        const saved = JSON.parse(sessionStorage.getItem(storageKey()));
+        if (!saved) return;
+        entries.forEach((entry) => {
+          const details = entry.card.querySelector("details");
+          if (details) details.open = saved.open?.includes(entry.anchor) || false;
+        });
+        if (restoreScroll && Number.isFinite(saved.scroll)) requestAnimationFrame(() => window.scrollTo(0, saved.scroll));
+      } catch (_) { /* Invalid or unavailable storage does not block browsing. */ }
+    }
+
+    function render() {
+      const current = filters();
+      const filtered = filterEntries(entries, current);
+      const result = paginate(filtered, page);
+      page = result.page;
+      totalPages = result.pages;
+      const visible = new Set(result.entries.map((entry) => entry.anchor));
+      cards.forEach((card) => {
+        card.hidden = !visible.has(card.dataset.radarAnchor);
+        const heading = card.previousElementSibling;
+        if (heading?.matches(".radar-search-heading")) heading.hidden = card.hidden;
+      });
+      customDates.hidden = current.period !== "custom";
+      count.textContent = `${filtered.length} 篇论文`;
+      empty.hidden = filtered.length !== 0;
+      const invalidRange = current.period === "custom" && current.from && current.to && current.from > current.to;
+      empty.textContent = invalidRange ? "起始日期不能晚于结束日期，请调整日期范围。"
+        : current.period !== "all" && !current.q && !current.topic ? "该时间范围暂无收录。可调整日期或查看全部已收录论文。"
+        : "没有找到匹配论文。试试其他关键词，或清除筛选。";
+      pageLabel.textContent = `${filtered.length ? page : 0} / ${totalPages}`;
+      pageInfo.textContent = filtered.length ? `显示 ${result.start + 1}–${result.start + result.entries.length} / ${filtered.length} 篇` : "没有匹配论文";
+      previous.disabled = page <= 1;
+      next.disabled = page >= totalPages;
+      reset.hidden = !current.q && current.period === "all" && !current.topic;
+    }
+
+    function changeFilters(replace = false) {
+      saveView();
+      page = 1;
+      render();
+      writeURL(replace);
+      saveView();
+    }
+
+    function revealHashTarget() {
+      let anchor;
+      try { anchor = decodeURIComponent(location.hash.slice(1)); } catch (_) { return false; }
+      const target = entries.find((entry) => entry.anchor === anchor);
+      if (!target) return false;
+      let filtered = filterEntries(entries, filters());
+      if (!filtered.includes(target)) {
+        input.value = ""; topic.value = ""; period.value = "all"; from.value = ""; to.value = "";
+        filtered = entries;
       }
-
-      const target = document.getElementById(targetId);
-      const card = target?.matches("article.radar-paper-card")
-        ? target
-        : target?.matches(".radar-search-heading")
-          ? target.nextElementSibling
-          : target?.closest("article.radar-paper-card");
-      if (!card?.dataset.radarWeek) return false;
-
-      const targetIndex = weekOptions.findIndex((option) => option.id === card.dataset.radarWeek);
-      if (targetIndex < 0) return false;
-
-      searchInput.value = "";
-      showWeek(targetIndex);
-      window.requestAnimationFrame(() => card.scrollIntoView({ block: "start" }));
+      page = Math.floor(filtered.indexOf(target) / PAGE_SIZE) + 1;
+      render();
+      const details = target.card.querySelector("details");
+      if (details) details.open = true;
+      writeURL(true, true);
+      requestAnimationFrame(() => target.card.scrollIntoView({ block: "start" }));
       return true;
     }
 
-    older.addEventListener("click", () => showWeek(currentIndex + 1));
-    newer.addEventListener("click", () => showWeek(currentIndex - 1));
-    showAll.addEventListener("click", () => {
-      if (showingAll) showWeek(0);
-      else showAllPapers();
+    input.addEventListener("input", () => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => changeFilters(true), 180);
     });
-    searchInput.addEventListener("input", applySearch);
-
-    if (activeHashHandler) window.removeEventListener("hashchange", activeHashHandler);
-    activeHashHandler = revealHashTarget;
-    window.addEventListener("hashchange", activeHashHandler);
-
-    if (activePaperLinkHandler) document.removeEventListener("click", activePaperLinkHandler);
-    activePaperLinkHandler = (event) => {
-      const link = event.target instanceof Element ? event.target.closest('a[href*="#paper-"]') : null;
-      if (!link) return;
-      const destination = new URL(link.href, window.location.href);
-      if (destination.pathname === window.location.pathname) revealHashTarget(destination.hash);
+    period.addEventListener("change", () => { if (period.value === "custom") initializeDates(); changeFilters(); });
+    [topic, from, to].forEach((control) => control.addEventListener("change", () => changeFilters()));
+    reset.addEventListener("click", () => {
+      input.value = ""; period.value = "all"; topic.value = ""; from.value = ""; to.value = "";
+      changeFilters();
+    });
+    function turnPage(delta) {
+      saveView();
+      page += delta;
+      render();
+      writeURL();
+      navigation.scrollIntoView({ block: "start" });
+      saveView();
+    }
+    previous.addEventListener("click", () => turnPage(-1));
+    next.addEventListener("click", () => turnPage(1));
+    cards.forEach((card) => card.querySelector("details")?.addEventListener("toggle", saveView));
+    const onPopState = () => { readURL(); render(); if (!revealHashTarget()) restoreView(true); };
+    const onHashChange = () => revealHashTarget();
+    const onPageHide = () => saveView();
+    window.addEventListener("popstate", onPopState);
+    window.addEventListener("hashchange", onHashChange);
+    window.addEventListener("pagehide", onPageHide);
+    teardown = () => {
+      clearTimeout(searchTimer);
+      window.removeEventListener("popstate", onPopState);
+      window.removeEventListener("hashchange", onHashChange);
+      window.removeEventListener("pagehide", onPageHide);
     };
-    document.addEventListener("click", activePaperLinkHandler);
-
-    const defaultWeek = navigation.dataset.defaultWeek;
-    const defaultIndex = weekOptions.findIndex((option) => option.id === defaultWeek);
-    if (!revealHashTarget()) showWeek(defaultIndex >= 0 ? defaultIndex : 0);
-    navigation.dataset.radarReady = "true";
+    readURL();
+    render();
+    if (!revealHashTarget()) { writeURL(true, true); restoreView(true); }
+    ready = true;
   }
 
-  function enhanceRadar() {
+  const enhance = () => {
     const root = document.querySelector("article.md-content__inner");
-    if (!root) return;
-    enableWeekFilter(root);
-  }
-
-  document.addEventListener("DOMContentLoaded", enhanceRadar);
-  if (typeof document$ !== "undefined") document$.subscribe(enhanceRadar);
+    if (root?.querySelector(".radar-browse-controls")) setup(root);
+    else teardown();
+  };
+  document.addEventListener("DOMContentLoaded", enhance);
+  if (typeof document$ !== "undefined") document$.subscribe(enhance);
 })();

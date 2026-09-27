@@ -1,5 +1,19 @@
 schema_version: 1
 policy_version: 1
+active_policy_version: 2
+# Preserve the v1 snapshot below for reproducible comparison. The owner-approved
+# v2 rescreening reran these same 19 candidates: 11 selected, 8 excluded, 0 pending.
+# Two excluded cases became selected; two borderline cases resolved as one
+# selected and one excluded. Per-paper evidence stays in the private audit.
+v2_result:
+  checked_on: '2026-09-27'
+  frozen_candidates: 19
+  selected: 11
+  excluded: 8
+  borderline: 0
+  changed_decisions: 4
+  positive_reference: 'arxiv:2411.17036'
+  principle: direct research relevance or a concrete methodological connection
 window:
   from: '2026-07-23'
   until: '2026-07-29'

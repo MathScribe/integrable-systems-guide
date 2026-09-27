@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import importlib.util
-from collections import Counter
 from pathlib import Path
 
 import yaml
@@ -29,13 +28,12 @@ def sample_entry(paper_id: str = "arxiv:2607.13773") -> dict[str, object]:
         "paper_id": paper_id,
         "signal_date": "2026-07-15",
         "signal_type": "new-preprint",
-        "week": "2026-W29",
-        "arxiv_categories": ["nlin.PS", "nlin.SI"],
-        "structure_tags": ["Darboux transformation", "topological vector potential"],
-        "summary": "论文系统构造平面波背景上的任意多峰多谷孤子族，并给出新的拓扑分析。",
-        "main_result": "作者分类基本解形态，并构造任意 K-hump 与 M-valley 的混合结构。",
-        "integrable_structure": "方法基于两分量 Fokas--Lenells 系统的 N-fold Darboux transformation。",
-        "innovation": "结果从有限低阶例子推进到任意结构，并揭示零点与极点对虚拟单极场的共同贡献。",
+        "directions": ["waves", "structures"],
+        "reading_note": {
+            "lead": "构造平面波背景上的任意多峰多谷孤子族。",
+            "detail": "分类基本解形态并构造任意 K-hump 与 M-valley 混合结构。",
+            "method_scope": "两分量 Fokas–Lenells 系统的 N-fold Darboux 变换。",
+        },
     }
 
 
@@ -49,6 +47,8 @@ def test_component_contract() -> None:
             "arxiv_id": "2607.13773",
             "doi": "10.48550/arXiv.2607.13773",
             "submitted": "2026-07-14",
+            "keywords": ["Darboux transformation", "topological vector potential"],
+            "arxiv_categories": ["nlin.PS", "nlin.SI"],
         },
         "arxiv:old": {
             "id": "arxiv:old",
@@ -65,10 +65,10 @@ def test_component_contract() -> None:
     card = render_radar.render_frontier_entry(papers["arxiv:2607.13773"], entry)
 
     required_fragments = (
-        "<h4>研究问题与主要结果</h4>",
-        "<h4>可积结构与方法</h4>",
-        "<h4>创新</h4>",
-        "展开研究内容与创新",
+        'class="radar-reading-detail"',
+        'class="radar-reading-method"',
+        "方法与范围",
+        'class="radar-row-summary"',
         "2026-07-15",
         "nlin.PS",
         "Darboux transformation",
@@ -96,15 +96,13 @@ def test_component_contract() -> None:
 
     math_card = render_radar.render_frontier_entry(
         papers["arxiv:2607.13773"],
-        {**entry, "summary": r"在有限 \(n\) 层面得到结果。"},
+        {**entry, "reading_note": {**entry["reading_note"], "lead": r"在有限 \(n\) 层面得到结果。"}},
     )
     assert '<span class="arithmatex">\\(n\\)</span>' in math_card
 
     old_entry = {
         **sample_entry("arxiv:old"),
         "signal_date": "2026-05-01",
-        "arxiv_categories": [],
-        "structure_tags": ["inverse scattering"],
     }
     frontier = {
         "entries": [entry, old_entry],
@@ -127,46 +125,80 @@ def test_component_contract() -> None:
         papers,
     )
     assert "这里精选近期" in home
-    assert "2026-W29" in home
+    assert "2026-W29" not in home
     assert "Multihump-Multivalley Soliton Families" in home
     assert "Old paper" in home
     assert "## 站内导航" in home
-    assert 'class="radar-week-navigation"' in home
-    assert 'data-radar-action="older"' in home
-    assert 'data-radar-action="newer"' in home
-    assert 'data-radar-action="all"' in home
+    assert 'class="radar-browse-controls"' in home
+    assert 'data-radar-action="previous"' in home
+    assert 'data-radar-action="next"' in home
+    assert 'data-radar-action="reset"' in home
     assert 'id="radar-paper-search"' in home
-    assert "搜索标题、作者、标签或内容" in home
-    assert 'class="radar-week-overview" data-radar-screening-week="2026-W29" hidden' in home
-    assert "<strong>本周概览：</strong>测试周。" in home
-    assert home.index("radar-week-overview") < home.index("radar-paper-card")
-    assert 'data-default-week="2026-W29"' in home
-    assert 'data-radar-week="2026-W29"' in home
+    assert "搜索论文、作者、方程或方法" in home
+    assert "radar-week-overview" not in home
+    assert "本周概览" not in home
+    assert "data-radar-week-option" not in home
+    assert 'data-earliest-date="2026-05-01"' in home
+    assert "当前收录：2026.05—2026.07" in home
+    assert "全部已收录" in home
+    assert 'value="spectral">散射与谱方法' in home
+    assert 'value="asymptotics">渐近与统计' in home
+    assert 'data-default-period="all"' in home
+    assert 'data-radar-directions=' in home
     assert '.radar-search-heading}' in home
     assert 'data-radar-anchor="paper-' in home
-    assert 'data-radar-month-group="2026-07"' in home
-    assert "候选来源：" in home
+    assert 'data-radar-date="2026-07-15"' in home
+    assert "论文来自 arXiv 与期刊记录" in home
+    assert 'id="radar-time-filter"' in home
+    assert 'id="radar-topic-filter"' in home
+    assert 'target="_blank" rel="noopener noreferrer"' in home
+    assert card.index('</summary>') < card.index('class="radar-paper-overview"')
+    assert '<details class="radar-paper-details" open' not in card
+    assert '<h4>创新</h4>' not in card
+    assert 'data-radar-search=' in card
+    note_entry = {**entry, "reading_note": {
+        "lead": "主结论 < 带条件的结论", "detail": "结果细节", "method_scope": "仅在小数据下成立",
+    }}
+    render_radar.validate_frontier_entry(note_entry, papers)
+    note_card = render_radar.render_frontier_entry(papers[entry["paper_id"]], note_entry)
+    assert "主结论 &lt; 带条件的结论" in note_card
+    assert "仅在小数据下成立" in note_card
+    assert 'class="radar-paper-meta"' not in note_card
+    try:
+        render_radar.validate_frontier_entry({**entry, "reading_note": {"lead": "不完整"}}, papers)
+    except ValueError as exc:
+        assert "reading_note" in str(exc)
+    else:
+        raise AssertionError("an incomplete reading note should be rejected")
     assert "## 数据来源与筛选" in home
     assert "Crossref" in home
-    assert "普通网页搜索只用于查漏" in home
+    assert "[数据来源](sources.md)" in home
     assert "[数据与筛选方法](editorial-policy.md)" in home
     assert home.index("## 数据来源与筛选") > home.index("## 站内导航")
     assert "Exactly Solvable and Integrable Systems" not in home
     assert "推荐于" not in home
 
     javascript = (ROOT / "docs" / "javascripts" / "radar.js").read_text(encoding="utf-8")
-    assert 'window.addEventListener("hashchange", activeHashHandler)' in javascript
-    assert 'document.addEventListener("click", activePaperLinkHandler)' in javascript
-    assert "card.dataset.radarWeek" in javascript
-    assert 'card.scrollIntoView({ block: "start" })' in javascript
+    assert 'window.addEventListener("hashchange", onHashChange)' in javascript
+    assert 'window.addEventListener("popstate", onPopState)' in javascript
+    assert "card.dataset.radarDirections" in javascript
+    assert 'target.card.scrollIntoView({ block: "start" })' in javascript
 
-    invalid = {**entry, "structure_tags": ["one", "two", "three"]}
+    invalid = {**entry, "directions": ["spectral", "waves", "structures"]}
     try:
         render_radar.validate_frontier_entry(invalid, papers)
     except ValueError as exc:
-        assert "more than two" in str(exc)
+        assert "one or two" in str(exc)
     else:
-        raise AssertionError("three displayed structure tags should be rejected")
+        raise AssertionError("three directions should be rejected")
+
+    withdrawn_papers = {**papers, entry["paper_id"]: {**papers[entry["paper_id"]], "status": "withdrawn"}}
+    try:
+        render_radar.validate_frontier_entry(entry, withdrawn_papers)
+    except ValueError as exc:
+        assert "withdrawn" in str(exc)
+    else:
+        raise AssertionError("a withdrawn paper must not remain publicly selected")
 
 
 def test_enabled_frontier() -> None:
@@ -183,19 +215,48 @@ def test_enabled_frontier() -> None:
     assert len({entry["paper_id"] for entry in entries}) == len(entries)
 
     assert "checked_through" not in frontier
-    expected_counts = {
-        week["id"]: week["screening"]["selected"]
-        for week in data["frontier_weeks"]
-    }
-    assert len(entries) == sum(expected_counts.values())
+    assert data["schema_version"] == 2
+    assert "frontier_weeks" not in data
     assert len(cumulative) == len(entries)
-    assert Counter(render_radar.frontier_week_id(entry) for entry in entries) == expected_counts
-    assert {week["id"] for week in data["frontier_weeks"]} == set(expected_counts)
-    assert set(Counter(entry["signal_type"] for entry in entries)) <= {
+    assert all(entry.get("reading_note") or registry[entry["paper_id"]].get("doi") for entry in entries)
+    assert {entry["signal_type"] for entry in entries} <= {
         "new-preprint",
         "major-revision",
         "journal-publication",
     }
+
+
+def test_bibliography_without_event_date() -> None:
+    paper = {"id": "doi:10.1000/test", "title": "Journal example", "authors": ["Ada Example"],
+             "url": "https://doi.org/10.1000/test", "doi": "10.1000/test", "journal": "Journal", "year": 2027}
+    entry = {"paper_id": paper["id"], "signal_date": None, "signal_type": "journal-publication",
+             "added_on": "2026-09-27", "event_source": paper["url"], "directions": ["waves"]}
+    papers = {paper["id"]: paper}
+    render_radar.validate_frontier_entry(entry, papers)
+    card = render_radar.render_frontier_entry(paper, entry)
+    assert '<details' not in card and 'radar-expand-icon' not in card
+    assert '<time' not in card and 'None' not in card
+    assert 'data-radar-date=""' in card and 'data-radar-added-on="2026-09-27"' in card
+    assert 'Journal (2027)' in card and 'Ada Example' in card
+    dated = {**entry, "paper_id": "dated", "signal_date": "2026-09-26", "added_on": "2026-09-28"}
+    ordered = render_radar.all_frontier_entries({"entries": [dated, entry]}, {**papers, "dated": {**paper, "id": "dated"}})
+    assert ordered[0] == entry  # A known event keeps its date, regardless of intake.
+    assert '<time datetime="2026-09-26"' in render_radar.render_frontier_entry(paper, dated)
+    for invalid in ({**entry, "added_on": None}, {**entry, "signal_type": "new-preprint"},
+                    {**entry, "signal_date": ""}, {**entry, "reading_note": {}},
+                    {k: v for k, v in entry.items() if k != "event_source"}):
+        try:
+            render_radar.validate_frontier_entry(invalid, papers)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError(f"accepted incomplete bibliography fallback: {invalid}")
+    try:
+        render_radar.validate_frontier_entry(entry, {paper["id"]: {**paper, "doi": None}})
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("bibliography-only selection requires a journal DOI")
 
 
 def test_bibliographic_date_and_version_validation() -> None:
@@ -230,6 +291,10 @@ def main() -> None:
     test_component_contract()
     test_enabled_frontier()
     test_bibliographic_date_and_version_validation()
+    test_bibliography_without_event_date()
+    group_page = render_radar.render_group_work(render_radar.load_yaml(ROOT / "data" / "group-work.yml"))
+    for retained in ("data-group-papers", "MathSciNet", "Google Scholar", "Semantic Scholar", "arxiv.org/search", "Public notes", "courseNotes", "Reading projects"):
+        assert retained in group_page, f"group page lost existing content: {retained}"
     print("compact radar schema and enabled frontier tests passed")
 
 

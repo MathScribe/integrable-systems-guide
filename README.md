@@ -8,10 +8,11 @@ The radar is designed for researchers familiar with integrable PDEs, spectral me
 
 ## What the site provides
 
-- The homepage defaults to the latest ISO week.
-- Readers can browse earlier weeks or switch to a searchable cumulative view grouped by month.
-- Each paper card includes verified bibliographic metadata, official arXiv categories, up to two controlled structure tags, and a concise overview.
+- The homepage defaults to the complete collection, newest first, with 20 compact entries per page.
+- Readers can search across annotations and bibliography, filter by date or controlled structure tag, and select an ISO-week archive from the time filter.
+- Collapsed entries show only the title and bibliography. Abstract-style overviews, full authors, official categories, and controlled tags appear on expansion.
 - Expandable notes explain the research question and main results, the role of the integrable structure and methods, and the paper's specific advance over prior work.
+- Query parameters preserve filters and pagination; stable paper anchors reveal and expand the correct result. Session storage retains expanded entries and reading position when available.
 - New preprints, qualifying major revisions, and first formal journal publications are treated as distinct research events.
 
 The radar is checked daily, but publication is event-driven: there is no daily or weekly quota, and a completed screening pass may select no papers.
@@ -27,7 +28,16 @@ AI assists with candidate discovery, deduplication, metadata cleanup, initial sc
 - `data/papers.yml` stores one current bibliographic record per paper.
 - `data/editions.yml` stores the cumulative `frontier` events and weekly summaries. Superseded reading-chain editions remain available through Git history rather than the active data file.
 - `data/tags.yml` contains the controlled public structure-tag vocabulary.
-- Generated Markdown in `docs/index.md` must not be edited by hand.
+- `data/group-work.yml` configures the group publication widget's author identity and profile link; it is not a manually maintained paper list.
+- Generated Markdown in `docs/index.md`, `docs/group-work.md`, and `docs/sources.md` must not be edited by hand.
+
+The group widget queries Crossref directly from the browser (no API key or server required).
+It merges ORCID matches with a bounded, relevance-ranked author-name search (200
+records per query), rejects conflicting author IDs and unrelated namesakes, and
+offers local keyword/year filtering and pagination. Only complete responses are
+cached in session storage for 15 minutes. These are search results, not a claim
+of a complete publication list or a replacement for radar editorial selection.
+Operational coverage and evidence details remain in `maintenance/` and local audits.
 
 `maintenance/radar-state.yml` records independent source watermarks. Public
 event dates remain in `data/editions.yml`; a source watermark advances only

@@ -1,14 +1,17 @@
 # Research radar selection policy
 
-This policy defines the editorial objective used after broad discovery. It is
+Policy version 2, approved by the owner during the September 2026 historical
+rescreening. This policy defines the editorial objective used after broad discovery. It is
 versioned independently from any one daily run so that quiet or busy days do not
 move the threshold.
 
 ## Editorial promise
 
-Publish newly announced or newly published papers that a researcher working
-across integrable systems would reasonably regret overlooking. Use a broad
-disciplinary boundary and a strict value threshold.
+Maintain a focused reading radar for research on integrable nonlinear waves,
+inverse scattering and spectral methods. The reference research interests include
+Liming Ling's work on multicomponent NLS/DNLS, solitons, breathers, rogue waves,
+stability, Riemann–Hilbert asymptotics, finite-gap backgrounds and soliton gases.
+This is a thematic reference, not an author whitelist or a group publication feed.
 
 The radar does not promise a fixed number of papers. It must not add old papers,
 routine work, or weaker candidates to make a day or week look full. An unusually
@@ -21,8 +24,10 @@ Freshness is an eligibility condition, not a ranking signal.
 - A new preprint must belong to an unprocessed official arXiv announcement batch.
 - A major revision must belong to an unprocessed replacement batch and add a main
   theorem, core method, substantial analysis, experiment, or material conclusion.
-- A journal-only discovery must have a first-online date in the unprocessed
-  publication window.
+- A journal-only discovery normally has a first-online date in the unprocessed
+  publication window. Under the owner's 2026-09-27 bibliography-first amendment,
+  a relevant record found in the bounded current discovery pass may be included
+  with an unknown online date; preserve null and do not claim a dated new event.
 - A delayed index record keeps its real event date. It is not relabelled as a
   current recommendation merely because the radar observed it later.
 - A previously selected preprint that later receives routine journal publication
@@ -30,20 +35,33 @@ Freshness is an eligibility condition, not a ranking signal.
 - Companion papers announcing the same result are represented by the most
   complete and informative version unless they contain genuinely distinct results.
 
-## Broad scope, strict threshold
+## Research focus and useful new directions
 
-Candidates may come from integrable PDEs and lattices, Painlevé and
-isomonodromy, integrable probability and random matrices, quantum integrability,
-many-body systems, algebraic and symplectic geometry, topological recursion,
-CohFTs, gravity, optics, experiments, inverse problems, and other adjacent areas.
+Prioritize integrable PDEs and lattices, IST and spectral theory, Riemann–Hilbert
+and dbar methods, well-posedness, stability, long-time asymptotics, nonlinear-wave
+interactions, finite-gap solutions, Painlevé/isomonodromy, and random soliton sets.
+Useful numerical or experimental advances on these problems are eligible.
 
 Scope alone never authorizes selection. A candidate must clearly pass at least
 one of the following tests:
 
-1. It introduces, reveals, classifies, or substantially extends an integrable
-   structure or method.
-2. An existing integrable structure is indispensable to a clear, systematic,
-   non-routine result of genuine research value.
+1. **Direct research relevance:** a concrete, substantive advance on a problem,
+   model or method within the focus above. A useful well-posedness or stability
+   theorem need not introduce a new integrable structure or be a field-wide
+   breakthrough. Related nonintegrable perturbations are eligible when the
+   connection and new insight for nonlinear waves can be stated precisely.
+2. **A useful new direction:** a specific methodological or problem connection
+   to that focus, supported by primary evidence. Examples include probability
+   for random scattering data and soliton ensembles, microscopic-to-hydrodynamic
+   limits, spectral reconstruction, or numerical/experimental access to soliton
+   dynamics. State what could be learned or transferred, not merely a discipline.
+
+Quantum theory, probability, geometry, combinatorics and gravity are searched
+selectively as possible sources of such connections. The radar does not promise
+comprehensive coverage of these fields. A specialized observable, algebraic
+construction or random-matrix statistic is not sufficient without a concrete
+connection to the research focus. General structural criteria and reusable
+spectral/Hamiltonian methods remain eligible when that connection is clear.
 
 Strong evidence includes a new general classification, reusable method, Lax or
 Hamiltonian mechanism, arbitrary-order or arbitrary-parameter family, rigorous
@@ -64,9 +82,14 @@ Normally exclude:
 
 ## Evidence and authority
 
-Title-only evidence cannot support selection. An abstract may support a cautious
-decision; formula-level mechanisms, proof claims, and comparisons beyond the
-abstract require inspection of the paper.
+Title-only evidence cannot support a reading note or a claim about a paper's
+advance. An abstract may support a cautious decision; formula-level mechanisms,
+proof claims, and comparisons beyond the abstract require inspection of the paper.
+The owner-approved bibliography-first path allows directly relevant current
+journal records with verified title, full authors, journal, year and DOI to appear
+as bibliography only. Do not manufacture an annotation or hold the item solely
+for missing optional metadata. This exception does not extend to speculative
+cross-field relevance, historical backfill, or unverified search snippets.
 
 For journal-only discoveries, classify venue authority internally before making
 the editorial decision:
@@ -107,8 +130,8 @@ Author reputation may trigger closer inspection but never determines selection.
 Apply the gates in this order:
 
 1. Is this a new eligible event?
-2. Is integrability structurally indispensable?
-3. Is the concrete addition substantial rather than routine?
+2. Does either the direct-research or useful-new-direction test clearly pass?
+3. Is the concrete addition substantive rather than routine within that context?
 4. Does primary evidence support the claim?
 5. Is the identity, date, and publication metadata verified?
 
@@ -116,10 +139,9 @@ There is no numerical quota or hard maximum. If selections remain unusually
 numerous over several runs, audit the threshold and discovery noise rather than
 truncating the list mechanically.
 
-As an operating health check, the cheap discovery filter should normally leave
-roughly zero to eight papers for abstract or full-text review. This is not a
-publication limit: a genuinely exceptional batch is reviewed in full. Repeatedly
-larger review sets indicate noisy queries or an overly loose relevance filter.
+Review workload depends on the elapsed discovery interval. Do not apply a daily
+review-count target to a historical catch-up or reject a paper to smooth weekly
+counts. Audit noisy queries and repeated relevance errors instead.
 
 ## Calibration and policy changes
 

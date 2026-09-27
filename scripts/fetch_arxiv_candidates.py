@@ -36,7 +36,7 @@ ENTRY_RE = re.compile(
 DIV_RE_TEMPLATE = r"<div\s+class=['\"]{class_name}[^'\"]*['\"]>(.*?)</div>"
 TAG_RE = re.compile(r"<[^>]+>")
 ANCHOR_RE = re.compile(r"<a\b[^>]*>(.*?)</a>", flags=re.DOTALL | re.IGNORECASE)
-ARXIV_ID_RE = re.compile(r"arXiv:(\d{4}\.\d{4,5})", flags=re.IGNORECASE)
+ARXIV_ID_RE = re.compile(r"arXiv:(\d{4}\.\d{4,5}|[a-z-]+(?:\.[a-z]{2})?/\d{7})", flags=re.IGNORECASE)
 DATE_RE = re.compile(
     r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s+(\d{1,2}\s+[A-Z][a-z]{2}\s+\d{4})"
 )

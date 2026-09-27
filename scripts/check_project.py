@@ -30,6 +30,9 @@ def main() -> None:
     if node is None:
         raise SystemExit("node is required for docs/javascripts/radar.js syntax validation")
     run("JavaScript syntax", [node, "--check", "docs/javascripts/radar.js"])
+    run("radar filtering and pagination", [node, "scripts/test_radar_browser.cjs"])
+    run("group publication widget syntax", [node, "--check", "docs/javascripts/group-papers.js"])
+    run("group publication identity and search", [node, "scripts/test_group_papers.cjs"])
 
     # Let MkDocs create a fixed ignored workspace directory. On some Windows
     # sandbox profiles, directories created by tempfile are not re-openable by
