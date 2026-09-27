@@ -195,9 +195,14 @@ Collapsed rows show only the
 title and bibliography. Expanded rows present the main finding, supporting detail,
 and methods/scope in a compact reading view, without repeating bibliography or
 displaying a separate innovation section. The four editorial fields remain in the
-authoritative data and local search index. An optional `reading_note` mapping with
-`lead`, `detail` and `method_scope` provides an edited reading view; preserve material
-assumptions and distinguish numerical evidence from theorems when condensing it.
+authoritative data and local search index. Maintain a `reading_note` mapping with
+`lead`, `detail` and `method_scope` for each newly selected or edited paper. The lead
+states the concrete result; detail supplies the distinguishing advance; methods/scope
+retains material assumptions and distinguishes numerical evidence from theorems.
+Keep these paragraphs complementary. Omit version bookkeeping, generic praise,
+unsupported priority claims and generic warnings about unrelated cases. Length may
+vary with the result; never discard a critical condition to meet a character target.
+The renderer's legacy fallback is only for compatibility, not the editorial default.
 
 ## Rendering and validation
 
