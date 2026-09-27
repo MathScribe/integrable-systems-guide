@@ -192,6 +192,14 @@ def test_component_contract() -> None:
     else:
         raise AssertionError("three directions should be rejected")
 
+    withdrawn_papers = {**papers, entry["paper_id"]: {**papers[entry["paper_id"]], "status": "withdrawn"}}
+    try:
+        render_radar.validate_frontier_entry(entry, withdrawn_papers)
+    except ValueError as exc:
+        assert "withdrawn" in str(exc)
+    else:
+        raise AssertionError("a withdrawn paper must not remain publicly selected")
+
 
 def test_enabled_frontier() -> None:
     data = yaml.safe_load((ROOT / "data" / "editions.yml").read_text(encoding="utf-8"))

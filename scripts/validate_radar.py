@@ -90,6 +90,8 @@ def validate_papers(papers: Any) -> int:
         doi = paper.get("doi")
         if doi:
             doi_key = str(doi).casefold()
+            if doi_key.startswith("10.48550/arxiv."):
+                raise ValueError(f"{paper_id}: the arXiv-issued DOI is derived; store only a journal DOI here")
             if doi_key in dois:
                 raise ValueError(f"duplicate DOI: {doi}")
             dois[doi_key] = paper_id
