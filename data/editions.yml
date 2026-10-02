@@ -2018,9 +2018,9 @@ frontier:
     - structures
     - spectral
     reading_note:
-      lead: 将由四维 Chern–Simons 构造的可积场论的全息对偶与重整化群流编码为平面谱曲线几何。
-      detail: 对偶是广义 Calabi–Yau 上的拓扑弦，谱曲线模空间上的几何流描述平面 RG 流；一圈检验覆盖广泛模型，二圈重现带 WZ 项的主手征模型及一类 U(N)×U(N) 模型。
-      method_scope: 几何描述针对平面可积场论并宣称适用于全部 ’t Hooft 耦合阶；显式计算与场论对照只做到所列的一圈和二圈，不能混同两种证据深度。
+      lead: 为四维 Chern–Simons 构造的可积场论提出平面谱曲线的全息描述，并用曲线模空间上的几何流计算 RG 流。
+      detail: 对偶由广义 Calabi–Yau 上的拓扑弦描述；零亏格谱曲线的一圈计算匹配广泛模型，二圈重现带 WZ 项的主手征模型及一类 U(N)×U(N) 模型。
+      method_scope: 平面极限下的谱几何构造，显式算法与对照主要针对零亏格谱曲线。几何流与场论 RG 流的全阶等价在正文中仍作为猜想提出，已列的一圈、二圈检验不能替代全阶证明。
   - paper_id: arxiv:2609.36403
     signal_date: '2026-09-30'
     signal_type: new-preprint
@@ -2063,7 +2063,7 @@ frontier:
     reading_note:
       lead: 将量子逆散射中 sine-Gordon 格点模型的盒长重标度与在壳条件结合，构成明确的重整化方案。
       detail: 截断依赖吸收入盒长因子，场与耦合 β 不重整化；单值化算子的谱给出孤子及呼吸子质量，并在 β→0 时恢复经典与半经典结果。
-      method_scope: 可作超局域格点正则化的 sine-Gordon 模型及其连续、无限体积极限。向其他有质量谱的超局域可积理论推广是论证方向，而非本文对全部此类模型的已证结果。
+      method_scope: sine-Gordon 格点模型的连续与无限体积极限；在文中规范化下，在壳方案限于 0<β²<π 的首个呼吸子存在区间。该方案重参数化已知物理，向其他超局域理论的推广仍是论证方向。
   - paper_id: arxiv:2609.30511
     signal_date: '2026-09-28'
     signal_type: new-preprint
