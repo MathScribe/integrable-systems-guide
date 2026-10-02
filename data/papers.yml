@@ -1698,10 +1698,12 @@
   arxiv_id: '2606.27337'
   doi: null
   submitted: '2026-06-25'
-  updated: '2026-06-25'
-  metadata_checked_at: '2026-07-20'
+  updated: '2026-09-28'
+  metadata_checked_at: '2026-10-02'
   keywords:
   - transfer matrix
+  submitted_at: '2026-06-25T17:46:33Z'
+  version: v2
 - id: arxiv:2606.27261
   title: Non-colliding space-time inhomogeneous Markov chains
   authors:
@@ -4650,9 +4652,9 @@
   doi: null
   submitted: '2026-09-04'
   submitted_at: '2026-09-04T13:19:46Z'
-  updated: '2026-09-04'
-  version: v1
-  metadata_checked_at: '2026-09-07'
+  updated: '2026-10-01'
+  version: v2
+  metadata_checked_at: '2026-10-02'
   keywords:
   - Yang--Baxter equation
   - quantum integrability
@@ -5125,15 +5127,16 @@
   arxiv_id: '2609.30065'
   doi: null
   submitted: '2026-09-24'
-  metadata_checked_at: '2026-09-27'
-  version: v1
-  updated: '2026-09-24'
+  metadata_checked_at: '2026-10-02'
+  version: v2
+  updated: '2026-10-01'
   keywords:
   - integrable discretization
   - conservation laws
   arxiv_categories:
   - nlin.SI
   - math-ph
+  submitted_at: '2026-09-24T16:24:00Z'
 - id: arxiv:2609.22066
   title: Generalized Hamiltonian formalism for spatially nonlocal nonlinear differential equations
   authors:
@@ -5389,16 +5392,16 @@
   arxiv_categories:
   - hep-th
 - id: arxiv:2606.15794
-  title: An integrable deformation of the sine(sinh)-Gordon model -- Malcev algebra
+  title: An integrable deformation of the sine(sinh)-Gordon model -- Non-Lie algebra
   authors:
   - Meseret Asrat
   url: https://arxiv.org/abs/2606.15794
   arxiv_id: '2606.15794'
   doi: 10.1007/JHEP09(2026)208
   submitted: '2026-06-14'
-  metadata_checked_at: '2026-09-27'
-  version: v1
-  updated: '2026-06-14'
+  metadata_checked_at: '2026-10-02'
+  version: v2
+  updated: '2026-09-28'
   journal: Journal of High Energy Physics
   volume: '2026'
   issue: '9'
@@ -5408,8 +5411,11 @@
   keywords:
   - Lax pair
   - Yang--Baxter equation
+  - alternative Akivis algebra
   arxiv_categories:
   - hep-th
+  submitted_at: '2026-06-14T12:55:34Z'
+  metadata_note: arXiv v2 corrects the algebra name to a Z-graded non-Lie alternative Akivis algebra; equations and results unchanged. Published JHEP title retains the earlier Malcev wording.
 - id: doi:10.1140/epjb/s10051-026-01249-5
   title: 'Inverse scattering transform for a defocusing local–nonlocal Lakshmanan–Porsezian–Daniel equation under nonzero boundary conditions: N-soliton solutions and asymptotic analysis'
   authors:
@@ -5568,9 +5574,9 @@
   doi: null
   submitted: '2026-09-14'
   submitted_at: '2026-09-14T04:04:13Z'
-  updated: '2026-09-14'
-  version: v1
-  metadata_checked_at: '2026-09-27'
+  updated: '2026-09-28'
+  version: v2
+  metadata_checked_at: '2026-10-02'
   arxiv_categories:
   - nlin.SI
   - cond-mat.dis-nn
@@ -5795,9 +5801,9 @@
   doi: null
   submitted: '2026-09-13'
   submitted_at: '2026-09-13T10:46:06Z'
-  updated: '2026-09-13'
-  version: v1
-  metadata_checked_at: '2026-09-27'
+  updated: '2026-09-28'
+  version: v2
+  metadata_checked_at: '2026-10-02'
   arxiv_categories:
   - hep-th
   - math-ph
@@ -5911,9 +5917,9 @@
   doi: null
   submitted: '2026-03-10'
   submitted_at: '2026-03-10T05:45:17Z'
-  updated: '2026-09-15'
-  version: v3
-  metadata_checked_at: '2026-09-27'
+  updated: '2026-09-29'
+  version: v4
+  metadata_checked_at: '2026-10-02'
   arxiv_categories:
   - nlin.SI
   - math.AP
@@ -6090,3 +6096,698 @@
   - Fourier analysis
   - Cauchy problem
   metadata_note: Bibliography verified from publisher-deposited Crossref record. First-online date is provided by the publisher deposit.
+- id: arxiv:2609.30522
+  title: Energy-selective control of noise-assisted multipulsing by weak optical seeding in the dissipative-soliton-resonance regime
+  authors:
+  - Vladimir L. Kalashnikov
+  - Alexander Rudenkov
+  - Evgeni Sorokin
+  - Irina T. Sorokina
+  url: https://arxiv.org/abs/2609.30522
+  arxiv_id: '2609.30522'
+  doi: null
+  submitted: '2026-09-24'
+  submitted_at: '2026-09-24T20:16:49Z'
+  updated: '2026-09-29'
+  version: v2
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - physics.optics
+  - nlin.PS
+  keywords:
+  - complex Ginzburg–Landau equation
+  - dissipative soliton resonance
+  - optical seeding
+  - noise-assisted multipulsing
+- id: arxiv:2609.30807
+  title: Front-based construction of quantum droplets, bubbles, and hole states in a Bose mixture
+  authors:
+  - Sherzod R. Otajonov
+  - Fatkhulla Kh. Abdullaev
+  url: https://arxiv.org/abs/2609.30807
+  arxiv_id: '2609.30807'
+  doi: null
+  submitted: '2026-09-25'
+  submitted_at: '2026-09-25T04:35:22Z'
+  updated: '2026-09-25'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - cond-mat.quant-gas
+  - nlin.PS
+  keywords:
+  - quantum droplets
+  - Bose mixture
+  - Gross–Pitaevskii equation
+  - Lee–Huang–Yang correction
+  - kink fronts
+  - nonlinear holes
+- id: arxiv:2609.30858
+  title: 'On the Cauchy problem for the Tzitzéica equation: Soliton resolution conjecture and asymptotic analysis'
+  authors:
+  - Shou-Fu Tian
+  - Jia-Fu Tong
+  url: https://arxiv.org/abs/2609.30858
+  arxiv_id: '2609.30858'
+  doi: null
+  submitted: '2026-09-25'
+  submitted_at: '2026-09-25T06:07:43Z'
+  updated: '2026-09-25'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  - math-ph
+  - nlin.SI
+  keywords:
+  - Tzitzéica equation
+  - soliton resolution
+  - dbar steepest descent
+  - Riemann–Hilbert problem
+  - long-time asymptotics
+- id: arxiv:2609.32232
+  title: Quantum undular bores, rainbows, and event horizons in superfluid dam breaks
+  authors:
+  - Liam M. Farrell
+  - Wyatt Kirkby
+  - Alex Harris
+  - David Tyler
+  - Maxim Olshanii
+  - Duncan H. J. O'Dell
+  url: https://arxiv.org/abs/2609.32232
+  arxiv_id: '2609.32232'
+  doi: null
+  submitted: '2026-09-26'
+  submitted_at: '2026-09-26T04:48:07Z'
+  updated: '2026-09-26'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - cond-mat.quant-gas
+  - gr-qc
+  - math-ph
+  - nlin.PS
+  - quant-ph
+  keywords:
+  - Gross–Pitaevskii equation
+  - quantum dam break
+  - dispersive waves
+  - Airy functions
+  - sonic horizon
+- id: arxiv:2609.34037
+  title: Tapered Fibre Fabry-Pérot Cavities for the Generation of Near-Visible, Phase-locked, and Broadband Kerr Frequency Combs
+  authors:
+  - Matthew Macnaughtan
+  - Yiqing Xu
+  - Miro Erkintalo
+  - Stéphane Coen
+  - Stuart G. Murdoch
+  url: https://arxiv.org/abs/2609.34037
+  arxiv_id: '2609.34037'
+  doi: null
+  submitted: '2026-09-27'
+  submitted_at: '2026-09-27T23:59:49Z'
+  updated: '2026-09-27'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - physics.optics
+  - nlin.PS
+  keywords:
+  - Kerr frequency combs
+  - cavity solitons
+  - zero-dispersion solitons
+  - Raman solitons
+  - tapered fibre
+  - Fabry–Pérot resonator
+- id: arxiv:2609.36009
+  title: Coherent energy cascades in nonlinear disordered Hamiltonians
+  authors:
+  - Anxo Biasi
+  - Brad Cownden
+  - Oleg Evnin
+  - Alvaro Iturbe Jabaloyes
+  url: https://arxiv.org/abs/2609.36009
+  arxiv_id: '2609.36009'
+  doi: null
+  submitted: '2026-09-28'
+  submitted_at: '2026-09-28T18:00:26Z'
+  updated: '2026-09-28'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math-ph
+  - cond-mat.dis-nn
+  - gr-qc
+  - math.AP
+  - nlin.PS
+  keywords:
+  - resonant Hamiltonian systems
+  - coherent energy cascades
+  - random nonlinear couplings
+  - Sobolev growth
+  - wave turbulence
+- id: arxiv:2609.37421
+  title: 'Fredholm determinant solutions to the modified KP hierarchy and 2D Toda lattice: isospectral and non-isospectral reductions'
+  authors:
+  - Dan Dai
+  - Han-Han Sheng
+  url: https://arxiv.org/abs/2609.37421
+  arxiv_id: '2609.37421'
+  doi: null
+  submitted: '2026-09-29'
+  submitted_at: '2026-09-29T12:50:00Z'
+  updated: '2026-09-29'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  keywords:
+  - modified KP hierarchy
+  - 2D Toda lattice
+  - Fredholm determinant
+  - non-isospectral reduction
+  - deformed Bessel determinant
+- id: arxiv:2609.37573
+  title: Asymptotic behavior analysis of solutions to the Heisenberg ferromagnet equation with the Schwartz initial data
+  authors:
+  - Xumeng Zhou
+  - Xianguo Geng
+  - Bo Xue
+  url: https://arxiv.org/abs/2609.37573
+  arxiv_id: '2609.37573'
+  doi: null
+  submitted: '2026-09-29'
+  submitted_at: '2026-09-29T13:39:38Z'
+  updated: '2026-09-29'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - nlin.SI
+  - math.AP
+  keywords:
+  - Heisenberg ferromagnet equation
+  - Riemann–Hilbert problem
+  - inverse scattering
+  - nonlinear steepest descent
+  - Schwartz data
+- id: arxiv:2609.40049
+  title: 'Discrete differential-geometric Poisson brackets: general theory and explicit constructions'
+  authors:
+  - Marta Dell'Atti
+  - Giorgio Gubbiotti
+  - Pierandrea Vergallo
+  url: https://arxiv.org/abs/2609.40049
+  arxiv_id: '2609.40049'
+  doi: null
+  submitted: '2026-09-30'
+  submitted_at: '2026-09-30T16:15:34Z'
+  updated: '2026-09-30'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math-ph
+  - math.RA
+  - nlin.SI
+  keywords:
+  - discrete Poisson brackets
+  - differential-geometric brackets
+  - quasi-Frobenius Lie algebras
+  - Hamiltonian structure
+- id: arxiv:2610.00552
+  title: 'Edge-cusped compactons from gradient-power nonlinear dispersion: exact transitions and singular spectral structure'
+  authors:
+  - Francisco R. Villatoro
+  url: https://arxiv.org/abs/2610.00552
+  arxiv_id: '2610.00552'
+  doi: null
+  submitted: '2026-09-30'
+  submitted_at: '2026-09-30T18:28:02Z'
+  updated: '2026-09-30'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - nlin.PS
+  - math.AP
+  keywords:
+  - compactons
+  - nonlinear dispersion
+  - free-boundary singularity
+  - Sturm–Liouville operator
+  - Jacobi polynomials
+- id: arxiv:2610.00770
+  title: An explicit formula for the solution of the Benjamin-Ono equation and its applications
+  authors:
+  - Louise Gassot
+  - Patrick Gérard
+  - Peter D. Miller
+  url: https://arxiv.org/abs/2610.00770
+  arxiv_id: '2610.00770'
+  doi: null
+  submitted: '2026-09-30'
+  submitted_at: '2026-09-30T22:04:56Z'
+  updated: '2026-09-30'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  - nlin.SI
+  keywords:
+  - Benjamin–Ono equation
+  - explicit flow formula
+  - rational initial data
+  - pointwise soliton resolution
+  - small-dispersion limit
+- id: arxiv:2610.00955
+  title: 'The focusing Calogero--Moser derivative nonlinear Schrödinger equation in the Hardy--Zhidkov space: explicit flow formula and dark multi-solitons'
+  authors:
+  - Ruoci Sun
+  url: https://arxiv.org/abs/2610.00955
+  arxiv_id: '2610.00955'
+  doi: null
+  submitted: '2026-10-01'
+  submitted_at: '2026-10-01T02:38:40Z'
+  updated: '2026-10-01'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  - nlin.SI
+  keywords:
+  - Calogero–Moser derivative NLS
+  - Hardy–Zhidkov space
+  - explicit flow formula
+  - dark multi-solitons
+  - action-angle variables
+- id: arxiv:2610.01875
+  title: Stability and instability analysis of resonance-induced nonlinear bound states
+  authors:
+  - Jackson C. Turner
+  - Michael I. Weinstein
+  url: https://arxiv.org/abs/2610.01875
+  arxiv_id: '2610.01875'
+  doi: null
+  submitted: '2026-10-01'
+  submitted_at: '2026-10-01T15:32:31Z'
+  updated: '2026-10-01'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - nlin.PS
+  - math-ph
+  - math.AP
+  - math.DS
+  - math.SP
+  keywords:
+  - nonlinear Schrödinger equation
+  - Gross–Pitaevskii equation
+  - scattering resonances
+  - nonlinear bound states
+  - orbital stability
+- id: arxiv:2609.30681
+  title: Long-time reduction for the biharmonic nonlinear Schrödinger equation
+  authors:
+  - Younghun Hong
+  - Junyeong Jang
+  url: https://arxiv.org/abs/2609.30681
+  arxiv_id: '2609.30681'
+  doi: null
+  submitted: '2026-09-25'
+  submitted_at: '2026-09-25T01:37:02Z'
+  updated: '2026-09-25'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - biharmonic nonlinear Schrödinger equation
+  - vanishing higher-order dispersion
+  - continuum approximation
+  - persistence of regularity
+- id: arxiv:2609.30806
+  title: An inverse scattering problem for the nonlinear Schrödinger equation under partial harmonic confinement
+  authors:
+  - Pranav Kumar
+  - Li Li
+  url: https://arxiv.org/abs/2609.30806
+  arxiv_id: '2609.30806'
+  doi: null
+  submitted: '2026-09-25'
+  submitted_at: '2026-09-25T04:34:45Z'
+  updated: '2026-09-25'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - inverse scattering
+  - nonlinear Schrödinger equation
+  - partial harmonic confinement
+  - nonlinear coefficient reconstruction
+  - wave operator
+- id: arxiv:2609.32598
+  title: The Direct Scattering Transform for the Intermediate Long Wave Equation
+  authors:
+  - Peter Perry
+  - Yilun Wu
+  url: https://arxiv.org/abs/2609.32598
+  arxiv_id: '2609.32598'
+  doi: null
+  submitted: '2026-09-26'
+  submitted_at: '2026-09-26T13:16:22Z'
+  updated: '2026-09-26'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Intermediate Long Wave equation
+  - direct scattering transform
+  - Lax operator
+  - Jost solutions
+  - nonlocal Riemann–Hilbert problem
+- id: arxiv:2609.34081
+  title: Long-time continuum limits for twisted Schrödinger lattices
+  authors:
+  - Brian Choi
+  url: https://arxiv.org/abs/2609.34081
+  arxiv_id: '2609.34081'
+  doi: null
+  submitted: '2026-09-28'
+  submitted_at: '2026-09-28T01:17:41Z'
+  updated: '2026-09-28'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  - math.NA
+  keywords:
+  - discrete nonlinear Schrödinger equation
+  - magnetic continuum limit
+  - Birkhoff coordinates
+  - modulational instability
+  - numerical approximation
+- id: arxiv:2609.34909
+  title: Holography for integrable field theories
+  authors:
+  - Kevin Costello
+  - Joaquin Liniado
+  url: https://arxiv.org/abs/2609.34909
+  arxiv_id: '2609.34909'
+  doi: null
+  submitted: '2026-09-28'
+  submitted_at: '2026-09-28T11:11:44Z'
+  updated: '2026-09-28'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - hep-th
+  keywords:
+  - integrable field theory
+  - 4D Chern–Simons theory
+  - planar spectral curve
+  - topological string
+  - renormalization group
+- id: arxiv:2609.36403
+  title: Almost sure global well-posedness for the Benjamin-Bona-Mahony equation
+  authors:
+  - Justin Forlano
+  url: https://arxiv.org/abs/2609.36403
+  arxiv_id: '2609.36403'
+  doi: null
+  submitted: '2026-09-28'
+  submitted_at: '2026-09-28T23:57:18Z'
+  updated: '2026-09-28'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  - math.PR
+  keywords:
+  - Benjamin–Bona–Mahony equation
+  - random Gaussian data
+  - almost sure global well-posedness
+  - I-method
+  - negative regularity
+- id: arxiv:2609.39471
+  title: Soliton resolution conjecture for the Calogero--Moser derivative nonlinear Schrödinger equation in the scaling-critical space
+  authors:
+  - Shou-Fu Tian
+  - Tao Zhang
+  url: https://arxiv.org/abs/2609.39471
+  arxiv_id: '2609.39471'
+  doi: null
+  submitted: '2026-09-30'
+  submitted_at: '2026-09-30T10:32:58Z'
+  updated: '2026-09-30'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Calogero–Moser derivative NLS
+  - critical Hardy space
+  - conditional soliton resolution
+  - distorted Fourier transform
+  - mass quantization
+- id: arxiv:2610.00396
+  title: Complete Factorial Asymptotics and Integrable Structure of Generalized Charlier Recurrence Coefficients
+  authors:
+  - Mahouton Norbert Hounkonnou
+  url: https://arxiv.org/abs/2610.00396
+  arxiv_id: '2610.00396'
+  doi: null
+  submitted: '2026-09-30'
+  submitted_at: '2026-09-30T11:53:56Z'
+  updated: '2026-09-30'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math-ph
+  keywords:
+  - generalized Charlier polynomials
+  - discrete Painlevé II
+  - factorial asymptotics
+  - Bessel connection formula
+  - Hankel determinant
+- id: arxiv:2610.01571
+  title: On-shell renormalization of sine-Gordon by the quantum inverse scattering method
+  authors:
+  - Francesco Beccarini
+  - Claudio Conti
+  url: https://arxiv.org/abs/2610.01571
+  arxiv_id: '2610.01571'
+  doi: null
+  submitted: '2026-10-01'
+  submitted_at: '2026-10-01T12:30:49Z'
+  updated: '2026-10-01'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - hep-th
+  - quant-ph
+  keywords:
+  - sine-Gordon equation
+  - quantum inverse scattering
+  - on-shell renormalization
+  - monodromy operator
+  - soliton and breather masses
+- id: arxiv:2609.30511
+  title: Phase retrieval for Schrödinger evolutions
+  authors:
+  - Ben Pineau
+  - João P. G. Ramos
+  - Mitchell A. Taylor
+  url: https://arxiv.org/abs/2609.30511
+  arxiv_id: '2609.30511'
+  doi: null
+  submitted: '2026-09-24'
+  submitted_at: '2026-09-24T20:00:20Z'
+  updated: '2026-09-24'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  - math.CA
+  keywords:
+  - phase retrieval
+  - Schrödinger evolution
+  - cubic nonlinear Schrödinger equation
+  - mass density
+  - unique continuation
+- id: arxiv:2609.36897
+  title: Reduced Solutions of Toda Systems for Arbitrary Complex Simple Lie Algebras
+  authors:
+  - Yiqian Shi
+  - Chunhui Wei
+  - Bin Xu
+  url: https://arxiv.org/abs/2609.36897
+  arxiv_id: '2609.36897'
+  doi: null
+  submitted: '2026-09-29'
+  submitted_at: '2026-09-29T07:23:07Z'
+  updated: '2026-09-29'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math-ph
+  keywords:
+  - Toda systems
+  - complex simple Lie algebras
+  - spherical metrics
+  - monodromy centralizer
+  - Iwasawa decomposition
+- id: arxiv:2609.37593
+  title: Long time strong Sobolev instability for quasilinear NLS
+  authors:
+  - Yuri Cacchiò
+  - Filippo Giuliani
+  - Felice Iandoli
+  - Raffaele Scandone
+  url: https://arxiv.org/abs/2609.37593
+  arxiv_id: '2609.37593'
+  doi: null
+  submitted: '2026-09-29'
+  submitted_at: '2026-09-29T13:47:31Z'
+  updated: '2026-09-29'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - quasilinear nonlinear Schrödinger equation
+  - strong Sobolev instability
+  - Euler–Korteweg fluids
+  - resonant energy transfer
+  - Birkhoff normal form
+- id: arxiv:2609.31475
+  title: Direct Observation of Switching-Wave Dynamics in 20 GHz Normal Dispersion Spiral Microresonators
+  authors:
+  - Van Doan Le
+  - Julien Fatome
+  - Erwan Lucas
+  url: https://arxiv.org/abs/2609.31475
+  arxiv_id: '2609.31475'
+  doi: null
+  submitted: '2026-09-25'
+  submitted_at: '2026-09-25T16:22:19Z'
+  updated: '2026-09-25'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - physics.optics
+  keywords:
+  - Kerr microcombs
+  - switching waves
+  - normal dispersion
+  - dual-pump seeding
+  - optical sampling
+  - silicon nitride microresonator
+- id: arxiv:2512.22064
+  title: Lax Pairs for BKM Hierarchy
+  authors:
+  - Andrey Yu. Konyaev
+  - Vladimir S. Matveev
+  url: https://arxiv.org/abs/2512.22064
+  arxiv_id: '2512.22064'
+  doi: 10.1111/sapm.70314
+  submitted: '2025-12-26'
+  submitted_at: '2025-12-26T15:38:17Z'
+  updated: '2025-12-26'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  - math.AP
+  - math.DG
+  keywords:
+  - BKM hierarchy
+  - Lax pairs
+  - Sturm–Liouville operator
+  - spectral parameter
+  - Camassa–Holm equation
+  journal: Studies in Applied Mathematics
+  year: 2026
+  volume: '157'
+  issue: '3'
+  article_number: e70314
+  published: '2026-09-28'
+  metadata_note: Journal identity and first-online date verified from publisher-deposited Crossref metadata; arXiv is the same work. DOI landing-page access failed once; no publication chronology inferred from issue assignment.
+- id: arxiv:2604.27060
+  title: Scalene Yang-Baxter maps and Lax triples
+  authors:
+  - Sotiris Konstantinou-Rizos
+  - Theodoros E Kouloukas
+  url: https://arxiv.org/abs/2604.27060
+  arxiv_id: '2604.27060'
+  doi: 10.4213/rm10338
+  submitted: '2026-04-29'
+  submitted_at: '2026-04-29T18:01:01Z'
+  updated: '2026-04-29'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  keywords:
+  - scalene Yang–Baxter maps
+  - Lax triples
+  - matrix refactorization
+  - KdV
+  - nonlinear Schrödinger equation
+  journal: Uspekhi Matematicheskikh Nauk
+  year: 2026
+  volume: '81'
+  issue: 5(491)
+  pages: 185-186
+  published: '2026-10-01'
+  metadata_note: Journal identity and first-online date verified from publisher-deposited Crossref metadata; arXiv is the same work. DOI landing-page access failed once; no publication chronology inferred from issue assignment.
+- id: arxiv:2604.12858
+  title: Scattering and inverse scattering for multipoint potentials at high energies
+  authors:
+  - Pei-Cheng Kuo
+  - Roman G. Novikov
+  url: https://arxiv.org/abs/2604.12858
+  arxiv_id: '2604.12858'
+  doi: 10.1515/jiip-2026-0048
+  submitted: '2026-04-14'
+  submitted_at: '2026-04-14T15:09:10Z'
+  updated: '2026-04-14'
+  version: v1
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - math-ph
+  keywords:
+  - inverse scattering
+  - multipoint potentials
+  - Bethe–Peierls–Thomas–Fermi potential
+  - high-energy reconstruction
+  - Born–Faddeev formula
+  journal: Journal of Inverse and Ill-posed Problems
+  year: 2026
+  published: '2026-10-01'
+  metadata_note: Journal identity and first-online date verified from publisher-deposited Crossref metadata; arXiv is the same work. DOI landing-page access failed once; no publication chronology inferred from issue assignment.
+- id: arxiv:2605.24745
+  title: Separatrix Splitting and Chaotic Dynamics in Collective-Coordinate Reductions of Driven φ^4 Kinks
+  authors:
+  - Vassilios M Rothos
+  url: https://arxiv.org/abs/2605.24745
+  arxiv_id: '2605.24745'
+  doi: null
+  submitted: '2026-05-23'
+  submitted_at: '2026-05-23T21:40:24Z'
+  updated: '2026-09-26'
+  version: v2
+  metadata_checked_at: '2026-10-02'
+  arxiv_categories:
+  - nlin.PS
+  - nlin.CD
+  keywords:
+  - phi4 kinks
+  - collective-coordinate reduction
+  - internal mode
+  - Melnikov theory
+  - separatrix splitting
+  - chaos
