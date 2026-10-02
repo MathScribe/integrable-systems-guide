@@ -6616,28 +6616,6 @@
   - cubic nonlinear Schrödinger equation
   - mass density
   - unique continuation
-- id: arxiv:2609.36897
-  title: Reduced Solutions of Toda Systems for Arbitrary Complex Simple Lie Algebras
-  authors:
-  - Yiqian Shi
-  - Chunhui Wei
-  - Bin Xu
-  url: https://arxiv.org/abs/2609.36897
-  arxiv_id: '2609.36897'
-  doi: null
-  submitted: '2026-09-29'
-  submitted_at: '2026-09-29T07:23:07Z'
-  updated: '2026-09-29'
-  version: v1
-  metadata_checked_at: '2026-10-02'
-  arxiv_categories:
-  - math-ph
-  keywords:
-  - Toda systems
-  - complex simple Lie algebras
-  - spherical metrics
-  - monodromy centralizer
-  - Iwasawa decomposition
 - id: arxiv:2609.37593
   title: Long time strong Sobolev instability for quasilinear NLS
   authors:

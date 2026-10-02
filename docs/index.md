@@ -14,7 +14,7 @@ hide:
   </div>
 </header>
 
-<div class="radar-browse-controls" data-default-period="all" data-total-count="215" data-earliest-date="2026-06-15">
+<div class="radar-browse-controls" data-default-period="all" data-total-count="214" data-earliest-date="2026-06-15">
   <div class="radar-browse-heading"><h2>论文浏览</h2><span class="radar-search-count" role="status" aria-live="polite"></span></div>
   <div class="radar-filter-bar">
   <div class="radar-local-search" role="search">
@@ -231,25 +231,9 @@ hide:
       <span class="radar-row-meta"><span class="radar-row-authors" title="Dan Dai, Han-Han Sheng">Dan Dai, Han-Han Sheng</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2609.37421">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2609.37421">PDF</a></span><time datetime="2026-09-30" title="新预印本 · 2026-09-30 · arXiv 提交日期 2026-09-29（UTC） · v1" aria-label="新预印本 · 2026-09-30 · arXiv 提交日期 2026-09-29（UTC） · v1">2026-09-30</time></span>
     </summary>
     <div class="radar-expanded-content">
-    <p class="radar-paper-overview"><strong>给出 mKP 层级与二维 Toda 的 Fredholm 行列式解，并统一处理等谱与非等谱约化。</strong></p>
-    <p class="radar-reading-detail">等谱约化导出 mKdV、modified Camassa–Holm 和聚焦 NLS 的行列式解；非等谱约化则把负阶 KdV 解联系到变形 Bessel 行列式。</p>
-    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>研究 mKP 的前两个正向流、首个负向流及双线性二维 Toda 方程。结果是相关解族与约化结构，不等同于一般初值问题的完整解算。</p>
-    </div>
-  </details>
-</article>
-
-### Reduced Solutions of Toda Systems for Arbitrary Complex Simple Lie Algebras {#paper-arxiv-2609-36897 .radar-search-heading}
-
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2609-36897" data-radar-month="2026-09" data-radar-date="2026-09-30" data-radar-directions="[&quot;structures&quot;]" data-radar-search="math-ph Toda systems complex simple Lie algebras spherical metrics monodromy centralizer Iwasawa decomposition">
-  <details class="radar-paper-details">
-    <summary class="radar-row-summary">
-      <span class="radar-row-heading"><span class="radar-paper-title">Reduced Solutions of Toda Systems for Arbitrary Complex Simple Lie Algebras</span><a class="radar-permalink" href="#paper-arxiv-2609-36897" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Yiqian Shi, Chunhui Wei, Bin Xu">Yiqian Shi, Chunhui Wei, Bin Xu</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2609.36897">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2609.36897">PDF</a></span><time datetime="2026-09-30" title="新预印本 · 2026-09-30 · arXiv 提交日期 2026-09-29（UTC） · v1" aria-label="新预印本 · 2026-09-30 · arXiv 提交日期 2026-09-29（UTC） · v1">2026-09-30</time></span>
-    </summary>
-    <div class="radar-expanded-content">
-    <p class="radar-paper-overview"><strong>对任意复简单 Lie 代数的 Toda 系统，用单值化群的中心化子内在参数化球面度量生成的约化解族。</strong></p>
-    <p class="radar-reading-detail">约化族被识别为正 Iwasawa 截面与单值化群闭包的主像中心化子所确定的集合；由此把球面度量的存在性结果转移到对角 Toda 源组。</p>
-    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>球面度量产生的约化 Toda 解，结构结论适用于任意复简单 Lie 代数。它不分类所有非约化 Toda 解。</p>
+    <p class="radar-paper-overview"><strong>为一般积分核建立 mKP／二维 Toda 的 Fredholm 行列式解条件，并构造与孤子气、呼吸子气相联系的解族。</strong></p>
+    <p class="radar-reading-detail">非等谱约化把负阶 KdV 与变形 Bessel 核行列式联系起来；等谱约化给出 mKdV 和 modified Camassa–Holm 解，附录另以谱算子构造聚焦 NLS 的呼吸子气。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>主定理要求半直线上的迹类核满足指定微分和移位关系。聚焦 NLS 的独立构造不满足同一半直线谱分离条件，不能作为该主定理在此核类中的直接约化。</p>
     </div>
   </details>
 </article>

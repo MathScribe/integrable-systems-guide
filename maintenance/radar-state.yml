@@ -26,7 +26,7 @@ sources:
     kind: arxiv-announcement
     announced_through: '2026-10-02'
     last_status: complete
-    coverage_note: One bounded Sep28–Oct2 official pastweek pass completed over all 13 configured cross-categories (2522 deduplicated records), screened with structure, model and result terms. All 26 selected new preprints verified as new submissions on primary-category dated Catchup pages; this is focused discovery, not comprehensive selection in each discipline.
+    coverage_note: One bounded Sep28–Oct2 official pastweek pass completed over all 13 configured cross-categories (2522 deduplicated records), screened with structure, model and result terms. All 25 retained new preprints verified as new submissions on primary-category dated Catchup pages; this is focused discovery, not comprehensive selection in each discipline.
     replacements:
       last_status: partial
       checked_through: '2026-09-25'

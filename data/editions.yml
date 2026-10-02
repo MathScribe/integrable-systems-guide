@@ -1898,9 +1898,9 @@ frontier:
     - structures
     - spectral
     reading_note:
-      lead: 给出 mKP 层级与二维 Toda 的 Fredholm 行列式解，并统一处理等谱与非等谱约化。
-      detail: 等谱约化导出 mKdV、modified Camassa–Holm 和聚焦 NLS 的行列式解；非等谱约化则把负阶 KdV 解联系到变形 Bessel 行列式。
-      method_scope: 研究 mKP 的前两个正向流、首个负向流及双线性二维 Toda 方程。结果是相关解族与约化结构，不等同于一般初值问题的完整解算。
+      lead: 为一般积分核建立 mKP／二维 Toda 的 Fredholm 行列式解条件，并构造与孤子气、呼吸子气相联系的解族。
+      detail: 非等谱约化把负阶 KdV 与变形 Bessel 核行列式联系起来；等谱约化给出 mKdV 和 modified Camassa–Holm 解，附录另以谱算子构造聚焦 NLS 的呼吸子气。
+      method_scope: 主定理要求半直线上的迹类核满足指定微分和移位关系。聚焦 NLS 的独立构造不满足同一半直线谱分离条件，不能作为该主定理在此核类中的直接约化。
   - paper_id: arxiv:2609.37573
     signal_date: '2026-09-30'
     signal_type: new-preprint
@@ -2075,16 +2075,6 @@ frontier:
       lead: 证明一维 Schrödinger 演化的完整时空质量密度可确定 L² 波函数至一个整体相位，并将方法延伸到三次 NLS。
       detail: 局部平滑、Strichartz 估计与唯一延拓迫使具有相同密度的两解的反对称交互函数消失；二维及以上即使自由演化和 Schwartz 初值也可能无法恢复相位。
       method_scope: 线性结论针对属于 L¹ₜL∞ₓ+L²ₜ,ₓ 的实时间依赖势。观测是整个时间区间上的 |w|²，不能替换为单时刻的强度图像。
-  - paper_id: arxiv:2609.36897
-    signal_date: '2026-09-30'
-    signal_type: new-preprint
-    event_source: https://arxiv.org/catchup/math-ph/2026-09-30?abs=False&page=1
-    directions:
-    - structures
-    reading_note:
-      lead: 对任意复简单 Lie 代数的 Toda 系统，用单值化群的中心化子内在参数化球面度量生成的约化解族。
-      detail: 约化族被识别为正 Iwasawa 截面与单值化群闭包的主像中心化子所确定的集合；由此把球面度量的存在性结果转移到对角 Toda 源组。
-      method_scope: 球面度量产生的约化 Toda 解，结构结论适用于任意复简单 Lie 代数。它不分类所有非约化 Toda 解。
   - paper_id: arxiv:2609.37593
     signal_date: '2026-09-30'
     signal_type: new-preprint
