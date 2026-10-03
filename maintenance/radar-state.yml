@@ -2,54 +2,57 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-09-25'
+    announced_through: '2026-10-02'
     last_status: complete
-    coverage_note: New-event discovery through Sep25 verified using saved month lists and official dated Catchup. Sep26–27 have no core listing events. No submission/OAI timestamps used as announcement dates.
+    coverage_note: Sep28–Oct2 official dated Catchup pages captured and complete entry counts validated, with new/cross-list and replacement sections screened separately. Sep26–27 had no batches. Selected new works were also verified as new submissions on their primary-category dated pages. Oct3 live new-list pages still show Oct2 as latest batch; no Oct3 announcement date inferred.
     replacements:
       last_status: complete
-      checked_through: '2026-09-25'
+      checked_through: '2026-10-02'
       open_gaps: []
-      coverage_note: Recovered Sep4, Sep8–10 and Sep14–25 official replacement listings; Sep11 had already been checked. Coverage is the official listing subset, excluding journal-reference-only updates and replacements beyond v5; inspect current histories for selected/high-priority records.
-    checked_at: '2026-09-27T03:56:10Z'
+      coverage_note: All five Sep28–Oct2 dated core replacement batches checked. Catchup omits journal-reference-only updates and replacements beyond v5. Current histories were additionally checked for 42 recent selected/high-priority papers and registered papers seen in the replacement lists. Oct3 recheck of 37 pending bibliography records found unchanged metadata, version histories and no withdrawal/retraction banners.
+    checked_at: '2026-10-03T02:41:53Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-09-25'
+    announced_through: '2026-10-02'
     last_status: complete
-    coverage_note: New-event discovery through Sep25 verified using saved month lists and official dated Catchup. Sep26–27 have no core listing events. No submission/OAI timestamps used as announcement dates.
+    coverage_note: Sep28–Oct2 official dated Catchup pages captured and complete entry counts validated, with new/cross-list and replacement sections screened separately. Sep26–27 had no batches. Selected new works were also verified as new submissions on their primary-category dated pages. Oct3 live new-list pages still show Oct2 as latest batch; no Oct3 announcement date inferred.
     replacements:
       last_status: complete
-      checked_through: '2026-09-25'
+      checked_through: '2026-10-02'
       open_gaps: []
-      coverage_note: Recovered Sep4, Sep8–10 and Sep14–25 official replacement listings; Sep11 had already been checked. Coverage is the official listing subset, excluding journal-reference-only updates and replacements beyond v5; inspect current histories for selected/high-priority records.
-    checked_at: '2026-09-27T03:56:10Z'
+      coverage_note: All five Sep28–Oct2 dated core replacement batches checked. Catchup omits journal-reference-only updates and replacements beyond v5. Current histories were additionally checked for 42 recent selected/high-priority papers and registered papers seen in the replacement lists. Oct3 recheck of 37 pending bibliography records found unchanged metadata, version histories and no withdrawal/retraction banners.
+    checked_at: '2026-10-03T02:41:53Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-09-25'
+    announced_through: '2026-10-02'
     last_status: complete
-    coverage_note: New-event discovery through Sep25 verified using saved month lists and official dated Catchup. Sep26–27 have no core listing events. No submission/OAI timestamps used as announcement dates.
+    coverage_note: Oct3 recheck of the pending Sep28–Oct2 batch used 65 official dated Catchup pages across all 13 configured categories; all dates and complete entry counts validated (3970 paper/date events). Re-screening the captured new/cross-listed titles identified 11 additional eligible new preprints. No Oct3 announcement batch; announcement watermark remains Oct2. Focused relevance screening, not comprehensive coverage of each field.
     replacements:
       last_status: complete
-      checked_through: '2026-09-25'
+      checked_through: '2026-10-02'
       open_gaps: []
-      coverage_note: Recovered Sep4, Sep8–10 and Sep14–25 official replacement listings; Sep11 had already been checked. Coverage is the official listing subset, excluding journal-reference-only updates and replacements beyond v5; inspect current histories for selected/high-priority records.
-    checked_at: '2026-09-27T03:56:10Z'
+      coverage_note: All 65 Sep28–Oct2 cross-category Catchup pages captured; 1439 replacement paper/date events screened with focused structure/model terms (45 title hits), followed by plausible-candidate abstracts and 13 version comparisons. Four additional major revisions selected and one registered author/version record corrected. Catchup omits journal-reference-only updates and versions beyond v5; one unselected Rydberg candidate lacks current HTML full text, so its revision is not certified substantive.
+    checked_at: '2026-10-03T02:41:53Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-09-25'
-      note: New focused source added to close the observed quantum-droplet/soliton discovery gap; earlier history not claimed.
+      through: '2026-10-02'
+      note: Focused cond-mat.quant-gas new-event coverage now extends through Oct2; no earlier-than-Sep14 history claimed.
   crossref:
     kind: ranked-title-backstop
-    reconciliation_checked_at: '2026-09-12T04:20:13.468414Z'
+    reconciliation_checked_at: '2026-10-03T02:41:53Z'
     reconciliation_cadence: weekly
-    reconciliation_note: 2026-09-12 exact-title/author checks completed for 16 new selections and the remaining 2609.04873 query from the prior weekly pass; no exact journal matches found.
+    reconciliation_note: Oct3 resolved all 11 Oct2 HTTP429 queries (no exact matches for those papers; the similar Sinitsyn result belongs to arXiv:2603.22470, not 2609.14996). Combined with the previous 55 successes, that reconciliation is complete. All 15 additional selections queried by title/author; two exact journal matches verified for 2609.37714 and 2512.22480. No broad historical reconciliation claimed.
     overlap_days: 3
-    title_query_note: Sep11–21 successful weekly artifact plus Sep18–27 overlapping ranked-title pass; all 16 configured queries completed. A separate Sep12–27 created-date gap check used five strong phrases; DOI registration is not a publication date. Seven existing records received title or journal metadata corrections; full-registry journal reconciliation was not repeated.
-    online_query_through: '2026-09-27'
+    title_query_note: 'Sep29–Oct3 overlapping ranked-title pass completed: all 16 configured queries, 500 raw records, 11 title-matched candidates. Only first ranked pages inspected.'
+    online_query_through: '2026-10-03'
     online_status: complete
-    registration_query_through: '2026-09-27'
+    registration_query_through: '2026-10-03'
     registration_status: complete
-    registration_note: Completed separate five-phrase registered-DOI gap check; registration dates are not publication dates.
+    registration_note: 'Sep29–Oct3 five-phrase DOI-created pass completed: 174 raw records, seven title matches. Registration and issue dates never used as first-online dates.'
+    reconciliation_last_attempt_at: '2026-10-03T02:41:53Z'
+    reconciliation_last_status: complete
+    reconciliation_open_queries: []
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
@@ -61,6 +64,6 @@ sources:
     - 2027
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-09-27T03:56:10Z'
+    checked_at: '2026-10-03T02:41:53Z'
     last_status: candidate-only
-    coverage_note: Verified selected arXiv event dates from primary listings. All five added journal records have reading notes checked against available abstracts or local publisher PDFs. Physica D135406 page 1 confirms first online publication on 2026-09-15; the saved JDE114789 pre-proof webpage confirms 2026-09-22. The owner supplied JDE114803's Available online date as 2026-09-25 from the publisher page. Local and owner-provided evidence adds no claim of new online-source coverage.
+    coverage_note: Three pending journal events reverified against fresh publisher-deposited Crossref records. Two further exact journal matches verified; DOI targets inaccessible once, no repeated retries. JDE January2027 issue has no verified first-online day; topological-waveguide arXiv v3 materially qualifies the earlier journal abstract. New notes use primary abstracts or inspected full-text statements/version comparisons, not independent proof certification.
