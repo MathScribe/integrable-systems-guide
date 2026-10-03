@@ -65,6 +65,7 @@
     const next = pagination.querySelector('[data-radar-action="next"]');
     const pageLabel = pagination.querySelector("[data-radar-page]");
     const pageInfo = pagination.querySelector("[data-radar-page-info]");
+    const pageSelect = pagination.querySelector("#radar-page-number");
     const earliestDate = navigation.dataset.earliestDate;
     function initializeDates() {
       const range = defaultDateRange(from.value, to.value, earliestDate);
@@ -151,10 +152,20 @@
       empty.textContent = invalidRange ? "起始日期不能晚于结束日期，请调整日期范围。"
         : current.period !== "all" && !current.q && !current.topic ? "该时间范围暂无收录。可调整日期或查看全部已收录论文。"
         : "没有找到匹配论文。试试其他关键词，或清除筛选。";
-      pageLabel.textContent = `${filtered.length ? page : 0} / ${totalPages}`;
+      pageLabel.textContent = `/ ${totalPages} 页`;
       pageInfo.textContent = filtered.length ? `显示 ${result.start + 1}–${result.start + result.entries.length} / ${filtered.length} 篇` : "没有匹配论文";
       previous.disabled = page <= 1;
       next.disabled = page >= totalPages;
+      if (pageSelect.dataset.pageCount !== String(totalPages)) {
+        pageSelect.replaceChildren(...Array.from({ length: Math.max(1, totalPages) }, (_, index) => {
+          const option = document.createElement("option");
+          option.value = option.textContent = String(totalPages ? index + 1 : 0);
+          return option;
+        }));
+        pageSelect.dataset.pageCount = String(totalPages);
+      }
+      pageSelect.value = String(filtered.length ? page : 0);
+      pageSelect.disabled = totalPages <= 1;
       reset.hidden = !current.q && current.period === "all" && !current.topic;
     }
 
@@ -195,16 +206,19 @@
       input.value = ""; period.value = "all"; topic.value = ""; from.value = ""; to.value = "";
       changeFilters();
     });
-    function turnPage(delta) {
+    function goToPage(requestedPage) {
+      const paginationTop = pagination.getBoundingClientRect().top;
       saveView();
-      page += delta;
+      page = requestedPage;
       render();
       writeURL();
-      navigation.scrollIntoView({ block: "start" });
+      // Keep the page controls in place even when the new page is shorter.
+      window.scrollBy({ top: pagination.getBoundingClientRect().top - paginationTop, behavior: "instant" });
       saveView();
     }
-    previous.addEventListener("click", () => turnPage(-1));
-    next.addEventListener("click", () => turnPage(1));
+    previous.addEventListener("click", () => goToPage(page - 1));
+    next.addEventListener("click", () => goToPage(page + 1));
+    pageSelect.addEventListener("change", () => goToPage(Number(pageSelect.value)));
     cards.forEach((card) => card.querySelector("details")?.addEventListener("toggle", saveView));
     const onPopState = () => { readURL(); render(); if (!revealHashTarget()) restoreView(true); };
     const onHashChange = () => revealHashTarget();
