@@ -4273,15 +4273,14 @@
   authors:
   - Zhenyu Xiao
   - Ze Chen
-  - Yifei Liu
   - Shinsei Ryu
   url: https://arxiv.org/abs/2609.00164
   arxiv_id: '2609.00164'
   doi: null
   submitted: '2026-08-31'
-  updated: '2026-08-31'
-  version: v1
-  metadata_checked_at: '2026-09-04'
+  updated: '2026-09-25'
+  version: v2
+  metadata_checked_at: '2026-10-03'
   keywords:
   - non-Hermitian random matrices
   - Calogero model
@@ -4292,7 +4291,10 @@
   - integrable probability
   arxiv_categories:
   - cond-mat.stat-mech
+  - cond-mat.mes-hall
   - quant-ph
+  submitted_at: '2026-08-31T18:00:43Z'
+  metadata_note: arXiv v2 explicitly updates the author list to Zhenyu Xiao, Ze Chen and Shinsei Ryu. Current bibliography corrected; no new recommendation event.
 - id: arxiv:2609.00517
   title: Topological Recursion on Spectral Curves with Infinite Ramification Loci
   authors:
@@ -6791,3 +6793,324 @@
   - spherical metrics
   - monodromy centralizer
   - Iwasawa decomposition
+- id: arxiv:2609.30668
+  title: Long-time Korteweg-de Vries approximation for the Fermi-Pasta-Ulam-Tsingou system
+  authors:
+  - Younghun Hong
+  - Junyeong Jang
+  url: https://arxiv.org/abs/2609.30668
+  arxiv_id: '2609.30668'
+  doi: null
+  submitted: '2026-09-25'
+  submitted_at: '2026-09-25T01:17:04Z'
+  updated: '2026-10-01'
+  version: v2
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Fermi-Pasta-Ulam-Tsingou
+  - KdV
+  - continuum limit
+  - long-time approximation
+- id: arxiv:2609.30786
+  title: Long-time validity of the Korteweg-de Vries approximation for the Boussinesq equation
+  authors:
+  - Younghun Hong
+  - Junyeong Jang
+  url: https://arxiv.org/abs/2609.30786
+  arxiv_id: '2609.30786'
+  doi: null
+  submitted: '2026-09-25'
+  submitted_at: '2026-09-25T04:07:20Z'
+  updated: '2026-09-25'
+  version: v1
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - good Boussinesq equation
+  - KdV approximation
+  - persistence of regularity
+- id: arxiv:2609.32364
+  title: Scattering for the quadratic NLS system in ℝ⁵ without mass resonance or radial symmetry
+  authors:
+  - Takahisa Inui
+  - Kuranosuke Nishimura
+  url: https://arxiv.org/abs/2609.32364
+  arxiv_id: '2609.32364'
+  doi: null
+  submitted: '2026-09-26'
+  submitted_at: '2026-09-26T08:41:16Z'
+  updated: '2026-09-26'
+  version: v1
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - quadratic NLS system
+  - scattering
+  - ground state
+  - concentration compactness
+- id: arxiv:2609.33358
+  title: Well-posedness of Boussinesq Equation with Linear Restoring Force
+  authors:
+  - Amin Esfahani
+  - Nazerke Zhardemova
+  url: https://arxiv.org/abs/2609.33358
+  arxiv_id: '2609.33358'
+  doi: null
+  submitted: '2026-09-27'
+  submitted_at: '2026-09-27T08:30:30Z'
+  updated: '2026-09-27'
+  version: v1
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Boussinesq equation
+  - restoring force
+  - local well-posedness
+  - Bourgain spaces
+- id: arxiv:2609.33381
+  title: Scattering of group-invariant solutions below the ground state for the fourth-order NLS
+  authors:
+  - Koichi Komada
+  url: https://arxiv.org/abs/2609.33381
+  arxiv_id: '2609.33381'
+  doi: null
+  submitted: '2026-09-27'
+  submitted_at: '2026-09-27T09:02:24Z'
+  updated: '2026-09-27'
+  version: v1
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - fourth-order NLS
+  - scattering
+  - group-invariant solutions
+  - ground state
+- id: arxiv:2609.35030
+  title: Uniqueness of positive radial ground states for the massive pseudo-relativistic nonlinear Schrödinger equation
+  authors:
+  - Zongyan Lv
+  url: https://arxiv.org/abs/2609.35030
+  arxiv_id: '2609.35030'
+  doi: null
+  submitted: '2026-09-28'
+  submitted_at: '2026-09-28T12:28:51Z'
+  updated: '2026-09-28'
+  version: v1
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - pseudo-relativistic NLS
+  - ground state uniqueness
+  - nondegeneracy
+  - Steklov problem
+- id: arxiv:2609.36204
+  title: Unique continuation for the periodic Benjamin-Bona-Mahony equation
+  authors:
+  - Roberto de A. Capistrano Filho
+  - Victor Hugo Gonzalez Martinez
+  - Ailton Campos do Nascimento
+  url: https://arxiv.org/abs/2609.36204
+  arxiv_id: '2609.36204'
+  doi: null
+  submitted: '2026-09-28'
+  submitted_at: '2026-09-28T20:02:51Z'
+  updated: '2026-09-28'
+  version: v1
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  - math.OC
+  keywords:
+  - Benjamin-Bona-Mahony equation
+  - unique continuation
+  - stabilization
+  - control
+- id: arxiv:2609.37714
+  title: 'Global theory for NLS in the weighted spaces I: finite pseudo conformal energy'
+  authors:
+  - Yujin Guo
+  - Jia Shen
+  - Changping Yang
+  url: https://arxiv.org/abs/2609.37714
+  arxiv_id: '2609.37714'
+  doi: 10.1016/j.jde.2026.114801
+  submitted: '2026-09-29'
+  submitted_at: '2026-09-29T14:44:13Z'
+  updated: '2026-09-29'
+  version: v1
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - defocusing NLS
+  - weighted spaces
+  - scattering
+  - pseudo-conformal energy
+  journal: Journal of Differential Equations
+  year: 2027
+  volume: '487'
+  pages: '114801'
+  article_number: '114801'
+  metadata_note: Publisher-deposited Crossref bibliography verified; 2027-01 is the issue date, not first online. First-online date unavailable; retain verified arXiv announcement as event.
+- id: arxiv:2609.37785
+  title: 'Global theory for NLS in the weighted spaces II: final data problem'
+  authors:
+  - Yujin Guo
+  - Jia Shen
+  - Yifei Wu
+  - Changping Yang
+  url: https://arxiv.org/abs/2609.37785
+  arxiv_id: '2609.37785'
+  doi: null
+  submitted: '2026-09-29'
+  submitted_at: '2026-09-29T15:18:02Z'
+  updated: '2026-09-29'
+  version: v1
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - defocusing NLS
+  - final data problem
+  - weighted spaces
+  - wave operators
+- id: arxiv:2609.39356
+  title: Global dynamics near solitary waves for the generalized Boussinesq equation under even-odd perturbations
+  authors:
+  - Xiaoguang Li
+  - Jun Wang
+  url: https://arxiv.org/abs/2609.39356
+  arxiv_id: '2609.39356'
+  doi: null
+  submitted: '2026-09-30'
+  submitted_at: '2026-09-30T09:16:20Z'
+  updated: '2026-09-30'
+  version: v1
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - generalized Boussinesq equation
+  - solitary waves
+  - center-stable manifold
+  - one-pass theorem
+- id: arxiv:2609.39891
+  title: Improved existence time for a Boussinesq system
+  authors:
+  - Achenef Tesfahun
+  - Sigmund Selberg
+  url: https://arxiv.org/abs/2609.39891
+  arxiv_id: '2609.39891'
+  doi: null
+  submitted: '2026-09-30'
+  submitted_at: '2026-09-30T14:58:39Z'
+  updated: '2026-09-30'
+  version: v1
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Boussinesq system
+  - lifespan
+  - Strichartz estimates
+  - non-cavitation
+- id: arxiv:2510.24407
+  title: Nonlinear Schrödinger equation on a unit ball in one and two dimensions
+  authors:
+  - Christian Klein
+  - Svetlana Roudenko
+  - Nikola Stoilov
+  url: https://arxiv.org/abs/2510.24407
+  arxiv_id: '2510.24407'
+  doi: null
+  submitted: '2025-10-28'
+  submitted_at: '2025-10-28T13:19:15Z'
+  updated: '2026-09-25'
+  version: v2
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - nonlinear Schrödinger equation
+  - Dirichlet boundary
+  - ground state
+  - blow-up
+  - mass turning point
+- id: arxiv:2605.25327
+  title: Soliton resolution conjecture for the Benjamin-Ono equation in the sharp well-posedness space
+  authors:
+  - Hong-Yu Pan
+  - Shou-Fu Tian
+  url: https://arxiv.org/abs/2605.25327
+  arxiv_id: '2605.25327'
+  doi: null
+  submitted: '2026-05-25'
+  submitted_at: '2026-05-25T01:17:18Z'
+  updated: '2026-09-28'
+  version: v2
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Benjamin-Ono equation
+  - soliton resolution
+  - rough Lax operator
+  - distorted Fourier transform
+- id: arxiv:2609.02147
+  title: Normalized solutions of L²-supercritical NLS equations with periodic potentials
+  authors:
+  - Zhentao He
+  - Norihisa Ikoma
+  - Chao Ji
+  url: https://arxiv.org/abs/2609.02147
+  arxiv_id: '2609.02147'
+  doi: null
+  submitted: '2026-09-02'
+  submitted_at: '2026-09-02T06:01:44Z'
+  updated: '2026-09-28'
+  version: v2
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - nonlinear Schrödinger equation
+  - periodic potential
+  - normalized solutions
+  - Morse index
+- id: arxiv:2512.22480
+  title: Inverse scattering for waveguides in topological insulators
+  authors:
+  - Guillaume Bal
+  - Xixian Wang
+  - Zhongjian Wang
+  url: https://arxiv.org/abs/2512.22480
+  arxiv_id: '2512.22480'
+  doi: 10.1088/1361-6420/ae81dd
+  submitted: '2025-12-27'
+  submitted_at: '2025-12-27T05:52:08Z'
+  updated: '2026-09-30'
+  version: v3
+  metadata_checked_at: '2026-10-03'
+  arxiv_categories:
+  - math-ph
+  - math.AP
+  - math.NA
+  keywords:
+  - inverse scattering
+  - topological waveguide
+  - Dirac operator
+  - gauge invariance
+  journal: Inverse Problems
+  year: 2026
+  volume: '42'
+  issue: '7'
+  pages: '075006'
+  published: '2026-07-13'
+  metadata_note: Publisher-deposited Crossref bibliography verified. Reading note describes arXiv v3, whose gauge obstruction corrects the broader uniqueness claim in the earlier journal abstract; journal first-online date is not the current revision event.

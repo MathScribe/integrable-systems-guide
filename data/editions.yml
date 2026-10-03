@@ -2138,3 +2138,163 @@ frontier:
       lead: 在受驱动 φ⁴ kink 的集体坐标模型中，证明内部形状模对平移坐标的一阶反馈恒为零。
       detail: 自伴线性化算子与平移零模的奇偶性迫使反馈消失；精确处理分离轨道上的内部模响应后，其共振也被分离距离积分滤除，并给出横截同宿交叉的显式条件。
       method_scope: 弱调制与弱摇摆条件下的有限维约化，采用 Melnikov 分析及约化系统数值检验。结论没有证明原始 PDE 的混沌或长期约化精度。
+  - paper_id: arxiv:2609.30668
+    signal_date: '2026-09-28'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-28?abs=False&page=1
+    directions:
+    - asymptotics
+    - waves
+    reading_note:
+      lead: 证明无限 FPUT 格点系统可在对数增长的时间区间内，由两列反向传播的 KdV 波作定量 L² 逼近。
+      detail: 对一致有界的 Hˢ 初始行波剖面，0<s≤1，误差为 h^(2s/5) 乘随时间指数增长的因子；频率局部化辅助方程连接格点与连续流的 Bourgain 范数。
+      method_scope: 长波缩放下使用 FPUT Hamilton 量守恒、关于格距 h 一致的局部适定性与正则性保持。对数时间结论针对该缩放及初值类。
+  - paper_id: arxiv:2609.30786
+    signal_date: '2026-09-28'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-28?abs=False&page=1
+    directions:
+    - asymptotics
+    - waves
+    reading_note:
+      lead: 将 good Boussinesq 方程的低正则 KdV 逼近，从局部时间延长到对数增长的时间区间。
+      detail: 正则性保持把局部近似所需的 Sobolev 控制传递到后续时间，再用缩放后的守恒律迭代局部估计。
+      method_scope: 长波极限中的严格近似分析，延长的是 KdV 有效模型的适用时间；核心是守恒律与正则性保持的结合。
+  - paper_id: arxiv:2609.32364
+    signal_date: '2026-09-29'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-29?abs=False&page=1
+    directions:
+    - asymptotics
+    - waves
+    reading_note:
+      lead: 对五维二次耦合 NLS，证明非质量共振情形下低于基态阈值的散射，并去掉径向对称假设。
+      detail: 集中紧性与刚性论证结合沿动量正交方向的局部 virial 估计，处理失去质量共振结构后的非径向动力学。
+      method_scope: 模型的色散系数 κ>0 且 κ≠1/2；散射结论保留基态以下的阈值条件。
+  - paper_id: arxiv:2609.33358
+    signal_date: '2026-09-29'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-29?abs=False&page=1
+    directions:
+    - waves
+    reading_note:
+      lead: 为带线性恢复力的 Boussinesq 方程建立适应低频奇异性的局部适定性理论。
+      detail: 用修正 Sobolev 与 Bourgain 空间分别控制高频正则性和原点附近的频率权重，证明二次非线性的双线性估计与三次非线性的三线性估计。
+      method_scope: 结论针对文中恢复力模型及相应初值空间。单维时要求 s>0；二次情形的低频权重为 −1/2<ω<2，三次情形为 0<ω<2，高维阈值随维数变化。
+  - paper_id: arxiv:2609.33381
+    signal_date: '2026-09-29'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-29?abs=False&page=1
+    directions:
+    - asymptotics
+    - waves
+    reading_note:
+      lead: 将聚焦四阶 NLS 的基态以下散射从径向解扩展到群不变解，并去掉此前群不变散射结论中的附加假设。
+      detail: 先在基态作用量某个更小比例以下建立一般解的非最优散射结果，再用它完成群不变解的论证。
+      method_scope: 质量超临界、能量次临界的四阶 Schrödinger 方程；一般非对称解的辅助结论使用更低阈值。
+  - paper_id: arxiv:2609.35030
+    signal_date: '2026-09-29'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-29?abs=False&page=1
+    directions:
+    - spectral
+    - waves
+    reading_note:
+      lead: 证明带质量的伪相对论非线性 Schrödinger 方程的正径向变分基态唯一，并建立线性化的非退化性。
+      detail: 扩张问题与基态代换把谱分析化为带权 Steklov 问题；质量协变恒等式补偿尺度不变性的缺失，再沿质量参数延拓得到整体唯一性。
+      method_scope: m>0、ω>0，空间维数 d≥1；非线性幂满足 2<p<2d/(d−1)，d=1 时上限为无穷。结论针对正径向变分基态。
+  - paper_id: arxiv:2609.36204
+    signal_date: '2026-09-30'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-30?abs=False&page=1
+    directions:
+    - waves
+    reading_note:
+      lead: 证明周期 BBM 方程能量空间中的唯一延拓，去掉小性和均值假设，并使相应反馈稳定化结果适用于任意初值。
+      detail: 解在非空时空条带上为常数即处处为该常数；单点观测时同时需要解值与通量势，带指数权的 Hamilton 量给出具有强制性的耗散恒等式。
+      method_scope: 实值周期解及文中多项式通量推广；低于 H^(1/2) 的定常阶梯剖面提供失效反例。单点结论保留通量势观测条件。
+  - paper_id: arxiv:2609.37714
+    signal_date: '2026-09-30'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-30?abs=False&page=1
+    directions:
+    - asymptotics
+    - waves
+    reading_note:
+      lead: 将有限伪共形能量推出整体存在与散射的理论，延伸到三维散焦 NLS 的质量次临界范围。
+      detail: 对 1≤p<4/3，临界加权 L² 初值再满足 xu₀∈L² 即得到整体散射；径向负正则初值的对应结论要求 p≥γ₁，其中 γ₁ 是 2γ₁²+15γ₁−20=0 的正根。
+      method_scope: 非线性为 |u|ᵖu，s_c=3/2−2/p；利用伪共形量的先验控制，分别处理临界加权空间与径向齐次 H^(s_c) 初值。
+  - paper_id: arxiv:2609.37785
+    signal_date: '2026-09-30'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-30?abs=False&page=1
+    directions:
+    - asymptotics
+    - waves
+    reading_note:
+      lead: 揭示三维散焦 NLS 在加权空间中的末态问题与初值问题具有相反的适定性阈值方向。
+      detail: 对 0<s<1，末态局部适定要求 s≥−s_c 且 p≤4/(3−2s)；在 s<−s_c、2/3<p≤1 时解映射失去一致连续性。三维二次方程的径向临界末态还给出全部正时间上的唯一解。
+      method_scope: 使用伪共形变换与质量几乎守恒。临界全局末态定理在 t>0 上成立；延拓到 t=0 的临界空间波算子及渐近完备性仍需进一步论证。
+  - paper_id: arxiv:2609.39356
+    signal_date: '2026-10-01'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-01?abs=False&page=1
+    directions:
+    - asymptotics
+    - waves
+    reading_note:
+      lead: 对广义 Boussinesq 方程孤立波附近的小偶—奇扰动，证明中心稳定流形之外的解只能散射或有限时爆破。
+      detail: 基态能量以下的两个不变区域分别对应散射与爆破；一维 one-pass 定理排除非散射解离开孤立波邻域后再次进入。
+      method_scope: 结论针对驻立孤立波附近满足偶—奇对称的小扰动，补全已有中心稳定流形的局部动力学描述。
+  - paper_id: arxiv:2609.39891
+    signal_date: '2026-10-01'
+    signal_type: new-preprint
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-01?abs=False&page=1
+    directions:
+    - waves
+    - asymptotics
+    reading_note:
+      lead: 对强色散 Boussinesq 水波系统，定量给出存在时间随非线性、浅水色散及非空化参数的变化。
+      detail: 一维时间尺度为 (μ^(1/4)ε^(−1)h₀)^(4/3)，二维达到略低于平方的幂次；估计同时展示接近空化、h₀→0 时存在时间的退化。
+      method_scope: 0<ε,μ≤1，保留带参数 h₀>0 的非空化条件。色散与 Strichartz 估计结合能量法，分别比较 ε≲μ 与 μ≪ε 的参数区间。
+  - paper_id: arxiv:2510.24407
+    signal_date: '2026-09-28'
+    signal_type: major-revision
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-28?abs=False&page=1
+    directions:
+    - waves
+    reading_note:
+      lead: 为单位球上的 NLS 补入一维基态质量曲线转折点的解析刻画，以及临界和超临界情形的充分爆破条件。
+      detail: 证明一维质量曲线存在全局最大值，并给出转折点的积分方程；对任意固定 A>1，足够大频率 b 下的 AQ_b 初值发生有限时爆破。
+      method_scope: 一、二维 Dirichlet 边界问题。稳定分支及往返振荡由数值与已有稳定性理论共同分析；转折点唯一性和一般有界域孤子分解仍为未完成结论。
+  - paper_id: arxiv:2605.25327
+    signal_date: '2026-09-29'
+    signal_type: major-revision
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-29?abs=False&page=1
+    directions:
+    - spectral
+    - asymptotics
+    reading_note:
+      lead: 将 Benjamin–Ono 的孤子—辐射分解推进到 s>−1/2 的 Sobolev 正则性，同时明确所需的空间衰减阈值。
+      detail: 构造粗糙 Lax 算子、推广显式流公式并控制本征函数的坐标正则性；全局强分解要求 ⟨x⟩^βu₀∈Hˢ、β>1/2，端点反例表明该权重不能普遍降低。
+      method_scope: 实值初值和双向长时间极限。无限离散谱情形先取大时间极限、再移除谱截断；不把带权主定理解读为全部无权 Hˢ 初值的分解。
+  - paper_id: arxiv:2609.02147
+    signal_date: '2026-09-29'
+    signal_type: major-revision
+    event_source: https://arxiv.org/catchup/math.AP/2026-09-29?abs=False&page=1
+    directions:
+    - waves
+    reading_note:
+      lead: 将周期势下质量超临界 NLS 的归一化驻波存在性，从局部非线性区域扩展到全空间非线性。
+      detail: 修订新增全空间情形的小质量山路解和局部极小解，借助 Morse 指标控制建立集中紧性；有界非线性区域还在附加条件下覆盖所有正质量。
+      method_scope: 周期势、质量约束与能量次临界的幂型增长条件。全质量结论要求有界非线性区域、1≤N≤4 以及原点附近的超临界增长。
+  - paper_id: arxiv:2512.22480
+    signal_date: '2026-10-01'
+    signal_type: major-revision
+    event_source: https://arxiv.org/catchup/math-ph/2026-10-01?abs=False&page=1
+    directions:
+    - spectral
+    reading_note:
+      lead: 修正拓扑波导逆散射中一般 Hermitian 势的唯一性结论，明确只能确定其规范等价类。
+      detail: 对标量短程势给出线性化唯一性与稳定性，并在小的有限维势类中获得局部唯一性；对矩阵势精确识别线性化散射数据的规范核及可恢复分量。
+      method_scope: 二维拓扑绝缘体界面的 Dirac 波导模型，结合 Fourier 域重构与伴随法数值验证。标量势的唯一重构与一般矩阵势的规范不唯一性分别处理。
