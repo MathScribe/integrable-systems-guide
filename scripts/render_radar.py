@@ -329,7 +329,7 @@ def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]
     for entry in entries:
         lines.extend([render_frontier_entry(papers[entry["paper_id"]], entry), ""])
     lines.extend([
-        '<nav class="radar-pagination" aria-label="论文分页"><span data-radar-page-info></span><div><button type="button" data-radar-action="previous" disabled>← 上一页</button><span data-radar-page></span><button type="button" data-radar-action="next">下一页 →</button></div></nav>',
+        '<nav class="radar-pagination" aria-label="论文分页"><span data-radar-page-info></span><div><button type="button" data-radar-action="previous" disabled>← 上一页</button><label class="radar-page-jump" for="radar-page-number">第 <select id="radar-page-number" aria-label="跳转到指定页" aria-describedby="radar-page-status"></select><span id="radar-page-status" data-radar-page></span></label><button type="button" data-radar-action="next">下一页 →</button></div></nav>',
         "",
     ])
     lines.extend(
