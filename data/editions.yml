@@ -2053,17 +2053,6 @@ frontier:
       lead: 精确确定广义 Charlier 递推系数中超越全部代数阶的阶乘级小修正，并求出离散 Painlevé II 的连接常数。
       detail: 正序列参数化把递推问题化为离散 Painlevé II，证明与衰减 Bessel 解的比值趋于 1；Hankel 行列式的对数气体扇区分解给出独立的阶乘修正推导。
       method_scope: 固定 μ>0、权重 μᵏ/(k!)² 的单参数族，在次数 n→∞ 下研究 βₙ−n 与 μ−γₙ。结果不是任意权重族或任意参数双重极限的渐近公式。
-  - paper_id: arxiv:2610.01571
-    signal_date: '2026-10-02'
-    signal_type: new-preprint
-    event_source: https://arxiv.org/catchup/hep-th/2026-10-02?abs=False&page=1
-    directions:
-    - structures
-    - spectral
-    reading_note:
-      lead: 将量子逆散射中 sine-Gordon 格点模型的盒长重标度与在壳条件结合，构成明确的重整化方案。
-      detail: 截断依赖吸收入盒长因子，场与耦合 β 不重整化；单值化算子的谱给出孤子及呼吸子质量，并在 β→0 时恢复经典与半经典结果。
-      method_scope: sine-Gordon 格点模型的连续与无限体积极限；在文中规范化下，在壳方案限于 0<β²<π 的首个呼吸子存在区间。该方案重参数化已知物理，向其他超局域理论的推广仍是论证方向。
   - paper_id: arxiv:2609.30511
     signal_date: '2026-09-28'
     signal_type: new-preprint

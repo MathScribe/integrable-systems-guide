@@ -14,7 +14,7 @@ hide:
   </div>
 </header>
 
-<div class="radar-browse-controls" data-default-period="all" data-total-count="229" data-earliest-date="2026-06-15">
+<div class="radar-browse-controls" data-default-period="all" data-total-count="228" data-earliest-date="2026-06-15">
   <div class="radar-browse-heading"><h2>论文浏览</h2><span class="radar-search-count" role="status" aria-live="polite"></span></div>
   <div class="radar-filter-bar">
   <div class="radar-local-search" role="search">
@@ -42,22 +42,6 @@ hide:
     <p class="radar-paper-overview"><strong>为一维聚焦 NLS–GP 中由线性共振诱导的非线性束缚态建立分岔附近的轨道稳定与不稳定判据。</strong></p>
     <p class="radar-reading-detail">不同于从线性点谱以零范数分岔的束缚态，这些态存在严格正的 L² 激发阈值；足够小的共振频率与严格正的共振本征模给出轨道稳定的充分条件。</p>
     <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>紧支撑势的一维三次模型，理论结论局限于分岔点附近。远离理论可控区的动力学由数值模拟探索。</p>
-    </div>
-  </details>
-</article>
-
-### On-shell renormalization of sine-Gordon by the quantum inverse scattering method {#paper-arxiv-2610-01571 .radar-search-heading}
-
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-01571" data-radar-month="2026-10" data-radar-date="2026-10-02" data-radar-directions="[&quot;structures&quot;, &quot;spectral&quot;]" data-radar-search="hep-th quant-ph sine-Gordon equation quantum inverse scattering on-shell renormalization monodromy operator soliton and breather masses">
-  <details class="radar-paper-details">
-    <summary class="radar-row-summary">
-      <span class="radar-row-heading"><span class="radar-paper-title">On-shell renormalization of sine-Gordon by the quantum inverse scattering method</span><a class="radar-permalink" href="#paper-arxiv-2610-01571" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Francesco Beccarini, Claudio Conti">Francesco Beccarini, Claudio Conti</span><span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.01571">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.01571">PDF</a></span><time datetime="2026-10-02" title="新预印本 · 2026-10-02 · arXiv 提交日期 2026-10-01（UTC） · v1" aria-label="新预印本 · 2026-10-02 · arXiv 提交日期 2026-10-01（UTC） · v1">2026-10-02</time></span>
-    </summary>
-    <div class="radar-expanded-content">
-    <p class="radar-paper-overview"><strong>将量子逆散射中 sine-Gordon 格点模型的盒长重标度与在壳条件结合，构成明确的重整化方案。</strong></p>
-    <p class="radar-reading-detail">截断依赖吸收入盒长因子，场与耦合 β 不重整化；单值化算子的谱给出孤子及呼吸子质量，并在 β→0 时恢复经典与半经典结果。</p>
-    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>sine-Gordon 格点模型的连续与无限体积极限；在文中规范化下，在壳方案限于 0&lt;β²&lt;π 的首个呼吸子存在区间。该方案重参数化已知物理，向其他超局域理论的推广仍是论证方向。</p>
     </div>
   </details>
 </article>
