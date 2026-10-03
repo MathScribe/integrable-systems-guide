@@ -207,11 +207,13 @@
       changeFilters();
     });
     function goToPage(requestedPage) {
+      const paginationTop = pagination.getBoundingClientRect().top;
       saveView();
       page = requestedPage;
       render();
       writeURL();
-      navigation.scrollIntoView({ block: "start" });
+      // Keep the page controls in place even when the new page is shorter.
+      window.scrollBy({ top: pagination.getBoundingClientRect().top - paginationTop, behavior: "instant" });
       saveView();
     }
     previous.addEventListener("click", () => goToPage(page - 1));
