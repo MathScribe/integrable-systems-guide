@@ -329,7 +329,7 @@ def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]
     for entry in entries:
         lines.extend([render_frontier_entry(papers[entry["paper_id"]], entry), ""])
     lines.extend([
-        '<nav class="radar-pagination" aria-label="论文分页"><span data-radar-page-info></span><div><button type="button" data-radar-action="previous" disabled>← 上一页</button><label class="radar-page-jump" for="radar-page-number">第 <select id="radar-page-number" aria-label="跳转到指定页" aria-describedby="radar-page-status"></select><span id="radar-page-status" data-radar-page></span></label><button type="button" data-radar-action="next">下一页 →</button></div></nav>',
+        '<nav class="radar-pagination" aria-label="论文分页"><span data-radar-page-info></span><div class="radar-page-controls"><button type="button" data-radar-action="previous" disabled>← 上一页</button><div class="radar-page-picker"><button type="button" id="radar-page-number" class="radar-page-trigger" aria-label="选择页码" aria-expanded="false" aria-controls="radar-page-panel"><strong data-radar-current-page>1</strong><span class="radar-page-total">/ <span data-radar-total-pages>1</span></span><svg class="radar-page-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div id="radar-page-panel" class="radar-page-panel" role="group" aria-label="选择页码" hidden><span class="radar-page-panel-title">跳转到页</span><div class="radar-page-grid"></div></div></div><button type="button" data-radar-action="next">下一页 →</button></div></nav>',
         "",
     ])
     lines.extend(
