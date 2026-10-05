@@ -63,9 +63,13 @@
     const pagination = root.querySelector(".radar-pagination");
     const previous = pagination.querySelector('[data-radar-action="previous"]');
     const next = pagination.querySelector('[data-radar-action="next"]');
-    const pageLabel = pagination.querySelector("[data-radar-page]");
+    const pageCurrent = pagination.querySelector("[data-radar-current-page]");
+    const pageTotal = pagination.querySelector("[data-radar-total-pages]");
     const pageInfo = pagination.querySelector("[data-radar-page-info]");
-    const pageSelect = pagination.querySelector("#radar-page-number");
+    const pagePicker = pagination.querySelector(".radar-page-picker");
+    const pageTrigger = pagination.querySelector("#radar-page-number");
+    const pagePanel = pagination.querySelector("#radar-page-panel");
+    const pageGrid = pagination.querySelector(".radar-page-grid");
     const earliestDate = navigation.dataset.earliestDate;
     function initializeDates() {
       const range = defaultDateRange(from.value, to.value, earliestDate);
@@ -76,6 +80,12 @@
     let totalPages = 0;
     let ready = false;
     let searchTimer;
+
+    function closePagePicker(restoreFocus = false) {
+      pagePanel.hidden = true;
+      pageTrigger.setAttribute("aria-expanded", "false");
+      if (restoreFocus) pageTrigger.focus({ preventScroll: true });
+    }
 
     function filters() {
       return { q: input.value, period: period.value, topic: topic.value, from: from.value, to: to.value };
@@ -152,20 +162,27 @@
       empty.textContent = invalidRange ? "起始日期不能晚于结束日期，请调整日期范围。"
         : current.period !== "all" && !current.q && !current.topic ? "该时间范围暂无收录。可调整日期或查看全部已收录论文。"
         : "没有找到匹配论文。试试其他关键词，或清除筛选。";
-      pageLabel.textContent = `/ ${totalPages} 页`;
+      closePagePicker(pagePanel.contains(document.activeElement));
+      pageCurrent.textContent = String(filtered.length ? page : 0);
+      pageTotal.textContent = String(totalPages);
+      pageTrigger.setAttribute("aria-label", `第 ${pageCurrent.textContent} 页，共 ${totalPages} 页，选择页码`);
       pageInfo.textContent = filtered.length ? `显示 ${result.start + 1}–${result.start + result.entries.length} / ${filtered.length} 篇` : "没有匹配论文";
       previous.disabled = page <= 1;
       next.disabled = page >= totalPages;
-      if (pageSelect.dataset.pageCount !== String(totalPages)) {
-        pageSelect.replaceChildren(...Array.from({ length: Math.max(1, totalPages) }, (_, index) => {
-          const option = document.createElement("option");
-          option.value = option.textContent = String(totalPages ? index + 1 : 0);
-          return option;
+      if (pageGrid.childElementCount !== totalPages) {
+        pageGrid.replaceChildren(...Array.from({ length: totalPages }, (_, index) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.dataset.page = button.textContent = String(index + 1);
+          button.setAttribute("aria-label", `第 ${index + 1} 页`);
+          return button;
         }));
-        pageSelect.dataset.pageCount = String(totalPages);
       }
-      pageSelect.value = String(filtered.length ? page : 0);
-      pageSelect.disabled = totalPages <= 1;
+      [...pageGrid.children].forEach((button) => {
+        if (Number(button.dataset.page) === page) button.setAttribute("aria-current", "page");
+        else button.removeAttribute("aria-current");
+      });
+      pageTrigger.disabled = totalPages <= 1;
       reset.hidden = !current.q && current.period === "all" && !current.topic;
     }
 
@@ -218,7 +235,28 @@
     }
     previous.addEventListener("click", () => goToPage(page - 1));
     next.addEventListener("click", () => goToPage(page + 1));
-    pageSelect.addEventListener("change", () => goToPage(Number(pageSelect.value)));
+    pageTrigger.addEventListener("click", () => {
+      if (!pagePanel.hidden) { closePagePicker(); return; }
+      pagePanel.hidden = false;
+      pageTrigger.setAttribute("aria-expanded", "true");
+      pageGrid.querySelector('[aria-current="page"]')?.focus({ preventScroll: true });
+    });
+    pageGrid.addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-page]");
+      if (button && pageGrid.contains(button)) goToPage(Number(button.dataset.page));
+    });
+    pagePicker.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !pagePanel.hidden) {
+        event.preventDefault();
+        event.stopPropagation();
+        closePagePicker(true);
+      }
+    });
+    pagePicker.addEventListener("focusout", (event) => {
+      if (!pagePicker.contains(event.relatedTarget)) closePagePicker();
+    });
+    const onOutsidePointer = (event) => { if (!pagePicker.contains(event.target)) closePagePicker(); };
+    document.addEventListener("pointerdown", onOutsidePointer);
     cards.forEach((card) => card.querySelector("details")?.addEventListener("toggle", saveView));
     const onPopState = () => { readURL(); render(); if (!revealHashTarget()) restoreView(true); };
     const onHashChange = () => revealHashTarget();
@@ -228,6 +266,7 @@
     window.addEventListener("pagehide", onPageHide);
     teardown = () => {
       clearTimeout(searchTimer);
+      document.removeEventListener("pointerdown", onOutsidePointer);
       window.removeEventListener("popstate", onPopState);
       window.removeEventListener("hashchange", onHashChange);
       window.removeEventListener("pagehide", onPageHide);
