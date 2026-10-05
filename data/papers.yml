@@ -1824,16 +1824,24 @@
   - Jacek Szmigielski
   url: https://arxiv.org/abs/2606.17238
   arxiv_id: '2606.17238'
-  doi: null
+  doi: 10.1016/j.cnsns.2026.110892
   submitted: '2026-06-15'
-  updated: '2026-06-15'
-  metadata_checked_at: '2026-07-20'
+  updated: '2026-10-02'
+  metadata_checked_at: '2026-10-05'
   keywords:
   - Lax pair
   - Hamiltonian structure
   arxiv_categories:
   - nlin.SI
   - math-ph
+  - math.AP
+  - nlin.PS
+  submitted_at: '2026-06-15T19:37:33Z'
+  version: v2
+  journal: Communications in Nonlinear Science and Numerical Simulation
+  year: 2026
+  article_number: '110892'
+  metadata_note: arXiv v2 contains minor revisions. Publisher-deposited Crossref bibliography verified; 2026-10 is a publication month, not a verified first-online day. Original preprint event retained.
 - id: arxiv:2606.16789
   title: Pole Dynamics, Linearization, and Perturbations of the Satsuma--Mimura Equation
   authors:
@@ -7011,9 +7019,9 @@
   doi: null
   submitted: '2026-09-30'
   submitted_at: '2026-09-30T14:58:39Z'
-  updated: '2026-09-30'
-  version: v1
-  metadata_checked_at: '2026-10-03'
+  updated: '2026-10-02'
+  version: v2
+  metadata_checked_at: '2026-10-05'
   arxiv_categories:
   - math.AP
   keywords:
@@ -7021,6 +7029,8 @@
   - lifespan
   - Strichartz estimates
   - non-cavitation
+  status: withdrawn
+  metadata_note: 'Author withdrawal verified on arXiv v2 and the Oct5 replacement listing: this version was submitted before both authors approved the final manuscript. Bibliographic record retained; public recommendation removed.'
 - id: arxiv:2510.24407
   title: Nonlinear Schrödinger equation on a unit ball in one and two dimensions
   authors:
@@ -7114,3 +7124,236 @@
   pages: '075006'
   published: '2026-07-13'
   metadata_note: Publisher-deposited Crossref bibliography verified. Reading note describes arXiv v3, whose gauge obstruction corrects the broader uniqueness claim in the earlier journal abstract; journal first-online date is not the current revision event.
+- id: arxiv:2610.02354
+  title: A solution to the quantum Yang--Baxter equation associated with a universal two-valued algebraic group
+  authors:
+  - Victor M. Buchstaber
+  url: https://arxiv.org/abs/2610.02354
+  arxiv_id: '2610.02354'
+  doi: null
+  submitted: '2026-10-01'
+  submitted_at: '2026-10-01T18:30:59Z'
+  updated: '2026-10-01'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  keywords:
+  - Yang--Baxter equation
+  - Frobenius manifolds
+  - WDVV
+  - spectral R-matrix
+  - two-valued groups
+- id: arxiv:2610.02358
+  title: Blow-up for the integrable defocusing Ablowitz-Ladik equation
+  authors:
+  - Dirk Hennig
+  - Nikos I. Karachalios
+  - Dionyssios Mantzavinos
+  - Dimitrios Mitsotakis
+  - Barbara Prinari
+  url: https://arxiv.org/abs/2610.02358
+  arxiv_id: '2610.02358'
+  doi: null
+  submitted: '2026-10-01'
+  submitted_at: '2026-10-01T18:35:16Z'
+  updated: '2026-10-01'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - math.AP
+  - nlin.SI
+  keywords:
+  - Ablowitz-Ladik equation
+  - finite-time blow-up
+  - defocusing
+  - lattice dynamics
+  - well-posedness
+- id: arxiv:2610.02541
+  title: Persistence of kinks in the NLS equation with competing nonlinearities
+  authors:
+  - Panayotis G. Kevrekidis
+  - Dmitry E. Pelinovsky
+  url: https://arxiv.org/abs/2610.02541
+  arxiv_id: '2610.02541'
+  doi: null
+  submitted: '2026-10-01'
+  submitted_at: '2026-10-01T22:27:27Z'
+  updated: '2026-10-01'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - nlin.PS
+  keywords:
+  - cubic-quintic NLS
+  - kink
+  - pinning
+  - spectral instability
+  - Lyapunov--Schmidt reduction
+- id: arxiv:2610.02643
+  title: 'A common structure for modified scattering: Vlasov--Riesz, Hartree, and their coupling'
+  authors:
+  - Wenrui Huang
+  - Mengyi Xie
+  url: https://arxiv.org/abs/2610.02643
+  arxiv_id: '2610.02643'
+  doi: null
+  submitted: '2026-10-02'
+  submitted_at: '2026-10-02T01:01:33Z'
+  updated: '2026-10-02'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - modified scattering
+  - Hartree equation
+  - Vlasov--Riesz
+  - Vlasov--Hartree
+  - long-range interaction
+- id: arxiv:2610.02747
+  title: Lower regularity well-posedness for a higher-order Schrödinger equation with cubic nonlinearities on the half-line
+  authors:
+  - Yuhao Xi
+  - Shenghao Li
+  url: https://arxiv.org/abs/2610.02747
+  arxiv_id: '2610.02747'
+  doi: null
+  submitted: '2026-10-02'
+  submitted_at: '2026-10-02T03:18:09Z'
+  updated: '2026-10-02'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - higher-order nonlinear Schrödinger equation
+  - half-line
+  - endpoint well-posedness
+  - Strichartz estimates
+- id: arxiv:2610.02748
+  title: Initial and initial-boundary value problems for a cubic sixth-order Boussinesq equation
+  authors:
+  - Yuhao Xie
+  - Shenghao Li
+  url: https://arxiv.org/abs/2610.02748
+  arxiv_id: '2610.02748'
+  doi: null
+  submitted: '2026-10-02'
+  submitted_at: '2026-10-02T03:22:33Z'
+  updated: '2026-10-02'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - sixth-order Boussinesq equation
+  - cubic nonlinearity
+  - initial-boundary value problem
+  - Bourgain spaces
+- id: arxiv:2610.02790
+  title: 'The critical boundary value for a nonlinear Schrödinger equation in a half-space: rigidity and dimensional transition'
+  authors:
+  - Phuong Le
+  url: https://arxiv.org/abs/2610.02790
+  arxiv_id: '2610.02790'
+  doi: null
+  submitted: '2026-10-02'
+  submitted_at: '2026-10-02T04:29:18Z'
+  updated: '2026-10-02'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - stationary nonlinear Schrödinger equation
+  - half-space
+  - boundary threshold
+  - rigidity
+  - dimensional transition
+- id: arxiv:2610.02933
+  title: Normalized ground states and a mass-constrained scattering threshold for the inhomogeneous NLS with an inverse-square potential
+  authors:
+  - Mohamed Majdoub
+  - Tarek Saanouni
+  url: https://arxiv.org/abs/2610.02933
+  arxiv_id: '2610.02933'
+  doi: null
+  submitted: '2026-10-02'
+  submitted_at: '2026-10-02T07:23:35Z'
+  updated: '2026-10-02'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - inhomogeneous NLS
+  - inverse-square potential
+  - normalized ground states
+  - scattering threshold
+  - blow-up
+- id: arxiv:2610.03097
+  title: 'On the Cauchy Problem for the Sawada-Kotera Equation: Soliton resolution conjecture, Painlevé transcendents and asymptotic stability'
+  authors:
+  - Zheng-Kang Huang
+  - Shou-Fu Tian
+  url: https://arxiv.org/abs/2610.03097
+  arxiv_id: '2610.03097'
+  doi: null
+  submitted: '2026-10-02'
+  submitted_at: '2026-10-02T10:18:08Z'
+  updated: '2026-10-02'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - math-ph
+  - nlin.SI
+  keywords:
+  - Sawada-Kotera equation
+  - soliton resolution
+  - Riemann--Hilbert problem
+  - dbar steepest descent
+  - Painlevé asymptotics
+- id: arxiv:2610.03180
+  title: Probing fluctuating hydrodynamics through current fluctuations in hard rod gas
+  authors:
+  - Tirthankar Mondal
+  - Indranil Mukherjee
+  - Anupam Kundu
+  url: https://arxiv.org/abs/2610.03180
+  arxiv_id: '2610.03180'
+  doi: null
+  submitted: '2026-10-02'
+  submitted_at: '2026-10-02T11:55:26Z'
+  updated: '2026-10-02'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  keywords:
+  - hard-rod gas
+  - full counting statistics
+  - ballistic macroscopic fluctuation theory
+  - generalized hydrodynamics
+  - large deviations
+- id: arxiv:2610.03288
+  title: Well-posedness for the generalised fractional BBM equation
+  authors:
+  - Jackson Barratt
+  url: https://arxiv.org/abs/2610.03288
+  arxiv_id: '2610.03288'
+  doi: null
+  submitted: '2026-10-02'
+  submitted_at: '2026-10-02T13:31:01Z'
+  updated: '2026-10-02'
+  version: v1
+  metadata_checked_at: '2026-10-05'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - fractional BBM
+  - regularised Benjamin-Ono
+  - low regularity
+  - random initial data
+  - ill-posedness

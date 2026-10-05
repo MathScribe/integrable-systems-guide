@@ -2,55 +2,55 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-10-02'
+    announced_through: '2026-10-05'
     last_status: complete
-    coverage_note: Sep28–Oct2 official dated Catchup pages captured and complete entry counts validated, with new/cross-list and replacement sections screened separately. Sep26–27 had no batches. Selected new works were also verified as new submissions on their primary-category dated pages. Oct3 live new-list pages still show Oct2 as latest batch; no Oct3 announcement date inferred.
+    coverage_note: Oct5 official dated Catchup pages captured for both core and all 13 configured cross categories; dates and complete entry counts validated (622 distinct paper/date events across 15 pages). New/cross-list sections screened separately from replacements. Oct3–4 had no announcement batches. All 11 selected new events verified on primary-category new-submission sections; general live new-list pages were stale. Cross-category coverage remains focused, not comprehensive.
     replacements:
       last_status: complete
-      checked_through: '2026-10-02'
+      checked_through: '2026-10-05'
       open_gaps: []
-      coverage_note: All five Sep28–Oct2 dated core replacement batches checked. Catchup omits journal-reference-only updates and replacements beyond v5. Current histories were additionally checked for 42 recent selected/high-priority papers and registered papers seen in the replacement lists. Oct3 recheck of 37 pending bibliography records found unchanged metadata, version histories and no withdrawal/retraction banners.
-    checked_at: '2026-10-03T02:41:53Z'
+      coverage_note: Oct5 replacement sections screened separately (227 distinct events across configured categories). Plausible core/wave candidates checked on primary abstract pages; ILW and vector-peakon versions compared and classified as minor. Current histories for all 45 selected arXiv records with Sep28–Oct2 events checked; withdrawn arXiv:2609.39891 removed from public selection. Catchup omits journal-reference-only updates and replacements beyond v5.
+    checked_at: '2026-10-05T02:25:47Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-10-02'
+    announced_through: '2026-10-05'
     last_status: complete
-    coverage_note: Sep28–Oct2 official dated Catchup pages captured and complete entry counts validated, with new/cross-list and replacement sections screened separately. Sep26–27 had no batches. Selected new works were also verified as new submissions on their primary-category dated pages. Oct3 live new-list pages still show Oct2 as latest batch; no Oct3 announcement date inferred.
+    coverage_note: Oct5 official dated Catchup pages captured for both core and all 13 configured cross categories; dates and complete entry counts validated (622 distinct paper/date events across 15 pages). New/cross-list sections screened separately from replacements. Oct3–4 had no announcement batches. All 11 selected new events verified on primary-category new-submission sections; general live new-list pages were stale. Cross-category coverage remains focused, not comprehensive.
     replacements:
       last_status: complete
-      checked_through: '2026-10-02'
+      checked_through: '2026-10-05'
       open_gaps: []
-      coverage_note: All five Sep28–Oct2 dated core replacement batches checked. Catchup omits journal-reference-only updates and replacements beyond v5. Current histories were additionally checked for 42 recent selected/high-priority papers and registered papers seen in the replacement lists. Oct3 recheck of 37 pending bibliography records found unchanged metadata, version histories and no withdrawal/retraction banners.
-    checked_at: '2026-10-03T02:41:53Z'
+      coverage_note: Oct5 replacement sections screened separately (227 distinct events across configured categories). Plausible core/wave candidates checked on primary abstract pages; ILW and vector-peakon versions compared and classified as minor. Current histories for all 45 selected arXiv records with Sep28–Oct2 events checked; withdrawn arXiv:2609.39891 removed from public selection. Catchup omits journal-reference-only updates and replacements beyond v5.
+    checked_at: '2026-10-05T02:25:47Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-10-02'
+    announced_through: '2026-10-05'
     last_status: complete
-    coverage_note: Oct3 recheck of the pending Sep28–Oct2 batch used 65 official dated Catchup pages across all 13 configured categories; all dates and complete entry counts validated (3970 paper/date events). Re-screening the captured new/cross-listed titles identified 11 additional eligible new preprints. No Oct3 announcement batch; announcement watermark remains Oct2. Focused relevance screening, not comprehensive coverage of each field.
+    coverage_note: Oct5 official dated Catchup pages captured for both core and all 13 configured cross categories; dates and complete entry counts validated (622 distinct paper/date events across 15 pages). New/cross-list sections screened separately from replacements. Oct3–4 had no announcement batches. All 11 selected new events verified on primary-category new-submission sections; general live new-list pages were stale. Cross-category coverage remains focused, not comprehensive.
     replacements:
       last_status: complete
-      checked_through: '2026-10-02'
+      checked_through: '2026-10-05'
       open_gaps: []
-      coverage_note: All 65 Sep28–Oct2 cross-category Catchup pages captured; 1439 replacement paper/date events screened with focused structure/model terms (45 title hits), followed by plausible-candidate abstracts and 13 version comparisons. Four additional major revisions selected and one registered author/version record corrected. Catchup omits journal-reference-only updates and versions beyond v5; one unselected Rydberg candidate lacks current HTML full text, so its revision is not certified substantive.
-    checked_at: '2026-10-03T02:41:53Z'
+      coverage_note: Oct5 replacement sections screened separately (227 distinct events across configured categories). Plausible core/wave candidates checked on primary abstract pages; ILW and vector-peakon versions compared and classified as minor. Current histories for all 45 selected arXiv records with Sep28–Oct2 events checked; withdrawn arXiv:2609.39891 removed from public selection. Catchup omits journal-reference-only updates and replacements beyond v5.
+    checked_at: '2026-10-05T02:25:47Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-10-02'
-      note: Focused cond-mat.quant-gas new-event coverage now extends through Oct2; no earlier-than-Sep14 history claimed.
+      through: '2026-10-05'
+      note: Focused cond-mat.quant-gas new-event coverage extends through Oct5; no earlier-than-Sep14 history claimed.
   crossref:
     kind: ranked-title-backstop
-    reconciliation_checked_at: '2026-10-03T02:41:53Z'
+    reconciliation_checked_at: '2026-10-05T02:25:47Z'
     reconciliation_cadence: weekly
-    reconciliation_note: Oct3 resolved all 11 Oct2 HTTP429 queries (no exact matches for those papers; the similar Sinitsyn result belongs to arXiv:2603.22470, not 2609.14996). Combined with the previous 55 successes, that reconciliation is complete. All 15 additional selections queried by title/author; two exact journal matches verified for 2609.37714 and 2512.22480. No broad historical reconciliation claimed.
+    reconciliation_note: Oct5 exact-title/author checks completed for 50 recent or newly selected preprints lacking journal DOI. One match is an SSRN preprint DOI, not a journal publication. Vector-peakon journal DOI from current arXiv metadata independently verified through publisher-deposited Crossref record; metadata-only update.
     overlap_days: 3
-    title_query_note: 'Sep29–Oct3 overlapping ranked-title pass completed: all 16 configured queries, 500 raw records, 11 title-matched candidates. Only first ranked pages inspected.'
-    online_query_through: '2026-10-03'
+    title_query_note: 'Successful Oct5 GitHub workflow artifact (run 37250749991), Sep25–Oct5 overlap: all 16 ranked-title queries, 549 raw records, 17 title matches. Previously screened overlap retained as such; no new eligible journal event.'
+    online_query_through: '2026-10-05'
     online_status: complete
-    registration_query_through: '2026-10-03'
+    registration_query_through: '2026-10-05'
     registration_status: complete
-    registration_note: 'Sep29–Oct3 five-phrase DOI-created pass completed: 174 raw records, seven title matches. Registration and issue dates never used as first-online dates.'
-    reconciliation_last_attempt_at: '2026-10-03T02:41:53Z'
+    registration_note: 'Separate successful DOI-created artifact from run 37250749991: five phrases, 200 raw records, 11 title matches over Sep25–Oct5. Older newly registered records excluded from freshness; registration and issue dates never treated as online dates.'
+    reconciliation_last_attempt_at: '2026-10-05T02:25:47Z'
     reconciliation_last_status: complete
     reconciliation_open_queries: []
   zbmath:
@@ -64,6 +64,6 @@ sources:
     - 2027
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-10-03T02:41:53Z'
+    checked_at: '2026-10-05T02:25:47Z'
     last_status: candidate-only
-    coverage_note: Three pending journal events reverified against fresh publisher-deposited Crossref records. Two further exact journal matches verified; DOI targets inaccessible once, no repeated retries. JDE January2027 issue has no verified first-online day; topological-waveguide arXiv v3 materially qualifies the earlier journal abstract. New notes use primary abstracts or inspected full-text statements/version comparisons, not independent proof certification.
+    coverage_note: Vector-peakon title, complete author list, journal identity, year and article number matched to publisher-deposited Crossref record. First-online day remains unknown; arXiv recommendation date unchanged. No publisher-wide coverage claimed. New reading notes use primary abstracts and, for technical scopes, inspected full-text statements; no independent proof audit claimed.
