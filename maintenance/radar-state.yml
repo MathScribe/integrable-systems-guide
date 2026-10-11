@@ -2,68 +2,70 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-10-05'
+    announced_through: '2026-10-11'
     last_status: complete
-    coverage_note: Oct5 official dated Catchup pages captured for both core and all 13 configured cross categories; dates and complete entry counts validated (622 distinct paper/date events across 15 pages). New/cross-list sections screened separately from replacements. Oct3–4 had no announcement batches. All 11 selected new events verified on primary-category new-submission sections; general live new-list pages were stale. Cross-category coverage remains focused, not comprehensive.
+    coverage_note: 'Oct6-11 official dated Catchup pages for both core and all 13 configured cross categories: all 90 dates/counts validated; 3308 distinct paper/date events (1540 new, 457 cross-list, 1311 replacement). Oct10-11 pages contain zero entries. Focused title screening followed by primary candidate verification; cross-category coverage is selective, not comprehensive.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-05'
+      checked_through: '2026-10-11'
       open_gaps: []
-      coverage_note: Oct5 replacement sections screened separately (227 distinct events across configured categories). Plausible core/wave candidates checked on primary abstract pages; ILW and vector-peakon versions compared and classified as minor. Current histories for all 45 selected arXiv records with Sep28–Oct2 events checked; withdrawn arXiv:2609.39891 removed from public selection. Catchup omits journal-reference-only updates and replacements beyond v5.
-    checked_at: '2026-10-05T02:25:47Z'
+      coverage_note: Replacement sections screened separately. One qualifying Boussinesq major revision selected after v1/v2 comparison. Four existing records updated; two reading-note scopes corrected after current-version comparison. Current histories/status checked for all 11 Oct5 selections and this run's detailed candidates. Catchup omits journal-reference-only changes and replacements beyond v5; no all-history status census claimed.
+    checked_at: '2026-10-11T01:59:44Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-10-05'
+    announced_through: '2026-10-11'
     last_status: complete
-    coverage_note: Oct5 official dated Catchup pages captured for both core and all 13 configured cross categories; dates and complete entry counts validated (622 distinct paper/date events across 15 pages). New/cross-list sections screened separately from replacements. Oct3–4 had no announcement batches. All 11 selected new events verified on primary-category new-submission sections; general live new-list pages were stale. Cross-category coverage remains focused, not comprehensive.
+    coverage_note: 'Oct6-11 official dated Catchup pages for both core and all 13 configured cross categories: all 90 dates/counts validated; 3308 distinct paper/date events (1540 new, 457 cross-list, 1311 replacement). Oct10-11 pages contain zero entries. Focused title screening followed by primary candidate verification; cross-category coverage is selective, not comprehensive.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-05'
+      checked_through: '2026-10-11'
       open_gaps: []
-      coverage_note: Oct5 replacement sections screened separately (227 distinct events across configured categories). Plausible core/wave candidates checked on primary abstract pages; ILW and vector-peakon versions compared and classified as minor. Current histories for all 45 selected arXiv records with Sep28–Oct2 events checked; withdrawn arXiv:2609.39891 removed from public selection. Catchup omits journal-reference-only updates and replacements beyond v5.
-    checked_at: '2026-10-05T02:25:47Z'
+      coverage_note: Replacement sections screened separately. One qualifying Boussinesq major revision selected after v1/v2 comparison. Four existing records updated; two reading-note scopes corrected after current-version comparison. Current histories/status checked for all 11 Oct5 selections and this run's detailed candidates. Catchup omits journal-reference-only changes and replacements beyond v5; no all-history status census claimed.
+    checked_at: '2026-10-11T01:59:44Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-10-05'
+    announced_through: '2026-10-11'
     last_status: complete
-    coverage_note: Oct5 official dated Catchup pages captured for both core and all 13 configured cross categories; dates and complete entry counts validated (622 distinct paper/date events across 15 pages). New/cross-list sections screened separately from replacements. Oct3–4 had no announcement batches. All 11 selected new events verified on primary-category new-submission sections; general live new-list pages were stale. Cross-category coverage remains focused, not comprehensive.
+    coverage_note: 'Oct6-11 official dated Catchup pages for both core and all 13 configured cross categories: all 90 dates/counts validated; 3308 distinct paper/date events (1540 new, 457 cross-list, 1311 replacement). Oct10-11 pages contain zero entries. Focused title screening followed by primary candidate verification; cross-category coverage is selective, not comprehensive.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-05'
+      checked_through: '2026-10-11'
       open_gaps: []
-      coverage_note: Oct5 replacement sections screened separately (227 distinct events across configured categories). Plausible core/wave candidates checked on primary abstract pages; ILW and vector-peakon versions compared and classified as minor. Current histories for all 45 selected arXiv records with Sep28–Oct2 events checked; withdrawn arXiv:2609.39891 removed from public selection. Catchup omits journal-reference-only updates and replacements beyond v5.
-    checked_at: '2026-10-05T02:25:47Z'
+      coverage_note: Replacement sections screened separately. One qualifying Boussinesq major revision selected after v1/v2 comparison. Four existing records updated; two reading-note scopes corrected after current-version comparison. Current histories/status checked for all 11 Oct5 selections and this run's detailed candidates. Catchup omits journal-reference-only changes and replacements beyond v5; no all-history status census claimed.
+    checked_at: '2026-10-11T01:59:44Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-10-05'
-      note: Focused cond-mat.quant-gas new-event coverage extends through Oct5; no earlier-than-Sep14 history claimed.
+      through: '2026-10-11'
+      note: Focused cond-mat.quant-gas event coverage extends through Oct11; no earlier-than-Sep14 history claimed.
   crossref:
     kind: ranked-title-backstop
-    reconciliation_checked_at: '2026-10-05T02:25:47Z'
+    reconciliation_checked_at: '2026-10-11T01:59:44Z'
     reconciliation_cadence: weekly
-    reconciliation_note: Oct5 exact-title/author checks completed for 50 recent or newly selected preprints lacking journal DOI. One match is an SSRN preprint DOI, not a journal publication. Vector-peakon journal DOI from current arXiv metadata independently verified through publisher-deposited Crossref record; metadata-only update.
+    reconciliation_note: 29 exact-title/author checks for new/major candidates and all 11 Oct5 selections without journal DOI completed. One exact Optics Letters journal match verified (first online Oct6) and merged as a journal event; SSRN preprint match not treated as journal publication. Other returned works did not match identity.
     overlap_days: 3
-    title_query_note: 'Successful Oct5 GitHub workflow artifact (run 37250749991), Sep25–Oct5 overlap: all 16 ranked-title queries, 549 raw records, 17 title matches. Previously screened overlap retained as such; no new eligible journal event.'
-    online_query_through: '2026-10-05'
+    title_query_note: 'Local Oct11 bounded Oct2-11 overlapping online-date pass completed: 16 ranked-title queries, 523 raw records, 9 title matches. Current-window journal candidates and delayed Oct5 deposits verified; no full Crossref coverage claimed.'
+    online_query_through: '2026-10-11'
     online_status: complete
-    registration_query_through: '2026-10-05'
+    registration_query_through: '2026-10-11'
     registration_status: complete
-    registration_note: 'Separate successful DOI-created artifact from run 37250749991: five phrases, 200 raw records, 11 title matches over Sep25–Oct5. Older newly registered records excluded from freshness; registration and issue dates never treated as online dates.'
-    reconciliation_last_attempt_at: '2026-10-05T02:25:47Z'
+    registration_note: 'Independent Oct2-11 DOI-created pass completed: five phrases, 187 raw records, two title matches, both outside the focused nonlinear-wave scope. DOI registration and issue dates are not first-online dates.'
+    reconciliation_last_attempt_at: '2026-10-11T01:59:44Z'
     reconciliation_last_status: complete
     reconciliation_open_queries: []
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
     checked_at: '2026-09-27T02:12:13Z'
-    last_status: complete
-    coverage_note: 'Successful Sep14 artifact plus overlapping Sep11–27 datestamp check: all 598 bounded 2026 records and five 2027 records retrieved. Indexing date and issue year do not establish first online publication.'
+    last_status: partial
+    coverage_note: Oct11 local bounded MSC request for 2026-2027 issue years and Sep11-Oct11 indexing window failed with HTTP 404 before retrieving any records. Last successful checked_at remains Sep27. Oct5 scheduled workflow success was not evidence of a new MSC retrieval; no recovery or zero-result claim.
     publication_years:
     - 2026
     - 2027
+    last_attempt_at: '2026-10-11T01:59:44Z'
+    last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-10-05T02:25:47Z'
+    checked_at: '2026-10-11T01:59:44Z'
     last_status: candidate-only
-    coverage_note: Vector-peakon title, complete author list, journal identity, year and article number matched to publisher-deposited Crossref record. First-online day remains unknown; arXiv recommendation date unchanged. No publisher-wide coverage claimed. New reading notes use primary abstracts and, for technical scopes, inspected full-text statements; no independent proof audit claimed.
+    coverage_note: Six selected journal identities and first-online dates verified from publisher-deposited Crossref records; four linked arXiv identities merged. Eight focused DOI records inspected in total, including two nonselected candidates and the exact-title Optics Letters match. No publisher-wide coverage claimed. Primary abstracts and selected full-text statements/version differences support annotations; no independent proof certification.
