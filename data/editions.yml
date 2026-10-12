@@ -2634,3 +2634,115 @@ frontier:
       lead: 在热铷蒸气中光学诱导的一维光子晶格上，实验观察离散孤子的形成。
       detail: 两束耦合光的干涉建立折射率晶格，局域探测光随强度增加由离散衍射转为自聚焦平衡下的离散孤子。
       method_scope: 多能级原子的光学 Bloch 方程支撑折射率建模，数值传播与实验比较；可控增益和损耗为进一步研究非厄米非线性波提供实验平台。
+  - paper_id: arxiv:2610.13753
+    signal_date: '2026-10-12'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    - asymptotics
+    reading_note:
+      lead: 对实值局域初值证明 KP-II 方程在 L²(R²) 中散射，初值范围覆盖全部 Schwartz 函数，无需小振幅或横向零均值条件。
+      detail: 结果还涵盖带半阶空间矩的 Besov 数据及允许单一坐标低正则性的加权张量 Besov 空间；统一逆估计与精确 L² 恒等式支持大振幅逆构造。
+      method_scope: 使用热算子对应的标量 dbar 方程，在自由传播锥上估计非线性余项，并借助热方程识别极限谱质量。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2610.13752
+    signal_date: '2026-10-12'
+    signal_type: new-preprint
+    directions:
+    - waves
+    reading_note:
+      lead: 在带任意强度顶点 δ 相互作用的双边星形图上，构造聚焦五次 NLS 的非径向最小质量有限时爆破解。
+      detail: 爆破点可指定在某条边的任意内部位置，并得到双参数爆破轮廓族；演化保持 Hamiltonian 的定义域。
+      method_scope: 截断直线上的伪共形爆破解，并结合 Kato 正则性保持方法。本文明确构造针对双边星形图，其他图上的推广属于作者讨论的延伸。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2610.13782
+    signal_date: '2026-10-12'
+    signal_type: new-preprint
+    directions:
+    - structures
+    reading_note:
+      lead: 给出一维最近邻 Hamiltonian 保持指定均匀或交错单点加和守恒量的局域充要条件，并用 scalene Yang–Baxter triples 统一实现这些模型。
+      detail: 扣除周期求和为零的局域差分项后，条件由相应键算子的交换子代数刻画；构造适用于任意有限局域维数，且允许各键相互作用不同。
+      method_scope: 利用 regular 与 non-regular 成员构造 monodromy 矩阵。结论针对长度至少为 3 的周期链，交错情形要求偶数长度；这一表示不等同于通常的 Yang–Baxter 可积性。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2610.13501
+    signal_date: '2026-10-12'
+    signal_type: new-preprint
+    directions:
+    - structures
+    reading_note:
+      lead: 通过统一作用量连接辅助场 sigma 模型与二维度量形变，给出保持经典 Lax 可积性的一族形变。
+      detail: 两个带 Lorentz 荷的辅助标量可识别为辅助度量的 Beltrami 微分，从而将 Lie 代数辅助场表述与 TbarT 类度量形变联系起来。
+      method_scope: 种子理论需在一般弯曲二维时空上具有 Lax 表示。TbarT 的场依赖坐标变换唯一性结论限定于文中考虑的 Lorentz 不变、共形种子 zweibein 形变族。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2610.13875
+    signal_date: '2026-10-12'
+    signal_type: new-preprint
+    directions:
+    - structures
+    - asymptotics
+    reading_note:
+      lead: 构造与广义 Gibbs 系综模变换对应的量子 KdV 形变守恒量，并证明其在化学势形式幂级数意义下逐阶对易。
+      detail: 局域递推与等价流方程组织全部阶数；固定生成级数后，流密度在相差全导数的意义下唯一。
+      method_scope: 自由费米子模型的基态本征值与热力学 Bethe ansatz 展开全阶吻合；Lee–Yang 模型仅对低能态若干守恒量验证到 spin-5 形变的三次阶数值一致性。
+    event_source: https://arxiv.org/catchup/math-ph/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2610.12994
+    signal_date: '2026-10-12'
+    signal_type: new-preprint
+    directions:
+    - waves
+    reading_note:
+      lead: 为被动 Kerr 腔的 Ikeda 映射建立无需组装完整 Jacobian 的数值延拓方法，同时追踪解分支及线性稳定性。
+      detail: 统一处理单往返与多往返状态，解析稳定及不稳定的调制不稳定性图样和腔孤子分支，并发现标准 Lugiato–Lefever 平均场模型未包含的倍周期均匀态。
+      method_scope: 基于未平均的逐往返映射开展数值分岔分析；高精细度时单周期分支与平均场模型接近，精细度降低后存在区间逐渐偏离。
+    event_source: https://arxiv.org/catchup/physics.optics/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2610.13813
+    signal_date: '2026-10-12'
+    signal_type: new-preprint
+    directions:
+    - waves
+    reading_note:
+      lead: 在一大类球对称流形及非线性下，证明非线性色散方程存在具有指定节点面数的径向束缚态。
+      detail: 对幂次模型非线性，在文中假设下进一步证明这类束缚态的唯一性；结果还适用于部分原点带奇性的流形。
+      method_scope: 将 NLS、Klein–Gordon 等方程的驻波轮廓转化为径向非线性椭圆常微分方程，研究带给定节点数的解；结论不包含一般非径向分类或动力学稳定性。
+    event_source: https://arxiv.org/catchup/math-ph/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2610.13887
+    signal_date: '2026-10-12'
+    signal_type: new-preprint
+    directions:
+    - waves
+    reading_note:
+      lead: 对任意半正定二次束缚势及自由方向周期势的对数 Schrödinger 方程，证明各束缚秩下均存在正基态。
+      detail: 周期势消失时获得最优各向异性对数 Sobolev 不等式、最优常数及全部取等情形，并将正基态分类为沿二次型核方向平移的各向异性 Gausson。
+      method_scope: 结合非光滑凸能量的抽象临界点原理与整数平移下的轮廓分解；周期分量为常数时，还给出任意正质量下的归一化基态分类及能量公式。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2610.13629
+    signal_date: '2026-10-12'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    reading_note:
+      lead: 利用 Neumann–Dirichlet 本征值及其对边界 Robin 参数的导数，建立一维波速的谱反演程序并证明稳定性。
+      detail: 先从谱数据恢复 Neumann-to-Dirichlet 映射，再用边界控制法重构波速；混合 L² 与 H¹ 惩罚的正则化允许同时调节参数，并获得最优控制的一致收敛。
+      method_scope: 证明正向谱映射的 Lipschitz 连续性及指定波速子类上逆映射的 Hölder 连续性，数值实现覆盖光滑与分片光滑波速。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2610.13255
+    signal_date: '2026-10-12'
+    signal_type: new-preprint
+    directions:
+    - waves
+    reading_note:
+      lead: 研究同时含伪 Raman 项、反扩散增益与立方损耗的 NLS 模型，给出吸收边界下运动孤子的稳定平衡机制。
+      detail: 模型由扩展绝热近似下的 Zakharov 系统导出；移动参考系中的范数与动量平衡方程预测稳定固定点及吸引域，直接传播模拟支持这一预测。
+      method_scope: 分析采用 sech 轮廓近似并结合数值计算。吸收边界用于抑制反扩散增益驱动的爆破，结果不是无限域或周期边界下的稳定性定理。
+    event_source: https://arxiv.org/catchup/nlin.PS/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2603.05211
+    signal_date: '2026-10-12'
+    signal_type: major-revision
+    directions:
+    - structures
+    reading_note:
+      lead: 以单一标量势写出 Darboux 系统的连续 Lagrangian multiform，并显式刻画四维及更高维情况下的兼容条件。
+      detail: 每组三个指标对应六阶方程，每组四个指标另给出三阶和四阶约束；多形式 Euler–Lagrange 方程恢复完整系统，Lagrangian 三形式在解上闭合。
+      method_scope: 通过旋转系数的势参数化和直接兼容性计算建立连续情形的结构。离散与半离散标量 Lagrangian 已给出，但将离散部分纳入同一势表示的 multiform 仍是后续问题。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-12?abs=False&page=1

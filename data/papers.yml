@@ -7460,9 +7460,9 @@
   doi: null
   submitted: '2026-10-07'
   submitted_at: '2026-10-07T10:35:48Z'
-  updated: '2026-10-07'
-  version: v1
-  metadata_checked_at: '2026-10-11'
+  updated: '2026-10-09'
+  version: v2
+  metadata_checked_at: '2026-10-12'
   arxiv_categories:
   - physics.optics
   - gr-qc
@@ -7888,3 +7888,249 @@
   published: '2026-10-03'
   article_number: e71994
   metadata_note: First-online date and bibliography verified against the publisher-deposited Crossref record. arXiv and journal identities merged where available.
+- id: arxiv:2610.13753
+  title: Scattering for the KP-II equation
+  authors:
+  - Xi Chen
+  url: https://arxiv.org/abs/2610.13753
+  arxiv_id: '2610.13753'
+  doi: null
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T15:40:38Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - KP-II
+  - scattering
+  - dbar problem
+  - large data
+- id: arxiv:2610.13752
+  title: Asymmetric minimal mass blow-up for the quintic NLS on a star graph
+  authors:
+  - Mattia Buratti
+  - François Genoud
+  - Vladimir Georgiev
+  url: https://arxiv.org/abs/2610.13752
+  arxiv_id: '2610.13752'
+  doi: null
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T15:40:25Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - quintic NLS
+  - star graph
+  - minimal mass blow-up
+  - delta interaction
+- id: arxiv:2610.13782
+  title: Scalene Yang-Baxter triples realize all nearest-neighbour Hamiltonians with global additive symmetries
+  authors:
+  - Pramod Padmanabhan
+  - Somnath Maity
+  - Akash Sinha
+  - Vladimir Korepin
+  url: https://arxiv.org/abs/2610.13782
+  arxiv_id: '2610.13782'
+  doi: null
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T16:01:57Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - hep-th
+  - math-ph
+  - nlin.SI
+  keywords:
+  - scalene Yang-Baxter triples
+  - additive conserved charges
+  - bond commutants
+  - monodromy matrix
+- id: arxiv:2610.13501
+  title: Integrable auxiliary field sigma model and the metric approach to $T\bar{T}$-like deformations
+  authors:
+  - Nicola Baglioni
+  - Daniele Bielli
+  - Parita Shah
+  - Gabriele Tartaglino-Mazzucchelli
+  url: https://arxiv.org/abs/2610.13501
+  arxiv_id: '2610.13501'
+  doi: null
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T12:28:53Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - gr-qc
+  - hep-th
+  - math-ph
+  - nlin.SI
+  keywords:
+  - auxiliary field sigma model
+  - Lax integrability
+  - TbarT deformation
+  - Beltrami differentials
+- id: arxiv:2610.13875
+  title: 'Modular Properties of Generalised Gibbs Ensembles: The Deformed KdV Hierarchy'
+  authors:
+  - Faisal Karimi
+  url: https://arxiv.org/abs/2610.13875
+  arxiv_id: '2610.13875'
+  doi: null
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T17:23:18Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - hep-th
+  - math-ph
+  keywords:
+  - quantum KdV
+  - generalised Gibbs ensemble
+  - commuting charges
+  - thermodynamic Bethe ansatz
+- id: arxiv:2610.12994
+  title: Matrix-free numerical continuation of the Ikeda map in passive Kerr resonators
+  authors:
+  - Yuandi Xu
+  - Pengxiang Wang
+  - Jianxing Pan
+  - Haisu Zhang
+  - Gang Xu
+  url: https://arxiv.org/abs/2610.12994
+  arxiv_id: '2610.12994'
+  doi: null
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T04:56:30Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - physics.optics
+  keywords:
+  - Ikeda map
+  - Kerr resonator
+  - numerical continuation
+  - cavity soliton
+  - period doubling
+- id: arxiv:2610.13813
+  title: Existence and uniqueness of bound states with prescribed number of nodes for nonlinear dispersive equations on spherically symmetric manifolds
+  authors:
+  - Valentino Badalucco
+  url: https://arxiv.org/abs/2610.13813
+  arxiv_id: '2610.13813'
+  doi: null
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T16:26:40Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - math-ph
+  - math.AP
+  - math.DG
+  keywords:
+  - bound states
+  - nodal solutions
+  - nonlinear Schrödinger equation
+  - spherically symmetric manifolds
+- id: arxiv:2610.13887
+  title: Ground states and sharp logarithmic Sobolev inequalities for logarithmic Schrödinger equations with partial confinement
+  authors:
+  - Baihong Li
+  - Jarosław Mederski
+  - Xiangjian Zeng
+  url: https://arxiv.org/abs/2610.13887
+  arxiv_id: '2610.13887'
+  doi: null
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T17:35:24Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - logarithmic Schrödinger equation
+  - partial confinement
+  - ground states
+  - sharp logarithmic Sobolev inequality
+- id: arxiv:2610.13629
+  title: An inverse spectral problem for the wave equation with a varying Robin parameter at the boundary
+  authors:
+  - Antti Hannukainen
+  - Petr Kulikov
+  - Matti Lassas
+  - Lauri Oksanen
+  url: https://arxiv.org/abs/2610.13629
+  arxiv_id: '2610.13629'
+  doi: null
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T14:12:58Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - math.AP
+  - math.NA
+  - math.OC
+  - math.SP
+  keywords:
+  - inverse spectral problem
+  - Robin boundary condition
+  - boundary control
+  - regularization
+  - Hölder stability
+- id: arxiv:2610.13255
+  title: Solitons in the nonlinear Schrödinger equation with the pseudo-Raman term, anti-diffusion gain and nonlinear loss
+  authors:
+  - Evgeny M. Gromov
+  - Boris A. Malomed
+  url: https://arxiv.org/abs/2610.13255
+  arxiv_id: '2610.13255'
+  doi: null
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T09:02:07Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - nlin.PS
+  - physics.optics
+  keywords:
+  - nonlinear Schrödinger equation
+  - pseudo-Raman effect
+  - anti-diffusion gain
+  - absorptive boundary
+  - soliton dynamics
+- id: arxiv:2603.05211
+  title: Lagrangian formulation of the Darboux system
+  authors:
+  - Lingling Xue
+  - E. V. Ferapontov
+  - M. V. Pavlov
+  url: https://arxiv.org/abs/2603.05211
+  arxiv_id: '2603.05211'
+  doi: null
+  submitted: '2026-03-05'
+  submitted_at: '2026-03-05T14:20:32Z'
+  updated: '2026-10-09'
+  version: v2
+  metadata_checked_at: '2026-10-12'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - Darboux system
+  - Lagrangian multiform
+  - KP hierarchy
+  - multidimensional compatibility
