@@ -420,8 +420,9 @@ frontier:
     directions:
     - asymptotics
     - waves
-    signal_date: '2026-07-14'
+    signal_date: '2026-08-27'
     signal_type: journal-publication
+    event_source: https://journals.aps.org/prl/abstract/10.1103/sz13-9shg
   - paper_id: doi:10.1137/25m1764062
     reading_note:
       lead: 用逆散射证明一维可积三次 NLS 解的整体空间解析性，并在规定对称条件下去除解析范数的大小限制。
@@ -2746,3 +2747,221 @@ frontier:
       detail: 每组三个指标对应六阶方程，每组四个指标另给出三阶和四阶约束；多形式 Euler–Lagrange 方程恢复完整系统，Lagrangian 三形式在解上闭合。
       method_scope: 通过旋转系数的势参数化和直接兼容性计算建立连续情形的结构。离散与半离散标量 Lagrangian 已给出，但将离散部分纳入同一势表示的 multiform 仍是后续问题。
     event_source: https://arxiv.org/catchup/nlin.SI/2026-10-12?abs=False&page=1
+  - paper_id: arxiv:2610.15507
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - spectral
+    reading_note:
+      lead: 对满足 c>0、c²=4ω 的 DNLS 端点代数孤子，证明无需额外假设的 H¹ 轨道稳定性。
+      detail: 质量与第二 Hamiltonian 的守恒使 Bäcklund 变换后的解在 H¹ 中对时间一致保持小量；逆变换的紧性允许谱零点逼近负实轴时重构代数孤子。
+      method_scope: 结合可积守恒量、Bäcklund 变换和逆变换紧性，处理指数衰减孤子族端点处的代数衰减情形。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.16378
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - spectral
+    reading_note:
+      lead: 证明 KP-II 共振 Y 型线孤子在指定指数加权空间中的谱稳定性，并刻画线性化算子的谱结构。
+      detail: 谱由零背景连续谱和三个剩余谱区域组成，后者边界包含各组成线孤子关联的连续谱；全部伴随本征函数的正交条件可归结为三族伴随连续本征函数。
+      method_scope: 利用 Darboux 变换及谱参数解析性。加权空间衡量落在线孤子后方的扰动，线性稳定性分析进一步限制在消除各条线孤子向外调制的正交子空间。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.14786
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - asymptotics
+    reading_note:
+      lead: 对一类周期 NLS–Dysthe 方程建立局部适定性，并在指定非零系数条件下获得整体适定性及调制时间尺度上的一致控制。
+      detail: H¹ 延拓判据与低阶守恒律给出 s≥2 的整体解；借助三次 NLS 守恒量及其在对易复 mKdV 流下的不变性，得到整数 s≥2 时 O(ε⁻¹) 时间内的一致 Hˢ 界。
+      method_scope: 局部理论要求 s>3/2，整体结论使用 u²∂xū 项的非零系数条件。非整数 s≥2 时解存在于同一时间尺度，但一致控制损失不到一阶导数；初值不要求小振幅。
+    event_source: https://arxiv.org/catchup/math-ph/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.14585
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - spectral
+    reading_note:
+      lead: 为部分谐束缚 NLS 构造跨越整个允许频率区间的正解连通分支，并刻画低频谱边到高频端的维度过渡。
+      detail: 低频端选出最低束缚谐振模与自由方向低维基态，高频缩放则趋向全维基态；两端的唯一性、Morse 指标及精确质量斜率支持归一化驻波的存在与多重性分析。
+      method_scope: 结合局域化、Lyapunov–Schmidt 约化、谱扰动与 Leray–Schauder 延拓。非线性需满足文中的次临界渐近、零质量 Liouville 条件及 Hamiltonian 符号条件；稳定性分类还依赖标准 Hamiltonian 流假设，并避开质量临界幂次。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.16564
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - asymptotics
+    - spectral
+    reading_note:
+      lead: 对聚焦耦合 Kundu–Eckhaus 方程，在有界速度锥中给出色散辐射的长时间渐近公式，余项为 O(t⁻¹ log t)。
+      detail: 规范等价将问题联系到耦合 NLS 的 3×3 Riemann–Hilbert 问题；对解及规范相位建立联合误差估计，使渐近展开返回原方程时仍保持一致精度。
+      method_scope: 采用 Deift–Zhou 非线性最速下降法，初值为 Schwartz 类，并假设无离散谱及无实轴谱奇点；结论描述这一无孤子谱情形的辐射。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.16526
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - asymptotics
+    reading_note:
+      lead: 对一维周期、幂次非线性阻尼 NLS，证明非零空间均匀解附近的解在固定相位调整后渐近趋向显式均匀解。
+      detail: L² 与 H¹ 范数具有相同主系数的显式绝热衰减律，相对空间扰动可按 t⁻¹ᐟ² 控制；非恒定小扰动的动能具有严格正的主系数，且比 L² 范数平方多衰减一个时间幂次。
+      method_scope: 适用于聚焦与散焦情形，要求阻尼参数充分小、初值在相对 H¹ 范数中接近非零均匀态。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.17182
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - waves
+    reading_note:
+      lead: 对经 Miura 型变换与 Benjamin–Ono 方程相连的指数修正模型，在 Hˢ(R)、s>3/2 中建立局部适定性。
+      detail: 适配的 Cole–Hopf 变换消除二次导数项，将问题转为含输运项和可控交换子的 Schrödinger 方程，避免表观导数损失。
+      method_scope: 用抛物正则化构造解、频率包络控制数据到解映射。退化参数 γ=0 时变换完全线性化方程，局部理论可降至任意 s>1/2。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.15751
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - waves
+    reading_note:
+      lead: 对二次相互作用经一阶 Bessel 势过滤的 Airy 方程，证明充分小正速度下极小化孤波的轨道稳定性及中心固定后的唯一性。
+      detail: 小速度 KdV 极限和轮廓预解算子扰动给出单一平移核，约束极小化给出一个负方向，缩放分支的导数控制确定正质量斜率。
+      method_scope: Bourgain 空间双线性估计支撑局部与整体适定性，稳定性在 H³ᐟ² 能量空间中证明。任意正速度下可构造局域正轮廓，但一般速度的稳定性仍以非退化性和斜率条件为前提。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.17766
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - waves
+    reading_note:
+      lead: 对带正系数次临界幂次扰动的对数 NLS，证明正基态存在，并在扰动趋零时一致收敛到显式 Gausson。
+      detail: 充分小扰动下，正基态在相差平移的意义下唯一，实线性化算子的核仅由平移导数组成；所有正基态都光滑、径向对称且沿半径严格递减。
+      method_scope: 结合 Nehari 流形极小化、一致紧性与外部系数估计。结论适用于 N≥2；存在性覆盖任意正扰动系数，唯一性和非退化性限定于充分小系数。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.14323
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    reading_note:
+      lead: 对半轴上紧支撑复势 Schrödinger 算子，证明固定复 Robin 边界参数时，本征值与共振的完整集合连同重数唯一确定势。
+      detail: 以 Robin 特征函数替代 Dirichlet Jost 函数，建立相应高能估计、Hadamard 分解及有限谱数据稳定性；边界参数在有界集合中变化时可取得一致估计。
+      method_scope: 使用变换算子、整函数和 Fourier 分析。逆问题将 Robin 参数视为已知，潜势允许复值且要求紧支撑。
+    event_source: https://arxiv.org/catchup/math-ph/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.14978
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    reading_note:
+      lead: 对三维 Schrödinger 逆势散射，证明随测量波数上限提高而改善的稳定性，并得到精确近场数据下的全局唯一性。
+      detail: 多项式衰减势配合固定球面近场 Dirichlet 数据得到局部稳定性，指数衰减势配合完整远场振幅得到全局稳定性；估计分为噪声项和随最高波数下降的余项。
+      method_scope: 结合解析延拓、加权预解算子估计与消除未知外部贡献的半射线恒等式。不同稳定性结论需分别保留对应的衰减条件、数据类型及先验界。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.14469
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - structures
+    reading_note:
+      lead: 将复 2×2 矩阵 ASDYM 方程的 quasi-Wronskian 与 quasi-Grammian 解构造归结为同一个唯一可解的矩阵多项式插值问题。
+      detail: Darboux 多项式与有理 dressing 矩阵相差一个标量多项式因子，由此显式联系 Yang 矩阵和势矩阵，并在同一规范下得到相同的规范势。
+      method_scope: 从真空波函数出发，使用成对不同且非零的常谱参数；对应关系限定在插值矩阵可逆的非空局部区域。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.14949
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - structures
+    reading_note:
+      lead: 为二维非局域多分量 Yajima–Oikawa 系统构造统一的高阶半有理解，组织有理波、呼吸子与暗孤子的混合背景。
+      detail: 6×6 块 Gram 行列式以 Schur 多项式和指数函数为元素，各部分使用独立谱参数组；令相应块大小为零可恢复纯有理、呼吸子或暗孤子族。
+      method_scope: 采用 Hirota 双线性法与 KP 层级约化，通过代数约束实现复共轭和空间反射约化。渐近相互作用结论针对基本呼吸子对和暗孤子对，并给出位置与相位偏移。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.14078
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - structures
+    reading_note:
+      lead: 利用 distinguished bases 上辫群作用的代数描述，将 Dubrovin 构造系统化，并推广到任意 tt*-Toda 方程解。
+      detail: 构造联系解空间的解析结构与基变换，其中包含复射影空间量子上同调对应的特殊解。
+      method_scope: 以量子微分方程的具体例子落实辫群作用，再通过 distinguished bases 的代数框架处理一般 tt*-Toda 解。
+    event_source: https://arxiv.org/catchup/math.DG/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2610.17941
+    signal_date: '2026-10-14'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - structures
+    reading_note:
+      lead: 对一维任意分量数的三次 NLS 驻波系统，给出全部非平凡解的分类、线性化非退化性及由 Lagrange 乘子决定的精确 L² 质量公式。
+      detail: 这些结构结果排除三次情形的正交归一解，并证明任意 N≥2 的费米变分问题在指数 2 左侧充分近处取得极小值、右侧含端点的充分近区间不取得极小值。
+      method_scope: 研究 H¹(R) 中的多分量驻波及正交约束变分问题；近临界指数区间依赖分量数 N。
+    event_source: https://arxiv.org/catchup/math-ph/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2609.13377
+    signal_date: '2026-10-14'
+    signal_type: major-revision
+    directions:
+    - structures
+    reading_note:
+      lead: 对具有时空依赖相互作用的可积手征费米场论，在手征 SU(2) Gross–Neveu 实现中显式求解整个特征坐标族的 qKZ 方程。
+      detail: off-shell Bethe vectors 给出多体振幅，其沿特征坐标的拉回形成精确波函数；双体振幅写成 Gamma 函数之比，并联系常耦合 Bethe ansatz 极限。
+      method_scope: 构造从满足幺正性、regularity 和 Yang–Baxter 方程的差分型双体散射矩阵出发，局域路径无关性与圆周绕行共同约束固定粒子数扇区的输运。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2504.01701
+    signal_date: '2026-10-14'
+    signal_type: major-revision
+    directions:
+    - structures
+    reading_note:
+      lead: 将局部 G-wild mapping class groups 的构造扩展到曲线内部的外自同构扭曲，统一处理一般约化结构群的不规则连接形变。
+      detail: 非分裂反射陪集组织新的扭曲不规则类型，相关群的正合列与分类随之推广；经典类型的 fission trees 还给出显式群描述及非反射例子。
+      method_scope: 结合等单值形变参数空间、Lehrer–Springer 理论和 Levi 子陪集过滤。部分辫群提升在非分裂情形仍需额外理论，不能将已知分类直接表述为全部提升问题的解决。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2505.23403
+    signal_date: '2026-10-14'
+    signal_type: major-revision
+    directions:
+    - waves
+    - asymptotics
+    reading_note:
+      lead: 对 Rᵈ×T 上的对数 NLS 基态，利用振幅缩放恒等式证明固定横向系数时，横向依赖不随指定质量变化。
+      detail: 横向系数充分小时极小化解具有非平凡横向依赖，系数趋于无穷时能量和横向梯度满足渐近降维关系；这一极限不意味着有限系数下已严格横向独立。
+      method_scope: 通过约束变分和紧性研究基态。动力学部分证明指定解类中的唯一性，轨道稳定性以全局连续且守恒的能量空间流为额外假设。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-14?abs=False&page=1
+  - paper_id: arxiv:2508.17534
+    signal_type: journal-publication
+    signal_date: '2026-10-13'
+    directions:
+    - structures
+    - waves
+    event_source: https://doi.org/10.1088/1751-8121/aeb3d7
+    reading_note:
+      lead: 从 Kaup–Newell 层级的矩阵负流导出向量二元 Darboux 变换，并将其约化为矩阵 Fokas–Lenells 方程的解生成方法。
+      detail: 平凡种子给出矩阵孤子，平面波背景上的两分量约化则系统生成呼吸子、暗孤子、怪波及拍频孤子。
+      method_scope: 使用双微分演算组织矩阵变换及其约化，区分零背景矩阵孤子与非零平面波背景上的向量局域波。
+  - paper_id: arxiv:2607.06867
+    signal_type: journal-publication
+    signal_date: '2026-10-13'
+    directions:
+    - structures
+    - spectral
+    event_source: https://doi.org/10.21468/scipostphys.21.4.092
+    reading_note:
+      lead: 在非紧空间边界的三维负曲率引力中，将边界可积动力学的逆散射数据与准局域引力观测量联系起来。
+      detail: 精确流体／引力对应给出应力张量的闭合径向流，并描述有限截断下的形变与孤子解变化。
+      method_scope: 采用 Chern–Simons 表述与双 Hamiltonian 层级。边界演化的可积结构与径向流须区分：后者相对于规范 Poisson 结构本身并非 Hamiltonian 流。
+  - paper_id: doi:10.1016/j.wavemoti.2026.103858
+    signal_type: journal-publication
+    signal_date: null
+    directions:
+    - spectral
+    event_source: https://doi.org/10.1016/j.wavemoti.2026.103858
+    added_on: '2026-10-14'

@@ -2,55 +2,55 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-10-12'
+    announced_through: '2026-10-14'
     last_status: complete
-    coverage_note: 'Oct12 official dated Catchup pages: both core and 13 configured cross categories; all 15 dates/counts validated. 557 distinct events: 266 new, 76 cross-list, 215 replacements. Focused screening and primary verification selected ten new preprints and one major Darboux revision. Cross-category selection is bounded, not comprehensive.'
+    coverage_note: 'Oct13-14 official dated Catchup: both core and 13 configured cross categories; all 30 headings/counts validated. Oct13 pages empty. Oct14 has 1700 distinct events (799 new, 247 cross-list, 654 replacement). Bounded title/result screening and primary review selected 15 new preprints and three major revisions; cross-category coverage is selective, not comprehensive.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-12'
+      checked_through: '2026-10-14'
       open_gaps: []
-      coverage_note: Replacement sections screened separately. Darboux v1/v2 full texts establish new scalar-potential multiform and multidimensional compatibility analysis. Existing optical soliton paper updated to v2 without changing its event. Catchup omits journal-reference-only changes and replacements beyond v5; selected current histories and banners checked.
-    checked_at: '2026-10-12T12:44:23Z'
+      coverage_note: Relevant prior/current full texts compared. Three major revisions selected; four existing registry records refreshed. KP-II and exterior NLS retain original events. PRL ballistic-correlation publication date corrected from acceptance date to Aug27. One withdrawn unregistered Fokas-Lenells paper excluded. Catchup excludes journal-reference-only changes and replacements beyond v5; no all-version census claimed.
+    checked_at: '2026-10-14T12:57:52Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-10-12'
+    announced_through: '2026-10-14'
     last_status: complete
-    coverage_note: 'Oct12 official dated Catchup pages: both core and 13 configured cross categories; all 15 dates/counts validated. 557 distinct events: 266 new, 76 cross-list, 215 replacements. Focused screening and primary verification selected ten new preprints and one major Darboux revision. Cross-category selection is bounded, not comprehensive.'
+    coverage_note: 'Oct13-14 official dated Catchup: both core and 13 configured cross categories; all 30 headings/counts validated. Oct13 pages empty. Oct14 has 1700 distinct events (799 new, 247 cross-list, 654 replacement). Bounded title/result screening and primary review selected 15 new preprints and three major revisions; cross-category coverage is selective, not comprehensive.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-12'
+      checked_through: '2026-10-14'
       open_gaps: []
-      coverage_note: Replacement sections screened separately. Darboux v1/v2 full texts establish new scalar-potential multiform and multidimensional compatibility analysis. Existing optical soliton paper updated to v2 without changing its event. Catchup omits journal-reference-only changes and replacements beyond v5; selected current histories and banners checked.
-    checked_at: '2026-10-12T12:44:23Z'
+      coverage_note: Relevant prior/current full texts compared. Three major revisions selected; four existing registry records refreshed. KP-II and exterior NLS retain original events. PRL ballistic-correlation publication date corrected from acceptance date to Aug27. One withdrawn unregistered Fokas-Lenells paper excluded. Catchup excludes journal-reference-only changes and replacements beyond v5; no all-version census claimed.
+    checked_at: '2026-10-14T12:57:52Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-10-12'
+    announced_through: '2026-10-14'
     last_status: complete
-    coverage_note: 'Oct12 official dated Catchup pages: both core and 13 configured cross categories; all 15 dates/counts validated. 557 distinct events: 266 new, 76 cross-list, 215 replacements. Focused screening and primary verification selected ten new preprints and one major Darboux revision. Cross-category selection is bounded, not comprehensive.'
+    coverage_note: 'Oct13-14 official dated Catchup: both core and 13 configured cross categories; all 30 headings/counts validated. Oct13 pages empty. Oct14 has 1700 distinct events (799 new, 247 cross-list, 654 replacement). Bounded title/result screening and primary review selected 15 new preprints and three major revisions; cross-category coverage is selective, not comprehensive.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-12'
+      checked_through: '2026-10-14'
       open_gaps: []
-      coverage_note: Replacement sections screened separately. Darboux v1/v2 full texts establish new scalar-potential multiform and multidimensional compatibility analysis. Existing optical soliton paper updated to v2 without changing its event. Catchup omits journal-reference-only changes and replacements beyond v5; selected current histories and banners checked.
-    checked_at: '2026-10-12T12:44:23Z'
+      coverage_note: Relevant prior/current full texts compared. Three major revisions selected; four existing registry records refreshed. KP-II and exterior NLS retain original events. PRL ballistic-correlation publication date corrected from acceptance date to Aug27. One withdrawn unregistered Fokas-Lenells paper excluded. Catchup excludes journal-reference-only changes and replacements beyond v5; no all-version census claimed.
+    checked_at: '2026-10-14T12:57:52Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-10-12'
-      note: Focused cond-mat.quant-gas event coverage extends through Oct12; no earlier-than-Sep14 history claimed.
+      through: '2026-10-14'
+      note: Focused cond-mat.quant-gas event coverage extends through Oct14; no earlier-than-Sep14 history claimed.
   crossref:
     kind: ranked-title-backstop
-    reconciliation_checked_at: '2026-10-12T12:44:23Z'
+    reconciliation_checked_at: '2026-10-14T12:57:52Z'
     reconciliation_cadence: weekly
-    reconciliation_note: Eleven exact-title checks with author identity comparison completed for all selected events. Three HTTP 429 responses recovered on one serial retry. One Optica Open preprint identity found; not a journal publication or journal DOI. No verified journal match for the selected papers.
+    reconciliation_note: Nineteen exact-title queries with author identity comparison completed for new/major arXiv candidates and SSEP. Returned works did not match the candidate identities. Journal candidate identities verified separately; two linked arXiv records merged without duplicate identities.
     overlap_days: 3
-    title_query_note: 'Oct9-12 overlapping online-date pass: 16 ranked-title queries, 415 raw records, three matches; one already selected, two outside the focused scope. No new journal event selected.'
-    online_query_through: '2026-10-12'
+    title_query_note: 'Oct10-14 overlapping online-date backstop completed: 16 ranked-title queries, 466 raw records, six matches. Verified new JPA and SciPost online events; bounded coverage, not full Crossref enumeration.'
+    online_query_through: '2026-10-14'
     online_status: complete
-    registration_query_through: '2026-10-12'
+    registration_query_through: '2026-10-14'
     registration_status: complete
-    registration_note: 'Independent Oct9-12 DOI-created pass: five phrases, 160 raw records, one inverse-scattering match screened outside the focused nonlinear-wave scope. Registration date is not a publication date.'
-    reconciliation_last_attempt_at: '2026-10-12T12:44:23Z'
+    registration_note: 'Independent Oct10-14 DOI-created pass completed: five phrases, 160 raw records, three matches. Wave Motion bibliography verified with unknown first-online day; creation and issue dates not used as event dates.'
+    reconciliation_last_attempt_at: '2026-10-14T12:57:52Z'
     reconciliation_last_status: complete
     reconciliation_open_queries: []
   zbmath:
@@ -66,6 +66,6 @@ sources:
     last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-10-12T12:44:23Z'
+    checked_at: '2026-10-14T12:57:52Z'
     last_status: candidate-only
-    coverage_note: Selected events verified from official arXiv abstracts and histories; Darboux major revision and existing soliton revision compared against prior full texts. No new journal-only candidate reached detailed review. Crossref deposits checked for title and author identity; no publisher-wide coverage claimed.
+    coverage_note: Three new public journal records verified from publisher-deposited Crossref metadata; SciPost publisher page also inspected. Wave Motion lacks exact first-online day and accessible abstract, so bibliography-only intake. APS publisher page and deposit establish Aug27 publication versus Jul14 acceptance for existing PRL record. No publisher-wide coverage or independent proof certification claimed.

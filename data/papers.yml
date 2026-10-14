@@ -761,11 +761,11 @@
   - Rusuo Ye
   url: https://arxiv.org/abs/2508.17534
   arxiv_id: '2508.17534'
-  doi: null
+  doi: 10.1088/1751-8121/aeb3d7
   submitted: '2025-08-24'
   updated: '2026-02-11'
   version: v2
-  metadata_checked_at: '2026-07-17'
+  metadata_checked_at: '2026-10-14'
   keywords:
   - matrix Fokas--Lenells equation
   - negative Kaup--Newell flow
@@ -773,6 +773,14 @@
   - plane-wave background
   - rogue waves
   - beating solitons
+  submitted_at: '2025-08-24T21:58:52Z'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  journal: 'Journal of Physics A: Mathematical and Theoretical'
+  year: 2026
+  published: '2026-10-13'
+  metadata_note: Journal identity and available first-online bibliography verified from publisher-deposited Crossref metadata.
 - id: doi:10.1016/j.nonrwa.2017.08.013
   title: General soliton solutions to a coupled Fokas-Lenells equation
   authors:
@@ -1975,14 +1983,23 @@
   arxiv_id: '2601.21085'
   doi: 10.1103/sz13-9shg
   journal: Physical Review Letters
-  published: '2026-07-14'
-  metadata_checked_at: '2026-07-20'
+  published: '2026-08-27'
+  metadata_checked_at: '2026-10-14'
   keywords:
   - generalized hydrodynamics
   - inverse scattering
   arxiv_categories:
   - nlin.PS
-  - cond-mat.stat-mech
+  - nlin.SI
+  submitted: '2026-01-28'
+  submitted_at: '2026-01-28T22:13:45Z'
+  updated: '2026-10-10'
+  version: v2
+  volume: '137'
+  issue: '9'
+  article_number: 097202
+  year: 2026
+  metadata_note: Publisher APS page and Crossref deposit confirm first publication on 2026-08-27. The previously recorded 2026-07-14 is the acceptance date. arXiv v2 and current categories verified.
 - id: doi:10.1137/25m1764062
   title: The Inverse Scattering Transform and Analyticity of Symmetric Solutions for the Integrable Nonlinear Schrödinger Equations
   authors:
@@ -2396,14 +2413,21 @@
   arxiv_id: '2607.18959'
   doi: null
   submitted: '2026-07-21'
-  updated: '2026-07-21'
-  version: v1
-  metadata_checked_at: '2026-07-29'
+  updated: '2026-10-12'
+  version: v2
+  metadata_checked_at: '2026-10-14'
   keywords:
   - multi-species SSEP
   - reactive particle species
   - Yang--Baxter equation
   - reflection equation
+  submitted_at: '2026-07-21T10:49:57Z'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - math-ph
+  - math.QA
+  - nlin.SI
+  metadata_note: v2 adds periodic symmetry-algebra discussion; core model, boundary and stationary results already present in v1. Registry-only update.
 - id: arxiv:2607.19649
   title: On the global well-posedness for the nonlocal Fokas-Lenells equation with the weighted Sobolev initial data on the line
   authors:
@@ -7676,15 +7700,16 @@
   title: Nonlinear Schrödinger equation in an exterior domain
   authors:
   - Roberto de A. Capistrano Filho
+  - Lionel Rosier
   - Bingyu Zhang
   url: https://arxiv.org/abs/2610.11968
   arxiv_id: '2610.11968'
   doi: null
   submitted: '2026-10-08'
   submitted_at: '2026-10-08T13:45:59Z'
-  updated: '2026-10-08'
-  version: v1
-  metadata_checked_at: '2026-10-11'
+  updated: '2026-10-13'
+  version: v2
+  metadata_checked_at: '2026-10-14'
   arxiv_categories:
   - math.AP
   - math.OC
@@ -7693,6 +7718,7 @@
   - exact controllability
   - exterior domain
   - non-trapping obstacle
+  metadata_note: v2 adds Lionel Rosier to the full author list; primary version comparison preserves the original research event.
 - id: arxiv:2610.09908
   title: Normalized nonlinear Schrödinger ground states on defected grids with unbounded defects
   authors:
@@ -7897,9 +7923,9 @@
   doi: null
   submitted: '2026-10-09'
   submitted_at: '2026-10-09T15:40:38Z'
-  updated: '2026-10-09'
-  version: v1
-  metadata_checked_at: '2026-10-12'
+  updated: '2026-10-13'
+  version: v2
+  metadata_checked_at: '2026-10-14'
   arxiv_categories:
   - math.AP
   keywords:
@@ -7907,6 +7933,7 @@
   - scattering
   - dbar problem
   - large data
+  metadata_note: v2 expands presentation; Theorem 1.1 retains the weighted Besov hypotheses and large-data scattering conclusion. Original announcement retained.
 - id: arxiv:2610.13752
   title: Asymmetric minimal mass blow-up for the quintic NLS on a star graph
   authors:
@@ -8134,3 +8161,423 @@
   - Lagrangian multiform
   - KP hierarchy
   - multidimensional compatibility
+- id: arxiv:2610.15507
+  url: https://arxiv.org/abs/2610.15507
+  doi: null
+  title: Orbital stability of solitary wave solutions of the derivative nonlinear Schrödinger equation in the endpoint case
+  authors:
+  - Jia Shen
+  - Yifei Wu
+  - Changping Yang
+  arxiv_id: '2610.15507'
+  submitted: '2026-10-11'
+  submitted_at: '2026-10-11T10:16:01Z'
+  updated: '2026-10-11'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - DNLS
+  - endpoint solitary wave
+  - orbital stability
+  - Bäcklund transformation
+- id: arxiv:2610.16378
+  url: https://arxiv.org/abs/2610.16378
+  doi: null
+  title: Spectral stability of resonant Y-solitons for the KP-II equation
+  authors:
+  - Tetsu Mizumachi
+  arxiv_id: '2610.16378'
+  submitted: '2026-10-12'
+  submitted_at: '2026-10-12T08:27:39Z'
+  updated: '2026-10-12'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - KP-II
+  - Y-soliton
+  - spectral stability
+  - Darboux transformation
+- id: arxiv:2610.14786
+  url: https://arxiv.org/abs/2610.14786
+  doi: null
+  title: Global Well-Posedness and Uniform Long-Time Control for a Class of Periodic NLS-Dysthe Equations
+  authors:
+  - Andrea Belloni
+  - Filippo Giuliani
+  arxiv_id: '2610.14786'
+  submitted: '2026-10-10'
+  submitted_at: '2026-10-10T10:16:35Z'
+  updated: '2026-10-10'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math-ph
+  - math.AP
+  keywords:
+  - NLS-Dysthe equation
+  - global well-posedness
+  - modulation approximation
+  - commuting mKdV flow
+- id: arxiv:2610.14585
+  url: https://arxiv.org/abs/2610.14585
+  doi: null
+  title: Spectral-Edge Continuation, Dimensional Crossover, and Endpoint Stability for Partially Confined Nonlinear Schrödinger Equations
+  authors:
+  - Xuexiu Zhong
+  arxiv_id: '2610.14585'
+  submitted: '2026-10-10'
+  submitted_at: '2026-10-10T05:04:04Z'
+  updated: '2026-10-10'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - partially confined NLS
+  - spectral edge
+  - dimensional crossover
+  - standing waves
+  - orbital stability
+- id: arxiv:2610.16564
+  url: https://arxiv.org/abs/2610.16564
+  doi: null
+  title: Long-time asymptotics for the focusing coupled Kundu-Eckhaus equation
+  authors:
+  - Tianwei Qiu
+  - Zhen Wang
+  arxiv_id: '2610.16564'
+  submitted: '2026-10-12'
+  submitted_at: '2026-10-12T10:46:06Z'
+  updated: '2026-10-12'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math-ph
+  - math.AP
+  - nlin.SI
+  keywords:
+  - coupled Kundu-Eckhaus equation
+  - Riemann-Hilbert problem
+  - gauge phase
+  - nonlinear steepest descent
+- id: arxiv:2610.16526
+  url: https://arxiv.org/abs/2610.16526
+  doi: null
+  title: Asymptotic stability and sharp decay near homogeneous solutions of a nonlinearly damped Schrödinger equation on the torus
+  authors:
+  - Boris Shakarov
+  arxiv_id: '2610.16526'
+  submitted: '2026-10-12'
+  submitted_at: '2026-10-12T10:15:48Z'
+  updated: '2026-10-12'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - damped NLS
+  - homogeneous solution
+  - asymptotic stability
+  - sharp decay
+- id: arxiv:2610.17182
+  url: https://arxiv.org/abs/2610.17182
+  doi: null
+  title: Local well-posedness for the exponentially modified Benjamin-Ono equation
+  authors:
+  - Thyago S. R. Santos
+  arxiv_id: '2610.17182'
+  submitted: '2026-10-12'
+  submitted_at: '2026-10-12T17:53:33Z'
+  updated: '2026-10-12'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - exponentially modified Benjamin-Ono equation
+  - Cole-Hopf transform
+  - local well-posedness
+  - frequency envelopes
+- id: arxiv:2610.15751
+  url: https://arxiv.org/abs/2610.15751
+  doi: null
+  title: Small-speed solitary-wave stability and global well-posedness for a Bessel-regularized Airy equation
+  authors:
+  - Germán Preciado López
+  arxiv_id: '2610.15751'
+  submitted: '2026-10-11'
+  submitted_at: '2026-10-11T16:32:46Z'
+  updated: '2026-10-11'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Bessel-regularized Airy equation
+  - solitary wave
+  - orbital stability
+  - KdV limit
+- id: arxiv:2610.17766
+  url: https://arxiv.org/abs/2610.17766
+  doi: null
+  title: 'Ground states of a logarithmic Schrödinger equation with a power perturbation in $\mathbb{R}^N$: existence, uniqueness and nondegeneracy'
+  authors:
+  - Jinqi Yan
+  - Bo You
+  arxiv_id: '2610.17766'
+  submitted: '2026-10-13'
+  submitted_at: '2026-10-13T05:52:14Z'
+  updated: '2026-10-13'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - logarithmic NLS
+  - ground states
+  - nondegeneracy
+  - Gausson
+  - power perturbation
+- id: arxiv:2610.14323
+  url: https://arxiv.org/abs/2610.14323
+  doi: null
+  title: Inverse Resonance Problem for the Half-Line Schrödinger Operator with a Complex Robin Boundary Condition
+  authors:
+  - Roman Shterenberg
+  arxiv_id: '2610.14323'
+  submitted: '2026-10-09'
+  submitted_at: '2026-10-09T21:06:52Z'
+  updated: '2026-10-09'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math-ph
+  keywords:
+  - inverse resonance
+  - Schrödinger operator
+  - complex Robin boundary
+  - finite-data stability
+- id: arxiv:2610.14978
+  url: https://arxiv.org/abs/2610.14978
+  doi: null
+  title: Uniqueness and stability for inverse potential scattering with multiple wavenumbers
+  authors:
+  - Dong Qiu
+  - Xiang Xu
+  - Yue Zhao
+  arxiv_id: '2610.14978'
+  submitted: '2026-10-10'
+  submitted_at: '2026-10-10T14:51:51Z'
+  updated: '2026-10-10'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - inverse potential scattering
+  - multiple wavenumbers
+  - increasing stability
+  - resolvent estimates
+- id: arxiv:2610.14469
+  url: https://arxiv.org/abs/2610.14469
+  doi: null
+  title: On equivalence between solution structures of the anti-self-dual Yang--Mills equations
+  authors:
+  - Shangshuai Li
+  arxiv_id: '2610.14469'
+  submitted: '2026-10-10'
+  submitted_at: '2026-10-10T01:52:39Z'
+  updated: '2026-10-10'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - ASDYM
+  - quasi-Wronskian
+  - quasi-Grammian
+  - matrix interpolation
+  - Darboux dressing
+- id: arxiv:2610.14949
+  url: https://arxiv.org/abs/2610.14949
+  doi: null
+  title: Higher-order semi-rational solutions of the (2+1)-dimensional nonlocal multi-component Yajima--Oikawa system
+  authors:
+  - Wenqiang Lu
+  - Kelei Tian
+  - Ying Xu
+  - Ge Yi
+  - Xiaoming Zhu
+  arxiv_id: '2610.14949'
+  submitted: '2026-10-10'
+  submitted_at: '2026-10-10T14:23:22Z'
+  updated: '2026-10-10'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - nonlocal Yajima-Oikawa system
+  - semi-rational solutions
+  - Gram determinant
+  - KP reduction
+- id: arxiv:2610.14078
+  url: https://arxiv.org/abs/2610.14078
+  doi: null
+  title: Distinguished bases and the braid group action for solutions of the tt*-Toda equations
+  authors:
+  - Yudai Hateruma
+  arxiv_id: '2610.14078'
+  submitted: '2026-10-08'
+  submitted_at: '2026-10-08T11:18:34Z'
+  updated: '2026-10-08'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.DG
+  keywords:
+  - tt*-Toda equations
+  - braid group action
+  - distinguished bases
+  - quantum differential equation
+- id: arxiv:2610.17941
+  url: https://arxiv.org/abs/2610.17941
+  doi: null
+  title: Cubic Nonlinear Schrödinger Systems and Orthonormal Fermionic Ground States in $\mathbb R$
+  authors:
+  - Bin Chen
+  - Yujin Guo
+  - Yong Luo
+  - Juncheng Wei
+  arxiv_id: '2610.17941'
+  submitted: '2026-10-13'
+  submitted_at: '2026-10-13T08:25:43Z'
+  updated: '2026-10-13'
+  version: v1
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math-ph
+  - math.AP
+  keywords:
+  - multicomponent cubic NLS
+  - classification
+  - nondegeneracy
+  - fermionic ground states
+- id: arxiv:2609.13377
+  url: https://arxiv.org/abs/2609.13377
+  doi: null
+  title: Integrable Chiral Quantum Field Theories with Spacetime-Dependent Interactions
+  authors:
+  - Pradip Kattel
+  arxiv_id: '2609.13377'
+  submitted: '2026-09-11'
+  submitted_at: '2026-09-11T18:00:02Z'
+  updated: '2026-10-12'
+  version: v2
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - cond-mat.str-el
+  - hep-th
+  - math-ph
+  - nlin.SI
+  - quant-ph
+  keywords:
+  - chiral quantum field theory
+  - spacetime-dependent coupling
+  - qKZ equation
+  - off-shell Bethe vectors
+- id: arxiv:2504.01701
+  url: https://arxiv.org/abs/2504.01701
+  doi: null
+  title: Twisted local G-wild mapping class groups
+  authors:
+  - Jean Douçot
+  - Gabriele Rembado
+  - Daisuke Yamakawa
+  arxiv_id: '2504.01701'
+  submitted: '2025-04-02'
+  submitted_at: '2025-04-02T13:01:09Z'
+  updated: '2026-10-12'
+  version: v4
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.AG
+  - math.GT
+  - nlin.SI
+  keywords:
+  - isomonodromic deformation
+  - irregular connections
+  - wild mapping class group
+  - reflection coset
+- id: arxiv:2505.23403
+  url: https://arxiv.org/abs/2505.23403
+  doi: null
+  title: Transverse dependence and asymptotic dimensional reduction of ground states for the logarithmic Schrödinger equation on a waveguide manifold
+  authors:
+  - Jun Wang
+  - Hichem Hajaiej
+  - Zhaoyang Yin
+  arxiv_id: '2505.23403'
+  submitted: '2025-05-29'
+  submitted_at: '2025-05-29T12:46:03Z'
+  updated: '2026-10-11'
+  version: v3
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - logarithmic NLS
+  - waveguide manifold
+  - dimensional reduction
+  - ground states
+- id: arxiv:2607.06867
+  url: https://arxiv.org/abs/2607.06867
+  doi: 10.21468/scipostphys.21.4.092
+  title: On Integrable Structures on Non-compact Boundaries in Three-Dimensional Gravity
+  authors:
+  - Hamed Adami
+  - Kristiansen Lara
+  - Anouchah Latifi
+  - René Meyer
+  arxiv_id: '2607.06867'
+  submitted: '2026-07-07'
+  submitted_at: '2026-07-07T23:47:48Z'
+  updated: '2026-09-14'
+  version: v3
+  metadata_checked_at: '2026-10-14'
+  arxiv_categories:
+  - hep-th
+  - gr-qc
+  keywords:
+  - three-dimensional gravity
+  - inverse scattering
+  - bi-Hamiltonian hierarchy
+  - finite-cutoff solitons
+  journal: SciPost Physics
+  year: 2026
+  volume: '21'
+  issue: '4'
+  article_number: 092
+  published: '2026-10-13'
+  metadata_note: Journal identity and available first-online bibliography verified from publisher-deposited Crossref metadata.
+- id: doi:10.1016/j.wavemoti.2026.103858
+  title: Riemann–Hilbert problem and RST-PINN method for the reverse space-time nonlocal complex three-component mKdV equation
+  authors:
+  - Meng Zhang
+  - Lingling Zhang
+  url: https://doi.org/10.1016/j.wavemoti.2026.103858
+  arxiv_id: null
+  metadata_checked_at: '2026-10-14'
+  keywords:
+  - nonlocal three-component mKdV
+  - Riemann-Hilbert problem
+  - RST-PINN
+  doi: 10.1016/j.wavemoti.2026.103858
+  journal: Wave Motion
+  year: 2026
+  article_number: '103858'
+  metadata_note: Publisher-deposited bibliography verified. Exact first-online date unavailable; October issue precision does not establish a day. Bibliography-only entry without an unsupported reading note.
