@@ -236,12 +236,15 @@ def test_bibliography_without_event_date() -> None:
     card = render_radar.render_frontier_entry(paper, entry)
     assert '<details' not in card and 'radar-expand-icon' not in card
     assert '<time' not in card and 'None' not in card
+    assert '待核实' not in card
+    assert 'Ada Example</span> <span class="radar-row-sources"' in card
     assert 'data-radar-date=""' in card and 'data-radar-added-on="2026-09-27"' in card
     assert 'Journal (2027)' in card and 'Ada Example' in card
     dated = {**entry, "paper_id": "dated", "signal_date": "2026-09-26", "added_on": "2026-09-28"}
     ordered = render_radar.all_frontier_entries({"entries": [dated, entry]}, {**papers, "dated": {**paper, "id": "dated"}})
     assert ordered[0] == entry  # A known event keeps its date, regardless of intake.
     assert '<time datetime="2026-09-26"' in render_radar.render_frontier_entry(paper, dated)
+    assert '上线日期待核实' not in render_radar.render_frontier_entry(paper, dated)
     for invalid in ({**entry, "added_on": None}, {**entry, "signal_type": "new-preprint"},
                     {**entry, "signal_date": ""}, {**entry, "reading_note": {}},
                     {k: v for k, v in entry.items() if k != "event_source"}):
@@ -257,6 +260,18 @@ def test_bibliography_without_event_date() -> None:
         pass
     else:
         raise AssertionError("bibliography-only selection requires a journal DOI")
+
+
+def test_confirmed_journal_publication_date() -> None:
+    paper_id = 'doi:10.1016/j.wavemoti.2026.103858'
+    paper = render_radar.paper_map()[paper_id]
+    data = render_radar.load_yaml(ROOT / 'data' / 'editions.yml')
+    entry = next(e for e in data['frontier']['entries'] if e['paper_id'] == paper_id)
+    assert paper['published'] == entry['signal_date'] == '2026-10-12'
+    card = render_radar.render_frontier_entry(paper, entry)
+    assert '<time datetime="2026-10-12"' in card
+    assert '待核实' not in card
+    assert render_radar.frontier_sort_date(entry) == '2026-10-12'
 
 
 def test_bibliographic_date_and_version_validation() -> None:
@@ -292,6 +307,7 @@ def main() -> None:
     test_enabled_frontier()
     test_bibliographic_date_and_version_validation()
     test_bibliography_without_event_date()
+    test_confirmed_journal_publication_date()
     group_page = render_radar.render_group_work(render_radar.load_yaml(ROOT / "data" / "group-work.yml"))
     for retained in ("data-group-papers", "MathSciNet", "Google Scholar", "Semantic Scholar", "arxiv.org/search", "Public notes", "courseNotes", "Reading projects"):
         assert retained in group_page, f"group page lost existing content: {retained}"
