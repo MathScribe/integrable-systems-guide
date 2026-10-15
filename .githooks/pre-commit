@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+if [ -x .venv/Scripts/python.exe ]; then
+    python=.venv/Scripts/python.exe
+elif [ -x .venv/bin/python ]; then
+    python=.venv/bin/python
+else
+    python=python3
+fi
+exec "$python" scripts/check_staged.py

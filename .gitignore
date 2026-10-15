@@ -25,3 +25,4 @@ local-github-pages-home.png
 # Local research-radar candidate audits and policy replays
 .agents/radar-evaluation/
 .radar-audit/
+.staged-check-*/
