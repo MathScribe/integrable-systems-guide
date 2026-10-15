@@ -20,6 +20,8 @@ def run(label: str, command: list[str]) -> None:
 def main() -> None:
     python = sys.executable
     run("paper registry identities", [python, "scripts/validate_radar.py"])
+    run("offline bibliography and links", [python, "scripts/validate_content.py"])
+    run("content quality regression tests", [python, "scripts/test_content_quality.py"])
     run("frontier data and controlled tags", [python, "scripts/validate_frontier_data.py"])
     run("source watermarks and discovery state", [python, "scripts/validate_radar_state.py"])
     run("radar regression tests", [python, "scripts/test_radar.py"])
