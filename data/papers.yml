@@ -38,19 +38,24 @@
   issue: '38'
   pages: '385701'
   year: 2026
-  metadata_checked_at: '2026-09-27'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - multi-component short pulse equation
   - integrable discretization
   - soliton systems
   - Pfaffian
+  submitted: '2026-07-06'
+  submitted_at: '2026-07-06T07:51:44Z'
+  updated: '2026-08-30'
+  version: v2
+  published: '2026-09-25'
 - id: arxiv:2607.01348
   title: Sharp Upper Bound for Amplitudes of Finite-Gap Solutions of the Modified Korteweg-de Vries Equation
   authors:
   - Otis C. Wright
   url: https://arxiv.org/abs/2607.01348
   arxiv_id: '2607.01348'
-  doi: null
+  doi: 10.1111/sapm.70307
   keywords:
   - finite-gap solutions
   - mKdV
@@ -58,6 +63,17 @@
   - finite-gap
   arxiv_categories:
   - nlin.SI
+  submitted: '2026-07-01'
+  submitted_at: '2026-07-01T18:07:23Z'
+  updated: '2026-07-01'
+  version: v1
+  journal: Studies in Applied Mathematics
+  volume: '157'
+  issue: '3'
+  year: 2026
+  published: '2026-09-16'
+  article_number: e70307
+  metadata_checked_at: '2026-10-15'
 - id: doi:10.1016/j.aim.2026.110961
   title: Orbital stability of breathers for coupled nonlinear Schrödinger equations
   authors:
@@ -103,12 +119,22 @@
   url: https://arxiv.org/abs/2605.28856
   arxiv_id: '2605.28856'
   doi: 10.58997/ejde.2026.37
-  metadata_checked_at: '2026-07-10'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - coupled Gerdjikov--Ivanov equations
   - inverse scattering
   - Jost solutions
   - Marchenko equations
+  submitted: '2026-05-17'
+  submitted_at: '2026-05-17T23:26:37Z'
+  updated: '2026-05-17'
+  version: v1
+  journal: Electronic Journal of Differential Equations
+  volume: '2026'
+  issue: 01-??
+  year: 2026
+  published: '2026-05-13'
+  pages: '37'
 - id: arxiv:2606.22808
   title: Exact Harmonic Dimensional Reduction and Conformal Lifting for Multicomponent $(3+1)$ Nonlinear Schrödinger Systems
   authors:
@@ -176,13 +202,17 @@
   submitted: '2026-02-14'
   updated: '2026-02-14'
   version: v1
-  metadata_checked_at: '2026-07-10'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - defocusing NLS
   - finite-genus background
   - Riemann--Hilbert problem
   - Painlevé XXXIV
   - long-time asymptotics
+  volume: '394'
+  issue: '2'
+  published: '2026-02-13'
+  article_number: '44'
 - id: doi:10.1111/j.1467-9590.2012.00568.x
   title: High Order Solutions and Generalized Darboux Transformations of Derivative Schrödinger Equation
   authors:
@@ -196,12 +226,18 @@
   volume: '130'
   pages: 317-344
   year: 2013
-  metadata_checked_at: '2026-07-10'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - DNLS
   - generalized Darboux transformation
   - higher-order solitons
   - rogue waves
+  submitted: '2012-05-20'
+  submitted_at: '2012-05-20T01:59:18Z'
+  updated: '2012-05-20'
+  version: v1
+  issue: '4'
+  published: '2012-08-31'
 - id: doi:10.1016/j.cnsns.2015.08.023
   title: Darboux transformation and classification of solution for mixed coupled nonlinear Schrödinger equations
   authors:
@@ -215,13 +251,17 @@
   volume: '32'
   pages: 285-304
   year: 2016
-  metadata_checked_at: '2026-07-10'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - mixed coupled NLS
   - Darboux transformation
   - dark solitons
   - breathers
   - rogue waves
+  submitted: '2014-07-19'
+  submitted_at: '2014-07-19T15:02:22Z'
+  updated: '2014-08-25'
+  version: v2
 - id: arxiv:2504.21315
   title: Long-time asymptotics of the coupled nonlinear Schrödinger equation in a weighted Sobolev space
   authors:
@@ -247,17 +287,22 @@
   - Jonatan Lenells
   url: https://arxiv.org/abs/0808.1534
   arxiv_id: '0808.1534'
-  doi: null
+  doi: 10.1016/j.physd.2008.07.005
   submitted: '2008-08-11'
   updated: '2008-08-11'
   version: v1
-  metadata_checked_at: '2026-07-11'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - DNLS
   - half-line
   - Fokas method
   - Riemann--Hilbert problem
   - global relation
+  journal: 'Physica D: Nonlinear Phenomena'
+  volume: '237'
+  issue: '23'
+  year: 2008
+  pages: 3008-3019
 - id: doi:10.1088/1361-6544/accfdf
   title: 'Partial degeneration of finite gap solutions to the Korteweg-de Vries equation: soliton gas and scattering on elliptic background'
   authors:
@@ -272,13 +317,17 @@
   submitted: '2022-10-04'
   updated: '2023-05-17'
   version: v3
-  metadata_checked_at: '2026-07-11'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - finite-gap degeneration
   - elliptic background
   - theta functions
   - soliton gas
   - scattering
+  volume: '36'
+  issue: '7'
+  published: '2023-05-30'
+  pages: 3622-3660
 - id: arxiv:2304.06541
   title: 'Soliton Gas: Theory, Numerics and Experiments'
   authors:
@@ -290,17 +339,23 @@
   - Gennady El
   url: https://arxiv.org/abs/2304.06541
   arxiv_id: '2304.06541'
-  doi: null
+  doi: 10.1103/physreve.109.061001
   submitted: '2023-04-13'
   updated: '2023-04-13'
   version: v1
-  metadata_checked_at: '2026-07-11'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - soliton gas
   - inverse scattering
   - thermodynamic finite-gap limit
   - generalized hydrodynamics
   - integrable turbulence
+  journal: Physical Review E
+  volume: '109'
+  issue: '6'
+  year: 2024
+  published: '2024-06-11'
+  article_number: '061001'
 - id: doi:10.1088/1361-6544/abcc4b
   title: Multicomponent Fokas-Lenells equations on Hermitian symmetric spaces
   authors:
@@ -316,13 +371,15 @@
   submitted: '2021-03-31'
   updated: '2021-03-31'
   version: v1
-  metadata_checked_at: '2026-07-12'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Fokas--Lenells equation
   - multicomponent systems
   - Hermitian symmetric spaces
   - bi-Hamiltonian structure
   - reductions
+  issue: '2'
+  published: '2021-01-27'
 - id: arxiv:2210.08417
   title: 'The Fokas-Lenells equation on the line: Global well-posedness with solitons'
   authors:
@@ -350,17 +407,23 @@
   - Catherine Sulem
   url: https://arxiv.org/abs/1905.02866
   arxiv_id: '1905.02866'
-  doi: null
+  doi: 10.1090/qam/1553
   submitted: '2019-05-08'
   updated: '2019-05-08'
   version: v1
-  metadata_checked_at: '2026-07-12'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - DNLS
   - global well-posedness
   - soliton resolution
   - spectral singularities
   - asymptotic stability
+  journal: Quarterly of Applied Mathematics
+  volume: '78'
+  issue: '1'
+  year: 2020
+  published: '2019-09-16'
+  pages: 33-73
 - id: doi:10.1088/1751-8113/43/43/434023
   title: Darboux transformation for two component derivative nonlinear Schrödinger equation
   authors:
@@ -376,29 +439,34 @@
   submitted: '2009-11-25'
   updated: '2009-12-09'
   version: v2
-  metadata_checked_at: '2026-07-12'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - two-component DNLS
   - Darboux transformation
   - N-soliton solutions
   - group-adjacent
+  issue: '43'
+  published: '2010-10-12'
 - id: arxiv:2606.10037
   title: 'Noncommutative NLS systems: Darboux--Bäcklund transformations and integrable discretisations'
   authors:
   - Sotiris Konstantinou-Rizos
   url: https://arxiv.org/abs/2606.10037
   arxiv_id: '2606.10037'
-  doi: null
+  doi: 10.1016/j.geomphys.2026.106019
   submitted: '2026-06-08'
   updated: '2026-06-08'
   version: v1
-  metadata_checked_at: '2026-07-13'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - noncommutative NLS
   - Kaup--Newell system
   - Darboux--Bäcklund transformation
   - integrable discretization
   - reduction groups
+  journal: Journal of Geometry and Physics
+  year: 2026
+  article_number: '106019'
 - id: arxiv:2507.21660
   title: Darboux transformations and related non-Abelian integrable differential-difference systems of the derivative nonlinear Schrödinger type
   authors:
@@ -406,17 +474,21 @@
   - Jing Ping Wang
   url: https://arxiv.org/abs/2507.21660
   arxiv_id: '2507.21660'
-  doi: null
+  doi: 10.1016/j.physd.2026.135119
   submitted: '2025-07-29'
   updated: '2025-07-29'
   version: v1
-  metadata_checked_at: '2026-07-13'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - non-Abelian DNLS
   - Darboux transformation
   - differential-difference systems
   - reduction groups
   - quasideterminants
+  journal: 'Physica D: Nonlinear Phenomena'
+  volume: '489'
+  year: 2026
+  article_number: '135119'
 - id: doi:10.1111/sapm.12287
   title: Multi-breathers and high order rogue waves for the nonlinear Schrödinger equation on the elliptic function background
   authors:
@@ -431,13 +503,17 @@
   submitted: '2018-12-11'
   updated: '2018-12-11'
   version: v1
-  metadata_checked_at: '2026-07-13'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - focusing NLS
   - elliptic background
   - multi-breathers
   - rogue waves
   - squared eigenfunctions
+  volume: '144'
+  issue: '1'
+  published: '2019-10-13'
+  pages: 46-101
 - id: doi:10.1088/0305-4470/35/36/310
   title: Integrable discretizations of derivative nonlinear Schroedinger equations
   authors:
@@ -452,13 +528,15 @@
   submitted: '2001-05-24'
   updated: '2002-08-28'
   version: v3
-  metadata_checked_at: '2026-07-13'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - DNLS
   - Kaup--Newell equation
   - Chen--Lee--Liu equation
   - Gerdjikov--Ivanov equation
   - integrable discretization
+  issue: '36'
+  published: '2002-08-27'
 - id: arxiv:2607.09333
   title: Discrete Gerdjikov-Ivanov models and their higher-order counterparts from the Cauchy matrix scheme
   authors:
@@ -468,9 +546,9 @@
   arxiv_id: '2607.09333'
   doi: null
   submitted: '2026-07-10'
-  updated: '2026-07-10'
-  version: v1
-  metadata_checked_at: '2026-07-14'
+  updated: '2026-07-13'
+  version: v2
+  metadata_checked_at: '2026-10-15'
   metadata_note: The current arXiv abstract and recent-list pages render the source title as 'Gerdjikov-vanov'; the abstract consistently identifies the Gerdjikov-Ivanov equation, so the registry normalizes the equation name and records the source-title typo.
   keywords:
   - Gerdjikov--Ivanov equation
@@ -488,17 +566,23 @@
   - Yong Chen
   url: https://arxiv.org/abs/2105.08412
   arxiv_id: '2105.08412'
-  doi: null
+  doi: 10.1007/s10255-024-1109-4
   submitted: '2021-05-18'
   updated: '2021-05-18'
   version: v1
-  metadata_checked_at: '2026-07-14'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Gerdjikov--Ivanov hierarchy
   - third-order flow
   - Riemann--Hilbert problem
   - high-order solitons
   - dressing method
+  journal: Acta Mathematicae Applicatae Sinica, English Series
+  volume: '40'
+  issue: '2'
+  year: 2024
+  published: '2024-03-27'
+  pages: 358-378
 - id: doi:10.1080/14029251.2015.996438
   title: Exact solutions of the Gerdjikov-Ivanov equation using Darboux transformations
   authors:
@@ -514,13 +598,14 @@
   submitted: '2015-01-29'
   updated: '2015-01-29'
   version: v1
-  metadata_checked_at: '2026-07-14'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Gerdjikov--Ivanov equation
   - Darboux transformation
   - quasideterminants
   - breathers
   - exact solutions
+  published: '2021'
 - id: arxiv:2607.10954
   title: Exact vector Akhmediev breathers dominated by a linearly stable frequency
   authors:
@@ -595,17 +680,23 @@
   - Anton Raskovalov
   url: https://arxiv.org/abs/2211.07014
   arxiv_id: '2211.07014'
-  doi: null
+  doi: 10.1111/sapm.12558
   submitted: '2022-11-13'
   updated: '2022-11-13'
   version: v1
-  metadata_checked_at: '2026-07-15'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Manakov system
   - vector breathers
   - dressing method
   - breather interactions
   - modulation instability
+  journal: Studies in Applied Mathematics
+  volume: '150'
+  issue: '3'
+  year: 2023
+  published: '2023-01-21'
+  pages: 841-882
 - id: arxiv:2607.10870
   title: Loop-type geometric folding of exact solutions of shifted nonlocal NLS and MKdV equations
   authors:
@@ -637,24 +728,25 @@
   submitted: '2021-06-27'
   updated: '2021-06-29'
   version: v2
-  metadata_checked_at: '2026-07-16'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - shifted nonlocal NLS
   - shifted nonlocal mKdV
   - one- and two-solitons
   - singularities
   - Hirota method
+  volume: '422'
 - id: arxiv:2110.01047
   title: 'Shifted nonlocal Kundu type equations: Soliton solutions'
   authors:
   - Aslı Pekcan
   url: https://arxiv.org/abs/2110.01047
   arxiv_id: '2110.01047'
-  doi: null
+  doi: 10.1016/j.padiff.2022.100292
   submitted: '2021-10-03'
   updated: '2021-12-24'
   version: v2
-  metadata_checked_at: '2026-07-16'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Kundu-type systems
   - Chen--Lee--Liu equation
@@ -662,6 +754,10 @@
   - Kaup--Newell equation
   - shifted nonlocal reductions
   - Hirota method
+  journal: Partial Differential Equations in Applied Mathematics
+  volume: '5'
+  year: 2022
+  article_number: '100292'
 - id: arxiv:1510.00480
   title: Complete integrability of Nonlocal Nonlinear Schrödinger equation
   authors:
@@ -669,17 +765,23 @@
   - A. Saxena
   url: https://arxiv.org/abs/1510.00480
   arxiv_id: '1510.00480'
-  doi: null
+  doi: 10.1063/1.4974018
   submitted: '2015-10-02'
   updated: '2016-06-14'
   version: v2
-  metadata_checked_at: '2026-07-16'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - nonlocal NLS hierarchy
   - squared solutions
   - inverse scattering
   - action-angle variables
   - Hamiltonian structures
+  journal: Journal of Mathematical Physics
+  volume: '58'
+  issue: '1'
+  year: 2017
+  published: '2017-01-23'
+  article_number: '013502'
 - id: arxiv:2607.13773
   title: Multihump-Multivalley Soliton Families on a Plane Wave Background in Birefringent Optical Fibers
   authors:
@@ -746,7 +848,7 @@
   submitted: '2024-09-24'
   updated: '2024-09-24'
   version: v1
-  metadata_checked_at: '2026-07-17'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - nonlinear Schrödinger equation
   - inverse scattering perturbation theory
@@ -754,6 +856,7 @@
   - strongly interacting solitons
   - optical fiber experiment
   - spectral control
+  issue: '19'
 - id: arxiv:2508.17534
   title: A vectorial Darboux transformation for integrable matrix versions of the Fokas-Lenells equation
   authors:
@@ -763,9 +866,9 @@
   arxiv_id: '2508.17534'
   doi: 10.1088/1751-8121/aeb3d7
   submitted: '2025-08-24'
-  updated: '2026-02-11'
-  version: v2
-  metadata_checked_at: '2026-10-14'
+  updated: '2026-10-13'
+  version: v3
+  metadata_checked_at: '2026-10-15'
   keywords:
   - matrix Fokas--Lenells equation
   - negative Kaup--Newell flow
@@ -912,13 +1015,14 @@
   journal: 'Physica D: Nonlinear Phenomena'
   article_number: '134706'
   year: 2025
-  metadata_checked_at: '2026-07-19'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - multi-component Fokas--Lenells system
   - KP--Toda reduction
   - Gram determinants
   - dark solitons
   - resonant breathers
+  volume: '477'
 - id: doi:10.1016/j.physd.2024.134111
   title: Rogue waves and their patterns for the coupled Fokas-Lenells equations
   authors:
@@ -934,13 +1038,14 @@
   published: 2024-05
   submitted: '2023-07-05'
   version: v1
-  metadata_checked_at: '2026-07-19'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - coupled Fokas--Lenells equation
   - rogue-wave patterns
   - Darboux transformation
   - Okamoto polynomials
   - asymptotic decomposition
+  updated: '2023-07-05'
 - id: doi:10.1098/rspa.2018.0806
   title: General rogue wave solutions of the coupled Fokas–Lenells equations and non-recursive Darboux transformation
   authors:
@@ -1003,7 +1108,7 @@
   submitted: '2025-10-12'
   updated: '2026-04-13'
   version: v3
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - three-dimensional gravity
   - Chern--Simons theory
@@ -1011,6 +1116,7 @@
   - inverse scattering
   - Gelfand--Levitan--Marchenko equation
   - mKdV hierarchy
+  issue: '7'
 - id: doi:10.1007/JHEP07(2026)123
   title: Integrable deformations of the Breitenlohner--Maison model from 4d Chern--Simons theory
   authors:
@@ -1027,13 +1133,14 @@
   submitted: '2026-04-29'
   updated: '2026-06-04'
   version: v2
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Breitenlohner--Maison model
   - 4d Chern--Simons theory
   - Yang--Baxter deformation
   - integrable sigma model
   - general relativity
+  issue: '7'
 - id: doi:10.1007/s10955-026-03663-6
   title: A Two-HCIZ Gaussian Matrix Model for Non-Intersecting Brownian Bridges
   authors:
@@ -1049,13 +1156,14 @@
   submitted: '2025-10-25'
   updated: '2026-04-07'
   version: v2
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - HCIZ integral
   - non-intersecting Brownian bridges
   - matrix model
   - Riemann--Hilbert problem
   - 2D Toda tau function
+  issue: '8'
 - id: arxiv:2606.22438
   title: Long-time asymptotics of a full arbitrary-genus dark soliton gas for the defocusing nonlinear Schrödinger equation
   authors:
@@ -1065,13 +1173,17 @@
   url: https://arxiv.org/abs/2606.22438
   arxiv_id: '2606.22438'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Riemann--Hilbert problem
   - spectral curve
   - nonlinear steepest descent
   arxiv_categories:
   - nlin.SI
+  submitted: '2026-06-21'
+  submitted_at: '2026-06-21T11:04:54Z'
+  updated: '2026-06-21'
+  version: v1
 - id: arxiv:2606.24925
   title: Invariants for a family of discrete equations with the Laurent property
   authors:
@@ -1079,10 +1191,14 @@
   url: https://arxiv.org/abs/2606.24925
   arxiv_id: '2606.24925'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - integrable discretization
   - Laurent property
+  submitted: '2026-06-21'
+  submitted_at: '2026-06-21T02:04:32Z'
+  updated: '2026-06-21'
+  version: v1
 - id: arxiv:2606.23167
   title: Bihamiltonian structure of the (n,1)-type rational reductions of the 2D-Toda hierarchy
   authors:
@@ -1091,7 +1207,7 @@
   url: https://arxiv.org/abs/2606.23167
   arxiv_id: '2606.23167'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Hamiltonian structure
   - Poisson structure
@@ -1099,6 +1215,10 @@
   arxiv_categories:
   - nlin.SI
   - math-ph
+  submitted: '2026-06-22'
+  submitted_at: '2026-06-22T11:08:44Z'
+  updated: '2026-06-22'
+  version: v1
 - id: arxiv:2606.24662
   title: A symmetry reduction of the Painlevé IV hierarchy to the Flaschka--Newell Painlevé II hierarchy
   authors:
@@ -1107,7 +1227,7 @@
   url: https://arxiv.org/abs/2606.24662
   arxiv_id: '2606.24662'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Lax pair
   - Hamiltonian structure
@@ -1116,6 +1236,10 @@
   arxiv_categories:
   - math-ph
   - nlin.SI
+  submitted: '2026-06-23'
+  submitted_at: '2026-06-23T14:52:31Z'
+  updated: '2026-06-25'
+  version: v2
 - id: arxiv:2606.24273
   title: Arithmetic Supports of Lax Difference Hierarchies
   authors:
@@ -1123,13 +1247,17 @@
   url: https://arxiv.org/abs/2606.24273
   arxiv_id: '2606.24273'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Lax pair
   - finite-gap
   arxiv_categories:
   - nlin.SI
   - math-ph
+  submitted: '2026-06-23'
+  submitted_at: '2026-06-23T07:57:43Z'
+  updated: '2026-06-23'
+  version: v1
 - id: doi:10.1103/hvzz-8zmt
   title: Noninvertible Kramers-Wannier duality symmetries for the discrete-time quantum Ising chain
   authors:
@@ -1143,10 +1271,15 @@
   updated: '2026-06-25'
   published: '2026-06-23'
   journal: Physical Review B
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - inverse scattering
   - integrable discretization
+  version: v2
+  volume: '113'
+  issue: '23'
+  year: 2026
+  article_number: '235141'
 - id: arxiv:2606.25846
   title: Tri-Hamiltonian structure of an asymmetric generalized Ablowitz-Ladik hierarchy and a Frobenius manifold
   authors:
@@ -1158,7 +1291,7 @@
   doi: null
   submitted: '2026-06-24'
   updated: '2026-06-24'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Hamiltonian structure
   - Poisson structure
@@ -1166,6 +1299,7 @@
   arxiv_categories:
   - nlin.SI
   - math-ph
+  version: v1
 - id: arxiv:2606.25802
   title: Global Results on the Classification of Two-Component Integrable Evolutionary Systems
   authors:
@@ -1175,12 +1309,16 @@
   url: https://arxiv.org/abs/2606.25802
   arxiv_id: '2606.25802'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Global Results on
   - Drinfeld--Sokolov hierarchy
   arxiv_categories:
   - nlin.SI
+  submitted: '2026-06-24'
+  submitted_at: '2026-06-24T13:19:05Z'
+  updated: '2026-06-27'
+  version: v2
 - id: doi:10.1103/g7hk-tlq1
   title: 'Taxonomy of integrable and ground-state solvable models: Jastrow wave functions on graphs and parent Hamiltonians'
   authors:
@@ -1190,12 +1328,17 @@
   arxiv_id: '2602.22315'
   doi: 10.1103/g7hk-tlq1
   submitted: '2026-02-25'
-  updated: '2026-06-24'
+  updated: '2026-08-17'
   published: '2026-06-24'
   journal: Physical Review B
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Hamiltonian structure
+  version: v3
+  year: 2026
+  volume: '113'
+  issue: '23'
+  article_number: '235151'
 - id: arxiv:2606.27125
   title: 'The Ising Model Coupled to 2D Gravity: Critical Partition Function'
   authors:
@@ -1205,7 +1348,7 @@
   url: https://arxiv.org/abs/2606.27125
   arxiv_id: '2606.27125'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Riemann--Hilbert problem
   - tau function
@@ -1213,6 +1356,10 @@
   arxiv_categories:
   - math-ph
   - nlin.SI
+  submitted: '2026-06-25'
+  submitted_at: '2026-06-25T15:02:02Z'
+  updated: '2026-06-25'
+  version: v1
 - id: arxiv:2606.26526
   title: Integrable pentagram-type maps on polyhedra via partial difference operators
   authors:
@@ -1222,13 +1369,14 @@
   doi: null
   submitted: '2026-06-25'
   updated: '2026-06-25'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Lax pair
   - Poisson structure
   arxiv_categories:
   - nlin.SI
   - math-ph
+  version: v1
 - id: arxiv:2606.26510
   title: Symmetries of the Generalized Yang--Baxter Equations
   authors:
@@ -1262,12 +1410,13 @@
   doi: null
   submitted: '2026-06-26'
   updated: '2026-06-26'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Painlevé
   arxiv_categories:
   - nlin.SI
   - math-ph
+  version: v1
 - id: arxiv:2606.28250
   title: Perturbation theory for kinks of the defocusing modified Korteweg--de Vries equation
   authors:
@@ -1277,13 +1426,23 @@
   - Dimitrios J. Frantzeskakis
   url: https://arxiv.org/abs/2606.28250
   arxiv_id: '2606.28250'
-  doi: null
-  metadata_checked_at: '2026-07-20'
+  doi: 10.1111/sapm.70302
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Perturbation theory for
   arxiv_categories:
   - nlin.SI
   - nlin.PS
+  submitted: '2026-06-26'
+  submitted_at: '2026-06-26T16:36:58Z'
+  updated: '2026-06-26'
+  version: v1
+  journal: Studies in Applied Mathematics
+  volume: '157'
+  issue: '3'
+  year: 2026
+  published: '2026-09-11'
+  article_number: e70302
 - id: arxiv:2606.29103
   title: Reduced Trilinear Reformulation of the Nakamura Conjecture
   authors:
@@ -1291,13 +1450,17 @@
   url: https://arxiv.org/abs/2606.29103
   arxiv_id: '2606.29103'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Reduced Trilinear Reformulation
   - bilinear method
   arxiv_categories:
   - nlin.SI
   - gr-qc
+  submitted: '2026-06-27'
+  submitted_at: '2026-06-27T22:48:35Z'
+  updated: '2026-06-27'
+  version: v1
 - id: arxiv:2606.29263
   title: Conserved quantities of discretizations by polarization
   authors:
@@ -1305,16 +1468,21 @@
   - Yuri B. Suris
   url: https://arxiv.org/abs/2606.29263
   arxiv_id: '2606.29263'
-  doi: null
+  doi: 10.46298/ocnmp.18664
   submitted: '2026-06-28'
-  updated: '2026-06-28'
-  metadata_checked_at: '2026-07-20'
+  updated: '2026-07-30'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - integrable discretization
   - Hamiltonian structure
   arxiv_categories:
   - nlin.SI
   - math.NA
+  version: v2
+  journal: Open Communications in Nonlinear Mathematical Physics
+  year: 2026
+  published: '2026-07-31'
+  article_number: '18664'
 - id: arxiv:2606.29156
   title: Tritronquée Painlevé II asymptotics for the focusing nonlinear Schrödinger equation with nonzero boundary conditions
   authors:
@@ -1326,13 +1494,14 @@
   doi: null
   submitted: '2026-06-28'
   updated: '2026-07-05'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Riemann--Hilbert problem
   - Painlevé
   - nonlinear steepest descent
   arxiv_categories:
   - nlin.SI
+  version: v2
 - id: arxiv:2606.30717
   title: 'The auxiliary-deformed Breitenlohner--Maison model: duality frames and higher-dimensional origin'
   authors:
@@ -1341,9 +1510,13 @@
   url: https://arxiv.org/abs/2606.30717
   arxiv_id: '2606.30717'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - The auxiliary-deformed Breitenlohner--Maison
+  submitted: '2026-06-29'
+  submitted_at: '2026-06-29T18:00:01Z'
+  updated: '2026-07-01'
+  version: v2
 - id: arxiv:2607.01493
   title: 'Learning Lax Pairs: Revisiting the Classical Paradigm'
   authors:
@@ -1354,12 +1527,16 @@
   url: https://arxiv.org/abs/2607.01493
   arxiv_id: '2607.01493'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Lax pair
   arxiv_categories:
   - nlin.SI
   - math-ph
+  submitted: '2026-07-01'
+  submitted_at: '2026-07-01T21:43:13Z'
+  updated: '2026-07-01'
+  version: v1
 - id: arxiv:2607.01545
   title: Learning Effective Soliton Dynamics from Scattering Data
   authors:
@@ -1371,12 +1548,13 @@
   doi: null
   submitted: '2026-07-01'
   updated: '2026-07-01'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - inverse scattering
   arxiv_categories:
   - physics.comp-ph
   - nlin.SI
+  version: v1
 - id: arxiv:2607.02093
   title: Open-boundary integrable quantum circuits with different geometries
   authors:
@@ -1388,10 +1566,11 @@
   doi: null
   submitted: '2026-07-02'
   updated: '2026-07-02'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Yang--Baxter equation
   - transfer matrix
+  version: v1
 - id: arxiv:2607.03555
   title: Maximal Densities of Finite-Gap Solutions of the Sine-Gordon Equation
   authors:
@@ -1399,12 +1578,16 @@
   url: https://arxiv.org/abs/2607.03555
   arxiv_id: '2607.03555'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Lax pair
   - Yang--Baxter equation
   arxiv_categories:
   - nlin.SI
+  submitted: '2026-07-03'
+  submitted_at: '2026-07-03T18:41:31Z'
+  updated: '2026-07-03'
+  version: v1
 - id: doi:10.1103/n2hm-lk94
   title: Integrable black hole dynamics in the asymptotic structure of AdS$_{3}$
   authors:
@@ -1418,9 +1601,14 @@
   updated: '2025-04-28'
   published: '2026-07-06'
   journal: Physical Review D
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Integrable black hole
+  version: v1
+  volume: '114'
+  issue: '2'
+  year: 2026
+  article_number: '026010'
 - id: arxiv:2607.05681
   title: Lund--Regge Geometry and Integrability of a Generalized Konno--Oono System
   authors:
@@ -1431,12 +1619,13 @@
   doi: null
   submitted: '2026-07-06'
   updated: '2026-07-06'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - conservation laws
   arxiv_categories:
   - nlin.SI
   - math-ph
+  version: v1
 - id: arxiv:2607.06119
   title: Wave Kinetics and Thermalization in Kadomtsev--Petviashvili-I System
   authors:
@@ -1447,11 +1636,15 @@
   url: https://arxiv.org/abs/2607.06119
   arxiv_id: '2607.06119'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Wave Kinetics and
   - inverse scattering
   - wave kinetics
+  submitted: '2026-07-07'
+  submitted_at: '2026-07-07T10:27:32Z'
+  updated: '2026-07-07'
+  version: v1
 - id: arxiv:2504.05200
   title: Affine hypersurfaces and superintegrable systems
   authors:
@@ -1467,9 +1660,11 @@
   submitted: '2025-04-07'
   updated: '2026-06-09'
   published: '2026-07-07'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Affine hypersurfaces and
+  version: v2
+  volume: '114'
 - id: arxiv:2607.06942
   title: Invariant Measures for Soliton Systems Generated by Mealy Automata
   authors:
@@ -1478,10 +1673,14 @@
   url: https://arxiv.org/abs/2607.06942
   arxiv_id: '2607.06942'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Invariant Measures for
   - generalized hydrodynamics
+  submitted: '2026-07-08'
+  submitted_at: '2026-07-08T03:11:43Z'
+  updated: '2026-07-08'
+  version: v1
 - id: arxiv:2607.06980
   title: On difference-differential Lax pairs and integrals of Painlevé equations in finite characteristic
   authors:
@@ -1491,10 +1690,14 @@
   url: https://arxiv.org/abs/2607.06980
   arxiv_id: '2607.06980'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Lax pair
   - Painlevé
+  submitted: '2026-07-08'
+  submitted_at: '2026-07-08T04:02:50Z'
+  updated: '2026-07-08'
+  version: v1
 - id: arxiv:2607.07345
   title: Spin-current-controlled anisotropic deformation of magnetic lump solitons
   authors:
@@ -1505,15 +1708,20 @@
   - Zhan-Ying Yang
   url: https://arxiv.org/abs/2607.07345
   arxiv_id: '2607.07345'
-  doi: null
+  doi: 10.1016/j.chaos.2026.119252
   submitted: '2026-07-08'
   updated: '2026-07-08'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Darboux transformation
   arxiv_categories:
   - nlin.PS
   - nlin.SI
+  version: v1
+  journal: Chaos, Solitons & Fractals
+  volume: '213'
+  year: 2026
+  article_number: '119252'
 - id: arxiv:2607.07617
   title: Loop Equations Characterize Random Matrix Statistics
   authors:
@@ -1522,9 +1730,13 @@
   url: https://arxiv.org/abs/2607.07617
   arxiv_id: '2607.07617'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - loop equations
+  submitted: '2026-07-08'
+  submitted_at: '2026-07-08T16:33:33Z'
+  updated: '2026-09-09'
+  version: v2
 - id: doi:10.1103/y66t-t8zw
   title: Integrability from a single conservation law in quantum spin chains
   authors:
@@ -1533,10 +1745,10 @@
   arxiv_id: '2508.20713'
   doi: 10.1103/y66t-t8zw
   submitted: '2025-08-28'
-  updated: '2026-02-02'
+  updated: '2026-08-09'
   published: '2026-07-08'
   journal: Physical Review B
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Yang--Baxter equation
   - conservation laws
@@ -1544,6 +1756,11 @@
   arxiv_categories:
   - cond-mat.stat-mech
   - math-ph
+  version: v5
+  volume: '114'
+  issue: '5'
+  year: 2026
+  article_number: 055108
 - id: arxiv:2607.08901
   title: Integrability of Cauchy problems for discrete conformal maps and circle patterns
   authors:
@@ -1554,9 +1771,10 @@
   doi: null
   submitted: '2026-07-09'
   updated: '2026-07-09'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - integrable discretization
+  version: v1
 - id: arxiv:2607.09180
   title: Dispersionless modified DKP hierarchy as the Yang--Baxter equation
   authors:
@@ -1564,10 +1782,14 @@
   url: https://arxiv.org/abs/2607.09180
   arxiv_id: '2607.09180'
   doi: null
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Yang--Baxter equation
   - tau function
+  submitted: '2026-07-10'
+  submitted_at: '2026-07-10T08:14:31Z'
+  updated: '2026-07-10'
+  version: v1
 - id: arxiv:2607.15132
   title: Periodic orbits and quantum many-body scars in integrable spin chains
   authors:
@@ -1578,11 +1800,12 @@
   arxiv_id: '2607.15132'
   doi: null
   submitted: '2026-07-16'
-  updated: '2026-07-16'
-  metadata_checked_at: '2026-07-20'
+  updated: '2026-08-04'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Bethe ansatz
   - quantum integrability
+  version: v2
 - id: arxiv:2607.15013
   title: Quasi-Pfaffian Solutions to Integrable Systems via Sylvester-Moutard Transformations
   authors:
@@ -1593,12 +1816,13 @@
   doi: null
   submitted: '2026-07-16'
   updated: '2026-07-16'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Pfaffian
   - Bäcklund transformation
   arxiv_categories:
   - math-ph
+  version: v1
 - id: arxiv:2607.12142
   title: Computational homological methods for integrable field theories
   authors:
@@ -1611,13 +1835,14 @@
   doi: null
   submitted: '2026-07-13'
   updated: '2026-07-13'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Chern--Simons theory
   - Lax pair
   arxiv_categories:
   - hep-th
   - math-ph
+  version: v1
 - id: arxiv:2607.08536
   title: Soft edge limit of the Laguerre beta-ensemble at the lower edge
   authors:
@@ -1629,9 +1854,10 @@
   doi: null
   submitted: '2026-07-09'
   updated: '2026-07-09'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - integrable probability
+  version: v1
 - id: arxiv:2607.04075
   title: Wei-Norman approach for non-Hermitian driven spin-S systems and its application to defect freezing
   authors:
@@ -1642,9 +1868,10 @@
   doi: null
   submitted: '2026-07-05'
   updated: '2026-07-05'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - quantum integrability
+  version: v1
 - id: arxiv:2607.02359
   title: Correlation and entanglement dynamics of free fermions in disguise
   authors:
@@ -1657,10 +1884,11 @@
   doi: null
   submitted: '2026-07-02'
   updated: '2026-07-15'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - quantum integrability
   - conservation laws
+  version: v2
 - id: arxiv:2607.00594
   title: Bethe Vectors in Quantum Integrable Models with Classical Symmetries
   authors:
@@ -1677,11 +1905,13 @@
   published: '2026-08-28'
   submitted: '2026-07-01'
   updated: '2026-07-01'
-  metadata_checked_at: '2026-09-04'
+  metadata_checked_at: '2026-10-15'
   metadata_note: The registry now uses the version-of-record title and journal metadata; the routine publication does not create a second radar event.
   keywords:
   - Bethe ansatz
   - quantum integrability
+  version: v1
+  issue: '10'
 - id: arxiv:2607.00231
   title: 'The 2j-k and j-2k Bi-orthogonal Polynomials on the Unit Circle: Further Properties and Riemann-Hilbert Characterizations'
   authors:
@@ -1692,12 +1922,13 @@
   doi: null
   submitted: '2026-06-30'
   updated: '2026-06-30'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Riemann--Hilbert problem
   - multiple orthogonal polynomials
   arxiv_categories:
   - math.CA
+  version: v1
 - id: arxiv:2606.27337
   title: Exact subsystem dynamics in the deterministic Floquet-PXP model
   authors:
@@ -1722,10 +1953,11 @@
   doi: null
   submitted: '2026-06-25'
   updated: '2026-06-25'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - integrable probability
   - nonlinear steepest descent
+  version: v1
 - id: arxiv:2606.27186
   title: An integrable approach to macroscopic fluctuation theory for the multispecies SSEP
   authors:
@@ -1735,13 +1967,14 @@
   doi: null
   submitted: '2026-06-25'
   updated: '2026-06-25'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - AKNS hierarchy
   - inverse scattering
   arxiv_categories:
   - cond-mat.stat-mech
   - math-ph
+  version: v1
 - id: arxiv:2606.25739
   title: 'A 2+1-dimensional extended Dym equation: moving boundary problems solvable via Painlevé II symmetry reduction'
   authors:
@@ -1770,9 +2003,10 @@
   doi: null
   submitted: '2026-06-22'
   updated: '2026-06-22'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - quantum integrability
+  version: v1
 - id: arxiv:2606.22004
   title: The asymmetric five vertex model on a rectangle
   authors:
@@ -1785,10 +2019,11 @@
   doi: null
   submitted: '2026-06-20'
   updated: '2026-06-20'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - integrable probability
   - transfer matrix
+  version: v1
 - id: arxiv:2607.13673
   title: 'Deriving the AdS₃ × S³ × T⁴ Quantum Spectral Curve I: Y-system and discontinuity relations'
   authors:
@@ -1801,11 +2036,12 @@
   arxiv_id: '2607.13673'
   doi: null
   submitted: '2026-07-15'
-  updated: '2026-07-15'
-  metadata_checked_at: '2026-07-20'
+  updated: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - quantum integrability
   - Bethe ansatz
+  version: v2
 - id: arxiv:2606.18701
   title: An integrable semi-discretization of the two-component Hunter-Saxton equation
   authors:
@@ -1817,13 +2053,14 @@
   arxiv_id: '2606.18701'
   doi: null
   submitted: '2026-06-17'
-  updated: '2026-06-17'
-  metadata_checked_at: '2026-07-20'
+  updated: '2026-09-02'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - integrable discretization
   - bilinear method
   arxiv_categories:
   - nlin.SI
+  version: v2
 - id: arxiv:2606.17238
   title: Vector peakon equations and isospectral flows in Clifford algebras
   authors:
@@ -1835,7 +2072,7 @@
   doi: 10.1016/j.cnsns.2026.110892
   submitted: '2026-06-15'
   updated: '2026-10-02'
-  metadata_checked_at: '2026-10-05'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Lax pair
   - Hamiltonian structure
@@ -1850,6 +2087,7 @@
   year: 2026
   article_number: '110892'
   metadata_note: arXiv v2 contains minor revisions. Publisher-deposited Crossref bibliography verified; 2026-10 is a publication month, not a verified first-online day. Original preprint event retained.
+  volume: '163'
 - id: arxiv:2606.16789
   title: Pole Dynamics, Linearization, and Perturbations of the Satsuma--Mimura Equation
   authors:
@@ -1859,15 +2097,20 @@
   - Yingnan Zhang
   url: https://arxiv.org/abs/2606.16789
   arxiv_id: '2606.16789'
-  doi: null
+  doi: 10.46298/ocnmp.18568
   submitted: '2026-06-15'
-  updated: '2026-06-15'
-  metadata_checked_at: '2026-07-20'
+  updated: '2026-07-11'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Lax pair
   - integrable discretization
   arxiv_categories:
   - nlin.SI
+  version: v2
+  journal: Open Communications in Nonlinear Mathematical Physics
+  year: 2026
+  published: '2026-07-14'
+  article_number: '18568'
 - id: doi:10.1007/s10955-026-03637-8
   title: Matrix-Product State Skeletons in Onsager-Integrable Quantum Chains
   authors:
@@ -1878,10 +2121,18 @@
   doi: 10.1007/s10955-026-03637-8
   journal: Journal of Statistical Physics
   published: '2026-06-15'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - quantum integrability
   - transfer matrix
+  submitted: '2025-11-10'
+  submitted_at: '2025-11-10T15:38:08Z'
+  updated: '2026-06-18'
+  version: v2
+  volume: '193'
+  issue: '6'
+  year: 2026
+  article_number: '73'
 - id: doi:10.1007/jhep06(2026)173
   title: On the Integrable Structure of the SU(2) Wess--Zumino--Novikov--Witten Model
   authors:
@@ -1892,10 +2143,18 @@
   doi: 10.1007/JHEP06(2026)173
   journal: Journal of High Energy Physics
   published: '2026-06-16'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - quantum integrability
   - Bethe ansatz
+  submitted: '2026-01-28'
+  submitted_at: '2026-01-28T19:02:16Z'
+  updated: '2026-06-22'
+  version: v2
+  volume: '2026'
+  issue: '6'
+  year: 2026
+  article_number: '173'
 - id: doi:10.21468/scipostphys.20.6.164
   title: Strong Zero Modes in Integrable Spin-S Chains
   authors:
@@ -1907,10 +2166,18 @@
   doi: 10.21468/SciPostPhys.20.6.164
   journal: SciPost Physics
   published: '2026-06-15'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - quantum integrability
   - Bethe ansatz
+  submitted: '2025-12-08'
+  submitted_at: '2025-12-08T17:28:21Z'
+  updated: '2025-12-08'
+  version: v1
+  volume: '20'
+  issue: '6'
+  year: 2026
+  article_number: '164'
 - id: doi:10.1088/1751-8121/ae767e
   title: Special Solutions to Five Autonomous Integrable Partial Difference Equations via the Third and Sixth Painlevé Equations and the Garnier System in Two Variables
   authors:
@@ -1919,10 +2186,14 @@
   doi: 10.1088/1751-8121/ae767e
   journal: 'Journal of Physics A: Mathematical and Theoretical'
   published: '2026-06-16'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Painlevé
   - integrable discretization
+  volume: '59'
+  issue: '24'
+  year: 2026
+  pages: '245703'
 - id: doi:10.46298/ocnmp.18125
   title: Liouville Integrable Lotka--Volterra Systems
   authors:
@@ -1934,10 +2205,16 @@
   doi: 10.46298/ocnmp.18125
   journal: Open Communications in Nonlinear Mathematical Physics
   published: '2026-06-18'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Hamiltonian structure
   - Poisson structure
+  submitted: '2026-04-02'
+  submitted_at: '2026-04-02T08:03:27Z'
+  updated: '2026-06-15'
+  version: v4
+  year: 2026
+  article_number: '18125'
 - id: doi:10.1209/0295-5075/ae7152
   title: Quantum Simulation of Non-Unitary Operators Generated by R-Matrices in the Yang--Baxter Equation
   authors:
@@ -1949,10 +2226,14 @@
   doi: 10.1209/0295-5075/ae7152
   journal: Europhysics Letters
   published: '2026-06-17'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Yang--Baxter equation
   - quantum integrability
+  volume: '155'
+  issue: '1'
+  year: 2026
+  pages: '18001'
 - id: doi:10.46298/ocnmp.18295
   title: 'Moving Boundary Problems for a Cuspon Equation and Reciprocal Associates: Exact Solution via Painlevé Symmetry Reduction'
   authors:
@@ -1963,12 +2244,18 @@
   doi: 10.46298/ocnmp.18295
   journal: Open Communications in Nonlinear Mathematical Physics
   published: '2026-06-16'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Painlevé
   - Bäcklund transformation
   arxiv_categories:
   - nlin.SI
+  submitted: '2026-05-21'
+  submitted_at: '2026-05-21T14:45:18Z'
+  updated: '2026-06-12'
+  version: v3
+  year: 2026
+  article_number: '18295'
 - id: doi:10.1103/sz13-9shg
   title: Experimental Observation of Ballistic Correlations in Integrable Turbulence
   authors:
@@ -2008,11 +2295,15 @@
   doi: 10.1137/25M1764062
   journal: SIAM Journal on Mathematical Analysis
   published: '2026-07-15'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - inverse scattering
   - NLS
   - Riemann--Hilbert problem
+  volume: '58'
+  issue: '4'
+  year: 2026
+  pages: 3510-3527
 - id: doi:10.1007/s11005-026-02119-y
   title: Riemann--Hilbert Approach for the Nonlocal Modified Korteweg--de Vries Equation with a Step-Like Oscillating Background
   authors:
@@ -2022,13 +2313,21 @@
   doi: 10.1007/s11005-026-02119-y
   journal: Letters in Mathematical Physics
   published: '2026-07-15'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Riemann--Hilbert problem
   - mKdV
   - inverse scattering
   arxiv_categories:
   - nlin.SI
+  submitted: '2026-01-22'
+  submitted_at: '2026-01-22T10:46:34Z'
+  updated: '2026-07-16'
+  version: v2
+  volume: '116'
+  issue: '4'
+  year: 2026
+  article_number: '84'
 - id: doi:10.1103/99hb-q8bd
   title: Yang--Baxter Sigma Model from Twistor Space
   authors:
@@ -2043,13 +2342,17 @@
   article_number: 046008
   year: 2026
   published: '2026-08-10'
-  metadata_checked_at: '2026-08-12'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Yang--Baxter equation
   - Chern--Simons theory
   arxiv_categories:
   - hep-th
   - math-ph
+  submitted: '2026-02-11'
+  submitted_at: '2026-02-11T19:07:48Z'
+  updated: '2026-07-16'
+  version: v3
 - id: doi:10.1088/1361-6544/ae7fe7
   title: Integrable Systems from Poisson Reductions of Generalized Hamiltonian Torus Actions
   authors:
@@ -2060,10 +2363,18 @@
   doi: 10.1088/1361-6544/ae7fe7
   journal: Nonlinearity
   published: '2026-07-17'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Poisson structure
   - Hamiltonian structure
+  submitted: '2025-07-16'
+  submitted_at: '2025-07-16T09:11:05Z'
+  updated: '2026-07-23'
+  version: v3
+  volume: '39'
+  issue: '7'
+  year: 2026
+  pages: '075021'
 - id: doi:10.1007/s10231-026-01703-2
   title: Reflections and Drinfeld Twists for Set-Theoretic Yang--Baxter Maps
   authors:
@@ -2073,9 +2384,14 @@
   doi: 10.1007/s10231-026-01703-2
   journal: Annali di Matematica Pura ed Applicata
   published: '2026-07-13'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Yang--Baxter equation
+  submitted: '2025-04-30'
+  submitted_at: '2025-04-30T14:17:47Z'
+  updated: '2026-04-23'
+  version: v2
+  year: 2026
 - id: doi:10.1103/vbsx-xyjm
   title: Soliton Turbulence of a Strongly Driven One-Dimensional Bose Gas
   authors:
@@ -2089,13 +2405,21 @@
   doi: 10.1103/vbsx-xyjm
   journal: Physical Review A
   published: '2026-07-13'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - soliton gas
   - inverse scattering
   arxiv_categories:
   - cond-mat.quant-gas
   - nlin.PS
+  submitted: '2026-03-25'
+  submitted_at: '2026-03-25T21:59:13Z'
+  updated: '2026-08-10'
+  version: v3
+  volume: '114'
+  issue: '2'
+  year: 2026
+  article_number: '023310'
 - id: arxiv:2607.15670
   title: 'Singularity Interactions for Lattice Equations: Introducing the Taishi'
   authors:
@@ -2108,13 +2432,14 @@
   doi: null
   submitted: '2026-07-17'
   updated: '2026-07-17'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - integrable discretization
   - singularity confinement
   arxiv_categories:
   - nlin.SI
   - math-ph
+  version: v1
 - id: arxiv:2607.15237
   title: '"Goldfish'''' equations for infinitely many particles'
   authors:
@@ -2124,11 +2449,12 @@
   doi: null
   submitted: '2026-07-16'
   updated: '2026-07-16'
-  metadata_checked_at: '2026-07-20'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Hamiltonian structure
   arxiv_categories:
   - math-ph
+  version: v1
 - id: arxiv:2607.17749
   title: Asymptotic Equivalence Between Quasi-Grammian and Quasi-Wronskian $N$-Soliton Solutions of the Anti-Self-Dual Yang-Mills Equation
   authors:
@@ -2137,9 +2463,9 @@
   arxiv_id: '2607.17749'
   doi: null
   submitted: '2026-07-20'
-  updated: '2026-07-20'
-  version: v1
-  metadata_checked_at: '2026-07-22'
+  updated: '2026-08-05'
+  version: v2
+  metadata_checked_at: '2026-10-15'
   keywords:
   - anti-self-dual Yang--Mills equation
   - quasi-Grammian
@@ -2262,9 +2588,9 @@
   arxiv_id: '2607.17613'
   doi: null
   submitted: '2026-07-20'
-  updated: '2026-07-20'
-  version: v1
-  metadata_checked_at: '2026-07-22'
+  updated: '2026-09-02'
+  version: v3
+  metadata_checked_at: '2026-10-15'
   keywords:
   - BFKL eigenvalue
   - Quantum Spectral Curve
@@ -2352,7 +2678,7 @@
   journal: Zeitschrift für Naturforschung A
   year: 2026
   published: '2026-07-20'
-  metadata_checked_at: '2026-07-22'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Lieb--Liniger model
   - Bethe rapidities
@@ -2360,6 +2686,9 @@
   - quantum Monte Carlo
   - Bethe ansatz
   - inverse problem
+  volume: '81'
+  issue: '10'
+  pages: 881-893
 - id: arxiv:2607.19119
   title: Long-time asymptotic behavior for the defocusing Hirota equation on a finite-genus algebro-geometric background
   authors:
@@ -2662,9 +2991,9 @@
   arxiv_id: '2607.29373'
   doi: null
   submitted: '2026-07-31'
-  updated: '2026-07-31'
-  version: v1
-  metadata_checked_at: '2026-08-08'
+  updated: '2026-08-15'
+  version: v2
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Haantjes tensor
   - hydrodynamic-type systems
@@ -2773,9 +3102,9 @@
   arxiv_id: '2608.01878'
   doi: null
   submitted: '2026-08-03'
-  updated: '2026-08-03'
-  version: v1
-  metadata_checked_at: '2026-08-08'
+  updated: '2026-08-31'
+  version: v2
+  metadata_checked_at: '2026-10-15'
   keywords:
   - collective Hamiltonians
   - superintegrability
@@ -2874,9 +3203,9 @@
   arxiv_id: '2608.04850'
   doi: null
   submitted: '2026-08-05'
-  updated: '2026-08-05'
-  version: v1
-  metadata_checked_at: '2026-08-08'
+  updated: '2026-08-14'
+  version: v3
+  metadata_checked_at: '2026-10-15'
   keywords:
   - two-dimensional Toda lattice
   - Arnoldi reduction
@@ -3121,9 +3450,9 @@
   arxiv_id: '2607.24920'
   doi: null
   submitted: '2026-07-27'
-  updated: '2026-07-27'
-  version: v1
-  metadata_checked_at: '2026-08-08'
+  updated: '2026-08-13'
+  version: v2
+  metadata_checked_at: '2026-10-15'
   keywords:
   - isomonodromy
   - spectral curve
@@ -3487,7 +3816,7 @@
   submitted: '2025-12-16'
   updated: '2026-08-11'
   version: v3
-  metadata_checked_at: '2026-08-12'
+  metadata_checked_at: '2026-10-15'
   metadata_note: The 2026-08-11 v3 replacement followed first online publication and is recorded as a routine published-version update, not a separate major revision.
   keywords:
   - topological recursion
@@ -3495,6 +3824,7 @@
   - string field Hamiltonian
   - Schwinger--Dyson equations
   - matrix models
+  issue: '8'
 - id: doi:10.1103/shbc-ggbj
   title: Burgers equation from nonthermal stationary states in nearly integrable gases
   authors:
@@ -3821,9 +4151,9 @@
   arxiv_id: '2608.17837'
   doi: null
   submitted: '2026-08-18'
-  updated: '2026-08-18'
-  version: v1
-  metadata_checked_at: '2026-08-23'
+  updated: '2026-08-30'
+  version: v2
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Poisson structure
   - quantum integrability
@@ -4295,9 +4625,9 @@
   arxiv_id: '2608.31080'
   doi: null
   submitted: '2026-08-31'
-  updated: '2026-08-31'
-  version: v1
-  metadata_checked_at: '2026-09-04'
+  updated: '2026-09-17'
+  version: v2
+  metadata_checked_at: '2026-10-15'
   keywords:
   - boundary quantum Knizhnik--Zamolodchikov equations
   - generalized Bethe ansatz
@@ -4339,9 +4669,9 @@
   arxiv_id: '2609.00517'
   doi: null
   submitted: '2026-09-01'
-  updated: '2026-09-01'
-  version: v1
-  metadata_checked_at: '2026-09-04'
+  updated: '2026-09-13'
+  version: v2
+  metadata_checked_at: '2026-10-15'
   keywords:
   - topological recursion
   - spectral curves
@@ -4394,9 +4724,9 @@
   arxiv_id: '2609.02765'
   doi: null
   submitted: '2026-09-02'
-  updated: '2026-09-02'
-  version: v1
-  metadata_checked_at: '2026-09-04'
+  updated: '2026-09-12'
+  version: v2
+  metadata_checked_at: '2026-10-15'
   keywords:
   - quantum wreath products
   - Yang--Baxter equation
@@ -4447,13 +4777,14 @@
   submitted: '2026-06-12'
   updated: '2026-06-12'
   version: v1
-  metadata_checked_at: '2026-09-04'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Yang--Baxter deformation
   - Type II supergravity
   - double field theory
   - solution-generating transformation
   - boundary terms
+  issue: '8'
 - id: arxiv:2609.02952
   title: Isomonodromic Deformations for Linear $q$-Difference Systems of Degree One
   authors:
@@ -4583,15 +4914,19 @@
   - Yohei Yokosuka
   url: https://arxiv.org/abs/2609.04595
   arxiv_id: '2609.04595'
-  doi: null
+  doi: 10.14495/jsiaml.18.89
   submitted: '2026-09-04'
   submitted_at: '2026-09-04T00:52:00Z'
   updated: '2026-09-04'
   version: v1
-  metadata_checked_at: '2026-09-07'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - integrable discretization
   - integrable geometry
+  journal: JSIAM Letters
+  volume: '18'
+  year: 2026
+  pages: 89-92
 - id: arxiv:2609.04691
   title: Complex singularities for Burgers' equation with piecewise-continuous initial conditions
   authors:
@@ -4785,15 +5120,21 @@
   - Sergey Ya. Startsev
   url: https://arxiv.org/abs/2609.06217
   arxiv_id: '2609.06217'
-  doi: null
+  doi: 10.1134/s1995080223050517
   submitted: '2026-09-05'
   submitted_at: '2026-09-05T18:25:47Z'
   updated: '2026-09-05'
   version: v1
-  metadata_checked_at: '2026-09-12'
+  metadata_checked_at: '2026-10-15'
   keywords:
   - Bäcklund transformation
   - integrable geometry
+  journal: Lobachevskii Journal of Mathematics
+  volume: '44'
+  issue: '5'
+  year: 2023
+  published: '2023-08-23'
+  pages: 1929-1937
 - id: arxiv:2609.05733
   title: The topology of tridiagonal isospectral sets
   authors:
@@ -4883,9 +5224,9 @@
   doi: null
   submitted: '2026-09-07'
   submitted_at: '2026-09-07T15:00:51Z'
-  updated: '2026-09-07'
-  version: v1
-  metadata_checked_at: '2026-09-12'
+  updated: '2026-09-30'
+  version: v2
+  metadata_checked_at: '2026-10-15'
   keywords:
   - integrable geometry
 - id: arxiv:2609.07612
@@ -6686,12 +7027,12 @@
   - Erwan Lucas
   url: https://arxiv.org/abs/2609.31475
   arxiv_id: '2609.31475'
-  doi: null
+  doi: 10.1016/j.optlastec.2026.116587
   submitted: '2026-09-25'
   submitted_at: '2026-09-25T16:22:19Z'
   updated: '2026-09-25'
   version: v1
-  metadata_checked_at: '2026-10-02'
+  metadata_checked_at: '2026-10-15'
   arxiv_categories:
   - physics.optics
   keywords:
@@ -6701,6 +7042,10 @@
   - dual-pump seeding
   - optical sampling
   - silicon nitride microresonator
+  journal: Optics & Laser Technology
+  volume: '204'
+  year: 2026
+  article_number: '116587'
 - id: arxiv:2512.22064
   title: Lax Pairs for BKM Hierarchy
   authors:
