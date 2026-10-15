@@ -243,7 +243,7 @@ def render_frontier_entry(paper: dict[str, Any], entry: dict[str, Any]) -> str:
         f'<a class="radar-permalink" href="#{anchor}" aria-label="此论文固定链接" title="此论文固定链接">#</a>'
         + ('<span class="radar-expand-icon" aria-hidden="true">⌄</span>' if note else "")
         + '</span>\n      <span class="radar-row-meta">'
-        f'<span class="radar-row-authors" title="{html.escape(authors, quote=True)}">{author_html}</span>'
+        f'<span class="radar-row-authors" title="{html.escape(authors, quote=True)}">{author_html}</span> '
         f'<span class="radar-row-sources">{source_links_html(paper, new_tab=True)}</span>'
         f'{date_html}</span>\n'
     )

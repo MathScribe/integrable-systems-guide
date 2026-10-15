@@ -2960,8 +2960,8 @@ frontier:
       method_scope: 采用 Chern–Simons 表述与双 Hamiltonian 层级。边界演化的可积结构与径向流须区分：后者相对于规范 Poisson 结构本身并非 Hamiltonian 流。
   - paper_id: doi:10.1016/j.wavemoti.2026.103858
     signal_type: journal-publication
-    signal_date: null
+    signal_date: '2026-10-12'
     directions:
     - spectral
-    event_source: https://doi.org/10.1016/j.wavemoti.2026.103858
+    event_source: https://www.sciencedirect.com/science/article/pii/S0165212526001605
     added_on: '2026-10-14'
