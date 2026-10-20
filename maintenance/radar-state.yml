@@ -2,70 +2,82 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-10-14'
+    announced_through: '2026-10-20'
     last_status: complete
-    coverage_note: 'Oct13-14 official dated Catchup: both core and 13 configured cross categories; all 30 headings/counts validated. Oct13 pages empty. Oct14 has 1700 distinct events (799 new, 247 cross-list, 654 replacement). Bounded title/result screening and primary review selected 15 new preprints and three major revisions; cross-category coverage is selective, not comprehensive.'
+    coverage_note: 'Oct15–20: 90 official dated Catchup pages (two core and 13 cross categories), headings and full counts validated; 2907 distinct dated events (1305 new, 419 cross-list, 1183 replacements). Bounded structure/result title screening with primary abstract review; cross-category coverage is selective.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-14'
+      checked_through: '2026-10-20'
       open_gaps: []
-      coverage_note: Relevant prior/current full texts compared. Three major revisions selected; four existing registry records refreshed. KP-II and exterior NLS retain original events. PRL ballistic-correlation publication date corrected from acceptance date to Aug27. One withdrawn unregistered Fokas-Lenells paper excluded. Catchup excludes journal-reference-only changes and replacements beyond v5; no all-version census claimed.
-    checked_at: '2026-10-14T12:57:52Z'
+      coverage_note: Six substantive revisions selected after prior/current text comparison. Tzitzéica far-field backgrounds and error exponents corrected; mCH physical-coordinate positivity retained. Two routine selected-record revisions refreshed without new events. Catchup excludes journal-reference-only changes and versions beyond v5.
+    checked_at: '2026-10-20T09:26:30.988699Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-10-14'
+    announced_through: '2026-10-20'
     last_status: complete
-    coverage_note: 'Oct13-14 official dated Catchup: both core and 13 configured cross categories; all 30 headings/counts validated. Oct13 pages empty. Oct14 has 1700 distinct events (799 new, 247 cross-list, 654 replacement). Bounded title/result screening and primary review selected 15 new preprints and three major revisions; cross-category coverage is selective, not comprehensive.'
+    coverage_note: 'Oct15–20: 90 official dated Catchup pages (two core and 13 cross categories), headings and full counts validated; 2907 distinct dated events (1305 new, 419 cross-list, 1183 replacements). Bounded structure/result title screening with primary abstract review; cross-category coverage is selective.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-14'
+      checked_through: '2026-10-20'
       open_gaps: []
-      coverage_note: Relevant prior/current full texts compared. Three major revisions selected; four existing registry records refreshed. KP-II and exterior NLS retain original events. PRL ballistic-correlation publication date corrected from acceptance date to Aug27. One withdrawn unregistered Fokas-Lenells paper excluded. Catchup excludes journal-reference-only changes and replacements beyond v5; no all-version census claimed.
-    checked_at: '2026-10-14T12:57:52Z'
+      coverage_note: Six substantive revisions selected after prior/current text comparison. Tzitzéica far-field backgrounds and error exponents corrected; mCH physical-coordinate positivity retained. Two routine selected-record revisions refreshed without new events. Catchup excludes journal-reference-only changes and versions beyond v5.
+    checked_at: '2026-10-20T09:26:30.988699Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-10-14'
+    announced_through: '2026-10-20'
     last_status: complete
-    coverage_note: 'Oct13-14 official dated Catchup: both core and 13 configured cross categories; all 30 headings/counts validated. Oct13 pages empty. Oct14 has 1700 distinct events (799 new, 247 cross-list, 654 replacement). Bounded title/result screening and primary review selected 15 new preprints and three major revisions; cross-category coverage is selective, not comprehensive.'
+    coverage_note: 'Oct15–20: 90 official dated Catchup pages (two core and 13 cross categories), headings and full counts validated; 2907 distinct dated events (1305 new, 419 cross-list, 1183 replacements). Bounded structure/result title screening with primary abstract review; cross-category coverage is selective.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-14'
+      checked_through: '2026-10-20'
       open_gaps: []
-      coverage_note: Relevant prior/current full texts compared. Three major revisions selected; four existing registry records refreshed. KP-II and exterior NLS retain original events. PRL ballistic-correlation publication date corrected from acceptance date to Aug27. One withdrawn unregistered Fokas-Lenells paper excluded. Catchup excludes journal-reference-only changes and replacements beyond v5; no all-version census claimed.
-    checked_at: '2026-10-14T12:57:52Z'
+      coverage_note: Six substantive revisions selected after prior/current text comparison. Tzitzéica far-field backgrounds and error exponents corrected; mCH physical-coordinate positivity retained. Two routine selected-record revisions refreshed without new events. Catchup excludes journal-reference-only changes and versions beyond v5.
+    checked_at: '2026-10-20T09:26:30.988699Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-10-14'
-      note: Focused cond-mat.quant-gas event coverage extends through Oct14; no earlier-than-Sep14 history claimed.
+      through: '2026-10-20'
+      note: Configured cond-mat.quant-gas dated listings covered through Oct20; selective screening.
   crossref:
     kind: ranked-title-backstop
     reconciliation_checked_at: '2026-10-14T12:57:52Z'
     reconciliation_cadence: weekly
-    reconciliation_note: Nineteen exact-title queries with author identity comparison completed for new/major arXiv candidates and SSEP. Returned works did not match the candidate identities. Journal candidate identities verified separately; two linked arXiv records merged without duplicate identities.
+    reconciliation_note: '24 candidate title-and-author queries: 20 completed with no matching journal identity, four HTTP429 failures. Optional journal metadata remains unverified for those four; verified arXiv events retained.'
     overlap_days: 3
-    title_query_note: 'Oct10-14 overlapping online-date backstop completed: 16 ranked-title queries, 466 raw records, six matches. Verified new JPA and SciPost online events; bounded coverage, not full Crossref enumeration.'
-    online_query_through: '2026-10-14'
+    title_query_note: Oct19 successful weekly artifact (Oct9–19, 16 ranked-title phrases) plus Oct19–20 bounded supplement completed. Three new journal events verified; selective backstop, not exhaustive.
+    online_query_through: '2026-10-20'
     online_status: complete
-    registration_query_through: '2026-10-14'
+    registration_query_through: '2026-10-20'
     registration_status: complete
-    registration_note: 'Independent Oct10-14 DOI-created pass completed: five phrases, 160 raw records, three matches. Wave Motion bibliography verified with unknown first-online day; creation and issue dates not used as event dates.'
-    reconciliation_last_attempt_at: '2026-10-14T12:57:52Z'
-    reconciliation_last_status: complete
-    reconciliation_open_queries: []
+    registration_note: Independent five-phrase DOI-created weekly artifact plus Oct19–20 supplement completed. Creation timestamps not used as publication dates.
+    reconciliation_last_attempt_at: '2026-10-20T09:26:30.988699Z'
+    reconciliation_last_status: partial
+    reconciliation_open_queries:
+    - arxiv_id: '2610.26348'
+      title: Generating integrable systems from an autonomous ordinary differential equation
+      reason: Crossref HTTP429; reconcile opportunistically
+    - arxiv_id: '2604.20830'
+      title: The gauge action on semi-discrete Lax representations, its invariants, and Lax-Miura type constructions
+      reason: Crossref HTTP429; reconcile opportunistically
+    - arxiv_id: '2608.02534'
+      title: Failure of fixed-profile modified scattering and generalized modified scattering for the 1D defocusing cubic NLS
+      reason: Crossref HTTP429; reconcile opportunistically
+    - arxiv_id: '2507.02100'
+      title: 'The Modified Camassa–Holm Equation with Step-Like Boundary Conditions: A Characterization of Existence'
+      reason: Crossref HTTP429; reconcile opportunistically
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
     checked_at: '2026-09-27T02:12:13Z'
     last_status: partial
-    coverage_note: Oct11 local bounded MSC request for 2026-2027 issue years and Sep11-Oct11 indexing window failed with HTTP 404 before retrieving any records. Last successful checked_at remains Sep27. Oct5 scheduled workflow success was not evidence of a new MSC retrieval; no recovery or zero-result claim.
+    coverage_note: Oct20 bounded MSC attempt for 2026–2027 issue years, Aug28–Oct20 indexing overlap, returned HTTP404 before records. Last successful Sep27 watermark retained. Oct19 workflow success had no downloadable artifact and is not evidence of recovery.
     publication_years:
     - 2026
     - 2027
-    last_attempt_at: '2026-10-11T01:59:44Z'
+    last_attempt_at: '2026-10-20T09:26:30.988699Z'
     last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-10-14T12:57:52Z'
+    checked_at: '2026-10-20T09:26:30.988699Z'
     last_status: candidate-only
-    coverage_note: Three new public journal records verified from publisher-deposited Crossref metadata; SciPost publisher page also inspected. Wave Motion lacks exact first-online day and accessible abstract, so bibliography-only intake. APS publisher page and deposit establish Aug27 publication versus Jul14 acceptance for existing PRL record. No publisher-wide coverage or independent proof certification claimed.
+    coverage_note: Three new journal records verified from publisher-deposited Crossref bibliography and abstracts (Cambridge, World Scientific, IOP). DOI-page retrieval unavailable; no publisher-wide coverage claimed.

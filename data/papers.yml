@@ -868,7 +868,7 @@
   submitted: '2025-08-24'
   updated: '2026-10-13'
   version: v3
-  metadata_checked_at: '2026-10-15'
+  metadata_checked_at: '2026-10-20'
   keywords:
   - matrix Fokas--Lenells equation
   - negative Kaup--Newell flow
@@ -878,8 +878,8 @@
   - beating solitons
   submitted_at: '2025-08-24T21:58:52Z'
   arxiv_categories:
-  - nlin.SI
   - math-ph
+  - nlin.SI
   journal: 'Journal of Physics A: Mathematical and Theoretical'
   year: 2026
   published: '2026-10-13'
@@ -6532,19 +6532,18 @@
   doi: null
   submitted: '2026-09-25'
   submitted_at: '2026-09-25T06:07:43Z'
-  updated: '2026-09-25'
-  version: v1
-  metadata_checked_at: '2026-10-02'
+  updated: '2026-10-19'
+  version: v2
+  metadata_checked_at: '2026-10-20'
   arxiv_categories:
-  - math.AP
   - math-ph
+  - math.AP
   - nlin.SI
   keywords:
   - Tzitzéica equation
   - soliton resolution
   - dbar steepest descent
-  - Riemann–Hilbert problem
-  - long-time asymptotics
+  - complex-valued data
 - id: arxiv:2609.32232
   title: Quantum undular bores, rainbows, and event horizons in superfluid dam breaks
   authors:
@@ -7741,13 +7740,13 @@
   doi: null
   submitted: '2026-10-05'
   submitted_at: '2026-10-05T02:59:05Z'
-  updated: '2026-10-05'
-  version: v1
-  metadata_checked_at: '2026-10-11'
+  updated: '2026-10-19'
+  version: v2
+  metadata_checked_at: '2026-10-20'
   arxiv_categories:
-  - nlin.SI
   - math-ph
   - math.AG
+  - nlin.SI
   keywords:
   - Riemann theta function
   - finite-gap solutions
@@ -7925,19 +7924,19 @@
   doi: null
   submitted: '2026-10-02'
   submitted_at: '2026-10-02T18:00:50Z'
-  updated: '2026-10-02'
-  version: v1
-  metadata_checked_at: '2026-10-11'
+  updated: '2026-10-15'
+  version: v2
+  metadata_checked_at: '2026-10-20'
   arxiv_categories:
-  - math-ph
   - cond-mat.str-el
   - hep-th
+  - math-ph
   - quant-ph
   keywords:
   - time-dependent integrability
-  - boundary quantum Knizhnik-Zamolodchikov equations
-  - factorized scattering
-  - dynamical boundaries
+  - boundary qKZ
+  - Bethe vector
+  - dynamical boundary
 - id: arxiv:2610.05802
   title: Scattering of non-radial solutions for the fourth-order Schrödinger equation with $\dot{H}^{1/2}$-critical and supercritical nonlinearity
   authors:
@@ -8927,3 +8926,522 @@
   article_number: '103858'
   published: '2026-10-12'
   metadata_note: First-online date verified from the locally saved ScienceDirect publisher page (Available online 12 October 2026); citation_online_date and citation_publication_date agree. Bibliography-only entry without an unsupported reading note.
+- id: arxiv:2610.26436
+  title: Asymptotic breathers in the Manakov system
+  authors:
+  - Liming Ling
+  - Boris A. Malomed
+  - Yan-Hong Qin
+  - Jin-Peng Yang
+  - Hao-Jun Yin
+  - Li-Chen Zhao
+  url: https://arxiv.org/abs/2610.26436
+  arxiv_id: '2610.26436'
+  submitted: '2026-10-19'
+  submitted_at: '2026-10-19T13:58:09Z'
+  updated: '2026-10-19'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - nlin.PS
+  keywords:
+  - Manakov system
+  - Akhmediev breathers
+  - modulation instability
+- id: arxiv:2610.20123
+  title: The WKB Riemann-Hilbert Problem for the Painlevé I System
+  authors:
+  - Mohamad Alameddine
+  - Olivier Marchal
+  - Nikita Nikolaev
+  - Nicolas Orantin
+  url: https://arxiv.org/abs/2610.20123
+  arxiv_id: '2610.20123'
+  submitted: '2026-10-14'
+  submitted_at: '2026-10-14T12:45:11Z'
+  updated: '2026-10-14'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math-ph
+  - math.DG
+  - nlin.SI
+  keywords:
+  - Painlevé I
+  - exact WKB
+  - Riemann-Hilbert problem
+  - Borel summation
+- id: arxiv:2610.20672
+  title: 'The ABC-equation revisited: missed integrable cases. Part I: classification and (quasi) integrable structures'
+  authors:
+  - I.S. Krasil'shchik
+  url: https://arxiv.org/abs/2610.20672
+  arxiv_id: '2610.20672'
+  submitted: '2026-10-14'
+  submitted_at: '2026-10-14T13:02:49Z'
+  updated: '2026-10-14'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math-ph
+  - math.DG
+  - nlin.SI
+  keywords:
+  - ABC equation
+  - tangent covering
+  - cotangent covering
+  - integrability classification
+- id: arxiv:2610.22753
+  title: Realization of several related $(2+1)$-dimensional integrable systems via an anti-self-dual Yang–Mills reduction
+  authors:
+  - Shangshuai Li
+  - Ken-ichi Maruno
+  - Da-jun Zhang
+  url: https://arxiv.org/abs/2610.22753
+  arxiv_id: '2610.22753'
+  submitted: '2026-10-15'
+  submitted_at: '2026-10-15T23:42:24Z'
+  updated: '2026-10-15'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - anti-self-dual Yang-Mills
+  - derivative NLS
+  - Cauchy matrix
+  - gauge transformation
+- id: arxiv:2610.22784
+  title: Hyperelliptic sigma solutions of polynomial Hamiltonian systems
+  authors:
+  - Graham Hesketh
+  url: https://arxiv.org/abs/2610.22784
+  arxiv_id: '2610.22784'
+  submitted: '2026-10-16'
+  submitted_at: '2026-10-16T00:52:00Z'
+  updated: '2026-10-16'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - hyperelliptic sigma function
+  - polynomial Hamiltonian
+  - nonlinear optics
+- id: arxiv:2610.19192
+  title: Symmetries, Lax pair, and nilpotent Darboux transformation for the KdV-ghost system
+  authors:
+  - A. Restuccia
+  - J. Rosales-Gómez
+  - A. Sotomayor
+  url: https://arxiv.org/abs/2610.19192
+  arxiv_id: '2610.19192'
+  submitted: '2026-10-13'
+  submitted_at: '2026-10-13T20:57:00Z'
+  updated: '2026-10-13'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math-ph
+  - nlin.SI
+  keywords:
+  - KdV
+  - ghost system
+  - nilpotent Darboux transformation
+  - isospectrality
+- id: arxiv:2610.23320
+  title: Folding to the Bessel-Clifford system, and Equivariant Topological Recursion
+  authors:
+  - Mohamad Alameddine
+  - Alexander Hock
+  url: https://arxiv.org/abs/2610.23320
+  arxiv_id: '2610.23320'
+  submitted: '2026-10-16'
+  submitted_at: '2026-10-16T11:25:58Z'
+  updated: '2026-10-16'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math-ph
+  - math.AG
+  - math.CA
+  - nlin.SI
+  keywords:
+  - topological recursion
+  - meromorphic connection
+  - quantum curve
+  - Bessel-Clifford
+- id: arxiv:2610.22166
+  title: Cone Invariance and Homoclinic Standing Waves for Cooperative Finite-Range DNLS Equations
+  authors:
+  - Vassilios M. Rothos
+  url: https://arxiv.org/abs/2610.22166
+  arxiv_id: '2610.22166'
+  submitted: '2026-10-15'
+  submitted_at: '2026-10-15T16:28:14Z'
+  updated: '2026-10-15'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math.AP
+  - nlin.PS
+  keywords:
+  - discrete nonlinear Schrödinger
+  - homoclinic standing wave
+  - finite-range coupling
+- id: arxiv:2610.25939
+  title: The asymptotic stability of the stable solitons of the generalized good Boussinesq equation
+  authors:
+  - Junsik Bae
+  - Scipio Cuccagna
+  - Daniele Del Santo
+  - Masaya Maeda
+  url: https://arxiv.org/abs/2610.25939
+  arxiv_id: '2610.25939'
+  submitted: '2026-10-19'
+  submitted_at: '2026-10-19T07:34:55Z'
+  updated: '2026-10-19'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - good Boussinesq
+  - asymptotic stability
+  - Kato smoothing
+  - virial estimate
+- id: arxiv:2610.22978
+  title: Asymptotic stability of Bloch wall for dispersive Landau-Lifshitz equation
+  authors:
+  - Slim Ibrahim
+  - Christof Melcher
+  - Ikkei Shimizu
+  url: https://arxiv.org/abs/2610.22978
+  arxiv_id: '2610.22978'
+  submitted: '2026-10-16'
+  submitted_at: '2026-10-16T05:59:17Z'
+  updated: '2026-10-16'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Landau-Lifshitz
+  - Bloch wall
+  - Dzyaloshinskii-Moriya interaction
+  - asymptotic stability
+- id: arxiv:2610.20888
+  title: '$L^\infty$-regularity thresholds for a generalized Gross-Pitaevskii equation: dispersive blow-up vs. nonlinear stability'
+  authors:
+  - Joannis Alexopoulos
+  url: https://arxiv.org/abs/2610.20888
+  arxiv_id: '2610.20888'
+  submitted: '2026-10-14'
+  submitted_at: '2026-10-14T20:17:59Z'
+  updated: '2026-10-14'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Gross-Pitaevskii
+  - dispersive blow-up
+  - modulation space
+  - nonlinear stability
+- id: arxiv:2610.22072
+  title: Nonpersistence of full-dimensional tori with polynomial decay in nonlinear Schrödinger equations
+  authors:
+  - Zhicheng Tong
+  - Yong Li
+  url: https://arxiv.org/abs/2610.22072
+  arxiv_id: '2610.22072'
+  submitted: '2026-10-15'
+  submitted_at: '2026-10-15T15:31:04Z'
+  updated: '2026-10-15'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math-ph
+  - math.AP
+  - math.DS
+  keywords:
+  - nonlinear Schrödinger
+  - KAM
+  - invariant torus
+  - polynomial decay
+- id: arxiv:2610.26044
+  title: Lagrangian invariant tori for completely resonant nonlinear Schrödinger equations
+  authors:
+  - Joackim Bernier
+  - Michela Procesi
+  url: https://arxiv.org/abs/2610.26044
+  arxiv_id: '2610.26044'
+  submitted: '2026-10-19'
+  submitted_at: '2026-10-19T09:04:12Z'
+  updated: '2026-10-19'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math.AP
+  - math.DS
+  keywords:
+  - nonlinear Schrödinger
+  - invariant torus
+  - KAM
+  - amplitude-frequency map
+- id: arxiv:2610.26111
+  title: Absence of non-threshold embedded eigenvalues for nonlinear Schrödinger equations
+  authors:
+  - Taegyu Kim
+  url: https://arxiv.org/abs/2610.26111
+  arxiv_id: '2610.26111'
+  submitted: '2026-10-19'
+  submitted_at: '2026-10-19T10:06:01Z'
+  updated: '2026-10-19'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - nonlinear Schrödinger
+  - embedded eigenvalue
+  - ground state
+  - virial identity
+- id: arxiv:2610.26127
+  title: Smooth radial quantized Type II blow-up for the three-dimensional energy-critical nonlinear Schrödinger equation
+  authors:
+  - Taegyu Kim
+  url: https://arxiv.org/abs/2610.26127
+  arxiv_id: '2610.26127'
+  submitted: '2026-10-19'
+  submitted_at: '2026-10-19T10:16:40Z'
+  updated: '2026-10-19'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - energy-critical NLS
+  - type II blow-up
+  - Kato smoothing
+  - modulation analysis
+- id: arxiv:2610.26348
+  title: Generating integrable systems from an autonomous ordinary differential equation
+  authors:
+  - Graham Hesketh
+  url: https://arxiv.org/abs/2610.26348
+  arxiv_id: '2610.26348'
+  submitted: '2026-10-19'
+  submitted_at: '2026-10-19T13:14:17Z'
+  updated: '2026-10-19'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - Hamiltonian reconstruction
+  - Kummer system
+  - Lambert W
+  - Darboux-Halphen
+- id: arxiv:2610.19749
+  title: Global well-posedness of the energy-critical nonlinear Schrödinger equation on the three-dimensional torus with additive Lévy noise
+  authors:
+  - Bin Liu
+  - Fan Xu
+  url: https://arxiv.org/abs/2610.19749
+  arxiv_id: '2610.19749'
+  submitted: '2026-10-14'
+  submitted_at: '2026-10-14T08:07:16Z'
+  updated: '2026-10-14'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - stochastic NLS
+  - Lévy noise
+  - global well-posedness
+  - energy-critical
+- id: arxiv:2604.20830
+  title: The gauge action on semi-discrete Lax representations, its invariants, and Lax-Miura type constructions
+  authors:
+  - Sergei Igonin
+  url: https://arxiv.org/abs/2604.20830
+  arxiv_id: '2604.20830'
+  submitted: '2026-04-22'
+  submitted_at: '2026-04-22T17:56:53Z'
+  updated: '2026-10-19'
+  version: v3
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - semi-discrete Lax representation
+  - gauge invariant
+  - Miura transformation
+- id: arxiv:2608.02534
+  title: Failure of fixed-profile modified scattering and generalized modified scattering for the 1D defocusing cubic NLS
+  authors:
+  - Xi Chen
+  url: https://arxiv.org/abs/2608.02534
+  arxiv_id: '2608.02534'
+  submitted: '2026-08-03'
+  submitted_at: '2026-08-03T17:27:09Z'
+  updated: '2026-10-14'
+  version: v2
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - defocusing cubic NLS
+  - modified scattering
+  - transmission density
+- id: arxiv:2507.02100
+  title: 'The Modified Camassa–Holm Equation with Step-Like Boundary Conditions: A Characterization of Existence'
+  authors:
+  - I. Karpenko
+  - D. Shepelsky
+  - G. Teschl
+  url: https://arxiv.org/abs/2507.02100
+  arxiv_id: '2507.02100'
+  submitted: '2025-07-02'
+  submitted_at: '2025-07-02T19:28:50Z'
+  updated: '2026-10-14'
+  version: v2
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - modified Camassa-Holm
+  - step-like boundary
+  - Riemann-Hilbert
+  - existence
+- id: arxiv:2506.07939
+  title: The half-space KPZ line ensemble and its scaling limit
+  authors:
+  - Sayan Das
+  - Christian Serio
+  url: https://arxiv.org/abs/2506.07939
+  arxiv_id: '2506.07939'
+  submitted: '2025-06-09'
+  submitted_at: '2025-06-09T16:58:45Z'
+  updated: '2026-10-17'
+  version: v2
+  metadata_checked_at: '2026-10-20'
+  doi: null
+  arxiv_categories:
+  - math-ph
+  - math.PR
+  keywords:
+  - KPZ
+  - Airy line ensemble
+  - Brownian Gibbs property
+  - scaling limit
+- id: arxiv:2311.18127
+  title: Spectral theory for periodic self-adjoint Dirac operators and inverse scattering transform for the defocusing non-linear Schrödinger equation with periodic boundary conditions
+  authors:
+  - Gino Biondini
+  - Zechuan Zhang
+  url: https://arxiv.org/abs/2311.18127
+  arxiv_id: '2311.18127'
+  submitted: '2023-11-29'
+  submitted_at: '2023-11-29T22:35:18Z'
+  updated: '2026-01-08'
+  version: v3
+  metadata_checked_at: '2026-10-20'
+  doi: 10.1017/jnw.2026.10046
+  journal: Journal of Nonlinear Waves
+  year: 2026
+  published: '2026-10-16'
+  keywords:
+  - periodic Dirac operator
+  - defocusing NLS
+  - Riemann-Hilbert
+  - inverse spectral theory
+  volume: '2'
+  pages: e22
+  arxiv_categories:
+  - math.AP
+  - nlin.SI
+- id: doi:10.1142/s0129167x26500904
+  url: https://doi.org/10.1142/s0129167x26500904
+  title: Riemann-Hilbert approach to the modified Camassa-Holm positive flow with step-like initial data
+  authors:
+  - Wenhao Liu
+  - Xianguo Geng
+  - Yufeng Zhang
+  doi: 10.1142/s0129167x26500904
+  journal: International Journal of Mathematics
+  year: 2026
+  published: '2026-10-16'
+  metadata_checked_at: '2026-10-20'
+  keywords:
+  - modified Camassa-Holm positive flow
+  - step-like initial data
+  - Riemann-Hilbert
+  - long-time asymptotics
+- id: doi:10.1088/1402-4896/aeb579
+  url: https://doi.org/10.1088/1402-4896/aeb579
+  title: 'Integrable fractional Sasa-Satsuma equation: Riemann-Hilbert approach and N-soliton solution'
+  authors:
+  - Tongshuai Liu
+  - Yuqin Yao
+  - Zhou-Zheng Kang
+  doi: 10.1088/1402-4896/aeb579
+  journal: Physica Scripta
+  year: 2026
+  published: '2026-10-16'
+  metadata_checked_at: '2026-10-20'
+  keywords:
+  - fractional Sasa-Satsuma
+  - inverse scattering
+  - squared eigenfunctions
+  - N-soliton
+- id: arxiv:2610.23061
+  title: 'Thermalization-induced self-polarization of temporally incoherent light: A nonequilibrium wave turbulence kinetic approach'
+  authors:
+  - L. Zanaglia
+  - J. Garnier
+  - M. Ferraro
+  - T. Torres
+  - C. Michel
+  - V. Doya
+  - G. Millot
+  - S. Wabnitz
+  - I. Carusotto
+  - A. Picozzi
+  url: https://arxiv.org/abs/2610.23061
+  arxiv_id: '2610.23061'
+  doi: null
+  submitted: '2026-10-16'
+  submitted_at: '2026-10-16T07:39:38Z'
+  updated: '2026-10-16'
+  version: v1
+  metadata_checked_at: '2026-10-20'
+  arxiv_categories:
+  - physics.optics
+  keywords:
+  - wave turbulence
+  - self-polarization
+  - Rayleigh-Jeans equilibrium
+  - incoherent light
