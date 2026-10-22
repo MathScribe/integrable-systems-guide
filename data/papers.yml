@@ -9287,9 +9287,9 @@
   arxiv_id: '2604.20830'
   submitted: '2026-04-22'
   submitted_at: '2026-04-22T17:56:53Z'
-  updated: '2026-10-19'
-  version: v3
-  metadata_checked_at: '2026-10-20'
+  updated: '2026-10-20'
+  version: v4
+  metadata_checked_at: '2026-10-22'
   doi: null
   arxiv_categories:
   - nlin.SI
@@ -9445,3 +9445,371 @@
   - self-polarization
   - Rayleigh-Jeans equilibrium
   - incoherent light
+- id: arxiv:2610.27074
+  title: Classical solitons in anti-self-dual Yang-Mills theory
+  authors:
+  - Tristan McLoughlin
+  url: https://arxiv.org/abs/2610.27074
+  arxiv_id: '2610.27074'
+  doi: null
+  submitted: '2026-10-19'
+  submitted_at: '2026-10-19T18:00:03Z'
+  updated: '2026-10-19'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - hep-th
+  keywords:
+  - anti-self-dual Yang-Mills
+  - Zakharov dressing
+  - lump solitons
+  - tau function
+- id: arxiv:2610.27154
+  title: 'Exact spectral integrability of a finite-channel random Schrödinger operator: from fermionization of the Dyson--Riccati gas to Kontsevich integral'
+  authors:
+  - Yan V. Fyodorov
+  - Pierre Le Doussal
+  url: https://arxiv.org/abs/2610.27154
+  arxiv_id: '2610.27154'
+  doi: null
+  submitted: '2026-10-19'
+  submitted_at: '2026-10-19T18:45:35Z'
+  updated: '2026-10-19'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - cond-mat.dis-nn
+  - cond-mat.stat-mech
+  - math-ph
+  - nlin.SI
+  keywords:
+  - random Schrödinger operator
+  - Dyson-Riccati gas
+  - Kontsevich integral
+  - Painlevé I
+- id: arxiv:2610.27771
+  title: Orbital stability of standing waves for defocusing fractional nonlinear Schrödinger equations with a delta potential
+  authors:
+  - Ramón G. Plaza
+  - Miguel A. Sánchez-Alcántara
+  url: https://arxiv.org/abs/2610.27771
+  arxiv_id: '2610.27771'
+  doi: null
+  submitted: '2026-10-20'
+  submitted_at: '2026-10-20T07:33:31Z'
+  updated: '2026-10-20'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - fractional NLS
+  - delta potential
+  - orbital stability
+  - concentration compactness
+- id: arxiv:2610.27832
+  title: Wave breaking for the nonlocal Whitham-type equations
+  authors:
+  - Jian Chen
+  - Shaojie Yang
+  - Zhaoyang Yin
+  url: https://arxiv.org/abs/2610.27832
+  arxiv_id: '2610.27832'
+  doi: null
+  submitted: '2026-10-20'
+  submitted_at: '2026-10-20T08:21:13Z'
+  updated: '2026-10-20'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Whitham equation
+  - wave breaking
+  - Camassa-Holm
+  - hyperelastic rod
+- id: arxiv:2610.28009
+  title: 'The ABC-equation revisited: missed (quasi) integrable cases. Part II: extensions and actions'
+  authors:
+  - I. S. Krasil'shchik
+  url: https://arxiv.org/abs/2610.28009
+  arxiv_id: '2610.28009'
+  doi: null
+  submitted: '2026-10-20'
+  submitted_at: '2026-10-20T10:53:35Z'
+  updated: '2026-10-20'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  - math.DG
+  keywords:
+  - ABC equation
+  - quasi-integrability
+  - recursion operators
+  - nonlocal symmetries
+- id: arxiv:2610.28227
+  title: Painlevé II connection problem revisited
+  authors:
+  - Nikolai Iorgov
+  - Oleg Lisovyy
+  - Noam Tamarin
+  - Yurii Zhuravlov
+  url: https://arxiv.org/abs/2610.28227
+  arxiv_id: '2610.28227'
+  doi: null
+  submitted: '2026-10-20'
+  submitted_at: '2026-10-20T13:57:30Z'
+  updated: '2026-10-20'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  keywords:
+  - Painlevé II
+  - connection problem
+  - tau function
+  - Stokes data
+- id: arxiv:2610.28233
+  title: A twisted Marchenko lemma and applications
+  authors:
+  - Jun-Yang Zhang
+  - Shi-Hao Li
+  - Shou-Feng Shen
+  url: https://arxiv.org/abs/2610.28233
+  arxiv_id: '2610.28233'
+  doi: null
+  submitted: '2026-10-20'
+  submitted_at: '2026-10-20T13:59:23Z'
+  updated: '2026-10-20'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  keywords:
+  - Marchenko lemma
+  - noncommutative KP
+  - quasi-Wronskian
+  - DS equation
+  - NLS
+- id: arxiv:2610.28492
+  title: Toda chain solves large BKP
+  authors:
+  - Anton Zabrodin
+  url: https://arxiv.org/abs/2610.28492
+  arxiv_id: '2610.28492'
+  doi: null
+  submitted: '2026-10-20'
+  submitted_at: '2026-10-20T16:39:05Z'
+  updated: '2026-10-20'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  keywords:
+  - Toda chain
+  - large BKP
+  - integrable hierarchy
+- id: arxiv:2610.29265
+  title: Scattering in spacetime cones for the nonlinear Schrödinger equation
+  authors:
+  - Andrew Hassell
+  - Qiuye Jia
+  - Xiaoxu Wu
+  url: https://arxiv.org/abs/2610.29265
+  arxiv_id: '2610.29265'
+  doi: null
+  submitted: '2026-10-21'
+  submitted_at: '2026-10-21T06:16:20Z'
+  updated: '2026-10-21'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - nonlinear Schrödinger equation
+  - spacetime cones
+  - conditional scattering
+- id: arxiv:2610.29307
+  title: Effective stability and sharp logarithmic time scales for Hamiltonian PDEs on the circle
+  authors:
+  - Bingqi Yu
+  - Yong Li
+  url: https://arxiv.org/abs/2610.29307
+  arxiv_id: '2610.29307'
+  doi: null
+  submitted: '2026-10-21'
+  submitted_at: '2026-10-21T07:01:24Z'
+  updated: '2026-10-21'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - math.AP
+  - math.DS
+  keywords:
+  - Hamiltonian PDE
+  - normal forms
+  - Gevrey regularity
+  - effective stability
+- id: arxiv:2610.29353
+  title: An Arnold-Type Stability Analysis of Vortex Filaments
+  authors:
+  - Masashi Aiki
+  - Mitsuo Higaki
+  url: https://arxiv.org/abs/2610.29353
+  arxiv_id: '2610.29353'
+  doi: null
+  submitted: '2026-10-21'
+  submitted_at: '2026-10-21T07:47:09Z'
+  updated: '2026-10-21'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - localized induction equation
+  - vortex filament
+  - orbital stability
+  - Hasimoto transformation
+- id: arxiv:2610.29698
+  title: Moduli spaces of logarithmic connections associated with difference Painlevé equations of type $E^{(1)}_n$
+  authors:
+  - Takafumi Matsumoto
+  url: https://arxiv.org/abs/2610.29698
+  arxiv_id: '2610.29698'
+  doi: null
+  submitted: '2026-10-21'
+  submitted_at: '2026-10-21T13:12:15Z'
+  updated: '2026-10-21'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - math.AG
+  keywords:
+  - difference Painlevé
+  - logarithmic connections
+  - affine Weyl group
+- id: arxiv:2610.29770
+  title: 'From infinite symmetries to multi-soliton manifolds: dispersion-driven reduction for the KP and mKP equations'
+  authors:
+  - Xiazhi Hao
+  - Mingxia Ji
+  - Senyue Lou
+  url: https://arxiv.org/abs/2610.29770
+  arxiv_id: '2610.29770'
+  doi: null
+  submitted: '2026-10-21'
+  submitted_at: '2026-10-21T14:02:39Z'
+  updated: '2026-10-21'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - KP equation
+  - modified KP
+  - multi-soliton manifolds
+  - symmetry reduction
+- id: arxiv:2610.29935
+  title: Normal form approach to unconditional well-posedness of the periodic stochastic Korteweg-de Vries equation with an additive noise
+  authors:
+  - Damiano Greco
+  - Tadahiro Oh
+  - Philippe Sosoe
+  - Yuzhao Wang
+  url: https://arxiv.org/abs/2610.29935
+  arxiv_id: '2610.29935'
+  doi: null
+  submitted: '2026-10-21'
+  submitted_at: '2026-10-21T16:06:21Z'
+  updated: '2026-10-21'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - math.AP
+  - math.PR
+  keywords:
+  - stochastic KdV
+  - normal forms
+  - unconditional well-posedness
+  - additive noise
+- id: arxiv:2610.29998
+  title: Generalized Coordinate Bethe Ansatz and Quantum Integrability of the Time-Dependent Massive Thirring Model
+  authors:
+  - Parameshwar R. Pasnoori
+  url: https://arxiv.org/abs/2610.29998
+  arxiv_id: '2610.29998'
+  doi: null
+  submitted: '2026-10-21'
+  submitted_at: '2026-10-21T16:36:19Z'
+  updated: '2026-10-21'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - math-ph
+  - cond-mat.stat-mech
+  - hep-th
+  keywords:
+  - massive Thirring model
+  - time-dependent integrability
+  - Bethe ansatz
+  - rapidity lattice
+- id: arxiv:2610.30079
+  title: Electrically Pumped Quadratic-Soliton Mode-Locked Laser in Lithium Niobate Nanophotonics
+  authors:
+  - Benjamin K. Gutierrez
+  - Nicolas Englebert
+  - Yingchu Xu
+  - Selina Zhou
+  - Maximilian Shen
+  - Mahmood Bagheri
+  - Alireza Marandi
+  url: https://arxiv.org/abs/2610.30079
+  arxiv_id: '2610.30079'
+  doi: null
+  submitted: '2026-10-21'
+  submitted_at: '2026-10-21T17:28:34Z'
+  updated: '2026-10-21'
+  version: v1
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - physics.optics
+  keywords:
+  - quadratic soliton
+  - mode-locked laser
+  - lithium niobate
+  - Ginzburg-Landau
+- id: arxiv:2408.00593
+  title: Generalized Bogoliubov-Born-Green-Kirkwood-Yvon Hierarchy for Near-Integrable Dynamics
+  authors:
+  - Leonardo Biagetti
+  - Maciej Łebek
+  - Miłosz Panfil
+  - Jacopo De Nardis
+  url: https://arxiv.org/abs/2408.00593
+  arxiv_id: '2408.00593'
+  doi: 10.1103/sx1x-pyl1
+  submitted: '2024-08-01'
+  submitted_at: '2024-08-01T14:21:13Z'
+  updated: '2026-07-20'
+  version: v6
+  metadata_checked_at: '2026-10-22'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - cond-mat.quant-gas
+  - nlin.SI
+  journal: Physical Review X
+  volume: '16'
+  issue: '4'
+  article_number: '041021'
+  year: 2026
+  published: '2026-10-21'
+  keywords:
+  - near-integrable dynamics
+  - BBGKY hierarchy
+  - generalized hydrodynamics
+  - thermalization
