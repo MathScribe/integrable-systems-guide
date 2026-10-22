@@ -2,82 +2,70 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-10-20'
+    announced_through: '2026-10-22'
     last_status: complete
-    coverage_note: 'Oct15–20: 90 official dated Catchup pages (two core and 13 cross categories), headings and full counts validated; 2907 distinct dated events (1305 new, 419 cross-list, 1183 replacements). Bounded structure/result title screening with primary abstract review; cross-category coverage is selective.'
+    coverage_note: 'Oct21–22: all 30 dated Catchup pages for two core and 13 configured cross categories passed date-heading and complete-count validation; 1227 distinct dated events (568 new, 191 cross-list, 468 replacements). Selective structure/result title screening and primary review selected 16 new preprints. One additional primary-category page verified the random-operator first announcement.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-20'
+      checked_through: '2026-10-22'
       open_gaps: []
-      coverage_note: Six substantive revisions selected after prior/current text comparison. Tzitzéica far-field backgrounds and error exponents corrected; mCH physical-coordinate positivity retained. Two routine selected-record revisions refreshed without new events. Catchup excludes journal-reference-only changes and versions beyond v5.
-    checked_at: '2026-10-20T09:26:30.988699Z'
+      coverage_note: Five plausible replacements compared against prior full texts. No separate major-revision event selected; the circular-filament result overlaps the more complete newly selected arc/circle paper. One existing Lax record refreshed to v4 without changing its event. Current histories of both registered v5+ papers checked and unchanged. Catchup omits journal-reference-only updates and replacements beyond v5; no all-version census claimed.
+    checked_at: '2026-10-22T08:17:00.274495Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-10-20'
+    announced_through: '2026-10-22'
     last_status: complete
-    coverage_note: 'Oct15–20: 90 official dated Catchup pages (two core and 13 cross categories), headings and full counts validated; 2907 distinct dated events (1305 new, 419 cross-list, 1183 replacements). Bounded structure/result title screening with primary abstract review; cross-category coverage is selective.'
+    coverage_note: 'Oct21–22: all 30 dated Catchup pages for two core and 13 configured cross categories passed date-heading and complete-count validation; 1227 distinct dated events (568 new, 191 cross-list, 468 replacements). Selective structure/result title screening and primary review selected 16 new preprints. One additional primary-category page verified the random-operator first announcement.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-20'
+      checked_through: '2026-10-22'
       open_gaps: []
-      coverage_note: Six substantive revisions selected after prior/current text comparison. Tzitzéica far-field backgrounds and error exponents corrected; mCH physical-coordinate positivity retained. Two routine selected-record revisions refreshed without new events. Catchup excludes journal-reference-only changes and versions beyond v5.
-    checked_at: '2026-10-20T09:26:30.988699Z'
+      coverage_note: Five plausible replacements compared against prior full texts. No separate major-revision event selected; the circular-filament result overlaps the more complete newly selected arc/circle paper. One existing Lax record refreshed to v4 without changing its event. Current histories of both registered v5+ papers checked and unchanged. Catchup omits journal-reference-only updates and replacements beyond v5; no all-version census claimed.
+    checked_at: '2026-10-22T08:17:00.274495Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-10-20'
+    announced_through: '2026-10-22'
     last_status: complete
-    coverage_note: 'Oct15–20: 90 official dated Catchup pages (two core and 13 cross categories), headings and full counts validated; 2907 distinct dated events (1305 new, 419 cross-list, 1183 replacements). Bounded structure/result title screening with primary abstract review; cross-category coverage is selective.'
+    coverage_note: 'Oct21–22: all 30 dated Catchup pages for two core and 13 configured cross categories passed date-heading and complete-count validation; 1227 distinct dated events (568 new, 191 cross-list, 468 replacements). Selective structure/result title screening and primary review selected 16 new preprints. One additional primary-category page verified the random-operator first announcement.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-20'
+      checked_through: '2026-10-22'
       open_gaps: []
-      coverage_note: Six substantive revisions selected after prior/current text comparison. Tzitzéica far-field backgrounds and error exponents corrected; mCH physical-coordinate positivity retained. Two routine selected-record revisions refreshed without new events. Catchup excludes journal-reference-only changes and versions beyond v5.
-    checked_at: '2026-10-20T09:26:30.988699Z'
+      coverage_note: Five plausible replacements compared against prior full texts. No separate major-revision event selected; the circular-filament result overlaps the more complete newly selected arc/circle paper. One existing Lax record refreshed to v4 without changing its event. Current histories of both registered v5+ papers checked and unchanged. Catchup omits journal-reference-only updates and replacements beyond v5; no all-version census claimed.
+    checked_at: '2026-10-22T08:17:00.274495Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-10-20'
-      note: Configured cond-mat.quant-gas dated listings covered through Oct20; selective screening.
+      through: '2026-10-22'
+      note: Configured cond-mat.quant-gas dated listings covered through Oct22; selective screening.
   crossref:
     kind: ranked-title-backstop
-    reconciliation_checked_at: '2026-10-14T12:57:52Z'
+    reconciliation_checked_at: '2026-10-22T08:17:00.274495Z'
     reconciliation_cadence: weekly
-    reconciliation_note: '24 candidate title-and-author queries: 20 completed with no matching journal identity, four HTTP429 failures. Optional journal metadata remains unverified for those four; verified arXiv events retained.'
+    reconciliation_note: 'All 20 title-and-author queries completed: 16 selected new preprints and four previously rate-limited identities. No matching journal identities among returned results. Similar Whitham titles have different authors. PRX preprint link and journal bibliography separately verified.'
     overlap_days: 3
-    title_query_note: Oct19 successful weekly artifact (Oct9–19, 16 ranked-title phrases) plus Oct19–20 bounded supplement completed. Three new journal events verified; selective backstop, not exhaustive.
-    online_query_through: '2026-10-20'
+    title_query_note: 'Oct17–22 overlapping supplement: all 16 configured ranked-title queries completed, 491 raw records and five matches; one new PRX journal event selected. Earlier Oct19 weekly artifacts were already processed in the Oct20 update. Ranked pages only, not exhaustive.'
+    online_query_through: '2026-10-22'
     online_status: complete
-    registration_query_through: '2026-10-20'
+    registration_query_through: '2026-10-22'
     registration_status: complete
-    registration_note: Independent five-phrase DOI-created weekly artifact plus Oct19–20 supplement completed. Creation timestamps not used as publication dates.
-    reconciliation_last_attempt_at: '2026-10-20T09:26:30.988699Z'
-    reconciliation_last_status: partial
-    reconciliation_open_queries:
-    - arxiv_id: '2610.26348'
-      title: Generating integrable systems from an autonomous ordinary differential equation
-      reason: Crossref HTTP429; reconcile opportunistically
-    - arxiv_id: '2604.20830'
-      title: The gauge action on semi-discrete Lax representations, its invariants, and Lax-Miura type constructions
-      reason: Crossref HTTP429; reconcile opportunistically
-    - arxiv_id: '2608.02534'
-      title: Failure of fixed-profile modified scattering and generalized modified scattering for the 1D defocusing cubic NLS
-      reason: Crossref HTTP429; reconcile opportunistically
-    - arxiv_id: '2507.02100'
-      title: 'The Modified Camassa–Holm Equation with Step-Like Boundary Conditions: A Characterization of Existence'
-      reason: Crossref HTTP429; reconcile opportunistically
+    registration_note: 'Oct17–22 independent five-phrase DOI-created pass completed: 175 raw records, one overlapping match already screened in the Oct20 run. Creation timestamps not used as publication dates.'
+    reconciliation_last_attempt_at: '2026-10-22T08:17:00.274495Z'
+    reconciliation_last_status: complete
+    reconciliation_open_queries: []
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
     checked_at: '2026-09-27T02:12:13Z'
     last_status: partial
-    coverage_note: Oct20 bounded MSC attempt for 2026–2027 issue years, Aug28–Oct20 indexing overlap, returned HTTP404 before records. Last successful Sep27 watermark retained. Oct19 workflow success had no downloadable artifact and is not evidence of recovery.
+    coverage_note: Oct22 configured bounded MSC request for 2026–2027 issue years and Aug28–Oct22 indexing overlap returned HTTP404 before records. Last successful Sep27 watermark retained; no zero-result or recovery claim.
     publication_years:
     - 2026
     - 2027
-    last_attempt_at: '2026-10-20T09:26:30.988699Z'
+    last_attempt_at: '2026-10-22T08:17:00.274495Z'
     last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-10-20T09:26:30.988699Z'
+    checked_at: '2026-10-22T08:17:00.274495Z'
     last_status: candidate-only
-    coverage_note: Three new journal records verified from publisher-deposited Crossref bibliography and abstracts (Cambridge, World Scientific, IOP). DOI-page retrieval unavailable; no publisher-wide coverage claimed.
+    coverage_note: PRX first-online date Oct21 and bibliography verified on the APS publisher page and Crossref deposit; linked arXiv identity checked. Four other ranked-title records screened from deposits; two replacement-linked DOIs checked separately. Fractional-NLS DOI target TLS retrieval failed and first-online day remains unknown; no publisher-wide coverage claimed.
