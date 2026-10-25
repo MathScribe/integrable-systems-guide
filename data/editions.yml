@@ -3149,16 +3149,16 @@ frontier:
       method_scope: 路径逐点的临界扰动理论与 Poisson 补偿能量估计；连续依赖和近似极限在有限时间区间内成立。
     event_source: https://arxiv.org/catchup/math.AP/2026-10-15?abs=False&page=1
   - paper_id: arxiv:2604.20830
-    signal_date: '2026-10-16'
+    signal_date: '2026-10-23'
     signal_type: major-revision
     directions:
     - structures
     - spectral
     reading_note:
-      lead: 为半离散矩阵 Lax 表示建立显式规范不变量，给出谱参数不可去除与两个表示规范等价的判别条件。
-      detail: 将这些不变量与 Miura 型修改联系起来，并利用离散 Lax 对的规范简化构造二维格点四点、六点方程间的新变换。
-      method_scope: 适用于多分量演化微分差分方程；实例涵盖 Volterra–Yamilov、Toda 型系统及全离散方程。
-    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-16?abs=False&page=1
+      lead: 为半离散矩阵 Lax 表示建立规范不变量，并以 Miura 提升后的非零判别量证明原表示不能规范化为平凡表示。
+      detail: 不可平凡化判据补充了谱参数不可去除及规范等价的判别；离散 Lax 对的规范简化还给出四点、六点方程间的 Miura 型变换。
+      method_scope: 针对多分量演化微分差分方程及局部规范变换；Miura 提升判据要求相应映射存在且至少一个提升后的判别量非零。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-23?abs=False&page=1
   - paper_id: arxiv:2608.02534
     signal_date: '2026-10-15'
     signal_type: major-revision
@@ -3415,3 +3415,173 @@ frontier:
       detail: 单粒子分布通过 Boltzmann 型碰撞积分松弛，而高阶关联在热化时间尺度仍可保持非热特征；偶极量子气体中碰撞积分与费米黄金律一致。
       method_scope: 从相关流体元系综假设出发，针对宏观时空尺度推导，并与微观分子动力学模拟比较。
     event_source: https://doi.org/10.1103/sx1x-pyl1
+  - paper_id: arxiv:2610.30550
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - waves
+    reading_note:
+      lead: 预测一维暗孤子和畴壁可在相对滑动的光学晶格中实现量子化拓扑输运，将非线性 Thouless 泵送扩展到非零背景态。
+      detail: 分别处理交错与非交错周期背景，识别背景幅度、传播常数和晶格深度中支持稳定输运的区间。
+      method_scope: 聚焦或散焦 Kerr 介质中的理论与数值研究；量子化输运要求局域激发及其周期背景均保持动力学稳定。
+    event_source: https://arxiv.org/catchup/nlin.PS/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.31425
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - waves
+    - asymptotics
+    reading_note:
+      lead: 为 KP-II 的 Y 型共振孤子及 X 型双孤子建立长波调制系统，把孤子支汇合的顶点作为传递信息的移动自由边界。
+      detail: 在线性化系统中证明适定性并求得精确解；非线性 Y 型系统刻画容许简单波、支的生成与消失及梯度灾变条件，X 型系统则约化为两个独立线孤子调制系统。
+      method_scope: 双曲守恒律与 KP-II 直接模拟；用新增孤子支正则化梯度灾变的扩充调制系统属于提出并数值检验的描述。
+    event_source: https://arxiv.org/catchup/nlin.PS/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.31347
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - structures
+    - spectral
+    reading_note:
+      lead: 通过离散 DNLS 的 Lax 对构造非线性可积辛映射，并给出离散势的 Riemann theta 函数表示。
+      detail: 由辛映射得到方程的显式准周期解，genus 1 与 genus 2 的实例展示相应准周期结构。
+      method_scope: Lax 谱方法、可积辛映射与代数几何解构造；低 genus 图示用于说明一般 theta 表达。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.30849
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - structures
+    - spectral
+    reading_note:
+      lead: 将透镜空间指标的曲面缺陷差分算子显式分解为两组椭圆 Ruijsenaars–Schneider 型算子，并证明整族算子两两交换。
+      detail: 分解由离散 holonomy 上的 Gaussian 规范变换实现，结合 Wronski 型关系处理任意秩、轨形阶数及离散 holonomy。
+      method_scope: 四维 N=2 理论的指标问题；自伴性给出充分条件，一般混合算子的积分轮廓问题仍未解决。
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.30699
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - asymptotics
+    reading_note:
+      lead: 在 open KPZ 方程冲击区的一段参数范围内，计算平稳增量测度的有限维 Laplace 变换。
+      detail: 通过解析延拓从已有表达进入冲击区，并直接比较有限维 Laplace 变换，证明 open WASEP 平稳高度增量的相应分布收敛。
+      method_scope: 有界区间、平稳测度及指定冲击区参数；WASEP 收敛证明不需要先借道 open KPZ 方程。
+    event_source: https://arxiv.org/catchup/math.PR/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.30767
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - asymptotics
+    - structures
+    reading_note:
+      lead: 用 Weyl 室及其边界面的渐近结构，刻画一族显式径向 Toda 解的逐级起泡尺度和极限轮廓。
+      detail: 射线与根超平面的交点决定慢衰减的起泡尺度，重缩放后得到相应 Levi–Toda 子系统解，各级泡的质量覆盖全部爆破质量。
+      method_scope: 针对由 Weyl 群元素标记的显式解族，建立一致上界及面渐近；A₂ 实例包含分离标量泡和同时出现的全系统泡。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.30919
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - structures
+    - asymptotics
+    reading_note:
+      lead: 从一维 KPZ 的模拟高度轨迹学习 Cole–Hopf 变量变换及其线性随机演化算子。
+      detail: 以短时矩匹配训练神经变量变换和随机潜在动力学，生成轨迹复现增长指数及平坦初值的 GOE Tracy–Widom 高度统计。
+      method_scope: 数据驱动随机线性化的数值验证，训练目标使用系综统计；尚不构成任意随机非线性方程均可线性化的结论。
+    event_source: https://arxiv.org/catchup/cond-mat.stat-mech/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.31297
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - structures
+    reading_note:
+      lead: 为指定的单尺度 Courant–Hilbert 系统重构精确应力张量形变生成元，将问题约化为物理分支上的一个标量反演。
+      detail: 具有相同最低阶相互作用的 Born–Infeld 型与对数型模型呈现不同强场压强行为，精确生成元区分这些非线性延拓。
+      method_scope: 在可逆光滑分支上使用 Legendre 变换；所得流局部地与 root-TTbar 流交换，并保留共同经典 Lax 形式。
+    event_source: https://arxiv.org/catchup/math-ph/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.31634
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - waves
+    - asymptotics
+    reading_note:
+      lead: 为实值 H³ 初值的 KdV 流给出保持 L² 范数的构造性逼近，并证明全序列在有限时间区间的 H² 收敛。
+      detail: 将 Airy 群的酉中心差分 Chernoff 乘积与二次非线性的反对称离散结合，再用 Picard 迭代计算；对 H³ 初值得到 L² 中 O(n^(−6/5)) 的误差阶。
+      method_scope: 实线上实值初值；更高正则性对应相应 H² 收敛率，经典守恒律将流延拓到全局时间。
+    event_source: https://arxiv.org/catchup/math.AP/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.31672
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - structures
+    - spectral
+    reading_note:
+      lead: 通过四维 Chern–Simons 理论构造二维可积 sigma 模型族，并把其经典点粒子约化对应到 Hitchin 系统。
+      detail: Hitchin 量子化提供单圈约化动力学的候选 Hamilton 算子；sausage 模型中给出精确量子化条件及与数值匹配所需的指数小修正。
+      method_scope: 结合规范理论与共形场论的谱方法；候选算子与 Perelman 算子的相等性在论文检验的实例中成立。
+    event_source: https://arxiv.org/catchup/math-ph/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.31614
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - asymptotics
+    reading_note:
+      lead: 构造临界二维 KPZ 的非平凡分布值随机过程，作为二维 Gaussian 有向聚合物中心化对数配分函数的极限。
+      detail: 借助重整化 Cole–Hopf 变换将其表示为临界二维随机热流的可测函数；过程非 Gaussian，协方差在对角线附近具有 log-log 奇性。
+      method_scope: 临界尺度的概率极限构造，局部缩小尺度平均呈现 Gaussian 涨落；结果连接随机热流、聚合物与 KPZ。
+    event_source: https://arxiv.org/catchup/math-ph/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.31643
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - spectral
+    - waves
+    reading_note:
+      lead: 利用相干频率转换形成非线性光学超势，在反向传播信号模之间产生时间局域束缚态。
+      detail: 与超对称量子力学的对应给出束缚模的解析表达及其存在机制，并讨论与参量增益结合的情形。
+      method_scope: 泵浦非线性介导的波混频模型；薄膜铌酸锂实验为提出的验证方案，尚非已完成的光子存储实验。
+    event_source: https://arxiv.org/catchup/physics.optics/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2610.30629
+    signal_type: new-preprint
+    signal_date: '2026-10-23'
+    directions:
+    - structures
+    - waves
+    reading_note:
+      lead: 用一阶微分约束把三维非线性波方程的可容许非线性与波前几何联系起来，并构造一般不具 Lie 点对称性的精确解。
+      detail: 特征超平面、光锥和柱面对应不同非线性类别，解族包括沿波前任意变形的 sine-Gordon 壁及具有任意指定数量环面节点的光滑有限能量三次方程解。
+      method_scope: 线性确定方程生成约束并积分成 ansatz；结果依赖所选约束几何，分别处理单约束与双约束情形。
+    event_source: https://arxiv.org/catchup/math-ph/2026-10-23?abs=False&page=1
+  - paper_id: arxiv:2604.19655
+    signal_type: journal-publication
+    signal_date: '2026-10-24'
+    directions:
+    - structures
+    reading_note:
+      lead: 通过 Hamilton 势变量把 Hamilton 算子变换为对偶空间中的辛算子，从双 Hamilton 结构构造成对的 Lagrangian 多重形式。
+      detail: 给出辛形式的 Lenard 方案，并用于 KdV、若干无色散极限、多方气体动力学及常像散方程。
+      method_scope: 一般结构构造及模型实例；两个 Lagrangian 多重形式对应同一个双 Hamilton 层级。
+    event_source: https://doi.org/10.1007/s00023-026-01774-0
+  - paper_id: arxiv:2605.01230
+    signal_type: journal-publication
+    signal_date: '2026-10-23'
+    directions:
+    - spectral
+    reading_note:
+      lead: 为作为波导阵列连续模型的 Dirac 方程建立正问题适定性，并构造反散射重构方法。
+      detail: 发展逆 Born 级数和约化逆 Born 级数，对前者给出收敛分析与严格误差估计，并以数值实验检验算法。
+      method_scope: Dirac 波传播模型中的谱反演；收敛与误差结论限定于论文分析的逆 Born 级数及相应假设。
+    event_source: https://doi.org/10.1088/1361-6420/aeb8b6
+  - paper_id: doi:10.1088/1361-6544/aeb19a
+    signal_type: journal-publication
+    signal_date: '2026-10-23'
+    directions:
+    - spectral
+    - asymptotics
+    reading_note:
+      lead: 利用 RH 问题及 Deift–Zhou 最速下降法分析 modified short-pulse 方程孤子气的渐近行为。
+      detail: 针对区间上两类广义反射系数，构造分段 g 函数处理原点奇性，并分别建立端点和奇点附近的局部模型以控制误差。
+      method_scope: mSP 是 WKI 系统的负流；局部模型使用 Airy、修正 Bessel 及合流超几何函数，简介依据出版商存入 Crossref 的摘要。
+    event_source: https://doi.org/10.1088/1361-6544/aeb19a
