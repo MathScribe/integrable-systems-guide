@@ -1781,8 +1781,8 @@
   - A. Zabrodin
   url: https://arxiv.org/abs/2607.09180
   arxiv_id: '2607.09180'
-  doi: null
-  metadata_checked_at: '2026-10-15'
+  doi: 10.1063/5.0352564
+  metadata_checked_at: '2026-10-25'
   keywords:
   - Yang--Baxter equation
   - tau function
@@ -1790,6 +1790,12 @@
   submitted_at: '2026-07-10T08:14:31Z'
   updated: '2026-07-10'
   version: v1
+  journal: Journal of Mathematical Physics
+  year: 2026
+  published: '2026-10-22'
+  volume: '67'
+  issue: '10'
+  article_number: '103505'
 - id: arxiv:2607.15132
   title: Periodic orbits and quantum many-body scars in integrable spin chains
   authors:
@@ -9287,9 +9293,9 @@
   arxiv_id: '2604.20830'
   submitted: '2026-04-22'
   submitted_at: '2026-04-22T17:56:53Z'
-  updated: '2026-10-20'
-  version: v4
-  metadata_checked_at: '2026-10-22'
+  updated: '2026-10-22'
+  version: v5
+  metadata_checked_at: '2026-10-25'
   doi: null
   arxiv_categories:
   - nlin.SI
@@ -9813,3 +9819,362 @@
   - BBGKY hierarchy
   - generalized hydrodynamics
   - thermalization
+- id: arxiv:2610.30550
+  title: Thouless Pumping of One-Dimensional Dark Solitons and Domain Walls
+  authors:
+  - Fangwei Ye
+  - Aidar H. Ryazhapov
+  - Yaroslav V. Kartashov
+  - Vladimir V. Konotop
+  url: https://arxiv.org/abs/2610.30550
+  arxiv_id: '2610.30550'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T00:16:20Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - nlin.PS
+  - physics.optics
+  doi: null
+  keywords:
+  - Thouless pumping
+  - dark soliton
+  - domain wall
+  - optical lattice
+- id: arxiv:2610.31425
+  title: Modulation theory of Y- and X-wave Kadomtsev--Petviashvili solitons
+  authors:
+  - Jerry Wang
+  - Mark A. Hoefer
+  url: https://arxiv.org/abs/2610.31425
+  arxiv_id: '2610.31425'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T15:25:42Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - nlin.PS
+  - physics.flu-dyn
+  doi: null
+  keywords:
+  - KP-II
+  - Whitham modulation
+  - Y-soliton
+  - X-soliton
+  - free boundary
+- id: arxiv:2610.31347
+  title: Explicit quasi-periodic solutions to the discrete derivative nonlinear Schrödinger equation
+  authors:
+  - Xiaoxue Xu
+  - Wei Liu
+  - Junyi Zhu
+  url: https://arxiv.org/abs/2610.31347
+  arxiv_id: '2610.31347'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T14:29:28Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  doi: null
+  keywords:
+  - discrete derivative NLS
+  - quasi-periodic solution
+  - Riemann theta function
+  - symplectic map
+- id: arxiv:2610.30849
+  title: Surface Defects in the $\mathcal{N}=2$ Lens Space Index and Elliptic Integrability
+  authors:
+  - Masahito Yamazaki
+  url: https://arxiv.org/abs/2610.30849
+  arxiv_id: '2610.30849'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T07:28:00Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - hep-th
+  - math-ph
+  - math.QA
+  - nlin.SI
+  doi: null
+  keywords:
+  - Ruijsenaars-Schneider
+  - elliptic difference operator
+  - commuting operator
+  - surface defect
+- id: arxiv:2610.30699
+  title: The Laplace transform of the stationary measure of the open KPZ equation in the shock region
+  authors:
+  - Zoe Himwich
+  - Yizao Wang
+  url: https://arxiv.org/abs/2610.30699
+  arxiv_id: '2610.30699'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T04:14:54Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - math.PR
+  doi: null
+  keywords:
+  - open KPZ
+  - stationary measure
+  - shock region
+  - WASEP
+  - Laplace transform
+- id: arxiv:2610.30767
+  title: Weyl chambers, asymptotic expansions, and blowup analysis of explicit Toda solutions
+  authors:
+  - Zhaohu Nie
+  url: https://arxiv.org/abs/2610.30767
+  arxiv_id: '2610.30767'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T05:40:26Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - math.AP
+  - math.DG
+  - math.RT
+  doi: null
+  keywords:
+  - Toda system
+  - Weyl chamber
+  - blowup
+  - Levi subsystem
+- id: arxiv:2610.30919
+  title: 'Learning Cole-Hopf Coordinates for Stochastic Growth Dynamics: the KPZ class'
+  authors:
+  - Lorenzo Mensi
+  - Simone Cuonzo
+  - Maria Chiara Angelini
+  - Sergio Chibbaro
+  - Cyril Furtlehner
+  - Alberto Rosso
+  url: https://arxiv.org/abs/2610.30919
+  arxiv_id: '2610.30919'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T08:38:27Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - physics.data-an
+  doi: null
+  keywords:
+  - KPZ
+  - Cole-Hopf transformation
+  - data-driven linearization
+  - stochastic dynamics
+- id: arxiv:2610.31297
+  title: Exact stress-tensor generators distinguish integrable continuations
+  authors:
+  - H. Babaei-Aghbolagh
+  - Song He
+  - Zahra Pezhman
+  url: https://arxiv.org/abs/2610.31297
+  arxiv_id: '2610.31297'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T13:58:31Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - hep-th
+  - gr-qc
+  - math-ph
+  doi: null
+  keywords:
+  - integrable sigma model
+  - stress tensor
+  - Courant-Hilbert
+  - TTbar deformation
+- id: arxiv:2610.31634
+  title: Quantitative constructive representation of the KdV flow in $H^3$ via $L^2$-energy-preserving centered-difference Chernoff approximations and Picard iteration
+  authors:
+  - Comlan Edmond Koudjinan
+  url: https://arxiv.org/abs/2610.31634
+  arxiv_id: '2610.31634'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T17:49:50Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - KdV
+  - Chernoff approximation
+  - Picard iteration
+  - norm preservation
+- id: arxiv:2610.31672
+  title: Ricci flow of Integrable Sigma Models, Hitchin Systems and Quantum Seiberg-Witten theory
+  authors:
+  - G. Bonelli
+  - S. Lacroix
+  - T. Pedroni
+  - A. Tanzini
+  url: https://arxiv.org/abs/2610.31672
+  arxiv_id: '2610.31672'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T17:59:58Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - hep-th
+  - math-ph
+  doi: null
+  keywords:
+  - integrable sigma model
+  - Hitchin system
+  - Ricci flow
+  - Seiberg-Witten
+  - quantization
+- id: arxiv:2610.31614
+  title: The Critical 2D KPZ Process
+  authors:
+  - Quentin Berger
+  - Francesco Caravenna
+  - Jeremy Clark
+  - Alexander Dunlap
+  - Yu Gu
+  - Ziyang Liu
+  - Shuta Nakajima
+  - Rongfeng Sun
+  - Li-Cheng Tsai
+  - Zuodi Xie
+  - Nikos Zygouras
+  url: https://arxiv.org/abs/2610.31614
+  arxiv_id: '2610.31614'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T17:40:36Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - math.PR
+  - math-ph
+  doi: null
+  keywords:
+  - critical 2D KPZ
+  - stochastic heat flow
+  - Cole-Hopf
+  - directed polymer
+- id: arxiv:2610.31643
+  title: Confinement of hybridized light modes in nonlinear-optical superpotentials
+  authors:
+  - Federico Presutti
+  - Ryotatsu Yanagimoto
+  url: https://arxiv.org/abs/2610.31643
+  arxiv_id: '2610.31643'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T17:55:02Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - physics.optics
+  - physics.app-ph
+  doi: null
+  keywords:
+  - supersymmetric quantum mechanics
+  - frequency conversion
+  - bound mode
+  - optical trapping
+- id: arxiv:2610.30629
+  title: First-order differential constraints for the nonlinear wave equation:wave fronts, admissible nonlinearities and exact solutions
+  authors:
+  - Oleg Kaptsov
+  url: https://arxiv.org/abs/2610.30629
+  arxiv_id: '2610.30629'
+  submitted: '2026-10-22'
+  submitted_at: '2026-10-22T02:52:48Z'
+  updated: '2026-10-22'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - math-ph
+  doi: null
+  keywords:
+  - nonlinear wave equation
+  - differential constraint
+  - sine-Gordon
+  - wave front
+- id: arxiv:2604.19655
+  title: Duality of Hamiltonian and Lagrangian Formulations for Integrable Systems
+  authors:
+  - Pierandrea Vergallo
+  - Mats Vermeeren
+  url: https://arxiv.org/abs/2604.19655
+  arxiv_id: '2604.19655'
+  submitted: '2026-04-21'
+  submitted_at: '2026-04-21T16:45:05Z'
+  updated: '2026-09-30'
+  version: v2
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - nlin.SI
+  doi: 10.1007/s00023-026-01774-0
+  journal: Annales Henri Poincaré
+  year: 2026
+  published: '2026-10-24'
+  keywords:
+  - bi-Hamiltonian
+  - Lagrangian multiform
+  - Hamiltonian potential variable
+  - Lenard scheme
+- id: arxiv:2605.01230
+  title: Inverse scattering for Dirac equations with applications to waveguide arrays
+  authors:
+  - John Schotland
+  - Shenwen Yu
+  url: https://arxiv.org/abs/2605.01230
+  arxiv_id: '2605.01230'
+  submitted: '2026-05-02'
+  submitted_at: '2026-05-02T04:00:05Z'
+  updated: '2026-05-02'
+  version: v1
+  metadata_checked_at: '2026-10-25'
+  arxiv_categories:
+  - math.NA
+  doi: 10.1088/1361-6420/aeb8b6
+  journal: Inverse Problems
+  year: 2026
+  published: '2026-10-23'
+  keywords:
+  - Dirac equation
+  - inverse Born series
+  - waveguide array
+  - inverse scattering
+- id: doi:10.1088/1361-6544/aeb19a
+  url: https://doi.org/10.1088/1361-6544/aeb19a
+  title: Large- N asymptotic behaviour of multi-soliton solutions for the modified short-pulse equation via the Riemann–Hilbert problems
+  authors:
+  - Weifang Weng
+  - Zhenya Yan
+  - Guoqiang Zhang
+  doi: 10.1088/1361-6544/aeb19a
+  journal: Nonlinearity
+  year: 2026
+  published: '2026-10-23'
+  metadata_checked_at: '2026-10-25'
+  keywords:
+  - modified short-pulse
+  - soliton gas
+  - large-N limit
+  - Riemann-Hilbert
+  - g-function
+  volume: '39'
+  issue: '10'
+  pages: '105017'
