@@ -68,4 +68,4 @@ sources:
     kind: candidate-verification
     checked_at: '2026-10-29T04:26:32.375876Z'
     last_status: candidate-only
-    coverage_note: 'Two journal events verified from publisher Crossref deposits and matching arXiv identities/abstracts. NPB bibliography verified with unknown first-online day and unavailable abstract: bibliography-only intake Oct29. Fokas-Lenells final volume/issue/pages added; Oct13 versus Oct26 deposit chronology unresolved and original event retained. Publisher page fetch failures do not imply absent papers.'
+    coverage_note: 'Two journal events verified from publisher Crossref deposits and matching arXiv identities/abstracts. NPB first-online date Oct25 verified from the locally saved ScienceDirect snapshot; local Journal Pre-proof PDF supplies the abstract, RH construction and reflectionless N-soliton result. Fokas-Lenells final volume/issue/pages added; Oct13 versus Oct26 deposit chronology unresolved and original event retained. Publisher page fetch failures do not imply absent papers.'

@@ -3834,9 +3834,12 @@ frontier:
       method_scope: 代价函数优化与离壳 Bethe 态的数值方法；适用范围由具体模型及形变强度决定。
   - paper_id: doi:10.1016/j.nuclphysb.2026.117703
     signal_type: journal-publication
-    signal_date: null
+    signal_date: '2026-10-25'
     directions:
     - spectral
     - structures
     event_source: https://doi.org/10.1016/j.nuclphysb.2026.117703
-    added_on: '2026-10-29'
+    reading_note:
+      lead: 利用 Riesz 分数阶色散及平方本征函数与伴随平方本征函数的完备关系，构造分数阶三分量 mKdV 方程的显式形式。
+      detail: 建立 4×4 矩阵 RH 问题，并在无反射条件下给出行列式形式的一般 N 孤子解；单、双孤子实例展示分数阶参数对峰值位置、传播位移和相互作用过程的影响。
+      method_scope: 衰减边界下的散射构造，离散谱采用简单零点假设；动力学示例为聚焦情形的精确解图示，不是一般初值的长时渐近或稳定性定理。
