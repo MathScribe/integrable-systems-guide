@@ -2,73 +2,70 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-10-25'
+    announced_through: '2026-10-29'
     last_status: complete
-    coverage_note: 'Oct23–25: all 45 dated Catchup pages for two core and 13 cross categories passed heading/count validation. Oct24–25 empty. Oct23: 603 dated events (293 new, 80 cross-list, 230 replacements). Bounded structure/result screening and primary abstracts selected 13 new preprints; cross-category coverage is selective.'
+    coverage_note: 'Oct26–29: all 60 dated Catchup pages for two core and 13 cross categories passed date/count validation. 2270 events (1075 new, 334 cross-list, 861 replacements); Oct29 pages empty at check time. Selective structure/result screening and primary review selected 21 new preprints; no exhaustive cross-field claim.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-25'
+      checked_through: '2026-10-29'
       open_gaps: []
-      coverage_note: 'Igonin v4/v5 full texts compared: new Miura-lift nontriviality theorem selected as major revision. Three previously registered v5+ histories checked and unchanged. One unregistered withdrawn optics record excluded. Catchup excludes journal-reference-only updates and versions beyond v5; no all-version census.'
-    checked_at: '2026-10-25T04:40:41.091467Z'
+      coverage_note: 'Six plausible replacements compared with prior full texts. Three substantive updates selected: hyperelliptic polynomial classification, KdV-rods bijection/separation, and reconstructed R-matrix analyticity. Two existing records refreshed without new events. Four existing v5+ histories checked unchanged. Catchup excludes journal-reference-only updates and versions beyond v5.'
+    checked_at: '2026-10-29T04:26:32.375876Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-10-25'
+    announced_through: '2026-10-29'
     last_status: complete
-    coverage_note: 'Oct23–25: all 45 dated Catchup pages for two core and 13 cross categories passed heading/count validation. Oct24–25 empty. Oct23: 603 dated events (293 new, 80 cross-list, 230 replacements). Bounded structure/result screening and primary abstracts selected 13 new preprints; cross-category coverage is selective.'
+    coverage_note: 'Oct26–29: all 60 dated Catchup pages for two core and 13 cross categories passed date/count validation. 2270 events (1075 new, 334 cross-list, 861 replacements); Oct29 pages empty at check time. Selective structure/result screening and primary review selected 21 new preprints; no exhaustive cross-field claim.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-25'
+      checked_through: '2026-10-29'
       open_gaps: []
-      coverage_note: 'Igonin v4/v5 full texts compared: new Miura-lift nontriviality theorem selected as major revision. Three previously registered v5+ histories checked and unchanged. One unregistered withdrawn optics record excluded. Catchup excludes journal-reference-only updates and versions beyond v5; no all-version census.'
-    checked_at: '2026-10-25T04:40:41.091467Z'
+      coverage_note: 'Six plausible replacements compared with prior full texts. Three substantive updates selected: hyperelliptic polynomial classification, KdV-rods bijection/separation, and reconstructed R-matrix analyticity. Two existing records refreshed without new events. Four existing v5+ histories checked unchanged. Catchup excludes journal-reference-only updates and versions beyond v5.'
+    checked_at: '2026-10-29T04:26:32.375876Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-10-25'
+    announced_through: '2026-10-29'
     last_status: complete
-    coverage_note: 'Oct23–25: all 45 dated Catchup pages for two core and 13 cross categories passed heading/count validation. Oct24–25 empty. Oct23: 603 dated events (293 new, 80 cross-list, 230 replacements). Bounded structure/result screening and primary abstracts selected 13 new preprints; cross-category coverage is selective.'
+    coverage_note: 'Oct26–29: all 60 dated Catchup pages for two core and 13 cross categories passed date/count validation. 2270 events (1075 new, 334 cross-list, 861 replacements); Oct29 pages empty at check time. Selective structure/result screening and primary review selected 21 new preprints; no exhaustive cross-field claim.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-25'
+      checked_through: '2026-10-29'
       open_gaps: []
-      coverage_note: 'Igonin v4/v5 full texts compared: new Miura-lift nontriviality theorem selected as major revision. Three previously registered v5+ histories checked and unchanged. One unregistered withdrawn optics record excluded. Catchup excludes journal-reference-only updates and versions beyond v5; no all-version census.'
-    checked_at: '2026-10-25T04:40:41.091467Z'
+      coverage_note: 'Six plausible replacements compared with prior full texts. Three substantive updates selected: hyperelliptic polynomial classification, KdV-rods bijection/separation, and reconstructed R-matrix analyticity. Two existing records refreshed without new events. Four existing v5+ histories checked unchanged. Catchup excludes journal-reference-only updates and versions beyond v5.'
+    checked_at: '2026-10-29T04:26:32.375876Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-10-25'
-      note: Configured cond-mat.quant-gas listings covered through Oct25; selective screening.
+      through: '2026-10-29'
+      note: Configured cond-mat.quant-gas dated lists covered through Oct29; selective screening.
   crossref:
     kind: ranked-title-backstop
-    reconciliation_checked_at: '2026-10-22T08:17:00.274495Z'
+    reconciliation_checked_at: '2026-10-29T04:26:32.375876Z'
     reconciliation_cadence: weekly
-    reconciliation_note: '13 new-preprint title/author queries: 12 complete without matching identity, KP Y/X-wave query HTTP429. Three journal identities verified from deposits; two arXiv counterparts linked. Optional metadata gap does not block verified arXiv event.'
+    reconciliation_note: '25 exact title/author queries completed: 21 new preprints, three major revisions, and the prior rate-limited KP Y/X paper. Returned records did not match identities. Two journal intakes linked to verified arXiv counterparts.'
     overlap_days: 3
-    title_query_note: 'Oct20–25 overlapping ranked-title pass: 16 phrases, 509 raw records, 11 matches. Three new journal events selected and one existing recommendation updated bibliographically.'
-    online_query_through: '2026-10-25'
+    title_query_note: 'Processed Oct26 successful weekly artifact (Oct16–26) and Oct26–29 supplement: 16 configured ranked-title phrases; supplement 478 raw records, seven matches. Two dated journal intakes and one bibliography-only intake from combined passes.'
+    online_query_through: '2026-10-29'
     online_status: complete
-    registration_query_through: '2026-10-25'
+    registration_query_through: '2026-10-29'
     registration_status: complete
-    registration_note: 'Independent Oct20–25 five-phrase DOI-created pass: 182 raw records, four matches. Translation of May-published Ukrainian article excluded as a new event; creation dates not used as publication dates.'
-    reconciliation_last_attempt_at: '2026-10-25T04:40:41.091467Z'
-    reconciliation_last_status: partial
-    reconciliation_open_queries:
-    - arxiv_id: '2610.31425'
-      title: Modulation theory of Y- and X-wave Kadomtsev--Petviashvili solitons
-      reason: Crossref HTTP429; reconcile opportunistically
+    registration_note: Independent five-phrase registered-DOI pass reused Oct26 weekly artifact plus Oct26–29 supplement (172 raw records, four matches). DOI creation/issue date never used as event date.
+    reconciliation_last_attempt_at: '2026-10-29T04:26:32.375876Z'
+    reconciliation_last_status: complete
+    reconciliation_open_queries: []
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
     checked_at: '2026-09-27T02:12:13Z'
     last_status: partial
-    coverage_note: Oct22 configured bounded MSC request for 2026–2027 issue years and Aug28–Oct22 indexing overlap returned HTTP404 before records. Last successful Sep27 watermark retained; no zero-result or recovery claim.
+    coverage_note: Oct29 configured bounded MSC request for 2026–2027 issue years and Aug28–Oct29 indexing overlap returned HTTP404 before records. Last successful Sep27 watermark retained; no zero-result or recovery claim.
     publication_years:
     - 2026
     - 2027
-    last_attempt_at: '2026-10-22T08:17:00.274495Z'
+    last_attempt_at: '2026-10-29T04:26:32.375876Z'
     last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-10-25T04:40:41.091467Z'
+    checked_at: '2026-10-29T04:26:32.375876Z'
     last_status: candidate-only
-    coverage_note: Three new journal events verified from publisher-deposited Crossref metadata and abstracts. Springer Hamiltonian/Lagrangian paper page confirms Oct24 date. IOP pages unavailable; deposits sufficient. Original Ukrainian journal page establishes May29 first publication for translation exclusion. No publisher-wide coverage.
+    coverage_note: 'Two journal events verified from publisher Crossref deposits and matching arXiv identities/abstracts. NPB bibliography verified with unknown first-online day and unavailable abstract: bibliography-only intake Oct29. Fokas-Lenells final volume/issue/pages added; Oct13 versus Oct26 deposit chronology unresolved and original event retained. Publisher page fetch failures do not imply absent papers.'

@@ -179,14 +179,18 @@
   arxiv_id: '2605.06306'
   doi: null
   submitted: '2026-05-07'
-  updated: '2026-05-07'
-  version: v1
-  metadata_checked_at: '2026-07-10'
+  updated: '2026-10-26'
+  version: v2
+  metadata_checked_at: '2026-10-29'
   keywords:
   - focusing NLS
   - soliton gas
   - integrable turbulence
   - stochastic inverse scattering
+  submitted_at: '2026-05-07T14:09:01Z'
+  arxiv_categories:
+  - nlin.PS
+  - nlin.SI
 - id: arxiv:2602.13589
   title: Painlevé XXXIV asymptotics for the defocusing nonlinear Schrödinger equation with a finite-genus algebro-geometric background
   authors:
@@ -868,7 +872,7 @@
   submitted: '2025-08-24'
   updated: '2026-10-13'
   version: v3
-  metadata_checked_at: '2026-10-20'
+  metadata_checked_at: '2026-10-29'
   keywords:
   - matrix Fokas--Lenells equation
   - negative Kaup--Newell flow
@@ -883,7 +887,10 @@
   journal: 'Journal of Physics A: Mathematical and Theoretical'
   year: 2026
   published: '2026-10-13'
-  metadata_note: Journal identity and available first-online bibliography verified from publisher-deposited Crossref metadata.
+  metadata_note: Final issue bibliography verified from current Crossref deposit. Earlier archived deposit gave first online Oct13; current deposit gives Oct26. Original Oct13 event retained pending clarification of accepted-manuscript versus final-version chronology.
+  volume: '59'
+  issue: '43'
+  pages: '435202'
 - id: doi:10.1016/j.nonrwa.2017.08.013
   title: General soliton solutions to a coupled Fokas-Lenells equation
   authors:
@@ -3019,9 +3026,9 @@
   arxiv_id: '2607.29660'
   doi: null
   submitted: '2026-07-31'
-  updated: '2026-07-31'
-  version: v1
-  metadata_checked_at: '2026-08-08'
+  updated: '2026-10-26'
+  version: v2
+  metadata_checked_at: '2026-10-29'
   keywords:
   - Yang--Baxter integrability
   - Reshetikhin condition
@@ -3031,7 +3038,11 @@
   - conservation laws
   arxiv_categories:
   - cond-mat.stat-mech
+  - hep-th
+  - math-ph
   - nlin.SI
+  - quant-ph
+  submitted_at: '2026-07-31T17:40:36Z'
 - id: arxiv:2608.00117
   title: A bijective topological recursion for maps
   authors:
@@ -4131,23 +4142,26 @@
 - id: arxiv:2608.17211
   title: 'Variable-mass sine-Gordon with point defects: integrability, soliton transmission, and quasi-conservation'
   authors:
-  - A.R. Aguirre
+  - A. R. Aguirre
   - H. Blas
-  - H.F. Callisaya
-  - M.C. de Oliveira
+  - H. F. Callisaya
+  - M. C. de Oliveira
   url: https://arxiv.org/abs/2608.17211
   arxiv_id: '2608.17211'
   doi: null
   submitted: '2026-08-17'
-  updated: '2026-08-17'
-  version: v1
-  metadata_checked_at: '2026-08-23'
+  updated: '2026-10-26'
+  version: v2
+  metadata_checked_at: '2026-10-29'
   keywords:
   - Lax pair
   - Bäcklund transformation
   arxiv_categories:
   - hep-th
+  - math-ph
+  - nlin.PS
   - nlin.SI
+  submitted_at: '2026-08-17T23:46:54Z'
 - id: arxiv:2608.17837
   title: Elliptic spin Ruijsenaars-Schneider integrable models from 5d N=1 gauge theories
   authors:
@@ -6281,9 +6295,9 @@
   doi: null
   submitted: '2026-05-18'
   submitted_at: '2026-05-18T09:10:09Z'
-  updated: '2026-09-17'
-  version: v2
-  metadata_checked_at: '2026-09-27'
+  updated: '2026-10-27'
+  version: v3
+  metadata_checked_at: '2026-10-29'
   arxiv_categories:
   - math-ph
   - cond-mat.stat-mech
@@ -9029,9 +9043,9 @@
   arxiv_id: '2610.22784'
   submitted: '2026-10-16'
   submitted_at: '2026-10-16T00:52:00Z'
-  updated: '2026-10-16'
-  version: v1
-  metadata_checked_at: '2026-10-20'
+  updated: '2026-10-23'
+  version: v2
+  metadata_checked_at: '2026-10-29'
   doi: null
   arxiv_categories:
   - nlin.SI
@@ -10178,3 +10192,510 @@
   volume: '39'
   issue: '10'
   pages: '105017'
+- id: arxiv:2610.32397
+  title: Integrable turbulence and statistical properties of chaotic wave fields in the complex modified Korteweg-de Vries equation
+  authors:
+  - Ya-Xin Luo
+  - Xiao-Wang Lan
+  - Wei-Qi Peng
+  url: https://arxiv.org/abs/2610.32397
+  arxiv_id: '2610.32397'
+  submitted: '2026-10-23'
+  submitted_at: '2026-10-23T09:23:12Z'
+  updated: '2026-10-23'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - nlin.SI
+  - nlin.PS
+  doi: null
+  keywords:
+  - complex mKdV
+  - integrable turbulence
+  - rogue waves
+  - spectral statistics
+- id: arxiv:2610.32149
+  title: Spin Toda systems and N-point spherical Whittaker functions
+  authors:
+  - Haoyi Li
+  url: https://arxiv.org/abs/2610.32149
+  arxiv_id: '2610.32149'
+  submitted: '2026-10-23'
+  submitted_at: '2026-10-23T04:27:18Z'
+  updated: '2026-10-23'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math-ph
+  - math.RT
+  - nlin.SI
+  doi: null
+  keywords:
+  - spin Toda
+  - Whittaker function
+  - Iwasawa decomposition
+  - KZB
+- id: arxiv:2610.34960
+  title: Restricted $K$- and $τ$-symmetries on multisoliton manifolds of the potential BKP and CKP equations
+  authors:
+  - Xiazhi Hao
+  - Mingxia Ji
+  - Senyue Lou
+  url: https://arxiv.org/abs/2610.34960
+  arxiv_id: '2610.34960'
+  submitted: '2026-10-26'
+  submitted_at: '2026-10-26T07:26:55Z'
+  updated: '2026-10-26'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - nlin.SI
+  doi: null
+  keywords:
+  - BKP
+  - CKP
+  - multisoliton manifold
+  - generalized symmetry
+- id: arxiv:2610.33913
+  title: Matrix representations of ${\rm BC}_n$ associative Yang--Baxter equations and related long-range spin chains
+  authors:
+  - M. Matushko
+  - A. Mostovskii
+  - A. Zotov
+  url: https://arxiv.org/abs/2610.33913
+  arxiv_id: '2610.33913'
+  submitted: '2026-10-24'
+  submitted_at: '2026-10-24T20:59:59Z'
+  updated: '2026-10-24'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math-ph
+  - hep-th
+  - math.QA
+  - math.RT
+  - nlin.SI
+  doi: null
+  keywords:
+  - BCn
+  - associative Yang-Baxter
+  - R-matrix
+  - long-range spin chain
+- id: arxiv:2610.37165
+  title: Spin generalizations of the classical elliptic Calogero--Inozemtsev model and integrable models of interacting tops associated with the $\rm{BC}_n$ root system
+  authors:
+  - D. Domanevsky
+  - A. Zotov
+  url: https://arxiv.org/abs/2610.37165
+  arxiv_id: '2610.37165'
+  submitted: '2026-10-27'
+  submitted_at: '2026-10-27T12:55:38Z'
+  updated: '2026-10-27'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - nlin.SI
+  - hep-th
+  - math-ph
+  doi: null
+  keywords:
+  - Calogero-Inozemtsev
+  - interacting tops
+  - BCn
+  - Lax pair
+- id: arxiv:2610.37183
+  title: 'The focusing coupled nonlinear Schrödinger equation with parallel nonzero boundary conditions: long--time asmptotics'
+  authors:
+  - Haibing Zhang
+  - Xianguo Geng
+  - Bo Xue
+  - Minxin Jia
+  url: https://arxiv.org/abs/2610.37183
+  arxiv_id: '2610.37183'
+  submitted: '2026-10-27'
+  submitted_at: '2026-10-27T13:07:01Z'
+  updated: '2026-10-27'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - nlin.SI
+  doi: null
+  keywords:
+  - coupled NLS
+  - nonzero boundary
+  - Painlevé II
+  - Riemann-Hilbert
+- id: arxiv:2610.33560
+  title: Superregular solitonic solutions of the defocusing nonlocal nonlinear Schrodinger equation and their novel perspectives
+  authors:
+  - Duan-Yun Xia
+  - Xiu-Bin Wang
+  url: https://arxiv.org/abs/2610.33560
+  arxiv_id: '2610.33560'
+  submitted: '2026-10-24'
+  submitted_at: '2026-10-24T09:28:26Z'
+  updated: '2026-10-24'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - nlin.PS
+  - math-ph
+  doi: null
+  keywords:
+  - nonlocal defocusing NLS
+  - superregular soliton
+  - dressing method
+- id: arxiv:2610.35284
+  title: Constant force amplifies pulse solitons via polarization coupling in mechanical metamaterials
+  authors:
+  - Zehuan Tang
+  - Yuanwen Gao
+  url: https://arxiv.org/abs/2610.35284
+  arxiv_id: '2610.35284'
+  submitted: '2026-10-26'
+  submitted_at: '2026-10-26T11:56:21Z'
+  updated: '2026-10-26'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - nlin.PS
+  doi: null
+  keywords:
+  - vector soliton
+  - mechanical metamaterial
+  - polarization coupling
+  - adiabatic approximation
+- id: arxiv:2610.36706
+  title: 'Bright Solitons in Non-Hermitian systems: Exploring the interplay of $\mathcal{PT}$ Symmetry and Wadati Structure'
+  authors:
+  - Sathyanarayanan Chandramouli
+  - Ricardo Carretero-González
+  - Dimitrios J. Frantzeskakis
+  - Panayotis G. Kevrekidis
+  url: https://arxiv.org/abs/2610.36706
+  arxiv_id: '2610.36706'
+  submitted: '2026-10-27'
+  submitted_at: '2026-10-27T06:23:50Z'
+  updated: '2026-10-27'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - nlin.PS
+  - physics.optics
+  doi: null
+  keywords:
+  - non-Hermitian NLS
+  - Wadati potential
+  - PT symmetry
+  - bright soliton
+- id: arxiv:2610.34601
+  title: Long-time action stability for perturbed KdV near finite-gap tori
+  authors:
+  - Guan Huang
+  url: https://arxiv.org/abs/2610.34601
+  arxiv_id: '2610.34601'
+  submitted: '2026-10-25'
+  submitted_at: '2026-10-25T21:55:52Z'
+  updated: '2026-10-25'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - KdV
+  - finite-gap torus
+  - Hamiltonian perturbation
+  - action stability
+- id: arxiv:2610.36676
+  title: Sharp well-posedness and soliton resolution for the half-wave maps equation in $H^{1/2}_\bullet$
+  authors:
+  - Fei Tang
+  - Shou-Fu Tian
+  url: https://arxiv.org/abs/2610.36676
+  arxiv_id: '2610.36676'
+  submitted: '2026-10-27'
+  submitted_at: '2026-10-27T05:46:58Z'
+  updated: '2026-10-27'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - half-wave maps
+  - soliton resolution
+  - critical well-posedness
+  - resolvent
+- id: arxiv:2610.37618
+  title: 'Stationary measures of the open KPZ equation: A short proof'
+  authors:
+  - Dominik Schmid
+  - Zongrui Yang
+  url: https://arxiv.org/abs/2610.37618
+  arxiv_id: '2610.37618'
+  submitted: '2026-10-27'
+  submitted_at: '2026-10-27T17:47:13Z'
+  updated: '2026-10-27'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math.PR
+  doi: null
+  keywords:
+  - open KPZ
+  - stationary measure
+  - Brownian representation
+  - ASEP
+- id: arxiv:2610.32180
+  title: Well-posedness for the Cubic Nonlinear Schrödinger Equation With Nonlinearity Supported on a Hypersurface
+  authors:
+  - Xilin Chen
+  - Jianlei Huang
+  url: https://arxiv.org/abs/2610.32180
+  arxiv_id: '2610.32180'
+  submitted: '2026-10-23'
+  submitted_at: '2026-10-23T05:27:11Z'
+  updated: '2026-10-23'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - cubic NLS
+  - hypersurface nonlinearity
+  - well-posedness
+- id: arxiv:2610.32939
+  title: Modified scattering for the 3D Hartree equation with singular external potentials
+  authors:
+  - Mengyi Xie
+  url: https://arxiv.org/abs/2610.32939
+  arxiv_id: '2610.32939'
+  submitted: '2026-10-23'
+  submitted_at: '2026-10-23T17:34:10Z'
+  updated: '2026-10-23'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - Hartree
+  - modified scattering
+  - singular potential
+  - Coulomb
+- id: arxiv:2610.34448
+  title: Slow blowup solutions for the focusing energy supercritical nonlinear Schrödinger equation
+  authors:
+  - Xuanying Li
+  url: https://arxiv.org/abs/2610.34448
+  arxiv_id: '2610.34448'
+  submitted: '2026-10-25'
+  submitted_at: '2026-10-25T17:09:23Z'
+  updated: '2026-10-25'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - supercritical NLS
+  - type II blow-up
+  - matched asymptotics
+- id: arxiv:2610.34733
+  title: Unconditional uniqueness for the cubic nonlinear Schrödinger equation in $H^{1/2}(\Bbb T^3)$
+  authors:
+  - Yongming Luo
+  - Jiayu Zheng
+  url: https://arxiv.org/abs/2610.34733
+  arxiv_id: '2610.34733'
+  submitted: '2026-10-26'
+  submitted_at: '2026-10-26T02:32:06Z'
+  updated: '2026-10-26'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - cubic NLS
+  - unconditional uniqueness
+  - critical Sobolev
+  - Strichartz
+- id: arxiv:2610.37077
+  title: Global well-posedness and scattering of energy-critical defocusing nonlinear Schrödinger equation on high-dimensional hyperbolic spaces
+  authors:
+  - Shunqin Zhang
+  - Jiqiang Zheng
+  - Yunrui Zheng
+  url: https://arxiv.org/abs/2610.37077
+  arxiv_id: '2610.37077'
+  submitted: '2026-10-27'
+  submitted_at: '2026-10-27T11:38:41Z'
+  updated: '2026-10-27'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - energy-critical NLS
+  - hyperbolic space
+  - scattering
+  - profile decomposition
+- id: arxiv:2610.35583
+  title: 'Finite-step projective dynamics of Schrödinger cocycles: non-degeneracy, regularity, and rigidity'
+  authors:
+  - Mira Shamis
+  url: https://arxiv.org/abs/2610.35583
+  arxiv_id: '2610.35583'
+  submitted: '2026-10-26'
+  submitted_at: '2026-10-26T15:14:19Z'
+  updated: '2026-10-26'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math-ph
+  - math.DS
+  - math.SP
+  doi: null
+  keywords:
+  - Schrödinger cocycle
+  - projective dynamics
+  - Lyapunov exponent
+  - random potential
+- id: arxiv:2610.33212
+  title: Dynamics of two-dimensional Bose gases in the focusing case
+  authors:
+  - Lukas Reichmann
+  url: https://arxiv.org/abs/2610.33212
+  arxiv_id: '2610.33212'
+  submitted: '2026-10-23'
+  submitted_at: '2026-10-23T19:02:45Z'
+  updated: '2026-10-23'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math-ph
+  doi: null
+  keywords:
+  - Bose gas
+  - focusing dynamics
+  - Bose-Einstein condensation
+  - norm approximation
+- id: arxiv:2610.32927
+  title: Probabilistic ultraviolet renormalization of the two-dimensional Sine-Gordon model
+  authors:
+  - Benjamin Bonnefont
+  - Hermanni Rajamäki
+  - Vincent Vargas
+  url: https://arxiv.org/abs/2610.32927
+  arxiv_id: '2610.32927'
+  submitted: '2026-10-23'
+  submitted_at: '2026-10-23T17:24:42Z'
+  updated: '2026-10-23'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math.PR
+  - math-ph
+  doi: null
+  keywords:
+  - sine-Gordon
+  - ultraviolet renormalization
+  - martingale
+  - Gaussian field
+- id: arxiv:2610.36975
+  title: Bethe Cycles, Frobenius Identities, and Quantum/Classical Duality
+  authors:
+  - Peter Koroteev
+  url: https://arxiv.org/abs/2610.36975
+  arxiv_id: '2610.36975'
+  submitted: '2026-10-27'
+  submitted_at: '2026-10-27T10:30:29Z'
+  updated: '2026-10-27'
+  version: v1
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - math.AG
+  - hep-th
+  - math-ph
+  - math.RT
+  doi: null
+  keywords:
+  - Ruijsenaars-Schneider
+  - Frobenius
+  - Bethe equations
+  - quantum-classical duality
+- id: arxiv:2511.19110
+  title: Fate of diffusion under integrability breaking of classical integrable magnets
+  authors:
+  - Jiaozi Wang
+  - Sourav Nandy
+  - Markus Kraft
+  - Tomaž Prosen
+  - Robin Steinigeweg
+  url: https://arxiv.org/abs/2511.19110
+  arxiv_id: '2511.19110'
+  submitted: '2025-11-24'
+  submitted_at: '2025-11-24T13:43:41Z'
+  updated: '2026-04-27'
+  version: v2
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  doi: 10.1103/r7zx-f29w
+  journal: Physical Review B
+  year: 2026
+  keywords:
+  - Landau-Lifshitz magnet
+  - integrability breaking
+  - spin diffusion
+  published: '2026-10-28'
+- id: arxiv:2604.04627
+  title: 'The Roaming Bethe Roots: An Effective Bethe Ansatz Beyond Integrability'
+  authors:
+  - Wenlong Zhao
+  - Yunfeng Jiang
+  - Rui-Dong Zhu
+  url: https://arxiv.org/abs/2604.04627
+  arxiv_id: '2604.04627'
+  submitted: '2026-04-06'
+  submitted_at: '2026-04-06T12:23:43Z'
+  updated: '2026-08-31'
+  version: v2
+  metadata_checked_at: '2026-10-29'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - hep-th
+  - nlin.SI
+  doi: 10.1088/0256-307x/43/10/100001
+  journal: Chinese Physics Letters
+  year: 2026
+  keywords:
+  - effective Bethe ansatz
+  - integrability breaking
+  - off-shell Bethe state
+  published: '2026-10-28'
+  volume: '43'
+  issue: '10'
+  pages: '100001'
+- id: doi:10.1016/j.nuclphysb.2026.117703
+  url: https://doi.org/10.1016/j.nuclphysb.2026.117703
+  title: The Riemann-Hilbert Method for an Integrable Fractional Three-Component Modified Korteweg-de Vries Equation
+  doi: 10.1016/j.nuclphysb.2026.117703
+  journal: Nuclear Physics B
+  year: 2026
+  metadata_checked_at: '2026-10-29'
+  keywords:
+  - fractional three-component mKdV
+  - Riemann-Hilbert
+  authors:
+  - Lin Sun
+  - Ziyuan Liu
+  - Huihui Pang
+  - Yuqin Yao
+  - Wen-Xiu Ma
+  article_number: '117703'
+  metadata_note: Verified publisher-deposited bibliography. Exact first-online day and abstract unavailable; no reading note or inferred publication date.
