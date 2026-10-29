@@ -30,14 +30,6 @@ hide:
 </div>
 <p class="radar-empty-state" hidden>没有找到匹配论文。试试其他关键词，或清除筛选。</p>
 
-### The Riemann-Hilbert Method for an Integrable Fractional Three-Component Modified Korteweg-de Vries Equation {#paper-doi-10-1016-j-nuclphysb-2026-117703 .radar-search-heading}
-
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-nuclphysb-2026-117703" data-radar-month="2026-10" data-radar-date="" data-radar-added-on="2026-10-29" data-radar-directions="[&quot;spectral&quot;, &quot;structures&quot;]" data-radar-search="fractional three-component mKdV Riemann-Hilbert">
-<div class="radar-row-summary radar-row-bibliography">      <span class="radar-row-heading"><a class="radar-paper-title" href="https://doi.org/10.1016/j.nuclphysb.2026.117703" target="_blank" rel="noopener noreferrer">The Riemann-Hilbert Method for an Integrable Fractional Three-Component Modified Korteweg-de Vries Equation</a><a class="radar-permalink" href="#paper-doi-10-1016-j-nuclphysb-2026-117703" aria-label="此论文固定链接" title="此论文固定链接">#</a></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Lin Sun, Ziyuan Liu, Huihui Pang, Yuqin Yao, Wen-Xiu Ma">Lin Sun, Ziyuan Liu, Huihui Pang, Yuqin Yao, Wen-Xiu Ma</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.nuclphysb.2026.117703">Nuclear Physics B 117703 (2026)</a></span></span>
-</div>
-</article>
-
 ### Stationary measures of the open KPZ equation: A short proof {#paper-arxiv-2610-37618 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-37618" data-radar-month="2026-10" data-radar-date="2026-10-28" data-radar-directions="[&quot;asymptotics&quot;]" data-radar-search="math.PR open KPZ stationary measure Brownian representation ASEP">
@@ -450,6 +442,22 @@ hide:
     <p class="radar-paper-overview"><strong>在多项式 Hamilton 系统的超椭圆解框架中，分类对所有不变量参数均能消除模指数修正的 Hamilton 多项式。</strong></p>
     <p class="radar-reading-detail">相应初等模具有常 Wronskian，并满足带自生成多项式势的二阶方程；该分类将 sigma 函数解与特殊多项式结构联系起来。</p>
     <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>新增分类为代数结果；局部超椭圆模解仍依赖光滑奇数次曲线及正则性条件。</p>
+    </div>
+  </details>
+</article>
+
+### The Riemann-Hilbert Method for an Integrable Fractional Three-Component Modified Korteweg-de Vries Equation {#paper-doi-10-1016-j-nuclphysb-2026-117703 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-nuclphysb-2026-117703" data-radar-month="2026-10" data-radar-date="2026-10-25" data-radar-directions="[&quot;spectral&quot;, &quot;structures&quot;]" data-radar-search="fractional three-component mKdV Riemann-Hilbert">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">The Riemann-Hilbert Method for an Integrable Fractional Three-Component Modified Korteweg-de Vries Equation</span><a class="radar-permalink" href="#paper-doi-10-1016-j-nuclphysb-2026-117703" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Lin Sun, Ziyuan Liu, Huihui Pang, Yuqin Yao, Wen-Xiu Ma"><span class="radar-authors-short">Lin Sun, Ziyuan Liu, et al.</span><span class="radar-authors-full">Lin Sun, Ziyuan Liu, Huihui Pang, Yuqin Yao, Wen-Xiu Ma</span></span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.nuclphysb.2026.117703">Nuclear Physics B 117703 (2026)</a></span><time datetime="2026-10-25" title="正式发表 · 2026-10-25" aria-label="正式发表 · 2026-10-25">2026-10-25</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>利用 Riesz 分数阶色散及平方本征函数与伴随平方本征函数的完备关系，构造分数阶三分量 mKdV 方程的显式形式。</strong></p>
+    <p class="radar-reading-detail">建立 4×4 矩阵 RH 问题，并在无反射条件下给出行列式形式的一般 N 孤子解；单、双孤子实例展示分数阶参数对峰值位置、传播位移和相互作用过程的影响。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>衰减边界下的散射构造，离散谱采用简单零点假设；动力学示例为聚焦情形的精确解图示，不是一般初值的长时渐近或稳定性定理。</p>
     </div>
   </details>
 </article>
