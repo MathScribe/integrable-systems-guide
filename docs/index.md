@@ -14,7 +14,7 @@ hide:
   </div>
 </header>
 
-<div class="radar-browse-controls" data-default-period="all" data-total-count="375" data-earliest-date="2026-06-15">
+<div class="radar-browse-controls" data-default-period="all" data-total-count="394" data-earliest-date="2026-06-15">
   <div class="radar-browse-heading"><h2>论文浏览</h2><span class="radar-search-count" role="status" aria-live="polite"></span></div>
   <div class="radar-filter-bar">
   <div class="radar-local-search" role="search">
@@ -29,6 +29,294 @@ hide:
   <div class="radar-filter-footer"><span>当前收录：2026.06—2026.10</span><button type="button" data-radar-action="reset" hidden>清除筛选 ×</button></div>
 </div>
 <p class="radar-empty-state" hidden>没有找到匹配论文。试试其他关键词，或清除筛选。</p>
+
+### Optimization Inverse Spectral Problems for Sturm--Liouville Operators with Potentials in $L^p(0,1)$ {#paper-arxiv-2610-40231 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-40231" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;spectral&quot;]" data-radar-search="math-ph Sturm-Liouville inverse spectral optimization squared eigenfunctions isospectral manifold">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Optimization Inverse Spectral Problems for Sturm--Liouville Operators with Potentials in <span class="arithmatex">$L^p(0,1)$</span></span><a class="radar-permalink" href="#paper-arxiv-2610-40231" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Nur Valeev">Nur Valeev</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.40231">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.40231">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>对区间 Sturm–Liouville 算子，求实现在先指定有限组本征值且与参考势 L^p 距离最小的最优势。</strong></p>
+    <p class="radar-reading-detail">建立等谱流形正则性和极小值存在性，以平方本征函数线性组合的幂映射表示最优势，并给出条件唯一性、一般位置唯一性及非唯一实例。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>1&lt;p&lt;∞；p=2 时分析非退化驻点与有限极小值，迭代和 Newton–KKT 方法的保证范围被明确限定。</p>
+    </div>
+  </details>
+</article>
+
+### Wave Turbulence of Capillary Waves in Finite Systems {#paper-arxiv-2610-40217 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-40217" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;waves&quot;, &quot;asymptotics&quot;]" data-radar-search="physics.flu-dyn nlin.PS physics.comp-ph capillary wave turbulence finite-size effect Zakharov-Filonenko spectrum">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Wave Turbulence of Capillary Waves in Finite Systems</span><a class="radar-permalink" href="#paper-arxiv-2610-40217" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Alexander O. Korotkevich">Alexander O. Korotkevich</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.40217">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.40217">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>数值研究有限系统中毛细波能量级联的 Zakharov–Filonenko 谱，量化其可实现标度区间随非线性减弱而收缩的现象。</strong></p>
+    <p class="radar-reading-detail">多组模拟支持动态范围随平均波陡度按 μ^(8/3) 缩放的已有猜想，并扩大可观察幂律谱的尺度范围。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>有限系统波湍流的数值证据，针对谱区间及有限尺寸效应，不将标度验证表述为严格定理。</p>
+    </div>
+  </details>
+</article>
+
+### Whitham Deformations of Nodal Spectral Curves of the Sinh-Gordon Equation {#paper-arxiv-2610-40197 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-40197" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;structures&quot;, &quot;spectral&quot;]" data-radar-search="math.DG sinh-Gordon Whitham deformation nodal spectral curve finite-gap">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Whitham Deformations of Nodal Spectral Curves of the Sinh-Gordon Equation</span><a class="radar-permalink" href="#paper-arxiv-2610-40197" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Ross Ogilvie">Ross Ogilvie</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.40197">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.40197">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>将 sinh-Gordon／常平均曲率环面的等周期 Whitham 变形推广到具有实对合固定普通双点的谱曲线。</strong></p>
+    <p class="radar-reading-detail">证明等周期集合在节点曲线处仍为流形且横截双点曲线层，因而可通过打开双点改变 genus，并分析归一化 Willmore 能量导数。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>带两个整周期亚纯微分的实超椭圆曲线；双点插入还实现此前等周期集合离散不变量的全部取值。</p>
+    </div>
+  </details>
+</article>
+
+### A Riemann-Hilbert approach to the two-component modified Camassa-Holm system with step-like boundary conditions {#paper-arxiv-2610-39938 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-39938" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;spectral&quot;, &quot;waves&quot;]" data-radar-search="nlin.SI math.AP two-component modified Camassa-Holm step-like boundary Riemann-Hilbert">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">A Riemann-Hilbert approach to the two-component modified Camassa-Holm system with step-like boundary conditions</span><a class="radar-permalink" href="#paper-arxiv-2610-39938" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Iryna Karpenko, Dmitry Shepelsky, Gerald Teschl">Iryna Karpenko, Dmitry Shepelsky, Gerald Teschl</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.39938">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.39938">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>为实线上两分量 modified Camassa–Holm 系统的非零阶跃边界初值问题建立矩阵 RH 表述。</strong></p>
+    <p class="radar-reading-detail">从 Lax 对推导本征函数及散射数据的解析性、对称性和渐近性质，进而给出由 RH 解恢复原方程解的重构公式。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>研究非零阶跃边界下的直接谱分析和逆问题表述；不将重构公式视为已完成的长时渐近或一般全局可解性证明。</p>
+    </div>
+  </details>
+</article>
+
+### Kelvin-Wave Multiplication by Sound Emission {#paper-arxiv-2610-39909 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-39909" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;waves&quot;, &quot;asymptotics&quot;]" data-radar-search="cond-mat.quant-gas physics.atom-ph quant-ph Kelvin wave phonon emission Gross-Pitaevskii wave amplification">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Kelvin-Wave Multiplication by Sound Emission</span><a class="radar-permalink" href="#paper-arxiv-2610-39909" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Weican Yang">Weican Yang</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.39909">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.39909">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>提出亚声速 Kelvin 量子发射声子并分裂为两个较软量子的机制，使 Kelvin 模占据增加而能量下降。</strong></p>
+    <p class="radar-reading-detail">软声子极限中旋转不变性约束声学剪切振幅；反射腔内的 Gross–Pitaevskii 模拟显示相干声场可放大 Kelvin 波，声相位翻转 π 可逆转响应。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>微观计算与场方程数值验证，保留软声子极限、反射腔和相干种子条件。</p>
+    </div>
+  </details>
+</article>
+
+### Instability theory of stationary solutions for nonlinear Schrödinger equations {#paper-arxiv-2610-39830 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-39830" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;waves&quot;, &quot;spectral&quot;]" data-radar-search="math.AP nonlinear Schrödinger orbital instability zero frequency algebraic decay">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Instability theory of stationary solutions for nonlinear Schrödinger equations</span><a class="radar-permalink" href="#paper-arxiv-2610-39830" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Noriyoshi Fukaya, Masayuki Hayashi">Noriyoshi Fukaya, Masayuki Hayashi</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.39830">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.39830">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>为代数衰减的 NLS 零频驻态建立轨道不稳定判据，处理本质谱接触零点时失去通常 H¹ 强制性的问题。</strong></p>
+    <p class="radar-reading-detail">构造驻波对频率导数的零频极限；缺乏一阶加权 L² 衰减，或相应对偶配对为负，均可给出不稳定方向。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>d≥2 的竞争双幂非线性为基本模型，并推广到一类多幂情形；结合常微分方程打靶、局域化与基态变分刻画。</p>
+    </div>
+  </details>
+</article>
+
+### Existence and spectral instability of steady rolls in the Nikolaevskiy equation: a computer-assisted study {#paper-arxiv-2610-39611 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-39611" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;waves&quot;, &quot;spectral&quot;]" data-radar-search="math.DS math.AP nlin.PS Nikolaevskiy computer-assisted proof Bloch spectrum periodic wave">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Existence and spectral instability of steady rolls in the Nikolaevskiy equation: a computer-assisted study</span><a class="radar-permalink" href="#paper-arxiv-2610-39611" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Nikita V. Konev, Fedor A. Vyazanitsyn, Igor A. Knyazev">Nikita V. Konev, Fedor A. Vyazanitsyn, Igor A. Knyazev</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.39611">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.39611">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>对 Nikolaevskiy 方程的一族周期稳态，给出存在性与实线上谱不稳定性的计算机辅助证明。</strong></p>
+    <p class="radar-reading-detail">在波数 q∈[0.9,1.1] 的指定参数域构造连续稳态族，并在 r∈[0.25,4] 给出正实部 Bloch 本征值的一致下界。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>参数化 Newton–Kantorovich 定理、起始分岔去奇化及严格区间算术；结论针对已验证参数域，而非所有周期稳态。</p>
+    </div>
+  </details>
+</article>
+
+### Metastability, collective excitations, and traveling states of one-dimensional spin-orbit-coupled quantum droplets {#paper-arxiv-2610-39361 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-39361" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;waves&quot;, &quot;spectral&quot;]" data-radar-search="cond-mat.quant-gas quantum droplet spin-orbit coupling Bogoliubov stability traveling wave">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Metastability, collective excitations, and traveling states of one-dimensional spin-orbit-coupled quantum droplets</span><a class="radar-permalink" href="#paper-arxiv-2610-39361" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Harsimranjit Kaur, Ritu, Rajat, Kuldeep Suthar, Sandeep Gautam"><span class="radar-authors-short">Harsimranjit Kaur, Ritu, et al.</span><span class="radar-authors-full">Harsimranjit Kaur, Ritu, Rajat, Kuldeep Suthar, Sandeep Gautam</span></span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.39361">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.39361">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>分析一维自旋–轨道耦合 Bose 混合物中的静止与移动量子液滴，得到条纹、零动量及行进平面波液滴相。</strong></p>
+    <p class="radar-reading-detail">共动参考系中液滴产生有限纵向磁化；有限尺寸条纹态可具有不同峰数，激发谱及实时演化检验其稳定性。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>含 Lee–Huang–Yang 修正的模型，结合变分、数值基态和 Bogoliubov 分析；结论针对所考察液滴族和参数区间。</p>
+    </div>
+  </details>
+</article>
+
+### Linearize or Discretize First? Error Estimates under Mesh-Uniform Regularity and Exponential Stability for the KdV Equation with Boundary Dissipation {#paper-arxiv-2610-39269 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-39269" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;waves&quot;, &quot;asymptotics&quot;]" data-radar-search="math.AP math.NA math.OC KdV boundary dissipation Galerkin method mesh-uniform estimate">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Linearize or Discretize First? Error Estimates under Mesh-Uniform Regularity and Exponential Stability for the KdV Equation with Boundary Dissipation</span><a class="radar-permalink" href="#paper-arxiv-2610-39269" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Kangsheng Liu">Kangsheng Liu</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.39269">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.39269">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-29（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>为带边界耗散的 KdV 比较先线性化或先空间离散两种近似路径，证明误差分配之差对小初值为二次且随网格细化衰减。</strong></p>
+    <p class="radar-reading-detail">加权三次 Hermite Galerkin 格式具有网格一致的指数稳定、Kato 平滑及解映射解析性，从而获得全时间同范数误差控制。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>小数据、有界区间及指定边界耗散；未加权格式中的零群速网格波包会破坏相应一致平滑估计。</p>
+    </div>
+  </details>
+</article>
+
+### Modified Scattering for Infinite-Rank Hartree--Fock Equations {#paper-arxiv-2610-38676 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-38676" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;asymptotics&quot;, &quot;waves&quot;]" data-radar-search="math.AP Hartree-Fock infinite rank modified scattering resonant dynamics">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Modified Scattering for Infinite-Rank Hartree--Fock Equations</span><a class="radar-permalink" href="#paper-arxiv-2610-38676" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Masaki Kawamoto, Jinyeop Lee, Changhun Yang, Chanjin You"><span class="radar-authors-short">Masaki Kawamoto, Jinyeop Lee, et al.</span><span class="radar-authors-full">Masaki Kawamoto, Jinyeop Lee, Changhun Yang, Chanjin You</span></span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.38676">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.38676">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>对 d≥2 的 Coulomb Hartree–Fock 方程，以小初始密度矩阵建立全局适定性及由共振方程支配的修正散射，允许无限秩。</strong></p>
+    <p class="radar-reading-detail">刻画共振方程的驻态，并证明秩至少为二的初始密度矩阵不能遵循普通线性散射；直接项与交换项抵消仍不能消除长程作用。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>半密度表述与共振动力学末态构造，长程演化发生在对数时间尺度；保留小数据假设。</p>
+    </div>
+  </details>
+</article>
+
+### Resurgence and Modularity in the First Painlevé Equation {#paper-arxiv-2610-38584 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-38584" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;spectral&quot;, &quot;asymptotics&quot;]" data-radar-search="hep-th math-ph Painlevé I resurgence modular transformation tau function">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Resurgence and Modularity in the First Painlevé Equation</span><a class="radar-permalink" href="#paper-arxiv-2610-38584" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Kohei Iwaki, Noam Tamarin">Kohei Iwaki, Noam Tamarin</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.38584">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.38584">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>将 Painlevé I 绕无穷远一周的非线性 Stokes 变换与双参数 τ 函数的模变换联系起来。</strong></p>
+    <p class="radar-reading-detail">给出实现模 S 作用的新显式参数关系，并确定 τ 函数变换中的乘法因子和归一化常数；五项双对数恒等式使整周因子抵消。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>基于拓扑递归与精确 WKB 构造的解析假设，跟踪椭圆谱曲线的同调基和等单值系统的 Stokes 乘子。</p>
+    </div>
+  </details>
+</article>
+
+### Nonlinear coercivity and orbital stability of smooth solitary waves for the modified Camassa--Holm equation {#paper-arxiv-2610-38514 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-38514" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;waves&quot;, &quot;spectral&quot;]" data-radar-search="math.AP modified Camassa-Holm orbital stability nonlinear coercivity Lyapunov">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Nonlinear coercivity and orbital stability of smooth solitary waves for the modified Camassa--Holm equation</span><a class="radar-permalink" href="#paper-arxiv-2610-38514" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Xijun Deng, Ji Li, Zhisu Liu">Xijun Deng, Ji Li, Zhisu Liu</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.38514">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.38514">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>证明 modified Camassa–Holm 方程零背景光滑孤波在整个 γ&lt;c&lt;2γ 区间内的轨道稳定性。</strong></p>
+    <p class="radar-reading-detail">针对导数集中使谱强制性不能直接推出非线性强制性的困难，构造带惩罚项的 Lyapunov 泛函和导数因子分解。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>稳定性拓扑为 H¹∩W^(1,4)；以集中–强制性原理获得局部非线性 Lyapunov 控制。</p>
+    </div>
+  </details>
+</article>
+
+### Series approximation of discrete-soliton solutions of the DNLS equation {#paper-arxiv-2610-38461 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-38461" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;waves&quot;, &quot;asymptotics&quot;]" data-radar-search="nlin.PS discrete NLS Euler acceleration soliton approximation stability eigenvalue">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Series approximation of discrete-soliton solutions of the DNLS equation</span><a class="radar-permalink" href="#paper-arxiv-2610-38461" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="V. Tsiantou, V. Koukouloyannis, K. D. Housiadas, P. G. Kevrekidis"><span class="radar-authors-short">V. Tsiantou, V. Koukouloyannis, et al.</span><span class="radar-authors-full">V. Tsiantou, V. Koukouloyannis, K. D. Housiadas, P. G. Kevrekidis</span></span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.38461">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.38461">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>对离散 NLS 驻波的耦合参数级数逐格点实施 Euler 收敛加速，改善较强耦合下的轮廓与局域性近似。</strong></p>
+    <p class="radar-reading-detail">将加速轮廓代入线性化矩阵，改进同相双格点态的不稳定本征值估计，闭式展开推进到 ε^(5/2) 阶。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>单格点、同相及反相双格点构型；与反连续极限延拓的数值解对照，半数值方法可达到 O(1) 耦合范围。</p>
+    </div>
+  </details>
+</article>
+
+### Soliton resolution conjecture and soliton gases for the Benjamin-Ono equation with infinite-order multisolitons in the sharp well-posedness space {#paper-arxiv-2610-38198 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-38198" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;spectral&quot;, &quot;asymptotics&quot;]" data-radar-search="math.AP Benjamin-Ono infinite multisoliton soliton gas inverse spectral">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Soliton resolution conjecture and soliton gases for the Benjamin-Ono equation with infinite-order multisolitons in the sharp well-posedness space</span><a class="radar-permalink" href="#paper-arxiv-2610-38198" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Hong-Yu Pan, Shou-Fu Tian">Hong-Yu Pan, Shou-Fu Tian</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.38198">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.38198">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>对 Benjamin–Ono 的无限阶多孤子，在 H^s、s&gt;−1/2 的尖锐适定性空间中证明孤子分解，并构造任意 Sobolev 阶的孤子气。</strong></p>
+    <p class="radar-reading-detail">处理无限阶多孤子的谱刻画和渐近参数取值范围，以适配粗糙初值的谱分解及连续 norming 作用连接有限逆谱位移与气体极限。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>孤子分解结论针对无限阶多孤子类别；更一般弱加权数据的分析允许无限多个负本征值，不表述为任意初值均已完成孤子分解。</p>
+    </div>
+  </details>
+</article>
+
+### Generation of discrete breathers from linear to nonlinear Anderson disorder in electrical lattices {#paper-arxiv-2610-38116 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2610-38116" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;waves&quot;, &quot;spectral&quot;]" data-radar-search="nlin.PS Anderson localization discrete breather electrical lattice Floquet stability">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Generation of discrete breathers from linear to nonlinear Anderson disorder in electrical lattices</span><a class="radar-permalink" href="#paper-arxiv-2610-38116" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Xuan-Lin Chen, F. Palmero">Xuan-Lin Chen, F. Palmero</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2610.38116">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2610.38116">PDF</a></span><time datetime="2026-10-30" title="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1" aria-label="新预印本 · 2026-10-30 · arXiv 提交日期 2026-10-28（UTC） · v1">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>在无序 LC 电路格点中，将选定的 Anderson 局域模数值延拓为离散呼吸子族，并检验其谱稳定性。</strong></p>
+    <p class="radar-reading-detail">线性局域频率和空间轮廓与实验一致；加入变容二极管后，实验观察到非线性共振弯曲、频移及滞回。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>Floquet 稳定性限于所考察频率范围；实验支持相关非线性共振响应，呼吸子延拓和稳定性由数值分析给出。</p>
+    </div>
+  </details>
+</article>
+
+### Bootstrapping Fermionic $R$-operators with Decorated Yang--Baxter Equations {#paper-arxiv-2603-11172 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2603-11172" data-radar-month="2026-10" data-radar-date="2026-10-30" data-radar-directions="[&quot;structures&quot;, &quot;spectral&quot;]" data-radar-search="nlin.SI cond-mat.stat-mech hep-th math-ph quant-ph decorated Yang-Baxter equation fermionic R-operator Hamiltonian bootstrap Hubbard model">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Bootstrapping Fermionic <span class="arithmatex">$R$</span>-operators with Decorated Yang--Baxter Equations</span><a class="radar-permalink" href="#paper-arxiv-2603-11172" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Zhao Zhang">Zhao Zhang</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2603.11172">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2603.11172">PDF</a></span><time datetime="2026-10-30" title="重大修订 · 2026-10-30 · arXiv 修订日期 2026-10-29（UTC） · v3" aria-label="重大修订 · 2026-10-30 · arXiv 修订日期 2026-10-29（UTC） · v3">2026-10-30</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>联合通常与装饰 Yang–Baxter 方程，从局域 Hamilton 量递推构造候选费米 R 算子，并给出每阶两格点局域性和形变相容性检验。</strong></p>
+    <p class="radar-reading-detail">恢复 Hubbard 与 XYh 的已知双参数结构，同时识别超导 Hubbard 形变中一般不相容的标量条件，明确该框架的适用边界。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>必要条件、形式递推及已知模型验证；一般充分性、级数收敛和形变条件的充分性仍开放，不宣称普遍完成 R 算子重构。</p>
+    </div>
+  </details>
+</article>
+
+### N-fold Darboux transformation for generalized Kaup-Newell equation {#paper-doi-10-1088-1402-4896-aebb6f .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1088-1402-4896-aebb6f" data-radar-month="2026-10" data-radar-date="2026-10-29" data-radar-directions="[&quot;structures&quot;, &quot;spectral&quot;]" data-radar-search="generalized Kaup-Newell Darboux transformation gauge phase">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">N-fold Darboux transformation for generalized Kaup-Newell equation</span><a class="radar-permalink" href="#paper-doi-10-1088-1402-4896-aebb6f" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Shizhu Gong, Fuchen Huang, Yuqin Yao, Huihui Pang"><span class="radar-authors-short">Shizhu Gong, Fuchen Huang, et al.</span><span class="radar-authors-full">Shizhu Gong, Fuchen Huang, Yuqin Yao, Huihui Pang</span></span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1088/1402-4896/aebb6f">Physica Scripta (2026)</a></span><time datetime="2026-10-29" title="正式发表 · 2026-10-29" aria-label="正式发表 · 2026-10-29">2026-10-29</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>将与 Kundu 规范相位相对应的对角因子吸收到 Darboux 矩阵，构造对参数 β 一致适用的广义 Kaup–Newell N 重变换。</strong></p>
+    <p class="radar-reading-detail">该因子满足相容的一阶方程，修正普通多项式 Darboux 矩阵只在特定参数处保持谱结构的问题。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>零背景及规定谱对称条件下，β 不改变所得解的模；另给出平面波背景实例，规范相位与既有 Kundu 变换一致。</p>
+    </div>
+  </details>
+</article>
+
+### Partial reversibility and counterdiabatic driving in nearly integrable systems {#paper-arxiv-2602-22317 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2602-22317" data-radar-month="2026-10" data-radar-date="2026-10-29" data-radar-directions="[&quot;structures&quot;, &quot;asymptotics&quot;]" data-radar-search="quant-ph cond-mat.stat-mech nlin.CD near integrability counterdiabatic driving partial reversibility">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Partial reversibility and counterdiabatic driving in nearly integrable systems</span><a class="radar-permalink" href="#paper-arxiv-2602-22317" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Rohan Banerjee, Shahyad Khamnei, Anatoli Polkovnikov, Stewart Morawetz"><span class="radar-authors-short">Rohan Banerjee, Shahyad Khamnei, et al.</span><span class="radar-authors-full">Rohan Banerjee, Shahyad Khamnei, Anatoli Polkovnikov, Stewart Morawetz</span></span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2602.22317">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2602.22317">PDF</a> · <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1103/4hkp-j534">Physical Review A 114, 042625 (2026)</a></span><time datetime="2026-10-29" title="正式发表 · 2026-10-29 · v3" aria-label="正式发表 · 2026-10-29 · v3">2026-10-29</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>研究近可积系统中介于热力学熵守恒和可积作用量守恒之间的部分可逆过程。</strong></p>
+    <p class="radar-reading-detail">通过若干模型检验可逆性范围，并用近似反绝热驱动抑制快速驱动造成的耗散损失。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>模型分析与数值证据；量子多体推广针对高度简并且存在可积性破坏的情形，不主张一般精确可逆控制。</p>
+    </div>
+  </details>
+</article>
 
 ### Stationary measures of the open KPZ equation: A short proof {#paper-arxiv-2610-37618 .radar-search-heading}
 
@@ -346,6 +634,22 @@ hide:
     <p class="radar-paper-overview"><strong>在论文规定的自旋链条件下，以 Reshetikhin 条件刻画 Yang–Baxter 可积性，并完善由局域 Hamilton 量重构 R 矩阵的解析框架。</strong></p>
     <p class="radar-reading-detail">重构形式级数在正则点附近具有非零收敛半径，可全局亚纯延拓，并刻画归一化及标量自由度。</p>
     <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>Hamilton 层面的守恒条件与 R 矩阵递推；保留相应可对角化等模型假设，不将结论推广到任意非厄米自旋链。</p>
+    </div>
+  </details>
+</article>
+
+### Invariant reduction for partial differential equations. III: Poisson brackets {#paper-arxiv-2507-08213 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2507-08213" data-radar-month="2026-10" data-radar-date="2026-10-27" data-radar-directions="[&quot;structures&quot;]" data-radar-search="nlin.SI math.DG Poisson bracket Hamiltonian reduction higher symmetry cotangent covering">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Invariant reduction for partial differential equations. III: Poisson brackets</span><a class="radar-permalink" href="#paper-arxiv-2507-08213" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Kostya Druzhkov">Kostya Druzhkov</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2507.08213">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2507.08213">PDF</a> · <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.geomphys.2026.106034">Journal of Geometry and Physics 231, 106034 (2027)</a></span><time datetime="2026-10-27" title="正式发表 · 2026-10-27 · v5" aria-label="正式发表 · 2026-10-27 · v5">2026-10-27</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>建立 PDE 局域 Hamilton 算子到有限维不变约化系统 Poisson 双向量的继承机制，统一处理点、接触及高阶对称。</strong></p>
+    <p class="radar-reading-detail">约化后的 Poisson 括号与原系统在不变守恒律上的括号相符至整体符号，并以 Kaup–Boussinesq 和 KdV 约化展示可积性。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>采用奇余切覆盖及不变约化；要求相应正则性、ℓ-normal 系统及覆盖条件，构造不依赖所选 jet 空间嵌入。</p>
     </div>
   </details>
 </article>
@@ -724,7 +1028,7 @@ hide:
   <details class="radar-paper-details">
     <summary class="radar-row-summary">
       <span class="radar-row-heading"><span class="radar-paper-title">The gauge action on semi-discrete Lax representations, its invariants, and Lax-Miura type constructions</span><a class="radar-permalink" href="#paper-arxiv-2604-20830" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Sergei Igonin">Sergei Igonin</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2604.20830">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2604.20830">PDF</a></span><time datetime="2026-10-23" title="重大修订 · 2026-10-23 · arXiv 修订日期 2026-10-22（UTC） · v5" aria-label="重大修订 · 2026-10-23 · arXiv 修订日期 2026-10-22（UTC） · v5">2026-10-23</time></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Sergei Igonin">Sergei Igonin</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2604.20830">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2604.20830">PDF</a></span><time datetime="2026-10-23" title="重大修订 · 2026-10-23 · arXiv 修订日期 2026-10-29（UTC） · v6" aria-label="重大修订 · 2026-10-23 · arXiv 修订日期 2026-10-29（UTC） · v6">2026-10-23</time></span>
     </summary>
     <div class="radar-expanded-content">
     <p class="radar-paper-overview"><strong>为半离散矩阵 Lax 表示建立规范不变量，并以 Miura 提升后的非零判别量证明原表示不能规范化为平凡表示。</strong></p>

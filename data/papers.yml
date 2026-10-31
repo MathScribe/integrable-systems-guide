@@ -9307,9 +9307,9 @@
   arxiv_id: '2604.20830'
   submitted: '2026-04-22'
   submitted_at: '2026-04-22T17:56:53Z'
-  updated: '2026-10-22'
-  version: v5
-  metadata_checked_at: '2026-10-25'
+  updated: '2026-10-29'
+  version: v6
+  metadata_checked_at: '2026-10-31'
   doi: null
   arxiv_categories:
   - nlin.SI
@@ -10700,3 +10700,411 @@
   article_number: '117703'
   published: '2026-10-25'
   metadata_note: First online October25 verified from the owner's saved ScienceDirect snapshot; full text verified from the local Journal Pre-proof PDF. October23 is the acceptance date, not the publication date. Final volume and issue not yet assigned in the saved evidence.
+- id: arxiv:2610.39361
+  title: Metastability, collective excitations, and traveling states of one-dimensional spin-orbit-coupled quantum droplets
+  authors:
+  - Harsimranjit Kaur
+  - Ritu
+  - Rajat
+  - Kuldeep Suthar
+  - Sandeep Gautam
+  url: https://arxiv.org/abs/2610.39361
+  arxiv_id: '2610.39361'
+  submitted: '2026-10-29'
+  submitted_at: '2026-10-29T04:53:28Z'
+  updated: '2026-10-29'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - cond-mat.quant-gas
+  doi: null
+  keywords:
+  - quantum droplet
+  - spin-orbit coupling
+  - Bogoliubov stability
+  - traveling wave
+- id: arxiv:2610.39909
+  title: Kelvin-Wave Multiplication by Sound Emission
+  authors:
+  - Weican Yang
+  url: https://arxiv.org/abs/2610.39909
+  arxiv_id: '2610.39909'
+  submitted: '2026-10-29'
+  submitted_at: '2026-10-29T12:18:38Z'
+  updated: '2026-10-29'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - cond-mat.quant-gas
+  - physics.atom-ph
+  - quant-ph
+  doi: null
+  keywords:
+  - Kelvin wave
+  - phonon emission
+  - Gross-Pitaevskii
+  - wave amplification
+- id: arxiv:2610.39938
+  title: A Riemann-Hilbert approach to the two-component modified Camassa-Holm system with step-like boundary conditions
+  authors:
+  - Iryna Karpenko
+  - Dmitry Shepelsky
+  - Gerald Teschl
+  url: https://arxiv.org/abs/2610.39938
+  arxiv_id: '2610.39938'
+  submitted: '2026-10-29'
+  submitted_at: '2026-10-29T12:37:27Z'
+  updated: '2026-10-29'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - nlin.SI
+  - math.AP
+  doi: null
+  keywords:
+  - two-component modified Camassa-Holm
+  - step-like boundary
+  - Riemann-Hilbert
+- id: arxiv:2610.38116
+  title: Generation of discrete breathers from linear to nonlinear Anderson disorder in electrical lattices
+  authors:
+  - Xuan-Lin Chen
+  - F. Palmero
+  url: https://arxiv.org/abs/2610.38116
+  arxiv_id: '2610.38116'
+  submitted: '2026-10-28'
+  submitted_at: '2026-10-28T00:51:56Z'
+  updated: '2026-10-28'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - nlin.PS
+  doi: null
+  keywords:
+  - Anderson localization
+  - discrete breather
+  - electrical lattice
+  - Floquet stability
+- id: arxiv:2610.38461
+  title: Series approximation of discrete-soliton solutions of the DNLS equation
+  authors:
+  - V. Tsiantou
+  - V. Koukouloyannis
+  - K. D. Housiadas
+  - P. G. Kevrekidis
+  url: https://arxiv.org/abs/2610.38461
+  arxiv_id: '2610.38461'
+  submitted: '2026-10-28'
+  submitted_at: '2026-10-28T08:37:36Z'
+  updated: '2026-10-28'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - nlin.PS
+  doi: null
+  keywords:
+  - discrete NLS
+  - Euler acceleration
+  - soliton approximation
+  - stability eigenvalue
+- id: arxiv:2610.38584
+  title: Resurgence and Modularity in the First Painlevé Equation
+  authors:
+  - Kohei Iwaki
+  - Noam Tamarin
+  url: https://arxiv.org/abs/2610.38584
+  arxiv_id: '2610.38584'
+  submitted: '2026-10-28'
+  submitted_at: '2026-10-28T10:14:54Z'
+  updated: '2026-10-28'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - hep-th
+  - math-ph
+  doi: null
+  keywords:
+  - Painlevé I
+  - resurgence
+  - modular transformation
+  - tau function
+- id: arxiv:2610.38198
+  title: Soliton resolution conjecture and soliton gases for the Benjamin-Ono equation with infinite-order multisolitons in the sharp well-posedness space
+  authors:
+  - Hong-Yu Pan
+  - Shou-Fu Tian
+  url: https://arxiv.org/abs/2610.38198
+  arxiv_id: '2610.38198'
+  submitted: '2026-10-28'
+  submitted_at: '2026-10-28T02:47:48Z'
+  updated: '2026-10-28'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - Benjamin-Ono
+  - infinite multisoliton
+  - soliton gas
+  - inverse spectral
+- id: arxiv:2610.38514
+  title: Nonlinear coercivity and orbital stability of smooth solitary waves for the modified Camassa--Holm equation
+  authors:
+  - Xijun Deng
+  - Ji Li
+  - Zhisu Liu
+  url: https://arxiv.org/abs/2610.38514
+  arxiv_id: '2610.38514'
+  submitted: '2026-10-28'
+  submitted_at: '2026-10-28T09:27:45Z'
+  updated: '2026-10-28'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - modified Camassa-Holm
+  - orbital stability
+  - nonlinear coercivity
+  - Lyapunov
+- id: arxiv:2610.38676
+  title: Modified Scattering for Infinite-Rank Hartree--Fock Equations
+  authors:
+  - Masaki Kawamoto
+  - Jinyeop Lee
+  - Changhun Yang
+  - Chanjin You
+  url: https://arxiv.org/abs/2610.38676
+  arxiv_id: '2610.38676'
+  submitted: '2026-10-28'
+  submitted_at: '2026-10-28T18:54:02Z'
+  updated: '2026-10-28'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - Hartree-Fock
+  - infinite rank
+  - modified scattering
+  - resonant dynamics
+- id: arxiv:2610.39830
+  title: Instability theory of stationary solutions for nonlinear Schrödinger equations
+  authors:
+  - Noriyoshi Fukaya
+  - Masayuki Hayashi
+  url: https://arxiv.org/abs/2610.39830
+  arxiv_id: '2610.39830'
+  submitted: '2026-10-29'
+  submitted_at: '2026-10-29T11:12:56Z'
+  updated: '2026-10-29'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - nonlinear Schrödinger
+  - orbital instability
+  - zero frequency
+  - algebraic decay
+- id: arxiv:2610.40197
+  title: Whitham Deformations of Nodal Spectral Curves of the Sinh-Gordon Equation
+  authors:
+  - Ross Ogilvie
+  url: https://arxiv.org/abs/2610.40197
+  arxiv_id: '2610.40197'
+  submitted: '2026-10-29'
+  submitted_at: '2026-10-29T14:52:12Z'
+  updated: '2026-10-29'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - math.DG
+  doi: null
+  keywords:
+  - sinh-Gordon
+  - Whitham deformation
+  - nodal spectral curve
+  - finite-gap
+- id: arxiv:2610.40231
+  title: Optimization Inverse Spectral Problems for Sturm--Liouville Operators with Potentials in $L^p(0,1)$
+  authors:
+  - Nur Valeev
+  url: https://arxiv.org/abs/2610.40231
+  arxiv_id: '2610.40231'
+  submitted: '2026-10-29'
+  submitted_at: '2026-10-29T15:06:18Z'
+  updated: '2026-10-29'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - math-ph
+  doi: null
+  keywords:
+  - Sturm-Liouville
+  - inverse spectral optimization
+  - squared eigenfunctions
+  - isospectral manifold
+- id: arxiv:2610.39269
+  title: Linearize or Discretize First? Error Estimates under Mesh-Uniform Regularity and Exponential Stability for the KdV Equation with Boundary Dissipation
+  authors:
+  - Kangsheng Liu
+  url: https://arxiv.org/abs/2610.39269
+  arxiv_id: '2610.39269'
+  submitted: '2026-10-29'
+  submitted_at: '2026-10-29T03:21:55Z'
+  updated: '2026-10-29'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - math.AP
+  - math.NA
+  - math.OC
+  doi: null
+  keywords:
+  - KdV
+  - boundary dissipation
+  - Galerkin method
+  - mesh-uniform estimate
+- id: arxiv:2610.39611
+  title: 'Existence and spectral instability of steady rolls in the Nikolaevskiy equation: a computer-assisted study'
+  authors:
+  - Nikita V. Konev
+  - Fedor A. Vyazanitsyn
+  - Igor A. Knyazev
+  url: https://arxiv.org/abs/2610.39611
+  arxiv_id: '2610.39611'
+  submitted: '2026-10-29'
+  submitted_at: '2026-10-29T08:44:24Z'
+  updated: '2026-10-29'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - math.DS
+  - math.AP
+  - nlin.PS
+  doi: null
+  keywords:
+  - Nikolaevskiy
+  - computer-assisted proof
+  - Bloch spectrum
+  - periodic wave
+- id: arxiv:2610.40217
+  title: Wave Turbulence of Capillary Waves in Finite Systems
+  authors:
+  - Alexander O. Korotkevich
+  url: https://arxiv.org/abs/2610.40217
+  arxiv_id: '2610.40217'
+  submitted: '2026-10-29'
+  submitted_at: '2026-10-29T14:59:34Z'
+  updated: '2026-10-29'
+  version: v1
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - physics.flu-dyn
+  - nlin.PS
+  - physics.comp-ph
+  doi: null
+  keywords:
+  - capillary wave turbulence
+  - finite-size effect
+  - Zakharov-Filonenko spectrum
+- id: arxiv:2603.11172
+  title: Bootstrapping Fermionic $R$-operators with Decorated Yang--Baxter Equations
+  authors:
+  - Zhao Zhang
+  url: https://arxiv.org/abs/2603.11172
+  arxiv_id: '2603.11172'
+  submitted: '2026-03-11'
+  submitted_at: '2026-03-11T18:00:03Z'
+  updated: '2026-10-29'
+  version: v3
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - nlin.SI
+  - cond-mat.stat-mech
+  - hep-th
+  - math-ph
+  - quant-ph
+  doi: null
+  keywords:
+  - decorated Yang-Baxter equation
+  - fermionic R-operator
+  - Hamiltonian bootstrap
+  - Hubbard model
+- id: doi:10.1088/1402-4896/aebb6f
+  url: https://doi.org/10.1088/1402-4896/aebb6f
+  title: N-fold Darboux transformation for generalized Kaup-Newell equation
+  doi: 10.1088/1402-4896/aebb6f
+  journal: Physica Scripta
+  year: 2026
+  metadata_checked_at: '2026-10-31'
+  keywords:
+  - generalized Kaup-Newell
+  - Darboux transformation
+  - gauge phase
+  authors:
+  - Shizhu Gong
+  - Fuchen Huang
+  - Yuqin Yao
+  - Huihui Pang
+  published: '2026-10-29'
+- id: arxiv:2602.22317
+  title: Partial reversibility and counterdiabatic driving in nearly integrable systems
+  authors:
+  - Rohan Banerjee
+  - Shahyad Khamnei
+  - Anatoli Polkovnikov
+  - Stewart Morawetz
+  url: https://arxiv.org/abs/2602.22317
+  arxiv_id: '2602.22317'
+  submitted: '2026-02-25'
+  submitted_at: '2026-02-25T19:00:02Z'
+  updated: '2026-10-29'
+  version: v3
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - quant-ph
+  - cond-mat.stat-mech
+  - nlin.CD
+  doi: 10.1103/4hkp-j534
+  journal: Physical Review A
+  year: 2026
+  keywords:
+  - near integrability
+  - counterdiabatic driving
+  - partial reversibility
+  published: '2026-10-29'
+  volume: '114'
+  issue: '4'
+  article_number: '042625'
+- id: arxiv:2507.08213
+  title: 'Invariant reduction for partial differential equations. III: Poisson brackets'
+  authors:
+  - Kostya Druzhkov
+  url: https://arxiv.org/abs/2507.08213
+  arxiv_id: '2507.08213'
+  submitted: '2025-07-10'
+  submitted_at: '2025-07-10T22:52:35Z'
+  updated: '2026-10-27'
+  version: v5
+  metadata_checked_at: '2026-10-31'
+  arxiv_categories:
+  - nlin.SI
+  - math.DG
+  doi: 10.1016/j.geomphys.2026.106034
+  journal: Journal of Geometry and Physics
+  year: 2027
+  keywords:
+  - Poisson bracket
+  - Hamiltonian reduction
+  - higher symmetry
+  - cotangent covering
+  published: '2026-10-27'
+  volume: '231'
+  article_number: '106034'
+  metadata_note: 'ScienceDirect article history verified in the local browser: available online Oct27 2026; Version of Record Oct30 2026; issue January2027. First-online date is distinct from acceptance and issue assignment.'
