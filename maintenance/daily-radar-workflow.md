@@ -259,12 +259,20 @@ Inspect the full diff after rendering. Remove annotation residue, repeated prose
 - Create or update one reviewable PR only when there are qualifying events or necessary metadata/site corrections.
 - Do not create an empty PR.
 - Separate new research events, metadata-only corrections, sources checked, and unresolved uncertainty in the PR description.
-- Never merge the PR and never enable auto-merge.
-- Present the finished PR for explicit owner approval.
+- An explicit interactive owner request to "直接更新网站", "更新并发布", or equivalent grants publication approval for the current radar content update. Complete the data update, project check, diff review, push, and required CI; then merge the PR and verify deployment without asking for a second confirmation.
+- This approval is limited to the requested paper events, necessary bibliography corrections, generated pages, and source-state updates. Selection-policy changes, site architecture, permissions, and network configuration require their own authorization and are not included in a radar publication request.
+- Do not enable auto-merge, bypass required checks, or use administrative overrides. Merge only after the required checks pass for the reviewed commit.
+- For check-only requests and scheduled, heartbeat, or other unattended runs, this rule grants no publication approval: prepare the finished PR and present it for owner approval. Without an explicit publication request or separate owner merge approval, do not merge.
 - A temporary infrastructure failure must not disable, delete, or reschedule the maintenance procedure.
 
 ## Suggested local invocation
 
-Use this file as the canonical prompt. A daily task only needs the short invocation:
+Use this file as the canonical prompt. For a check-only or unattended daily run:
 
 > 按 `maintenance/daily-radar-workflow.md` 完成今天的研究雷达检查。先广覆盖发现，再筛选和核验；有实际变更才准备 PR，不要合并。
+
+For an interactive owner request that includes publication:
+
+> 帮我把论文雷达更新到今天，直接更新网站。汇报下有哪些新论文。
+
+The second invocation authorizes the current content update through merge and deployment after validation. Do not request another merge confirmation solely because a PR number was assigned later. Report the deployed result, source coverage, and any unresolved evidence gaps.
