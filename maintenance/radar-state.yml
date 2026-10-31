@@ -2,55 +2,55 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-10-29'
+    announced_through: '2026-10-30'
     last_status: complete
-    coverage_note: 'Oct26–29: all 60 dated Catchup pages for two core and 13 cross categories passed date/count validation. 2270 events (1075 new, 334 cross-list, 861 replacements); Oct29 pages empty at check time. Selective structure/result screening and primary review selected 21 new preprints; no exhaustive cross-field claim.'
+    coverage_note: 'Oct31 check: dated Catchup timed out for Oct30/31, so the current official /new pages were used. All 15 configured category pages identify the Oct30 batch and passed full count validation: 1227 distinct events (628 new, 172 cross-list, 427 replacement). Fifteen new preprints selected after bounded cross-category screening. Latest verified announcement watermark is Oct30; no Oct31 dated-page completeness claim.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-29'
+      checked_through: '2026-10-30'
       open_gaps: []
-      coverage_note: 'Six plausible replacements compared with prior full texts. Three substantive updates selected: hyperelliptic polynomial classification, KdV-rods bijection/separation, and reconstructed R-matrix analyticity. Two existing records refreshed without new events. Four existing v5+ histories checked unchanged. Catchup excludes journal-reference-only updates and versions beyond v5.'
-    checked_at: '2026-10-29T04:26:32.375876Z'
+      coverage_note: 'Official Oct30 replacement sections checked separately. Four full-text revision comparisons: fermionic R-operator bootstrap has material scope/conclusion changes and is selected; Poisson reduction and approximate-symmetry main results unchanged; Igonin v6 is corrections only. Four registered v5+ histories checked, one refreshed. No complete all-version census claimed.'
+    checked_at: '2026-10-31T04:16:32.959056Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-10-29'
+    announced_through: '2026-10-30'
     last_status: complete
-    coverage_note: 'Oct26–29: all 60 dated Catchup pages for two core and 13 cross categories passed date/count validation. 2270 events (1075 new, 334 cross-list, 861 replacements); Oct29 pages empty at check time. Selective structure/result screening and primary review selected 21 new preprints; no exhaustive cross-field claim.'
+    coverage_note: 'Oct31 check: dated Catchup timed out for Oct30/31, so the current official /new pages were used. All 15 configured category pages identify the Oct30 batch and passed full count validation: 1227 distinct events (628 new, 172 cross-list, 427 replacement). Fifteen new preprints selected after bounded cross-category screening. Latest verified announcement watermark is Oct30; no Oct31 dated-page completeness claim.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-29'
+      checked_through: '2026-10-30'
       open_gaps: []
-      coverage_note: 'Six plausible replacements compared with prior full texts. Three substantive updates selected: hyperelliptic polynomial classification, KdV-rods bijection/separation, and reconstructed R-matrix analyticity. Two existing records refreshed without new events. Four existing v5+ histories checked unchanged. Catchup excludes journal-reference-only updates and versions beyond v5.'
-    checked_at: '2026-10-29T04:26:32.375876Z'
+      coverage_note: 'Official Oct30 replacement sections checked separately. Four full-text revision comparisons: fermionic R-operator bootstrap has material scope/conclusion changes and is selected; Poisson reduction and approximate-symmetry main results unchanged; Igonin v6 is corrections only. Four registered v5+ histories checked, one refreshed. No complete all-version census claimed.'
+    checked_at: '2026-10-31T04:16:32.959056Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-10-29'
+    announced_through: '2026-10-30'
     last_status: complete
-    coverage_note: 'Oct26–29: all 60 dated Catchup pages for two core and 13 cross categories passed date/count validation. 2270 events (1075 new, 334 cross-list, 861 replacements); Oct29 pages empty at check time. Selective structure/result screening and primary review selected 21 new preprints; no exhaustive cross-field claim.'
+    coverage_note: 'Oct31 check: dated Catchup timed out for Oct30/31, so the current official /new pages were used. All 15 configured category pages identify the Oct30 batch and passed full count validation: 1227 distinct events (628 new, 172 cross-list, 427 replacement). Fifteen new preprints selected after bounded cross-category screening. Latest verified announcement watermark is Oct30; no Oct31 dated-page completeness claim.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-29'
+      checked_through: '2026-10-30'
       open_gaps: []
-      coverage_note: 'Six plausible replacements compared with prior full texts. Three substantive updates selected: hyperelliptic polynomial classification, KdV-rods bijection/separation, and reconstructed R-matrix analyticity. Two existing records refreshed without new events. Four existing v5+ histories checked unchanged. Catchup excludes journal-reference-only updates and versions beyond v5.'
-    checked_at: '2026-10-29T04:26:32.375876Z'
+      coverage_note: 'Official Oct30 replacement sections checked separately. Four full-text revision comparisons: fermionic R-operator bootstrap has material scope/conclusion changes and is selected; Poisson reduction and approximate-symmetry main results unchanged; Igonin v6 is corrections only. Four registered v5+ histories checked, one refreshed. No complete all-version census claimed.'
+    checked_at: '2026-10-31T04:16:32.959056Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-10-29'
-      note: Configured cond-mat.quant-gas dated lists covered through Oct29; selective screening.
+      through: '2026-10-30'
+      note: Current official cond-mat.quant-gas Oct30 list checked on Oct31; selective screening.
   crossref:
     kind: ranked-title-backstop
-    reconciliation_checked_at: '2026-10-29T04:26:32.375876Z'
+    reconciliation_checked_at: '2026-10-31T04:16:32.959056Z'
     reconciliation_cadence: weekly
-    reconciliation_note: '25 exact title/author queries completed: 21 new preprints, three major revisions, and the prior rate-limited KP Y/X paper. Returned records did not match identities. Two journal intakes linked to verified arXiv counterparts.'
+    reconciliation_note: 17 exact title/author queries completed for 15 new preprints, one substantial revision and Poisson reduction. Only Poisson reduction matched its journal identity. Similar mCH stability titles have distinct author lists and were not merged.
     overlap_days: 3
-    title_query_note: 'Processed Oct26 successful weekly artifact (Oct16–26) and Oct26–29 supplement: 16 configured ranked-title phrases; supplement 478 raw records, seven matches. Two dated journal intakes and one bibliography-only intake from combined passes.'
-    online_query_through: '2026-10-29'
+    title_query_note: 'Oct27–31 overlapping bounded title pass: 16 queries, 499 raw records, 11 matches. Three dated journal intakes verified, including the exact-title Poisson reduction match.'
+    online_query_through: '2026-10-31'
     online_status: complete
-    registration_query_through: '2026-10-29'
+    registration_query_through: '2026-10-31'
     registration_status: complete
-    registration_note: Independent five-phrase registered-DOI pass reused Oct26 weekly artifact plus Oct26–29 supplement (172 raw records, four matches). DOI creation/issue date never used as event date.
-    reconciliation_last_attempt_at: '2026-10-29T04:26:32.375876Z'
+    registration_note: 'Independent Oct27–31 five-phrase DOI-created pass: 179 raw records, six matches. DOI creation and issue dates not used as publication dates.'
+    reconciliation_last_attempt_at: '2026-10-31T04:16:32.959056Z'
     reconciliation_last_status: complete
     reconciliation_open_queries: []
   zbmath:
@@ -66,6 +66,6 @@ sources:
     last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-10-29T04:26:32.375876Z'
+    checked_at: '2026-10-31T04:16:32.959056Z'
     last_status: candidate-only
-    coverage_note: 'Two journal events verified from publisher Crossref deposits and matching arXiv identities/abstracts. NPB first-online date Oct25 verified from the locally saved ScienceDirect snapshot; local Journal Pre-proof PDF supplies the abstract, RH construction and reflectionless N-soliton result. Fokas-Lenells final volume/issue/pages added; Oct13 versus Oct26 deposit chronology unresolved and original event retained. Publisher page fetch failures do not imply absent papers.'
+    coverage_note: Three journal bibliographies verified from publisher deposits; Poisson reduction first-online Oct27, final-version Oct30 and Jan2027 issue directly read in local ScienceDirect browser after user verification. Matching arXiv abstracts/full text support notes. Zotero API was closed and read-only local lookup found no matching Poisson item. Other publisher pages and abstracts used for candidate screening; no publisher-wide coverage.

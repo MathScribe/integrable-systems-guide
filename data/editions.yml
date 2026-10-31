@@ -3843,3 +3843,210 @@ frontier:
       lead: 利用 Riesz 分数阶色散及平方本征函数与伴随平方本征函数的完备关系，构造分数阶三分量 mKdV 方程的显式形式。
       detail: 建立 4×4 矩阵 RH 问题，并在无反射条件下给出行列式形式的一般 N 孤子解；单、双孤子实例展示分数阶参数对峰值位置、传播位移和相互作用过程的影响。
       method_scope: 衰减边界下的散射构造，离散谱采用简单零点假设；动力学示例为聚焦情形的精确解图示，不是一般初值的长时渐近或稳定性定理。
+  - paper_id: arxiv:2610.39361
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - waves
+    - spectral
+    reading_note:
+      lead: 分析一维自旋–轨道耦合 Bose 混合物中的静止与移动量子液滴，得到条纹、零动量及行进平面波液滴相。
+      detail: 共动参考系中液滴产生有限纵向磁化；有限尺寸条纹态可具有不同峰数，激发谱及实时演化检验其稳定性。
+      method_scope: 含 Lee–Huang–Yang 修正的模型，结合变分、数值基态和 Bogoliubov 分析；结论针对所考察液滴族和参数区间。
+    event_source: https://arxiv.org/list/cond-mat.quant-gas/new
+  - paper_id: arxiv:2610.39909
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - waves
+    - asymptotics
+    reading_note:
+      lead: 提出亚声速 Kelvin 量子发射声子并分裂为两个较软量子的机制，使 Kelvin 模占据增加而能量下降。
+      detail: 软声子极限中旋转不变性约束声学剪切振幅；反射腔内的 Gross–Pitaevskii 模拟显示相干声场可放大 Kelvin 波，声相位翻转 π 可逆转响应。
+      method_scope: 微观计算与场方程数值验证，保留软声子极限、反射腔和相干种子条件。
+    event_source: https://arxiv.org/list/quant-ph/new
+  - paper_id: arxiv:2610.39938
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - spectral
+    - waves
+    reading_note:
+      lead: 为实线上两分量 modified Camassa–Holm 系统的非零阶跃边界初值问题建立矩阵 RH 表述。
+      detail: 从 Lax 对推导本征函数及散射数据的解析性、对称性和渐近性质，进而给出由 RH 解恢复原方程解的重构公式。
+      method_scope: 研究非零阶跃边界下的直接谱分析和逆问题表述；不将重构公式视为已完成的长时渐近或一般全局可解性证明。
+    event_source: https://arxiv.org/list/nlin.SI/new
+  - paper_id: arxiv:2610.38116
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - waves
+    - spectral
+    reading_note:
+      lead: 在无序 LC 电路格点中，将选定的 Anderson 局域模数值延拓为离散呼吸子族，并检验其谱稳定性。
+      detail: 线性局域频率和空间轮廓与实验一致；加入变容二极管后，实验观察到非线性共振弯曲、频移及滞回。
+      method_scope: Floquet 稳定性限于所考察频率范围；实验支持相关非线性共振响应，呼吸子延拓和稳定性由数值分析给出。
+    event_source: https://arxiv.org/list/nlin.PS/new
+  - paper_id: arxiv:2610.38461
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - waves
+    - asymptotics
+    reading_note:
+      lead: 对离散 NLS 驻波的耦合参数级数逐格点实施 Euler 收敛加速，改善较强耦合下的轮廓与局域性近似。
+      detail: 将加速轮廓代入线性化矩阵，改进同相双格点态的不稳定本征值估计，闭式展开推进到 ε^(5/2) 阶。
+      method_scope: 单格点、同相及反相双格点构型；与反连续极限延拓的数值解对照，半数值方法可达到 O(1) 耦合范围。
+    event_source: https://arxiv.org/list/nlin.PS/new
+  - paper_id: arxiv:2610.38584
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - spectral
+    - asymptotics
+    reading_note:
+      lead: 将 Painlevé I 绕无穷远一周的非线性 Stokes 变换与双参数 τ 函数的模变换联系起来。
+      detail: 给出实现模 S 作用的新显式参数关系，并确定 τ 函数变换中的乘法因子和归一化常数；五项双对数恒等式使整周因子抵消。
+      method_scope: 基于拓扑递归与精确 WKB 构造的解析假设，跟踪椭圆谱曲线的同调基和等单值系统的 Stokes 乘子。
+    event_source: https://arxiv.org/list/math-ph/new
+  - paper_id: arxiv:2610.38198
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - spectral
+    - asymptotics
+    reading_note:
+      lead: 对 Benjamin–Ono 的无限阶多孤子，在 H^s、s>−1/2 的尖锐适定性空间中证明孤子分解，并构造任意 Sobolev 阶的孤子气。
+      detail: 处理无限阶多孤子的谱刻画和渐近参数取值范围，以适配粗糙初值的谱分解及连续 norming 作用连接有限逆谱位移与气体极限。
+      method_scope: 孤子分解结论针对无限阶多孤子类别；更一般弱加权数据的分析允许无限多个负本征值，不表述为任意初值均已完成孤子分解。
+    event_source: https://arxiv.org/list/math.AP/new
+  - paper_id: arxiv:2610.38514
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - waves
+    - spectral
+    reading_note:
+      lead: 证明 modified Camassa–Holm 方程零背景光滑孤波在整个 γ<c<2γ 区间内的轨道稳定性。
+      detail: 针对导数集中使谱强制性不能直接推出非线性强制性的困难，构造带惩罚项的 Lyapunov 泛函和导数因子分解。
+      method_scope: 稳定性拓扑为 H¹∩W^(1,4)；以集中–强制性原理获得局部非线性 Lyapunov 控制。
+    event_source: https://arxiv.org/list/math.AP/new
+  - paper_id: arxiv:2610.38676
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - asymptotics
+    - waves
+    reading_note:
+      lead: 对 d≥2 的 Coulomb Hartree–Fock 方程，以小初始密度矩阵建立全局适定性及由共振方程支配的修正散射，允许无限秩。
+      detail: 刻画共振方程的驻态，并证明秩至少为二的初始密度矩阵不能遵循普通线性散射；直接项与交换项抵消仍不能消除长程作用。
+      method_scope: 半密度表述与共振动力学末态构造，长程演化发生在对数时间尺度；保留小数据假设。
+    event_source: https://arxiv.org/list/math.AP/new
+  - paper_id: arxiv:2610.39830
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - waves
+    - spectral
+    reading_note:
+      lead: 为代数衰减的 NLS 零频驻态建立轨道不稳定判据，处理本质谱接触零点时失去通常 H¹ 强制性的问题。
+      detail: 构造驻波对频率导数的零频极限；缺乏一阶加权 L² 衰减，或相应对偶配对为负，均可给出不稳定方向。
+      method_scope: d≥2 的竞争双幂非线性为基本模型，并推广到一类多幂情形；结合常微分方程打靶、局域化与基态变分刻画。
+    event_source: https://arxiv.org/list/math.AP/new
+  - paper_id: arxiv:2610.40197
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - structures
+    - spectral
+    reading_note:
+      lead: 将 sinh-Gordon／常平均曲率环面的等周期 Whitham 变形推广到具有实对合固定普通双点的谱曲线。
+      detail: 证明等周期集合在节点曲线处仍为流形且横截双点曲线层，因而可通过打开双点改变 genus，并分析归一化 Willmore 能量导数。
+      method_scope: 带两个整周期亚纯微分的实超椭圆曲线；双点插入还实现此前等周期集合离散不变量的全部取值。
+    event_source: https://arxiv.org/list/math.DG/new
+  - paper_id: arxiv:2610.40231
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - spectral
+    reading_note:
+      lead: 对区间 Sturm–Liouville 算子，求实现在先指定有限组本征值且与参考势 L^p 距离最小的最优势。
+      detail: 建立等谱流形正则性和极小值存在性，以平方本征函数线性组合的幂映射表示最优势，并给出条件唯一性、一般位置唯一性及非唯一实例。
+      method_scope: 1<p<∞；p=2 时分析非退化驻点与有限极小值，迭代和 Newton–KKT 方法的保证范围被明确限定。
+    event_source: https://arxiv.org/list/math-ph/new
+  - paper_id: arxiv:2610.39269
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - waves
+    - asymptotics
+    reading_note:
+      lead: 为带边界耗散的 KdV 比较先线性化或先空间离散两种近似路径，证明误差分配之差对小初值为二次且随网格细化衰减。
+      detail: 加权三次 Hermite Galerkin 格式具有网格一致的指数稳定、Kato 平滑及解映射解析性，从而获得全时间同范数误差控制。
+      method_scope: 小数据、有界区间及指定边界耗散；未加权格式中的零群速网格波包会破坏相应一致平滑估计。
+    event_source: https://arxiv.org/list/math.AP/new
+  - paper_id: arxiv:2610.39611
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - waves
+    - spectral
+    reading_note:
+      lead: 对 Nikolaevskiy 方程的一族周期稳态，给出存在性与实线上谱不稳定性的计算机辅助证明。
+      detail: 在波数 q∈[0.9,1.1] 的指定参数域构造连续稳态族，并在 r∈[0.25,4] 给出正实部 Bloch 本征值的一致下界。
+      method_scope: 参数化 Newton–Kantorovich 定理、起始分岔去奇化及严格区间算术；结论针对已验证参数域，而非所有周期稳态。
+    event_source: https://arxiv.org/list/math.DS/new
+  - paper_id: arxiv:2610.40217
+    signal_type: new-preprint
+    signal_date: '2026-10-30'
+    directions:
+    - waves
+    - asymptotics
+    reading_note:
+      lead: 数值研究有限系统中毛细波能量级联的 Zakharov–Filonenko 谱，量化其可实现标度区间随非线性减弱而收缩的现象。
+      detail: 多组模拟支持动态范围随平均波陡度按 μ^(8/3) 缩放的已有猜想，并扩大可观察幂律谱的尺度范围。
+      method_scope: 有限系统波湍流的数值证据，针对谱区间及有限尺寸效应，不将标度验证表述为严格定理。
+    event_source: https://arxiv.org/list/physics.flu-dyn/new
+  - paper_id: arxiv:2603.11172
+    signal_type: major-revision
+    signal_date: '2026-10-30'
+    directions:
+    - structures
+    - spectral
+    event_source: https://arxiv.org/list/nlin.SI/new
+    reading_note:
+      lead: 联合通常与装饰 Yang–Baxter 方程，从局域 Hamilton 量递推构造候选费米 R 算子，并给出每阶两格点局域性和形变相容性检验。
+      detail: 恢复 Hubbard 与 XYh 的已知双参数结构，同时识别超导 Hubbard 形变中一般不相容的标量条件，明确该框架的适用边界。
+      method_scope: 必要条件、形式递推及已知模型验证；一般充分性、级数收敛和形变条件的充分性仍开放，不宣称普遍完成 R 算子重构。
+  - paper_id: doi:10.1088/1402-4896/aebb6f
+    signal_type: journal-publication
+    signal_date: '2026-10-29'
+    directions:
+    - structures
+    - spectral
+    reading_note:
+      lead: 将与 Kundu 规范相位相对应的对角因子吸收到 Darboux 矩阵，构造对参数 β 一致适用的广义 Kaup–Newell N 重变换。
+      detail: 该因子满足相容的一阶方程，修正普通多项式 Darboux 矩阵只在特定参数处保持谱结构的问题。
+      method_scope: 零背景及规定谱对称条件下，β 不改变所得解的模；另给出平面波背景实例，规范相位与既有 Kundu 变换一致。
+    event_source: https://doi.org/10.1088/1402-4896/aebb6f
+  - paper_id: arxiv:2602.22317
+    signal_type: journal-publication
+    signal_date: '2026-10-29'
+    directions:
+    - structures
+    - asymptotics
+    reading_note:
+      lead: 研究近可积系统中介于热力学熵守恒和可积作用量守恒之间的部分可逆过程。
+      detail: 通过若干模型检验可逆性范围，并用近似反绝热驱动抑制快速驱动造成的耗散损失。
+      method_scope: 模型分析与数值证据；量子多体推广针对高度简并且存在可积性破坏的情形，不主张一般精确可逆控制。
+    event_source: https://doi.org/10.1103/4hkp-j534
+  - paper_id: arxiv:2507.08213
+    signal_type: journal-publication
+    signal_date: '2026-10-27'
+    directions:
+    - structures
+    reading_note:
+      lead: 建立 PDE 局域 Hamilton 算子到有限维不变约化系统 Poisson 双向量的继承机制，统一处理点、接触及高阶对称。
+      detail: 约化后的 Poisson 括号与原系统在不变守恒律上的括号相符至整体符号，并以 Kaup–Boussinesq 和 KdV 约化展示可积性。
+      method_scope: 采用奇余切覆盖及不变约化；要求相应正则性、ℓ-normal 系统及覆盖条件，构造不依赖所选 jet 空间嵌入。
+    event_source: https://doi.org/10.1016/j.geomphys.2026.106034
