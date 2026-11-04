@@ -2,70 +2,87 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-10-30'
+    announced_through: '2026-11-04'
     last_status: complete
-    coverage_note: 'Oct31 check: dated Catchup timed out for Oct30/31, so the current official /new pages were used. All 15 configured category pages identify the Oct30 batch and passed full count validation: 1227 distinct events (628 new, 172 cross-list, 427 replacement). Fifteen new preprints selected after bounded cross-category screening. Latest verified announcement watermark is Oct30; no Oct31 dated-page completeness claim.'
+    coverage_note: 'Nov4: all 75 dated category/date pages for Oct31-Nov4 validated after one math.AP Nov2 retry; 2567 distinct dated events ({''replacement'': 946, ''cross'': 370, ''new'':
+      1251}). Oct31 and Nov1 pages report zero entries. Bounded title screening followed by primary abstract verification; no field-wide completeness claim.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-30'
+      checked_through: '2026-11-04'
       open_gaps: []
-      coverage_note: 'Official Oct30 replacement sections checked separately. Four full-text revision comparisons: fermionic R-operator bootstrap has material scope/conclusion changes and is selected; Poisson reduction and approximate-symmetry main results unchanged; Igonin v6 is corrections only. Four registered v5+ histories checked, one refreshed. No complete all-version census claimed.'
-    checked_at: '2026-10-31T04:16:32.959056Z'
+      coverage_note: 'New and replacement listings screened separately. Six version pairs inspected in full text: four material revisions selected (hyperelliptic al functions, septic
+        NLS, quasilinear MMT, Witten intersection numbers). Manakov v2 bundles its already-cited supplement; OTR revision reorganizes existing results. Five registered v5+ histories
+        checked; no new changes. Catchup omits journal-reference-only and post-v5 replacements; no all-version census claimed.'
+    checked_at: '2026-11-04T05:17:11.969459Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-10-30'
+    announced_through: '2026-11-04'
     last_status: complete
-    coverage_note: 'Oct31 check: dated Catchup timed out for Oct30/31, so the current official /new pages were used. All 15 configured category pages identify the Oct30 batch and passed full count validation: 1227 distinct events (628 new, 172 cross-list, 427 replacement). Fifteen new preprints selected after bounded cross-category screening. Latest verified announcement watermark is Oct30; no Oct31 dated-page completeness claim.'
+    coverage_note: 'Nov4: all 75 dated category/date pages for Oct31-Nov4 validated after one math.AP Nov2 retry; 2567 distinct dated events ({''replacement'': 946, ''cross'': 370, ''new'':
+      1251}). Oct31 and Nov1 pages report zero entries. Bounded title screening followed by primary abstract verification; no field-wide completeness claim.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-30'
+      checked_through: '2026-11-04'
       open_gaps: []
-      coverage_note: 'Official Oct30 replacement sections checked separately. Four full-text revision comparisons: fermionic R-operator bootstrap has material scope/conclusion changes and is selected; Poisson reduction and approximate-symmetry main results unchanged; Igonin v6 is corrections only. Four registered v5+ histories checked, one refreshed. No complete all-version census claimed.'
-    checked_at: '2026-10-31T04:16:32.959056Z'
+      coverage_note: 'New and replacement listings screened separately. Six version pairs inspected in full text: four material revisions selected (hyperelliptic al functions, septic
+        NLS, quasilinear MMT, Witten intersection numbers). Manakov v2 bundles its already-cited supplement; OTR revision reorganizes existing results. Five registered v5+ histories
+        checked; no new changes. Catchup omits journal-reference-only and post-v5 replacements; no all-version census claimed.'
+    checked_at: '2026-11-04T05:17:11.969459Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-10-30'
+    announced_through: '2026-11-04'
     last_status: complete
-    coverage_note: 'Oct31 check: dated Catchup timed out for Oct30/31, so the current official /new pages were used. All 15 configured category pages identify the Oct30 batch and passed full count validation: 1227 distinct events (628 new, 172 cross-list, 427 replacement). Fifteen new preprints selected after bounded cross-category screening. Latest verified announcement watermark is Oct30; no Oct31 dated-page completeness claim.'
+    coverage_note: 'Nov4: all 75 dated category/date pages for Oct31-Nov4 validated after one math.AP Nov2 retry; 2567 distinct dated events ({''replacement'': 946, ''cross'': 370, ''new'':
+      1251}). Oct31 and Nov1 pages report zero entries. Bounded title screening followed by primary abstract verification; no field-wide completeness claim.'
     replacements:
       last_status: complete
-      checked_through: '2026-10-30'
+      checked_through: '2026-11-04'
       open_gaps: []
-      coverage_note: 'Official Oct30 replacement sections checked separately. Four full-text revision comparisons: fermionic R-operator bootstrap has material scope/conclusion changes and is selected; Poisson reduction and approximate-symmetry main results unchanged; Igonin v6 is corrections only. Four registered v5+ histories checked, one refreshed. No complete all-version census claimed.'
-    checked_at: '2026-10-31T04:16:32.959056Z'
+      coverage_note: 'New and replacement listings screened separately. Six version pairs inspected in full text: four material revisions selected (hyperelliptic al functions, septic
+        NLS, quasilinear MMT, Witten intersection numbers). Manakov v2 bundles its already-cited supplement; OTR revision reorganizes existing results. Five registered v5+ histories
+        checked; no new changes. Catchup omits journal-reference-only and post-v5 replacements; no all-version census claimed.'
+    checked_at: '2026-11-04T05:17:11.969459Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-10-30'
-      note: Current official cond-mat.quant-gas Oct30 list checked on Oct31; selective screening.
+      through: '2026-11-04'
+      note: Dated Nov2-Nov4 cond-mat.quant-gas lists checked with the same bounded screening.
   crossref:
     kind: ranked-title-backstop
     reconciliation_checked_at: '2026-10-31T04:16:32.959056Z'
     reconciliation_cadence: weekly
-    reconciliation_note: 17 exact title/author queries completed for 15 new preprints, one substantial revision and Poisson reduction. Only Poisson reduction matched its journal identity. Similar mCH stability titles have distinct author lists and were not merged.
+    reconciliation_note: 35 exact-title/author requests attempted for strong arXiv candidates; 29 completed without exact title matches, six HTTP429 responses. Optional journal metadata
+      gaps do not block verified arXiv events.
     overlap_days: 3
-    title_query_note: 'Oct27–31 overlapping bounded title pass: 16 queries, 499 raw records, 11 matches. Three dated journal intakes verified, including the exact-title Poisson reduction match.'
-    online_query_through: '2026-10-31'
+    title_query_note: 'Oct29-Nov4 overlap: 16 bounded title queries, 526 raw records, 12 exact phrase matches; three journal intakes and one existing-paper bibliography correction.'
+    online_query_through: '2026-11-04'
     online_status: complete
-    registration_query_through: '2026-10-31'
+    registration_query_through: '2026-11-04'
     registration_status: complete
-    registration_note: 'Independent Oct27–31 five-phrase DOI-created pass: 179 raw records, six matches. DOI creation and issue dates not used as publication dates.'
-    reconciliation_last_attempt_at: '2026-10-31T04:16:32.959056Z'
-    reconciliation_last_status: complete
-    reconciliation_open_queries: []
+    registration_note: 'Independent five-phrase DOI-created pass: 176 raw records, two exact phrase matches; neither is a new intake. DOI creation never used as publication date.'
+    reconciliation_last_attempt_at: '2026-11-04T05:17:11.969459Z'
+    reconciliation_last_status: partial
+    reconciliation_open_queries:
+    - https://arxiv.org/abs/2610.41470
+    - https://arxiv.org/abs/2611.00531
+    - https://arxiv.org/abs/2611.01488
+    - https://arxiv.org/abs/2611.03857
+    - https://arxiv.org/abs/2611.05015
+    - https://arxiv.org/abs/2611.00992
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
     checked_at: '2026-09-27T02:12:13Z'
     last_status: partial
-    coverage_note: Oct29 configured bounded MSC request for 2026–2027 issue years and Aug28–Oct29 indexing overlap returned HTTP404 before records. Last successful Sep27 watermark retained; no zero-result or recovery claim.
+    coverage_note: Nov4 bounded 2026-2027 MSC backstop over Aug28-Nov4 datestamps returned HTTP404 before records. Sep27 successful watermark retained; not a zero-result claim.
     publication_years:
     - 2026
     - 2027
-    last_attempt_at: '2026-10-29T04:26:32.375876Z'
+    last_attempt_at: '2026-11-04T05:17:11.969459Z'
     last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-10-31T04:16:32.959056Z'
+    checked_at: '2026-11-04T05:17:11.969459Z'
     last_status: candidate-only
-    coverage_note: Three journal bibliographies verified from publisher deposits; Poisson reduction first-online Oct27, final-version Oct30 and Jan2027 issue directly read in local ScienceDirect browser after user verification. Matching arXiv abstracts/full text support notes. Zotero API was closed and read-only local lookup found no matching Poisson item. Other publisher pages and abstracts used for candidate screening; no publisher-wide coverage.
+    coverage_note: Four current publisher Crossref deposits checked in full. Three first-online journal intakes; Dirac inverse-scattering metadata reconciled to Nov3 with volume/issue/article
+      number. DOI pages unavailable in web tool; abstracts support two journal notes, Toda retained bibliography-only. No publisher-wide coverage.
