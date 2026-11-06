@@ -1,0 +1,244 @@
+checked_on: '2026-11-04'
+prompt_references:
+  - name: First Proof · System A 原始提示词
+    url: https://1stproof.org/assets/docs/batch3-system-a-prompt.txt
+    note: 第三批评测使用的证明任务提示词。
+  - name: Axiom · Fel 猜想 task.md
+    url: https://github.com/AxiomMath/fel-polynomial/blob/main/task.md
+    note: 配合独立数学陈述使用的简短 Lean 证明任务。
+  - name: Axiom · Fel 猜想题目文件
+    url: https://github.com/AxiomMath/fel-polynomial/blob/main/Fel_Conjecture.tex
+    note: 与 task.md 配套的定义、猜想及算例。
+  - name: Aletheia · 公开研究输入与输出
+    url: https://github.com/google-deepmind/superhuman/blob/main/aletheia/README.md
+    note: 研究级数学任务的提示词与回答材料说明。
+  - name: AlphaEvolve · 数学问题库
+    url: https://google-deepmind.github.io/alphaevolve_repository_of_problems/
+    note: 部分题目附含提示词、初始程序与验证代码的 notebook。
+projects:
+  - name: AlphaEvolve 问题库
+    url: https://google-deepmind.github.io/alphaevolve_repository_of_problems/
+  - name: First Proof
+    url: https://1stproof.org/
+  - name: FrontierMath · Open Problems
+    url: https://epoch.ai/frontiermath/open-problems
+  - name: Formal Conjectures
+    url: https://github.com/google-deepmind/formal-conjectures
+  - name: UnsolvedMath
+    url: https://huggingface.co/datasets/ulamai/UnsolvedMath
+  - name: Erdős Problems 社区数据库
+    url: https://github.com/teorth/erdosproblems
+  - name: OpenTorus
+    url: https://github.com/maximilianbehr/OpenTorus
+  - name: Co-Mathematician
+    url: https://github.com/VeryMath/co-mathematician
+problems:
+  - id: catastrophe-spikes
+    title: 半经典聚焦 NLS 高退化梯度灾变的奇数倍峰高猜想
+    attribution: 'Marco Bertola、Alexander Tovbis · CPAM 2013 · Conjecture 6.5'
+    status: 普通三倍情形已证明
+    kind: conjecture
+    description: |
+      考虑实线上的半经典聚焦非线性薛定谔方程
+
+      $$i\varepsilon q_t+\varepsilon^2q_{xx}+2|q|^2q=0,\qquad \varepsilon\to0^+.$$
+
+      对原论文所研究的衰减初值与散射数据，Whitham 调制描述在某个时空点 $(x_0,t_0)$ 发生梯度灾变：主项的幅值仍有限，但它的导数发散。记该点的调制幅值为 $b_0>0$。原方程的解在灾变点附近形成窄尖峰；期刊版 Theorem 6.4 已证明，普通灾变处尖峰的幅值为 $3b_0+O(\varepsilon^{1/5})$。
+
+      **期刊版 Conjecture 6.5 预言：梯度灾变邻域中尖峰的渐近幅值是灾变点幅值的奇数倍。** 紧邻猜想的讨论将高退化情形——谱弧端点同时产生多条新谱弧——与 $5b_0,7b_0,\ldots$ 的峰高和 Painlevé I 层级的更高成员联系起来。退化程度、倍数和局部形状的准确对应，需要由相应谱问题确定，不能仅凭奇数序列补出一个编号公式。
+
+      这道题的价值在于解释极端波峰的普适性：不同初值为何会在同一种灾变结构附近产生共同的局部波形和幅值规律。**完整高退化推广的困难，是从原始散射数据确定局部模型，完成它与外部模型的匹配，再将误差控制传递到原 NLS 解。** 显式高阶怪波具有某个奇数倍峰高，并不能单独完成这一论证。这里比较的是幅值 $|q|$，参照量是灾变点的 $b_0$；三倍幅值对应九倍强度。
+    progress: 原论文的普通三倍情形已有定理。Bertola 在 2024 年北师大报告摘要中，仍将高退化处的 Painlevé I 层级及奇数倍峰高表述为猜想。本轮未检得一般形式的完整证明，但这一检索范围不等于对全部后续文献的穷尽核查。
+    task: |
+      先阅读原论文 §6.1，复现期刊版 Theorem 6.4（arXiv v2 中为 Theorem 6.2）的三倍幅值重建计算。逐步标明公式、假设和误差阶，核对幅值与强度的区别。
+
+      再依据期刊版 Conjecture 6.5、Remark 6.12（arXiv v2 中分别为 Conjecture 6.1、Remark 6.3），写出最低一个高退化情形的谱条件，列明局部模型、参数选择和匹配估计中哪些可以沿用，哪些必须重新证明。
+
+      本轮目标是完成一段可逐式核验的计算，并准确陈述一个高退化推广所需的未证命题。不要由高阶有理解的峰高直接推断一般初值问题的渐近规律，也不要把自行猜测的退化编号关系归于原作者。
+    sources:
+      - label: 'M. Bertola, A. Tovbis — Universality for the focusing nonlinear Schrödinger equation at the gradient catastrophe point: Rational breathers and poles of the tritronquée solution to Painlevé I'
+        url: https://doi.org/10.1002/cpa.21445
+        location: '期刊版｜CPAM 66 (2013), 678–752；§6.1，Theorem 6.4、Conjecture 6.5（第 730–731 页）；另见 Remark 6.12。'
+      - label: 'Bertola–Tovbis · 同文 arXiv v2'
+        url: https://arxiv.org/abs/1004.1828v2
+        location: '开放预印本｜上述三处依次对应 Theorem 6.2、Conjecture 6.1、Remark 6.3；编号与期刊版不同。'
+      - label: 'M. Bertola — The Focusing Nonlinear Schrödinger Equation in the semiclassical regime: Peregrine breathers near the gradient catastrophe'
+        url: https://math.bnu.edu.cn/xzbg/ztbg/741d910665d74e97a37f5d4f46099c3e.htm
+        location: '作者后续表述｜北京师范大学，2024-03-27 报告；摘要仍将高退化推广述为猜想，不是新的证明。'
+  - id: dubrovin-universality
+    title: Dubrovin 普适性猜想：Hamiltonian 扰动的梯度灾变轮廓
+    attribution: 'Boris Dubrovin · 2005 年预印本 · Main Conjecture, Part 3'
+    status: KdV 子类已有证明
+    kind: conjecture
+    description: |
+      从无色散方程 $v_t+a(v)v_x=0$ 出发，设其解在 $(x_c,t_c)$ 发生普通梯度灾变，临界值为 $u_c$。考虑 Dubrovin 原文限定的、由局部 Hamiltonian 密度产生的小色散扰动：
+
+      $$u_t+\partial_x\frac{\delta H_\varepsilon}{\delta u}=0,\qquad
+      H_\varepsilon=\int F(u)\,dx+O(\varepsilon^2),\quad F''(u)=a(u).$$
+
+      扰动项及原文 Main Conjecture, Part 1 所对应的解须满足原文条件；尤其要保留 §7 的普通灾变非退化条件与主色散系数非零条件。这一猜想不适用于任意耗散或非局部扰动。
+
+      **Main Conjecture, Part 3 预测：经过由方程和灾变点确定的平移、缩放，临界区的主导轮廓由同一个特殊函数 $U$ 给出。** 将原文式 (7.17) 的常数记为 $A,B,C$，其形式为
+
+      $$u(x,t;\varepsilon)=u_c+A\varepsilon^{2/7}U(X,T)+O(\varepsilon^{4/7}),$$
+
+      $$X=\frac{x-x_c-a(u_c)(t-t_c)}{B\varepsilon^{6/7}},\qquad
+      T=\frac{t-t_c}{C\varepsilon^{4/7}}.$$
+
+      上述展开取 $\varepsilon\to0$ 且 $X,T$ 保持有限的双重缩放极限。$A,B,C$ 按原文式 (7.5)、(7.12)、(7.16)–(7.17) 确定，不是自由拟合参数。$U$ 取在整个实 $(X,T)$ 平面上无极点、满足 Claeys–Grava 式 (1.6) 无穷远渐近条件的实解，并满足
+
+      $$X=TU-\left[\frac{U^3}{6}
+      +\frac{U_X^2+2UU_{XX}}{24}+\frac{U_{XXXX}}{240}\right].$$
+
+      因而这道题有具体的检验目标：振幅、空间和时间分别按 $\varepsilon^{2/7}$、$\varepsilon^{6/7}$、$\varepsilon^{4/7}$ 缩放后，是否得到规定的 $U$ 及误差阶？**其价值在于跨越具体初值与具体 Hamiltonian 扰动，解释临界波形为何相同。** 完整证明的困难是将形式缩放变成原 PDE 的一致渐近估计，跨过无色散近似失效的灾变点；一般扰动不能直接照搬可积 KdV 的 RHP 证明。
+
+      Claeys–Grava 已在其规定的初值条件下证明 KdV 的这一临界渐近，并进一步研究 KdV 层级。因此这里追踪的是原猜想尚未被这些结果覆盖的范围，不能把已证明的 KdV 子类作为待解题。实际研究应先固定一个符合原文框架的方程或子类，再核查是否已有相应定理。
+    progress: 已核对原文 Main Conjecture, Part 3 与式 (7.17)，并核对 KdV（CMP 2009）及 KdV 层级的部分结果。本页关注 PDE 的临界渐近命题，不将辅助 Painlevé 方程的研究混同于整个猜想；本轮未检得一般扰动类的完整证明。
+    task: |
+      阅读 Dubrovin 原文的 Main Conjecture, Parts 1、3，以及 §6–7。整理扰动标准形、解的对应方式、泛性条件和式 (7.17) 的常数；核对 U 的实无极点条件及 Claeys–Grava 式 (1.6) 的渐近条件，并在缩放变量 X、T 保持有限的极限下研究。
+
+      对照 Claeys–Grava 的 KdV 定理及 KdV 层级结果，先标出已经证明的初值和方程范围。选择一个尚未被已核对结果覆盖、且确实属于原猜想框架的子类；如未找到，应明确报告，不能人为制造“未解”子问题。
+
+      从原文的局部展开重新推导三个缩放指数，并检验高阶项在这一尺度下的阶数。本轮至少完成一项可核验推导，随后写出将形式展开升级为一致误差界所缺的精确估计。严格区分特殊函数模型的性质与原 PDE 选择该模型的证明。
+    sources:
+      - label: 'B. Dubrovin — On Hamiltonian perturbations of hyperbolic systems of conservation laws, II: universality of critical behaviour'
+        url: https://arxiv.org/html/math-ph/0510032
+        location: '原始猜想｜arXiv:math-ph/0510032v2 (2005)；§7，Main Conjecture, Part 3，式 (7.17)；局部模型见 §6，式 (6.1)，解的对应条件见 Part 1。'
+      - label: 'T. Claeys, T. Grava — Universality of the break-up profile for the KdV equation in the small dispersion limit using the Riemann–Hilbert approach'
+        url: https://arxiv.org/abs/0801.2326
+        location: '已证明的子类｜Communications in Mathematical Physics 286 (2009), 979–1009；U 的选解条件见式 (1.6)，KdV 双重缩放结论见 Theorem 1.2。'
+      - label: 'T. Claeys, T. Grava — The KdV hierarchy: universality and a Painlevé transcendent'
+        url: https://arxiv.org/abs/1101.2602
+        location: '进一步结果｜2011 年预印本；研究负的单峰解析初值下 KdV 层级的临界渐近，不能据此声称一般 Hamiltonian 扰动已被覆盖。'
+  - id: half-line-nls
+    title: Deift 问题：周期边界驱动的半直线聚焦 NLS
+    attribution: 'Percy Deift · SIGMA 2017 · Problem 5'
+    status: 候选问题 · 最新范围待核查
+    kind: review
+    description: |
+      Deift II 的 Problem 5 给出如下半直线初边值问题。沿用他的符号约定：
+
+      $$iu_t=u_{xx}+2|u|^2u,\qquad x>0,\ t>0,$$
+
+      $$u(x,0)=f(x),\qquad u(0,t)=e^{i\omega t},\quad \omega\in\mathbb R.$$
+
+      初值 $f$ 应具有适当的正则性、空间衰减和角点相容性，例如零阶相容条件为 $f(0)=1$。**问题是仅由这些给定数据，确定解在 $t\to\infty$ 时的行为，说明驱动频率和初值如何决定向内部传播的波场。** 研究目标可以落实为固定位置或适当 $x/t$ 区域内的主项与误差估计；具体范围须与对应的解类一起确定。
+
+      统一变换方法使用边界值 $u(0,t)$ 和边界导数 $u_x(0,t)$。前者已经给定，后者是解的一部分。核心困难是先从原初边值问题确定未知 Neumann 数据的长期行为，再完成谱分析及内部波场的渐近推导。这个问题具有直接的驱动—响应意义，难处也不止于得到一个形式上的 RHP。
+
+      已有论文处理了重要的条件性结果。Boutet de Monvel–Kotlyarov–Shepelsky 在其周期边界分析中，额外假设 Neumann 数据趋于指定的单频形式，并在相应谱条件下给出渐近结论；Lenells–Fokas 则在未知边界值也渐近周期的假设下，建立边界函数应满足的关系及构造方法。**因此，“已知两个边界值的渐近形式后求解”与“只给初值和 Dirichlet 数据便确定长期行为”需要分开。** 各文献的方程符号、频率和振幅归一化也必须先换算，不能直接比较参数区间。
+    progress: 已核对 Deift 原题，以及下列两项工作对未知边界数据的额外假设。此条暂作候选问题档案：已有特殊情形和条件性结果，但尚未完成所有频率、初值类及后续论文的对照，不将它笼统标记为“完全未解”。
+    task: |
+      先阅读 Deift Problem 5 第 12 页，再对照 Boutet de Monvel–Kotlyarov–Shepelsky 的 §3 与 Theorem 3，以及 Lenells–Fokas 的 Exact results。逐项列出给定数据、附加假设、允许的参数范围和得到的结论。
+
+      统一不同论文的方程符号及边界指数中的频率、振幅归一化。特别检查 Neumann 数据的渐近周期性究竟是定理结论还是预先假设，并搜索这些结果的后续文献。
+
+      本轮首先确定一个仍需研究的、定义完整的子情形。若现有定理已经覆盖，应据实报告。只有核实剩余范围后，再尝试推导其中一个边界谱关系或估计；不能把齐次 Robin 条件或预先指定的 Neumann 行为当成原 Dirichlet 问题的解答。
+    sources:
+      - label: 'P. Deift — Some Open Problems in Random Matrix Theory and the Theory of Integrable Systems. II'
+        url: https://sigma-journal.com/2017/016/sigma17-016.pdf#page=12
+        location: '原始问题｜SIGMA 13 (2017), 016；Problem 5，第 12–13 页；周期 Dirichlet 驱动的具体提问在第 12 页。'
+      - label: 'A. Boutet de Monvel, V. P. Kotlyarov, D. Shepelsky — The focusing NLS equation with periodic Dirichlet data: admissible Neumann values and long-time asymptotics'
+        url: https://bibos.math.uni-bielefeld.de/preprints/08-09-300.pdf
+        location: '条件性结果｜2008 年预印本；§3（PDF 第 5 页）与 Theorem 3（第 22 页）明确使用 Neumann 数据的渐近单频假设，并有参数与谱条件。'
+      - label: 'J. Lenells, A. S. Fokas — The nonlinear Schrödinger equation with t-periodic data: I. Exact results'
+        url: https://arxiv.org/abs/1412.0304
+        location: '边界关系与构造｜2014 年预印本、2015 年修订；在未知边界值也趋向周期函数的假设下，推导两者的相容条件及构造方法。'
+  - id: cnls-double-ab-maximum
+    title: 两分量 NLS 中 AB 型 N 呼吸子的最大总强度
+    attribution: '我们结合相关文献整理提出的研究问题'
+    status: 整理提出的研究问题
+    kind: research
+    source_heading: 相关文献
+    description: |
+      一般问题是：固定平面波背景、$N$ 个谱点及各自的 AB 谱根对，求总强度的尖锐上确界，并在可达时确定使解在原点取等的模态系数。已有代数选根规则，进一步希望显式给出峰值和取等系数对谱数据的依赖。
+
+      **以下先考虑 $N=2$。** 单个 AB 的峰值已可显式求出。两个谱点对应的两组模态系数共同决定同一个解的峰值，这是首次需要联合优化的情形。
+
+      考虑两分量聚焦 NLS 方程
+
+      $$iq_{n,t}+\frac12q_{n,xx}
+      +\bigl(|q_1|^2+|q_2|^2\bigr)q_n=0,\qquad n=1,2,$$
+
+      固定平面波背景
+
+      $$q_n^{[0]}=a_ne^{\,i[b_nx+(a_1^2+a_2^2-b_n^2/2)t]},
+      \qquad a_n>0,\quad b_n\in\mathbb R,\quad b_1\ne b_2.$$
+
+      取两个互异的简单谱点 $\lambda_1,\lambda_2\in\mathbb C_+$。每个谱点对应三个特征根
+
+      $$2\lambda_j=\chi_{j,m}
+      -\sum_{n=1}^2\frac{a_n^2}{\chi_{j,m}+b_n},
+      \qquad j=1,2,\quad m=1,2,3.$$
+
+      设每个谱点对应的三个根互异，且上式分母均非零。用于二重 Darboux 变换的种子列为
+
+      $$\phi_j=\sum_{m=1}^3C_{j,m}\Phi_{j,m},\qquad j=1,2,$$
+
+      其中 $\Phi_{j,m}$ 是对应谱根的 Lax 模态，按
+
+      $$\Phi_{j,m}(0,0)=
+      \begin{pmatrix}
+      1\\ a_1/(\chi_{j,m}+b_1)\\ a_2/(\chi_{j,m}+b_2)
+      \end{pmatrix}$$
+
+      归一化。为构造 AB 型两呼吸子解，要求
+
+      $$\chi_{j,2}-\chi_{j,1}\in\mathbb R_{>0},\quad
+      \operatorname{Im}\chi_{j,1}>0,\quad
+      C_{j,1}C_{j,2}\ne0,\quad C_{j,3}=0,\qquad j=1,2.$$
+
+      去掉背景载波相位后，单个基本 AB（Akhmediev breather）具有空间周期性，并在时间两端回到平面波背景；KM（Kuznetsov–Ma breather）则在适当参考系中空间局域、随时间周期振荡。本题限定为上述 AB 型解族。
+
+      **对上述两呼吸子解族，求**
+
+      $$\sup_{\substack{x,t\in\mathbb R\\
+      C_{j,1},C_{j,2}\in\mathbb C^\times,\ C_{j,3}=0\\ j=1,2}}
+      \left(|q_1^{[2]}(x,t)|^2+|q_2^{[2]}(x,t)|^2\right).$$
+
+      若可达，确定使 $|q_1^{[2]}(0,0)|^2+|q_2^{[2]}(0,0)|^2$ 等于上述上确界的系数 $C_{j,m}$（每列相差非零公因子视为相同）。若只能在某列的系数比趋于零或无穷时逼近，给出相应的谱条件。
+
+      作为对照，若两组系数 $(C_{j,1},C_{j,2},C_{j,3})\in\mathbb C^3\setminus\{0\}$ 均可自由选取，则有可达上界
+
+      $$|q_1^{[2]}|^2+|q_2^{[2]}|^2
+      \le\left(\sqrt{a_1^2+a_2^2}
+      +2\operatorname{Im}\lambda_1+2\operatorname{Im}\lambda_2\right)^2.$$
+
+      使它在原点取等，可显式取
+
+      $$\boxed{
+      C_{j,m}=
+      \frac{(\chi_{j,m}+b_1)(\chi_{j,m}+b_2)
+      \left[1+\dfrac{i(\chi_{j,m}-2\lambda_j)}
+      {\sqrt{a_1^2+a_2^2}}\right]}
+      {\displaystyle\prod_{\substack{\ell=1\\\ell\ne m}}^3
+      (\chi_{j,m}-\chi_{j,\ell})},
+      \quad j=1,2,\quad m=1,2,3.
+      }$$
+
+      这组系数满足
+
+      $$\sum_{m=1}^3 C_{j,m}=1,\qquad
+      \sum_{m=1}^3\frac{C_{j,m}}{\chi_{j,m}+b_n}
+      =\frac{i}{\sqrt{a_1^2+a_2^2}},\qquad n=1,2,$$
+
+      在本题的不同载波和上半平面谱根条件下，取等所需的种子方向不在选定的两模态子空间中。限制 $C_{j,3}=0$ 后，AB 解族的上确界严格低于这个三模态上界。
+    progress: 对两呼吸子，部分谱参数下已经可以判定哪个候选值最大。当前要确定其余谱参数下的峰值，以及上确界可达时在原点取等的系数。
+    task: |
+      本轮先取 $N=2$。固定背景、两个谱点及各自的 AB 谱根对，在 $C_{1,3}=C_{2,3}=0$ 的约束下联合优化两组模态系数，求峰值对谱数据的显式依赖。
+
+      比较所有候选峰值，包括某组系数比趋于零或无穷时的极限。若上确界可达，给出在原点取等的系数并证明其全局最优性。若只能在边界逼近，给出相应的谱条件。
+
+    sources:
+      - label: 'L. Ling, L.-C. Zhao — Modulational instability and homoclinic orbit solutions in vector nonlinear Schrödinger equation'
+        url: https://arxiv.org/abs/1704.00404
+        location: 'AB 谱条件与构造｜Communications in Nonlinear Science and Numerical Simulation 72 (2019), 449–471；§3。其谱参数与本文的 2λ 约定需作对应。'
+      - label: 'G. Zhang, L. Ling, Z. Yan — Multi-component Nonlinear Schrödinger Equations with Nonzero Boundary Conditions: Higher-Order Vector Peregrine Solitons and Asymptotic Estimates'
+        url: https://link.springer.com/article/10.1007/s00332-021-09735-z
+        location: 'Lax 与 Darboux 构造参考｜Journal of Nonlinear Science 31, 81 (2021)；本文采用其 Lax 归一化。'
+      - label: 'S. A. Chin, O. A. Ashour, S. N. Nikolić, M. R. Belić — Peak-height formula for higher-order breathers of the nonlinear Schrödinger equation on non-uniform backgrounds'
+        url: https://arxiv.org/abs/1611.02753
+        location: '标量峰高参照｜Physical Review E 95, 012211 (2017)；不是本题一般矢量受限解族的全局最大值定理。'
+      - label: 'A. Gelash, A. Raskovalov — Vector breathers in the Manakov system'
+        url: https://arxiv.org/abs/2211.07014
+        location: '矢量呼吸子类型与动力学参考｜2022 年预印本，2023 年发表；文中的共同恒定背景分类需与本题的一般载波背景区分。'

@@ -336,7 +336,7 @@ def render_frontier_home(data: dict[str, Any], papers: dict[str, dict[str, Any]]
         [
             "## 站内导航",
             "",
-            "- [Core topics / 核心主题](topics.md)：当前关注的方程、方法与研究问题。",
+            "- [Open problems / 公开问题](topics.md)：问题描述、文献来源与 AI 研究提示词。",
             "- [Resources / 资源](resources.md)：论文检索、课程与专题资料。",
             "- [Group work / 课题组相关](group-work.md)：查询相关论文与公开资料。",
             "- [About / 关于](about.md)：选稿原则、数据来源与 AI 使用说明。",

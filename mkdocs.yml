@@ -15,7 +15,7 @@ theme:
 
 nav:
   - Home / 首页: index.md
-  - Core topics / 核心主题: topics.md
+  - Open problems / 公开问题: topics.md
   - Group work / 课题组相关: group-work.md
   - Resources / 资源: resources.md
   - About / 关于: about.md
@@ -49,10 +49,12 @@ hooks:
 extra_css:
   - stylesheets/radar.css
   - stylesheets/group-papers.css
+  - stylesheets/problems.css
 
 extra_javascript:
   - javascripts/mathjax.js
   - javascripts/goatcounter.js
   - javascripts/radar.js
   - javascripts/group-papers.js
+  - javascripts/problems.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
