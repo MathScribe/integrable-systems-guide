@@ -2,51 +2,67 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-11-04'
+    announced_through: '2026-11-06'
     last_status: complete
-    coverage_note: 'Nov4: all 75 dated category/date pages for Oct31-Nov4 validated after one math.AP Nov2 retry; 2567 distinct dated events ({''replacement'': 946, ''cross'': 370, ''new'':
-      1251}). Oct31 and Nov1 pages report zero entries. Bounded title screening followed by primary abstract verification; no field-wide completeness claim.'
+    coverage_note: Validated both dated Catchup pages and screened new and cross-listed titles.
     replacements:
       last_status: complete
-      checked_through: '2026-11-04'
+      checked_through: '2026-11-06'
       open_gaps: []
-      coverage_note: 'New and replacement listings screened separately. Six version pairs inspected in full text: four material revisions selected (hyperelliptic al functions, septic
-        NLS, quasilinear MMT, Witten intersection numbers). Manakov v2 bundles its already-cited supplement; OTR revision reorganizes existing results. Five registered v5+ histories
-        checked; no new changes. Catchup omits journal-reference-only and post-v5 replacements; no all-version census claimed.'
-    checked_at: '2026-11-04T05:17:11.969459Z'
+      coverage_note: Nov 5–6 available Catchup replacements screened separately. Compared three version pairs in full text; one new Schwartz-class well-posedness theorem. Five registered
+        v5+ submission histories checked.
+    checked_at: '2026-11-06T13:45:59Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-11-04'
+    announced_through: '2026-11-06'
     last_status: complete
-    coverage_note: 'Nov4: all 75 dated category/date pages for Oct31-Nov4 validated after one math.AP Nov2 retry; 2567 distinct dated events ({''replacement'': 946, ''cross'': 370, ''new'':
-      1251}). Oct31 and Nov1 pages report zero entries. Bounded title screening followed by primary abstract verification; no field-wide completeness claim.'
+    coverage_note: Validated both dated Catchup pages and screened new and cross-listed titles.
     replacements:
       last_status: complete
-      checked_through: '2026-11-04'
+      checked_through: '2026-11-06'
       open_gaps: []
-      coverage_note: 'New and replacement listings screened separately. Six version pairs inspected in full text: four material revisions selected (hyperelliptic al functions, septic
-        NLS, quasilinear MMT, Witten intersection numbers). Manakov v2 bundles its already-cited supplement; OTR revision reorganizes existing results. Five registered v5+ histories
-        checked; no new changes. Catchup omits journal-reference-only and post-v5 replacements; no all-version census claimed.'
-    checked_at: '2026-11-04T05:17:11.969459Z'
+      coverage_note: Nov 5–6 available Catchup replacements screened separately. Compared three version pairs in full text; one new Schwartz-class well-posedness theorem. Five registered
+        v5+ submission histories checked.
+    checked_at: '2026-11-06T13:45:59Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-11-04'
+    announced_through: '2026-11-06'
     last_status: complete
-    coverage_note: 'Nov4: all 75 dated category/date pages for Oct31-Nov4 validated after one math.AP Nov2 retry; 2567 distinct dated events ({''replacement'': 946, ''cross'': 370, ''new'':
-      1251}). Oct31 and Nov1 pages report zero entries. Bounded title screening followed by primary abstract verification; no field-wide completeness claim.'
+    coverage_note: Nov 5–6 official recent category headings and complete daily counts checked across all 15 configured categories; 779 distinct IDs in the bounded title screen, including
+      core categories.
     replacements:
-      last_status: complete
+      last_status: partial
       checked_through: '2026-11-04'
-      open_gaps: []
-      coverage_note: 'New and replacement listings screened separately. Six version pairs inspected in full text: four material revisions selected (hyperelliptic al functions, septic
-        NLS, quasilinear MMT, Witten intersection numbers). Manakov v2 bundles its already-cited supplement; OTR revision reorganizes existing results. Five registered v5+ histories
-        checked; no new changes. Catchup omits journal-reference-only and post-v5 replacements; no all-version census claimed.'
-    checked_at: '2026-11-04T05:17:11.969459Z'
+      open_gaps:
+      - math-ph 2026-11-05
+      - math-ph 2026-11-06
+      - math.AP 2026-11-05
+      - math.AP 2026-11-06
+      - math.AG 2026-11-05
+      - math.AG 2026-11-06
+      - math.DG 2026-11-06
+      - math.CO 2026-11-05
+      - math.CO 2026-11-06
+      - math.PR 2026-11-05
+      - math.PR 2026-11-06
+      - quant-ph 2026-11-05
+      - quant-ph 2026-11-06
+      - cond-mat.stat-mech 2026-11-05
+      - cond-mat.stat-mech 2026-11-06
+      - cond-mat.str-el 2026-11-05
+      - cond-mat.str-el 2026-11-06
+      - hep-th 2026-11-05
+      - hep-th 2026-11-06
+      - physics.optics 2026-11-05
+      - physics.optics 2026-11-06
+      coverage_note: Nov 5–6 available Catchup replacements screened separately. Compared three version pairs in full text; one new Schwartz-class well-posedness theorem. Five registered
+        v5+ submission histories checked.
+    checked_at: '2026-11-06T13:45:59Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-11-04'
-      note: Dated Nov2-Nov4 cond-mat.quant-gas lists checked with the same bounded screening.
+      through: '2026-11-06'
+      note: Dated lists for Nov 5–6 validated.
   crossref:
     kind: ranked-title-backstop
     reconciliation_checked_at: '2026-10-31T04:16:32.959056Z'
@@ -82,7 +98,6 @@ sources:
     last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-11-04T05:17:11.969459Z'
+    checked_at: '2026-11-06T13:45:59Z'
     last_status: candidate-only
-    coverage_note: Four current publisher Crossref deposits checked in full. Three first-online journal intakes; Dirac inverse-scattering metadata reconciled to Nov3 with volume/issue/article
-      number. DOI pages unavailable in web tool; abstracts support two journal notes, Toda retained bibliography-only. No publisher-wide coverage.
+    coverage_note: Optica publisher deposit verified for the Nov 5 Optics Express first-online event. arXiv supplies full author names. DOI landing page unavailable.
