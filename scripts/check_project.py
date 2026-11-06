@@ -27,11 +27,13 @@ def main() -> None:
     run("radar regression tests", [python, "scripts/test_radar.py"])
     run("bounded discovery and calibration tests", [python, "scripts/test_radar_discovery.py"])
     run("generated page consistency", [python, "scripts/render_radar.py", "--check"])
+    run("public problem descriptions and AI prompts", [python, "scripts/render_problems.py", "--check"])
 
     node = shutil.which("node")
     if node is None:
         raise SystemExit("node is required for docs/javascripts/radar.js syntax validation")
     run("JavaScript syntax", [node, "--check", "docs/javascripts/radar.js"])
+    run("problem filtering syntax", [node, "--check", "docs/javascripts/problems.js"])
     run("radar filtering and pagination", [node, "scripts/test_radar_browser.cjs"])
     run("group publication widget syntax", [node, "--check", "docs/javascripts/group-papers.js"])
     run("group publication identity and search", [node, "scripts/test_group_papers.cjs"])

@@ -1,0 +1,83 @@
+.problems-page { --problem-line: #dce5df; color: var(--radar-ink); }
+.problems-page [hidden] { display: none !important; }
+.md-typeset .problems-hero { padding: .5rem 0 1rem; border-bottom: 1px solid var(--problem-line); }
+.md-typeset .problems-eyebrow { display: flex; align-items: center; gap: .7rem; margin: 0 0 .8rem; font-size: .55rem; letter-spacing: .15em; font-weight: 650; color: #287a70; }
+.problems-eyebrow::before { content: ''; width: 1.25rem; height: 2px; background: #287a70; }
+.problems-eyebrow span { color: #75817c; font-weight: 400; letter-spacing: .04em; }
+.md-typeset .problems-hero h1 { color: var(--radar-ink); font-size: clamp(1.65rem, 3vw, 2.3rem); font-weight: 600; letter-spacing: -.05em; line-height: 1.5; margin: .1rem 0 .6rem; }
+.problems-hero h1 > span { color: #349181; }
+.md-typeset .problems-intro { color: #647570; font-size: .76rem; line-height: 1.9; margin: 0 0 .85rem; }
+.md-typeset .problems-hero-bottom p { margin: 0; color: #6b7a74; font-size: .59rem; }
+.problems-hero-bottom strong { color: #203f4b; font-size: 1.05rem; font-weight: 500; padding-right: .25rem; }
+.problems-hero-bottom p > span { padding: 0 .5rem; color: #b3c1b9; }
+.md-typeset .problems-editor-note { color: #7b857e; font-size: .61rem; line-height: 1.85; margin: .8rem 0 1rem; }
+.problems-search { display: flex; align-items: center; gap: .55rem; padding: .5rem .7rem; border: 1px solid var(--problem-line); border-radius: .3rem; background: #fff; }
+.problems-search > span[aria-hidden] { color: #809187; font-size: 1.05rem; }
+.problems-search input { width: 100%; min-width: 0; font: inherit; font-size: .7rem; background: transparent; border: 0; color: var(--radar-ink); padding: .15rem 0; }
+.problems-search:focus-within { outline: 2px solid #287a70; outline-offset: 2px; }
+.problems-search input:focus { outline: none; }
+[data-problem-count], .problems-results-line { font-size: .57rem; color: #79867f; }
+.problems-results-line { display: flex; justify-content: space-between; gap: .6rem; margin: .65rem 0; }
+.problems-results-line button, .problems-empty button { font: inherit; color: #24756b; cursor: pointer; text-decoration: underline; text-underline-offset: .2em; }
+.problem-card { scroll-margin-top: 4.5rem; padding: 1.15rem 1.3rem .8rem; margin: 0 0 1rem; background: white; border: 1px solid var(--problem-line); border-radius: .35rem; }
+.problem-card:target { border-color: #478c7b; }
+.problem-topline { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .4rem; align-items: center; margin-bottom: .5rem; }
+.problem-number { color: #819087; font-size: .51rem; letter-spacing: .12em; font-variant-numeric: tabular-nums; }
+.problem-status { font-size: .51rem; padding: .15rem .4rem; border-radius: .2rem; background: #f2f3ef; color: #777d6b; }
+.problem-status--progress { background: #e9f4ed; color: #32735a; }
+.problem-status--conjecture { background: #f5f0e5; color: #927342; }
+.problem-status--research { background: #edf2f7; color: #586f85; }
+.md-typeset .problem-card h2 { margin: .35rem 0 .8rem; font-size: 1.04rem; line-height: 1.65; font-weight: 650; letter-spacing: -.025em; }
+.md-typeset .problem-card h2 a { color: #28473f; }
+.md-typeset .problem-attribution { font-size: .62rem; color: #788778; line-height: 1.75; margin: -.3rem 0 .85rem; }
+.md-typeset details.problem-body { margin: 0; padding: 0; border: 0; border-top: 1px solid #edf1ec; border-radius: 0; box-shadow: none; background: transparent; }
+.md-typeset .problem-body > summary { display: flex; justify-content: space-between; align-items: center; gap: .5rem; margin: 0; padding: .6rem 0; background: transparent; color: #647c69; font-size: .64rem; font-weight: 500; cursor: pointer; list-style: none; }
+.md-typeset .problem-body > summary::-webkit-details-marker { display: none; }
+.md-typeset .problem-body > summary::before, .md-typeset .problem-body > summary::after { display: none; }
+.problem-body-toggle { display: inline-flex; align-items: center; gap: .4rem; font-size: .6rem; }
+.problem-body:not([open]) > summary .problem-body-open, .problem-body[open] > summary .problem-body-closed { display: none; }
+.problem-body-chevron { display: inline-block; }
+.problem-body:not([open]) > summary .problem-body-chevron { transform: rotate(180deg); }
+.md-typeset .problem-description { font-size: .76rem; color: #44594d; line-height: 2; overflow-wrap: anywhere; }
+.md-typeset .problem-description p { margin: .65rem 0; }
+.problem-description strong { color: #284d40; font-weight: 600; }
+.problem-description div.arithmatex { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: .25rem .1rem; }
+.problem-description mjx-container { max-width: 100%; }
+.md-typeset .problem-progress { color: #788478; font-size: .63rem; line-height: 1.9; padding-left: .7rem; border-left: 2px solid #dbe6dc; margin: 1rem 0; }
+.problem-references { border-top: 1px solid #edf1ec; margin-top: .85rem; padding-top: .65rem; }
+.md-typeset .problem-references h3 { font-size: .65rem; font-weight: 600; color: #748174; margin: 0 0 .4rem; }
+.md-typeset .problem-sources { margin: 0 0 .55rem 1rem; padding: 0; font-size: .64rem; line-height: 1.8; overflow-wrap: anywhere; }
+.md-typeset .problem-sources li { padding-left: .2rem; margin: .4rem 0; }
+.problem-sources li span { display: block; color: #819080; font-size: .58rem; margin-top: .15rem; }
+.problem-copy-row { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem; margin: .7rem 0 .4rem; }
+.problem-copy-row button { border: 1px solid #d6e4da; border-radius: .25rem; padding: .4rem .7rem; background: #eff5ef; font: inherit; font-size: .63rem; color: #2c6955; cursor: pointer; }
+.problem-copy-row button:hover { background: #e3eee4; border-color: #96b49d; }
+.problem-copy-row button:disabled { opacity: .6; cursor: wait; }
+.problem-copy-status { font-size: .59rem; color: #6c806b; }
+.md-typeset details.problem-prompt { box-shadow: none; border: 0; border-top: 1px solid #edf1ec; border-radius: 0; margin: .8rem 0 0; padding: 0; font-size: .69rem; background: transparent; }
+.md-typeset .problem-prompt > summary { display: flex; justify-content: space-between; list-style: none; padding: .6rem 0 .1rem; margin: 0; color: #607761; background: transparent; font-weight: 500; cursor: pointer; }
+.md-typeset .problem-prompt > summary::-webkit-details-marker { display: none; }
+.md-typeset .problem-prompt > summary::before, .md-typeset .problem-prompt > summary::after { display: none; }
+.problem-prompt[open] > summary span { transform: rotate(45deg); }
+.md-typeset .problem-prompt-intro { font-size: .6rem; color: #7e8a7e; margin: .8rem 0 .5rem; }
+.md-typeset .problem-task { color: #576b59; font-size: .69rem; line-height: 1.95; }
+.md-typeset .problem-task p { margin: .6rem 0; }
+.problem-copy-text { width: 100%; min-height: 13rem; padding: .65rem; border: 1px solid var(--problem-line); border-radius: .25rem; color: #324c3e; font: .65rem/1.8 monospace; background: #f7faf5; resize: vertical; }
+.problems-empty { text-align: center; border: 1px dashed var(--problem-line); padding: 2rem 1rem; margin: 1rem 0; font-size: .7rem; color: #6b7e6e; }
+.problems-projects { scroll-margin-top: 4.5rem; border-top: 1px solid var(--problem-line); margin: 1.8rem 0 .5rem; padding: .8rem 0; color: #899184; font-size: .6rem; line-height: 2; }
+.md-typeset .problems-projects p { margin: .25rem 0; }
+.md-typeset .problems-prompt-links { list-style: none; margin: .4rem 0; padding: 0; font-size: .6rem; }
+.md-typeset .problems-prompt-links li { margin: .3rem 0; line-height: 1.9; }
+.problems-prompt-links a { color: #6b826f; }
+.problems-prompt-links span { color: #8a9387; margin-left: .55rem; }
+.problems-prompt-links a:hover { color: #287a70; text-decoration: underline; }
+.problems-projects nav a { color: #758976; white-space: nowrap; }
+.problems-projects nav a:hover { color: #287a70; text-decoration: underline; }
+.md-typeset .problems-projects-note { font-size: .55rem; margin-top: .5rem; color: #8a9387; }
+.problems-page :is(a, button, summary):focus-visible { outline: 2px solid #287a70; outline-offset: 3px; }
+@media (max-width: 600px) {
+  .md-typeset .problems-hero h1 { font-size: 1.6rem; }
+  .problem-card { padding: .9rem .8rem .7rem; }
+  .md-typeset .problem-card h2 { font-size: .96rem; }
+  .md-typeset .problem-description { font-size: .75rem; }
+}
