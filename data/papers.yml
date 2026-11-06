@@ -8609,20 +8609,20 @@
 - id: arxiv:2610.16564
   url: https://arxiv.org/abs/2610.16564
   doi: null
-  title: Long-time asymptotics for the focusing coupled Kundu-Eckhaus equation
+  title: Global well-posedness and long-time asymptotics for the focusing coupled Kundu--Eckhaus equation
   authors:
   - Tianwei Qiu
   - Zhen Wang
   arxiv_id: '2610.16564'
   submitted: '2026-10-12'
   submitted_at: '2026-10-12T10:46:06Z'
-  updated: '2026-10-12'
-  version: v1
-  metadata_checked_at: '2026-10-14'
+  updated: '2026-11-04'
+  version: v2
+  metadata_checked_at: '2026-11-06'
   arxiv_categories:
+  - nlin.SI
   - math-ph
   - math.AP
-  - nlin.SI
   keywords:
   - coupled Kundu-Eckhaus equation
   - Riemann-Hilbert problem
@@ -8755,9 +8755,9 @@
   arxiv_id: '2610.14469'
   submitted: '2026-10-10'
   submitted_at: '2026-10-10T01:52:39Z'
-  updated: '2026-10-10'
-  version: v1
-  metadata_checked_at: '2026-10-14'
+  updated: '2026-11-04'
+  version: v2
+  metadata_checked_at: '2026-11-06'
   arxiv_categories:
   - nlin.SI
   keywords:
@@ -10337,9 +10337,9 @@
   arxiv_id: '2610.33560'
   submitted: '2026-10-24'
   submitted_at: '2026-10-24T09:28:26Z'
-  updated: '2026-10-24'
-  version: v1
-  metadata_checked_at: '2026-10-29'
+  updated: '2026-11-04'
+  version: v2
+  metadata_checked_at: '2026-11-06'
   arxiv_categories:
   - nlin.PS
   - math-ph
@@ -11960,3 +11960,456 @@
   - elliptic Jack functions
   - Lame equation
   - superconformal index
+- id: arxiv:2611.05613
+  title: The N-soliton solution formula for the Kaup--Kupershmidt equation
+  authors:
+  - Tuncay Aktosun
+  - Ramazan Ercan
+  - Mehmet Unlu
+  url: https://arxiv.org/abs/2611.05613
+  arxiv_id: '2611.05613'
+  doi: null
+  submitted: '2026-11-03'
+  submitted_at: '2026-11-03T20:59:00Z'
+  updated: '2026-11-03'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - Kaup–Kupershmidt
+  - inverse scattering
+  - Marchenko equation
+- id: arxiv:2611.07686
+  title: Discrete four-component massive Thirring model
+  authors:
+  - Xiao-gang Mu
+  - Jing Wang
+  - Song-lin Zhao
+  url: https://arxiv.org/abs/2611.07686
+  arxiv_id: '2611.07686'
+  doi: null
+  submitted: '2026-11-05'
+  submitted_at: '2026-11-05T09:12:35Z'
+  updated: '2026-11-05'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - massive Thirring model
+  - Cauchy matrix
+  - multiple-pole solutions
+- id: arxiv:2611.08105
+  title: 'The Short Pulse equation on the half lines: a Riemann--Hilbert approach'
+  authors:
+  - Iryna Karpenko
+  - Dmitry Shepelsky
+  url: https://arxiv.org/abs/2611.08105
+  arxiv_id: '2611.08105'
+  doi: null
+  submitted: '2026-11-05'
+  submitted_at: '2026-11-05T14:44:37Z'
+  updated: '2026-11-05'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - short pulse equation
+  - Riemann–Hilbert problem
+  - half-line
+- id: arxiv:2611.06313
+  title: Normal form smoothing and spatial analyticity for the dispersion-generalized periodic KdV equation
+  authors:
+  - Jaeseop Ahn
+  - Chulkwang Kwak
+  url: https://arxiv.org/abs/2611.06313
+  arxiv_id: '2611.06313'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T10:47:21Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - periodic KdV
+  - Gevrey regularity
+  - normal form
+- id: arxiv:2611.06767
+  title: An Explicit Construction of Commuting Quantum KdV Hamiltonians in the Universal Virasoro Vertex Algebra
+  authors:
+  - Hongbo Zhao
+  url: https://arxiv.org/abs/2611.06767
+  arxiv_id: '2611.06767'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T16:44:16Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.QA
+  keywords:
+  - quantum KdV
+  - Virasoro algebra
+  - Gelfand–Dickey densities
+- id: arxiv:2611.06820
+  title: On isospectral potentials on periodic discrete graphs
+  authors:
+  - Natalia Saburova
+  url: https://arxiv.org/abs/2611.06820
+  arxiv_id: '2611.06820'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T17:32:24Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.SP
+  - math-ph
+  keywords:
+  - Floquet spectrum
+  - periodic graphs
+  - inverse spectral problem
+- id: arxiv:2611.07167
+  title: Orbital stability and instability of standing waves for an inhomogeneous logarithmic Schrödinger equation
+  authors:
+  - Alex H. Ardila
+  url: https://arxiv.org/abs/2611.07167
+  arxiv_id: '2611.07167'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T21:51:01Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - logarithmic Schrödinger equation
+  - standing waves
+  - orbital stability
+- id: arxiv:2611.07359
+  title: Infinitely many nonradial positive solutions for two-coupled nonlinear Schrödinger equations in ℝᴺ without symmetry
+  authors:
+  - Rui He
+  - Xiangqing Liu
+  - Qingfang Wang
+  - Yuanze Wu
+  url: https://arxiv.org/abs/2611.07359
+  arxiv_id: '2611.07359'
+  doi: null
+  submitted: '2026-11-05'
+  submitted_at: '2026-11-05T02:54:21Z'
+  updated: '2026-11-05'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - coupled nonlinear Schrödinger system
+  - nonradial solutions
+- id: arxiv:2611.06094
+  title: Constrained minimization problem and unbounded dynamics for the four-dimensional Klein-Gordon-Schrödinger System
+  authors:
+  - Masaru Hamano
+  - Hiroaki Kikuchi
+  - Kenta Tomioka
+  url: https://arxiv.org/abs/2611.06094
+  arxiv_id: '2611.06094'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T07:41:29Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Klein–Gordon–Schrödinger system
+  - strong instability
+  - potential well
+- id: arxiv:2611.05805
+  title: Existence of a Normalized Mountain Pass Solution for a Coupled Cubic Schrödinger System with Partial Confinement
+  authors:
+  - Wan-Yue Tang
+  - Hong-Rui Sun
+  - Jianlun Liu
+  url: https://arxiv.org/abs/2611.05805
+  arxiv_id: '2611.05805'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T01:31:43Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - coupled cubic Schrödinger system
+  - partial confinement
+  - normalized solutions
+- id: arxiv:2611.07154
+  title: A Christov Integrating Factor Method for Approximating Rational PDE Solutions
+  authors:
+  - Troy I. Johnson
+  - Justin T. Cole
+  url: https://arxiv.org/abs/2611.07154
+  arxiv_id: '2611.07154'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T21:26:59Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - nlin.PS
+  - math.NA
+  keywords:
+  - Christov functions
+  - rational solutions
+  - integrating factor
+- id: arxiv:2611.07395
+  title: Rigorously Certified Neural-Network Computation of Nonlinear Water Waves at Near-Machine Precision
+  authors:
+  - Michal Shavit
+  - Yongji Wang
+  - Tristan Buckmaster
+  url: https://arxiv.org/abs/2611.07395
+  arxiv_id: '2611.07395'
+  doi: null
+  submitted: '2026-11-05'
+  submitted_at: '2026-11-05T03:44:55Z'
+  updated: '2026-11-05'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.AP
+  - cs.LG
+  - physics.flu-dyn
+  keywords:
+  - gravity-capillary waves
+  - interval arithmetic
+  - residual certification
+- id: arxiv:2611.07467
+  title: Stable dissipative topological solitons in media with even-order dispersion
+  authors:
+  - Xianan Sun
+  - Dongdong Wang
+  - Dumitru Mihalache
+  - David Laroze
+  - Boris A. Malomed
+  - Pengfei Li
+  url: https://arxiv.org/abs/2611.07467
+  arxiv_id: '2611.07467'
+  doi: 10.1364/oe.620202
+  submitted: '2026-11-05'
+  submitted_at: '2026-11-05T05:25:06Z'
+  updated: '2026-11-05'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - physics.optics
+  - nlin.PS
+  keywords:
+  - dissipative topological solitons
+  - even-order dispersion
+  - linear stability
+  journal: Optics Express
+  year: 2026
+  published: '2026-11-05'
+- id: arxiv:2611.06780
+  title: A local Yang-Baxter obstruction for the hard-square model
+  authors:
+  - Gabriel Ortega
+  - Eliecer Peña-Ancavil
+  url: https://arxiv.org/abs/2611.06780
+  arxiv_id: '2611.06780'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T16:54:48Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math-ph
+  - cond-mat.stat-mech
+  - nlin.SI
+  keywords:
+  - Yang–Baxter obstruction
+  - hard-square model
+  - face weights
+- id: arxiv:2611.06361
+  title: Hydrodynamic limits of the asymmetric Brownian energy process and its dynamic generalization
+  authors:
+  - Frank Redig
+  - Carel Wagenaar
+  url: https://arxiv.org/abs/2611.06361
+  arxiv_id: '2611.06361'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T11:22:22Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.PR
+  keywords:
+  - Burgers equation
+  - Cole–Hopf transformation
+  - hydrodynamic limit
+- id: arxiv:2611.08355
+  title: Global solutions for continuous-time Burgers equations and infinite-volume polymer measures
+  authors:
+  - Liying Li
+  url: https://arxiv.org/abs/2611.08355
+  arxiv_id: '2611.08355'
+  doi: null
+  submitted: '2026-11-05'
+  submitted_at: '2026-11-05T17:36:37Z'
+  updated: '2026-11-05'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math.PR
+  keywords:
+  - stochastic Burgers equation
+  - polymer measures
+  - inviscid limit
+- id: arxiv:2611.06369
+  title: Kardar--Parisi--Zhang density hydrodynamics in a coherent XXZ--ASEP Lindbladian
+  authors:
+  - Yansheng Liu
+  - Daoguang Li
+  - Kaixiang Lu
+  - Mingdi Xu
+  - Lei Pan
+  url: https://arxiv.org/abs/2611.06369
+  arxiv_id: '2611.06369'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T11:30:42Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - quant-ph
+  keywords:
+  - XXZ chain
+  - asymmetric exclusion process
+  - KPZ scaling
+- id: arxiv:2611.06473
+  title: Quasi-Normal Modes and thermalization in integrable Quantum Field Theories from the Thermodynamic Bethe Ansatz
+  authors:
+  - Zoltan Bajnok
+  - Romuald A. Janik
+  url: https://arxiv.org/abs/2611.06473
+  arxiv_id: '2611.06473'
+  doi: null
+  submitted: '2026-11-04'
+  submitted_at: '2026-11-04T13:14:56Z'
+  updated: '2026-11-04'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - hep-th
+  - cond-mat.stat-mech
+  - quant-ph
+  keywords:
+  - thermodynamic Bethe ansatz
+  - quasi-normal modes
+  - thermalization
+- id: arxiv:2611.08018
+  title: Universal x-y duality in equivariant topological recursion and quartic Kontsevich model
+  authors:
+  - Alexander Hock
+  - Jakob Lindner
+  - Raimar Wulkenhaar
+  url: https://arxiv.org/abs/2611.08018
+  arxiv_id: '2611.08018'
+  doi: null
+  submitted: '2026-11-05'
+  submitted_at: '2026-11-05T13:39:28Z'
+  updated: '2026-11-05'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math-ph
+  - math.AG
+  - math.CO
+  - nlin.SI
+  keywords:
+  - topological recursion
+  - spectral curve
+  - Kontsevich model
+- id: arxiv:2611.05516
+  title: Rough-to-frozen transition in non-integrable dimer models
+  authors:
+  - Alessandro Giuliani
+  - Vieri Mastropietro
+  - Bruno Renzi
+  - Fabio Toninelli
+  url: https://arxiv.org/abs/2611.05516
+  arxiv_id: '2611.05516'
+  doi: null
+  submitted: '2026-11-03'
+  submitted_at: '2026-11-03T19:14:10Z'
+  updated: '2026-11-03'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math-ph
+  - math.PR
+  keywords:
+  - interacting dimers
+  - Pokrovsky–Talapov law
+  - renormalization group
+- id: arxiv:2611.08033
+  title: Galois conjugation, droplet growth, and the differential transcendence of the Ising model in nonzero field
+  authors:
+  - Ran Luo
+  - Jiahua Tian
+  url: https://arxiv.org/abs/2611.08033
+  arxiv_id: '2611.08033'
+  doi: null
+  submitted: '2026-11-05'
+  submitted_at: '2026-11-05T13:52:45Z'
+  updated: '2026-11-05'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - cond-mat.str-el
+  - hep-th
+  - math-ph
+  - nlin.SI
+  keywords:
+  - Ising model
+  - differential transcendence
+  - Galois conjugation
+- id: arxiv:2611.08326
+  title: Oriented V-systems
+  authors:
+  - Maali Alkadhem
+  - Misha Feigin
+  url: https://arxiv.org/abs/2611.08326
+  arxiv_id: '2611.08326'
+  doi: null
+  submitted: '2026-11-05'
+  submitted_at: '2026-11-05T17:19:32Z'
+  updated: '2026-11-05'
+  version: v1
+  metadata_checked_at: '2026-11-06'
+  arxiv_categories:
+  - math-ph
+  - math.DG
+  - nlin.SI
+  keywords:
+  - oriented associativity equations
+  - WDVV equations
+  - V-systems
