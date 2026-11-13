@@ -5083,12 +5083,16 @@ frontier:
       detail: 单端给值时格式形成常微分系统，周期问题则含有与连续积分条件对应的代数约束。
       method_scope: 通过 hodograph 变换的一致性确定网格端点演化，并用孤子穿过计算边界的算例检验数值解。
   - paper_id: doi:10.1016/j.jde.2026.114897
-    signal_date: null
+    signal_date: '2026-11-04'
     signal_type: journal-publication
     directions:
     - spectral
     event_source: https://doi.org/10.1016/j.jde.2026.114897
     added_on: '2026-11-13'
+    reading_note:
+      lead: 对含非均匀展宽的 Maxwell–Bloch 方程，作者在两个时间无穷远的背景振幅非零且不相等时建立逆散射变换，并证明这种不对称背景排除了无反射解。
+      detail: 两端背景振幅决定不同的谱分支点。作者直接处理本征值的分支，引入辅助本征函数衔接不同割线两侧的边界值，将逆问题写成具有分段跳跃矩阵的 Riemann–Hilbert 问题。
+      method_scope: 正文处理正时间端背景振幅较大的情形，并沿空间传播方向推导散射数据的演化。结合密度矩阵的渐近分析，作者证明介质一般保持混合态。
   - paper_id: arxiv:2603.11951
     signal_date: null
     signal_type: journal-publication
