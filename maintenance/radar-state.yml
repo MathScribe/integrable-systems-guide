@@ -2,67 +2,45 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-11-06'
+    announced_through: '2026-11-13'
     last_status: complete
-    coverage_note: Validated both dated Catchup pages and screened new and cross-listed titles.
+    coverage_note: 'Nov 7–13: dates and counts validated on 105 official pages across 15 categories. New and cross-listed events screened.'
     replacements:
       last_status: complete
-      checked_through: '2026-11-06'
+      checked_through: '2026-11-13'
       open_gaps: []
-      coverage_note: Nov 5–6 available Catchup replacements screened separately. Compared three version pairs in full text; one new Schwartz-class well-posedness theorem. Five registered
-        v5+ submission histories checked.
-    checked_at: '2026-11-06T13:45:59Z'
+      coverage_note: Replacements screened separately; 21 outstanding Nov 5–6 category/date pages recovered. Compared adjacent versions for the short-pulse moving mesh and KP-II scattering
+        advances. Catchup excludes post-v5 and journal-only replacements.
+    checked_at: '2026-11-13T13:12:54Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-11-06'
+    announced_through: '2026-11-13'
     last_status: complete
-    coverage_note: Validated both dated Catchup pages and screened new and cross-listed titles.
+    coverage_note: 'Nov 7–13: dates and counts validated on 105 official pages across 15 categories. New and cross-listed events screened.'
     replacements:
       last_status: complete
-      checked_through: '2026-11-06'
+      checked_through: '2026-11-13'
       open_gaps: []
-      coverage_note: Nov 5–6 available Catchup replacements screened separately. Compared three version pairs in full text; one new Schwartz-class well-posedness theorem. Five registered
-        v5+ submission histories checked.
-    checked_at: '2026-11-06T13:45:59Z'
+      coverage_note: Replacements screened separately; 21 outstanding Nov 5–6 category/date pages recovered. Compared adjacent versions for the short-pulse moving mesh and KP-II scattering
+        advances. Catchup excludes post-v5 and journal-only replacements.
+    checked_at: '2026-11-13T13:12:54Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-11-06'
+    announced_through: '2026-11-13'
     last_status: complete
-    coverage_note: Nov 5–6 official recent category headings and complete daily counts checked across all 15 configured categories; 779 distinct IDs in the bounded title screen, including
-      core categories.
+    coverage_note: 'Nov 7–13: dates and counts validated on 105 official pages across 15 categories. New and cross-listed events screened.'
     replacements:
-      last_status: partial
-      checked_through: '2026-11-04'
-      open_gaps:
-      - math-ph 2026-11-05
-      - math-ph 2026-11-06
-      - math.AP 2026-11-05
-      - math.AP 2026-11-06
-      - math.AG 2026-11-05
-      - math.AG 2026-11-06
-      - math.DG 2026-11-06
-      - math.CO 2026-11-05
-      - math.CO 2026-11-06
-      - math.PR 2026-11-05
-      - math.PR 2026-11-06
-      - quant-ph 2026-11-05
-      - quant-ph 2026-11-06
-      - cond-mat.stat-mech 2026-11-05
-      - cond-mat.stat-mech 2026-11-06
-      - cond-mat.str-el 2026-11-05
-      - cond-mat.str-el 2026-11-06
-      - hep-th 2026-11-05
-      - hep-th 2026-11-06
-      - physics.optics 2026-11-05
-      - physics.optics 2026-11-06
-      coverage_note: Nov 5–6 available Catchup replacements screened separately. Compared three version pairs in full text; one new Schwartz-class well-posedness theorem. Five registered
-        v5+ submission histories checked.
-    checked_at: '2026-11-06T13:45:59Z'
+      last_status: complete
+      checked_through: '2026-11-13'
+      open_gaps: []
+      coverage_note: Replacements screened separately; 21 outstanding Nov 5–6 category/date pages recovered. Compared adjacent versions for the short-pulse moving mesh and KP-II scattering
+        advances. Catchup excludes post-v5 and journal-only replacements.
+    checked_at: '2026-11-13T13:12:54Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-11-06'
-      note: Dated lists for Nov 5–6 validated.
+      through: '2026-11-13'
+      note: Validated Nov 7–13 dated lists.
   crossref:
     kind: ranked-title-backstop
     reconciliation_checked_at: '2026-10-31T04:16:32.959056Z'
@@ -70,12 +48,12 @@ sources:
     reconciliation_note: 35 exact-title/author requests attempted for strong arXiv candidates; 29 completed without exact title matches, six HTTP429 responses. Optional journal metadata
       gaps do not block verified arXiv events.
     overlap_days: 3
-    title_query_note: 'Oct29-Nov4 overlap: 16 bounded title queries, 526 raw records, 12 exact phrase matches; three journal intakes and one existing-paper bibliography correction.'
-    online_query_through: '2026-11-04'
+    title_query_note: Reviewed successful Nov 9 weekly artifact and Nov 7–13 overlapping online pass; latter returned 10 matched candidates.
+    online_query_through: '2026-11-13'
     online_status: complete
-    registration_query_through: '2026-11-04'
+    registration_query_through: '2026-11-13'
     registration_status: complete
-    registration_note: 'Independent five-phrase DOI-created pass: 176 raw records, two exact phrase matches; neither is a new intake. DOI creation never used as publication date.'
+    registration_note: Reviewed successful Nov 9 weekly artifact and Nov 7–13 overlapping created pass; latter returned 8 matched candidates.
     reconciliation_last_attempt_at: '2026-11-04T05:17:11.969459Z'
     reconciliation_last_status: partial
     reconciliation_open_queries:
@@ -90,14 +68,14 @@ sources:
     cadence: biweekly
     checked_at: '2026-09-27T02:12:13Z'
     last_status: partial
-    coverage_note: Nov4 bounded 2026-2027 MSC backstop over Aug28-Nov4 datestamps returned HTTP404 before records. Sep27 successful watermark retained; not a zero-result claim.
+    coverage_note: Nov 9 scheduled MSC workflow failed; previous successful watermark retained.
     publication_years:
     - 2026
     - 2027
-    last_attempt_at: '2026-11-04T05:17:11.969459Z'
+    last_attempt_at: '2026-11-09T01:49:54Z'
     last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-11-06T13:45:59Z'
+    checked_at: '2026-11-13T13:12:54Z'
     last_status: candidate-only
-    coverage_note: Optica publisher deposit verified for the Nov 5 Optics Express first-online event. arXiv supplies full author names. DOI landing page unavailable.
+    coverage_note: Reviewed publisher-deposited Crossref records for journal intakes and existing SSEP bibliography. Two Elsevier deposits lack a verified first-online day.

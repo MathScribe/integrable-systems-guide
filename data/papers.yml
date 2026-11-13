@@ -2753,11 +2753,11 @@
   - Eric Ragoucy
   url: https://arxiv.org/abs/2607.18959
   arxiv_id: '2607.18959'
-  doi: null
+  doi: 10.1088/1742-5468/aeb496
   submitted: '2026-07-21'
   updated: '2026-10-12'
   version: v2
-  metadata_checked_at: '2026-10-14'
+  metadata_checked_at: '2026-11-13'
   keywords:
   - multi-species SSEP
   - reactive particle species
@@ -2770,6 +2770,12 @@
   - math.QA
   - nlin.SI
   metadata_note: v2 adds periodic symmetry-algebra discussion; core model, boundary and stationary results already present in v1. Registry-only update.
+  journal: 'Journal of Statistical Mechanics: Theory and Experiment'
+  year: 2026
+  volume: '2026'
+  issue: '11'
+  pages: '113102'
+  published: '2026-11-05'
 - id: arxiv:2607.19649
   title: On the global well-posedness for the nonlocal Fokas-Lenells equation with the weighted Sobolev initial data on the line
   authors:
@@ -8287,16 +8293,15 @@
   doi: null
   submitted: '2026-10-09'
   submitted_at: '2026-10-09T15:40:38Z'
-  updated: '2026-10-13'
-  version: v2
-  metadata_checked_at: '2026-10-14'
+  updated: '2026-11-09'
+  version: v3
+  metadata_checked_at: '2026-11-13'
   arxiv_categories:
   - math.AP
   keywords:
   - KP-II
-  - scattering
-  - dbar problem
-  - large data
+  - inverse scattering
+  - scattering obstruction
   metadata_note: v2 expands presentation; Theorem 1.1 retains the weighted Besov hypotheses and large-data scattering conclusion. Original announcement retained.
 - id: arxiv:2610.13752
   title: Asymmetric minimal mass blow-up for the quintic NLS on a star graph
@@ -12413,3 +12418,849 @@
   - oriented associativity equations
   - WDVV equations
   - V-systems
+- id: arxiv:2611.12748
+  title: Global Asymptotics of a Toda Soliton Condensate with Random Scattering Data
+  authors:
+  - Guido Mazzuca
+  - Mateusz Piorkowski
+  url: https://arxiv.org/abs/2611.12748
+  arxiv_id: '2611.12748'
+  doi: null
+  submitted: '2026-11-09'
+  submitted_at: '2026-11-09T17:30:28Z'
+  updated: '2026-11-09'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math-ph
+  - cond-mat.stat-mech
+  - math.CA
+  - math.PR
+  - nlin.SI
+  keywords:
+  - Toda lattice
+  - soliton condensate
+  - random scattering data
+- id: arxiv:2611.15264
+  title: Painlevé XXXIV asymptotics for the defocusing Hirota equation with step-like initial data in transition regions
+  authors:
+  - Wenhao Liu
+  - Yufeng Zhang
+  - Zhenbo Wang
+  url: https://arxiv.org/abs/2611.15264
+  arxiv_id: '2611.15264'
+  doi: null
+  submitted: '2026-11-11'
+  submitted_at: '2026-11-11T09:54:00Z'
+  updated: '2026-11-11'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - Hirota equation
+  - step-like data
+  - Painlevé XXXIV
+- id: arxiv:2611.08786
+  title: Talanov dynamics and chirp-controlled rogue-wave formation for the vector nonlinear Schrödinger equation
+  authors:
+  - G. Ortenzi
+  - G. Roberti
+  - M. Sommacal
+  url: https://arxiv.org/abs/2611.08786
+  arxiv_id: '2611.08786'
+  doi: null
+  submitted: '2026-11-05'
+  submitted_at: '2026-11-05T23:22:54Z'
+  updated: '2026-11-05'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math-ph
+  - nlin.SI
+  - physics.optics
+  keywords:
+  - Manakov system
+  - Talanov dynamics
+  - rogue waves
+- id: arxiv:2611.12331
+  title: Persistence in weighted Sobolev spaces for the Calogero-Moser derivative nonlinear Schrödinger equation
+  authors:
+  - Ruoci Sun
+  - Yi Zhao
+  url: https://arxiv.org/abs/2611.12331
+  arxiv_id: '2611.12331'
+  doi: null
+  submitted: '2026-11-09'
+  submitted_at: '2026-11-09T12:50:06Z'
+  updated: '2026-11-09'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Calogero–Moser derivative NLS
+  - weighted Sobolev spaces
+- id: arxiv:2611.09885
+  title: Unconditional Uniqueness of KdV and mKdV Green Solutions at Low Regularity
+  authors:
+  - Zhimeng Ouyang
+  url: https://arxiv.org/abs/2611.09885
+  arxiv_id: '2611.09885'
+  doi: null
+  submitted: '2026-11-06'
+  submitted_at: '2026-11-06T18:57:35Z'
+  updated: '2026-11-06'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - KdV
+  - mKdV
+  - Green solutions
+- id: arxiv:2611.15511
+  title: The periodic Short-Pulse equation by the Riemann-Hilbert problem approach
+  authors:
+  - Iryna Karpenko
+  - Dmitry Shepelsky
+  - Gerald Teschl
+  url: https://arxiv.org/abs/2611.15511
+  arxiv_id: '2611.15511'
+  doi: null
+  submitted: '2026-11-11'
+  submitted_at: '2026-11-11T14:05:06Z'
+  updated: '2026-11-11'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - short pulse equation
+  - periodic domain
+  - unified transform
+- id: arxiv:2611.15072
+  title: Solitons of the intermediate long wave equation with residue source
+  authors:
+  - Yuto Ishii
+  - Atsushi Nakamula
+  - Soma Yoshida
+  url: https://arxiv.org/abs/2611.15072
+  arxiv_id: '2611.15072'
+  doi: null
+  submitted: '2026-11-11'
+  submitted_at: '2026-11-11T05:47:00Z'
+  updated: '2026-11-11'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - hep-th
+  - math-ph
+  - nlin.SI
+  keywords:
+  - intermediate long wave equation
+  - tau functions
+  - residue sources
+- id: arxiv:2611.14404
+  title: Bi-Hamiltonian structure and conserved quantities of the Yajima-Oikawa-Newell system
+  authors:
+  - Marcos Caso-Huerta
+  url: https://arxiv.org/abs/2611.14404
+  arxiv_id: '2611.14404'
+  doi: null
+  submitted: '2026-11-10'
+  submitted_at: '2026-11-10T17:47:48Z'
+  updated: '2026-11-10'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  - math.DG
+  keywords:
+  - Yajima–Oikawa–Newell
+  - bi-Hamiltonian structure
+  - recursion operator
+- id: arxiv:2611.08980
+  title: 'Breathers across the Focusing-to-Defocusing Transition: From Diffraction-Like Dynamics to Talbot Carpets'
+  authors:
+  - Andrea Armaroli
+  - Hung-Chu Hsu
+  - Meng-Syue Li
+  - Lili Kimmoun
+  - Jie Zhang
+  - Michel Benoit
+  - Nobuhito Mori
+  - Stefano Trillo
+  - Amin Chabchoub
+  url: https://arxiv.org/abs/2611.08980
+  arxiv_id: '2611.08980'
+  doi: null
+  submitted: '2026-11-06'
+  submitted_at: '2026-11-06T04:46:28Z'
+  updated: '2026-11-06'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - nlin.PS
+  - physics.flu-dyn
+  keywords:
+  - Akhmediev breather
+  - Peregrine breather
+  - water waves
+- id: arxiv:2611.16520
+  title: Experimental and numerical simulations of near resonant 2D soliton interaction in shallow water
+  authors:
+  - Thibault Leduque
+  - Fred Couderc
+  - Maxime Kaczmarek
+  - Eric Barthélemy
+  - Nicolas Mordant
+  - Hervé Michallet
+  url: https://arxiv.org/abs/2611.16520
+  arxiv_id: '2611.16520'
+  doi: null
+  submitted: '2026-11-12'
+  submitted_at: '2026-11-12T09:17:30Z'
+  updated: '2026-11-12'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - physics.flu-dyn
+  - nlin.PS
+  keywords:
+  - Mach interaction
+  - shallow water
+  - near resonance
+- id: arxiv:2611.13279
+  title: Asymptotic Stability of Moving Kinks with an Internal Mode
+  authors:
+  - Gong Chen
+  - Yongming Li
+  - Zhaojie Yang
+  url: https://arxiv.org/abs/2611.13279
+  arxiv_id: '2611.13279'
+  doi: null
+  submitted: '2026-11-09'
+  submitted_at: '2026-11-09T21:43:41Z'
+  updated: '2026-11-09'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - moving kinks
+  - internal mode
+  - Fermi golden rule
+- id: arxiv:2611.09185
+  title: Dynamics of subcritical threshold solutions for the three-dimensional energy-critical NLS
+  authors:
+  - Meng Chen
+  - Han Wang
+  url: https://arxiv.org/abs/2611.09185
+  arxiv_id: '2611.09185'
+  doi: null
+  submitted: '2026-11-06'
+  submitted_at: '2026-11-06T09:07:59Z'
+  updated: '2026-11-06'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - focusing NLS
+  - threshold scattering
+  - ground state
+- id: arxiv:2611.14175
+  title: Uniqueness of global weak solutions for the defocusing energy-critical NLS
+  authors:
+  - Xuwen Chen
+  - Justin Holmer
+  - Shunlin Shen
+  url: https://arxiv.org/abs/2611.14175
+  arxiv_id: '2611.14175'
+  doi: null
+  submitted: '2026-11-10'
+  submitted_at: '2026-11-10T15:01:31Z'
+  updated: '2026-11-10'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - defocusing NLS
+  - weak uniqueness
+  - energy-critical
+- id: arxiv:2611.11230
+  title: An elementary observation on the Robin problem for NLS
+  authors:
+  - Dimitra C. Antonopoulou
+  - Andreas Chatziafratis
+  - Spyridon Kamvissis
+  url: https://arxiv.org/abs/2611.11230
+  arxiv_id: '2611.11230'
+  doi: null
+  submitted: '2026-11-08'
+  submitted_at: '2026-11-08T08:24:37Z'
+  updated: '2026-11-08'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  - math-ph
+  keywords:
+  - focusing NLS
+  - Robin boundary condition
+  - half-line
+- id: arxiv:2611.14390
+  title: Pseudoconformal characterizations of scattering in weighted Sobolev spaces for non-scaling-invariant mass-subcritical NLS
+  authors:
+  - Jacopo Bellazzini
+  - Luigi Forcella
+  - Vladimir Georgiev
+  - Nicola Visciglia
+  url: https://arxiv.org/abs/2611.14390
+  arxiv_id: '2611.14390'
+  doi: null
+  submitted: '2026-11-10'
+  submitted_at: '2026-11-10T17:41:21Z'
+  updated: '2026-11-10'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - nonlinear Schrödinger equation
+  - scattering
+  - pseudoconformal operator
+- id: arxiv:2611.14403
+  title: Scattering thresholds for the NLS equation with polynomially decaying damping
+  authors:
+  - Makram Hamouda
+  - Mohamed Majdoub
+  url: https://arxiv.org/abs/2611.14403
+  arxiv_id: '2611.14403'
+  doi: null
+  submitted: '2026-11-10'
+  submitted_at: '2026-11-10T17:46:42Z'
+  updated: '2026-11-10'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - damped NLS
+  - scattering thresholds
+- id: arxiv:2611.11048
+  title: Almost sharp global well-posedness and low-regularity blow-up for the two-dimensional periodic Zakharov system
+  authors:
+  - Jiajun Wang
+  url: https://arxiv.org/abs/2611.11048
+  arxiv_id: '2611.11048'
+  doi: null
+  submitted: '2026-11-08'
+  submitted_at: '2026-11-08T00:56:47Z'
+  updated: '2026-11-08'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Zakharov system
+  - periodic domain
+  - low regularity
+- id: arxiv:2611.16731
+  title: Asymptotic stability of self-similar blow-up for the two-dimensional Zakharov system
+  authors:
+  - Tej-eddine Ghoul
+  - Jie Liu
+  - Nader Masmoudi
+  url: https://arxiv.org/abs/2611.16731
+  arxiv_id: '2611.16731'
+  doi: null
+  submitted: '2026-11-12'
+  submitted_at: '2026-11-12T12:46:29Z'
+  updated: '2026-11-12'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - Zakharov system
+  - self-similar blow-up
+- id: arxiv:2611.13738
+  title: Non-existence of solutions to a system of quadratic derivative nonlinear Schrödinger equations
+  authors:
+  - Toshiki Kondo
+  - Mamoru Okamoto
+  url: https://arxiv.org/abs/2611.13738
+  arxiv_id: '2611.13738'
+  doi: null
+  submitted: '2026-11-10'
+  submitted_at: '2026-11-10T08:39:28Z'
+  updated: '2026-11-10'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - derivative NLS
+  - laser-plasma interaction
+  - nonexistence
+- id: arxiv:2611.14361
+  title: Multi-quadratic equations associated with KdV-type equations
+  authors:
+  - M. P. Kolesnikov
+  url: https://arxiv.org/abs/2611.14361
+  arxiv_id: '2611.14361'
+  doi: null
+  submitted: '2026-11-10'
+  submitted_at: '2026-11-10T17:20:54Z'
+  updated: '2026-11-10'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - Bäcklund transformations
+  - quad equations
+  - elliptic Calogero–Degasperis
+- id: arxiv:2611.13639
+  title: Quantum Langlands correspondence for Painlevé II
+  authors:
+  - Sibasish Banerjee
+  - Babak Haghighat
+  - Jie Sun
+  url: https://arxiv.org/abs/2611.13639
+  arxiv_id: '2611.13639'
+  doi: null
+  submitted: '2026-11-10'
+  submitted_at: '2026-11-10T06:29:50Z'
+  updated: '2026-11-10'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - hep-th
+  - math-ph
+  - math.QA
+  - math.RT
+  keywords:
+  - quantum Painlevé II
+  - isomonodromy
+  - Langlands duality
+- id: arxiv:2611.17117
+  title: Generalized ladder operators and construction of families of superintegrable systems with Painlevé VI
+  authors:
+  - Ian Marquette
+  - Anthony J. L. Parr
+  url: https://arxiv.org/abs/2611.17117
+  arxiv_id: '2611.17117'
+  doi: null
+  submitted: '2026-11-12'
+  submitted_at: '2026-11-12T17:11:22Z'
+  updated: '2026-11-12'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math-ph
+  - quant-ph
+  keywords:
+  - Painlevé VI
+  - ladder operators
+  - superintegrability
+- id: arxiv:2611.11915
+  title: On a S-Integrable Nonlinear Evolution Equation with an Additional Algebraic Constraint
+  authors:
+  - Tihomir Valchev
+  url: https://arxiv.org/abs/2611.11915
+  arxiv_id: '2611.11915'
+  doi: null
+  submitted: '2026-11-09'
+  submitted_at: '2026-11-09T05:37:46Z'
+  updated: '2026-11-09'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - nlin.SI
+  keywords:
+  - Heisenberg ferromagnet
+  - Lax pair
+  - gauge equivalence
+- id: arxiv:2611.16105
+  title: Baxter Q-operator and Separation of Variables for BC-type open SL(2,ℂ) spin chain
+  authors:
+  - I. Kotikov
+  - P. Antonenko
+  url: https://arxiv.org/abs/2611.16105
+  arxiv_id: '2611.16105'
+  doi: null
+  submitted: '2026-11-11'
+  submitted_at: '2026-11-11T23:26:54Z'
+  updated: '2026-11-11'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math-ph
+  - hep-th
+  - math.RT
+  - nlin.SI
+  keywords:
+  - Baxter Q-operator
+  - open spin chain
+  - separation of variables
+- id: arxiv:2611.10580
+  title: Integrals of motion for the deformed $W$-algebra $W_{q,t}(D_l)$
+  authors:
+  - Michio Jimbo
+  - Takeo Kojima
+  url: https://arxiv.org/abs/2611.10580
+  arxiv_id: '2611.10580'
+  doi: null
+  submitted: '2026-11-07'
+  submitted_at: '2026-11-07T08:43:00Z'
+  updated: '2026-11-07'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.QA
+  - hep-th
+  - math-ph
+  - nlin.SI
+  - quant-ph
+  keywords:
+  - deformed W-algebra
+  - KdV hierarchy
+  - commuting charges
+- id: arxiv:2611.11182
+  title: 'Exactly integrable field theory in $(2+1)$-dimensional space-time: the spectral equations'
+  authors:
+  - Sergey Sergeev
+  url: https://arxiv.org/abs/2611.11182
+  arxiv_id: '2611.11182'
+  doi: null
+  submitted: '2026-11-08'
+  submitted_at: '2026-11-08T06:52:04Z'
+  updated: '2026-11-08'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math-ph
+  keywords:
+  - tetrahedron equation
+  - nested Bethe ansatz
+  - Kagome lattice
+- id: arxiv:2611.10964
+  title: Flat-Top Solitons as Acoustic Resonant Cavities
+  authors:
+  - M. O. D. Alotaibi
+  - L. Al Sakkaf
+  - U. Al Khawaja
+  url: https://arxiv.org/abs/2611.10964
+  arxiv_id: '2611.10964'
+  doi: null
+  submitted: '2026-11-07'
+  submitted_at: '2026-11-07T21:05:45Z'
+  updated: '2026-11-07'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - nlin.PS
+  keywords:
+  - cubic–quintic NLS
+  - flat-top soliton
+  - acoustic resonance
+- id: arxiv:2611.11804
+  title: Origin of devil's staircases and anomalous Arnold tongues of breathing solitons in optical Kerr resonators
+  authors:
+  - Tianhao Xian
+  - Junsong Peng
+  - Sonia Boscolo
+  - Christophe Finot
+  - Heping Zeng
+  url: https://arxiv.org/abs/2611.11804
+  arxiv_id: '2611.11804'
+  doi: null
+  submitted: '2026-11-09'
+  submitted_at: '2026-11-09T03:07:24Z'
+  updated: '2026-11-09'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - physics.optics
+  - nlin.PS
+  keywords:
+  - Lugiato–Lefever equation
+  - breathing solitons
+  - synchronization
+- id: arxiv:2611.12585
+  title: A Large Gap between Galerkin Errors with and without Mesh-Uniform Regularity for the KdV Equation with Boundary Dissipation
+  authors:
+  - Kangsheng Liu
+  url: https://arxiv.org/abs/2611.12585
+  arxiv_id: '2611.12585'
+  doi: null
+  submitted: '2026-11-09'
+  submitted_at: '2026-11-09T15:39:22Z'
+  updated: '2026-11-09'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.NA
+  - math.AP
+  - math.OC
+  keywords:
+  - KdV
+  - boundary dissipation
+  - Galerkin method
+- id: arxiv:2611.13871
+  title: Inverse Scattering & Isospectrality in (Analog) Cosmology
+  authors:
+  - Christian F. Schmidt
+  - Stefan Floerchinger
+  url: https://arxiv.org/abs/2611.13871
+  arxiv_id: '2611.13871'
+  doi: null
+  submitted: '2026-11-10'
+  submitted_at: '2026-11-10T10:31:28Z'
+  updated: '2026-11-10'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - gr-qc
+  - cond-mat.quant-gas
+  - math-ph
+  keywords:
+  - inverse scattering
+  - isospectrality
+  - cosmological reconstruction
+- id: arxiv:2611.11015
+  title: Cylinder spectral curve and 1-cut Matrix model
+  authors:
+  - Bertrand Eynard
+  url: https://arxiv.org/abs/2611.11015
+  arxiv_id: '2611.11015'
+  doi: null
+  submitted: '2026-11-07'
+  submitted_at: '2026-11-07T23:24:15Z'
+  updated: '2026-11-07'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math-ph
+  - hep-th
+  keywords:
+  - spectral curve
+  - one-cut matrix model
+  - resolvent
+- id: arxiv:2611.17291
+  title: A counterexample to fixed-profile soliton resolution for the three-dimensional quintic wave equation
+  authors:
+  - Xuwen Chen
+  - Justin Holmer
+  - Shunlin Shen
+  url: https://arxiv.org/abs/2611.17291
+  arxiv_id: '2611.17291'
+  doi: null
+  submitted: '2026-11-12'
+  submitted_at: '2026-11-12T18:53:35Z'
+  updated: '2026-11-12'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - soliton resolution
+  - energy-critical wave equation
+- id: arxiv:2611.17243
+  title: Radiation and persistent shape dynamics for the five-dimensional energy-critical nonlinear wave equation
+  authors:
+  - Xuwen Chen
+  - Justin Holmer
+  - Shunlin Shen
+  url: https://arxiv.org/abs/2611.17243
+  arxiv_id: '2611.17243'
+  doi: null
+  submitted: '2026-11-12'
+  submitted_at: '2026-11-12T18:32:20Z'
+  updated: '2026-11-12'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  keywords:
+  - soliton resolution
+  - radiation
+  - energy-critical wave equation
+- id: arxiv:2507.03880
+  title: Integrable self-adaptive moving mesh schemes for multi-component short pulse type equations under periodic and one-end Dirichlet boundary conditions
+  authors:
+  - Ayako Hori
+  - Ken-ichi Maruno
+  - Yasuhiro Ohta
+  - Bao-Feng Feng
+  url: https://arxiv.org/abs/2507.03880
+  arxiv_id: '2507.03880'
+  doi: null
+  submitted: '2025-07-05'
+  submitted_at: '2025-07-05T03:39:16Z'
+  updated: '2026-11-11'
+  version: v3
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  keywords:
+  - short pulse equation
+  - hodograph transformation
+  - moving mesh
+- id: doi:10.1016/j.jde.2026.114897
+  url: https://doi.org/10.1016/j.jde.2026.114897
+  authors:
+  - Wen-Wen Zhang
+  - Lei Wang
+  title: Inverse scattering transform for the Maxwell-Bloch equations with inhomogeneous broadening and asymmetric non-zero boundary conditions
+  doi: 10.1016/j.jde.2026.114897
+  journal: Journal of Differential Equations
+  year: 2027
+  metadata_checked_at: '2026-11-13'
+  volume: '489'
+  pages: '114897'
+  keywords:
+  - Maxwell–Bloch equations
+  - inverse scattering
+- id: arxiv:2603.11951
+  title: 'The “Good” boussinesq equation on the half-line: A Riemann-Hilbert approach'
+  authors:
+  - Christophe Charlier
+  - Jonatan Lenells
+  url: https://arxiv.org/abs/2603.11951
+  arxiv_id: '2603.11951'
+  doi: 10.1016/j.nonrwa.2026.104784
+  submitted: '2026-03-12'
+  submitted_at: '2026-03-12T13:59:14Z'
+  updated: '2026-03-12'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  journal: 'Nonlinear Analysis: Real World Applications'
+  year: 2027
+  volume: '95'
+  pages: '104784'
+  keywords:
+  - good Boussinesq equation
+  - half-line
+  - Riemann–Hilbert problem
+- id: arxiv:2509.12685
+  title: Inverse Scattering for the Fractional Schrödinger Equation
+  authors:
+  - Saumyajit Das
+  - Tuhin Ghosh
+  - Shiqi Ma
+  url: https://arxiv.org/abs/2509.12685
+  arxiv_id: '2509.12685'
+  doi: 10.1137/25m1831899
+  submitted: '2025-09-16'
+  submitted_at: '2025-09-16T05:19:33Z'
+  updated: '2026-08-07'
+  version: v2
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - math.AP
+  journal: SIAM Journal on Mathematical Analysis
+  year: 2026
+  volume: '58'
+  issue: '6'
+  pages: 6206-6227
+  published: '2026-11-10'
+  keywords:
+  - fractional Schrödinger equation
+  - inverse scattering
+- id: doi:10.1007/s11005-026-02187-0
+  url: https://doi.org/10.1007/s11005-026-02187-0
+  authors:
+  - Huizhan Chen
+  - Weiqi Peng
+  title: 'The super KP and super BKP hierarchies in super fermionic fock space: composition of darboux transformations and tau functions'
+  doi: 10.1007/s11005-026-02187-0
+  journal: Letters in Mathematical Physics
+  year: 2026
+  metadata_checked_at: '2026-11-13'
+  volume: '116'
+  issue: '6'
+  pages: '157'
+  published: '2026-11-10'
+  keywords:
+  - super KP
+  - super BKP
+  - Darboux transformation
+- id: doi:10.1007/s12346-026-01624-8
+  url: https://doi.org/10.1007/s12346-026-01624-8
+  authors:
+  - Jing-Jing Zheng
+  - Xiao-Yong Wen
+  title: Integrable Properties, Dynamical Behaviors of Analytic Solutions and Associated Continuous Limits for a Fifth-Order Semi-Discrete Complex mKdV Equation
+  doi: 10.1007/s12346-026-01624-8
+  journal: Qualitative Theory of Dynamical Systems
+  year: 2026
+  metadata_checked_at: '2026-11-13'
+  volume: '25'
+  issue: '6'
+  pages: '207'
+  published: '2026-11-05'
+  keywords:
+  - semi-discrete mKdV
+  - continuum limit
+- id: arxiv:2603.18386
+  title: PGL(3)-invariant integrable systems from factorisation of linear differential and difference operators
+  authors:
+  - Frank Nijhoff
+  - Linyu Peng
+  - Cheng Zhang
+  - Da-jun Zhang
+  url: https://arxiv.org/abs/2603.18386
+  arxiv_id: '2603.18386'
+  doi: 10.1007/s11005-026-02182-5
+  submitted: '2026-03-19'
+  submitted_at: '2026-03-19T01:12:27Z'
+  updated: '2026-11-07'
+  version: v2
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  journal: Letters in Mathematical Physics
+  year: 2026
+  volume: '116'
+  issue: '6'
+  pages: '156'
+  published: '2026-11-10'
+  keywords:
+  - PGL(3)
+  - operator factorisation
+- id: arxiv:2602.21391
+  title: Geometry of two- and three-dimensional integrable systems generated by translations in affine Weyl groups W(E8(1)) and W(E7(1))
+  authors:
+  - Jaume Alonso
+  - Yuri B. Suris
+  url: https://arxiv.org/abs/2602.21391
+  arxiv_id: '2602.21391'
+  doi: 10.1098/rspa.2026.0391
+  submitted: '2026-02-24'
+  submitted_at: '2026-02-24T21:41:24Z'
+  updated: '2026-02-24'
+  version: v1
+  metadata_checked_at: '2026-11-13'
+  arxiv_categories:
+  - nlin.SI
+  - math-ph
+  - math.AG
+  journal: Proceedings of the Royal Society A Mathematical Physical and Engineering Science
+  year: 2026
+  volume: '482'
+  issue: '2349'
+  pages: '20260391'
+  published: '2026-11-11'
+  keywords:
+  - affine Weyl groups
+  - birational involutions
