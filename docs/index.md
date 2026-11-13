@@ -174,22 +174,6 @@ hide:
   </details>
 </article>
 
-### The “Good” boussinesq equation on the half-line: A Riemann-Hilbert approach {#paper-arxiv-2603-11951 .radar-search-heading}
-
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2603-11951" data-radar-month="2026-11" data-radar-date="" data-radar-added-on="2026-11-13" data-radar-directions="[&quot;spectral&quot;]" data-radar-search="math.AP good Boussinesq equation half-line Riemann–Hilbert problem">
-  <details class="radar-paper-details">
-    <summary class="radar-row-summary">
-      <span class="radar-row-heading"><span class="radar-paper-title">The “Good” boussinesq equation on the half-line: A Riemann-Hilbert approach</span><a class="radar-permalink" href="#paper-arxiv-2603-11951" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Christophe Charlier, Jonatan Lenells">Christophe Charlier, Jonatan Lenells</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2603.11951">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2603.11951">PDF</a> · <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.nonrwa.2026.104784">Nonlinear Analysis: Real World Applications 95, 104784 (2027)</a></span></span>
-    </summary>
-    <div class="radar-expanded-content">
-    <p class="radar-paper-overview"><strong>对半轴上的良性 Boussinesq 方程，作者在解存在的假设下，给出从初值和边界值重构解的表示。</strong></p>
-    <p class="radar-reading-detail">重构采用 3×3 矩阵 Riemann–Hilbert 问题，其跳跃轮廓由十二条半直线组成。</p>
-    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>结论给出已有解的逆谱表示，所需数据来自半轴初边值问题。</p>
-    </div>
-  </details>
-</article>
-
 ### Integrable self-adaptive moving mesh schemes for multi-component short pulse type equations under periodic and one-end Dirichlet boundary conditions {#paper-arxiv-2507-03880 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2507-03880" data-radar-month="2026-11" data-radar-date="2026-11-13" data-radar-directions="[&quot;waves&quot;, &quot;structures&quot;]" data-radar-search="nlin.SI math-ph short pulse equation hodograph transformation moving mesh">
@@ -346,6 +330,22 @@ hide:
     <p class="radar-paper-overview"><strong>对具有一个内部模的一维标量场方程，给出运动扭结在任意固定亚光速附近的渐近稳定判据。</strong></p>
     <p class="radar-reading-detail">足够小的能量空间扰动局部趋向具有极限速度的扭结；应用包括双 sine-Gordon 方程和一类 φ⁴ 模型扰动。</p>
     <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>条件包括阈值处无共振、变换势的排斥性以及二次谐波的费米黄金律；速度正规形用于控制内部振荡与调制的耦合。</p>
+    </div>
+  </details>
+</article>
+
+### The “Good” boussinesq equation on the half-line: A Riemann-Hilbert approach {#paper-arxiv-2603-11951 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2603-11951" data-radar-month="2026-11" data-radar-date="2026-11-11" data-radar-added-on="2026-11-13" data-radar-directions="[&quot;spectral&quot;]" data-radar-search="math.AP good Boussinesq equation half-line Riemann–Hilbert problem">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">The “Good” boussinesq equation on the half-line: A Riemann-Hilbert approach</span><a class="radar-permalink" href="#paper-arxiv-2603-11951" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Christophe Charlier, Jonatan Lenells">Christophe Charlier, Jonatan Lenells</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2603.11951">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2603.11951">PDF</a> · <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.nonrwa.2026.104784">Nonlinear Analysis: Real World Applications 95, 104784 (2027)</a></span><time datetime="2026-11-11" title="正式发表 · 2026-11-11 · v1" aria-label="正式发表 · 2026-11-11 · v1">2026-11-11</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>对半轴上的良性 Boussinesq 方程，作者从初值和边界迹构造四个反射系数，再由这些系数重构解。</strong></p>
+    <p class="radar-reading-detail">四个反射系数确定一个 3×3 矩阵 Riemann–Hilbert 问题的跳跃矩阵，其跳跃轮廓由从原点出发的十二条半直线组成。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>重构定理假设光滑解存在且在空间正无穷远快速衰减，并要求无孤子、谱函数在 k = 0 处满足文中的一般性条件。</p>
     </div>
   </details>
 </article>

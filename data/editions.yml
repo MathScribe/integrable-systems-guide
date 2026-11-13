@@ -5094,16 +5094,16 @@ frontier:
       detail: 两端背景振幅决定不同的谱分支点。作者直接处理本征值的分支，引入辅助本征函数衔接不同割线两侧的边界值，将逆问题写成具有分段跳跃矩阵的 Riemann–Hilbert 问题。
       method_scope: 正文处理正时间端背景振幅较大的情形，并沿空间传播方向推导散射数据的演化。结合密度矩阵的渐近分析，作者证明介质一般保持混合态。
   - paper_id: arxiv:2603.11951
-    signal_date: null
+    signal_date: '2026-11-11'
     signal_type: journal-publication
     directions:
     - spectral
     event_source: https://doi.org/10.1016/j.nonrwa.2026.104784
     added_on: '2026-11-13'
     reading_note:
-      lead: 对半轴上的良性 Boussinesq 方程，作者在解存在的假设下，给出从初值和边界值重构解的表示。
-      detail: 重构采用 3×3 矩阵 Riemann–Hilbert 问题，其跳跃轮廓由十二条半直线组成。
-      method_scope: 结论给出已有解的逆谱表示，所需数据来自半轴初边值问题。
+      lead: 对半轴上的良性 Boussinesq 方程，作者从初值和边界迹构造四个反射系数，再由这些系数重构解。
+      detail: 四个反射系数确定一个 3×3 矩阵 Riemann–Hilbert 问题的跳跃矩阵，其跳跃轮廓由从原点出发的十二条半直线组成。
+      method_scope: 重构定理假设光滑解存在且在空间正无穷远快速衰减，并要求无孤子、谱函数在 k = 0 处满足文中的一般性条件。
   - paper_id: arxiv:2509.12685
     signal_date: '2026-11-10'
     signal_type: journal-publication
