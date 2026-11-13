@@ -30,14 +30,6 @@ hide:
 </div>
 <p class="radar-empty-state" hidden>没有找到匹配论文。试试其他关键词，或清除筛选。</p>
 
-### Inverse scattering transform for the Maxwell-Bloch equations with inhomogeneous broadening and asymmetric non-zero boundary conditions {#paper-doi-10-1016-j-jde-2026-114897 .radar-search-heading}
-
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114897" data-radar-month="2026-11" data-radar-date="" data-radar-added-on="2026-11-13" data-radar-directions="[&quot;spectral&quot;]" data-radar-search="Maxwell–Bloch equations inverse scattering">
-<div class="radar-row-summary radar-row-bibliography">      <span class="radar-row-heading"><a class="radar-paper-title" href="https://doi.org/10.1016/j.jde.2026.114897" target="_blank" rel="noopener noreferrer">Inverse scattering transform for the Maxwell-Bloch equations with inhomogeneous broadening and asymmetric non-zero boundary conditions</a><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114897" aria-label="此论文固定链接" title="此论文固定链接">#</a></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Wen-Wen Zhang, Lei Wang">Wen-Wen Zhang, Lei Wang</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jde.2026.114897">Journal of Differential Equations 489, 114897 (2027)</a></span></span>
-</div>
-</article>
-
 ### A counterexample to fixed-profile soliton resolution for the three-dimensional quintic wave equation {#paper-arxiv-2611-17291 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2611-17291" data-radar-month="2026-11" data-radar-date="2026-11-13" data-radar-directions="[&quot;waves&quot;, &quot;asymptotics&quot;]" data-radar-search="math.AP soliton resolution energy-critical wave equation">
@@ -1044,6 +1036,22 @@ hide:
 <div class="radar-row-summary radar-row-bibliography">      <span class="radar-row-heading"><a class="radar-paper-title" href="https://arxiv.org/abs/2607.18959" target="_blank" rel="noopener noreferrer">Integrable multi-species SSEP with reactive particle species</a><a class="radar-permalink" href="#paper-arxiv-2607-18959" aria-label="此论文固定链接" title="此论文固定链接">#</a></span>
       <span class="radar-row-meta"><span class="radar-row-authors" title="Mathieu Dabrowski, Loïc Poulain d&#x27;Andecy, Eric Ragoucy">Mathieu Dabrowski, Loïc Poulain d&#x27;Andecy, Eric Ragoucy</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2607.18959">arXiv</a> · <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2607.18959">PDF</a> · <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1088/1742-5468/aeb496">Journal of Statistical Mechanics: Theory and Experiment 2026, 113102 (2026)</a></span><time datetime="2026-11-05" title="正式发表 · 2026-11-05 · v2" aria-label="正式发表 · 2026-11-05 · v2">2026-11-05</time></span>
 </div>
+</article>
+
+### Inverse scattering transform for the Maxwell-Bloch equations with inhomogeneous broadening and asymmetric non-zero boundary conditions {#paper-doi-10-1016-j-jde-2026-114897 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-jde-2026-114897" data-radar-month="2026-11" data-radar-date="2026-11-04" data-radar-added-on="2026-11-13" data-radar-directions="[&quot;spectral&quot;]" data-radar-search="Maxwell–Bloch equations inverse scattering">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Inverse scattering transform for the Maxwell-Bloch equations with inhomogeneous broadening and asymmetric non-zero boundary conditions</span><a class="radar-permalink" href="#paper-doi-10-1016-j-jde-2026-114897" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Wen-Wen Zhang, Lei Wang">Wen-Wen Zhang, Lei Wang</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.jde.2026.114897">Journal of Differential Equations 489, 114897 (2027)</a></span><time datetime="2026-11-04" title="正式发表 · 2026-11-04" aria-label="正式发表 · 2026-11-04">2026-11-04</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>对含非均匀展宽的 Maxwell–Bloch 方程，作者在两个时间无穷远的背景振幅非零且不相等时建立逆散射变换，并证明这种不对称背景排除了无反射解。</strong></p>
+    <p class="radar-reading-detail">两端背景振幅决定不同的谱分支点。作者直接处理本征值的分支，引入辅助本征函数衔接不同割线两侧的边界值，将逆问题写成具有分段跳跃矩阵的 Riemann–Hilbert 问题。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>正文处理正时间端背景振幅较大的情形，并沿空间传播方向推导散射数据的演化。结合密度矩阵的渐近分析，作者证明介质一般保持混合态。</p>
+    </div>
+  </details>
 </article>
 
 ### Stable soliton resolution for the corotational Skyrme model {#paper-arxiv-2611-05352 .radar-search-heading}
