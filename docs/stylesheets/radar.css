@@ -254,6 +254,11 @@
 .radar-browse-heading .radar-search-count { margin: 0; }
 .radar-filter-footer { display: flex; align-items: center; justify-content: space-between; min-height: 1.65rem; gap: 0.5rem; color: var(--radar-muted); font-size: 0.55rem; }
 .radar-filter-footer button { padding: 0; border: 0; min-height: auto; background: none; color: var(--md-accent-fg-color); font-size: 0.59rem; white-space: nowrap; }
+.radar-filter-footer { flex-wrap: wrap; }
+.radar-list-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.15rem 0.7rem; margin-inline-start: auto; }
+.radar-list-actions button { min-height: 1.5rem; }
+.radar-list-actions button:disabled { color: var(--radar-muted); opacity: 0.6; cursor: default; }
+.radar-list-actions button[hidden] { display: none; }
 .radar-custom-dates { display: flex; flex-wrap: wrap; gap: 0.55rem 0.8rem; font-size: 0.64rem; align-items: center; margin-top: 0.6rem; }
 .radar-custom-dates label { display: flex; align-items: center; gap: 0.4rem; }
 .radar-custom-dates[hidden] { display: none; }

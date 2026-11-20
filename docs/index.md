@@ -26,7 +26,14 @@ hide:
     <select id="radar-topic-filter" aria-label="研究方向"><option value="">全部方向</option><option value="spectral">散射与谱方法</option><option value="waves">非线性波与稳定性</option><option value="asymptotics">渐近与统计</option><option value="structures">可积结构</option></select>
   </div>
   <div class="radar-custom-dates" hidden><label>从 <input type="date" id="radar-date-from" value="2026-06-15"></label><label>至 <input type="date" id="radar-date-to"></label></div>
-  <div class="radar-filter-footer"><span>当前收录：2026.06—2026.11</span><button type="button" data-radar-action="reset" hidden>清除筛选 ×</button></div>
+  <div class="radar-filter-footer">
+    <span>当前收录：2026.06—2026.11</span>
+    <div class="radar-list-actions">
+      <button type="button" data-radar-action="reset" hidden>清除筛选 ×</button>
+      <button type="button" data-radar-action="expand" hidden>展开本页</button>
+      <button type="button" data-radar-action="collapse" hidden>收起本页</button>
+    </div>
+  </div>
 </div>
 <p class="radar-empty-state" hidden>没有找到匹配论文。试试其他关键词，或清除筛选。</p>
 
