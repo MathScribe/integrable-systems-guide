@@ -47,6 +47,7 @@
     if (skipLink) skipLink.href = "#research-radar";
     const cards = [...root.querySelectorAll(":scope > article.radar-paper-card")];
     const entries = cards.map((card) => ({
+      details: card.querySelector("details"),
       card, anchor: card.dataset.radarAnchor, date: card.dataset.radarDate || card.dataset.radarAddedOn,
       directions: JSON.parse(card.dataset.radarDirections || "[]"),
       search: fold(`${card.textContent} ${card.dataset.radarSearch || ""}`),
@@ -58,7 +59,10 @@
     const to = navigation.querySelector("#radar-date-to");
     const customDates = navigation.querySelector(".radar-custom-dates");
     const count = navigation.querySelector(".radar-search-count");
-    const reset = navigation.querySelector('[data-radar-action="reset"]');
+    const toolbar = root.querySelector(":scope > .radar-filter-footer");
+    const reset = toolbar.querySelector('[data-radar-action="reset"]');
+    const expand = toolbar.querySelector('[data-radar-action="expand"]');
+    const collapse = toolbar.querySelector('[data-radar-action="collapse"]');
     const empty = root.querySelector(".radar-empty-state");
     const pagination = root.querySelector(".radar-pagination");
     const previous = pagination.querySelector('[data-radar-action="previous"]');
@@ -80,6 +84,22 @@
     let totalPages = 0;
     let ready = false;
     let searchTimer;
+    let pageDetails = [];
+    let detailsFrame;
+
+    function updateDetailControls() {
+      expand.hidden = collapse.hidden = pageDetails.length === 0;
+      expand.disabled = pageDetails.every((details) => details.open);
+      collapse.disabled = pageDetails.every((details) => !details.open);
+    }
+
+    function setPageDetails(open) {
+      for (const details of pageDetails) details.open = open;
+      updateDetailControls();
+      (open ? collapse : expand).focus({ preventScroll: true });
+    }
+    expand.addEventListener("click", () => setPageDetails(true));
+    collapse.addEventListener("click", () => setPageDetails(false));
 
     function closePagePicker(restoreFocus = false) {
       pagePanel.hidden = true;
@@ -126,7 +146,7 @@
       try {
         sessionStorage.setItem(storageKey(), JSON.stringify({
           scroll: window.scrollY,
-          open: entries.filter((entry) => entry.card.querySelector("details")?.open).map((entry) => entry.anchor),
+          open: entries.filter((entry) => entry.details?.open).map((entry) => entry.anchor),
         }));
       } catch (_) { /* Browser storage is optional. */ }
     }
@@ -136,9 +156,10 @@
         const saved = JSON.parse(sessionStorage.getItem(storageKey()));
         if (!saved) return;
         entries.forEach((entry) => {
-          const details = entry.card.querySelector("details");
+          const details = entry.details;
           if (details) details.open = saved.open?.includes(entry.anchor) || false;
         });
+        updateDetailControls();
         if (restoreScroll && Number.isFinite(saved.scroll)) requestAnimationFrame(() => window.scrollTo(0, saved.scroll));
       } catch (_) { /* Invalid or unavailable storage does not block browsing. */ }
     }
@@ -149,6 +170,8 @@
       const result = paginate(filtered, page);
       page = result.page;
       totalPages = result.pages;
+      pageDetails = result.entries.map((entry) => entry.details).filter(Boolean);
+      updateDetailControls();
       const visible = new Set(result.entries.map((entry) => entry.anchor));
       cards.forEach((card) => {
         card.hidden = !visible.has(card.dataset.radarAnchor);
@@ -223,18 +246,40 @@
       input.value = ""; period.value = "all"; topic.value = ""; from.value = ""; to.value = "";
       changeFilters();
     });
-    function goToPage(requestedPage) {
+    function goToPage(requestedPage, fromListShortcut = false) {
       const paginationTop = pagination.getBoundingClientRect().top;
+      const readingPaper = document.activeElement?.closest(".radar-paper-card");
       saveView();
       page = requestedPage;
       render();
       writeURL();
-      // Keep the page controls in place even when the new page is shorter.
-      window.scrollBy({ top: pagination.getBoundingClientRect().top - paginationTop, behavior: "instant" });
+      if (fromListShortcut) {
+        const firstCard = root.querySelector("article.radar-paper-card:not([hidden])");
+        if (readingPaper) firstCard?.querySelector("summary, a[href]")?.focus({ preventScroll: true });
+        if (navigation.getBoundingClientRect().top < 0) navigation.scrollIntoView({ block: "start" });
+      } else {
+        // Keep the page controls in place even when the new page is shorter.
+        window.scrollBy({ top: pagination.getBoundingClientRect().top - paginationTop, behavior: "instant" });
+      }
       saveView();
     }
     previous.addEventListener("click", () => goToPage(page - 1));
     next.addEventListener("click", () => goToPage(page + 1));
+    function onPageArrow(event) {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      if (event.defaultPrevented || event.isComposing || event.repeat ||
+          event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      const target = event.target;
+      if (!(target instanceof Element) || (target !== document.body && !root.contains(target))) return;
+      if (!pagePanel.hidden || target.isContentEditable ||
+          target.closest("input, textarea, select, [role=textbox], [role=slider], [role=dialog], dialog") ||
+          !window.getSelection()?.isCollapsed) return;
+      const forward = event.key === "ArrowRight";
+      if ((forward ? next : previous).disabled) return;
+      event.preventDefault();
+      goToPage(page + (forward ? 1 : -1), !pagination.contains(target));
+    }
+    document.addEventListener("keydown", onPageArrow);
     pageTrigger.addEventListener("click", () => {
       if (!pagePanel.hidden) { closePagePicker(); return; }
       pagePanel.hidden = false;
@@ -257,7 +302,15 @@
     });
     const onOutsidePointer = (event) => { if (!pagePicker.contains(event.target)) closePagePicker(); };
     document.addEventListener("pointerdown", onOutsidePointer);
-    cards.forEach((card) => card.querySelector("details")?.addEventListener("toggle", saveView));
+    function onDetailsToggle() {
+      if (detailsFrame !== undefined) return;
+      detailsFrame = requestAnimationFrame(() => {
+        detailsFrame = undefined;
+        updateDetailControls();
+        saveView();
+      });
+    }
+    entries.forEach((entry) => entry.details?.addEventListener("toggle", onDetailsToggle));
     const onPopState = () => { readURL(); render(); if (!revealHashTarget()) restoreView(true); };
     const onHashChange = () => revealHashTarget();
     const onPageHide = () => saveView();
@@ -265,8 +318,11 @@
     window.addEventListener("hashchange", onHashChange);
     window.addEventListener("pagehide", onPageHide);
     teardown = () => {
+      cancelAnimationFrame(detailsFrame);
+      entries.forEach((entry) => entry.details?.removeEventListener("toggle", onDetailsToggle));
       clearTimeout(searchTimer);
       document.removeEventListener("pointerdown", onOutsidePointer);
+      document.removeEventListener("keydown", onPageArrow);
       window.removeEventListener("popstate", onPopState);
       window.removeEventListener("hashchange", onHashChange);
       window.removeEventListener("pagehide", onPageHide);
