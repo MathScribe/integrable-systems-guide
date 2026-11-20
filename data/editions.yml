@@ -5733,7 +5733,7 @@ frontier:
       method_scope: 方法把谱参数退化与 Taylor 展开结合，借助自由参数调整碰撞位置与相移。
   - paper_id: doi:10.1016/j.wavemoti.2026.103886
     signal_type: journal-publication
-    signal_date: null
+    signal_date: '2026-11-13'
     directions:
     - spectral
     - waves
@@ -5742,11 +5742,15 @@ frontier:
     reading_note:
       lead: 作者在 Weierstrass 椭圆周期背景上构造广义 Sawada–Kotera 方程的非线性波。
       detail: 椭圆函数的不同退化给出三角、双曲及有理三类极限波形。
-      method_scope: 作者稿从含椭圆势的三阶谱问题出发，使用 Halphen 方程确定特征函数并施行 Darboux 变换。
+      method_scope: 作者从含椭圆势的三阶谱问题出发，使用 Halphen 方程确定特征函数并施行 Darboux 变换。
   - paper_id: doi:10.1016/j.wavemoti.2026.103884
     signal_type: journal-publication
-    signal_date: null
+    signal_date: '2026-11-11'
     directions:
     - waves
     event_source: https://doi.org/10.1016/j.wavemoti.2026.103884
     added_on: '2026-11-20'
+    reading_note:
+      lead: 对变系数反时空非局部 Gerdjikov–Ivanov 方程，作者构造了多孤子、高阶怪波、高阶呼吸子及其混合局域波解。
+      detail: 从向量方程的 Lax 对构造广义扰动 Darboux 变换，经反时空约化后，分别以零解和平面波为种子得到显式解。
+      method_scope: 数值模拟展示谱参数和时变系数 δ(t) 如何改变波峰轨迹、不同波形的共存方式及碰撞过程。

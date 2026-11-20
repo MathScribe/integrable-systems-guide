@@ -72,5 +72,5 @@ sources:
     kind: candidate-verification
     checked_at: '2026-11-20T12:05:17Z'
     last_status: candidate-only
-    coverage_note: Two Wave Motion first-online dates remain unresolved. Recovered the November 4 Nuclear Physics B date from the SCOAP3 publisher PDF. Public
-      release on hold.
+    coverage_note: Verified the Wave Motion first-online dates for articles 103884 (November 11) and 103886 (November 13) from the publisher PDFs and saved article
+      histories. The Nuclear Physics B first-online date (November 4) was verified from the SCOAP3 publisher PDF.

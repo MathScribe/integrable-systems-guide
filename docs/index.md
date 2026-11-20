@@ -30,30 +30,6 @@ hide:
 </div>
 <p class="radar-empty-state" hidden>没有找到匹配论文。试试其他关键词，或清除筛选。</p>
 
-### Nonlinear waves of the generalized Sawada-Kotera equation on a Weierstrass elliptic background: Darboux transformation and degeneration analysis {#paper-doi-10-1016-j-wavemoti-2026-103886 .radar-search-heading}
-
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-wavemoti-2026-103886" data-radar-month="2026-11" data-radar-date="" data-radar-added-on="2026-11-20" data-radar-directions="[&quot;spectral&quot;, &quot;waves&quot;]" data-radar-search="Sawada–Kotera Weierstrass elliptic background Darboux">
-  <details class="radar-paper-details">
-    <summary class="radar-row-summary">
-      <span class="radar-row-heading"><span class="radar-paper-title">Nonlinear waves of the generalized Sawada-Kotera equation on a Weierstrass elliptic background: Darboux transformation and degeneration analysis</span><a class="radar-permalink" href="#paper-doi-10-1016-j-wavemoti-2026-103886" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Zheyuan Li, Xunan Huang, Yunqing Yang">Zheyuan Li, Xunan Huang, Yunqing Yang</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.wavemoti.2026.103886">Wave Motion 149, 103886 (2027)</a></span></span>
-    </summary>
-    <div class="radar-expanded-content">
-    <p class="radar-paper-overview"><strong>作者在 Weierstrass 椭圆周期背景上构造广义 Sawada–Kotera 方程的非线性波。</strong></p>
-    <p class="radar-reading-detail">椭圆函数的不同退化给出三角、双曲及有理三类极限波形。</p>
-    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>作者稿从含椭圆势的三阶谱问题出发，使用 Halphen 方程确定特征函数并施行 Darboux 变换。</p>
-    </div>
-  </details>
-</article>
-
-### Hybrid localized waves of a variable-coefficient reverse-space-time nonlocal Gerdjikov–Ivanov equation via a generalized Darboux transformation {#paper-doi-10-1016-j-wavemoti-2026-103884 .radar-search-heading}
-
-<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-wavemoti-2026-103884" data-radar-month="2026-11" data-radar-date="" data-radar-added-on="2026-11-20" data-radar-directions="[&quot;waves&quot;]" data-radar-search="Gerdjikov–Ivanov nonlocal reduction Darboux">
-<div class="radar-row-summary radar-row-bibliography">      <span class="radar-row-heading"><a class="radar-paper-title" href="https://doi.org/10.1016/j.wavemoti.2026.103884" target="_blank" rel="noopener noreferrer">Hybrid localized waves of a variable-coefficient reverse-space-time nonlocal Gerdjikov–Ivanov equation via a generalized Darboux transformation</a><a class="radar-permalink" href="#paper-doi-10-1016-j-wavemoti-2026-103884" aria-label="此论文固定链接" title="此论文固定链接">#</a></span>
-      <span class="radar-row-meta"><span class="radar-row-authors" title="Zhou Wang, Zhengyu Bao, Xiangpeng Xin, Shifei Sun, Zhenjie Niu">Zhou Wang, Zhengyu Bao, Xiangpeng Xin, Shifei Sun, Zhenjie Niu</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.wavemoti.2026.103884">Wave Motion 149, 103884 (2027)</a></span></span>
-</div>
-</article>
-
 ### Elliptic analogues of KP and BKP hierarchies and their tau functions {#paper-arxiv-2611-26354 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2611-26354" data-radar-month="2026-11" data-radar-date="2026-11-20" data-radar-directions="[&quot;structures&quot;, &quot;waves&quot;]" data-radar-search="nlin.SI math-ph KP BKP elliptic background">
@@ -966,6 +942,22 @@ hide:
   </details>
 </article>
 
+### Nonlinear waves of the generalized Sawada-Kotera equation on a Weierstrass elliptic background: Darboux transformation and degeneration analysis {#paper-doi-10-1016-j-wavemoti-2026-103886 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-wavemoti-2026-103886" data-radar-month="2026-11" data-radar-date="2026-11-13" data-radar-added-on="2026-11-20" data-radar-directions="[&quot;spectral&quot;, &quot;waves&quot;]" data-radar-search="Sawada–Kotera Weierstrass elliptic background Darboux">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Nonlinear waves of the generalized Sawada-Kotera equation on a Weierstrass elliptic background: Darboux transformation and degeneration analysis</span><a class="radar-permalink" href="#paper-doi-10-1016-j-wavemoti-2026-103886" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Zheyuan Li, Xunan Huang, Yunqing Yang">Zheyuan Li, Xunan Huang, Yunqing Yang</span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.wavemoti.2026.103886">Wave Motion 149, 103886 (2027)</a></span><time datetime="2026-11-13" title="正式发表 · 2026-11-13" aria-label="正式发表 · 2026-11-13">2026-11-13</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>作者在 Weierstrass 椭圆周期背景上构造广义 Sawada–Kotera 方程的非线性波。</strong></p>
+    <p class="radar-reading-detail">椭圆函数的不同退化给出三角、双曲及有理三类极限波形。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>作者从含椭圆势的三阶谱问题出发，使用 Halphen 方程确定特征函数并施行 Darboux 变换。</p>
+    </div>
+  </details>
+</article>
+
 ### A counterexample to fixed-profile soliton resolution for the three-dimensional quintic wave equation {#paper-arxiv-2611-17291 .radar-search-heading}
 
 <article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-arxiv-2611-17291" data-radar-month="2026-11" data-radar-date="2026-11-13" data-radar-directions="[&quot;waves&quot;, &quot;asymptotics&quot;]" data-radar-search="math.AP soliton resolution energy-critical wave equation">
@@ -1122,6 +1114,22 @@ hide:
     <p class="radar-paper-overview"><strong>为多分量短脉冲型方程构造单端 Dirichlet 边界下的可积自适应移动网格格式，并将其与周期边界格式区分。</strong></p>
     <p class="radar-reading-detail">单端给值时格式形成常微分系统，周期问题则含有与连续积分条件对应的代数约束。</p>
     <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>通过 hodograph 变换的一致性确定网格端点演化，并用孤子穿过计算边界的算例检验数值解。</p>
+    </div>
+  </details>
+</article>
+
+### Hybrid localized waves of a variable-coefficient reverse-space-time nonlocal Gerdjikov–Ivanov equation via a generalized Darboux transformation {#paper-doi-10-1016-j-wavemoti-2026-103884 .radar-search-heading}
+
+<article class="radar-paper-card radar-paper-card--native" data-radar-native="true" data-radar-anchor="paper-doi-10-1016-j-wavemoti-2026-103884" data-radar-month="2026-11" data-radar-date="2026-11-11" data-radar-added-on="2026-11-20" data-radar-directions="[&quot;waves&quot;]" data-radar-search="Gerdjikov–Ivanov nonlocal reduction Darboux">
+  <details class="radar-paper-details">
+    <summary class="radar-row-summary">
+      <span class="radar-row-heading"><span class="radar-paper-title">Hybrid localized waves of a variable-coefficient reverse-space-time nonlocal Gerdjikov–Ivanov equation via a generalized Darboux transformation</span><a class="radar-permalink" href="#paper-doi-10-1016-j-wavemoti-2026-103884" aria-label="此论文固定链接" title="此论文固定链接">#</a><span class="radar-expand-icon" aria-hidden="true">⌄</span></span>
+      <span class="radar-row-meta"><span class="radar-row-authors" title="Zhou Wang, Zhengyu Bao, Xiangpeng Xin, Shifei Sun, Zhenjie Niu"><span class="radar-authors-short">Zhou Wang, Zhengyu Bao, et al.</span><span class="radar-authors-full">Zhou Wang, Zhengyu Bao, Xiangpeng Xin, Shifei Sun, Zhenjie Niu</span></span> <span class="radar-row-sources"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.wavemoti.2026.103884">Wave Motion 149, 103884 (2027)</a></span><time datetime="2026-11-11" title="正式发表 · 2026-11-11" aria-label="正式发表 · 2026-11-11">2026-11-11</time></span>
+    </summary>
+    <div class="radar-expanded-content">
+    <p class="radar-paper-overview"><strong>对变系数反时空非局部 Gerdjikov–Ivanov 方程，作者构造了多孤子、高阶怪波、高阶呼吸子及其混合局域波解。</strong></p>
+    <p class="radar-reading-detail">从向量方程的 Lax 对构造广义扰动 Darboux 变换，经反时空约化后，分别以零解和平面波为种子得到显式解。</p>
+    <p class="radar-reading-method"><span class="radar-reading-label">方法与范围：</span>数值模拟展示谱参数和时变系数 δ(t) 如何改变波峰轨迹、不同波形的共存方式及碰撞过程。</p>
     </div>
   </details>
 </article>

@@ -14468,6 +14468,12 @@
   metadata_checked_at: '2026-11-20'
   volume: '149'
   article_number: '103886'
+  published: '2026-11-13'
+  first_online_evidence:
+    url: https://www.sciencedirect.com/science/article/pii/S0165212526001873
+    date: '2026-11-13'
+    statement: Available online 13 November 2026
+    unassigned: [issue]
 - id: doi:10.1016/j.wavemoti.2026.103884
   url: https://doi.org/10.1016/j.wavemoti.2026.103884
   title: Hybrid localized waves of a variable-coefficient reverse-space-time nonlocal Gerdjikov–Ivanov equation via a generalized Darboux transformation
@@ -14487,3 +14493,9 @@
   metadata_checked_at: '2026-11-20'
   volume: '149'
   article_number: '103884'
+  published: '2026-11-11'
+  first_online_evidence:
+    url: https://www.sciencedirect.com/science/article/pii/S016521252600185X
+    date: '2026-11-11'
+    statement: Available online 11 November 2026
+    unassigned: [issue]
