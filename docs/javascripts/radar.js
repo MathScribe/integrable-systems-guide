@@ -59,9 +59,10 @@
     const to = navigation.querySelector("#radar-date-to");
     const customDates = navigation.querySelector(".radar-custom-dates");
     const count = navigation.querySelector(".radar-search-count");
-    const reset = navigation.querySelector('[data-radar-action="reset"]');
-    const expand = navigation.querySelector('[data-radar-action="expand"]');
-    const collapse = navigation.querySelector('[data-radar-action="collapse"]');
+    const toolbar = root.querySelector(":scope > .radar-filter-footer");
+    const reset = toolbar.querySelector('[data-radar-action="reset"]');
+    const expand = toolbar.querySelector('[data-radar-action="expand"]');
+    const collapse = toolbar.querySelector('[data-radar-action="collapse"]');
     const empty = root.querySelector(".radar-empty-state");
     const pagination = root.querySelector(".radar-pagination");
     const previous = pagination.querySelector('[data-radar-action="previous"]');
