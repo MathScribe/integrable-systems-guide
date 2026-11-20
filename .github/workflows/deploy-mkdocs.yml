@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -39,6 +41,7 @@ jobs:
       - name: Validate source data and generated pages
         run: |
           python scripts/validate_radar.py
+          python scripts/check_journal_release.py
           python scripts/validate_frontier_data.py
           python scripts/validate_radar_state.py
           python scripts/test_radar.py
@@ -60,3 +63,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify the public radar homepage
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python scripts/verify_radar_deployment.py site/index.html "$PAGE_URL"

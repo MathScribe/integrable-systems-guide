@@ -99,7 +99,7 @@ may lack a strong title phrase:
 3. apply the same cheap relevance filter and strict value threshold used for
    other sources;
 4. verify each surviving DOI from the publisher or its Crossref deposit. Use a
-   known first-online date; an unknown date stays null under the bibliography-first rule.
+   verified first-online day for publication. Hold the batch if a selected journal record is incomplete.
 
 This pass is deliberately based on mathematical classification rather than a
 journal whitelist. Its successful status means the bounded MSC query completed;
@@ -126,21 +126,25 @@ These are internal selection rules. Public pages and PR descriptions must not pu
 
 ## Verification and identity
 
-For papers already saved by the owner, check Zotero's local attachments before
-declaring abstract/full-text evidence unavailable. Read local PDFs or saved
-publisher snapshots without modifying the Zotero library. For publisher access,
-prefer the owner's local campus-network route; GitHub's proxy instructions do
-not prescribe a publisher-access route. Do not change system proxy or network
-components without confirmation. If evidence is still inaccessible, report the
-exact title/DOI and ask the owner for the local attachment path instead of
-repeated fetches or an unnecessary alternate card design. A failed fetch means
-the agent could not retrieve the evidence, not that the paper lacks it.
+For each selected journal record, run `python scripts/check_journal_release.py --lookup DOI`
+(repeat `--lookup` for multiple DOIs). Match the title, full authors, venue, citation
+year and all assigned volume/issue/pages or article number to the publisher record.
+An explicit, day-precision Crossref `published-online` deposit is admissible.
+If the date is missing, imprecise, ambiguous or conflicting, open the DOI yourself
+in the Codex built-in browser using the available campus access. If DOI navigation
+fails, try the publisher's direct article link. Inspect the article history
+("Available online", "First published online" or equivalent), then the publisher's
+version-of-record PDF, usually page one. Check the DOI/title on the evidence.
+Use an existing Zotero snapshot/PDF when helpful. The owner need not import an
+article for this workflow. Preserve current network settings. If access requires
+human verification, identify the page and exact action, or proceed with another
+available primary source. Report unresolved conflicts and keep publication on hold.
 
 Before editing data:
 
 - deduplicate by arXiv ID, DOI, and normalized title;
 - verify the title and full author list;
-- verify the event type and available event date; preserve unknown journal dates as null;
+- verify the event type and exact first-online day for journal bibliography entering the release;
 - verify the current arXiv version, submission date, revision date, and official categories when applicable;
 - check withdrawal/retraction banners and version comments explicitly. Retain a
   withdrawn/retracted bibliographic record with its status, but remove it from
@@ -152,16 +156,20 @@ Before editing data:
 
 Keep bibliographic timestamps separate from the public event date. For an arXiv `new-preprint`, preserve the UTC submission timestamp in `papers.yml`, but use the official listing's announcement date as `signal_date`. For a `major-revision`, use the official replacement-list date. For a `journal-publication`, use the publisher's first-online date. Record the primary `event_source` URL for each newly selected event. The scan timestamp never changes the paper's event date. An OAI modification timestamp alone is not announcement evidence.
 
-Bibliography-first rule (owner approved 2026-09-27): a directly relevant journal
-record with verified title, full authors, journal, year and DOI may be included
-without an abstract or exact first-online date. A publisher's Crossref deposit is
-valid evidence; do not require a second successful publisher-page fetch. Omit
-unsupported reading notes, use `signal_date: null` when the day is unknown, and
-record `added_on` as the actual intake date. Ordering and time filtering fall back
-to intake only when the event date is absent; never print intake as publication.
-An existing verified arXiv announcement remains usable when journal first-online
-metadata is missing. Do not infer chronology from DOI creation or issue assignment.
-This rule does not authorize historical backfill or claims based only on a title.
+Publication rule (2026-11-20): every new or updated journal citation or updated
+public journal card requires complete verified bibliography and an exact first-online
+day. This includes adding journal metadata to an existing preprint; preserve its
+original arXiv event. Use the same exact day for a journal event and its bibliography.
+Record the source, its date wording and assigned citation details as described in
+`maintenance/radar-data-model.md`. An inaccessible abstract may still justify
+omitting a reading note. Earlier records remain readable with their original precision.
+
+If any selected item in the batch has an unresolved required field, keep all
+prepared work in a draft and stop before merge/deploy, including on an explicit
+"直接更新网站" request. Report title, DOI, fields, sources tried and conflicting
+values. Keep it in the batch until resolved; silently omitting the blocked paper
+or reclassifying it as a preprint invalidates the check. Resume the same batch after
+verification. An unrelated failed discovery source remains a separate coverage gap.
 
 arXiv normally has no Friday or Saturday announcements. A paper submitted before the Friday 14:00 US Eastern cutoff can therefore carry a Friday UTC submission date while appearing in the following Monday category list. Preserve both dates and let the rendered card explain the distinction whenever they differ.
 
@@ -251,6 +259,12 @@ After changing YAML:
 ```
 
 The complete check validates identities, frontier fields, controlled tags, generated-page consistency, JavaScript syntax, and `mkdocs build --strict`.
+
+It also runs the offline journal release gate against the final publication under
+the previous policy. PR checks and Pages deployment require that Git history.
+After deployment, the Pages workflow fetches the public homepage and verifies its
+SHA-256 against the exact index.html uploaded in that run, with bounded retries.
+Report publication as verified only after that step succeeds.
 
 Inspect the full diff after rendering. Remove annotation residue, repeated prose, temporary helpers, logs, generated preview directories, and diagnostics before review.
 

@@ -42,7 +42,7 @@ The zbMATH issue-year window includes the following year and uses index timestam
 only for discovery. Publisher first-online evidence determines journal events.
 
 Verified journal bibliography may be selected without a reading note. It renders
-as a compact row with primary links and no empty expander. Missing online dates
+as a compact row with primary links and no empty expander. Historical missing online dates
 are explicit `signal_date: null`, allowed only with journal DOI, citation year,
 primary `event_source` and valid `added_on`. A publisher's Crossref deposit is an
 acceptable primary metadata source. `added_on` is the actual site intake date,
@@ -52,6 +52,26 @@ a publication date. Known event dates are never replaced by newer intake dates.
 Keep issue years (including next-year assignments) in the citation. Reconcile
 missing optional fields on a later successful source pass, without repeated
 publisher retries or an active pending item solely for those fields.
+
+For journal bibliography entering or changing in a release from 2026-11-20,
+store the exact first-online day in `papers.yml` as `published`. Record a
+`first_online_evidence` mapping on the same paper, with `url` (primary source;
+use its public DOI/URL for a saved publisher PDF), `statement` (the date label
+and value as printed, or the explicit Crossref published-online date-parts),
+and `date` (that value normalized to YYYY-MM-DD). For example:
+
+```yaml
+published: '2026-11-04'
+first_online_evidence:
+  url: https://doi.org/10.1016/j.jde.2026.114897
+  statement: 'Available online 4 November 2026'
+  date: '2026-11-04'
+  unassigned: [issue]
+```
+
+Include in `unassigned` only fields confirmed unassigned or inapplicable on
+the primary citation: `volume`, `issue`, or `locator` (pages/article number).
+An unknown or conflicting required detail holds the entire batch before release.
 
 The migration preserves all identities, event dates, selection and reading notes.
 Old fields remain recoverable from the pre-migration Git commit. Only verified
