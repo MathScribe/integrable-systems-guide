@@ -25,9 +25,8 @@ Freshness is an eligibility condition, not a ranking signal.
 - A major revision must belong to an unprocessed replacement batch and add a main
   theorem, core method, substantial analysis, experiment, or material conclusion.
 - A journal-only discovery normally has a first-online date in the unprocessed
-  publication window. Under the owner's 2026-09-27 bibliography-first amendment,
-  a relevant record found in the bounded current discovery pass may be included
-  with an unknown online date; preserve null and do not claim a dated new event.
+  publication window. Under the 2026-11-20 publication rule, keep a selected item
+  with an unverified first-online day in the draft and hold release of the batch.
 - A delayed index record keeps its real event date. It is not relabelled as a
   current recommendation merely because the radar observed it later.
 - A previously selected preprint that later receives routine journal publication
@@ -86,7 +85,7 @@ Title-only evidence cannot support a reading note or a claim about a paper's
 advance. An abstract may support a cautious decision; formula-level mechanisms,
 proof claims, and comparisons beyond the abstract require inspection of the paper.
 The owner-approved bibliography-first path allows directly relevant current
-journal records with verified title, full authors, journal, year and DOI to appear
+journal records with complete verified citation and first-online day to appear
 as bibliography only. Do not manufacture an annotation or hold the item solely
 for missing optional metadata. This exception does not extend to speculative
 cross-field relevance, historical backfill, or unverified search snippets.
