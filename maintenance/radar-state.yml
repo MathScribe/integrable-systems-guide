@@ -2,73 +2,67 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-11-13'
+    announced_through: '2026-11-20'
     last_status: complete
-    coverage_note: 'Nov 7–13: dates and counts validated on 105 official pages across 15 categories. New and cross-listed events screened.'
+    coverage_note: 'Nov 14–20: validated all 105 configured category/date pages; three additional primary-category pages verified cross-listed first announcements.'
     replacements:
       last_status: complete
-      checked_through: '2026-11-13'
+      checked_through: '2026-11-20'
       open_gaps: []
-      coverage_note: Replacements screened separately; 21 outstanding Nov 5–6 category/date pages recovered. Compared adjacent versions for the short-pulse moving mesh and KP-II scattering
-        advances. Catchup excludes post-v5 and journal-only replacements.
-    checked_at: '2026-11-13T13:12:54Z'
+      coverage_note: New and replacement events screened separately; compared earlier versions for substantive changes. Catchup excludes journal-only and post-v5
+        changes.
+    checked_at: '2026-11-20T12:05:17Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-11-13'
+    announced_through: '2026-11-20'
     last_status: complete
-    coverage_note: 'Nov 7–13: dates and counts validated on 105 official pages across 15 categories. New and cross-listed events screened.'
+    coverage_note: 'Nov 14–20: validated all 105 configured category/date pages; three additional primary-category pages verified cross-listed first announcements.'
     replacements:
       last_status: complete
-      checked_through: '2026-11-13'
+      checked_through: '2026-11-20'
       open_gaps: []
-      coverage_note: Replacements screened separately; 21 outstanding Nov 5–6 category/date pages recovered. Compared adjacent versions for the short-pulse moving mesh and KP-II scattering
-        advances. Catchup excludes post-v5 and journal-only replacements.
-    checked_at: '2026-11-13T13:12:54Z'
+      coverage_note: New and replacement events screened separately; compared earlier versions for substantive changes. Catchup excludes journal-only and post-v5
+        changes.
+    checked_at: '2026-11-20T12:05:17Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-11-13'
+    announced_through: '2026-11-20'
     last_status: complete
-    coverage_note: 'Nov 7–13: dates and counts validated on 105 official pages across 15 categories. New and cross-listed events screened.'
+    coverage_note: 'Nov 14–20: validated all 105 configured category/date pages; three additional primary-category pages verified cross-listed first announcements.'
     replacements:
       last_status: complete
-      checked_through: '2026-11-13'
+      checked_through: '2026-11-20'
       open_gaps: []
-      coverage_note: Replacements screened separately; 21 outstanding Nov 5–6 category/date pages recovered. Compared adjacent versions for the short-pulse moving mesh and KP-II scattering
-        advances. Catchup excludes post-v5 and journal-only replacements.
-    checked_at: '2026-11-13T13:12:54Z'
+      coverage_note: New and replacement events screened separately; compared earlier versions for substantive changes. Catchup excludes journal-only and post-v5
+        changes.
+    checked_at: '2026-11-20T12:05:17Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-11-13'
-      note: Validated Nov 7–13 dated lists.
+      through: '2026-11-20'
+      note: All seven current cond-mat.quant-gas pages verified.
   crossref:
     kind: ranked-title-backstop
     reconciliation_checked_at: '2026-10-31T04:16:32.959056Z'
     reconciliation_cadence: weekly
-    reconciliation_note: 35 exact-title/author requests attempted for strong arXiv candidates; 29 completed without exact title matches, six HTTP429 responses. Optional journal metadata
-      gaps do not block verified arXiv events.
+    reconciliation_note: 85 title/author lookups across plausible candidates and the previous six outstanding arXiv IDs; 1 failed requests.
     overlap_days: 3
-    title_query_note: Reviewed successful Nov 9 weekly artifact and Nov 7–13 overlapping online pass; latter returned 10 matched candidates.
-    online_query_through: '2026-11-13'
+    title_query_note: Reviewed November 16 weekly artifact and November 11–20 overlapping published-online queries.
+    online_query_through: '2026-11-20'
     online_status: complete
-    registration_query_through: '2026-11-13'
+    registration_query_through: '2026-11-20'
     registration_status: complete
-    registration_note: Reviewed successful Nov 9 weekly artifact and Nov 7–13 overlapping created pass; latter returned 8 matched candidates.
-    reconciliation_last_attempt_at: '2026-11-04T05:17:11.969459Z'
+    registration_note: Reviewed November 16 weekly artifact and overlapping DOI creation queries.
+    reconciliation_last_attempt_at: '2026-11-20T12:05:17Z'
     reconciliation_last_status: partial
     reconciliation_open_queries:
-    - https://arxiv.org/abs/2610.41470
-    - https://arxiv.org/abs/2611.00531
-    - https://arxiv.org/abs/2611.01488
-    - https://arxiv.org/abs/2611.03857
-    - https://arxiv.org/abs/2611.05015
-    - https://arxiv.org/abs/2611.00992
+    - https://api.crossref.org/works?query.title=The+integer+spectrum+of+a+superintegrable+quantum+field+theory&query.author=De+Clerck&filter=type%3Ajournal-article&rows=3&select=title%2CDOI%2Cauthor%2Cpublished-online%2Ccontainer-title
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
     checked_at: '2026-09-27T02:12:13Z'
     last_status: partial
-    coverage_note: Nov 9 scheduled MSC workflow failed; previous successful watermark retained.
+    coverage_note: November 16 odd-week scheduled workflow produced no MSC artifact. November 9 attempt failed; last successful coverage retained.
     publication_years:
     - 2026
     - 2027
@@ -76,6 +70,7 @@ sources:
     last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-11-13T13:12:54Z'
+    checked_at: '2026-11-20T12:05:17Z'
     last_status: candidate-only
-    coverage_note: Reviewed publisher-deposited Crossref records for journal intakes and existing SSEP bibliography. Two Elsevier deposits lack a verified first-online day.
+    coverage_note: Two Wave Motion first-online dates remain unresolved. Recovered the November 4 Nuclear Physics B date from the SCOAP3 publisher PDF. Public
+      release on hold.
