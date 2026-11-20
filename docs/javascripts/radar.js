@@ -245,18 +245,40 @@
       input.value = ""; period.value = "all"; topic.value = ""; from.value = ""; to.value = "";
       changeFilters();
     });
-    function goToPage(requestedPage) {
+    function goToPage(requestedPage, fromListShortcut = false) {
       const paginationTop = pagination.getBoundingClientRect().top;
+      const readingPaper = document.activeElement?.closest(".radar-paper-card");
       saveView();
       page = requestedPage;
       render();
       writeURL();
-      // Keep the page controls in place even when the new page is shorter.
-      window.scrollBy({ top: pagination.getBoundingClientRect().top - paginationTop, behavior: "instant" });
+      if (fromListShortcut) {
+        const firstCard = root.querySelector("article.radar-paper-card:not([hidden])");
+        if (readingPaper) firstCard?.querySelector("summary, a[href]")?.focus({ preventScroll: true });
+        if (navigation.getBoundingClientRect().top < 0) navigation.scrollIntoView({ block: "start" });
+      } else {
+        // Keep the page controls in place even when the new page is shorter.
+        window.scrollBy({ top: pagination.getBoundingClientRect().top - paginationTop, behavior: "instant" });
+      }
       saveView();
     }
     previous.addEventListener("click", () => goToPage(page - 1));
     next.addEventListener("click", () => goToPage(page + 1));
+    function onPageArrow(event) {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      if (event.defaultPrevented || event.isComposing || event.repeat ||
+          event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      const target = event.target;
+      if (!(target instanceof Element) || (target !== document.body && !root.contains(target))) return;
+      if (!pagePanel.hidden || target.isContentEditable ||
+          target.closest("input, textarea, select, [role=textbox], [role=slider], [role=dialog], dialog") ||
+          !window.getSelection()?.isCollapsed) return;
+      const forward = event.key === "ArrowRight";
+      if ((forward ? next : previous).disabled) return;
+      event.preventDefault();
+      goToPage(page + (forward ? 1 : -1), !pagination.contains(target));
+    }
+    document.addEventListener("keydown", onPageArrow);
     pageTrigger.addEventListener("click", () => {
       if (!pagePanel.hidden) { closePagePicker(); return; }
       pagePanel.hidden = false;
@@ -299,6 +321,7 @@
       entries.forEach((entry) => entry.details?.removeEventListener("toggle", onDetailsToggle));
       clearTimeout(searchTimer);
       document.removeEventListener("pointerdown", onOutsidePointer);
+      document.removeEventListener("keydown", onPageArrow);
       window.removeEventListener("popstate", onPopState);
       window.removeEventListener("hashchange", onHashChange);
       window.removeEventListener("pagehide", onPageHide);
