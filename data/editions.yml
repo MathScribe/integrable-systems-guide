@@ -5019,15 +5019,15 @@ frontier:
       detail: 同一模型还给出高阶同步出现的参数区域，可用于研究更密集的光学频率梳。
       method_scope: 作者在呼吸孤子动力学层面分析同步结构的形成机制。
   - paper_id: arxiv:2611.12585
-    signal_date: '2026-11-10'
-    signal_type: new-preprint
-    event_source: https://arxiv.org/catchup/math.AP/2026-11-10?abs=False&page=1
+    signal_date: '2026-11-18'
+    signal_type: major-revision
     directions:
     - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-18?abs=False&page=1
     reading_note:
-      lead: 在有界区间的边界耗散 KdV 问题中，证明使用相同试探空间的两种 Galerkin 格式可有不同的长期误差收敛性质。
-      detail: 加权格式在小 L² 初值球上具有对网格一致的平滑性与代数收敛率；标准格式的高频伪本征模破坏了相应估计。
-      method_scope: 证明分别比较总误差和线性化与离散化的次序误差，并用显式高频模态进行数值检验。
+      lead: 修订稿加入 Lean 4 核验，验证带边界耗散的 KdV 离散化中产生误差反例的高频伪本征对。
+      detail: 对至少 512 个网格单元，标准 Galerkin 格式的两种一致误差界均失败，加权格式的理论界与之形成对照。
+      method_scope: 形式化证明使用加权格式的网格一致 Crandall–Pazy 估计作为前提；本次更新沿用已有论文条目。
   - paper_id: arxiv:2611.13871
     signal_date: '2026-11-11'
     signal_type: new-preprint
@@ -5148,3 +5148,609 @@ frontier:
     directions:
     - structures
     event_source: https://doi.org/10.1088/1742-5468/aeb496
+  - paper_id: arxiv:2611.17977
+    signal_date: '2026-11-16'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    - waves
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-11-16?abs=False&page=1
+    reading_note:
+      lead: Sasa–Satsuma 方程的约化对称性使基本超正规呼吸子的构造退化，但一对准 Akhmediev 分支仍可产生二阶超正规呼吸子。
+      detail: 构造只在特定聚焦分支上成立；载波波数通过背景改变谱根和调制不稳定区间。
+      method_scope: 作者结合 Darboux 变换与平面波线性化，将不稳定增益与群速度差联系起来，并用有限传播区间的数值演化检验预测轮廓。
+  - paper_id: arxiv:2611.18209
+    signal_date: '2026-11-16'
+    signal_type: new-preprint
+    directions:
+    - asymptotics
+    - structures
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-11-16?abs=False&page=1
+    reading_note:
+      lead: 一族无色散 KP 解的等值面是中心二次曲面，其退化由 Painlevé I 和 II 的特殊解决定。
+      detail: 作者给出有理 Painlevé II 分支上退化层的计数，并用无有限退化层的条件刻画一类 Hastings–McLeod 解。
+      method_scope: 在临界缩放下，第 n 个有理解对应的二次曲面局部趋于 Painlevé I tritronquée 解对应的抛物型曲面；避开极点时误差为 O(n⁻¹ᐟ⁵)。
+  - paper_id: arxiv:2611.18316
+    signal_date: '2026-11-16'
+    signal_type: new-preprint
+    directions:
+    - asymptotics
+    - spectral
+    event_source: https://arxiv.org/catchup/math-ph/2026-11-16?abs=False&page=1
+    reading_note:
+      lead: 从形状因子级数出发，作者推导 Lieb–Liniger 气体在热平衡及一类淬火后平稳态中的长时间、大距离关联渐近。
+      detail: 密度及粒子流的两点函数与广义流体动力学的预测一致，场与共轭场的关联则由新的时空非线性积分方程控制。
+      method_scope: 分析在热力学极限下进行，使用适用于局域算符的微观展开。
+  - paper_id: arxiv:2611.22745
+    signal_date: '2026-11-18'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    - waves
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-11-18?abs=False&page=1
+    reading_note:
+      lead: 作者给出修正 KP-I 方程标准及高阶 lump 解的谱正则性条件。
+      detail: 复值 τ 函数不能直接利用 Hermitian Gram 矩阵的正定性保证非零；高阶情形的尖锐条件仅依赖谱参数及指标向量的最大分量。
+      method_scope: 积分型 Gram 行列式还给出解及全部空间导数在各空间方向的代数衰减，对紧时间区间一致。
+  - paper_id: arxiv:2611.25308
+    signal_date: '2026-11-20'
+    signal_type: new-preprint
+    directions:
+    - asymptotics
+    - spectral
+    event_source: https://arxiv.org/catchup/math-ph/2026-11-20?abs=False&page=1
+    reading_note:
+      lead: 对两端分别趋于 −1 和 1 的散焦 Hirota 初值，作者求出沿 x/t = −4 和 −8 两条射线的过渡渐近。
+      detail: 在两处宽度为 O(t⁻²ᐟ³) 的自相似变量窗口中，一般谱情形由 Hastings–McLeod 解描述，非一般情形出现 Ablowitz–Segur 解。
+      method_scope: 推导采用逆散射 Riemann–Hilbert 问题、双重缩放与 ∂̄ 最陡下降法。
+  - paper_id: arxiv:2611.24514
+    signal_date: '2026-11-19'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-19?abs=False&page=1
+    reading_note:
+      lead: 作者证明一类色散波系统中存在由 Akhmediev 呼吸子作首阶包络调制的波包。
+      detail: 包络在空间周期、在时间局域，原系统的解却可在空间准周期。
+      method_scope: 工作为准周期波包选择合适的函数空间并控制 NLS 近似误差，给出呼吸子出现在原波动系统中的近似意义。
+  - paper_id: arxiv:2611.23805
+    signal_date: '2026-11-19'
+    signal_type: new-preprint
+    directions:
+    - asymptotics
+    - spectral
+    event_source: https://arxiv.org/catchup/math.PR/2026-11-19?abs=False&page=1
+    reading_note:
+      lead: 对随机且空间非均匀的低密度 Toda 晶格，作者证明 Euler 缩放下的广义流体动力学极限。
+      detail: 各局部守恒量的空间平均趋于宏观谱密度的矩，准粒子轨道以高概率趋于宏观方程的特征线。
+      method_scope: 初始动量与粒子间距独立，分布可随空间缓变；证明需控制演化中 Lax 矩阵本征向量的局域化。
+  - paper_id: arxiv:2611.26354
+    signal_date: '2026-11-20'
+    signal_type: new-preprint
+    directions:
+    - structures
+    - waves
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-11-20?abs=False&page=1
+    reading_note:
+      lead: 作者为椭圆背景上的 KP 与 BKP 建立从离散层级到连续层级的 τ 函数构造。
+      detail: 谱约束给出 KdV、聚焦与散焦 mKdV 及 Sawada–Kotera 约化，并产生 KP 线孤子和 KP-I 的 lump 解。
+      method_scope: KP 构造使用 Casorati 与 Gram 行列式，BKP 使用椭圆 Pfaffian；对部分行列式解族给出实值性和全局无奇性的充分条件。
+  - paper_id: arxiv:2611.20354
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - structures
+    - waves
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 四族具有共轭对称性的全离散 Mikhailov 系统允许直接约化为局部与非局部离散 Fokas–Lenells 方程。
+      detail: 这些模型均能经两步连续极限回到半离散及连续模型。
+      method_scope: 作者用 Cauchy 矩阵组织解；局部约化得到 AKNS 型构造，非局部情形还允许 KP 型构造。
+  - paper_id: arxiv:2611.21989
+    signal_date: '2026-11-18'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-18?abs=False&page=1
+    reading_note:
+      lead: 广义中长波方程的孤波在慢波和快波极限可有不同的轨道稳定性。
+      detail: 当非线性幂 p=3 时，慢波稳定而快波不稳定；相应极限分别连接广义 KdV 和广义 Benjamin–Ono 孤波。
+      method_scope: 构造使用集中紧性和对称重排，再借助极限模型的谱信息处理深度与速度乘积充分小或充分大的情形。
+  - paper_id: arxiv:2611.25343
+    signal_date: '2026-11-20'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - asymptotics
+    event_source: https://arxiv.org/catchup/math-ph/2026-11-20?abs=False&page=1
+    reading_note:
+      lead: 作者提出弱耦合、大系统联合极限下量子暗孤子的密度可由一族周期 Gross–Pitaevskii 单孤子按正则动量平均描述。
+      detail: 不同动量对应不同传播速度，因此平均密度凹口可以展宽，而单个孤子的形状仍保持。
+      method_scope: 联合极限的对应有数值支持；在无限直线极限下，作者另行推导初始平均轮廓及其密度亏损的五次反幂衰减。
+  - paper_id: arxiv:2611.23741
+    signal_date: '2026-11-19'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-19?abs=False&page=1
+    reading_note:
+      lead: 二维立方–五次 NLS 在聚焦立方基态的质量阈值上，对一般 H¹ 初值在两个时间方向都散射。
+      detail: 结果解除径向对称限制，与阈值以下的散射及更大质量上的驻波共同确定全体解都散射的质量范围。
+      method_scope: 作者把局域相互作用 Morawetz 估计与移动半空间上的传播估计结合，控制外部动能。
+  - paper_id: arxiv:2611.25439
+    signal_date: '2026-11-20'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - structures
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-20?abs=False&page=1
+    reading_note:
+      lead: 实线 KdV 解的空间解析半径在全部时间上有固定正下界。
+      detail: 这一结论适用于基于 L² 的解析类实初值，改进了随时间趋于零的定量下界。
+      method_scope: 作者利用 Hamilton 乘子的正测度表示，对守恒量求和，得到控制解析范数的精确守恒能量。
+  - paper_id: arxiv:2611.22194
+    signal_date: '2026-11-18'
+    signal_type: new-preprint
+    directions:
+    - structures
+    event_source: https://arxiv.org/catchup/math-ph/2026-11-18?abs=False&page=1
+    reading_note:
+      lead: 作者在若干色散曲面分支上分类满足 Hirota 三孤子条件的偶多项式，并在多项式图像分支上验证逐分支三孤子猜想。
+      detail: 对次数至少三的图像 v=q(u)，可行情形只剩奇三次或奇五次；三次分支上的重数还决定四孤子条件。
+      method_scope: 分类不预设多项式的次数上界；对一般色散分支另给出重数、切锥和 Newton 多边形的必要限制。
+  - paper_id: arxiv:2611.21067
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    - asymptotics
+    event_source: https://arxiv.org/catchup/math-ph/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 多通道白噪声 Schrödinger 算子的矩阵 Riccati 变量在三个 Dyson 对称类中具有显式平稳分布。
+      detail: 归一化因子由矩阵 Airy 积分表达，从而联系态密度、Lyapunov 指数之和及谱边缘轮廓。
+      method_scope: 部分对称类的临界双重缩放涉及复 Painlevé I tritronquée 解；对随机带矩阵边缘普适性的推广仍是猜想。
+  - paper_id: arxiv:2611.20181
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - structures
+    - asymptotics
+    event_source: https://arxiv.org/catchup/cond-mat.stat-mech/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 局部守恒荷密度及其流的反对称乘积具有行列式形式的期望值。
+      detail: 将局域算符展开成这类乘积，可以在非简并本征态中把关联函数化为流平均值的因子化表达。
+      method_scope: 应用于自旋二分之一 XXZ 链和 Temperley–Lieb 代数的表示，得到此前猜测的短程关联公式。
+  - paper_id: arxiv:2611.19558
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - structures
+    event_source: https://arxiv.org/catchup/hep-th/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 作者证明 Nakamura 关于二维 Toda 模型与 Ernst 方程解之间联系的猜想。
+      detail: 证明把两种模型之间的对应建立在显式 Pfaffian 解之上。
+      method_scope: 构造调用作者前作中的 Pfaffian 表示，相关结论针对猜想所涉及的解。
+  - paper_id: arxiv:2611.24536
+    signal_date: '2026-11-19'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - asymptotics
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-19?abs=False&page=1
+    reading_note:
+      lead: 一维 Gross–Pitaevskii 方程的 KdV、Airy、无黏 Burgers 和 Whitham 长波近似可在同一 Sobolev 框架中论证。
+      detail: 每种缩放对应的自然时间尺度上均给出定量误差界。
+      method_scope: 证明基于 Madelung 变量下的能量估计。
+  - paper_id: arxiv:2611.24906
+    signal_date: '2026-11-19'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-19?abs=False&page=1
+    reading_note:
+      lead: 对每个 1<s<2，作者构造方形二维环面上散焦立方 NLS 的解，使其 Hˢ 范数在正时间趋于无穷。
+      detail: 增长可以任意缓慢；已选轴向频率的计数在有界误差内决定范数平方。
+      method_scope: 构造将有限频率树的正交频对与周期一维解耦合，使先前转移产生的 Fourier 系数持续保留。
+  - paper_id: arxiv:2611.18203
+    signal_date: '2026-11-16'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - spectral
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-16?abs=False&page=1
+    reading_note:
+      lead: 作者给出有限水深、常涡量小振幅 Stokes 波的 Benjamin–Feir 稳定性图。
+      detail: 将重力加速度和载波波数归一后，水深低于约 1.36271 时所有常涡量均无该不稳定性；更深水域有两条涡量阈值。
+      method_scope: 研究针对原水波系统的小 Floquet 指数谱，结合 Hamilton 谱扰动、符号计算和形式核验。
+  - paper_id: arxiv:2611.19436
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - structures
+    - spectral
+    event_source: https://arxiv.org/catchup/math-ph/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 作者为带附加节点的量子 Toda 链构造可交换的 Baxter Q 算子族。
+      detail: 移位商给出转移矩阵，系数是对易 Hamilton 量；转移矩阵也可由显式二阶局部 Lax 矩阵乘积表示。
+      method_scope: 构造通过量子簇变换实现，并给出 Q 算子的积分核。
+  - paper_id: arxiv:2611.19423
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 对环面上的耦合 KdV 系统，作者定量刻画混合共振退化所允许的非线性平滑增益。
+      detail: 当 s>−1/2 时，可获得任意小于 min{1,2(2s+1)/3} 的增益。
+      method_scope: 分析结合正规形约化、对偶方法及 Bourgain 空间估计。
+  - paper_id: arxiv:2611.17444
+    signal_date: '2026-11-16'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-16?abs=False&page=1
+    reading_note:
+      lead: 实线修正 Benjamin–Ono 方程在小而局域、无孤子的初值下满足色散衰减估计。
+      detail: 分离正负频率可处理线性项中的非局部 Hilbert 变换。
+      method_scope: 证明结合波包测试、向量场方法和自举估计。
+  - paper_id: arxiv:2611.20341
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 广义 Benjamin–Ono 解在两个不同时刻的空间加权衰减能推出额外的 Sobolev 正则性。
+      detail: 对 1<a<2 的色散指数，还建立加权空间中的持续性和与最优衰减率相关的唯一延拓结论。
+      method_scope: 证明采用加权能量、分数 Laplace 交换子展开和伪微分估计；高权重范围另需均值条件。
+  - paper_id: arxiv:2611.22003
+    signal_date: '2026-11-18'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-18?abs=False&page=1
+    reading_note:
+      lead: 聚焦质量临界分数阶 NLS 的径向负能量强解在有限时间爆破。
+      detail: 在 N≥2、1/2<s<1 的设置下，结果排除了仅在无穷时间增长的另一种可能。
+      method_scope: 作者使用局域 virial 场和预解式估计；当 s≥N/(2N−1) 时还将结论推广到径向能量空间解。
+  - paper_id: arxiv:2611.21462
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - asymptotics
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 作者在充分高维的聚焦能量超临界 NLS 中构造有限时间多泡 II 型爆破解。
+      detail: 在给定 K 个互异点同时形成由正径向驻态控制的集中轮廓，爆破速率的选择消除自相似振荡分支。
+      method_scope: 构造对维数有依赖于非线性幂及构造参数的下界，并使用匹配渐近展开和高阶能量估计。
+  - paper_id: arxiv:2611.23995
+    signal_date: '2026-11-19'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-19?abs=False&page=1
+    reading_note:
+      lead: 二维 Hamilton 型 abcd Boussinesq 系统在指定系数范围内的小径向解具有局部能量衰减。
+      detail: 由此排除小振幅径向时间周期解及驻解。
+      method_scope: 在 b=d、−a 和 −c 均大于 b/9 的情形，修正 virial 泛函给出所需的强制性。
+  - paper_id: arxiv:2611.18159
+    signal_date: '2026-11-16'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/nlin.PS/2026-11-16?abs=False&page=1
+    reading_note:
+      lead: 作者为多空间模式光纤建立多峰孤立波解族，并分析其与基态孤立波的稳定性差异。
+      detail: 多峰态的稳定性依赖参数，裂变可留下结构较简单的多峰态和基态。
+      method_scope: 利用等效势中的轨道求非线性耦合方程的定态轮廓，并考察噪声及对称性破缺的影响。
+  - paper_id: arxiv:2611.18335
+    signal_date: '2026-11-16'
+    signal_type: new-preprint
+    directions:
+    - structures
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-11-16?abs=False&page=1
+    reading_note:
+      lead: 第五 Painlevé 方程的 Bäcklund 变换揭示相同参数下可共存不同特殊解族。
+      detail: 在某些参数处，广义 Umemura 多项式给出的有理解并不包含在修正 Bessel 函数解族内。
+      method_scope: 作者对有理解施加适当变换，并讨论与第三 Painlevé 方程解的关系。
+  - paper_id: arxiv:2611.18247
+    signal_date: '2026-11-16'
+    signal_type: new-preprint
+    directions:
+    - structures
+    event_source: https://arxiv.org/catchup/math-ph/2026-11-16?abs=False&page=1
+    reading_note:
+      lead: 作者完成一类广义 KdV 方程的群分类，涵盖 KdV、mKdV、Harry Dym 和若干紧支孤波方程。
+      detail: 与 Harry Dym 方程等价的成员是该类中唯一具有五维最大 Lie 不变代数的情形。
+      method_scope: 分析以两种独立方式计算等价群，同时刻画分类分支间的额外点等价及低阶特征守恒律。
+  - paper_id: arxiv:2611.20495
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - structures
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 三个扩展 CBS 模型中的前两个在相应非退化参数下可由显式可逆点变换化回经典 CBS 方程。
+      detail: 第三个模型在一般参数下仅多出一个未进入微分算子的坐标。
+      method_scope: 作者识别例外参数情形，并从变换解释已有的指数色散关系。
+  - paper_id: arxiv:2611.20373
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - structures
+    - spectral
+    event_source: https://arxiv.org/catchup/math.QA/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 高秩 Nazarov–Sklyanin Lax 算子为广义 Macdonald 函数给出由分拆组和可添加角标记的谱基。
+      detail: 算子具有反正规分解，并与投影 q-Miura 算子的伴随矩阵共轭。
+      method_scope: 构造在量子环面代数的 Fock 模及辅助多项式空间中进行，并有等变 K 理论实现。
+  - paper_id: arxiv:2611.23366
+    signal_date: '2026-11-19'
+    signal_type: new-preprint
+    directions:
+    - asymptotics
+    - spectral
+    event_source: https://arxiv.org/catchup/hep-th/2026-11-19?abs=False&page=1
+    reading_note:
+      lead: 作者给出 Hermitian 单矩阵模型及其双重缩放极限的一组全局非线性 Stokes 数据和连接公式。
+      detail: 非微扰配分函数由离散 Fourier 型表示组织，跨 Stokes 线时必须同时处理本征值和反本征值扇区。
+      method_scope: 分析追踪多割线谱曲面上的隧穿并用大阶展开与矩阵积分检验。
+  - paper_id: arxiv:2611.22770
+    signal_date: '2026-11-18'
+    signal_type: new-preprint
+    directions:
+    - asymptotics
+    event_source: https://arxiv.org/catchup/math.PR/2026-11-18?abs=False&page=1
+    reading_note:
+      lead: 窄楔初值 KPZ 不动点在一点取异常大值时，受条件影响区域的边缘呈现半 Brown 初值 KPZ 不动点的涨落。
+      detail: 对 x=t√L+O(1) 的窗口，中心化场在任意正时间联合依有限维分布收敛。
+      method_scope: 证明比较窄楔条件多点公式与半 Brown 初值多点公式的渐近。
+  - paper_id: arxiv:2611.21787
+    signal_date: '2026-11-18'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    - structures
+    event_source: https://arxiv.org/catchup/hep-th/2026-11-18?abs=False&page=1
+    reading_note:
+      lead: 对二维大色数 QCD 的 ’t Hooft 方程，作者用 Baxter 差分方程与 Fredholm 表示证明不等夸克质量下介子谱的非简并性。
+      detail: 谱留数和本征函数归一化由特定复点上的 Baxter 解确定。
+      method_scope: 有限秩交换子恒等式将谱行列式与 Q 函数联系起来，并给出适用于更广一类积分算子的机制。
+  - paper_id: arxiv:2611.19517
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - structures
+    event_source: https://arxiv.org/catchup/hep-th/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 作者从四维 Chern–Simons 理论的 Feynman 图推导曲面缺陷所实现的二维可积场论的单圈重整化群流。
+      detail: 对无 Wess–Zumino 项的主手征模型，计算恢复其渐近自由的 β 函数。
+      method_scope: 工作分别处理有序和无序曲面缺陷，并对主手征模型给出两种互补推导。
+  - paper_id: arxiv:2611.26263
+    signal_date: '2026-11-20'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    - structures
+    event_source: https://arxiv.org/catchup/cond-mat.stat-mech/2026-11-20?abs=False&page=1
+    reading_note:
+      lead: 一条可积的平移不变自旋链在少数周期边界对称扇区呈现 Wigner–Dyson 谱统计。
+      detail: 开边界的指数简并在周期边界下分裂，Hilbert 空间的非局部分裂决定谱相关的变化。
+      method_scope: 模型具有 Yang–Baxter 结构，作者据此研究谱统计作为量子混沌判据的局限。
+  - paper_id: arxiv:2611.17928
+    signal_date: '2026-11-16'
+    signal_type: new-preprint
+    directions:
+    - structures
+    event_source: https://arxiv.org/catchup/quant-ph/2026-11-16?abs=False&page=1
+    reading_note:
+      lead: 每个键引入单一耗散通道，可使原本不可积的自旋 1 链具有 Yang–Baxter 可积的无跃迁 Hamilton 量。
+      detail: 开放链出现递增作用范围的守恒荷，作者还求得任意链长的 Liouvillian 谱。
+      method_scope: 构造利用键上损耗的干涉消去反向转化，并分析两组分 Bose–Hubbard 链的对应条件。
+  - paper_id: arxiv:2611.21043
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    event_source: https://arxiv.org/catchup/gr-qc/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 有限个 KdV 守恒积分可通过最大熵矩问题重构黑洞势垒的透射概率。
+      detail: 每个截断阶数的结果保持正性；在 Regge–Wheeler 势上，数值重构与四阶 WKB 近似吻合。
+      method_scope: 方法先用可精确求解的 Pöschl–Teller 势作对照，再用于 Schwarzschild 黑洞轴向扰动。
+  - paper_id: arxiv:2611.24523
+    signal_date: '2026-11-19'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/physics.plasm-ph/2026-11-19?abs=False&page=1
+    reading_note:
+      lead: 离子声孤波的二次 KdV 系数可用有效声压的基本导数表示，其消失标记真正非线性的丧失。
+      detail: 作者用精确 Sagdeev 描述区分双层边界与三次临界点，并得到孤波平顶在逼近双层边界时的对数展宽。
+      method_scope: 结果适用于 Boltzmann 电子与正压离子的流体–Poisson 模型，数值演化检验若干精确波形的有限时间传播。
+  - paper_id: arxiv:2611.20013
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - structures
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 闭定向曲面上正则 SU(3) Toda 系统的 Leray–Schauder 度可在所有参数块中用一条生成函数计算。
+      detail: 度数依赖曲面的 Euler 示性数，非零度数给出相应参数块内的存在性判据。
+      method_scope: 证明控制临界参数处的质量集中类型，再用影子系统的度数与 Morse 指数确定跳跃。
+  - paper_id: arxiv:2611.20376
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - spectral
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 一维分数阶定态 Schrödinger 方程在辅助函数凹性等条件下，全部正解在平移意义下唯一。
+      detail: 线性化算子的核由平移导数张成，正解的 Morse 指数为一。
+      method_scope: 变分论证涵盖若干幂次、对数和饱和非线性，并在附加条件下处理给定质量的唯一性。
+  - paper_id: arxiv:2611.25878
+    signal_date: '2026-11-20'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-20?abs=False&page=1
+    reading_note:
+      lead: 十字形平面波导收缩时，一类定态 NLS 解强收敛到极限图上的定态解。
+      detail: 中央交汇处的横向变化消失，极限同时恢复顶点连续性与 Kirchhoff 匹配条件。
+      method_scope: 作者在对称单调函数锥内作受约束变分，并验证所得极值确实求解原方程。
+  - paper_id: arxiv:2611.24756
+    signal_date: '2026-11-19'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-19?abs=False&page=1
+    reading_note:
+      lead: 带时变延迟边界反馈的非线性 KdV–KdV 系统，对充分小的初值具有唯一全局解并指数稳定。
+      detail: 在区间长度满足限制时，结果给出显式衰减率和初始能量的小量条件。
+      method_scope: 作者结合 Lyapunov 方法与对延迟的时间平移一致的适定性估计。
+  - paper_id: arxiv:2608.16296
+    signal_date: '2026-11-16'
+    signal_type: major-revision
+    directions:
+    - waves
+    - asymptotics
+    event_source: https://arxiv.org/catchup/nlin.SI/2026-11-16?abs=False&page=1
+    reading_note:
+      lead: 修订稿扩展了修正 KP-I 方程退化 lump 的散射分析，给出更多二阶和三阶构型的位置与振幅渐近。
+      detail: 除原有二阶双 lump 外，新版以单独命题处理二阶三 lump 以及三阶三至六 lump 的不同分支。
+      method_scope: 构造采用带谱扰动的广义长波极限，各命题按相位参数条件区分构型，并与 KP-I 振幅修正作比较。
+  - paper_id: arxiv:2611.21061
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 对两个质量分别给定且相互竞争的 NLS 分量，作者构造在势函数非退化临界点附近集中的正多峰解。
+      detail: 两个分量的目标频率可在一定尺度条件下以不同速率变大，作者求得峰位的首项偏移。
+      method_scope: 在一至三维、指定幂次和固定负耦合下，还证明了分离峰集附近的质量集中及乘子的渐近行为。
+  - paper_id: arxiv:2611.25177
+    signal_date: '2026-11-20'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-20?abs=False&page=1
+    reading_note:
+      lead: Sobolev 临界的多分量协作 Schrödinger 系统存在正耦合阈值，区分半平凡与全部分量非零的基态。
+      detail: 各线性系数相同时，有限维约化给出基态能量和非负基态的刻画；超过阈值时基态同步。
+      method_scope: 结果针对 K≥3 的整体 K 体相互作用，并分析有界域与对应的全空间模型。
+  - paper_id: arxiv:2611.24828
+    signal_date: '2026-11-19'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-19?abs=False&page=1
+    reading_note:
+      lead: 临界多分量 Schrödinger 系统在全分量排斥耦合下具有所有分量都非零的最小能量解。
+      detail: 在五、六维光滑有界域上，标量 Brezis–Nirenberg 条件允许任意负耦合；三、四维另需附加条件。
+      method_scope: 强竞争极限由部分分离的变分问题描述。
+  - paper_id: arxiv:2611.20646
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - waves
+    - asymptotics
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 对足够光滑的数据，Klein–Gordon–Schrödinger 系统的非相对论近似在全部正时间保持二阶误差界。
+      detail: 由解耦的线性 Schrödinger–波半极限模型产生振荡轮廓，误差为 O(ε²)。
+      method_scope: 结果适用于至少四维的欧氏空间，ε 与光速的倒数成比例。
+  - paper_id: arxiv:2611.22040
+    signal_date: '2026-11-18'
+    signal_type: new-preprint
+    directions:
+    - waves
+    event_source: https://arxiv.org/catchup/math.AP/2026-11-18?abs=False&page=1
+    reading_note:
+      lead: 作者对两个质量独立给定的协作 NLS 系统构造径向变号作用量基态。
+      detail: 在充分小的正耦合下，该构造覆盖质量正象限内任一固定紧集中的每个质量对。
+      method_scope: 先固定频率在径向结点 Nehari 集上极小化，再经内部极小化选出两组与质量相容的频率。
+  - paper_id: arxiv:2611.21544
+    signal_date: '2026-11-17'
+    signal_type: new-preprint
+    directions:
+    - spectral
+    event_source: https://arxiv.org/catchup/math.SP/2026-11-17?abs=False&page=1
+    reading_note:
+      lead: 作者对一大类单调准周期势证明十个马提尼定理。
+      detail: 核心步骤是为周期近似建立具有多项式量级的谱隙下界。
+      method_scope: 结果将准周期算子的开隙问题与一系列周期谱问题联系起来。
+  - paper_id: arxiv:2603.01132
+    signal_type: journal-publication
+    signal_date: '2026-11-14'
+    directions:
+    - structures
+    event_source: https://doi.org/10.3842/sigma.2026.114
+    reading_note:
+      lead: Krall 型正交多项式的递推关系及二阶微分方程可以用等单值形变系统的特解显式确定。
+      detail: 单跳跃情形产生 Painlevé III 或 V；双跳跃给出 Schlesinger 型偏微分系统。
+      method_scope: 对具有两个相等跳跃的 Gegenbauer 初始权，系统进一步约化到 Painlevé V 的可积情形。
+  - paper_id: arxiv:2605.20338
+    signal_type: journal-publication
+    signal_date: '2026-11-15'
+    directions:
+    - spectral
+    event_source: https://doi.org/10.1007/s00023-026-01781-1
+    reading_note:
+      lead: 作者刻画一类与量子 Toda 链 Baxter 方程相关的高阶线性微分方程的最弱双端衰减量子化条件。
+      detail: 条件可直接写成单值化数据的关系，并证明拓扑弦与谱理论对偶对一族形变 Schrödinger 方程给出的量子化预测。
+      method_scope: 高阶解空间允许多个线性无关解在同一奇点衰减，因此不同衰减要求产生不同的谱边值问题。
+  - paper_id: arxiv:2310.02587
+    signal_type: journal-publication
+    signal_date: '2026-11-14'
+    directions:
+    - structures
+    event_source: https://doi.org/10.1007/s00023-026-01783-z
+    reading_note:
+      lead: 作者用同一套 R 矩阵描述 A 型 qq 特征标及其椭圆推广。
+      detail: 相应的形变 W 代数随表示网络确定，构造的 R 矩阵来自 Ding–Iohara–Miki 代数。
+      method_scope: 方法把 Fock 表示网络与对应规范理论的五膜图联系起来。
+  - paper_id: arxiv:2605.30007
+    signal_type: journal-publication
+    signal_date: '2026-11-16'
+    directions:
+    - structures
+    event_source: https://doi.org/10.1103/x749-5sg4
+    reading_note:
+      lead: 一个具有局部多格点相互作用的自旋二分之一链具有自由费米子谱，并且每个能级都高度简并。
+      detail: 局部守恒量相当于经典背景场，解释额外简并。
+      method_scope: 在无隙参数处，作者借助广义 Yang–Baxter 方程及相应 R 矩阵实现量子逆散射构造并提取守恒荷。
+  - paper_id: doi:10.1088/1572-9494/aec227
+    signal_type: journal-publication
+    signal_date: '2026-11-16'
+    directions:
+    - waves
+    event_source: https://doi.org/10.1088/1572-9494/aec227
+    reading_note:
+      lead: 自诱导宇称–时间对称的非局部 KP 方程具有统一的退化谱参数 Darboux 构造。
+      detail: 从平面波种子出发，作者得到一阶及二阶有理相互作用解，分别展示亮孤子与 M 型结构的相互作用以及含明暗孤子的怪波行为。
+      method_scope: 方法把谱参数退化与 Taylor 展开结合，借助自由参数调整碰撞位置与相移。
+  - paper_id: doi:10.1016/j.wavemoti.2026.103886
+    signal_type: journal-publication
+    signal_date: '2026-11-13'
+    directions:
+    - spectral
+    - waves
+    event_source: https://doi.org/10.1016/j.wavemoti.2026.103886
+    added_on: '2026-11-20'
+    reading_note:
+      lead: 作者在 Weierstrass 椭圆周期背景上构造广义 Sawada–Kotera 方程的非线性波。
+      detail: 椭圆函数的不同退化给出三角、双曲及有理三类极限波形。
+      method_scope: 作者从含椭圆势的三阶谱问题出发，使用 Halphen 方程确定特征函数并施行 Darboux 变换。
+  - paper_id: doi:10.1016/j.wavemoti.2026.103884
+    signal_type: journal-publication
+    signal_date: '2026-11-11'
+    directions:
+    - waves
+    event_source: https://doi.org/10.1016/j.wavemoti.2026.103884
+    added_on: '2026-11-20'
+    reading_note:
+      lead: 对变系数反时空非局部 Gerdjikov–Ivanov 方程，作者构造了多孤子、高阶怪波、高阶呼吸子及其混合局域波解。
+      detail: 从向量方程的 Lax 对构造广义扰动 Darboux 变换，经反时空约化后，分别以零解和平面波为种子得到显式解。
+      method_scope: 数值模拟展示谱参数和时变系数 δ(t) 如何改变波峰轨迹、不同波形的共存方式及碰撞过程。
