@@ -26,7 +26,11 @@ hide:
     <select id="radar-topic-filter" aria-label="研究方向"><option value="">全部方向</option><option value="spectral">散射与谱方法</option><option value="waves">非线性波与稳定性</option><option value="asymptotics">渐近与统计</option><option value="structures">可积结构</option></select>
   </div>
   <div class="radar-custom-dates" hidden><label>从 <input type="date" id="radar-date-from" value="2026-06-15"></label><label>至 <input type="date" id="radar-date-to"></label></div>
-  <div class="radar-filter-footer"><span>当前收录：2026.06—2026.11</span><button type="button" data-radar-action="reset" hidden>清除筛选 ×</button></div>
+</div>
+<div class="radar-filter-footer">
+    <span>当前收录：2026.06—2026.11</span>
+    <button type="button" data-radar-action="reset" hidden>清除筛选 ×</button>
+    <button type="button" class="radar-detail-toggle" hidden>展开</button>
 </div>
 <p class="radar-empty-state" hidden>没有找到匹配论文。试试其他关键词，或清除筛选。</p>
 
@@ -9918,7 +9922,7 @@ hide:
   </details>
 </article>
 
-<nav class="radar-pagination" aria-label="论文分页"><span data-radar-page-info></span><div class="radar-page-controls"><button type="button" data-radar-action="previous" disabled>← 上一页</button><div class="radar-page-picker"><button type="button" id="radar-page-number" class="radar-page-trigger" aria-label="选择页码" aria-expanded="false" aria-controls="radar-page-panel"><strong data-radar-current-page>1</strong><span class="radar-page-total">/ <span data-radar-total-pages>1</span></span><svg class="radar-page-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div id="radar-page-panel" class="radar-page-panel" role="group" aria-label="选择页码" hidden><span class="radar-page-panel-title">跳转到页</span><div class="radar-page-grid"></div></div></div><button type="button" data-radar-action="next">下一页 →</button></div></nav>
+<nav class="radar-pagination" aria-label="论文分页"><span data-radar-page-info></span><div class="radar-page-controls"><button type="button" data-radar-action="previous" aria-keyshortcuts="ArrowLeft" title="上一页（← 键）" disabled>← 上一页</button><div class="radar-page-picker"><button type="button" id="radar-page-number" class="radar-page-trigger" aria-label="选择页码" aria-expanded="false" aria-controls="radar-page-panel"><strong data-radar-current-page>1</strong><span class="radar-page-total">/ <span data-radar-total-pages>1</span></span><svg class="radar-page-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div id="radar-page-panel" class="radar-page-panel" role="group" aria-label="选择页码" hidden><span class="radar-page-panel-title">跳转到页</span><div class="radar-page-grid"></div></div></div><button type="button" data-radar-action="next" aria-keyshortcuts="ArrowRight" title="下一页（→ 键）">下一页 →</button></div></nav>
 
 ## 站内导航
 
