@@ -1533,8 +1533,8 @@
   - Panayotis G. Kevrekidis
   url: https://arxiv.org/abs/2607.01493
   arxiv_id: '2607.01493'
-  doi: null
-  metadata_checked_at: '2026-10-15'
+  doi: 10.1111/sapm.70336
+  metadata_checked_at: '2026-11-27'
   keywords:
   - Lax pair
   arxiv_categories:
@@ -1544,6 +1544,16 @@
   submitted_at: '2026-07-01T21:43:13Z'
   updated: '2026-07-01'
   version: v1
+  journal: Studies in Applied Mathematics
+  year: 2026
+  published: '2026-11-24'
+  volume: '157'
+  issue: '5'
+  article_number: e70336
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.1111/sapm.70336
+    date: '2026-11-24'
+    statement: Publisher-deposited published-online.date-parts = [2026, 11, 24]
 - id: arxiv:2607.01545
   title: Learning Effective Soliton Dynamics from Scattering Data
   authors:
@@ -4441,11 +4451,11 @@
   - Kanehisa Takasaki
   url: https://arxiv.org/abs/2608.24538
   arxiv_id: '2608.24538'
-  doi: null
+  doi: 10.1088/1751-8121/aec295
   submitted: '2026-08-25'
-  updated: '2026-09-04'
-  version: v2
-  metadata_checked_at: '2026-09-07'
+  updated: '2026-11-20'
+  version: v3
+  metadata_checked_at: '2026-11-27'
   keywords:
   - direct linearization
   - Cauchy matrix
@@ -4457,6 +4467,16 @@
   arxiv_categories:
   - nlin.SI
   - math-ph
+  journal: 'Journal of Physics A: Mathematical and Theoretical'
+  year: 2026
+  published: '2026-11-25'
+  volume: '59'
+  issue: '47'
+  pages: '475201'
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.1088/1751-8121/aec295
+    date: '2026-11-25'
+    statement: Publisher-deposited published-online.date-parts = [2026, 11, 25]
 - id: arxiv:2608.24613
   title: Transport interpretation of entanglement Hamiltonian cumulants in integrable quantum quenches
   authors:
@@ -8975,9 +8995,9 @@
   arxiv_id: '2610.26436'
   submitted: '2026-10-19'
   submitted_at: '2026-10-19T13:58:09Z'
-  updated: '2026-11-02'
-  version: v2
-  metadata_checked_at: '2026-11-04'
+  updated: '2026-11-20'
+  version: v3
+  metadata_checked_at: '2026-11-27'
   doi: null
   arxiv_categories:
   - nlin.PS
@@ -10780,17 +10800,17 @@
   arxiv_id: '2610.39938'
   submitted: '2026-10-29'
   submitted_at: '2026-10-29T12:37:27Z'
-  updated: '2026-10-29'
-  version: v1
-  metadata_checked_at: '2026-10-31'
+  updated: '2026-11-23'
+  version: v2
+  metadata_checked_at: '2026-11-27'
   arxiv_categories:
   - nlin.SI
   - math.AP
   doi: null
   keywords:
-  - two-component modified Camassa-Holm
-  - step-like boundary
-  - Riemann-Hilbert
+  - two-component modified Camassa–Holm
+  - step-like background
+  - reflectionless
 - id: arxiv:2610.38116
   title: Generation of discrete breathers from linear to nonlinear Anderson disorder in electrical lattices
   authors:
@@ -11210,9 +11230,9 @@
   doi: null
   submitted: '2026-10-30'
   submitted_at: '2026-10-30T10:47:47Z'
-  updated: '2026-10-30'
-  version: v1
-  metadata_checked_at: '2026-11-04'
+  updated: '2026-11-24'
+  version: v2
+  metadata_checked_at: '2026-11-27'
   arxiv_categories:
   - math.AP
   keywords:
@@ -11931,11 +11951,18 @@
   journal: 'Journal of Physics A: Mathematical and Theoretical'
   year: 2026
   published: '2026-11-03'
-  metadata_checked_at: '2026-11-04'
+  metadata_checked_at: '2026-11-27'
   keywords:
   - massive Thirring model
   - discrete KP
   - nonzero boundary conditions
+  volume: '59'
+  issue: '46'
+  pages: '465201'
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.1088/1751-8121/aebcf1
+    date: '2026-11-03'
+    statement: 'Archived November 4 Crossref publisher deposit: published-online 2026-11-03. Volume assignment and VOR metadata verified November 27.'
 - id: doi:10.1007/s11071-026-13117-z
   url: https://doi.org/10.1007/s11071-026-13117-z
   title: An integrable variant of the (2+1)-dimensional generalized Toda lattice equation
@@ -13652,13 +13679,13 @@
   doi: null
   submitted: '2026-11-18'
   submitted_at: '2026-11-18T18:42:48Z'
-  updated: '2026-11-18'
-  version: v1
-  metadata_checked_at: '2026-11-20'
+  updated: '2026-11-22'
+  version: v2
+  metadata_checked_at: '2026-11-27'
   arxiv_categories:
   - math.AP
   keywords:
-  - cubic NLS
+  - defocusing NLS
   - energy cascade
   - two-torus
 - id: arxiv:2611.18203
@@ -13805,9 +13832,9 @@
   doi: null
   submitted: '2026-11-18'
   submitted_at: '2026-11-18T07:40:53Z'
-  updated: '2026-11-18'
-  version: v1
-  metadata_checked_at: '2026-11-20'
+  updated: '2026-11-25'
+  version: v2
+  metadata_checked_at: '2026-11-27'
   arxiv_categories:
   - math.AP
   keywords:
@@ -13966,9 +13993,9 @@
   doi: null
   submitted: '2026-11-16'
   submitted_at: '2026-11-16T19:10:04Z'
-  updated: '2026-11-16'
-  version: v1
-  metadata_checked_at: '2026-11-20'
+  updated: '2026-11-24'
+  version: v2
+  metadata_checked_at: '2026-11-27'
   arxiv_categories:
   - hep-th
   - math-ph
@@ -14499,3 +14526,1354 @@
     date: '2026-11-11'
     statement: Available online 11 November 2026
     unassigned: [issue]
+- id: arxiv:2611.34522
+  arxiv_id: '2611.34522'
+  url: https://arxiv.org/abs/2611.34522
+  title: Inverse scattering transform for the $N$-component Gerdjikov-Ivanov equation with nonzero boundary conditions
+  authors:
+  - Feng Zhang
+  - Kun Zhu
+  - Yi Zhang
+  submitted: '2026-11-25'
+  submitted_at: '2026-11-25T15:11:11Z'
+  updated: '2026-11-25'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.SI
+  doi: null
+  keywords:
+  - Gerdjikov–Ivanov
+  - nonzero boundary
+  - inverse scattering
+- id: arxiv:2611.29357
+  arxiv_id: '2611.29357'
+  url: https://arxiv.org/abs/2611.29357
+  title: Realizability and tunability of synchronized optical soliton collision patterns
+  authors:
+  - Bo-Jie Deng
+  - Rui Guo
+  - Jia-Xue Niu
+  - Jian-Wen Zhang
+  submitted: '2026-11-22'
+  submitted_at: '2026-11-22T09:45:15Z'
+  updated: '2026-11-22'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.PS
+  doi: null
+  keywords:
+  - focusing NLS
+  - multisoliton collision
+  - discrete spectrum
+- id: arxiv:2611.27045
+  arxiv_id: '2611.27045'
+  url: https://arxiv.org/abs/2611.27045
+  title: Algebraic dark solitons versus rogue waves in the massive Thirring model
+  authors:
+  - Zhen Zhao
+  - Dmitry E. Pelinovsky
+  submitted: '2026-11-20'
+  submitted_at: '2026-11-20T03:17:22Z'
+  updated: '2026-11-20'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.PS
+  - math-ph
+  - math.AP
+  - nlin.SI
+  doi: null
+  keywords:
+  - massive Thirring
+  - algebraic dark soliton
+  - rogue wave
+- id: arxiv:2611.29251
+  arxiv_id: '2611.29251'
+  url: https://arxiv.org/abs/2611.29251
+  title: Persistence and Breakdown of the Initial Gaussian Rate Function for 1D Quasi-Periodic Cubic NLS
+  authors:
+  - Fei Xu
+  - Yong Li
+  submitted: '2026-11-22'
+  submitted_at: '2026-11-22T05:45:09Z'
+  updated: '2026-11-22'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  - math.PR
+  doi: null
+  keywords:
+  - cubic NLS
+  - Akhmediev breather
+  - large deviations
+- id: arxiv:2611.31500
+  arxiv_id: '2611.31500'
+  url: https://arxiv.org/abs/2611.31500
+  title: Airy Path Integral Representation for the Kadomtsev-Petviashvili Equation
+  authors:
+  - Jeremy Quastel
+  - C. Alexander Rodriguez
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T20:09:42Z'
+  updated: '2026-11-23'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  - math.PR
+  - nlin.SI
+  doi: null
+  keywords:
+  - KP-II
+  - Airy line ensemble
+  - path integral
+- id: arxiv:2611.29931
+  arxiv_id: '2611.29931'
+  url: https://arxiv.org/abs/2611.29931
+  title: Space-time almost periodicity for the defocusing NLS hierarchy via local Toeplitz operators
+  authors:
+  - Shuo Zhang
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T02:44:06Z'
+  updated: '2026-11-23'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  - math.SP
+  doi: null
+  keywords:
+  - defocusing NLS hierarchy
+  - reflectionless
+  - Toeplitz
+- id: arxiv:2611.30080
+  arxiv_id: '2611.30080'
+  url: https://arxiv.org/abs/2611.30080
+  title: Integrable discretization of the Maxwell-Bloch equations
+  authors:
+  - I. Kuk
+  - I. Gabitov
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T05:40:19Z'
+  updated: '2026-11-23'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.SI
+  - physics.optics
+  doi: null
+  keywords:
+  - Maxwell–Bloch
+  - integrable discretization
+  - Lax pair
+- id: arxiv:2611.27036
+  arxiv_id: '2611.27036'
+  url: https://arxiv.org/abs/2611.27036
+  title: Nonlinear stability of periodic waves in the Benjamin-Ono equation
+  authors:
+  - Jinbing Chen
+  - Colin Grant
+  - Dmitry E. Pelinovsky
+  submitted: '2026-11-20'
+  submitted_at: '2026-11-20T03:09:06Z'
+  updated: '2026-11-20'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  - math-ph
+  - math.DS
+  - nlin.PS
+  - nlin.SI
+  doi: null
+  keywords:
+  - Benjamin–Ono
+  - periodic wave
+  - orbital stability
+- id: arxiv:2611.29831
+  arxiv_id: '2611.29831'
+  url: https://arxiv.org/abs/2611.29831
+  title: Baker-Akhiezer realization and reconstruction for three-wave interactions in canonical multiwave Hamiltonian
+  authors:
+  - Graham Hesketh
+  submitted: '2026-11-22'
+  submitted_at: '2026-11-22T23:20:30Z'
+  updated: '2026-11-22'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.SI
+  doi: null
+  keywords:
+  - Baker–Akhiezer
+  - three-wave interaction
+  - algebraic curve
+- id: arxiv:2611.34454
+  arxiv_id: '2611.34454'
+  url: https://arxiv.org/abs/2611.34454
+  title: Solitons as conversion events in quadratic crystals
+  authors:
+  - Francesco Beccarini
+  - Claudio Conti
+  submitted: '2026-11-25'
+  submitted_at: '2026-11-25T14:30:38Z'
+  updated: '2026-11-25'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - physics.optics
+  - nlin.SI
+  doi: null
+  keywords:
+  - three-wave interaction
+  - quadratic crystal
+  - scattering poles
+- id: arxiv:2611.27906
+  arxiv_id: '2611.27906'
+  url: https://arxiv.org/abs/2611.27906
+  title: Quasi-stationary solutions of the dP$_\text{I}$ equation
+  authors:
+  - V.E. Adler
+  - B.I. Suleimanov
+  submitted: '2026-11-20'
+  submitted_at: '2026-11-20T17:47:07Z'
+  updated: '2026-11-20'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.SI
+  doi: null
+  keywords:
+  - discrete Painlevé I
+  - Painlevé IV
+  - Hastings–McLeod
+- id: arxiv:2611.27049
+  arxiv_id: '2611.27049'
+  url: https://arxiv.org/abs/2611.27049
+  title: 'Inverse scattering for the one-dimensional discrete Schrödinger operator: a computational perspective'
+  authors:
+  - Peter C. Gibson
+  - Basant Lal Sharma
+  submitted: '2026-11-20'
+  submitted_at: '2026-11-20T03:18:31Z'
+  updated: '2026-11-20'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.NA
+  - math-ph
+  doi: null
+  keywords:
+  - discrete Schrödinger
+  - Jacobi matrix
+  - inverse scattering
+- id: arxiv:2611.31754
+  arxiv_id: '2611.31754'
+  url: https://arxiv.org/abs/2611.31754
+  title: Modified wave operators for the critical long-range nonlinear Schrödinger equation
+  authors:
+  - Jia Shen
+  - Yifei Wu
+  submitted: '2026-11-24'
+  submitted_at: '2026-11-24T01:00:39Z'
+  updated: '2026-11-24'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - long-range NLS
+  - modified wave operators
+- id: arxiv:2611.34274
+  arxiv_id: '2611.34274'
+  url: https://arxiv.org/abs/2611.34274
+  title: Global well-posedness for the focusing Gross-Pitaevskii equation in the one-dimensional Zhidkov space
+  authors:
+  - Agissilaos G. Athanassoulis
+  submitted: '2026-11-25'
+  submitted_at: '2026-11-25T12:34:44Z'
+  updated: '2026-11-25'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - focusing Gross–Pitaevskii
+  - Zhidkov space
+  - global well-posedness
+- id: arxiv:2611.31846
+  arxiv_id: '2611.31846'
+  url: https://arxiv.org/abs/2611.31846
+  title: 'Spatial switching near a four-loop homoclinic bouquet: a mechanism for multi-bump bound states in coupled nonlinear Schrödinger systems'
+  authors:
+  - Sajjad Bakrani
+  submitted: '2026-11-24'
+  submitted_at: '2026-11-24T02:40:27Z'
+  updated: '2026-11-24'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.DS
+  - math-ph
+  - nlin.PS
+  - physics.optics
+  doi: null
+  keywords:
+  - coupled NLS
+  - homoclinic orbits
+  - multi-bump bound states
+- id: arxiv:2611.31489
+  arxiv_id: '2611.31489'
+  url: https://arxiv.org/abs/2611.31489
+  title: Higher-symmetry selection rules for second- and third-harmonic radiation in the Bullough-Dodd model
+  authors:
+  - Andreas Fring
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T20:02:22Z'
+  updated: '2026-11-23'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.PS
+  - math-ph
+  - nlin.SI
+  doi: null
+  keywords:
+  - Bullough–Dodd
+  - higher symmetry
+  - harmonic radiation
+- id: arxiv:2611.30484
+  arxiv_id: '2611.30484'
+  url: https://arxiv.org/abs/2611.30484
+  title: Weakly Nonlinear Whitham Modulation and Dispersive Shock Waves in the Modified Gardner Equation
+  authors:
+  - Nese Ozdemir
+  - Ali Demirci
+  - Ayse Peker Dobie
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T11:06:54Z'
+  updated: '2026-11-23'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.PS
+  - nlin.SI
+  doi: null
+  keywords:
+  - Gardner
+  - Whitham modulation
+  - dispersive shock
+- id: arxiv:2611.30313
+  arxiv_id: '2611.30313'
+  url: https://arxiv.org/abs/2611.30313
+  title: Dark and bright solitons in a multimodal lithium tantalate microresonator
+  authors:
+  - Huizong Zhu
+  - Yuyao Guo
+  - Xiangfei Cheng
+  - Yiqun Wu
+  - Juanjuan Lu
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T08:58:20Z'
+  updated: '2026-11-25'
+  version: v2
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - physics.optics
+  - nlin.PS
+  doi: null
+  keywords:
+  - microresonator
+  - bright soliton
+  - dark pulse
+- id: arxiv:2611.31192
+  arxiv_id: '2611.31192'
+  url: https://arxiv.org/abs/2611.31192
+  title: Self-similar solutions for capillary water waves
+  authors:
+  - Alvaro Carballeira
+  - Gerard Castro-López
+  - Eduardo García-Juárez
+  - Javier Gómez-Serrano
+  - Marcus Pasquariello
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T18:43:24Z'
+  updated: '2026-11-23'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - capillary water waves
+  - self-similarity
+  - singularity
+- id: arxiv:2611.27928
+  arxiv_id: '2611.27928'
+  url: https://arxiv.org/abs/2611.27928
+  title: From Giant Vortex States to Bright Solitons in Rapidly Rotating Bose--Einstein Condensates with Attractive Interactions
+  authors:
+  - Michele Correggi
+  - Yujin Guo
+  - Yong Luo
+  submitted: '2026-11-20'
+  submitted_at: '2026-11-20T18:01:46Z'
+  updated: '2026-11-20'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math-ph
+  doi: null
+  keywords:
+  - Bose–Einstein condensate
+  - giant vortex
+  - bright soliton
+- id: arxiv:2611.26635
+  arxiv_id: '2611.26635'
+  url: https://arxiv.org/abs/2611.26635
+  title: Nonexistence of $(1,6)$-sign soliton solutions for the damped nonlinear Klein--Gordon equation in 2D
+  authors:
+  - Kenjiro Ishizuka
+  submitted: '2026-10-12'
+  submitted_at: '2026-10-12T02:42:07Z'
+  updated: '2026-10-12'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - damped Klein–Gordon
+  - multisolitons
+  - nonexistence
+- id: arxiv:2611.29575
+  arxiv_id: '2611.29575'
+  url: https://arxiv.org/abs/2611.29575
+  title: Small-time global exact controllability of nonlinear Schrödinger equations on the circle with bilinear controls
+  authors:
+  - Vahagn Nersesyan
+  submitted: '2026-11-22'
+  submitted_at: '2026-11-22T15:54:29Z'
+  updated: '2026-11-22'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.OC
+  - math.AP
+  doi: null
+  keywords:
+  - bilinear control
+  - periodic NLS
+  - exact controllability
+- id: arxiv:2611.29569
+  arxiv_id: '2611.29569'
+  url: https://arxiv.org/abs/2611.29569
+  title: Approximate controllability in Sobolev spaces of periodic nonlinear Schrödinger equations with bilinear controls
+  authors:
+  - Vahagn Nersesyan
+  submitted: '2026-11-22'
+  submitted_at: '2026-11-22T15:49:06Z'
+  updated: '2026-11-22'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - torus NLS
+  - approximate controllability
+  - winding
+- id: arxiv:2611.28561
+  arxiv_id: '2611.28561'
+  url: https://arxiv.org/abs/2611.28561
+  title: Regularization for the inhomogeneous nonlinear Schrödinger equation in one dimension
+  authors:
+  - Ruobing Bai
+  - Luccas Campos
+  - Cui Ning
+  submitted: '2026-11-21'
+  submitted_at: '2026-11-21T04:32:22Z'
+  updated: '2026-11-21'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - inhomogeneous NLS
+  - normal form
+  - smoothing
+- id: arxiv:2611.33122
+  arxiv_id: '2611.33122'
+  url: https://arxiv.org/abs/2611.33122
+  title: Low-regularity evolution and control for the nonlinear Schrödinger equation with singular bilinear interactions
+  authors:
+  - Rémi Buffe
+  - Alessandro Duca
+  - Tristan Robert
+  submitted: '2026-11-24'
+  submitted_at: '2026-11-24T18:50:08Z'
+  updated: '2026-11-24'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - bilinear control
+  - singular potential
+  - periodic NLS
+- id: arxiv:2611.33967
+  arxiv_id: '2611.33967'
+  url: https://arxiv.org/abs/2611.33967
+  title: Scattering for the defocusing two-dimensional NLS with an Aharonov-Bohm magnetic potential
+  authors:
+  - Luca Fanelli
+  - Vladimir Georgiev
+  - Sandra Lucente
+  - Nicola Visciglia
+  submitted: '2026-11-25'
+  submitted_at: '2026-11-25T08:30:19Z'
+  updated: '2026-11-25'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - magnetic NLS
+  - Aharonov–Bohm
+  - scattering
+- id: arxiv:2611.33944
+  arxiv_id: '2611.33944'
+  url: https://arxiv.org/abs/2611.33944
+  title: Energy cascade spectrum in wave turbulence of a two-dimensional quantum fluid
+  authors:
+  - Ying Zhu
+  - Jason Laurie
+  - Giorgio Krstulovic
+  - Sergey Nazarenko
+  submitted: '2026-11-25'
+  submitted_at: '2026-11-25T08:05:27Z'
+  updated: '2026-11-25'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - physics.flu-dyn
+  - cond-mat.quant-gas
+  - nlin.CD
+  doi: null
+  keywords:
+  - Gross–Pitaevskii
+  - wave turbulence
+  - energy cascade
+- id: arxiv:2611.26634
+  arxiv_id: '2611.26634'
+  url: https://arxiv.org/abs/2611.26634
+  title: Almost-sure quenched KAM tori for nonlinear wave equations with a spatial white-noise potential
+  authors:
+  - Yingdu Dong
+  - Wenwen Jian
+  - Xiaoping Yuan
+  submitted: '2026-10-12'
+  submitted_at: '2026-10-12T02:09:18Z'
+  updated: '2026-10-12'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  - math.DS
+  doi: null
+  keywords:
+  - random Schrödinger
+  - KAM
+  - invariant tori
+- id: arxiv:2611.27755
+  arxiv_id: '2611.27755'
+  url: https://arxiv.org/abs/2611.27755
+  title: Hankel determinants of Motzkin path generating functions and the Hirota-Miwa equation
+  authors:
+  - Haiming Sun
+  submitted: '2026-11-20'
+  submitted_at: '2026-11-20T15:44:20Z'
+  updated: '2026-11-20'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.CO
+  doi: null
+  keywords:
+  - Hirota–Miwa
+  - Hankel determinant
+  - Motzkin paths
+- id: arxiv:2611.32744
+  arxiv_id: '2611.32744'
+  url: https://arxiv.org/abs/2611.32744
+  title: Baker-Akhiezer functions for Koornwinder-van Diejen integrable system
+  authors:
+  - Liudmila Bishler
+  submitted: '2026-11-24'
+  submitted_at: '2026-11-24T14:56:37Z'
+  updated: '2026-11-24'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - hep-th
+  - math-ph
+  - math.QA
+  doi: null
+  keywords:
+  - Baker–Akhiezer
+  - Koornwinder–van Diejen
+  - root systems
+- id: arxiv:2611.30433
+  arxiv_id: '2611.30433'
+  url: https://arxiv.org/abs/2611.30433
+  title: 'Darboux transformation for the ASDYM equations: Solitons and instantons'
+  authors:
+  - Shangshuai Li
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T10:26:10Z'
+  updated: '2026-11-23'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - hep-th
+  - math-ph
+  - nlin.SI
+  doi: null
+  keywords:
+  - anti-self-dual Yang–Mills
+  - Darboux
+  - Grassmannian
+- id: arxiv:2611.29351
+  arxiv_id: '2611.29351'
+  url: https://arxiv.org/abs/2611.29351
+  title: A Novel Algebraic Approach to Medium-Range Solvable Models
+  authors:
+  - Yuan Miao
+  - Kohei Fukai
+  submitted: '2026-11-22'
+  submitted_at: '2026-11-22T09:39:51Z'
+  updated: '2026-11-22'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math-ph
+  - cond-mat.stat-mech
+  - nlin.SI
+  doi: null
+  keywords:
+  - Yang–Baxter
+  - Baxterisation
+  - medium-range spin chains
+- id: arxiv:2611.31417
+  arxiv_id: '2611.31417'
+  url: https://arxiv.org/abs/2611.31417
+  title: 'A spin chain as a deformed conformal field theory: an ODE/IM approach'
+  authors:
+  - Sujay K. Ashok
+  - Nicolò Primi
+  - Roberto Tateo
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T19:07:35Z'
+  updated: '2026-11-23'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - hep-th
+  doi: null
+  keywords:
+  - ODE/IM
+  - XXZ
+  - Baxter
+- id: arxiv:2611.31303
+  arxiv_id: '2611.31303'
+  url: https://arxiv.org/abs/2611.31303
+  title: Exact nonstationary heat-excess statistics in the weakly asymmetric Kipnis--Marchioro--Presutti model
+  authors:
+  - Baruch Meerson
+  submitted: '2026-11-22'
+  submitted_at: '2026-11-22T08:16:48Z'
+  updated: '2026-11-22'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - nlin.SI
+  doi: null
+  keywords:
+  - Kipnis–Marchioro–Presutti
+  - large deviations
+  - canonical transformation
+- id: arxiv:2611.34628
+  arxiv_id: '2611.34628'
+  url: https://arxiv.org/abs/2611.34628
+  title: The Zero Mode Constraint in the Dirac-Bergmann Analysis of Kadomtsev-Petviashvili Type Equations
+  authors:
+  - Ali Pazarci
+  submitted: '2026-11-25'
+  submitted_at: '2026-11-25T16:14:47Z'
+  updated: '2026-11-25'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math-ph
+  - hep-th
+  - nlin.SI
+  doi: null
+  keywords:
+  - KP
+  - zero mode
+  - Dirac bracket
+- id: arxiv:2611.33199
+  arxiv_id: '2611.33199'
+  url: https://arxiv.org/abs/2611.33199
+  title: Point Equivalence, Lie Symmetries, and Laurent Compatibility of the Time-Dependent Modified Dispersive Water-Wave System
+  authors:
+  - Manjit Singh
+  submitted: '2026-11-16'
+  submitted_at: '2026-11-16T12:09:36Z'
+  updated: '2026-11-16'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.PS
+  - math-ph
+  - nlin.SI
+  doi: null
+  keywords:
+  - modified dispersive water waves
+  - point equivalence
+  - Painlevé test
+- id: arxiv:2611.29196
+  arxiv_id: '2611.29196'
+  url: https://arxiv.org/abs/2611.29196
+  title: Ordering error estimates under mesh-uniform regularity and optimal two-mesh design for the KdV equation with boundary dissipation
+  authors:
+  - Kangsheng Liu
+  submitted: '2026-11-22'
+  submitted_at: '2026-11-22T03:40:15Z'
+  updated: '2026-11-22'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.NA
+  - math.AP
+  - math.OC
+  doi: null
+  keywords:
+  - KdV
+  - Galerkin
+  - error estimates
+- id: arxiv:2611.29381
+  arxiv_id: '2611.29381'
+  url: https://arxiv.org/abs/2611.29381
+  title: 'Gaussian Belief Propagation and Periodic Jacobi Matrices on Trees: Spectral Curve, Antibound Poles, and Fixed Points'
+  authors:
+  - Yusuke Watanabe
+  submitted: '2026-11-22'
+  submitted_at: '2026-11-22T10:51:20Z'
+  updated: '2026-11-22'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.SP
+  - cs.AI
+  - math-ph
+  doi: null
+  keywords:
+  - Jacobi operator
+  - Green function
+  - spectral curve
+- id: arxiv:2611.33274
+  arxiv_id: '2611.33274'
+  url: https://arxiv.org/abs/2611.33274
+  title: Theory of Anomalous Diffusion and Superdiffusion in Integrable Spin Chains
+  authors:
+  - Jitendra Kethepalli
+  - Andrew Urilyon
+  - Jacopo De Nardis
+  submitted: '2026-11-24'
+  submitted_at: '2026-11-24T19:00:01Z'
+  updated: '2026-11-24'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - cond-mat.stat-mech
+  - cond-mat.quant-gas
+  - quant-ph
+  doi: null
+  keywords:
+  - integrable spin chains
+  - KPZ
+  - current fluctuations
+- id: arxiv:2611.32280
+  arxiv_id: '2611.32280'
+  url: https://arxiv.org/abs/2611.32280
+  title: Relaxation dynamics of the impurity momentum in a one-dimensional Fermi gas
+  authors:
+  - Felipe Taha Sant'Ana
+  submitted: '2026-11-24'
+  submitted_at: '2026-11-24T09:44:59Z'
+  updated: '2026-11-24'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - cond-mat.quant-gas
+  - cond-mat.stat-mech
+  - math-ph
+  - nlin.SI
+  doi: null
+  keywords:
+  - Bethe ansatz
+  - mobile impurity
+  - Fredholm determinant
+- id: arxiv:2611.34110
+  arxiv_id: '2611.34110'
+  url: https://arxiv.org/abs/2611.34110
+  title: Colored Jones polynomial of figure eight knot and non-perturbative topological recursion
+  authors:
+  - Alexander Hock
+  - Sergey Shadrin
+  submitted: '2026-11-25'
+  submitted_at: '2026-11-25T10:13:46Z'
+  updated: '2026-11-25'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math-ph
+  - hep-th
+  - math.AG
+  - math.GT
+  - nlin.SI
+  doi: null
+  keywords:
+  - colored Jones polynomial
+  - topological recursion
+  - elliptic curve
+- id: arxiv:2611.28444
+  arxiv_id: '2611.28444'
+  url: https://arxiv.org/abs/2611.28444
+  title: 'Integrable Orbital Exchange between Ellipsoidally Deformed $p$, $d$, and $f$ Electron States: Two-Angle Sklyanin Representations and Fused Elliptic
+    $R$-Matrices'
+  authors:
+  - Vladimir Mikhalev
+  submitted: '2026-11-21'
+  submitted_at: '2026-11-21T00:47:22Z'
+  updated: '2026-11-21'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math-ph
+  - cond-mat.str-el
+  doi: null
+  keywords:
+  - Sklyanin algebra
+  - elliptic R-matrix
+  - spin chain
+- id: arxiv:2611.27706
+  arxiv_id: '2611.27706'
+  url: https://arxiv.org/abs/2611.27706
+  title: Projectivized ASEP-Bethe system and counting solutions
+  authors:
+  - Shinsuke Iwao
+  submitted: '2026-11-20'
+  submitted_at: '2026-11-20T15:11:30Z'
+  updated: '2026-11-20'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AG
+  - math-ph
+  doi: null
+  keywords:
+  - ASEP
+  - Bethe roots
+  - intersection theory
+- id: arxiv:2611.31742
+  arxiv_id: '2611.31742'
+  url: https://arxiv.org/abs/2611.31742
+  title: Mechanisms of turnkey soliton generation in self-injection-locked photonic-crystal ring resonators
+  authors:
+  - Naoya Kuse
+  submitted: '2026-11-24'
+  submitted_at: '2026-11-24T00:54:50Z'
+  updated: '2026-11-24'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - physics.optics
+  doi: null
+  keywords:
+  - Kerr solitons
+  - Lugiato–Lefever
+  - modulation instability
+- id: arxiv:2611.34685
+  arxiv_id: '2611.34685'
+  url: https://arxiv.org/abs/2611.34685
+  title: Numerical analysis of a conservative Crank-Nicolson scheme for quasilinear Gross-Pitaevskii equations
+  authors:
+  - Sebastián Tapia-Mandiola
+  submitted: '2026-11-25'
+  submitted_at: '2026-11-25T16:46:53Z'
+  updated: '2026-11-25'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.NA
+  - math.AP
+  doi: null
+  keywords:
+  - Gross–Pitaevskii
+  - Crank–Nicolson
+  - conservative scheme
+- id: arxiv:2603.02855
+  arxiv_id: '2603.02855'
+  url: https://arxiv.org/abs/2603.02855
+  title: Direct Scattering of the Focusing Nonlinear Schrödinger Equation with Step-like Oscillatory Initial Data
+  authors:
+  - Tamara Grava
+  - Robert Jenkins
+  - Xiaofan Zhang
+  - Zechuan Zhang
+  submitted: '2026-03-03'
+  submitted_at: '2026-03-03T11:04:51Z'
+  updated: '2026-11-24'
+  version: v2
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  - math-ph
+  doi: null
+  keywords:
+  - focusing NLS
+  - step-like elliptic background
+  - Riemann–Hilbert
+- id: arxiv:2609.05483
+  arxiv_id: '2609.05483'
+  url: https://arxiv.org/abs/2609.05483
+  title: Comment on "Space-time shifted solitons and solution interactions for a generalized nonlocal nonlinear Schrödinger equation"
+  authors:
+  - Aslı Pekcan
+  submitted: '2026-08-23'
+  submitted_at: '2026-08-23T20:25:12Z'
+  updated: '2026-11-22'
+  version: v2
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.SI
+  doi: null
+  keywords:
+  - nonlocal NLS
+  - Hirota expansion
+  - shifted reduction
+- id: arxiv:2402.18347
+  arxiv_id: '2402.18347'
+  url: https://arxiv.org/abs/2402.18347
+  title: Classification of solutions to the energy-critical complex Ginzburg-Landau equation and application to NLS
+  authors:
+  - Xing Cheng
+  - Chang-Yu Guo
+  - Yunrui Zheng
+  submitted: '2024-02-28'
+  submitted_at: '2024-02-28T14:13:28Z'
+  updated: '2026-11-24'
+  version: v2
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - critical Ginzburg–Landau
+  - focusing NLS
+  - threshold dynamics
+- id: arxiv:2611.27619
+  arxiv_id: '2611.27619'
+  url: https://arxiv.org/abs/2611.27619
+  title: Local well-posedness for generalized inhomogeneous nonlinear Schrödinger equations
+  authors:
+  - Kohei Inada
+  submitted: '2026-11-20'
+  submitted_at: '2026-11-20T13:47:56Z'
+  updated: '2026-11-20'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - inhomogeneous NLS
+  - local well-posedness
+  - Lorentz spaces
+- id: arxiv:2611.28568
+  arxiv_id: '2611.28568'
+  url: https://arxiv.org/abs/2611.28568
+  title: Superintegrable Systems and the Tractor Connection
+  authors:
+  - Simon C. W. Goodwin
+  - A. Rod Gover
+  - Jonathan M. Kress
+  submitted: '2026-11-21'
+  submitted_at: '2026-11-21T04:58:20Z'
+  updated: '2026-11-25'
+  version: v2
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.DG
+  doi: null
+  keywords:
+  - superintegrability
+  - conformal Killing tensor
+  - tractor calculus
+- id: arxiv:2611.32994
+  arxiv_id: '2611.32994'
+  url: https://arxiv.org/abs/2611.32994
+  title: Large-time existence for the gravity water waves equations
+  authors:
+  - Théo Fradin
+  - Benjamin Melinand
+  submitted: '2026-11-24'
+  submitted_at: '2026-11-24T17:24:12Z'
+  updated: '2026-11-24'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - gravity water waves
+  - shallow water
+  - long-time existence
+- id: arxiv:2611.29024
+  arxiv_id: '2611.29024'
+  url: https://arxiv.org/abs/2611.29024
+  title: The marginal sine-Gordon field theory
+  authors:
+  - Dyuman Bhattacharya
+  submitted: '2026-11-21'
+  submitted_at: '2026-11-21T20:14:52Z'
+  updated: '2026-11-21'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math-ph
+  doi: null
+  keywords:
+  - sine–Gordon
+  - continuum limit
+  - mass gap
+- id: arxiv:2611.26632
+  arxiv_id: '2611.26632'
+  url: https://arxiv.org/abs/2611.26632
+  title: Symmetry, boundary conditions, and the Noether correspondence of the Zakharov--Kuznetsov equation
+  authors:
+  - Yuichiro Shimazaki
+  submitted: '2026-09-29'
+  submitted_at: '2026-09-29T03:37:55Z'
+  updated: '2026-09-29'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  - hep-th
+  - math-ph
+  doi: null
+  keywords:
+  - Zakharov–Kuznetsov
+  - conservation laws
+  - Noether correspondence
+- id: arxiv:2611.32150
+  arxiv_id: '2611.32150'
+  url: https://arxiv.org/abs/2611.32150
+  title: 'Resolvent reconstruction of minimal strings beyond KdV II: D series models'
+  authors:
+  - Wasif Ahmed
+  - Joydeep Naskar
+  submitted: '2026-11-24'
+  submitted_at: '2026-11-24T08:04:55Z'
+  updated: '2026-11-24'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - hep-th
+  doi: null
+  keywords:
+  - D-series minimal strings
+  - resolvent
+  - reduced KP
+- id: arxiv:2611.29927
+  arxiv_id: '2611.29927'
+  url: https://arxiv.org/abs/2611.29927
+  title: Blow-up phenomena and ill-posedness for the 2D Euler-Poincaré equations
+  authors:
+  - Wei Luo
+  - Zhaoyang Yin
+  - Pei Zheng
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T02:29:11Z'
+  updated: '2026-11-23'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math.AP
+  doi: null
+  keywords:
+  - Euler–Poincaré
+  - critical norm inflation
+  - blow-up
+- id: arxiv:2611.34444
+  arxiv_id: '2611.34444'
+  url: https://arxiv.org/abs/2611.34444
+  title: Black hole entropy from angular holonomies of Sine-Gordon soliton lattices in AdS$_3$
+  authors:
+  - Marcela Cárdenas
+  - Francisco Correa
+  - Nicolás Salazar
+  submitted: '2026-11-25'
+  submitted_at: '2026-11-25T14:24:49Z'
+  updated: '2026-11-25'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - hep-th
+  - gr-qc
+  - math-ph
+  - nlin.PS
+  - nlin.SI
+  doi: null
+  keywords:
+  - sine–Gordon
+  - soliton lattice
+  - Bloch momentum
+- id: doi:10.1111/sapm.70345
+  url: https://doi.org/10.1111/sapm.70345
+  doi: 10.1111/sapm.70345
+  journal: Studies in Applied Mathematics
+  year: 2026
+  published: '2026-11-24'
+  metadata_checked_at: '2026-11-27'
+  volume: '157'
+  issue: '5'
+  article_number: e70345
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.1111/sapm.70345
+    date: '2026-11-24'
+    statement: Publisher-deposited published-online.date-parts = [2026, 11, 24]
+  title: 'Compatible Quadratic and Cubic Flows for a Singular Three‐Way Zakharov–Shabat System: Integrable Structure and Gram‐Determinant Solutions'
+  authors:
+  - Jingwei Han
+  - Lin Huang
+  - Jing Yu
+  keywords:
+  - Zakharov–Shabat
+  - Yajima–Oikawa–Newell
+  - Gram determinant
+- id: doi:10.1007/s12346-026-01631-9
+  url: https://doi.org/10.1007/s12346-026-01631-9
+  doi: 10.1007/s12346-026-01631-9
+  journal: Qualitative Theory of Dynamical Systems
+  year: 2027
+  published: '2026-11-26'
+  metadata_checked_at: '2026-11-27'
+  volume: '26'
+  issue: '1'
+  article_number: '1'
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.1007/s12346-026-01631-9
+    date: '2026-11-26'
+    statement: Publisher-deposited published-online.date-parts = [2026, 11, 26]
+  title: 'Modified Riemann–Hilbert Approach for Spectral Structure and N-Soliton Solutions of a Space-Shifted Nonlocal NLS Equation: Stationary Hyperbolic
+    Secant Waves and Bound State Breathers'
+  authors:
+  - Jianping Wu
+  keywords:
+  - space-shifted nonlocal NLS
+  - Riemann–Hilbert
+  - bound state
+- id: doi:10.1090/cams/83
+  url: https://doi.org/10.1090/cams/83
+  doi: 10.1090/cams/83
+  journal: Communications of the American Mathematical Society
+  year: 2026
+  published: '2026-11-23'
+  metadata_checked_at: '2026-11-27'
+  volume: '6'
+  issue: '27'
+  pages: 1520-1586
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.1090/cams/83
+    date: '2026-11-23'
+    statement: Publisher-deposited published-online.date-parts = [2026, 11, 23]
+  title: Multidimensional Riemann-Hilbert problems on domains with uniformly rectifiable interfaces
+  authors:
+  - Irina Mitrea
+  - Marius Mitrea
+  - Michael Taylor
+  keywords:
+  - Riemann–Hilbert
+  - singular integrals
+  - Fredholm index
+- id: arxiv:2611.31074
+  arxiv_id: '2611.31074'
+  url: https://arxiv.org/abs/2611.31074
+  title: Fifth-order KdV solitary waves in a nonlinear electrical transmission line
+  authors:
+  - Loïc Fache
+  - Filip Novkoski
+  - Eric Falcon
+  submitted: '2026-11-23'
+  submitted_at: '2026-11-23T17:27:58Z'
+  updated: '2026-11-23'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - nlin.PS
+  - physics.flu-dyn
+  doi: 10.1103/s3lz-c1qf
+  journal: Physical Review Research
+  year: 2026
+  published: '2026-11-20'
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.1103/s3lz-c1qf
+    date: '2026-11-20'
+    statement: Publisher-deposited published-online.date-parts = [2026, 11, 20]
+    unassigned:
+    - volume
+    - issue
+    - locator
+  keywords:
+  - fifth-order KdV
+  - electrical transmission line
+  - solitary waves
+- id: arxiv:2611.28514
+  arxiv_id: '2611.28514'
+  url: https://arxiv.org/abs/2611.28514
+  title: 'Higher-order modulational instability in spin-orbit-coupled Bose-Einstein condensates: Finite-Raman effects and branch-resolved spectral redistribution'
+  authors:
+  - Cui-Cui Ding
+  - Boris A. Malomed
+  - Qin Zhou
+  submitted: '2026-11-21'
+  submitted_at: '2026-11-21T03:03:11Z'
+  updated: '2026-11-21'
+  version: v1
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - cond-mat.quant-gas
+  - nlin.PS
+  doi: 10.1103/qfqj-6wsy
+  journal: Physical Review E
+  year: 2026
+  published: '2026-11-20'
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.1103/qfqj-6wsy
+    date: '2026-11-20'
+    statement: Publisher-deposited published-online.date-parts = [2026, 11, 20]
+    unassigned:
+    - volume
+    - issue
+    - locator
+  keywords:
+  - spin–orbit coupling
+  - modulation instability
+  - breather
+- id: arxiv:2604.27885
+  arxiv_id: '2604.27885'
+  url: https://arxiv.org/abs/2604.27885
+  title: Quantum integrable matrix models of spinor Bose gases in one spatial dimension
+  authors:
+  - Hannes Köper
+  - Thomas Gasenzer
+  submitted: '2026-04-30'
+  submitted_at: '2026-04-30T14:03:27Z'
+  updated: '2026-11-24'
+  version: v3
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - cond-mat.quant-gas
+  - hep-th
+  doi: 10.1103/f8mx-vsfw
+  journal: Physical Review Research
+  year: 2026
+  published: '2026-11-20'
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.1103/f8mx-vsfw
+    date: '2026-11-20'
+    statement: Publisher-deposited published-online.date-parts = [2026, 11, 20]
+    unassigned:
+    - volume
+    - issue
+    - locator
+  keywords:
+  - matrix NLS
+  - spinor Bose gas
+  - Bethe ansatz
+- id: arxiv:2606.11146
+  arxiv_id: '2606.11146'
+  url: https://arxiv.org/abs/2606.11146
+  title: The Yang-Baxter equation for the chiral Potts model and integrable parafermions
+  authors:
+  - Zhao Zhang
+  submitted: '2026-06-09'
+  submitted_at: '2026-06-09T17:33:55Z'
+  updated: '2026-08-15'
+  version: v2
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - math-ph
+  - cond-mat.stat-mech
+  - hep-th
+  - quant-ph
+  doi: 10.21468/scipostphyscore.9.4.077
+  journal: SciPost Physics Core
+  year: 2026
+  published: '2026-11-25'
+  volume: '9'
+  issue: '4'
+  article_number: '077'
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.21468/scipostphyscore.9.4.077
+    date: '2026-11-25'
+    statement: Publisher-deposited published-online.date-parts = [2026, 11, 25]
+  keywords:
+  - chiral Potts
+  - Yang–Baxter
+  - parafermions
+- id: arxiv:2604.07291
+  arxiv_id: '2604.07291'
+  url: https://arxiv.org/abs/2604.07291
+  title: Groenewold-Moyal twists, integrable spin-chains and AdS/CFT
+  authors:
+  - Riccardo Borsato
+  - Miguel García Fernández
+  submitted: '2026-04-08'
+  submitted_at: '2026-04-08T16:57:38Z'
+  updated: '2026-09-28'
+  version: v3
+  metadata_checked_at: '2026-11-27'
+  arxiv_categories:
+  - hep-th
+  - cond-mat.stat-mech
+  - cond-mat.str-el
+  - quant-ph
+  doi: 10.21468/scipostphys.21.5.131
+  journal: SciPost Physics
+  year: 2026
+  published: '2026-11-25'
+  volume: '21'
+  issue: '5'
+  article_number: '131'
+  first_online_evidence:
+    url: https://api.crossref.org/works/10.21468/scipostphys.21.5.131
+    date: '2026-11-25'
+    statement: Publisher-deposited published-online.date-parts = [2026, 11, 25]
+  keywords:
+  - quantum spin chain
+  - Baxter equation
+  - Groenewold–Moyal twist
