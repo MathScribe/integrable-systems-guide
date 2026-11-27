@@ -272,9 +272,11 @@
   width: 74px;
   height: var(--toggle-height);
   border-radius: 999px;
-  background: #315a4d;
-  color: #fff;
-  box-shadow: 0 2px 6px #18382b33;
+  background: rgb(209 233 223 / 78%);
+  color: #284d40;
+  border: 1px solid rgb(91 132 115 / 38%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1px 4px #18382b1a;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -286,7 +288,7 @@
   content: "";
   width: 8px;
   height: 12px;
-  background: radial-gradient(circle, #c6dad3 1px, transparent 1.2px) 0 0 / 4px 4px;
+  background: radial-gradient(circle, #618476 1px, transparent 1.2px) 0 0 / 4px 4px;
 }
 .radar-detail-toggle[data-dock], .radar-detail-toggle.is-dragging {
   top: clamp(var(--top-gap), var(--drag-top-active, var(--dock-top)), calc(100% - var(--toggle-height) - var(--bottom-gap)));
@@ -299,7 +301,7 @@
   right: auto;
   cursor: grabbing;
 }
-.radar-filter-footer .radar-detail-toggle:hover { background: #254a3e; }
+.radar-filter-footer .radar-detail-toggle:hover { background: rgb(197 224 212 / 90%); }
 .radar-detail-toggle:focus-visible { outline: 2px solid var(--md-accent-fg-color); outline-offset: 3px; }
 .radar-filter-footer .radar-detail-toggle[hidden] { display: none; }
 @media (pointer: coarse) {
