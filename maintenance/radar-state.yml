@@ -2,75 +2,77 @@ schema_version: 2
 sources:
   arxiv_nlin_si:
     kind: arxiv-announcement
-    announced_through: '2026-11-20'
+    announced_through: '2026-11-27'
     last_status: complete
-    coverage_note: 'Nov 14–20: validated all 105 configured category/date pages; three additional primary-category pages verified cross-listed first announcements.'
+    coverage_note: 'Nov 21–27: all 105 configured category/date pages validated. November 27 returned zero announcements in all 15 categories. Additional dated
+      primary-category checks for cross-listed papers.'
     replacements:
       last_status: complete
-      checked_through: '2026-11-20'
+      checked_through: '2026-11-27'
       open_gaps: []
-      coverage_note: New and replacement events screened separately; compared earlier versions for substantive changes. Catchup excludes journal-only and post-v5
-        changes.
-    checked_at: '2026-11-20T12:05:17Z'
+      coverage_note: Replacements screened separately. Compared adjacent versions for changes in hypotheses and results; Catchup excludes post-v5 and journal-only
+        replacements.
+    checked_at: '2026-11-27T07:56:29Z'
   arxiv_nlin_ps:
     kind: arxiv-announcement
-    announced_through: '2026-11-20'
+    announced_through: '2026-11-27'
     last_status: complete
-    coverage_note: 'Nov 14–20: validated all 105 configured category/date pages; three additional primary-category pages verified cross-listed first announcements.'
+    coverage_note: 'Nov 21–27: all 105 configured category/date pages validated. November 27 returned zero announcements in all 15 categories. Additional dated
+      primary-category checks for cross-listed papers.'
     replacements:
       last_status: complete
-      checked_through: '2026-11-20'
+      checked_through: '2026-11-27'
       open_gaps: []
-      coverage_note: New and replacement events screened separately; compared earlier versions for substantive changes. Catchup excludes journal-only and post-v5
-        changes.
-    checked_at: '2026-11-20T12:05:17Z'
+      coverage_note: Replacements screened separately. Compared adjacent versions for changes in hypotheses and results; Catchup excludes post-v5 and journal-only
+        replacements.
+    checked_at: '2026-11-27T07:56:29Z'
   arxiv_cross_category:
     kind: arxiv-announcement
-    announced_through: '2026-11-20'
+    announced_through: '2026-11-27'
     last_status: complete
-    coverage_note: 'Nov 14–20: validated all 105 configured category/date pages; three additional primary-category pages verified cross-listed first announcements.'
+    coverage_note: 'Nov 21–27: all 105 configured category/date pages validated. November 27 returned zero announcements in all 15 categories. Additional dated
+      primary-category checks for cross-listed papers.'
     replacements:
       last_status: complete
-      checked_through: '2026-11-20'
+      checked_through: '2026-11-27'
       open_gaps: []
-      coverage_note: New and replacement events screened separately; compared earlier versions for substantive changes. Catchup excludes journal-only and post-v5
-        changes.
-    checked_at: '2026-11-20T12:05:17Z'
+      coverage_note: Replacements screened separately. Compared adjacent versions for changes in hypotheses and results; Catchup excludes post-v5 and journal-only
+        replacements.
+    checked_at: '2026-11-27T07:56:29Z'
     additional_category_window:
       category: cond-mat.quant-gas
       from: '2026-09-14'
-      through: '2026-11-20'
-      note: All seven current cond-mat.quant-gas pages verified.
+      through: '2026-11-27'
+      note: Validated the November 21–27 pages.
   crossref:
     kind: ranked-title-backstop
-    reconciliation_checked_at: '2026-10-31T04:16:32.959056Z'
+    reconciliation_checked_at: '2026-11-27T07:56:29Z'
     reconciliation_cadence: weekly
-    reconciliation_note: 85 title/author lookups across plausible candidates and the previous six outstanding arXiv IDs; 1 failed requests.
+    reconciliation_note: 81 exact-title/author checks across plausible candidates; 0 failed requests. Matched DOI, author and version identities before intake.
     overlap_days: 3
-    title_query_note: Reviewed November 16 weekly artifact and November 11–20 overlapping published-online queries.
-    online_query_through: '2026-11-20'
+    title_query_note: Reviewed Nov 23 weekly artifact and bounded Nov 18–27 published-online queries.
+    online_query_through: '2026-11-27'
     online_status: complete
-    registration_query_through: '2026-11-20'
+    registration_query_through: '2026-11-27'
     registration_status: complete
-    registration_note: Reviewed November 16 weekly artifact and overlapping DOI creation queries.
-    reconciliation_last_attempt_at: '2026-11-20T12:05:17Z'
-    reconciliation_last_status: partial
-    reconciliation_open_queries:
-    - https://api.crossref.org/works?query.title=The+integer+spectrum+of+a+superintegrable+quantum+field+theory&query.author=De+Clerck&filter=type%3Ajournal-article&rows=3&select=title%2CDOI%2Cauthor%2Cpublished-online%2Ccontainer-title
+    registration_note: Reviewed Nov 23 weekly artifact and bounded Nov 18–27 registered-DOI queries.
+    reconciliation_last_attempt_at: '2026-11-27T07:56:29Z'
+    reconciliation_last_status: complete
+    reconciliation_open_queries: []
   zbmath:
     kind: mathematical-index-backstop
     cadence: biweekly
     checked_at: '2026-09-27T02:12:13Z'
     last_status: partial
-    coverage_note: November 16 odd-week scheduled workflow produced no MSC artifact. November 9 attempt failed; last successful coverage retained.
+    coverage_note: Nov 23 scheduled MSC backstop returned HTTP 404 before collecting records; previous successful coverage retained.
     publication_years:
     - 2026
     - 2027
-    last_attempt_at: '2026-11-09T01:49:54Z'
+    last_attempt_at: '2026-11-23T02:57:32.137618Z'
     last_attempt_status: failed
   publisher_verification:
     kind: candidate-verification
-    checked_at: '2026-11-20T12:05:17Z'
+    checked_at: '2026-11-27T07:56:29Z'
     last_status: candidate-only
-    coverage_note: Verified the Wave Motion first-online dates for articles 103884 (November 11) and 103886 (November 13) from the publisher PDFs and saved article
-      histories. The Nuclear Physics B first-online date (November 4) was verified from the SCOAP3 publisher PDF.
+    coverage_note: Verified new journal events against explicit publisher online dates. Three APS accepted manuscripts appeared online Nov 20; all three are
+      recorded with their assigned DOIs. Two October first-online dates were confirmed against archived publisher deposits and not counted again.
