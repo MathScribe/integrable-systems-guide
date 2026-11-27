@@ -29,8 +29,8 @@ hide:
 </div>
 <div class="radar-filter-footer">
     <span>当前收录：2026.06—2026.11</span>
-    <div class="radar-list-actions">
-      <button type="button" data-radar-action="reset" hidden>清除筛选 ×</button>
+    <button type="button" data-radar-action="reset" hidden>清除筛选 ×</button>
+    <div class="radar-list-actions" role="group" aria-label="本页论文说明">
       <button type="button" data-radar-action="expand" hidden>展开本页</button>
       <button type="button" data-radar-action="collapse" hidden>收起本页</button>
     </div>
