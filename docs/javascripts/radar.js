@@ -61,8 +61,7 @@
     const count = navigation.querySelector(".radar-search-count");
     const toolbar = root.querySelector(":scope > .radar-filter-footer");
     const reset = toolbar.querySelector('[data-radar-action="reset"]');
-    const expand = toolbar.querySelector('[data-radar-action="expand"]');
-    const collapse = toolbar.querySelector('[data-radar-action="collapse"]');
+    const detailToggle = toolbar.querySelector(".radar-detail-toggle");
     const empty = root.querySelector(".radar-empty-state");
     const pagination = root.querySelector(".radar-pagination");
     const previous = pagination.querySelector('[data-radar-action="previous"]');
@@ -88,18 +87,18 @@
     let detailsFrame;
 
     function updateDetailControls() {
-      expand.hidden = collapse.hidden = pageDetails.length === 0;
-      expand.disabled = pageDetails.every((details) => details.open);
-      collapse.disabled = pageDetails.every((details) => !details.open);
+      detailToggle.hidden = pageDetails.length === 0;
+      const action = pageDetails.some((details) => !details.open) ? "展开" : "收起";
+      detailToggle.textContent = action;
+      detailToggle.title = action + "本页论文说明";
+      detailToggle.setAttribute("aria-label", detailToggle.title);
     }
 
-    function setPageDetails(open) {
+    detailToggle.addEventListener("click", () => {
+      const open = pageDetails.some((details) => !details.open);
       for (const details of pageDetails) details.open = open;
       updateDetailControls();
-      (open ? collapse : expand).focus({ preventScroll: true });
-    }
-    expand.addEventListener("click", () => setPageDetails(true));
-    collapse.addEventListener("click", () => setPageDetails(false));
+    });
 
     function closePagePicker(restoreFocus = false) {
       pagePanel.hidden = true;
