@@ -272,11 +272,9 @@
   width: 74px;
   height: var(--toggle-height);
   border-radius: 999px;
-  background: rgb(209 233 223 / 78%);
-  color: #284d40;
+  background: transparent;
+  color: rgb(49 90 77 / 76%);
   border: 1px solid rgb(91 132 115 / 38%);
-  backdrop-filter: blur(5px);
-  box-shadow: 0 1px 4px #18382b1a;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -301,7 +299,7 @@
   right: auto;
   cursor: grabbing;
 }
-.radar-filter-footer .radar-detail-toggle:hover { background: rgb(197 224 212 / 90%); }
+.radar-filter-footer .radar-detail-toggle:hover { border-color: #618476; }
 .radar-detail-toggle:focus-visible { outline: 2px solid var(--md-accent-fg-color); outline-offset: 3px; }
 .radar-filter-footer .radar-detail-toggle[hidden] { display: none; }
 @media (pointer: coarse) {
