@@ -37,6 +37,59 @@
   if (typeof document === "undefined") return;
   let teardown = () => {};
 
+  function enableDocking(button) {
+    const storageKey = "radar-detail-toggle-position";
+    function dock(side, heightFraction) {
+      button.dataset.dock = side;
+      button.style.setProperty("--dock-top", (heightFraction * 100) + "%");
+    }
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(storageKey));
+      if (["left", "right"].includes(saved?.side) && Number.isFinite(saved.height) &&
+          saved.height >= 0 && saved.height <= 1) dock(saved.side, saved.height);
+    } catch (_) { /* Optional session preference. */ }
+
+    let pointer;
+    let dragged = false;
+    button.addEventListener("pointerdown", (event) => {
+      if (!event.isPrimary || event.button !== 0) return;
+      const rect = button.getBoundingClientRect();
+      pointer = { id: event.pointerId, x: event.clientX, y: event.clientY, left: rect.left, top: rect.top };
+      dragged = false;
+      button.setPointerCapture(event.pointerId);
+    });
+    button.addEventListener("pointermove", (event) => {
+      if (event.pointerId !== pointer?.id) return;
+      const dx = event.clientX - pointer.x, dy = event.clientY - pointer.y;
+      if (!dragged && Math.hypot(dx, dy) < 6) return;
+      dragged = true;
+      button.classList.add("is-dragging");
+      button.style.setProperty("--drag-left", (pointer.left + dx) + "px");
+      button.style.setProperty("--drag-top", (pointer.top + dy) + "px");
+    });
+    button.addEventListener("pointerup", (event) => {
+      if (event.pointerId !== pointer?.id) return;
+      if (dragged) {
+        const rect = button.getBoundingClientRect();
+        const side = rect.left + rect.width / 2 < document.documentElement.clientWidth / 2 ? "left" : "right";
+        const height = rect.top / document.documentElement.clientHeight;
+        dock(side, height);
+        try { sessionStorage.setItem(storageKey, JSON.stringify({ side, height })); } catch (_) { /* Optional. */ }
+      }
+      pointer = null;
+      button.classList.remove("is-dragging");
+    });
+    button.addEventListener("lostpointercapture", () => {
+      pointer = null;
+      button.classList.remove("is-dragging");
+    });
+    button.addEventListener("click", (event) => {
+      // Keyboard and assistive activation also produce clicks, with detail zero.
+      if (dragged && event.detail !== 0) event.stopImmediatePropagation();
+      dragged = false;
+    });
+  }
+
   function setup(root) {
     const navigation = root.querySelector(":scope > .radar-browse-controls");
     if (!navigation || navigation.dataset.radarReady) return;
@@ -62,6 +115,7 @@
     const toolbar = root.querySelector(":scope > .radar-filter-footer");
     const reset = toolbar.querySelector('[data-radar-action="reset"]');
     const detailToggle = toolbar.querySelector(".radar-detail-toggle");
+    enableDocking(detailToggle);
     const empty = root.querySelector(".radar-empty-state");
     const pagination = root.querySelector(".radar-pagination");
     const previous = pagination.querySelector('[data-radar-action="previous"]');
@@ -90,8 +144,8 @@
       detailToggle.hidden = pageDetails.length === 0;
       const action = pageDetails.some((details) => !details.open) ? "展开" : "收起";
       detailToggle.textContent = action;
-      detailToggle.title = action + "本页论文说明";
-      detailToggle.setAttribute("aria-label", detailToggle.title);
+      detailToggle.setAttribute("aria-label", action + "本页论文说明");
+      detailToggle.title = action + "本页论文说明（可拖动）";
     }
 
     detailToggle.addEventListener("click", () => {
